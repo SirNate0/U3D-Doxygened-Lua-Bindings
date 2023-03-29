@@ -1,0 +1,1458 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Network" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Network</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="Network_8h" local="no">Network.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a021edcf1ca4c3abe95dce7909c7e696a" prot="private" static="no" mutable="no">
+        <type>SLNet::RakPeerInterface *</type>
+        <definition>SLNet::RakPeerInterface* Urho3D::Network::rakPeer_</definition>
+        <argsstring></argsstring>
+        <name>rakPeer_</name>
+        <briefdescription>
+<para>SLikeNet peer instance for server connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="162" column="29" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1ad6bee8dd79b7edb4c92de2eb94dfc6c2" prot="private" static="no" mutable="no">
+        <type>SLNet::RakPeerInterface *</type>
+        <definition>SLNet::RakPeerInterface* Urho3D::Network::rakPeerClient_</definition>
+        <argsstring></argsstring>
+        <name>rakPeerClient_</name>
+        <briefdescription>
+<para>SLikeNet peer instance for client connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="164" column="29" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a35b52469ed6bf832101051a53d0f9ebf" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> &gt;</type>
+        <definition>SharedPtr&lt;Connection&gt; Urho3D::Network::serverConnection_</definition>
+        <argsstring></argsstring>
+        <name>serverConnection_</name>
+        <briefdescription>
+<para>Client&apos;s server connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="166" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1adfa94db2c4205e0646b8028a0462f036" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; SLNet::AddressOrGUID, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;SLNet::AddressOrGUID, SharedPtr&lt;Connection&gt; &gt; Urho3D::Network::clientConnections_</definition>
+        <argsstring></argsstring>
+        <name>clientConnections_</name>
+        <briefdescription>
+<para>Server&apos;s client connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="168" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1af9672da271199e1f2e90b35e29bef9ee" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt;</type>
+        <definition>HashSet&lt;StringHash&gt; Urho3D::Network::allowedRemoteEvents_</definition>
+        <argsstring></argsstring>
+        <name>allowedRemoteEvents_</name>
+        <briefdescription>
+<para>Allowed remote events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="170" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1ac5b0f18acfc448a6ea80dc5a6d6952c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt;</type>
+        <definition>HashSet&lt;StringHash&gt; Urho3D::Network::blacklistedRemoteEvents_</definition>
+        <argsstring></argsstring>
+        <name>blacklistedRemoteEvents_</name>
+        <briefdescription>
+<para>Remote event fixed blacklist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="172" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a5674b33f08a6feeb3d2cfcf8fac83842" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> * &gt;</type>
+        <definition>HashSet&lt;Scene*&gt; Urho3D::Network::networkScenes_</definition>
+        <argsstring></argsstring>
+        <name>networkScenes_</name>
+        <briefdescription>
+<para>Networked scenes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="174" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a3b21ca5209ff8e570e30c2b4150cf944" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Network::updateFps_</definition>
+        <argsstring></argsstring>
+        <name>updateFps_</name>
+        <briefdescription>
+<para>Update FPS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="176" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a16c5d3667e311b42d676444188f0c7b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Network::simulatedLatency_</definition>
+        <argsstring></argsstring>
+        <name>simulatedLatency_</name>
+        <briefdescription>
+<para>Simulated latency (send delay) in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="178" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a51950e1c2d562f28e478e08e1d4c9a3c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Network::simulatedPacketLoss_</definition>
+        <argsstring></argsstring>
+        <name>simulatedPacketLoss_</name>
+        <briefdescription>
+<para>Simulated packet loss probability between 0.0 - 1.0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="180" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1af26b95b4b6b053141c6a3faa0eec1504" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Network::updateInterval_</definition>
+        <argsstring></argsstring>
+        <name>updateInterval_</name>
+        <briefdescription>
+<para>Update time interval. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="182" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1af53665d99d4476cfbfbf7a89afb09774" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Network::updateAcc_</definition>
+        <argsstring></argsstring>
+        <name>updateAcc_</name>
+        <briefdescription>
+<para>Update time accumulator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="184" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a51a2dc60370b25419f6cb206dfd87690" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Network::packageCacheDir_</definition>
+        <argsstring></argsstring>
+        <name>packageCacheDir_</name>
+        <briefdescription>
+<para>Package cache directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="186" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a9736e2aa5b2d85a8a60bdbd7b65492bd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Network::isServer_</definition>
+        <argsstring></argsstring>
+        <name>isServer_</name>
+        <briefdescription>
+<para>Whether we started as server or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="188" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1ae19b149098e9a3c7f1c465bfc9aa9518" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Network::password_</definition>
+        <argsstring></argsstring>
+        <name>password_</name>
+        <briefdescription>
+<para>Server/Client password used for connecting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="190" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a82292b4098e669098ee1e2bd2d740c41" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* Urho3D::Network::scene_</definition>
+        <argsstring></argsstring>
+        <name>scene_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> which will be used for NAT punchtrough connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="192" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1aff33a10d55fa8099d629d82a7322cfc6" prot="private" static="no" mutable="no">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>VariantMap Urho3D::Network::identity_</definition>
+        <argsstring></argsstring>
+        <name>identity_</name>
+        <briefdescription>
+<para>Client identify for NAT punchtrough connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="194" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1ac8dacefb8d5e94198c6558a9ca963e6b" prot="private" static="no" mutable="no">
+        <type>SLNet::SystemAddress *</type>
+        <definition>SLNet::SystemAddress* Urho3D::Network::natPunchServerAddress_</definition>
+        <argsstring></argsstring>
+        <name>natPunchServerAddress_</name>
+        <briefdescription>
+<para>NAT punchtrough server information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="196" column="26" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1aa52d44ee2a709ee9606b5cdfc5560e13" prot="private" static="no" mutable="no">
+        <type>SLNet::NatPunchthroughClient *</type>
+        <definition>SLNet::NatPunchthroughClient* Urho3D::Network::natPunchthroughServerClient_</definition>
+        <argsstring></argsstring>
+        <name>natPunchthroughServerClient_</name>
+        <briefdescription>
+<para>NAT punchtrough client for the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="198" column="34" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1aedc6f704a32aefb24b727b8d9633c237" prot="private" static="no" mutable="no">
+        <type>SLNet::NatPunchthroughClient *</type>
+        <definition>SLNet::NatPunchthroughClient* Urho3D::Network::natPunchthroughClient_</definition>
+        <argsstring></argsstring>
+        <name>natPunchthroughClient_</name>
+        <briefdescription>
+<para>NAT punchtrough client for the client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="200" column="34" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1ab02f80bf32f52c1190384f8c6650cbbe" prot="private" static="no" mutable="no">
+        <type>SLNet::RakNetGUID *</type>
+        <definition>SLNet::RakNetGUID* Urho3D::Network::remoteGUID_</definition>
+        <argsstring></argsstring>
+        <name>remoteGUID_</name>
+        <briefdescription>
+<para>Remote GUID information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="202" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Network_1a6160e8a1af4f81e6ead3874b717a8f57" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Network::guid_</definition>
+        <argsstring></argsstring>
+        <name>guid_</name>
+        <briefdescription>
+<para>Local server GUID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="204" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a566fbbabc194a73f96b4dee6a62a3854" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Network::Network</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Network</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a3325a97bf9b3416b4b69f724bfeda4e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Network::~Network</definition>
+        <argsstring>() override</argsstring>
+        <name>~Network</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a27e675ccc446bc8f6567b4b9f2248f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::HandleMessage</definition>
+        <argsstring>(const SLNet::AddressOrGUID &amp;source, int packetID, int msgID, const char *data, size_t numBytes)</argsstring>
+        <name>HandleMessage</name>
+        <param>
+          <type>const SLNet::AddressOrGUID &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>packetID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>msgID</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+<para>Handle an inbound message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a3da3ef241cd68a9f3f2ba185c4393379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::NewConnectionEstablished</definition>
+        <argsstring>(const SLNet::AddressOrGUID &amp;connection)</argsstring>
+        <name>NewConnectionEstablished</name>
+        <param>
+          <type>const SLNet::AddressOrGUID &amp;</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+<para>Handle a new client connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a7bb3829412767960a9a893e710521748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::ClientDisconnected</definition>
+        <argsstring>(const SLNet::AddressOrGUID &amp;connection)</argsstring>
+        <name>ClientDisconnected</name>
+        <param>
+          <type>const SLNet::AddressOrGUID &amp;</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+<para>Handle a client disconnection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a55b44bbb4e74d5aaf904d731de7bce1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetDiscoveryBeacon</definition>
+        <argsstring>(const VariantMap &amp;data)</argsstring>
+        <name>SetDiscoveryBeacon</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set the data that will be used for a reply to attempts at host discovery on LAN/subnet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a2a0ded8065a0d15d8a28463168a58206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::DiscoverHosts</definition>
+        <argsstring>(unsigned port)</argsstring>
+        <name>DiscoverHosts</name>
+        <param>
+          <type>unsigned</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Scan the LAN/subnet for available hosts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1ad07297cd10483fa8425f77c6478cb502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetPassword</definition>
+        <argsstring>(const String &amp;password)</argsstring>
+        <name>SetPassword</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Set password for the client/server communcation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1ac3cd4700a00273c83b295e90b31728fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetNATServerInfo</definition>
+        <argsstring>(const String &amp;address, unsigned short port)</argsstring>
+        <name>SetNATServerInfo</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Set NAT server information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a75e313f197c4150135e0577b02915bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Network::Connect</definition>
+        <argsstring>(const String &amp;address, unsigned short port, Scene *scene, const VariantMap &amp;identity=Variant::emptyVariantMap)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>identity</declname>
+          <defval><ref refid="classUrho3D_1_1Variant_1a99f50f441c7130d8a4aa340fd2a827da" kindref="member">Variant::emptyVariantMap</ref></defval>
+        </param>
+        <briefdescription>
+<para>Connect to a server using UDP protocol. Return true if connection process successfully started. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a93b88d73527db6a51450891ce5aa12e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::Disconnect</definition>
+        <argsstring>(int waitMSec=0)</argsstring>
+        <name>Disconnect</name>
+        <param>
+          <type>int</type>
+          <declname>waitMSec</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Disconnect the connection to the server. If wait time is non-zero, will block while waiting for disconnect to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a419581864bc1a7ca44ae7d7c9712a2fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Network::StartServer</definition>
+        <argsstring>(unsigned short port, unsigned int maxConnections=128)</argsstring>
+        <name>StartServer</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maxConnections</declname>
+          <defval>128</defval>
+        </param>
+        <briefdescription>
+<para>Start a server on a port using UDP protocol. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1acbc869d61a1cbb47a7843d27ce17fdce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::StopServer</definition>
+        <argsstring>()</argsstring>
+        <name>StopServer</name>
+        <briefdescription>
+<para>Stop the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a44c4769ea6dc21317fce32ba7715e4cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::StartNATClient</definition>
+        <argsstring>()</argsstring>
+        <name>StartNATClient</name>
+        <briefdescription>
+<para>Start NAT punchtrough client to allow remote connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1afaebd57993edec835241dd52d59b6c1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Network::GetGUID</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get local server GUID. BIND_AS_ALIAS_get_guid </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="75" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a84470301e8b3e81b6c8b8628165738d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::AttemptNATPunchtrough</definition>
+        <argsstring>(const String &amp;guid, Scene *scene, const VariantMap &amp;identity=Variant::emptyVariantMap)</argsstring>
+        <name>AttemptNATPunchtrough</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>guid</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>identity</declname>
+          <defval><ref refid="classUrho3D_1_1Variant_1a99f50f441c7130d8a4aa340fd2a827da" kindref="member">Variant::emptyVariantMap</ref></defval>
+        </param>
+        <briefdescription>
+<para>Attempt to connect to NAT server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a616df39554546ab60e0c26481be29ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::BroadcastMessage</definition>
+        <argsstring>(int msgID, bool reliable, bool inOrder, const VectorBuffer &amp;msg, unsigned contentID=0)</argsstring>
+        <name>BroadcastMessage</name>
+        <param>
+          <type>int</type>
+          <declname>msgID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reliable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inOrder</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1VectorBuffer" kindref="compound">VectorBuffer</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>contentID</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Broadcast a message with content ID to all client connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1aee2065f8e52cd936d15367c234fedd2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::BroadcastMessage</definition>
+        <argsstring>(int msgID, bool reliable, bool inOrder, const unsigned char *data, unsigned numBytes, unsigned contentID=0)</argsstring>
+        <name>BroadcastMessage</name>
+        <param>
+          <type>int</type>
+          <declname>msgID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reliable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inOrder</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numBytes</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>contentID</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Broadcast a message with content ID to all client connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a7d3b29bdf0770ba3584d288779e0b1ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::BroadcastRemoteEvent</definition>
+        <argsstring>(StringHash eventType, bool inOrder, const VariantMap &amp;eventData=Variant::emptyVariantMap)</argsstring>
+        <name>BroadcastRemoteEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inOrder</declname>
+        </param>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+          <defval><ref refid="classUrho3D_1_1Variant_1a99f50f441c7130d8a4aa340fd2a827da" kindref="member">Variant::emptyVariantMap</ref></defval>
+        </param>
+        <briefdescription>
+<para>Broadcast a remote event to all client connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a3bd767fea04b902b0629c03b671c0b3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::BroadcastRemoteEvent</definition>
+        <argsstring>(Scene *scene, StringHash eventType, bool inOrder, const VariantMap &amp;eventData=Variant::emptyVariantMap)</argsstring>
+        <name>BroadcastRemoteEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inOrder</declname>
+        </param>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+          <defval><ref refid="classUrho3D_1_1Variant_1a99f50f441c7130d8a4aa340fd2a827da" kindref="member">Variant::emptyVariantMap</ref></defval>
+        </param>
+        <briefdescription>
+<para>Broadcast a remote event to all client connections in a specific scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a737b8c83e6b42623dff10a5ed42c2cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::BroadcastRemoteEvent</definition>
+        <argsstring>(Node *node, StringHash eventType, bool inOrder, const VariantMap &amp;eventData=Variant::emptyVariantMap)</argsstring>
+        <name>BroadcastRemoteEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inOrder</declname>
+        </param>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+          <defval><ref refid="classUrho3D_1_1Variant_1a99f50f441c7130d8a4aa340fd2a827da" kindref="member">Variant::emptyVariantMap</ref></defval>
+        </param>
+        <briefdescription>
+<para>Broadcast a remote event with the specified node as a sender. Is sent to all client connections in the node&apos;s scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a0d52fe80951ec39ef880bfe771e37e29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetUpdateFps</definition>
+        <argsstring>(int fps)</argsstring>
+        <name>SetUpdateFps</name>
+        <param>
+          <type>int</type>
+          <declname>fps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set network update FPS. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a9bbc203114bc4bfd591a06cb1fdcab3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetSimulatedLatency</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>SetSimulatedLatency</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set simulated latency in milliseconds. This adds a fixed delay before sending each packet. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1af8bf7fdf5397805f747eb15bf142aa58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetSimulatedPacketLoss</definition>
+        <argsstring>(float probability)</argsstring>
+        <name>SetSimulatedPacketLoss</name>
+        <param>
+          <type>float</type>
+          <declname>probability</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set simulated packet loss probability between 0.0 - 1.0. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a9f4cfd09d02c0b1180b6eb4d9e9b7f62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::RegisterRemoteEvent</definition>
+        <argsstring>(StringHash eventType)</argsstring>
+        <name>RegisterRemoteEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Register a remote event as allowed to be received. There is also a fixed blacklist of events that can not be allowed in any case, such as ConsoleCommand. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="98" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1afcb84d8b0348205ebf412d45fc779d00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::UnregisterRemoteEvent</definition>
+        <argsstring>(StringHash eventType)</argsstring>
+        <name>UnregisterRemoteEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a remote event as allowed to received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a39f53aaccf9fa6280a49ab641f04196f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::UnregisterAllRemoteEvents</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterAllRemoteEvents</name>
+        <briefdescription>
+<para>Unregister all remote events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a57b30be42b797f89acad15c24e5adcfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SetPackageCacheDir</definition>
+        <argsstring>(const String &amp;path)</argsstring>
+        <name>SetPackageCacheDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the package download cache directory. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1ab7c4d001bc7e3c14918e7b07164ab765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::SendPackageToClients</definition>
+        <argsstring>(Scene *scene, PackageFile *package)</argsstring>
+        <name>SendPackageToClients</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> *</type>
+          <declname>package</declname>
+        </param>
+        <briefdescription>
+<para>Trigger all client connections in the specified scene to download a package file from the server. Can be used to download additional resource packages when clients are already joined in the scene. The package must have been added as a requirement to the scene, or else the eventual download will fail. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a7414209277268f60499156a5d1747bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1HttpRequest" kindref="compound">HttpRequest</ref> &gt;</type>
+        <definition>SharedPtr&lt;HttpRequest&gt; Urho3D::Network::MakeHttpRequest</definition>
+        <argsstring>(const String &amp;url, const String &amp;verb=String::EMPTY, const Vector&lt; String &gt; &amp;headers=Vector&lt; String &gt;(), const String &amp;postData=String::EMPTY)</argsstring>
+        <name>MakeHttpRequest</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>verb</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>headers</declname>
+          <defval><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>postData</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Perform an HTTP request to the specified URL. Empty verb defaults to a GET request. Return a request object which can be used to read the response data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="109" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a0d3b75b209e31cf5aa569eac7755a411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::BanAddress</definition>
+        <argsstring>(const String &amp;address)</argsstring>
+        <name>BanAddress</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Ban specific IP addresses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a07a96984c3e628df20203161d8d8c2a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Network::GetUpdateFps</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUpdateFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return network update FPS. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="114" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a3037e8e27a94d071ebe33dc4b3386efa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Network::GetSimulatedLatency</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSimulatedLatency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return simulated latency in milliseconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="118" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a12666c12d892f819b0247645633dacd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Network::GetSimulatedPacketLoss</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSimulatedPacketLoss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return simulated packet loss probability. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="122" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a00054a13cedaa7e268990afca47780f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> *</type>
+        <definition>Connection* Urho3D::Network::GetConnection</definition>
+        <argsstring>(const SLNet::AddressOrGUID &amp;connection) const</argsstring>
+        <name>GetConnection</name>
+        <param>
+          <type>const SLNet::AddressOrGUID &amp;</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+<para>Return a client or server connection by RakNet connection address, or null if none exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="125" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a1eae19d895bc3fc3b61b96da29dadfd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> *</type>
+        <definition>Connection* Urho3D::Network::GetServerConnection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetServerConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the connection to the server. Null if not connected. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="128" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1ac7adf7951bddd115eb417234c1867df0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;Connection&gt; &gt; Urho3D::Network::GetClientConnections</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClientConnections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all client connections. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="131" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a7e48cfa25d86afa02a2c045a27bbc7d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Network::IsServerRunning</definition>
+        <argsstring>() const</argsstring>
+        <name>IsServerRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether the server is running. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="134" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1afa174c9ed9f52b13b36dbc052eeac952" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Network::CheckRemoteEvent</definition>
+        <argsstring>(StringHash eventType) const</argsstring>
+        <name>CheckRemoteEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Return whether a remote event is allowed to be received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a869802537aa501cf5fb90948d834f042" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Network::GetPackageCacheDir</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPackageCacheDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the package download cache directory. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="140" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a71021827cd049524ec014dd55cc24ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::Update</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Process incoming messages from connections. Called by HandleBeginFrame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a9cd2a8e5698132f649b56657977126ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::PostUpdate</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>PostUpdate</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Send outgoing messages after frame logic. Called by HandleRenderUpdate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="145" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Network_1aa03da1be461abb4b6567e8470966c594" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::HandleBeginFrame</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleBeginFrame</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle begin frame event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a9e10514a40056835caf21a3fb9737e77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::HandleRenderUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleRenderUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle render update frame event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="151" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1ae48ae048fec78232189d00087cfc832a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::OnServerConnected</definition>
+        <argsstring>(const SLNet::AddressOrGUID &amp;address)</argsstring>
+        <name>OnServerConnected</name>
+        <param>
+          <type>const SLNet::AddressOrGUID &amp;</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Handle server connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1af33dbf5a340098e0e874f8de7b3da8bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::OnServerDisconnected</definition>
+        <argsstring>(const SLNet::AddressOrGUID &amp;address)</argsstring>
+        <name>OnServerDisconnected</name>
+        <param>
+          <type>const SLNet::AddressOrGUID &amp;</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Handle server disconnection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1adac5fa1674e39763fbfb4c8301023621" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::ConfigureNetworkSimulator</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigureNetworkSimulator</name>
+        <briefdescription>
+<para>Reconfigure network simulator parameters on all existing connections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Network_1a3d878e00c02066e4b7d5a77e3e129e12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Network::HandleIncomingPacket</definition>
+        <argsstring>(SLNet::Packet *packet, bool isServer)</argsstring>
+        <name>HandleIncomingPacket</name>
+        <param>
+          <type>SLNet::Packet *</type>
+          <declname>packet</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isServer</declname>
+        </param>
+        <briefdescription>
+<para>All incoming packages are handled here. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="159" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Network subsystem. Manages client-server communications using the UDP protocol. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::Network</label>
+        <link refid="classUrho3D_1_1Network"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::Network</label>
+        <link refid="classUrho3D_1_1Network"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" line="38" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/Network.h" bodystart="39" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Network_1af9672da271199e1f2e90b35e29bef9ee" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>allowedRemoteEvents_</name></member>
+      <member refid="classUrho3D_1_1Network_1a84470301e8b3e81b6c8b8628165738d5" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>AttemptNATPunchtrough</name></member>
+      <member refid="classUrho3D_1_1Network_1a0d3b75b209e31cf5aa569eac7755a411" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>BanAddress</name></member>
+      <member refid="classUrho3D_1_1Network_1ac5b0f18acfc448a6ea80dc5a6d6952c4" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>blacklistedRemoteEvents_</name></member>
+      <member refid="classUrho3D_1_1Network_1a616df39554546ab60e0c26481be29ee2" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>BroadcastMessage</name></member>
+      <member refid="classUrho3D_1_1Network_1aee2065f8e52cd936d15367c234fedd2d" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>BroadcastMessage</name></member>
+      <member refid="classUrho3D_1_1Network_1a7d3b29bdf0770ba3584d288779e0b1ce" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>BroadcastRemoteEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1a3bd767fea04b902b0629c03b671c0b3d" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>BroadcastRemoteEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1a737b8c83e6b42623dff10a5ed42c2cec" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>BroadcastRemoteEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Network_1afa174c9ed9f52b13b36dbc052eeac952" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>CheckRemoteEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1adfa94db2c4205e0646b8028a0462f036" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>clientConnections_</name></member>
+      <member refid="classUrho3D_1_1Network_1a7bb3829412767960a9a893e710521748" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>ClientDisconnected</name></member>
+      <member refid="classUrho3D_1_1Network_1adac5fa1674e39763fbfb4c8301023621" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>ConfigureNetworkSimulator</name></member>
+      <member refid="classUrho3D_1_1Network_1a75e313f197c4150135e0577b02915bfa" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Connect</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Network</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Network_1a93b88d73527db6a51450891ce5aa12e6" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Disconnect</name></member>
+      <member refid="classUrho3D_1_1Network_1a2a0ded8065a0d15d8a28463168a58206" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>DiscoverHosts</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Network_1ac7adf7951bddd115eb417234c1867df0" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetClientConnections</name></member>
+      <member refid="classUrho3D_1_1Network_1a00054a13cedaa7e268990afca47780f2" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetConnection</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Network_1afaebd57993edec835241dd52d59b6c1b" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetGUID</name></member>
+      <member refid="classUrho3D_1_1Network_1a869802537aa501cf5fb90948d834f042" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetPackageCacheDir</name></member>
+      <member refid="classUrho3D_1_1Network_1a1eae19d895bc3fc3b61b96da29dadfd6" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetServerConnection</name></member>
+      <member refid="classUrho3D_1_1Network_1a3037e8e27a94d071ebe33dc4b3386efa" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetSimulatedLatency</name></member>
+      <member refid="classUrho3D_1_1Network_1a12666c12d892f819b0247645633dacd6" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetSimulatedPacketLoss</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Network</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Network</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Network</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Network_1a07a96984c3e628df20203161d8d8c2a1" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>GetUpdateFps</name></member>
+      <member refid="classUrho3D_1_1Network_1a6160e8a1af4f81e6ead3874b717a8f57" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>guid_</name></member>
+      <member refid="classUrho3D_1_1Network_1aa03da1be461abb4b6567e8470966c594" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>HandleBeginFrame</name></member>
+      <member refid="classUrho3D_1_1Network_1a3d878e00c02066e4b7d5a77e3e129e12" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>HandleIncomingPacket</name></member>
+      <member refid="classUrho3D_1_1Network_1a27e675ccc446bc8f6567b4b9f2248f32" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>HandleMessage</name></member>
+      <member refid="classUrho3D_1_1Network_1a9e10514a40056835caf21a3fb9737e77" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>HandleRenderUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1aff33a10d55fa8099d629d82a7322cfc6" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>identity_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Network_1a9736e2aa5b2d85a8a60bdbd7b65492bd" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>isServer_</name></member>
+      <member refid="classUrho3D_1_1Network_1a7e48cfa25d86afa02a2c045a27bbc7d9" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>IsServerRunning</name></member>
+      <member refid="classUrho3D_1_1Network_1a7414209277268f60499156a5d1747bd1" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>MakeHttpRequest</name></member>
+      <member refid="classUrho3D_1_1Network_1ac8dacefb8d5e94198c6558a9ca963e6b" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>natPunchServerAddress_</name></member>
+      <member refid="classUrho3D_1_1Network_1aedc6f704a32aefb24b727b8d9633c237" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>natPunchthroughClient_</name></member>
+      <member refid="classUrho3D_1_1Network_1aa52d44ee2a709ee9606b5cdfc5560e13" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>natPunchthroughServerClient_</name></member>
+      <member refid="classUrho3D_1_1Network_1a566fbbabc194a73f96b4dee6a62a3854" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Network</name></member>
+      <member refid="classUrho3D_1_1Network_1a5674b33f08a6feeb3d2cfcf8fac83842" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>networkScenes_</name></member>
+      <member refid="classUrho3D_1_1Network_1a3da3ef241cd68a9f3f2ba185c4393379" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>NewConnectionEstablished</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Network</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1ae48ae048fec78232189d00087cfc832a" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>OnServerConnected</name></member>
+      <member refid="classUrho3D_1_1Network_1af33dbf5a340098e0e874f8de7b3da8bb" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>OnServerDisconnected</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Network_1a51a2dc60370b25419f6cb206dfd87690" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>packageCacheDir_</name></member>
+      <member refid="classUrho3D_1_1Network_1ae19b149098e9a3c7f1c465bfc9aa9518" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>password_</name></member>
+      <member refid="classUrho3D_1_1Network_1a9cd2a8e5698132f649b56657977126ba" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>PostUpdate</name></member>
+      <member refid="classUrho3D_1_1Network_1a021edcf1ca4c3abe95dce7909c7e696a" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>rakPeer_</name></member>
+      <member refid="classUrho3D_1_1Network_1ad6bee8dd79b7edb4c92de2eb94dfc6c2" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>rakPeerClient_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Network_1a9f4cfd09d02c0b1180b6eb4d9e9b7f62" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>RegisterRemoteEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Network_1ab02f80bf32f52c1190384f8c6650cbbe" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>remoteGUID_</name></member>
+      <member refid="classUrho3D_1_1Network_1a82292b4098e669098ee1e2bd2d740c41" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>scene_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1ab7c4d001bc7e3c14918e7b07164ab765" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SendPackageToClients</name></member>
+      <member refid="classUrho3D_1_1Network_1a35b52469ed6bf832101051a53d0f9ebf" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>serverConnection_</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Network_1a55b44bbb4e74d5aaf904d731de7bce1f" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetDiscoveryBeacon</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Network_1ac3cd4700a00273c83b295e90b31728fc" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetNATServerInfo</name></member>
+      <member refid="classUrho3D_1_1Network_1a57b30be42b797f89acad15c24e5adcfe" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetPackageCacheDir</name></member>
+      <member refid="classUrho3D_1_1Network_1ad07297cd10483fa8425f77c6478cb502" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetPassword</name></member>
+      <member refid="classUrho3D_1_1Network_1a9bbc203114bc4bfd591a06cb1fdcab3e" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetSimulatedLatency</name></member>
+      <member refid="classUrho3D_1_1Network_1af8bf7fdf5397805f747eb15bf142aa58" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetSimulatedPacketLoss</name></member>
+      <member refid="classUrho3D_1_1Network_1a0d52fe80951ec39ef880bfe771e37e29" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SetUpdateFps</name></member>
+      <member refid="classUrho3D_1_1Network_1a16c5d3667e311b42d676444188f0c7b1" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>simulatedLatency_</name></member>
+      <member refid="classUrho3D_1_1Network_1a51950e1c2d562f28e478e08e1d4c9a3c" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>simulatedPacketLoss_</name></member>
+      <member refid="classUrho3D_1_1Network_1a44c4769ea6dc21317fce32ba7715e4cd" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>StartNATClient</name></member>
+      <member refid="classUrho3D_1_1Network_1a419581864bc1a7ca44ae7d7c9712a2fd" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>StartServer</name></member>
+      <member refid="classUrho3D_1_1Network_1acbc869d61a1cbb47a7843d27ce17fdce" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>StopServer</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Network_1a39f53aaccf9fa6280a49ab641f04196f" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnregisterAllRemoteEvents</name></member>
+      <member refid="classUrho3D_1_1Network_1afcb84d8b0348205ebf412d45fc779d00" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnregisterRemoteEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Network_1a71021827cd049524ec014dd55cc24ea5" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Network_1af53665d99d4476cfbfbf7a89afb09774" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>updateAcc_</name></member>
+      <member refid="classUrho3D_1_1Network_1a3b21ca5209ff8e570e30c2b4150cf944" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>updateFps_</name></member>
+      <member refid="classUrho3D_1_1Network_1af26b95b4b6b053141c6a3faa0eec1504" prot="private" virt="non-virtual"><scope>Urho3D::Network</scope><name>updateInterval_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Network_1a3325a97bf9b3416b4b69f724bfeda4e1" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>~Network</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Network</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Network</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

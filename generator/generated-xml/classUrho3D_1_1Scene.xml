@@ -1,0 +1,2587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Scene" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Scene</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Node" prot="public" virt="non-virtual">Urho3D::Node</basecompoundref>
+    <includes refid="Scene_8h" local="no">Scene.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a95a30f2094085571249ba75fe5cba43e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>HashMap&lt;unsigned, Node*&gt; Urho3D::Scene::replicatedNodes_</definition>
+        <argsstring></argsstring>
+        <name>replicatedNodes_</name>
+        <briefdescription>
+<para>Replicated scene nodes by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="307" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a72a11fe6e131bfdc16910cb55ed8a311" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>HashMap&lt;unsigned, Node*&gt; Urho3D::Scene::localNodes_</definition>
+        <argsstring></argsstring>
+        <name>localNodes_</name>
+        <briefdescription>
+<para>Local scene nodes by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="309" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a3595a0a598f58b55deac1e947c7cd2c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> * &gt;</type>
+        <definition>HashMap&lt;unsigned, Component*&gt; Urho3D::Scene::replicatedComponents_</definition>
+        <argsstring></argsstring>
+        <name>replicatedComponents_</name>
+        <briefdescription>
+<para>Replicated components by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="311" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a14be6f71a9a6f9fbd06ff00901b92dbb" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> * &gt;</type>
+        <definition>HashMap&lt;unsigned, Component*&gt; Urho3D::Scene::localComponents_</definition>
+        <argsstring></argsstring>
+        <name>localComponents_</name>
+        <briefdescription>
+<para>Local components by ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="313" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a16c55cc22f69e87643ef0e383980fd36" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> * &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, PODVector&lt;Node*&gt; &gt; Urho3D::Scene::taggedNodes_</definition>
+        <argsstring></argsstring>
+        <name>taggedNodes_</name>
+        <briefdescription>
+<para>Cached tagged nodes by tag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="315" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1ac7c95999e6efd93a722ea7b225ad1313" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1AsyncProgress" kindref="compound">AsyncProgress</ref></type>
+        <definition>AsyncProgress Urho3D::Scene::asyncProgress_</definition>
+        <argsstring></argsstring>
+        <name>asyncProgress_</name>
+        <briefdescription>
+<para>Asynchronous loading progress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="317" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a608b0df38e0e6e6c4db2264ab6f2f903" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SceneResolver" kindref="compound">SceneResolver</ref></type>
+        <definition>SceneResolver Urho3D::Scene::resolver_</definition>
+        <argsstring></argsstring>
+        <name>resolver_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> and component ID resolver for asynchronous loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="319" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a2f6b10d53a025cefaad6c9c02dfb1b9d" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Scene::fileName_</definition>
+        <argsstring></argsstring>
+        <name>fileName_</name>
+        <briefdescription>
+<para>Source file name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="321" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a2ea5b99cda7b7ccf18b2a055e901ed59" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;PackageFile&gt; &gt; Urho3D::Scene::requiredPackageFiles_</definition>
+        <argsstring></argsstring>
+        <name>requiredPackageFiles_</name>
+        <briefdescription>
+<para>Required package files for networking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="323" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1aa36bd7f4aab69b7918bfd7e288036249" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>HashMap&lt;StringHash, String&gt; Urho3D::Scene::varNames_</definition>
+        <argsstring></argsstring>
+        <name>varNames_</name>
+        <briefdescription>
+<para>Registered node user variable reverse mappings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="325" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1ad805f53dc81133d75d02ee4ea9ab48e4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; unsigned &gt;</type>
+        <definition>HashSet&lt;unsigned&gt; Urho3D::Scene::networkUpdateNodes_</definition>
+        <argsstring></argsstring>
+        <name>networkUpdateNodes_</name>
+        <briefdescription>
+<para>Nodes to check for attribute changes on the next network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="327" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a59fef265d0bcc9540b364ff1d05f7c69" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; unsigned &gt;</type>
+        <definition>HashSet&lt;unsigned&gt; Urho3D::Scene::networkUpdateComponents_</definition>
+        <argsstring></argsstring>
+        <name>networkUpdateComponents_</name>
+        <briefdescription>
+<para>Components to check for attribute changes on the next network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="329" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a51b03ae0b44f24b4c690ec8015bd0902" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> * &gt;</type>
+        <definition>PODVector&lt;Component*&gt; Urho3D::Scene::delayedDirtyComponents_</definition>
+        <argsstring></argsstring>
+        <name>delayedDirtyComponents_</name>
+        <briefdescription>
+<para>Delayed dirty notification queue for components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="331" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a5af04ab898d6b6a14a2e6dde1672c0c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::Scene::sceneMutex_</definition>
+        <argsstring></argsstring>
+        <name>sceneMutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> for the delayed dirty notification queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="333" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a8f4dcd8f5f674c705394c1cc9d71cb3b" prot="private" static="no" mutable="no">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>VariantMap Urho3D::Scene::smoothingData_</definition>
+        <argsstring></argsstring>
+        <name>smoothingData_</name>
+        <briefdescription>
+<para>Preallocated event data map for smoothing update events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="335" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1aca11228d3745973210174b5fee9a642c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::replicatedNodeID_</definition>
+        <argsstring></argsstring>
+        <name>replicatedNodeID_</name>
+        <briefdescription>
+<para>Next free non-local node ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="337" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1ac275122ee7318f725b4bbcdb9b0f40cb" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::replicatedComponentID_</definition>
+        <argsstring></argsstring>
+        <name>replicatedComponentID_</name>
+        <briefdescription>
+<para>Next free non-local component ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="339" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a461dd6c2e3c4f4d2c1af1911dc0eca4a" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::localNodeID_</definition>
+        <argsstring></argsstring>
+        <name>localNodeID_</name>
+        <briefdescription>
+<para>Next free local node ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="341" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1ae5e72374238df0b56b3c83de77d1f034" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::localComponentID_</definition>
+        <argsstring></argsstring>
+        <name>localComponentID_</name>
+        <briefdescription>
+<para>Next free local component ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="343" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a6633099e5b004ad61f9ccac195faefbf" prot="private" static="no" mutable="yes">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::checksum_</definition>
+        <argsstring></argsstring>
+        <name>checksum_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> source file checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="345" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a88f485bc6542971251d153a702deb5f9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Scene::asyncLoadingMs_</definition>
+        <argsstring></argsstring>
+        <name>asyncLoadingMs_</name>
+        <briefdescription>
+<para>Maximum milliseconds per frame to spend on async scene loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="347" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a8f4fef00ef1e08796f16fc799502d5ac" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Scene::timeScale_</definition>
+        <argsstring></argsstring>
+        <name>timeScale_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> update time scale. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="349" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a6f751c7df7a64e8c0254c1790f4068cf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Scene::elapsedTime_</definition>
+        <argsstring></argsstring>
+        <name>elapsedTime_</name>
+        <briefdescription>
+<para>Elapsed time accumulator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="351" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a851adfcc92278b2260005138cff32988" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Scene::smoothingConstant_</definition>
+        <argsstring></argsstring>
+        <name>smoothingConstant_</name>
+        <briefdescription>
+<para>Motion smoothing constant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="353" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a8f5f6bbd36f6000ea19d7726cd653d7f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Scene::snapThreshold_</definition>
+        <argsstring></argsstring>
+        <name>snapThreshold_</name>
+        <briefdescription>
+<para>Motion smoothing snap threshold. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="355" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1ab87df65af1dd40d2c07d9aaf54c35021" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::updateEnabled_</definition>
+        <argsstring></argsstring>
+        <name>updateEnabled_</name>
+        <briefdescription>
+<para>Update enabled flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="357" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1ab6e2fdf076ec13c238531524d378a537" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::asyncLoading_</definition>
+        <argsstring></argsstring>
+        <name>asyncLoading_</name>
+        <briefdescription>
+<para>Asynchronous loading flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="359" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Scene_1a7227c5ff7062e69515996569c9ea8d7f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::threadedUpdate_</definition>
+        <argsstring></argsstring>
+        <name>threadedUpdate_</name>
+        <briefdescription>
+<para>Threaded update flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="361" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aecd178e1857bd96c3e4537651fd7f60c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Scene::Scene</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Scene</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="100" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a31c0af326c14b256492dbeba6fb29866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Scene::~Scene</definition>
+        <argsstring>() override</argsstring>
+        <name>~Scene</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="102" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a3b1c5f7476658c0e7e236d20765bf670" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::Load</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>Load</name>
+        <reimplements refid="classUrho3D_1_1Node_1abff724992139c3007e51c4f61541cd5c">Load</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from binary data. Removes all existing child nodes and components first. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a1ad663ce520307b5acf22d9c88012448" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::Save</definition>
+        <argsstring>(Serializer &amp;dest) const override</argsstring>
+        <name>Save</name>
+        <reimplements refid="classUrho3D_1_1Node_1a8c4ee4fccbbdc6a87dfe8831cdfee88a">Save</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save to binary data. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a238a6b49c396e644dcaa8844110b9d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadXML</definition>
+        <argsstring>(const XMLElement &amp;source) override</argsstring>
+        <name>LoadXML</name>
+        <reimplements refid="classUrho3D_1_1Node_1a0e5f40f54d5828147d1382d4e0813c6c">LoadXML</reimplements>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from XML data. Removes all existing child nodes and components first. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1afadea687110ecd2d6074d99cb7c44853" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadJSON</definition>
+        <argsstring>(const JSONValue &amp;source) override</argsstring>
+        <name>LoadJSON</name>
+        <reimplements refid="classUrho3D_1_1Node_1a4d35bd54bbd8692b4d6f87e87cd40df9">LoadJSON</reimplements>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from JSON data. Removes all existing child nodes and components first. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a00b724dfff718639b9de12d71139499c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::MarkNetworkUpdate</definition>
+        <argsstring>() override</argsstring>
+        <name>MarkNetworkUpdate</name>
+        <reimplements refid="classUrho3D_1_1Node_1a9c4864e96c873752bed6b1f178888fde">MarkNetworkUpdate</reimplements>
+        <briefdescription>
+<para>Mark for attribute check on the next network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aef92923d99f0bdecfc24d0d677a86c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::AddReplicationState</definition>
+        <argsstring>(NodeReplicationState *state) override</argsstring>
+        <name>AddReplicationState</name>
+        <reimplements refid="classUrho3D_1_1Node_1ac10513cf04e96436a2712bd3f80c4b23">AddReplicationState</reimplements>
+        <param>
+          <type><ref refid="structUrho3D_1_1NodeReplicationState" kindref="compound">NodeReplicationState</ref> *</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Add a replication state that is tracking this scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a2773f04916fe39bed1fbf0ee08f7c1c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadXML</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>LoadXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from an XML file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ac0d709ca533b3a22a800adad0b87077e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadJSON</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>LoadJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from a JSON file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a5ac1e6f39612b29299fcb0939dcfb939" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::SaveXML</definition>
+        <argsstring>(Serializer &amp;dest, const String &amp;indentation=&quot;\t&quot;) const</argsstring>
+        <name>SaveXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>indentation</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Save to an XML file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="125" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ae2e6b27d5bc30eabcc8bc007d0527e5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::SaveJSON</definition>
+        <argsstring>(Serializer &amp;dest, const String &amp;indentation=&quot;\t&quot;) const</argsstring>
+        <name>SaveJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>indentation</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Save to a JSON file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a37aeb39ae74b420d003a597adccac577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadAsync</definition>
+        <argsstring>(File *file, LoadMode mode=LOAD_SCENE_AND_RESOURCES)</argsstring>
+        <name>LoadAsync</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref></type>
+          <declname>mode</declname>
+          <defval>LOAD_SCENE_AND_RESOURCES</defval>
+        </param>
+        <briefdescription>
+<para>Load from a binary file asynchronously. Return true if started successfully. The LOAD_RESOURCES_ONLY mode can also be used to preload resources from object prefab files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a3cd90a6194226a9279aa127222401cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadAsyncXML</definition>
+        <argsstring>(File *file, LoadMode mode=LOAD_SCENE_AND_RESOURCES)</argsstring>
+        <name>LoadAsyncXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref></type>
+          <declname>mode</declname>
+          <defval>LOAD_SCENE_AND_RESOURCES</defval>
+        </param>
+        <briefdescription>
+<para>Load from an XML file asynchronously. Return true if started successfully. The LOAD_RESOURCES_ONLY mode can also be used to preload resources from object prefab files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aa66ba16b03bd936a00b96e18da703947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::LoadAsyncJSON</definition>
+        <argsstring>(File *file, LoadMode mode=LOAD_SCENE_AND_RESOURCES)</argsstring>
+        <name>LoadAsyncJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref></type>
+          <declname>mode</declname>
+          <defval>LOAD_SCENE_AND_RESOURCES</defval>
+        </param>
+        <briefdescription>
+<para>Load from a JSON file asynchronously. Return true if started successfully. The LOAD_RESOURCES_ONLY mode can also be used to preload resources from object prefab files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a08f99dc8b2497499e581f2eb7ce1a082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::StopAsyncLoading</definition>
+        <argsstring>()</argsstring>
+        <name>StopAsyncLoading</name>
+        <briefdescription>
+<para>Stop asynchronous loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ab30e67d79d2cd0d82684a1957fc2df59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::Scene::Instantiate</definition>
+        <argsstring>(Deserializer &amp;source, const Vector3 &amp;position, const Quaternion &amp;rotation, CreateMode mode=REPLICATED)</argsstring>
+        <name>Instantiate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+          <defval>REPLICATED</defval>
+        </param>
+        <briefdescription>
+<para>Instantiate scene content from binary data. Return root node if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="137" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a4022d5d112b6a2af42bcdb8c2472c0b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::Scene::InstantiateXML</definition>
+        <argsstring>(const XMLElement &amp;source, const Vector3 &amp;position, const Quaternion &amp;rotation, CreateMode mode=REPLICATED)</argsstring>
+        <name>InstantiateXML</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+          <defval>REPLICATED</defval>
+        </param>
+        <briefdescription>
+<para>Instantiate scene content from XML data. Return root node if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="139" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a7155c1d625afe08c35fdafc0e23f10ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::Scene::InstantiateXML</definition>
+        <argsstring>(Deserializer &amp;source, const Vector3 &amp;position, const Quaternion &amp;rotation, CreateMode mode=REPLICATED)</argsstring>
+        <name>InstantiateXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+          <defval>REPLICATED</defval>
+        </param>
+        <briefdescription>
+<para>Instantiate scene content from XML data. Return root node if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a562e0f74f7f291dc46818162a5ce85cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::Scene::InstantiateJSON</definition>
+        <argsstring>(const JSONValue &amp;source, const Vector3 &amp;position, const Quaternion &amp;rotation, CreateMode mode=REPLICATED)</argsstring>
+        <name>InstantiateJSON</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+          <defval>REPLICATED</defval>
+        </param>
+        <briefdescription>
+<para>Instantiate scene content from JSON data. Return root node if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ab3100919edea4b46a1d05ef8fff80fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::Scene::InstantiateJSON</definition>
+        <argsstring>(Deserializer &amp;source, const Vector3 &amp;position, const Quaternion &amp;rotation, CreateMode mode=REPLICATED)</argsstring>
+        <name>InstantiateJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+          <defval>REPLICATED</defval>
+        </param>
+        <briefdescription>
+<para>Instantiate scene content from JSON data. Return root node if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a45ba116883b4aca1bb0572c485788172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::Clear</definition>
+        <argsstring>(bool clearReplicated=true, bool clearLocal=true)</argsstring>
+        <name>Clear</name>
+        <param>
+          <type>bool</type>
+          <declname>clearReplicated</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clearLocal</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Clear scene completely of either replicated, local or all nodes and components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a44c46009d055c833246a44cfd95db635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetUpdateEnabled</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUpdateEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable scene update. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ac8b0f11b63f431f1e605dd7379f39ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetTimeScale</definition>
+        <argsstring>(float scale)</argsstring>
+        <name>SetTimeScale</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set update time scale. 1.0 = real time (default). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="156" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a1ea4268272c328699017abfd3407eb30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetElapsedTime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetElapsedTime</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set elapsed time in seconds. This can be used to prevent inaccuracy in the timer if the scene runs for a long time. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a1a98707b3d010c1260553d2465dc1848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetSmoothingConstant</definition>
+        <argsstring>(float constant)</argsstring>
+        <name>SetSmoothingConstant</name>
+        <param>
+          <type>float</type>
+          <declname>constant</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set network client motion smoothing constant. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a8290804ab553ae30abe3d6ad00869e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetSnapThreshold</definition>
+        <argsstring>(float threshold)</argsstring>
+        <name>SetSnapThreshold</name>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set network client motion smoothing snap threshold. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="165" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a3fd5ebce11f76099b794ceadc6117bf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetAsyncLoadingMs</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>SetAsyncLoadingMs</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum milliseconds per frame to spend on async scene loading. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="168" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1adb229515c3873cb6dbafe3ac58ab2053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::AddRequiredPackageFile</definition>
+        <argsstring>(PackageFile *package)</argsstring>
+        <name>AddRequiredPackageFile</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> *</type>
+          <declname>package</declname>
+        </param>
+        <briefdescription>
+<para>Add a required package file for networking. To be called on the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="170" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a50ef7c9239ecc6fd3a2c77604fe72f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::ClearRequiredPackageFiles</definition>
+        <argsstring>()</argsstring>
+        <name>ClearRequiredPackageFiles</name>
+        <briefdescription>
+<para>Clear required package files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ae57770dd69fc9f167d3b3954c6d766e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::RegisterVar</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RegisterVar</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Register a node user variable hash reverse mapping (for editing). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a399d1f929856f16fa90af3154340cd8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::UnregisterVar</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>UnregisterVar</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Unregister a node user variable hash reverse mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aa696692927ca2360290f70d4d0ed73fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::UnregisterAllVars</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterAllVars</name>
+        <briefdescription>
+<para>Clear all registered node user variable hash reverse mappings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="178" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a2c1abfd03e7eee3d0f86b6fd7709209a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::Scene::GetNode</definition>
+        <argsstring>(unsigned id) const</argsstring>
+        <name>GetNode</name>
+        <param>
+          <type>unsigned</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Return node from the whole scene by ID, or null if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="181" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a32eb80c8181d83ab1c3c0082a62eee39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+        <definition>Component* Urho3D::Scene::GetComponent</definition>
+        <argsstring>(unsigned id) const</argsstring>
+        <name>GetComponent</name>
+        <param>
+          <type>unsigned</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Return component from the whole scene by ID, or null if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="183" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a9b72e4bbab23427d7265fce529a67e18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::GetNodesWithTag</definition>
+        <argsstring>(PODVector&lt; Node * &gt; &amp;dest, const String &amp;tag) const</argsstring>
+        <name>GetNodesWithTag</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> * &gt; &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Get nodes with specific tag from the whole scene, return false if empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="185" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a3bb23961ac954692216aa0f34cc546f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::IsUpdateEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsUpdateEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether updates are enabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="189" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1afb19f909e12d09ec9884e192a5843ffc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::IsAsyncLoading</definition>
+        <argsstring>() const</argsstring>
+        <name>IsAsyncLoading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether an asynchronous loading operation is in progress. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="193" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ad71997f0cd10c31ff725a5efc71b401d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Scene::GetAsyncProgress</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAsyncProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return asynchronous loading progress between 0.0 and 1.0, or 1.0 if not in progress. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="197" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1af090f042ca4ddcc432af8841007b8a46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref></type>
+        <definition>LoadMode Urho3D::Scene::GetAsyncLoadMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAsyncLoadMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the load mode of the current asynchronous loading operation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="201" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a12059dc357a3080d9122e93c184baaa6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Scene::GetFileName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return source file name. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="205" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aa0e1014070edae85d8088d5aab361184" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::GetChecksum</definition>
+        <argsstring>() const</argsstring>
+        <name>GetChecksum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return source file checksum. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="209" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ac86d58c3b2cae8506016bee6f2194478" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Scene::GetTimeScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return update time scale. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="213" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a15626a9ebb993c67fe50701f158626c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Scene::GetElapsedTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetElapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return elapsed time in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="217" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="217" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a5f12adcba9cedf49639ea2cfc9ead7be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Scene::GetSmoothingConstant</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSmoothingConstant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return motion smoothing constant. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="221" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a46a89ab84b3647c017fc6d4188f085d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Scene::GetSnapThreshold</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSnapThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return motion smoothing snap threshold. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="225" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a2c8dd9d17bea315cfd11676df7d3d8c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Scene::GetAsyncLoadingMs</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAsyncLoadingMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum milliseconds per frame to spend on async loading. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="229" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ab5d17b0edd7411051dcc387e8733cae2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> &gt; &gt; &amp;</type>
+        <definition>const Vector&lt;SharedPtr&lt;PackageFile&gt; &gt;&amp; Urho3D::Scene::GetRequiredPackageFiles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRequiredPackageFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return required package files. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="233" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ab86b9bf5889dfd5732f4f2c1f58b8357" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Scene::GetVarName</definition>
+        <argsstring>(StringHash hash) const</argsstring>
+        <name>GetVarName</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>hash</declname>
+        </param>
+        <briefdescription>
+<para>Return a node user variable name, or empty if not registered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="236" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1afb949e0fedbb2becb9aa7a3dfb0ed7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::Update</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Update scene. Called by HandleUpdate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a6ccdc02bb8807ec15e9d095552b47084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::BeginThreadedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>BeginThreadedUpdate</name>
+        <briefdescription>
+<para>Begin a threaded update. During threaded update components can choose to delay dirty processing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="241" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a43a363d398b5622f092849953f8fb912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::EndThreadedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>EndThreadedUpdate</name>
+        <briefdescription>
+<para>End a threaded update. Notify components that marked themselves for delayed dirty processing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="243" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a3cd5eac8dc19288118ed5578257a17cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::DelayedMarkedDirty</definition>
+        <argsstring>(Component *component)</argsstring>
+        <name>DelayedMarkedDirty</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+<para>Add a component to the delayed dirty notify queue. Is thread-safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="245" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a5a3132086218d7b7e6d8f3ccd50f7249" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Scene::IsThreadedUpdate</definition>
+        <argsstring>() const</argsstring>
+        <name>IsThreadedUpdate</name>
+        <briefdescription>
+<para>Return threaded update flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="248" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ad9c34a640c81736de56d397c0dbd3cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::GetFreeNodeID</definition>
+        <argsstring>(CreateMode mode)</argsstring>
+        <name>GetFreeNodeID</name>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Get free node ID, either non-local or local. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="251" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a1011fadd1f7da49e3eb59b34d0d5f3de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Scene::GetFreeComponentID</definition>
+        <argsstring>(CreateMode mode)</argsstring>
+        <name>GetFreeComponentID</name>
+        <param>
+          <type><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Get free component ID, either non-local or local. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="253" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a33cdc37dfa0f4d34961be75247c5c991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::NodeTagAdded</definition>
+        <argsstring>(Node *node, const String &amp;tag)</argsstring>
+        <name>NodeTagAdded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Cache node by tag if tag not zero, no checking if already added. Used internaly in <ref refid="classUrho3D_1_1Node_1af02551fed0c1b325fd48332936062742" kindref="member">Node::AddTag</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="258" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a1b9a5cc5b133c9f25c67e9d03de4c28a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::NodeTagRemoved</definition>
+        <argsstring>(Node *node, const String &amp;tag)</argsstring>
+        <name>NodeTagRemoved</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Cache node by tag if tag not zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="260" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1af7c4ba456a0fdbd205c063761126b02e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::NodeAdded</definition>
+        <argsstring>(Node *node)</argsstring>
+        <name>NodeAdded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> added. Assign scene pointer and add to ID map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="263" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ae689b835fa42ad65090796e0a88d2410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::NodeRemoved</definition>
+        <argsstring>(Node *node)</argsstring>
+        <name>NodeRemoved</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> removed. Remove from ID map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="265" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a6b1a145dd07c1d09ac9126c35577aa09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::ComponentAdded</definition>
+        <argsstring>(Component *component)</argsstring>
+        <name>ComponentAdded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> added. Add to ID map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="267" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a72dbbc1c1e593069b21ec3e608d39ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::ComponentRemoved</definition>
+        <argsstring>(Component *component)</argsstring>
+        <name>ComponentRemoved</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> removed. Remove from ID map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="269" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a2feb9c3be8b1a8a080b33879a4ff29fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::SetVarNamesAttr</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>SetVarNamesAttr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set node user variable reverse mappings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="271" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a6474fffb49a8fb541ae930341589cb56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Scene::GetVarNamesAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVarNamesAttr</name>
+        <briefdescription>
+<para>Return node user variable reverse mappings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="273" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a355bbd2fc23e394d8b8a4cad0090519c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::PrepareNetworkUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>PrepareNetworkUpdate</name>
+        <briefdescription>
+<para>Prepare network update by comparing attributes and marking replication states dirty as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="275" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ad75c80d3e505a49a6ea069549477ee41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::CleanupConnection</definition>
+        <argsstring>(Connection *connection)</argsstring>
+        <name>CleanupConnection</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> *</type>
+          <declname>connection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clean up all references to a network connection that is about to be removed. MANUAL_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="278" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ad1907f6104a0367b0e77672a3b36a347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::MarkNetworkUpdate</definition>
+        <argsstring>(Node *node)</argsstring>
+        <name>MarkNetworkUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Mark a node for attribute check on the next network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="280" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a7e6a52ecf14db5d598710f5ae05d2932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::MarkNetworkUpdate</definition>
+        <argsstring>(Component *component)</argsstring>
+        <name>MarkNetworkUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+<para>Mark a component for attribute check on the next network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="282" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ab30a771ebbe990bc6746e8cd9f180bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::MarkReplicationDirty</definition>
+        <argsstring>(Node *node)</argsstring>
+        <name>MarkReplicationDirty</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Mark a node dirty in scene replication states. The node does not need to have own replication state yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="284" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1afc62cfe6e0befb7e5023009f7a4700f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+        <definition>Component* Urho3D::Node::GetComponent</definition>
+        <argsstring>(StringHash type, bool recursive=false) const</argsstring>
+        <name>GetComponent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>MANUAL_BIND. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="93" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a8ec8fc257e7e77cc1106fe9dc14272ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * Urho3D::Node::GetComponent</definition>
+        <argsstring>(bool recursive=false) const</argsstring>
+        <name>GetComponent</name>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>MANUAL_BIND. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="93" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Node.h" bodystart="781" bodyend="781"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aee9138da9786316c8355e6bcec11a8cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Node::SaveXML</definition>
+        <argsstring>(XMLElement &amp;dest) const override</argsstring>
+        <name>SaveXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>MANUAL_BIND. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="95" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a224aa8874373d01d6e1ed9e5a7a1498b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Node::SaveXML</definition>
+        <argsstring>(Serializer &amp;dest, const String &amp;indentation=&quot;\t&quot;) const</argsstring>
+        <name>SaveXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>indentation</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+<para>MANUAL_BIND. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="95" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a47b9c64700e94b5b2bdc2df02b4ba7f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Node::SaveJSON</definition>
+        <argsstring>(JSONValue &amp;dest) const override</argsstring>
+        <name>SaveJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>MANUAL_BIND. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="97" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a72ab6ab2922a29d780e57dd5b4d31a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Node::SaveJSON</definition>
+        <argsstring>(Serializer &amp;dest, const String &amp;indentation=&quot;\t&quot;) const</argsstring>
+        <name>SaveJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>indentation</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+<para>MANUAL_BIND. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="97" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a459bd56019d800840e3576d8c66fa748" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Scene::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> must be registered first. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="105" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a97fb1222bd2f38e6c1c433c0b7e54d40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Urho3D::Scene::IsReplicatedID</definition>
+        <argsstring>(unsigned id)</argsstring>
+        <name>IsReplicatedID</name>
+        <param>
+          <type>unsigned</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Return whether the specified id is a replicated id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="255" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="255" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ad3307d7a01b61f9b6ded6cff9a44f857" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::HandleUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle the logic update event to update the scene, if active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="288" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a0720f208fdde56993e2cf3f871386353" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::HandleResourceBackgroundLoaded</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleResourceBackgroundLoaded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle a background loaded resource completing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="290" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a625934c3af5fb17f25a09767d4c0cc6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::UpdateAsyncLoading</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateAsyncLoading</name>
+        <briefdescription>
+<para>Update asynchronous loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="292" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a019a062421bf4e2d4f5f213245008f28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::FinishAsyncLoading</definition>
+        <argsstring>()</argsstring>
+        <name>FinishAsyncLoading</name>
+        <briefdescription>
+<para>Finish asynchronous loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="294" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1aad4b930c9f2dc906c9cf960b2dfeebb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::FinishLoading</definition>
+        <argsstring>(Deserializer *source)</argsstring>
+        <name>FinishLoading</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Finish loading. Sets the scene filename and checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="296" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a0f602c744a0a3b830bdc60268ec8834a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::FinishSaving</definition>
+        <argsstring>(Serializer *dest) const</argsstring>
+        <name>FinishSaving</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Finish saving. Sets the scene filename and checksum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="298" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1ac16db4ab55b6efb9c21465cbe9783165" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::PreloadResources</definition>
+        <argsstring>(File *file, bool isSceneFile)</argsstring>
+        <name>PreloadResources</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isSceneFile</declname>
+        </param>
+        <briefdescription>
+<para>Preload resources from a binary scene or object prefab file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="300" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a14fbb19b50ac6d7351a52a999bdb6077" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::PreloadResourcesXML</definition>
+        <argsstring>(const XMLElement &amp;element)</argsstring>
+        <name>PreloadResourcesXML</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Preload resources from an XML scene or object prefab file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="302" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Scene_1a96adc07853e2b6104564db2d10b22fdb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Scene::PreloadResourcesJSON</definition>
+        <argsstring>(const JSONValue &amp;value)</argsstring>
+        <name>PreloadResourcesJSON</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Preload resources from a JSON scene or object prefab file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="304" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Root scene node, represents the whole scene. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Scene</label>
+        <link refid="classUrho3D_1_1Scene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Scene</label>
+        <link refid="classUrho3D_1_1Scene"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" line="87" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h" bodystart="88" bodyend="362"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Node_1aefe578aa19c22b27311a4377239cca01" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddChild</name></member>
+      <member refid="classUrho3D_1_1Node_1a3792a0c2e23b120ac879c2931d6f9dc4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a1df1e1bfa613bbd82fe6624c211db754" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddListener</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Scene_1aef92923d99f0bdecfc24d0d677a86c46" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Scene_1adb229515c3873cb6dbafe3ac58ab2053" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddRequiredPackageFile</name></member>
+      <member refid="classUrho3D_1_1Node_1af02551fed0c1b325fd48332936062742" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddTag</name></member>
+      <member refid="classUrho3D_1_1Node_1a14a7594373e636559db90f9b8374f7de" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddTags</name></member>
+      <member refid="classUrho3D_1_1Node_1a9629ef32d32424c031e40adae5454115" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AddTags</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Node_1a1885ad7b7ac3bacdb3573bc8c3cfdc67" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab6e2fdf076ec13c238531524d378a537" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>asyncLoading_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a88f485bc6542971251d153a702deb5f9" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>asyncLoadingMs_</name></member>
+      <member refid="classUrho3D_1_1Scene_1ac7c95999e6efd93a722ea7b225ad1313" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>asyncProgress_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a6ccdc02bb8807ec15e9d095552b47084" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>BeginThreadedUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Scene_1a6633099e5b004ad61f9ccac195faefbf" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>checksum_</name></member>
+      <member refid="classUrho3D_1_1Scene_1ad75c80d3e505a49a6ea069549477ee41" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Scene_1a45ba116883b4aca1bb0572c485788172" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1Scene_1a50ef7c9239ecc6fd3a2c77604fe72f96" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ClearRequiredPackageFiles</name></member>
+      <member refid="classUrho3D_1_1Node_1a033196eba16ad121cc3fbe0b92c5b1bd" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Clone</name></member>
+      <member refid="classUrho3D_1_1Node_1ade53689f17f6185657c0270e88389790" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CloneComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a9d4171e99af1d88e10c3eeb975273093" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CloneComponent</name></member>
+      <member refid="classUrho3D_1_1Scene_1a6b1a145dd07c1d09ac9126c35577aa09" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ComponentAdded</name></member>
+      <member refid="classUrho3D_1_1Scene_1a72dbbc1c1e593069b21ec3e608d39ba6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ComponentRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Node_1a1e321c5f0664705787912dd54223f47c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CreateChild</name></member>
+      <member refid="classUrho3D_1_1Node_1ac8be8adfc90521e873d579bdd6b348b6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CreateChild</name></member>
+      <member refid="classUrho3D_1_1Node_1ad131b54b425d21af58db291d8d987683" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CreateComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a49c905a6e604593b39dcdb4bc7c1fae6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CreateComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1aaccf3abfa6ddd645fde063caa59a20fc" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>CreateTemporaryChild</name></member>
+      <member refid="classUrho3D_1_1Scene_1a51b03ae0b44f24b4c690ec8015bd0902" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>delayedDirtyComponents_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a3cd5eac8dc19288118ed5578257a17cb" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>DelayedMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Scene_1a6f751c7df7a64e8c0254c1790f4068cf" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>elapsedTime_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a43a363d398b5622f092849953f8fb912" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>EndThreadedUpdate</name></member>
+      <member refid="classUrho3D_1_1Scene_1a2f6b10d53a025cefaad6c9c02dfb1b9d" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>fileName_</name></member>
+      <member refid="classUrho3D_1_1Node_1a720b468b737d0053ed7c9187f92ae907" prot="protected" virt="virtual"><scope>Urho3D::Scene</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Scene_1a019a062421bf4e2d4f5f213245008f28" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>FinishAsyncLoading</name></member>
+      <member refid="classUrho3D_1_1Scene_1aad4b930c9f2dc906c9cf960b2dfeebb3" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>FinishLoading</name></member>
+      <member refid="classUrho3D_1_1Scene_1a0f602c744a0a3b830bdc60268ec8834a" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>FinishSaving</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Scene_1a2c8dd9d17bea315cfd11676df7d3d8c4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAsyncLoadingMs</name></member>
+      <member refid="classUrho3D_1_1Scene_1af090f042ca4ddcc432af8841007b8a46" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAsyncLoadMode</name></member>
+      <member refid="classUrho3D_1_1Scene_1ad71997f0cd10c31ff725a5efc71b401d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAsyncProgress</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Scene_1aa0e1014070edae85d8088d5aab361184" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChecksum</name></member>
+      <member refid="classUrho3D_1_1Node_1a49b9f3873f1ead1f4d8491039568dce0" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChild</name></member>
+      <member refid="classUrho3D_1_1Node_1af7abdc77f8ce50d7dc68aeb2a1ddcc34" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChild</name></member>
+      <member refid="classUrho3D_1_1Node_1af0e07eb82fb9f8c5d365b3eb48963b7b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChild</name></member>
+      <member refid="classUrho3D_1_1Node_1a0bf3e1059bc90a21ea63baaa6260fa91" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChild</name></member>
+      <member refid="classUrho3D_1_1Node_1a5c6661b65a885e44eb81267a15e48ef9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1a472ea5711f6c8acb5f568befa6fbfa96" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1a7188cc1aa9d8d199ca923a9cf2734779" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1a8018ae5a2c8035dd296966c0508916c2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildrenWithComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a3eef3ddc73dcb07a99c991e112e0a9b9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildrenWithComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a607c7e5c25072218d0d7ca1feaac4337" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildrenWithComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a246892c857e7e3924285ce7a128c4130" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildrenWithTag</name></member>
+      <member refid="classUrho3D_1_1Node_1abe63528767e2fd9c67f2b4c01ad2ca82" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetChildrenWithTag</name></member>
+      <member refid="classUrho3D_1_1Scene_1a32eb80c8181d83ab1c3c0082a62eee39" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Scene_1afc62cfe6e0befb7e5023009f7a4700f6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Scene_1a8ec8fc257e7e77cc1106fe9dc14272ab" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1afc62cfe6e0befb7e5023009f7a4700f6" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a8ec8fc257e7e77cc1106fe9dc14272ab" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a1529e0de87db45bbb1e7cf8dc9e12f53" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1af990e0576366231b3c72299685a3d436" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1aa7804af6d445723f28b6d32e9d070000" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Node_1a56909c581571693daf83b9a0048a616f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Node_1ad8aafff80403e2a27608c352db15dd19" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetDerivedComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a2ec5ed0ada9cbf2db27b31edd2a1307f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetDerivedComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1a34f114f3145135f846a3354e152c2533" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetDirection</name></member>
+      <member refid="classUrho3D_1_1Scene_1a15626a9ebb993c67fe50701f158626c7" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetElapsedTime</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Scene_1a12059dc357a3080d9122e93c184baaa6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetFileName</name></member>
+      <member refid="classUrho3D_1_1Scene_1a1011fadd1f7da49e3eb59b34d0d5f3de" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetFreeComponentID</name></member>
+      <member refid="classUrho3D_1_1Scene_1ad9c34a640c81736de56d397c0dbd3cce" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetFreeNodeID</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Node_1a1ce16fa386bfc7b728711030eb941723" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Node_1a34334d366a59054118a257c95b00356b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetListeners</name></member>
+      <member refid="classUrho3D_1_1Node_1a7cb5fa15fa6b3e96f2fb9eb4f8b57cbf" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Node_1af4ea811eb622efbd7b063b2d08ed6459" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Node_1a549388e6ce847acb7817c1b69b0b6941" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNetParentAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1a0df0aa85d5da3d35f3bd809850aafd27" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNetPositionAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1a12612bea7e8cba1a3cfb7fea23ae3e78" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNetRotationAttr</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Scene_1a2c1abfd03e7eee3d0f86b6fd7709209a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Scene_1a9b72e4bbab23427d7265fce529a67e18" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNodesWithTag</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Node_1ae9d6bb0459d724de7081abf910f4ed8d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1a60c43f7ea182ddf2ea02b21524858161" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumComponents</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Node_1a1a5cd5b061e493121daed7c984ef36c8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumNetworkComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1a6af91215228310b701e9ae1a0abda803" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumPersistentChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1a8fab5738ac8d23c188a3c309605609f9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetNumPersistentComponents</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1abe0d1fcd4e9af415d9c7f5c688d6b72b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetOrCreateComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a7a43018a941a7c518f9a5691f6a82d9d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetOrCreateComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a9c48a42e911f778fccef88dd2839e927" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetOwner</name></member>
+      <member refid="classUrho3D_1_1Node_1a7103948cd164a9d44525946e0c5537cc" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetParent</name></member>
+      <member refid="classUrho3D_1_1Node_1a01dd4e8f7434dca8121428a4774f98a4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetParentComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a2c8ca6e2a5af2feefbd4589c637d202a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetParentComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a9f3ef313fa15b2400434e1ccf8b206f4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetParentDerivedComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1afcc44bc478d24d912feaa72e47783b9f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1Node_1ac433c28cb92bfcfa8d64611e7a50a6d4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetPosition2D</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab5d17b0edd7411051dcc387e8733cae2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetRequiredPackageFiles</name></member>
+      <member refid="classUrho3D_1_1Node_1aef0e9243e131903452837694d672da96" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetRight</name></member>
+      <member refid="classUrho3D_1_1Node_1af6cba96c72a4d53a9ca1a6519ceed9ec" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetRotation</name></member>
+      <member refid="classUrho3D_1_1Node_1a21ed92710cb92cc64e552ebb9e548e66" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetRotation2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a45f48fb479c1dfc60189f83bef29021c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetScale</name></member>
+      <member refid="classUrho3D_1_1Node_1ab7cc52c0e53ce916e729cff69f54dc19" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetScale2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a9c57bc1539c33614c36f8a1453d62e9a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Node_1aee2647686dd036f0e4a04eaea909ceef" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetSignedWorldScale</name></member>
+      <member refid="classUrho3D_1_1Scene_1a5f12adcba9cedf49639ea2cfc9ead7be" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetSmoothingConstant</name></member>
+      <member refid="classUrho3D_1_1Scene_1a46a89ab84b3647c017fc6d4188f085d3" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetSnapThreshold</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Node_1a0709b713262ad1377be36ed3ff56a698" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetTags</name></member>
+      <member refid="classUrho3D_1_1Scene_1ac86d58c3b2cae8506016bee6f2194478" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetTimeScale</name></member>
+      <member refid="classUrho3D_1_1Node_1a7f36ffbac48689b8453d03c6a57a776f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetTransform</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Scene</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Scene</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Scene</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Node_1a14b834f5256b437209fd540c05f7af28" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetUp</name></member>
+      <member refid="classUrho3D_1_1Node_1aa0ca045c9abb73c1512fe1209a497fbd" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetVar</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab86b9bf5889dfd5732f4f2c1f58b8357" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetVarName</name></member>
+      <member refid="classUrho3D_1_1Scene_1a6474fffb49a8fb541ae930341589cb56" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetVarNamesAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1a3942a1d21a32499b4fd3f34699e12a13" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetVars</name></member>
+      <member refid="classUrho3D_1_1Node_1afe17e6e94b7ab99663c827442db45a5e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldDirection</name></member>
+      <member refid="classUrho3D_1_1Node_1a8f3fe7808b7af4975ddb21be8a269ece" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldPosition</name></member>
+      <member refid="classUrho3D_1_1Node_1a4c310b39df932a228882216e5fb00039" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldPosition2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a8dfff3b0a0a5b9431120636901cdfdf9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldRight</name></member>
+      <member refid="classUrho3D_1_1Node_1ad74175e15dfaa86263299e355a2d49ed" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldRotation</name></member>
+      <member refid="classUrho3D_1_1Node_1a2665d6022346d350ef02ed83293fc884" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldRotation2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a8ae450b752efd7da057b842882d28a23" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldScale</name></member>
+      <member refid="classUrho3D_1_1Node_1a618a3a5b30014ea86281214efa91d2bf" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldScale2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a39a71635548b048079a15cc563a02895" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1a91550fd6f58e8be121b4db00eb19718f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>GetWorldUp</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Scene_1a0720f208fdde56993e2cf3f871386353" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HandleResourceBackgroundLoaded</name></member>
+      <member refid="classUrho3D_1_1Scene_1ad3307d7a01b61f9b6ded6cff9a44f857" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HandleUpdate</name></member>
+      <member refid="classUrho3D_1_1Node_1a01570d66b89fd1fa1ee8305cf00e9a3b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HasComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a6934ea2063a94f8a1e05c4b525a2972c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HasComponent</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Node_1a848649755f8fd1b088baccd8a7e80ca1" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>HasTag</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab30e67d79d2cd0d82684a1957fc2df59" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Instantiate</name></member>
+      <member refid="classUrho3D_1_1Scene_1a562e0f74f7f291dc46818162a5ce85cf" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>InstantiateJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab3100919edea4b46a1d05ef8fff80fda" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>InstantiateJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a4022d5d112b6a2af42bcdb8c2472c0b2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>InstantiateXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1a7155c1d625afe08c35fdafc0e23f10ea" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>InstantiateXML</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Scene_1afb19f909e12d09ec9884e192a5843ffc" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsAsyncLoading</name></member>
+      <member refid="classUrho3D_1_1Node_1a694f0e597e47193dc169cd672db60b08" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsChildOf</name></member>
+      <member refid="classUrho3D_1_1Node_1ab2562e789e96a8e66167aa843e132a89" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsDirty</name></member>
+      <member refid="classUrho3D_1_1Node_1a36ffa108037ab29617bf178fcb4ec1da" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Node_1a5de99365f99d842461c402aa09cb630d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsEnabledSelf</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Node_1a9db232116d4278bd3e10c365d2ef57d5" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Scene_1a97fb1222bd2f38e6c1c433c0b7e54d40" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsReplicatedID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Scene_1a5a3132086218d7b7e6d8f3ccd50f7249" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsThreadedUpdate</name></member>
+      <member refid="classUrho3D_1_1Scene_1a3bb23961ac954692216aa0f34cc546f1" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>IsUpdateEnabled</name></member>
+      <member refid="classUrho3D_1_1Scene_1a3b1c5f7476658c0e7e236d20765bf670" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Node_1a81a34b9111afba558145d81e42ad640e" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Scene_1a37aeb39ae74b420d003a597adccac577" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LoadAsync</name></member>
+      <member refid="classUrho3D_1_1Scene_1aa66ba16b03bd936a00b96e18da703947" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LoadAsyncJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a3cd90a6194226a9279aa127222401cf4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LoadAsyncXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1afadea687110ecd2d6074d99cb7c44853" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1ac0d709ca533b3a22a800adad0b87077e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Node_1a5e1c150d8d013c7550537c5251bf86f7" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a238a6b49c396e644dcaa8844110b9d1b" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1a2773f04916fe39bed1fbf0ee08f7c1c0" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Node_1ab44e461de1af5859a176dfaa75ec95bd" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1ae5e72374238df0b56b3c83de77d1f034" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>localComponentID_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a14be6f71a9a6f9fbd06ff00901b92dbb" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>localComponents_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a461dd6c2e3c4f4d2c1af1911dc0eca4a" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>localNodeID_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a72a11fe6e131bfdc16910cb55ed8a311" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>localNodes_</name></member>
+      <member refid="classUrho3D_1_1Node_1ae68437fbafc44ed6aa710344d5517d24" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LocalToWorld</name></member>
+      <member refid="classUrho3D_1_1Node_1a281e0da78c496fa63e96cca1502b1a39" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LocalToWorld</name></member>
+      <member refid="classUrho3D_1_1Node_1a244af254651d7d76ebc453039edc18e7" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LocalToWorld2D</name></member>
+      <member refid="classUrho3D_1_1Node_1afb32a557cfa6483f55c896046efb9b4a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>LookAt</name></member>
+      <member refid="classUrho3D_1_1Node_1a729772e9f5530a69584e7c3a6a8722ce" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>MarkDirty</name></member>
+      <member refid="classUrho3D_1_1Scene_1a00b724dfff718639b9de12d71139499c" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Scene_1ad1907f6104a0367b0e77672a3b36a347" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Scene_1a7e6a52ecf14db5d598710f5ae05d2932" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab30a771ebbe990bc6746e8cd9f180bf2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>MarkReplicationDirty</name></member>
+      <member refid="classUrho3D_1_1Node_1a473c783c66c1bc0b497878bc787b1451" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>MarkReplicationDirty</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Node_1a54684a31b58821800ba95ddb92f1eadd" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a59fef265d0bcc9540b364ff1d05f7c69" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>networkUpdateComponents_</name></member>
+      <member refid="classUrho3D_1_1Scene_1ad805f53dc81133d75d02ee4ea9ab48e4" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>networkUpdateNodes_</name></member>
+      <member refid="classUrho3D_1_1Node_1ae635cf5d3ed5ad013c01fb9cb1cd9275" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Node</name></member>
+      <member refid="classUrho3D_1_1Scene_1af7c4ba456a0fdbd205c063761126b02e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>NodeAdded</name></member>
+      <member refid="classUrho3D_1_1Scene_1ae689b835fa42ad65090796e0a88d2410" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>NodeRemoved</name></member>
+      <member refid="classUrho3D_1_1Scene_1a33cdc37dfa0f4d34961be75247c5c991" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>NodeTagAdded</name></member>
+      <member refid="classUrho3D_1_1Scene_1a1b9a5cc5b133c9f25c67e9d03de4c28a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>NodeTagRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Node_1ae42a19a160bffd6c77e3a0a901ece94b" prot="protected" virt="virtual"><scope>Urho3D::Scene</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Node_1a40cae184b813fc5397e6ba64e9f8a2c0" prot="protected" virt="virtual"><scope>Urho3D::Scene</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Node_1a44cf23e930191f58f44331010d7ab2c0" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Pitch</name></member>
+      <member refid="classUrho3D_1_1Scene_1ac16db4ab55b6efb9c21465cbe9783165" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>PreloadResources</name></member>
+      <member refid="classUrho3D_1_1Scene_1a96adc07853e2b6104564db2d10b22fdb" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>PreloadResourcesJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a14fbb19b50ac6d7351a52a999bdb6077" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>PreloadResourcesXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1a355bbd2fc23e394d8b8a4cad0090519c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Scene_1a459bd56019d800840e3576d8c66fa748" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1Scene_1ae57770dd69fc9f167d3b3954c6d766e4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RegisterVar</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Node_1a926c3fc7ece12b5c4d0f9d05e54d8b56" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Node_1a432501ae32674b60633110841ee883f6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveAllChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1ae9650e46868da932f7edc28e049531a5" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveAllComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1a7d20c591eb136f06b302edbe42fd674b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveAllTags</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Node_1a3ffe2c6ea129ee77f6d2ed1d4a67f41f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveChild</name></member>
+      <member refid="classUrho3D_1_1Node_1ae184dc647767b28ff234b1c4e699370e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveChildren</name></member>
+      <member refid="classUrho3D_1_1Node_1a17d699c06496ef6996848ae9be33ffab" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a8975a9a26a34a403e71b0a8ed5630e79" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a461bf7180ffd7a5247a3fa5b57ce1524" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveComponent</name></member>
+      <member refid="classUrho3D_1_1Node_1a533ee53c16f6100f82ad00068dacbe8a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1ae06c5d8e606a8ac00aa2960d0e2bc979" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveComponents</name></member>
+      <member refid="classUrho3D_1_1Node_1ab6c88401cefdaeccae1e098de0cf3109" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveComponents</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Node_1a98f711e232ccff9b596e7846bdffab96" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveListener</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Node_1ad325f3f7bc7b89b57bb8624b8c052e90" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RemoveTag</name></member>
+      <member refid="classUrho3D_1_1Node_1af784e77468f5206224f879756733b575" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ReorderComponent</name></member>
+      <member refid="classUrho3D_1_1Scene_1ac275122ee7318f725b4bbcdb9b0f40cb" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>replicatedComponentID_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a3595a0a598f58b55deac1e947c7cd2c4" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>replicatedComponents_</name></member>
+      <member refid="classUrho3D_1_1Scene_1aca11228d3745973210174b5fee9a642c" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>replicatedNodeID_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a95a30f2094085571249ba75fe5cba43e" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>replicatedNodes_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a2ea5b99cda7b7ccf18b2a055e901ed59" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>requiredPackageFiles_</name></member>
+      <member refid="classUrho3D_1_1Node_1acea4b5e5a8f1f46d78c32afee01fd8d4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ResetDeepEnabled</name></member>
+      <member refid="classUrho3D_1_1Node_1ae0aa7019bd825d42999ea8dde5416c8f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ResetScene</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Scene_1a608b0df38e0e6e6c4db2264ab6f2f903" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>resolver_</name></member>
+      <member refid="classUrho3D_1_1Node_1ad2b93f26c0f0ad034aa4313eacb542c3" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Roll</name></member>
+      <member refid="classUrho3D_1_1Node_1a29dcc8e9fda99ed85de6a63fda84f598" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Rotate</name></member>
+      <member refid="classUrho3D_1_1Node_1a84fa8dafce0af171031753e4cab2f2c5" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Rotate2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a071a25236d4886d8a8a7c7ab8f583ace" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RotateAround</name></member>
+      <member refid="classUrho3D_1_1Node_1a39a5a6b4946e6cd3a0ce7eef4e376a82" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>RotateAround2D</name></member>
+      <member refid="classUrho3D_1_1Scene_1a1ad663ce520307b5acf22d9c88012448" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Node_1a71d468b986700ca1cc9833bff524f348" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Scene_1ae2e6b27d5bc30eabcc8bc007d0527e5d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a47b9c64700e94b5b2bdc2df02b4ba7f7" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a72ab6ab2922a29d780e57dd5b4d31a77" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Node_1a47b9c64700e94b5b2bdc2df02b4ba7f7" prot="public" virt="virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Scene_1a5ac1e6f39612b29299fcb0939dcfb939" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1aee9138da9786316c8355e6bcec11a8cf" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Scene_1a224aa8874373d01d6e1ed9e5a7a1498b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Node_1aee9138da9786316c8355e6bcec11a8cf" prot="public" virt="virtual" ambiguityscope="Urho3D::Node::"><scope>Urho3D::Scene</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Node_1a3c729240f9c466594ca8955de9e8a659" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Scale</name></member>
+      <member refid="classUrho3D_1_1Node_1af976764d78d73c0e6559e40ec169da99" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Scale</name></member>
+      <member refid="classUrho3D_1_1Node_1aa9c8e8fdaf9514e92c891e7dbbbc3b35" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Scale2D</name></member>
+      <member refid="classUrho3D_1_1Scene_1aecd178e1857bd96c3e4537651fd7f60c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Scene</name></member>
+      <member refid="classUrho3D_1_1Scene_1a5af04ab898d6b6a14a2e6dde1672c0c9" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>sceneMutex_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Scene_1a3fd5ebce11f76099b794ceadc6117bf4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAsyncLoadingMs</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Node_1af1f42604d1e98496753c1e602837c2e1" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetDeepEnabled</name></member>
+      <member refid="classUrho3D_1_1Node_1af02633f8b886f9939f839b86378c82f9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetDirection</name></member>
+      <member refid="classUrho3D_1_1Scene_1a1ea4268272c328699017abfd3407eb30" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetElapsedTime</name></member>
+      <member refid="classUrho3D_1_1Node_1aebf77521a93e12e059ce1bb953af5c4f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Node_1a3076ab3fed8d3a873149e1a380f79ad0" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetEnabledRecursive</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Node_1a63c60a49859818ba9dcd0be10542f41a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Node_1a4fe38a2be941c8ca1fa59b9639775c09" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Node_1a3739b426a217d968f04b9d0128922f1e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetNetParentAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1ae88fc463f3b9045af0eaaaf33d38711c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetNetPositionAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1ade5376cdb305ed25f152ef344660b284" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetNetRotationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Node_1a46a82aa6e1c19b4c0cb532fb38b6b4c1" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetOwner</name></member>
+      <member refid="classUrho3D_1_1Node_1a8a62d2fd3157b3d569753b57de8d065d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetParent</name></member>
+      <member refid="classUrho3D_1_1Node_1aa2fd960b4c5641cd38771280a6b84fb8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetPosition</name></member>
+      <member refid="classUrho3D_1_1Node_1a0a45bac185f4d3dcee531b2ca35af565" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetPosition2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a268eccc6ed323f0b6eaf11a042adfa51" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetPosition2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a26578897c9dfbee0987f15948cf51d06" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetPositionSilent</name></member>
+      <member refid="classUrho3D_1_1Node_1a11bd9b2bfda2503123a32889b144aea1" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetRotation</name></member>
+      <member refid="classUrho3D_1_1Node_1a203d47aba9ad013f5ca5b95473716a5e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetRotation2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a8dae47a30f1521ef9502a34f5787da1b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetRotationSilent</name></member>
+      <member refid="classUrho3D_1_1Node_1ace951aa924dd417a731746cbf92ead06" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetScale</name></member>
+      <member refid="classUrho3D_1_1Node_1a2c082c1db09bb3498117d0b3586ecba2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetScale</name></member>
+      <member refid="classUrho3D_1_1Node_1a3154678d02729fa4b88bdddbea7c68a6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetScale2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a4bb5d5fc58ad2b2c512d61e00ab3b4e2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetScale2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a3a8948c65d75477d0f41e3f37c3e9ac8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetScaleSilent</name></member>
+      <member refid="classUrho3D_1_1Node_1ac085de67716d525a195160ed9231e24c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetScene</name></member>
+      <member refid="classUrho3D_1_1Scene_1a1a98707b3d010c1260553d2465dc1848" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetSmoothingConstant</name></member>
+      <member refid="classUrho3D_1_1Scene_1a8290804ab553ae30abe3d6ad00869e6f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetSnapThreshold</name></member>
+      <member refid="classUrho3D_1_1Node_1a439a78f3d890caaa6dd33680bb5e493a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTags</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1Scene_1ac8b0f11b63f431f1e605dd7379f39ede" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTimeScale</name></member>
+      <member refid="classUrho3D_1_1Node_1af7fc2b6d072cd23a0b7b87e509d010fd" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1aca85052e1a2695b714949af2f3aeeced" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1a5474239fa414760782ea60b8f542d1c9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1aa4ed99f624f867c07433dae14e5d314d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1a46d91113c18bcf0b7b1023691695c642" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform2D</name></member>
+      <member refid="classUrho3D_1_1Node_1acc32cd2e5cc1db6e758cf22828fd24e2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a643cb639e8544153d892123b706c6f3c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransform2D</name></member>
+      <member refid="classUrho3D_1_1Node_1acd850d0f20e84741b2034843beb86379" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetTransformSilent</name></member>
+      <member refid="classUrho3D_1_1Scene_1a44c46009d055c833246a44cfd95db635" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetUpdateEnabled</name></member>
+      <member refid="classUrho3D_1_1Node_1a70dad27412862b789eaadab43cb1fd0b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetVar</name></member>
+      <member refid="classUrho3D_1_1Scene_1a2feb9c3be8b1a8a080b33879a4ff29fc" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetVarNamesAttr</name></member>
+      <member refid="classUrho3D_1_1Node_1a0ca75040c310b9b4b7dd941a327ef4cf" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldDirection</name></member>
+      <member refid="classUrho3D_1_1Node_1a75071e15defb94754e145f215acd655a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldPosition</name></member>
+      <member refid="classUrho3D_1_1Node_1abd5e496ab2c8c5ff273188ed387a7696" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldPosition2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a20ed7f818703b5fc4158786f4a76db68" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldPosition2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a0a51e567fd136b48e30056517c3c6100" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldRotation</name></member>
+      <member refid="classUrho3D_1_1Node_1a9f3b2c042f4490b2b91ce733bdc9f7e9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldRotation2D</name></member>
+      <member refid="classUrho3D_1_1Node_1aef9ea878535741c7f163580ea0dd729a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldScale</name></member>
+      <member refid="classUrho3D_1_1Node_1a88196c33c41b9f1aa96c359a6d4e9009" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldScale</name></member>
+      <member refid="classUrho3D_1_1Node_1a0c4d99a21b176b525ace088f5f03a92f" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldScale2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a997e30a6d47064572b0d065cf64d71d6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldScale2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a8aa097522ad1d8d502ec74610a05ada4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1aa10fa37436c6adf248a919ba8449532b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1af9082d3b8de5311cef1f2e70d9ff2442" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1ae4eb180d8cfd3b80ba96ca14fd9f7797" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform</name></member>
+      <member refid="classUrho3D_1_1Node_1af5590404aa7a9ecde07ec6e0384a413a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform2D</name></member>
+      <member refid="classUrho3D_1_1Node_1a9f8238506bc70a58092012e812cc1a21" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform2D</name></member>
+      <member refid="classUrho3D_1_1Node_1ad1fc5b8dd6e33e1656dbcb6f0d1624fe" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SetWorldTransform2D</name></member>
+      <member refid="classUrho3D_1_1Scene_1a851adfcc92278b2260005138cff32988" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>smoothingConstant_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a8f4dcd8f5f674c705394c1cc9d71cb3b" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>smoothingData_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a8f5f6bbd36f6000ea19d7726cd653d7f" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>snapThreshold_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a08f99dc8b2497499e581f2eb7ce1a082" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>StopAsyncLoading</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Scene_1a16c55cc22f69e87643ef0e383980fd36" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>taggedNodes_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a7227c5ff7062e69515996569c9ea8d7f" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>threadedUpdate_</name></member>
+      <member refid="classUrho3D_1_1Scene_1a8f4fef00ef1e08796f16fc799502d5ac" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>timeScale_</name></member>
+      <member refid="classUrho3D_1_1Node_1a407412d8ff08e79afdd609d82afadff7" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Translate</name></member>
+      <member refid="classUrho3D_1_1Node_1aa9c8a152d0acbf22d71c67b59087cfb9" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Translate2D</name></member>
+      <member refid="classUrho3D_1_1Scene_1aa696692927ca2360290f70d4d0ed73fd" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnregisterAllVars</name></member>
+      <member refid="classUrho3D_1_1Scene_1a399d1f929856f16fa90af3154340cd8b" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnregisterVar</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Scene_1afb949e0fedbb2becb9aa7a3dfb0ed7b2" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Scene_1a625934c3af5fb17f25a09767d4c0cc6b" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UpdateAsyncLoading</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1Scene_1ab87df65af1dd40d2c07d9aaf54c35021" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>updateEnabled_</name></member>
+      <member refid="classUrho3D_1_1Scene_1aa36bd7f4aab69b7918bfd7e288036249" prot="private" virt="non-virtual"><scope>Urho3D::Scene</scope><name>varNames_</name></member>
+      <member refid="classUrho3D_1_1Node_1a54167f540b85ad81853c85ee05ce9475" prot="protected" virt="non-virtual"><scope>Urho3D::Scene</scope><name>vars_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Node_1a1a9f90ecc791f500186c8fca78820d47" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WorldToLocal</name></member>
+      <member refid="classUrho3D_1_1Node_1a9e46f6ca4aab04a4b35d1258916d578a" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WorldToLocal</name></member>
+      <member refid="classUrho3D_1_1Node_1ab2d7f3bfb1a5d80572d88fc4100be8f8" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WorldToLocal2D</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Node_1a8d6d99cb206f468b39f996667e92e3e4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>Yaw</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Node_1a27a54b388e734449a8db6935116552b4" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>~Node</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Scene</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Scene_1a31c0af326c14b256492dbeba6fb29866" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>~Scene</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::Scene</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

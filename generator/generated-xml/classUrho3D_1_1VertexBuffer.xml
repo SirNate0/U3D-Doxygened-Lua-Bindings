@@ -1,0 +1,1188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1VertexBuffer" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::VertexBuffer</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1GPUObject" prot="public" virt="non-virtual">Urho3D::GPUObject</basecompoundref>
+    <includes refid="VertexBuffer_8h" local="no">VertexBuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a9c6c5e75f7fc6a544ef1cf5601c1228d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::VertexBuffer::shadowData_</definition>
+        <argsstring></argsstring>
+        <name>shadowData_</name>
+        <briefdescription>
+<para>Shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="155" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1ab2f22927368bc12e4fdc3c62c499f79b" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::vertexCount_</definition>
+        <argsstring></argsstring>
+        <name>vertexCount_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Number of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="157" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a0d2ad39697b18237ead08ca754776e1d" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::vertexSize_</definition>
+        <argsstring></argsstring>
+        <name>vertexSize_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Vertex size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="159" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1aad0a8649c7c6e7024dd324c2bfde9468" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt;</type>
+        <definition>PODVector&lt;VertexElement&gt; Urho3D::VertexBuffer::elements_</definition>
+        <argsstring></argsstring>
+        <name>elements_</name>
+        <briefdescription>
+<para>Vertex elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="161" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a1269d0a2361e1017fe15fd00880ea842" prot="private" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::VertexBuffer::elementHash_</definition>
+        <argsstring></argsstring>
+        <name>elementHash_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Vertex element hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="163" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a30a37136fb846a0edfa581a923b1c6f0" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">VertexMaskFlags</ref></type>
+        <definition>VertexMaskFlags Urho3D::VertexBuffer::elementMask_</definition>
+        <argsstring></argsstring>
+        <name>elementMask_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Vertex element legacy bitmask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="165" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a223ca95343465263c028265e005b92bb" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a38ac62f590877bb0035c3ccafa0dcc81" kindref="member">LockState</ref></type>
+        <definition>LockState Urho3D::VertexBuffer::lockState_</definition>
+        <argsstring></argsstring>
+        <name>lockState_</name>
+        <initializer>{LOCK_NONE}</initializer>
+        <briefdescription>
+<para>Buffer locking state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="167" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a101cdd2b337e71d9b20f88673e912b08" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::lockStart_</definition>
+        <argsstring></argsstring>
+        <name>lockStart_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Lock start vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="169" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a7485ccc91e0f1bb92e8af8fbe3292c28" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::lockCount_</definition>
+        <argsstring></argsstring>
+        <name>lockCount_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Lock number of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="171" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a30586f9a60ed95581026e10fc9d63e58" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::VertexBuffer::lockScratchData_</definition>
+        <argsstring></argsstring>
+        <name>lockScratchData_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Scratch buffer for fallback locking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="173" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a1696e26bf4ce0524e77a9f51a0da1676" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::dynamic_</definition>
+        <argsstring></argsstring>
+        <name>dynamic_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Dynamic flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="175" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1a06f5093b589eb64dbe4e8dc2d01eeb7b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::shadowed_</definition>
+        <argsstring></argsstring>
+        <name>shadowed_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Shadowed flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="177" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1VertexBuffer_1afb7fb916c2ef758d8dc3892be1a9c526" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::discardLock_</definition>
+        <argsstring></argsstring>
+        <name>discardLock_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Discard lock flag. Used by OpenGL only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="179" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a5e99e198558445182ec8f030e975eb6b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::VertexBuffer::VertexBuffer</definition>
+        <argsstring>(Context *context, bool forceHeadless=false)</argsstring>
+        <name>VertexBuffer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceHeadless</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct. Optionally force headless (no GPU-side buffer) operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1ae242007d00342d486f60d7e998131243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::VertexBuffer::~VertexBuffer</definition>
+        <argsstring>() override</argsstring>
+        <name>~VertexBuffer</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a7d5b1d3ad958b729367f2e7a2d54dd41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::OnDeviceLost</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceLost</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1ad5ecd882dd04590d38951f897d1f6575">OnDeviceLost</reimplements>
+        <briefdescription>
+<para>Mark the buffer destroyed on graphics context destruction. May be a no-op depending on the API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a26c70ab797f2cf7ff97abb58664c6306" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::OnDeviceReset</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceReset</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a18ab28f33620594506eeb2c5fe168106">OnDeviceReset</reimplements>
+        <briefdescription>
+<para>Recreate the buffer and restore data if applicable. May be a no-op depending on the API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a44c1a387c164fe346fbd069fcbb7a51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::Release</definition>
+        <argsstring>() override</argsstring>
+        <name>Release</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a86d97d51d21841b9c057baee19a17a30">Release</reimplements>
+        <briefdescription>
+<para>Release buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a54c2ded230cbfbbeac650caac088ad7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::SetShadowed</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetShadowed</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable shadowing in CPU memory. Shadowing is forced on if the graphics subsystem does not exist. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1ae3a60a0235f13bc2bc719f296068e134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::SetSize</definition>
+        <argsstring>(unsigned vertexCount, const PODVector&lt; VertexElement &gt; &amp;elements, bool dynamic=false)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexCount</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set size, vertex elements and dynamic mode. Previous data will be lost. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1af7d13c87254863baf7021c3ec9ec7e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::SetSize</definition>
+        <argsstring>(unsigned vertexCount, unsigned elementMask, bool dynamic=false)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexCount</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>elementMask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set size and vertex elements and dynamic mode using legacy element bitmask. Previous data will be lost. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1accec66f6c7f4ccd71afd4c59ada200f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::SetData</definition>
+        <argsstring>(const void *data)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set all data in the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a20dd4ccb7666c5acc1abcf5034fcea00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::SetDataRange</definition>
+        <argsstring>(const void *data, unsigned start, unsigned count, bool discard=false)</argsstring>
+        <name>SetDataRange</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set a data range in the buffer. Optionally discard data outside the range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a2a2cf2cc533659d5e79988423068c570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::VertexBuffer::Lock</definition>
+        <argsstring>(unsigned start, unsigned count, bool discard=false)</argsstring>
+        <name>Lock</name>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Lock the buffer for write-only editing. Return data pointer if successful. Optionally discard data outside the range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a10d352ff496e04a7d1395559d72a0b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::Unlock</definition>
+        <argsstring>()</argsstring>
+        <name>Unlock</name>
+        <briefdescription>
+<para>Unlock the buffer and apply changes to the GPU buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1aff76cc5b8809d02b3ae41e72683ec0e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::IsShadowed</definition>
+        <argsstring>() const</argsstring>
+        <name>IsShadowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether CPU memory shadowing is enabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="69" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1ab19285169ae884083fcbd608818b1420" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::IsDynamic</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDynamic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is dynamic. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="73" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a21c125b08d02da5abccbae01e7cbf9d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::IsLocked</definition>
+        <argsstring>() const</argsstring>
+        <name>IsLocked</name>
+        <briefdescription>
+<para>Return whether is currently locked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="76" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a9ffb4421860e3421726f4a6b949766ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::GetVertexCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of vertices. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="80" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a3a79aa5356d9e9044f01ae6cfd9193cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::GetVertexSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return vertex size in bytes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="84" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1ad60b86fb91704bda423f9260312e5c7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+        <definition>const PODVector&lt;VertexElement&gt;&amp; Urho3D::VertexBuffer::GetElements</definition>
+        <argsstring>() const</argsstring>
+        <name>GetElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return vertex elements. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="88" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a63d64c6663a9b37b6b0835a1f34b8abe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> *</type>
+        <definition>const VertexElement* Urho3D::VertexBuffer::GetElement</definition>
+        <argsstring>(VertexElementSemantic semantic, unsigned char index=0) const</argsstring>
+        <name>GetElement</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return vertex element, or null if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="91" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a28e27c7efa89fb4ed50fd956ac7ff05b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> *</type>
+        <definition>const VertexElement* Urho3D::VertexBuffer::GetElement</definition>
+        <argsstring>(VertexElementType type, VertexElementSemantic semantic, unsigned char index=0) const</argsstring>
+        <name>GetElement</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aebe82c3ae30941ba8142db5411e74783" kindref="member">VertexElementType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return vertex element with specific type, or null if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="94" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a235b3de4089d0f09fed910672f4eb8fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::HasElement</definition>
+        <argsstring>(VertexElementSemantic semantic, unsigned char index=0) const</argsstring>
+        <name>HasElement</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return whether has a specified element semantic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="97" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a787215090fcd32c15c0127a8cdbc26e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::HasElement</definition>
+        <argsstring>(VertexElementType type, VertexElementSemantic semantic, unsigned char index=0) const</argsstring>
+        <name>HasElement</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aebe82c3ae30941ba8142db5411e74783" kindref="member">VertexElementType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return whether has an element semantic with specific type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="100" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1afdb3a120f19945f58c189cf76a00ee25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::GetElementOffset</definition>
+        <argsstring>(VertexElementSemantic semantic, unsigned char index=0) const</argsstring>
+        <name>GetElementOffset</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return offset of a element within vertex, or M_MAX_UNSIGNED if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="103" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1abf4b1aa7ecd338f655491773665946ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::VertexBuffer::GetElementOffset</definition>
+        <argsstring>(VertexElementType type, VertexElementSemantic semantic, unsigned char index=0) const</argsstring>
+        <name>GetElementOffset</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aebe82c3ae30941ba8142db5411e74783" kindref="member">VertexElementType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return offset of a element with specific type within vertex, or M_MAX_UNSIGNED if element does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="106" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a81124a4397cc4b9ab48f925b6f59f8a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">VertexMaskFlags</ref></type>
+        <definition>VertexMaskFlags Urho3D::VertexBuffer::GetElementMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetElementMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return legacy vertex element mask. Note that both semantic and type must match the legacy element for a mask bit to be set. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="110" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a035a39649fd9673e3f3734c0db339c6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Urho3D::VertexBuffer::GetShadowData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowData</name>
+        <briefdescription>
+<para>Return CPU memory shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="113" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a5ca4e347066d61e1624b4806a970ad9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::VertexBuffer::GetShadowDataShared</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowDataShared</name>
+        <briefdescription>
+<para>Return shared array pointer to the CPU memory shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="116" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1acde4f455266156f917873c7f7bf9da78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::VertexBuffer::GetBufferHash</definition>
+        <argsstring>(unsigned streamIndex)</argsstring>
+        <name>GetBufferHash</name>
+        <param>
+          <type>unsigned</type>
+          <declname>streamIndex</declname>
+        </param>
+        <briefdescription>
+<para>Return buffer hash for building vertex declarations. Used internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="119" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1ac89e362834269a53d0c1a007cca0012e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> *</type>
+        <definition>static const VertexElement* Urho3D::VertexBuffer::GetElement</definition>
+        <argsstring>(const PODVector&lt; VertexElement &gt; &amp;elements, VertexElementType type, VertexElementSemantic semantic, unsigned char index=0)</argsstring>
+        <name>GetElement</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aebe82c3ae30941ba8142db5411e74783" kindref="member">VertexElementType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return element with specified type and semantic from a vertex element list, or null if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="122" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1add53082eb237f866e709bcf58ab443ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Urho3D::VertexBuffer::HasElement</definition>
+        <argsstring>(const PODVector&lt; VertexElement &gt; &amp;elements, VertexElementType type, VertexElementSemantic semantic, unsigned char index=0)</argsstring>
+        <name>HasElement</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aebe82c3ae30941ba8142db5411e74783" kindref="member">VertexElementType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return whether element list has a specified element type and semantic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="125" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a2e5e196046c200507416478c299d9aec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::VertexBuffer::GetElementOffset</definition>
+        <argsstring>(const PODVector&lt; VertexElement &gt; &amp;elements, VertexElementType type, VertexElementSemantic semantic, unsigned char index=0)</argsstring>
+        <name>GetElementOffset</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aebe82c3ae30941ba8142db5411e74783" kindref="member">VertexElementType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a79588dde23778c29cea45e2d3c2b0971" kindref="member">VertexElementSemantic</ref></type>
+          <declname>semantic</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Return element offset for specified type and semantic from a vertex element list, or M_MAX_UNSIGNED if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="128" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1ac50c354cc79833d5ce69fef26e7247ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt;</type>
+        <definition>static PODVector&lt;VertexElement&gt; Urho3D::VertexBuffer::GetElements</definition>
+        <argsstring>(unsigned elementMask)</argsstring>
+        <name>GetElements</name>
+        <param>
+          <type>unsigned</type>
+          <declname>elementMask</declname>
+        </param>
+        <briefdescription>
+<para>Return a vertex element list from a legacy element bitmask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="131" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a1a339ccc8abc39f41d94ea53d1671a4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::VertexBuffer::GetVertexSize</definition>
+        <argsstring>(const PODVector&lt; VertexElement &gt; &amp;elements)</argsstring>
+        <name>GetVertexSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+<para>Return vertex size from an element list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="134" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a118dfdbfcbecec3204c18392f9d99684" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::VertexBuffer::GetVertexSize</definition>
+        <argsstring>(unsigned elementMask)</argsstring>
+        <name>GetVertexSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>elementMask</declname>
+        </param>
+        <briefdescription>
+<para>Return vertex size for a legacy vertex element bitmask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="137" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a512ce4258d4c129415004bac2278da4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::VertexBuffer::UpdateOffsets</definition>
+        <argsstring>(PODVector&lt; VertexElement &gt; &amp;elements)</argsstring>
+        <name>UpdateOffsets</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+<para>Update offsets of vertex elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="140" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a913472a1f3817d473639ed6f5fb35ae1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::UpdateOffsets</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateOffsets</name>
+        <briefdescription>
+<para>Update offsets of vertex elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a0a5f88c7e55d2e40d1136b0614f386f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Create buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="146" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1aacfd14a32eceb95cda03e87c4b19513f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::VertexBuffer::UpdateToGPU</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateToGPU</name>
+        <briefdescription>
+<para>Update the shadow data to the GPU buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a94827548eb89601da1097f2ef982c94d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::VertexBuffer::MapBuffer</definition>
+        <argsstring>(unsigned start, unsigned count, bool discard)</argsstring>
+        <name>MapBuffer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard</declname>
+        </param>
+        <briefdescription>
+<para>Map the GPU buffer into CPU memory. Not used on OpenGL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1VertexBuffer_1a20dd75405f685d840d06ecf5b159f38f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::VertexBuffer::UnmapBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>UnmapBuffer</name>
+        <briefdescription>
+<para>Unmap the GPU buffer. Not used on OpenGL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="152" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Hardware vertex buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::VertexBuffer</label>
+        <link refid="classUrho3D_1_1VertexBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::VertexBuffer</label>
+        <link refid="classUrho3D_1_1VertexBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/VertexBuffer.h" bodystart="35" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a90de5fa07e164d6b5e95f832a0741088" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>ClearDataLost</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a0a5f88c7e55d2e40d1136b0614f386f9" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Create</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ab6c82e62ca8b1098c4157acfe517c772" prot="protected" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>dataLost_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ada5a50cf10c6f65deb6b273bfc1649ab" prot="protected" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>dataPending_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1afb7fb916c2ef758d8dc3892be1a9c526" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>discardLock_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a1696e26bf4ce0524e77a9f51a0da1676" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>dynamic_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a1269d0a2361e1017fe15fd00880ea842" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>elementHash_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a30a37136fb846a0edfa581a923b1c6f0" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>elementMask_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1aad0a8649c7c6e7024dd324c2bfde9468" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>elements_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1acde4f455266156f917873c7f7bf9da78" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetBufferHash</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a63d64c6663a9b37b6b0835a1f34b8abe" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElement</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a28e27c7efa89fb4ed50fd956ac7ff05b" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElement</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ac89e362834269a53d0c1a007cca0012e" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElement</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a81124a4397cc4b9ab48f925b6f59f8a6" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElementMask</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1afdb3a120f19945f58c189cf76a00ee25" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElementOffset</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1abf4b1aa7ecd338f655491773665946ff" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElementOffset</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a2e5e196046c200507416478c299d9aec" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElementOffset</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ad60b86fb91704bda423f9260312e5c7e" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElements</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ac50c354cc79833d5ce69fef26e7247ea" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetElements</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a63ba593256e723f7f15a62fca79fe10d" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetGPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1afeb0a749cfb6c1bb4c7f1b4a35d7f901" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetGPUObjectName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a77fa1abcd0a6b3a7cce431c10b2f7c26" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetGraphics</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a035a39649fd9673e3f3734c0db339c6c" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetShadowData</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a5ca4e347066d61e1624b4806a970ad9a" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetShadowDataShared</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a9ffb4421860e3421726f4a6b949766ee" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetVertexCount</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a3a79aa5356d9e9044f01ae6cfd9193cf" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetVertexSize</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a1a339ccc8abc39f41d94ea53d1671a4e" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetVertexSize</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a118dfdbfcbecec3204c18392f9d99684" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GetVertexSize</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a403872d965887004f1021405870ff865" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>GPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1abf1a902885d2c3bac02f3f58e0e0f037" prot="protected" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a235b3de4089d0f09fed910672f4eb8fd" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasElement</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a787215090fcd32c15c0127a8cdbc26e4" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasElement</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1add53082eb237f866e709bcf58ab443ee" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasElement</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a7039fc3a187fd67855a802c00099452b" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasPendingData</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a6938a78e8bb131f8c53e136778c9f6c2" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ab19285169ae884083fcbd608818b1420" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsDynamic</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a21c125b08d02da5abccbae01e7cbf9d2" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsLocked</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1aff76cc5b8809d02b3ae41e72683ec0e9" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>IsShadowed</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a2a2cf2cc533659d5e79988423068c570" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Lock</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a7485ccc91e0f1bb92e8af8fbe3292c28" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>lockCount_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a30586f9a60ed95581026e10fc9d63e58" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>lockScratchData_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a101cdd2b337e71d9b20f88673e912b08" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>lockStart_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a223ca95343465263c028265e005b92bb" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>lockState_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a94827548eb89601da1097f2ef982c94d" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>MapBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a02851f652df5053623c4434f2cd9a4b8" prot="protected" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>object_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a7d5b1d3ad958b729367f2e7a2d54dd41" prot="public" virt="virtual"><scope>Urho3D::VertexBuffer</scope><name>OnDeviceLost</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a26c70ab797f2cf7ff97abb58664c6306" prot="public" virt="virtual"><scope>Urho3D::VertexBuffer</scope><name>OnDeviceReset</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::VertexBuffer</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a44c1a387c164fe346fbd069fcbb7a51e" prot="public" virt="virtual"><scope>Urho3D::VertexBuffer</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1accec66f6c7f4ccd71afd4c59ada200f0" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetData</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a20dd4ccb7666c5acc1abcf5034fcea00" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetDataRange</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a54c2ded230cbfbbeac650caac088ad7c" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetShadowed</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ae3a60a0235f13bc2bc719f296068e134" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1af7d13c87254863baf7021c3ec9ec7e61" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a9c6c5e75f7fc6a544ef1cf5601c1228d" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>shadowData_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a06f5093b589eb64dbe4e8dc2d01eeb7b" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>shadowed_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a10d352ff496e04a7d1395559d72a0b17" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>Unlock</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a20dd75405f685d840d06ecf5b159f38f" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UnmapBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a512ce4258d4c129415004bac2278da4a" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UpdateOffsets</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a913472a1f3817d473639ed6f5fb35ae1" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UpdateOffsets</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1aacfd14a32eceb95cda03e87c4b19513f" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>UpdateToGPU</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a5e99e198558445182ec8f030e975eb6b" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>VertexBuffer</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ab2f22927368bc12e4fdc3c62c499f79b" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>vertexCount_</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1a0d2ad39697b18237ead08ca754776e1d" prot="private" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>vertexSize_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad23b82c85519c520437707ddd4b8097f" prot="public" virt="virtual"><scope>Urho3D::VertexBuffer</scope><name>~GPUObject</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::VertexBuffer</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1VertexBuffer_1ae242007d00342d486f60d7e998131243" prot="public" virt="non-virtual"><scope>Urho3D::VertexBuffer</scope><name>~VertexBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

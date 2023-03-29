@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1PointOctreeQuery" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::PointOctreeQuery</compoundname>
+    <basecompoundref refid="classUrho3D_1_1OctreeQuery" prot="public" virt="non-virtual">Urho3D::OctreeQuery</basecompoundref>
+    <includes refid="OctreeQuery_8h" local="no">OctreeQuery.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1PointOctreeQuery_1ac4d90b504e19a0b016779da242b8a4d1" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::PointOctreeQuery::point_</definition>
+        <argsstring></argsstring>
+        <name>point_</name>
+        <briefdescription>
+<para>Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" line="91" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1PointOctreeQuery_1a64d25a35849bb5fbde7b395f5b6134bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::PointOctreeQuery::PointOctreeQuery</definition>
+        <argsstring>(PODVector&lt; Drawable * &gt; &amp;result, const Vector3 &amp;point, unsigned char drawableFlags=DRAWABLE_ANY, unsigned viewMask=DEFAULT_VIEWMASK)</argsstring>
+        <name>PointOctreeQuery</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> * &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>drawableFlags</declname>
+          <defval>DRAWABLE_ANY</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>viewMask</declname>
+          <defval>DEFAULT_VIEWMASK</defval>
+        </param>
+        <briefdescription>
+<para>Construct with point and query parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" line="78" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1PointOctreeQuery_1a854c9f9ad62a4a27b366bca61614d023" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref></type>
+        <definition>Intersection Urho3D::PointOctreeQuery::TestOctant</definition>
+        <argsstring>(const BoundingBox &amp;box, bool inside) override</argsstring>
+        <name>TestOctant</name>
+        <reimplements refid="classUrho3D_1_1OctreeQuery_1a45d0a7fc737a9568275e275f38a7d2da">TestOctant</reimplements>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inside</declname>
+        </param>
+        <briefdescription>
+<para>Intersection test for an octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1PointOctreeQuery_1a6fcf3680c6a0c843ec369516e6eadd37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::PointOctreeQuery::TestDrawables</definition>
+        <argsstring>(Drawable **start, Drawable **end, bool inside) override</argsstring>
+        <name>TestDrawables</name>
+        <reimplements refid="classUrho3D_1_1OctreeQuery_1a5963c8409ce72b85bd9377b773d40c73">TestDrawables</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> **</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> **</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inside</declname>
+        </param>
+        <briefdescription>
+<para>Intersection test for drawables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" line="88" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Point octree query. NO_BIND </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::PointOctreeQuery</label>
+        <link refid="classUrho3D_1_1PointOctreeQuery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::OctreeQuery</label>
+        <link refid="classUrho3D_1_1OctreeQuery"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::PointOctreeQuery</label>
+        <link refid="classUrho3D_1_1PointOctreeQuery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>point_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::OctreeQuery</label>
+        <link refid="classUrho3D_1_1OctreeQuery"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>result_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" line="74" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h" bodystart="75" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1OctreeQuery_1a4a3608064b9da6320a62b2c0db7b32e3" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>drawableFlags_</name></member>
+      <member refid="classUrho3D_1_1OctreeQuery_1a263ee40b401403b8a2ab69cb0526dbb4" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>OctreeQuery</name></member>
+      <member refid="classUrho3D_1_1OctreeQuery_1a08e9c212426259195720d2ded6d64872" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>OctreeQuery</name></member>
+      <member refid="classUrho3D_1_1OctreeQuery_1a10f60572b42c001d3ee48258c59424d6" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1PointOctreeQuery_1ac4d90b504e19a0b016779da242b8a4d1" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>point_</name></member>
+      <member refid="classUrho3D_1_1PointOctreeQuery_1a64d25a35849bb5fbde7b395f5b6134bf" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>PointOctreeQuery</name></member>
+      <member refid="classUrho3D_1_1OctreeQuery_1aa57c45fc937d6f1336f788361e82fdeb" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>result_</name></member>
+      <member refid="classUrho3D_1_1PointOctreeQuery_1a6fcf3680c6a0c843ec369516e6eadd37" prot="public" virt="virtual"><scope>Urho3D::PointOctreeQuery</scope><name>TestDrawables</name></member>
+      <member refid="classUrho3D_1_1PointOctreeQuery_1a854c9f9ad62a4a27b366bca61614d023" prot="public" virt="virtual"><scope>Urho3D::PointOctreeQuery</scope><name>TestOctant</name></member>
+      <member refid="classUrho3D_1_1OctreeQuery_1a8e6e7966103b4a5482ea36829027e2cd" prot="public" virt="non-virtual"><scope>Urho3D::PointOctreeQuery</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1OctreeQuery_1a2c984c0098f42fe6fcf22fcd1d3507d2" prot="public" virt="virtual"><scope>Urho3D::PointOctreeQuery</scope><name>~OctreeQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

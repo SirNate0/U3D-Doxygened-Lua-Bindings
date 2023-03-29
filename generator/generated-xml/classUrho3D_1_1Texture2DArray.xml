@@ -1,0 +1,792 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Texture2DArray" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Texture2DArray</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Texture" prot="public" virt="non-virtual">Urho3D::Texture</basecompoundref>
+    <includes refid="Texture2DArray_8h" local="no">Texture2DArray.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Texture2DArray_1a9281f95119392607172c4502116e904c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture2DArray::layers_</definition>
+        <argsstring></argsstring>
+        <name>layers_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> array layers number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="90" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture2DArray_1ae911efb778b615ca6895e6901792129a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref> &gt;</type>
+        <definition>SharedPtr&lt;RenderSurface&gt; Urho3D::Texture2DArray::renderSurface_</definition>
+        <argsstring></argsstring>
+        <name>renderSurface_</name>
+        <briefdescription>
+<para>Render surface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="92" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture2DArray_1a029fb5172836de2f345645239daf77bf" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned &gt;</type>
+        <definition>PODVector&lt;unsigned&gt; Urho3D::Texture2DArray::layerMemoryUse_</definition>
+        <argsstring></argsstring>
+        <name>layerMemoryUse_</name>
+        <briefdescription>
+<para>Memory use per layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="94" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture2DArray_1aeb84dba2135ef8457323a80d27e6b132" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;Image&gt; &gt; Urho3D::Texture2DArray::loadImages_</definition>
+        <argsstring></argsstring>
+        <name>loadImages_</name>
+        <briefdescription>
+<para>Layer image files acquired during BeginLoad. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="96" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture2DArray_1a61254bef1a7dc71be76bdf5b252c9bd6" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> &gt;</type>
+        <definition>SharedPtr&lt;XMLFile&gt; Urho3D::Texture2DArray::loadParameters_</definition>
+        <argsstring></argsstring>
+        <name>loadParameters_</name>
+        <briefdescription>
+<para>Parameter file acquired during BeginLoad. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="98" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1add589892041e051403163851b01691a0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Texture2DArray::Texture2DArray</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Texture2DArray</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a83a9d70f6324e1ae2d82e614a8888ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Texture2DArray::~Texture2DArray</definition>
+        <argsstring>() override</argsstring>
+        <name>~Texture2DArray</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="44" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a5145f1618ed566dee285b9f4d90424c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a98431d6d014c1f1454bcaffd35c7a118" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::EndLoad</definition>
+        <argsstring>() override</argsstring>
+        <name>EndLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d">EndLoad</reimplements>
+        <briefdescription>
+<para>Finish resource loading. Always called from the main thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a8c23d207067fa6d7722148ae0dc36339" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture2DArray::OnDeviceLost</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceLost</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1ad5ecd882dd04590d38951f897d1f6575">OnDeviceLost</reimplements>
+        <briefdescription>
+<para>Mark the GPU resource destroyed on context destruction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1ada31ee9d6430947d7599da69b2b6b320" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture2DArray::OnDeviceReset</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceReset</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a18ab28f33620594506eeb2c5fe168106">OnDeviceReset</reimplements>
+        <briefdescription>
+<para>Recreate the GPU resource and restore data if applicable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a44f47d575bcb17bdc43061b6ffce2a75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture2DArray::Release</definition>
+        <argsstring>() override</argsstring>
+        <name>Release</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a86d97d51d21841b9c057baee19a17a30">Release</reimplements>
+        <briefdescription>
+<para>Release the texture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a1bd5785f318407847d93aaba973e6a38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture2DArray::SetLayers</definition>
+        <argsstring>(unsigned layers)</argsstring>
+        <name>SetLayers</name>
+        <param>
+          <type>unsigned</type>
+          <declname>layers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the number of layers in the texture. To be used before SetData. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1acb0ff1c06a61392e0b2e30ae696c5d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::SetSize</definition>
+        <argsstring>(unsigned layers, int width, int height, unsigned format, TextureUsage usage=TEXTURE_STATIC)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>layers</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a0e77915b00b947259d8875587a08c9c4" kindref="member">TextureUsage</ref></type>
+          <declname>usage</declname>
+          <defval>TEXTURE_STATIC</defval>
+        </param>
+        <briefdescription>
+<para>Set layers, size, format and usage. Set layers to zero to leave them unchanged. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a88cea1582887c4fa073ba60f07ae4ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::SetData</definition>
+        <argsstring>(unsigned layer, unsigned level, int x, int y, int width, int height, const void *data)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>unsigned</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set data either partially or fully on a layer&apos;s mip level. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1ac8c547c408fed3150295470ee1fc8841" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::SetData</definition>
+        <argsstring>(unsigned layer, Deserializer &amp;source)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>unsigned</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Set data of one layer from a stream. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a6bf5a1b684ec0d37ea5e81e0f2d7dd84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::SetData</definition>
+        <argsstring>(unsigned layer, Image *image, bool useAlpha=false)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>unsigned</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useAlpha</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set data of one layer from an image. Return true if successful. Optionally make a single channel image alpha-only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1acfdd41e137cfef67a600b8d7849e25da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture2DArray::GetLayers</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of layers in the texture. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="74" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a9f84c1b9f5813b8f6e1fc0279e9e0370" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::GetData</definition>
+        <argsstring>(unsigned layer, unsigned level, void *dest) const</argsstring>
+        <name>GetData</name>
+        <param>
+          <type>unsigned</type>
+          <declname>layer</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Get data from a mip level. The destination buffer must be big enough. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1af70846727b1619256f19d4f864965682" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref> *</type>
+        <definition>RenderSurface* Urho3D::Texture2DArray::GetRenderSurface</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRenderSurface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return render surface. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="79" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a6805c55b883cc929fa1e790ca0155acd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Texture2DArray::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="47" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1ae360c80c79d2ffd136e4440774a07e43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture2DArray::Create</definition>
+        <argsstring>() override</argsstring>
+        <name>Create</name>
+        <reimplements refid="classUrho3D_1_1Texture_1a6170a28038f75a44b5647be5b9e23fdd">Create</reimplements>
+        <briefdescription>
+<para>Create the GPU texture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="83" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture2DArray_1a439ca39e8a244791587a40bdadca5353" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture2DArray::HandleRenderSurfaceUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleRenderSurfaceUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle render surface update event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="87" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>2D texture array resource. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Texture2DArray</label>
+        <link refid="classUrho3D_1_1Texture2DArray"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Texture</label>
+        <link refid="classUrho3D_1_1Texture"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="8">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Texture2DArray</label>
+        <link refid="classUrho3D_1_1Texture2DArray"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Texture</label>
+        <link refid="classUrho3D_1_1Texture"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>backupTexture_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>borderColor_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" line="36" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture2DArray.h" bodystart="37" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1ae42b734952a34d298976e8c5375d9bcf" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>AddMetadata</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Texture_1a897fb3bd9c9a093e254aab4b998ff990" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>addressModes_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7b1fdfa83d233a5dfc341f1374ab077b" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>anisotropy_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a37bd463eb784b6331f1b4b40ee04683a" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>autoResolve_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a871713edc0c732ee10aabe80d687a200" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>backupTexture_</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a5145f1618ed566dee285b9f4d90424c1" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Texture_1a1dface5e729d3a3675cf293aa0ac9081" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>borderColor_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Texture_1a717c9adb9a3b113d178e987803bd85e0" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>CheckMaxLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8ec29e13e74de94b7cc6e45bdf2855c3" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>CheckMaxLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1a0af2da2738e6f62ee40ae331a5891a03" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>CheckTextureBudget</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a90de5fa07e164d6b5e95f832a0741088" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>ClearDataLost</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1af27b1f8c432ed13835bde9130774cb5f" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>CopyMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1ae360c80c79d2ffd136e4440774a07e43" prot="protected" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>Create</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ab6c82e62ca8b1098c4157acfe517c772" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>dataLost_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ada5a50cf10c6f65deb6b273bfc1649ab" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>dataPending_</name></member>
+      <member refid="classUrho3D_1_1Texture_1ac11c0fe852ea3d3a53d7794a2b2741b5" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>depth_</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a98431d6d014c1f1454bcaffd35c7a118" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Texture_1a574de3790ced1280358853990e551836" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>filterMode_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8e5038cf13bb1547cd7f90bec95d03a9" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>format_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a9ade85b2e17860bee2652b704fa45a43" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetAddressMode</name></member>
+      <member refid="classUrho3D_1_1Texture_1ac3d7d92e015f66b7e5812c783f46a215" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetAnisotropy</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Texture_1afac4f70c3ea7c7e681ac36d8472af876" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetAutoResolve</name></member>
+      <member refid="classUrho3D_1_1Texture_1af2af70f933dfe2fc194b0bb15ac39a63" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetBackupTexture</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Texture_1ad3c24c286aec7a3abac18c3b61ceac14" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetBorderColor</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Texture_1a972db0ffa5bcebb8dc9854cdee58d757" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a9f84c1b9f5813b8f6e1fc0279e9e0370" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetData</name></member>
+      <member refid="classUrho3D_1_1Texture_1a728bf72dad6c6da0ad4c7d6fb394c2de" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetDataSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae0db91a00cb3f3854ee9cc7bcd1fb31c" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetDataSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1ac7d83c8c3c0c10dc0a5d797a37cc3e0d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetDataType</name></member>
+      <member refid="classUrho3D_1_1Texture_1aca630725968904986b7d57929a6923cb" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetDepth</name></member>
+      <member refid="classUrho3D_1_1Texture_1a50d66632c6d07e33f4523f3c2c327379" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetDSVFormat</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Texture_1af0e20bcc9f60981bc9bb8ba7907d0184" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetExternalFormat</name></member>
+      <member refid="classUrho3D_1_1Texture_1a9c2dc332dfe84f596a54a5e17de7e474" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetFilterMode</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab47f6f48fa537e42dea9e21bc3a350cc" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetFormat</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a63ba593256e723f7f15a62fca79fe10d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetGPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1afeb0a749cfb6c1bb4c7f1b4a35d7f901" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetGPUObjectName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a77fa1abcd0a6b3a7cce431c10b2f7c26" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetGraphics</name></member>
+      <member refid="classUrho3D_1_1Texture_1af496abc83a030e5dc9c8d46c7111fa1c" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetHeight</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1acfdd41e137cfef67a600b8d7849e25da" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetLayers</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8c1e870c80fa76565966955a72164cc4" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetLevelDepth</name></member>
+      <member refid="classUrho3D_1_1Texture_1a846792b1ba7a9cd53aba7d8620b76907" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetLevelHeight</name></member>
+      <member refid="classUrho3D_1_1Texture_1a110c3016b3544d78af393a83b45fb44f" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae98f177674dc74a0b124c880eb6a5937" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetLevelsDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab8097a345104d479b277648ab98a9d20" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetLevelWidth</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a4409f6edd5c2e7994bd8cff78b9add28" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8b39fa2b15397237464ed04c82c30dd0" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetMipsToSkip</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae21b2e0a3510272473447faeeb27374e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetMultiSample</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Texture_1a815de5066aa280a6680242340fcbc3ac" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetParametersDirty</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1af70846727b1619256f19d4f864965682" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetRenderSurface</name></member>
+      <member refid="classUrho3D_1_1Texture_1abf21fb21b414bc3c2597580c938aed63" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetResolveTexture</name></member>
+      <member refid="classUrho3D_1_1Texture_1abf684025c32c9a6bc816693313d255eb" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetRowDataSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1aadae57d2b5b96fa11639492fb119df59" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetSampler</name></member>
+      <member refid="classUrho3D_1_1Texture_1ad81e57c43e095e94ecd4e396bc33d9c4" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetShaderResourceView</name></member>
+      <member refid="classUrho3D_1_1Texture_1a74109b8a78719905d82ea617eb5042c1" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetShadowCompare</name></member>
+      <member refid="classUrho3D_1_1Texture_1af49ebd8d0572e8616402f9c663b6a818" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetSRGB</name></member>
+      <member refid="classUrho3D_1_1Texture_1af633d70298690db00993d6c89b2f0a50" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetSRGBFormat</name></member>
+      <member refid="classUrho3D_1_1Texture_1a5b1ef0521574f28abd1ac02d9aaaaea6" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetSRVFormat</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7adc2cc26705dc098a0259da525ded0a" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetTarget</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Texture_1acc7054c27c53d2a730a323f80de6dc92" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetUsage</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8e0474cd05b4b1de9caabdc670243141" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GetWidth</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a403872d965887004f1021405870ff865" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>GPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1abf1a902885d2c3bac02f3f58e0e0f037" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a439ca39e8a244791587a40bdadca5353" prot="private" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>HandleRenderSurfaceUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a1629581f5187eef675e9a812b23c511d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>HasMetadata</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a7039fc3a187fd67855a802c00099452b" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>HasPendingData</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Texture_1af5331737f6ddfd1eb9f30073c096f3cd" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>height_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a49289626d40733f33cb84e044cca1eab" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>IsCompressed</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a6938a78e8bb131f8c53e136778c9f6c2" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Texture_1aaa1cf66d36a84b47727608bf9b5e933b" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>IsResolveDirty</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a029fb5172836de2f345645239daf77bf" prot="private" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>layerMemoryUse_</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a9281f95119392607172c4502116e904c" prot="private" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>layers_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8aee7d3610fa842218e33e62025ec3d7" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>levels_</name></member>
+      <member refid="classUrho3D_1_1Texture_1aea03ebb6a4fdaa4944901093150514a1" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>levelsDirty_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1aeb84dba2135ef8457323a80d27e6b132" prot="private" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>loadImages_</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a85948141c17b39bddd26a2c63acbcc39" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>LoadMetadataFromJSON</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a16dc2ff1d1182913cefeaba7273a571c" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>LoadMetadataFromXML</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a61254bef1a7dc71be76bdf5b252c9bd6" prot="private" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>loadParameters_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a99956895d6024022cbf278232539ba34" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>mipsToSkip_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a115852631c203bb755bf75891b39e306" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>multiSample_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a02851f652df5053623c4434f2cd9a4b8" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>object_</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a8c23d207067fa6d7722148ae0dc36339" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>OnDeviceLost</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1ada31ee9d6430947d7599da69b2b6b320" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>OnDeviceReset</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab7d69fc0ad6ff73c51c1f8f9d8f5010e" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>parametersDirty_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8672316692e6b78cb6482cbcecfe409c" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RegenerateLevels</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a6805c55b883cc929fa1e790ca0155acd" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a44f47d575bcb17bdc43061b6ffce2a75" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a4a1ea688bdfe2518a11336d0753b5ed2" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RemoveAllMetadata</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1ad23658b7b267b2d1ec06d16a13d4a2e7" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>RemoveMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1ae911efb778b615ca6895e6901792129a" prot="private" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>renderSurface_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a1fa714405ad85a5e525343459f047415" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>requestedLevels_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab3cfe0ad762b0c88a79cf9e6e423b127" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>resolveDirty_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a2a2a3937fd6a2791f05c96ecdc857037" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>resolveTexture_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1acc98571a81271b68210f4f14414e0774" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>ResourceWithMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture_1a269881c2b603b6df2f1659770fd19746" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>sampler_</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a5d03bdec155fe2a32f1931ba40b2dbd6" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SaveMetadataToXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Texture_1a378338759a87ffe1b474dc42b526d46e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetAddressMode</name></member>
+      <member refid="classUrho3D_1_1Texture_1aa3faee8d80841137e19e372f7b20b28d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetAnisotropy</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Texture_1a87c105c5a06832559384dc9862eb345b" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetBackupTexture</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Texture_1a116e565c29f87e920fa4591defe8afb8" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetBorderColor</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a88cea1582887c4fa073ba60f07ae4ee8" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetData</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1ac8c547c408fed3150295470ee1fc8841" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetData</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a6bf5a1b684ec0d37ea5e81e0f2d7dd84" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetData</name></member>
+      <member refid="classUrho3D_1_1Texture_1a687d8ebe38f3eb27e393d9af8ae93a81" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetFilterMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a1bd5785f318407847d93aaba973e6a38" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetLayers</name></member>
+      <member refid="classUrho3D_1_1Texture_1aee3f8df0378acfb9c34504ddeec5c45d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetLevelsDirty</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Texture_1a6dda0b2dfddd0b3fd2b1a1dec3402fa2" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetMipsToSkip</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7f041595c6630ece64e123cb84fa5465" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetNumLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1a6e635893e2f569815c31347bb7569797" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetParameters</name></member>
+      <member refid="classUrho3D_1_1Texture_1aee2915774cd960588e9dcdb3e213ff33" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetParameters</name></member>
+      <member refid="classUrho3D_1_1Texture_1a17dbf60cafed03e5059cd0f66ba3402e" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetParametersDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1a040af2a0a5829e90d431f983c8456857" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetResolveDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1a2bbb724ddd75d109c4be4adeb550db64" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetShadowCompare</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1acb0ff1c06a61392e0b2e30ae696c5d60" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab2e45621a5ece2031d8b33362a29b4a2" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SetSRGB</name></member>
+      <member refid="classUrho3D_1_1Texture_1a1823435666f4aa8dd9b2053f16b22a68" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>shaderResourceView_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a2b09e174b858f7dc11153ee697fc41d8" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>shadowCompare_</name></member>
+      <member refid="classUrho3D_1_1Texture_1afa57a898c795690bb30735deae0e102b" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>sRGB_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab8824f28b0c81bf28a539f6e2569618b" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>target_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a54625f883eb353b6c57b5da7b7d8eb86" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Texture</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1add589892041e051403163851b01691a0" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>Texture2DArray</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7eaf51cf81ac775bdc87e00ec1a47979" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>UpdateParameters</name></member>
+      <member refid="classUrho3D_1_1Texture_1a9500da3ce4e026fd2d3b70dfa8f5a45a" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>usage_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Texture_1a4f375b82fa235c25b90aa20fc684213d" prot="protected" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>width_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad23b82c85519c520437707ddd4b8097f" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>~GPUObject</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Texture2DArray</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae75d8ed56606f3c70c4c03ac7a6c8775" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>~Texture</name></member>
+      <member refid="classUrho3D_1_1Texture2DArray_1a83a9d70f6324e1ae2d82e614a8888ceb" prot="public" virt="non-virtual"><scope>Urho3D::Texture2DArray</scope><name>~Texture2DArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

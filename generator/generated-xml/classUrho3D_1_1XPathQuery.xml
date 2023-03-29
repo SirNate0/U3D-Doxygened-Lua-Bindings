@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1XPathQuery" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::XPathQuery</compoundname>
+    <includes refid="XMLElement_8h" local="no">XMLElement.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1XPathQuery_1aae99943b5c1df4cd6db4d2f1d5d72a0e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XPathQuery::queryString_</definition>
+        <argsstring></argsstring>
+        <name>queryString_</name>
+        <briefdescription>
+<para>XPath query string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="413" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1XPathQuery_1a80aacd82825b9107f44fd161d4aded7e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr</ref>&lt; pugi::xpath_query &gt;</type>
+        <definition>UniquePtr&lt;pugi::xpath_query&gt; Urho3D::XPathQuery::query_</definition>
+        <argsstring></argsstring>
+        <name>query_</name>
+        <briefdescription>
+<para>Pugixml xpath_query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="415" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1XPathQuery_1a56c1978032b2afbf303cd08ace75d8c1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr</ref>&lt; pugi::xpath_variable_set &gt;</type>
+        <definition>UniquePtr&lt;pugi::xpath_variable_set&gt; Urho3D::XPathQuery::variables_</definition>
+        <argsstring></argsstring>
+        <name>variables_</name>
+        <briefdescription>
+<para>Pugixml xpath_variable_set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="417" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a6d21ec43c9865103b465bc20adc4dddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XPathQuery::XPathQuery</definition>
+        <argsstring>()</argsstring>
+        <name>XPathQuery</name>
+        <briefdescription>
+<para>Construct empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="370" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a4490d01c2f01b7b3b8d574018c7b2bd7" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XPathQuery::XPathQuery</definition>
+        <argsstring>(const String &amp;queryString, const String &amp;variableString=String::EMPTY)</argsstring>
+        <name>XPathQuery</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>queryString</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>variableString</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Construct XPath query object with query string and variable string. The variable string format is &quot;name1:type1,name2:type2,...&quot; where type is one of &quot;Bool&quot;, &quot;Float&quot;, &quot;String&quot;, &quot;ResultSet&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="372" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a3c4ee776a9b402f8e6360bb439968d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XPathQuery::~XPathQuery</definition>
+        <argsstring>()</argsstring>
+        <name>~XPathQuery</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="374" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1ab8c70a8a9efa452942c34853db86966b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::XPathQuery::Bind</definition>
+        <argsstring>()</argsstring>
+        <name>Bind</name>
+        <briefdescription>
+<para>Bind query object with variable set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="376" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1ae49880eeaa6a9bd48f2f6aaa2058d0e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::SetVariable</definition>
+        <argsstring>(const String &amp;name, bool value)</argsstring>
+        <name>SetVariable</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add/Set a bool variable. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="378" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a5c7818f5db6bc81cc7da579b06acdf8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::SetVariable</definition>
+        <argsstring>(const String &amp;name, float value)</argsstring>
+        <name>SetVariable</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add/Set a float variable. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="380" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1ae1a4fd5e6ac1a258dc7acc38fa51ed9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::SetVariable</definition>
+        <argsstring>(const String &amp;name, const String &amp;value)</argsstring>
+        <name>SetVariable</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add/Set a string variable. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="382" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1aba6c3126d669247fc97871759c526d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::SetVariable</definition>
+        <argsstring>(const char *name, const char *value)</argsstring>
+        <name>SetVariable</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add/Set a string variable. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="384" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a2440397a1464c3d57c9c913d8f0b8646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::SetVariable</definition>
+        <argsstring>(const String &amp;name, const XPathResultSet &amp;value)</argsstring>
+        <name>SetVariable</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add/Set an XPath query result set variable. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="386" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1aec25fa25b5f8aace1f550473888b790b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::SetQuery</definition>
+        <argsstring>(const String &amp;queryString, const String &amp;variableString=String::EMPTY, bool bind=true)</argsstring>
+        <name>SetQuery</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>queryString</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>variableString</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bind</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set XPath query string and variable string. The variable string format is &quot;name1:type1,name2:type2,...&quot; where type is one of &quot;Bool&quot;, &quot;Float&quot;, &quot;String&quot;, &quot;ResultSet&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="388" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1acb92995f3542d3ba4a2a635840573f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::XPathQuery::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear by removing all variables and XPath query object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="390" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a7852001d93b54f9597e53017479fef95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XPathQuery::EvaluateToBool</definition>
+        <argsstring>(const XMLElement &amp;element) const</argsstring>
+        <name>EvaluateToBool</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate XPath query and expecting a boolean return value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="392" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a1904c7b521dce582a870a51381fc92a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::XPathQuery::EvaluateToFloat</definition>
+        <argsstring>(const XMLElement &amp;element) const</argsstring>
+        <name>EvaluateToFloat</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate XPath query and expecting a float return value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="394" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1ab34acdc7b736117a490eb705a7e97162" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XPathQuery::EvaluateToString</definition>
+        <argsstring>(const XMLElement &amp;element) const</argsstring>
+        <name>EvaluateToString</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Evaluate XPath query and expecting a string return value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="396" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a50ea4d1f314b4508063ccd3913278c4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref></type>
+        <definition>XPathResultSet Urho3D::XPathQuery::Evaluate</definition>
+        <argsstring>(const XMLElement &amp;element) const</argsstring>
+        <name>Evaluate</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Evaluate XPath query and expecting an XPath query result set as return value. Note: The <ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref> return value must be stored in a lhs variable to ensure the underlying xpath_node_set* is still valid while performing <ref refid="classUrho3D_1_1XPathResultSet_1a6b8f323c3876c64464624ef2737d462a" kindref="member">XPathResultSet::FirstResult()</ref>, <ref refid="classUrho3D_1_1XPathResultSet_1a37ce22a7e0f84c8463c179c7eb4551b8" kindref="member">XPathResultSet::operator []</ref>, and <ref refid="classUrho3D_1_1XMLElement_1a51de9799a837e725c6b8c12b48da0215" kindref="member">XMLElement::NextResult()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="399" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a0b81e5ad5ce2c90b0b8c19979287f8df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XPathQuery::GetQuery</definition>
+        <argsstring>() const</argsstring>
+        <name>GetQuery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return query string. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="403" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="403" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a6347f8c4b5bbcaa13976320bfe1220bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>pugi::xpath_query *</type>
+        <definition>pugi::xpath_query* Urho3D::XPathQuery::GetXPathQuery</definition>
+        <argsstring>() const</argsstring>
+        <name>GetXPathQuery</name>
+        <briefdescription>
+<para>Return pugixml xpath_query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="406" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="406" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XPathQuery_1a32b309ab377295ff973e880b28128e04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>pugi::xpath_variable_set *</type>
+        <definition>pugi::xpath_variable_set* Urho3D::XPathQuery::GetXPathVariableSet</definition>
+        <argsstring>() const</argsstring>
+        <name>GetXPathVariableSet</name>
+        <briefdescription>
+<para>Return pugixml xpath_variable_set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="409" column="30" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="409" bodyend="409"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>XPath query. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="366" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="367" bodyend="418"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1XPathQuery_1ab8c70a8a9efa452942c34853db86966b" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>Bind</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1acb92995f3542d3ba4a2a635840573f02" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a50ea4d1f314b4508063ccd3913278c4b" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>Evaluate</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a7852001d93b54f9597e53017479fef95" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>EvaluateToBool</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a1904c7b521dce582a870a51381fc92a3" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>EvaluateToFloat</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1ab34acdc7b736117a490eb705a7e97162" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>EvaluateToString</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a0b81e5ad5ce2c90b0b8c19979287f8df" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>GetQuery</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a6347f8c4b5bbcaa13976320bfe1220bf" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>GetXPathQuery</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a32b309ab377295ff973e880b28128e04" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>GetXPathVariableSet</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a80aacd82825b9107f44fd161d4aded7e" prot="private" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>query_</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1aae99943b5c1df4cd6db4d2f1d5d72a0e" prot="private" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>queryString_</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1aec25fa25b5f8aace1f550473888b790b" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>SetQuery</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1ae49880eeaa6a9bd48f2f6aaa2058d0e2" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>SetVariable</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a5c7818f5db6bc81cc7da579b06acdf8e" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>SetVariable</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1ae1a4fd5e6ac1a258dc7acc38fa51ed9e" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>SetVariable</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1aba6c3126d669247fc97871759c526d26" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>SetVariable</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a2440397a1464c3d57c9c913d8f0b8646" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>SetVariable</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a56c1978032b2afbf303cd08ace75d8c1" prot="private" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>variables_</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a6d21ec43c9865103b465bc20adc4dddb" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>XPathQuery</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a4490d01c2f01b7b3b8d574018c7b2bd7" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>XPathQuery</name></member>
+      <member refid="classUrho3D_1_1XPathQuery_1a3c4ee776a9b402f8e6360bb439968d51" prot="public" virt="non-virtual"><scope>Urho3D::XPathQuery</scope><name>~XPathQuery</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

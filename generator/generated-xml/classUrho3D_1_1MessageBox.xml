@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1MessageBox" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::MessageBox</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="MessageBox_8h" local="no">MessageBox.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1MessageBox_1a838e525a87b768d803c8119a4226d9dd" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::MessageBox::window_</definition>
+        <argsstring></argsstring>
+        <name>window_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element containing the whole <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> layout. Typically it is a <ref refid="classUrho3D_1_1Window" kindref="compound">Window</ref> element type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="73" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1MessageBox_1af2bcee7db87320ea3a956ea3d0a10357" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Text" kindref="compound">Text</ref> *</type>
+        <definition>Text* Urho3D::MessageBox::titleText_</definition>
+        <argsstring></argsstring>
+        <name>titleText_</name>
+        <briefdescription>
+<para>Title text element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="75" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1MessageBox_1a87ad69edbdba14d0a51889e99aa95a2b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Text" kindref="compound">Text</ref> *</type>
+        <definition>Text* Urho3D::MessageBox::messageText_</definition>
+        <argsstring></argsstring>
+        <name>messageText_</name>
+        <briefdescription>
+<para>Message text element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="77" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1MessageBox_1a8ad7e2adb8dac6213c5d5afe29db22b4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Button" kindref="compound">Button</ref> *</type>
+        <definition>Button* Urho3D::MessageBox::okButton_</definition>
+        <argsstring></argsstring>
+        <name>okButton_</name>
+        <briefdescription>
+<para>OK button element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="79" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1a92065fc96e684dfb5128c791e53550bd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::MessageBox::MessageBox</definition>
+        <argsstring>(Context *context, const String &amp;messageString=String::EMPTY, const String &amp;titleString=String::EMPTY, XMLFile *layoutFile=nullptr, XMLFile *styleFile=nullptr)</argsstring>
+        <name>MessageBox</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>messageString</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>titleString</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>layoutFile</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>styleFile</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct. If layout file is not given, use the default message box layout. If style file is not given, use the default style file from root <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1a9e26b439397f905f374243a647a6c514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::MessageBox::~MessageBox</definition>
+        <argsstring>() override</argsstring>
+        <name>~MessageBox</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1a6a0e6dcf5c1a022d5eac1cdb20782b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::MessageBox::SetTitle</definition>
+        <argsstring>(const String &amp;text)</argsstring>
+        <name>SetTitle</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set title text. No-ops if there is no title text element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1a387d64bea6d7ffa43706d57ad125fd14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::MessageBox::SetMessage</definition>
+        <argsstring>(const String &amp;text)</argsstring>
+        <name>SetMessage</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set message text. No-ops if there is no message text element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1ae132b26a8ee7e8f5960912ec5e3e1216" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::MessageBox::GetTitle</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return title text. Return empty string if there is no title text element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1ad0bd9d745416c5f408797aad8a4949d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::MessageBox::GetMessage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return message text. Return empty string if there is no message text element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="62" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1a321eb825c9aeed179c5961e16713f1d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::MessageBox::GetWindow</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return dialog window. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="66" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1aefc6a6b6069c70f3f7037498ec17cd74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::MessageBox::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="48" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1MessageBox_1ac48d58c104a3fefd9181cfb91d130a03" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::MessageBox::HandleMessageAcknowledged</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleMessageAcknowledged</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle events that dismiss the message box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="70" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Message box dialog. Manages its lifetime automatically, so the application does not need to hold a reference to it, and shouldn&apos;t attempt to destroy it manually. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::MessageBox</label>
+        <link refid="classUrho3D_1_1MessageBox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::MessageBox</label>
+        <link refid="classUrho3D_1_1MessageBox"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" line="36" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/MessageBox.h" bodystart="37" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1ad0bd9d745416c5f408797aad8a4949d4" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetMessage</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1ae132b26a8ee7e8f5960912ec5e3e1216" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetTitle</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::MessageBox</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::MessageBox</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::MessageBox</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a321eb825c9aeed179c5961e16713f1d0" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>GetWindow</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1ac48d58c104a3fefd9181cfb91d130a03" prot="private" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>HandleMessageAcknowledged</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a92065fc96e684dfb5128c791e53550bd" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>MessageBox</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a87ad69edbdba14d0a51889e99aa95a2b" prot="private" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>messageText_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a8ad7e2adb8dac6213c5d5afe29db22b4" prot="private" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>okButton_</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::MessageBox</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1aefc6a6b6069c70f3f7037498ec17cd74" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a387d64bea6d7ffa43706d57ad125fd14" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SetMessage</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a6a0e6dcf5c1a022d5eac1cdb20782b45" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SetTitle</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1af2bcee7db87320ea3a956ea3d0a10357" prot="private" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>titleText_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a838e525a87b768d803c8119a4226d9dd" prot="private" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>window_</name></member>
+      <member refid="classUrho3D_1_1MessageBox_1a9e26b439397f905f374243a647a6c514" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>~MessageBox</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::MessageBox</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::MessageBox</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

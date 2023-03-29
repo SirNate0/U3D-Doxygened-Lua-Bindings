@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Shader" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Shader</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <includes refid="Shader_8h" local="no">Shader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Shader_1a7daa126285556e404a5b1a0cd2dc91ce" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Shader::vsSourceCode_</definition>
+        <argsstring></argsstring>
+        <name>vsSourceCode_</name>
+        <briefdescription>
+<para>Source code adapted for vertex shader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="73" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Shader_1a0e96bb421efd655eecfb361a95ce3fd2" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Shader::psSourceCode_</definition>
+        <argsstring></argsstring>
+        <name>psSourceCode_</name>
+        <briefdescription>
+<para>Source code adapted for pixel shader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="75" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Shader_1aec5728a0e323fe4446a3f588cdaecc3e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;ShaderVariation&gt; &gt; Urho3D::Shader::vsVariations_</definition>
+        <argsstring></argsstring>
+        <name>vsVariations_</name>
+        <briefdescription>
+<para>Vertex shader variations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="77" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Shader_1adfa590b8b44234a22839f579043c142a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;ShaderVariation&gt; &gt; Urho3D::Shader::psVariations_</definition>
+        <argsstring></argsstring>
+        <name>psVariations_</name>
+        <briefdescription>
+<para>Pixel shader variations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="79" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Shader_1adf02703badf2b949b0a6ab135e451582" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Shader::timeStamp_</definition>
+        <argsstring></argsstring>
+        <name>timeStamp_</name>
+        <briefdescription>
+<para>Source code timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="81" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Shader_1a8d251d6e21b46a17f812b199f2e6f4c0" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Shader::numVariations_</definition>
+        <argsstring></argsstring>
+        <name>numVariations_</name>
+        <briefdescription>
+<para>Number of unique variations so far. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="83" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1aba3bb8f3c9c058bdefe76f3e32c3756b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Shader::Shader</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Shader</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1ad2298fc6daf972d8fbeefe44c4658e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Shader::~Shader</definition>
+        <argsstring>() override</argsstring>
+        <name>~Shader</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a480379ec83dd10293920821dcac51764" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Shader::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a1ab04053c86a081808a5ff05d5cfa4cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Shader::EndLoad</definition>
+        <argsstring>() override</argsstring>
+        <name>EndLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d">EndLoad</reimplements>
+        <briefdescription>
+<para>Finish resource loading. Always called from the main thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a49d377301c9a6001441299a889db8f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref> *</type>
+        <definition>ShaderVariation* Urho3D::Shader::GetVariation</definition>
+        <argsstring>(ShaderType type, const String &amp;defines)</argsstring>
+        <name>GetVariation</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>defines</declname>
+        </param>
+        <briefdescription>
+<para>Return a variation with defines. Separate multiple defines with spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="54" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a3779092cf321de7c41b92b9e78061df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref> *</type>
+        <definition>ShaderVariation* Urho3D::Shader::GetVariation</definition>
+        <argsstring>(ShaderType type, const char *defines)</argsstring>
+        <name>GetVariation</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>defines</declname>
+        </param>
+        <briefdescription>
+<para>Return a variation with defines. Separate multiple defines with spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="56" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a89733020c3885c9147807e015ff0efa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Shader::GetSourceCode</definition>
+        <argsstring>(ShaderType type) const</argsstring>
+        <name>GetSourceCode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return either vertex or pixel shader source code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="59" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a62950b6bf5722e6dacd08e8befafc32c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Shader::GetTimeStamp</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeStamp</name>
+        <briefdescription>
+<para>Return the latest timestamp of the shader code and its includes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="62" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1aeeac05deeaca472e711cdc3ac9dcfa2e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Shader::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="46" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a6f4d70b2050c65c821dd721418cc2789" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Shader::ProcessSource</definition>
+        <argsstring>(String &amp;code, Deserializer &amp;source)</argsstring>
+        <name>ProcessSource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Process source code and include files. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a5274cb30fe0bf589a5a4006fc0c630fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Shader::NormalizeDefines</definition>
+        <argsstring>(const String &amp;defines)</argsstring>
+        <name>NormalizeDefines</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>defines</declname>
+        </param>
+        <briefdescription>
+<para>Sort the defines and strip extra spaces to prevent creation of unnecessary duplicate shader variations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="68" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Shader_1a331a1e69bf511d57c6c788ddddba2169" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Shader::RefreshMemoryUse</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshMemoryUse</name>
+        <briefdescription>
+<para>Recalculate the memory used by the shader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="70" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Shader resource consisting of several shader variations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Shader</label>
+        <link refid="classUrho3D_1_1Shader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Shader</label>
+        <link refid="classUrho3D_1_1Shader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" line="35" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Shader.h" bodystart="36" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Shader_1a480379ec83dd10293920821dcac51764" prot="public" virt="virtual"><scope>Urho3D::Shader</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Shader</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Shader_1a1ab04053c86a081808a5ff05d5cfa4cb" prot="public" virt="virtual"><scope>Urho3D::Shader</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Shader_1a89733020c3885c9147807e015ff0efa2" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetSourceCode</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Shader_1a62950b6bf5722e6dacd08e8befafc32c" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetTimeStamp</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Shader</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Shader</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Shader</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Shader_1a49d377301c9a6001441299a889db8f67" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetVariation</name></member>
+      <member refid="classUrho3D_1_1Shader_1a3779092cf321de7c41b92b9e78061df0" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>GetVariation</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1Shader_1a5274cb30fe0bf589a5a4006fc0c630fa" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>NormalizeDefines</name></member>
+      <member refid="classUrho3D_1_1Shader_1a8d251d6e21b46a17f812b199f2e6f4c0" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>numVariations_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Shader</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Shader_1a6f4d70b2050c65c821dd721418cc2789" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>ProcessSource</name></member>
+      <member refid="classUrho3D_1_1Shader_1a0e96bb421efd655eecfb361a95ce3fd2" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>psSourceCode_</name></member>
+      <member refid="classUrho3D_1_1Shader_1adfa590b8b44234a22839f579043c142a" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>psVariations_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1Shader_1a331a1e69bf511d57c6c788ddddba2169" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>RefreshMemoryUse</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Shader_1aeeac05deeaca472e711cdc3ac9dcfa2e" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd" prot="public" virt="virtual"><scope>Urho3D::Shader</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::Shader</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Shader_1aba3bb8f3c9c058bdefe76f3e32c3756b" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>Shader</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Shader_1adf02703badf2b949b0a6ab135e451582" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>timeStamp_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Shader_1a7daa126285556e404a5b1a0cd2dc91ce" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>vsSourceCode_</name></member>
+      <member refid="classUrho3D_1_1Shader_1aec5728a0e323fe4446a3f588cdaecc3e" prot="private" virt="non-virtual"><scope>Urho3D::Shader</scope><name>vsVariations_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Shader</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Shader_1ad2298fc6daf972d8fbeefe44c4658e4a" prot="public" virt="non-virtual"><scope>Urho3D::Shader</scope><name>~Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

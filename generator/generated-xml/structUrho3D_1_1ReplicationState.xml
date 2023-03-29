@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1ReplicationState" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::ReplicationState</compoundname>
+    <derivedcompoundref refid="structUrho3D_1_1ComponentReplicationState" prot="public" virt="non-virtual">Urho3D::ComponentReplicationState</derivedcompoundref>
+    <derivedcompoundref refid="structUrho3D_1_1NodeReplicationState" prot="public" virt="non-virtual">Urho3D::NodeReplicationState</derivedcompoundref>
+    <derivedcompoundref refid="structUrho3D_1_1SceneReplicationState" prot="public" virt="non-virtual">Urho3D::SceneReplicationState</derivedcompoundref>
+    <includes refid="ReplicationState_8h" local="no">ReplicationState.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1ReplicationState_1a1b0371a8418b54342ffdd20319e9acd7" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> *</type>
+        <definition>Connection* Urho3D::ReplicationState::connection_</definition>
+        <argsstring></argsstring>
+        <name>connection_</name>
+        <briefdescription>
+<para>Parent network connection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ReplicationState.h" line="141" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ReplicationState.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for per-user network replication states. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Urho3D::SceneReplicationState</label>
+        <link refid="structUrho3D_1_1SceneReplicationState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::NodeReplicationState</label>
+        <link refid="structUrho3D_1_1NodeReplicationState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::ReplicationState</label>
+        <link refid="structUrho3D_1_1ReplicationState"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::ComponentReplicationState</label>
+        <link refid="structUrho3D_1_1ComponentReplicationState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>Urho3D::Controls</label>
+        <link refid="classUrho3D_1_1Controls"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>extraData_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::ReplicationState</label>
+        <link refid="structUrho3D_1_1ReplicationState"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>connection_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="10">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Connection</label>
+        <link refid="classUrho3D_1_1Connection"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>controls_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>identity_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ReplicationState.h" line="138" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ReplicationState.h" bodystart="139" bodyend="142"/>
+    <listofallmembers>
+      <member refid="structUrho3D_1_1ReplicationState_1a1b0371a8418b54342ffdd20319e9acd7" prot="public" virt="non-virtual"><scope>Urho3D::ReplicationState</scope><name>connection_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

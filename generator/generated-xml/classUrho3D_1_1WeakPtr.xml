@@ -1,0 +1,716 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1WeakPtr" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::WeakPtr</compoundname>
+    <includes refid="Ptr_8h" local="no">Ptr.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1WeakPtr_1a2df746dc8f5450b6f1eb70897d8d5c8b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>class</type>
+        <definition>friend class WeakPtr</definition>
+        <argsstring></argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="507" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1WeakPtr_1a17bd4323c63b3fad37e900cd88f41459" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Urho3D::WeakPtr&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <briefdescription>
+<para>Pointer to the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="536" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WeakPtr_1a961b86acbc605648a9b05927770c2dfb" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> *</type>
+        <definition>RefCount* Urho3D::WeakPtr&lt; T &gt;::refCount_</definition>
+        <argsstring></argsstring>
+        <name>refCount_</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="538" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1ad5ddfd4e9d8457b13920a9ca589d11fe" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>WeakPtr</name>
+        <briefdescription>
+<para>Construct a null weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="267" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="267" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a0e7cfab2fd2bb6512e7f63cb7995a6a1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>(std::nullptr_t) noexcept</argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+<para>Construct a null weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="274" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="274" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a8dcff7028bf3be6219f78bde04e566a7" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>(const WeakPtr&lt; T &gt; &amp;rhs) noexcept</argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="281" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="281" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1af6198304e49c45f62ef11c20a9c91f42" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>(WeakPtr&lt; T &gt; &amp;&amp;rhs) noexcept</argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move-construct from another weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="289" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="289" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1ab2bb0478b0d14527f88d6c8f7e3cf0f2" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs) noexcept</argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another weak pointer allowing implicit upcasting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="298" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="298" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a4b691af510fa7f588c04da52e000906c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>(const SharedPtr&lt; T &gt; &amp;rhs) noexcept</argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a shared pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="306" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="306" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1abbe6349c783e42c632600ba6c934fa52" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::WeakPtr</definition>
+        <argsstring>(T *ptr) noexcept</argsstring>
+        <name>WeakPtr</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="314" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="314" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1aaf8cf1f9cf45ff9b2ce440381d09b0ef" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::~WeakPtr</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>~WeakPtr</name>
+        <briefdescription>
+<para>Destruct. Release the weak reference to the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="322" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1aa1ba677811dd1e7adba67e64529772b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakPtr&lt;T&gt;&amp; Urho3D::WeakPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const SharedPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from a shared pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="328" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="328" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a2a135f817306e4ed6364d90f5552c910" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakPtr&lt;T&gt;&amp; Urho3D::WeakPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const WeakPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from a weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="340" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="340" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a75c964153c1b75845319f08856d48ef8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakPtr&lt;T&gt;&amp; Urho3D::WeakPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(WeakPtr&lt; T &gt; &amp;&amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move-assign from another weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="352" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="352" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1acaad39ba18563702df9850035f78c3f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakPtr&lt;T&gt;&amp; Urho3D::WeakPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from another weak pointer allowing implicit upcasting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="361" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="361" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1ab1fc769184923acb6ad80040f5888da6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakPtr&lt;T&gt;&amp; Urho3D::WeakPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(T *ptr)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Assign from a raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="375" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="375" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a2d2dc66571584f6d361616a66ec7828e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; T &gt;</type>
+        <definition>SharedPtr&lt;T&gt; Urho3D::WeakPtr&lt; T &gt;::Lock</definition>
+        <argsstring>() const</argsstring>
+        <name>Lock</name>
+        <briefdescription>
+<para>Convert to a shared pointer. If expired, return a null shared pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="391" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="391" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1aecea2a50d997d4e1b098f60f1af446f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::WeakPtr&lt; T &gt;::Get</definition>
+        <argsstring>() const</argsstring>
+        <name>Get</name>
+        <briefdescription>
+<para>Return raw pointer. If expired, return null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="400" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a6a8d92a45c12fea0853b3626ea27fadf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::WeakPtr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>Point to the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="406" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="406" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1ace12a0baead362c2a77c774cfc6a4585" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::WeakPtr&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Dereference the object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="414" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="414" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a87e1a5d0ba595a804fa2df4e88e4a98c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::WeakPtr&lt; T &gt;::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Subscript the object if applicable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="422" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="422" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a2c4e0cd51831bbe83a386a05ea6e2a8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Urho3D::WeakPtr&lt; T &gt;::operator==</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for equality with another weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="430" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="430" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1af67c2cc2d274ccd891286c41ebc653fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Urho3D::WeakPtr&lt; T &gt;::operator!=</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for inequality with another weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="433" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="433" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a941fa1102128cc291e403c5ca97a1032" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Urho3D::WeakPtr&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for less than with another weak pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="436" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="436" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1aafa5c46d96e7da1385a0230c9b7f6444" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakPtr&lt; T &gt;::operator T*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T*</name>
+        <briefdescription>
+<para>Convert to a raw pointer, null if the object is expired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="439" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="439" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a51d2aa8eba3acd4927b4a7aef87b4599" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakPtr&lt; T &gt;::Swap</definition>
+        <argsstring>(WeakPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Swap with another <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="442" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="442" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1aa7fa489e33d135a645fd3c9e488b7e07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakPtr&lt; T &gt;::Reset</definition>
+        <argsstring>(T *ptr=nullptr)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Reset with another pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="449" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="449" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a6ebadfd6bfe91988f2d1a7c71774b439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::WeakPtr&lt; T &gt;::StaticCast</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>StaticCast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Perform a static cast from a weak pointer of another type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="456" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="456" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1abd8638f11731fa480dc17fb021cc4c09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::WeakPtr&lt; T &gt;::DynamicCast</definition>
+        <argsstring>(const WeakPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>DynamicCast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Perform a dynamic cast from a weak pointer of another type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="465" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="465" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1abcec7845da68fad9b6ac31d89f29a1d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakPtr&lt; T &gt;::Null</definition>
+        <argsstring>() const</argsstring>
+        <name>Null</name>
+        <briefdescription>
+<para>Check if the pointer is null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="480" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="480" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a193a1cccf78a53456ed0db10d6a503bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakPtr&lt; T &gt;::NotNull</definition>
+        <argsstring>() const</argsstring>
+        <name>NotNull</name>
+        <briefdescription>
+<para>Check if the pointer is not null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="483" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="483" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a28404d82c29c226eb9c1496fba7f94c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::WeakPtr&lt; T &gt;::Refs</definition>
+        <argsstring>() const</argsstring>
+        <name>Refs</name>
+        <briefdescription>
+<para>Return the object&apos;s reference count, or 0 if null pointer or if object has expired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="486" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="486" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1adabad5d88e900929e519be8ba1af653c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::WeakPtr&lt; T &gt;::WeakRefs</definition>
+        <argsstring>() const</argsstring>
+        <name>WeakRefs</name>
+        <briefdescription>
+<para>Return the object&apos;s weak reference count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="489" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="489" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a80470479c6c1e102058e458fe5d20190" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakPtr&lt; T &gt;::Expired</definition>
+        <argsstring>() const</argsstring>
+        <name>Expired</name>
+        <briefdescription>
+<para>Return whether the object has expired. If null pointer, always return true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="498" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="498" bodyend="498"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a660e86862bad39ff2983f4f2d650123b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> *</type>
+        <definition>RefCount* Urho3D::WeakPtr&lt; T &gt;::RefCountPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>RefCountPtr</name>
+        <briefdescription>
+<para>Return pointer to the <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="501" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="501" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a5b9417b33c5089d931edbf9db78328ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::WeakPtr&lt; T &gt;::ToHash</definition>
+        <argsstring>() const</argsstring>
+        <name>ToHash</name>
+        <briefdescription>
+<para>Return hash value for <ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref> &amp; <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="504" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="504" bodyend="504"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a9ac7ae27059f4903e4dc62b9ff13cd0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakPtr&lt; T &gt;::AddRef</definition>
+        <argsstring>()</argsstring>
+        <name>AddRef</name>
+        <briefdescription>
+<para>Add a weak reference to the object pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="510" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="510" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakPtr_1a9933f3e1372623ec15c6f04896db8bbf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakPtr&lt; T &gt;::ReleaseRef</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseRef</name>
+        <briefdescription>
+<para>Release the weak reference. Delete the Refcount structure if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="520" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="520" bodyend="533"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Weak pointer template class with intrusive reference counting. Does not keep the object pointed to alive. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" line="263" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Ptr.h" bodystart="264" bodyend="539"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1WeakPtr_1a9ac7ae27059f4903e4dc62b9ff13cd0c" prot="private" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1abd8638f11731fa480dc17fb021cc4c09" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>DynamicCast</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a80470479c6c1e102058e458fe5d20190" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Expired</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1aecea2a50d997d4e1b098f60f1af446f7" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Get</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a2d2dc66571584f6d361616a66ec7828e" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Lock</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a193a1cccf78a53456ed0db10d6a503bf" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>NotNull</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1abcec7845da68fad9b6ac31d89f29a1d2" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Null</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1aafa5c46d96e7da1385a0230c9b7f6444" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator T*</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1af67c2cc2d274ccd891286c41ebc653fc" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator!=</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1ace12a0baead362c2a77c774cfc6a4585" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator*</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a6a8d92a45c12fea0853b3626ea27fadf" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator-&gt;</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a941fa1102128cc291e403c5ca97a1032" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator&lt;</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1aa1ba677811dd1e7adba67e64529772b4" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a2a135f817306e4ed6364d90f5552c910" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a75c964153c1b75845319f08856d48ef8" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1acaad39ba18563702df9850035f78c3f0" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1ab1fc769184923acb6ad80040f5888da6" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a2c4e0cd51831bbe83a386a05ea6e2a8a" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator==</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a87e1a5d0ba595a804fa2df4e88e4a98c" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a17bd4323c63b3fad37e900cd88f41459" prot="private" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>ptr_</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a961b86acbc605648a9b05927770c2dfb" prot="private" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>refCount_</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a660e86862bad39ff2983f4f2d650123b" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a28404d82c29c226eb9c1496fba7f94c3" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a9933f3e1372623ec15c6f04896db8bbf" prot="private" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1aa7fa489e33d135a645fd3c9e488b7e07" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Reset</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a6ebadfd6bfe91988f2d1a7c71774b439" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>StaticCast</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a51d2aa8eba3acd4927b4a7aef87b4599" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>Swap</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a5b9417b33c5089d931edbf9db78328ef" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>ToHash</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a2df746dc8f5450b6f1eb70897d8d5c8b" prot="private" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1ad5ddfd4e9d8457b13920a9ca589d11fe" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a0e7cfab2fd2bb6512e7f63cb7995a6a1" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a8dcff7028bf3be6219f78bde04e566a7" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1af6198304e49c45f62ef11c20a9c91f42" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1ab2bb0478b0d14527f88d6c8f7e3cf0f2" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1a4b691af510fa7f588c04da52e000906c" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1abbe6349c783e42c632600ba6c934fa52" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakPtr</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1adabad5d88e900929e519be8ba1af653c" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1WeakPtr_1aaf8cf1f9cf45ff9b2ce440381d09b0ef" prot="public" virt="non-virtual"><scope>Urho3D::WeakPtr</scope><name>~WeakPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

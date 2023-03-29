@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1FontFaceBitmap" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::FontFaceBitmap</compoundname>
+    <basecompoundref refid="classUrho3D_1_1FontFace" prot="public" virt="non-virtual">Urho3D::FontFace</basecompoundref>
+    <includes refid="FontFaceBitmap_8h" local="no">FontFaceBitmap.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1aa898caaef53f0a0dd91aee36c9be1fb5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::FontFaceBitmap::FontFaceBitmap</definition>
+        <argsstring>(Font *font)</argsstring>
+        <name>FontFaceBitmap</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="38" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1a96e43367b384663f6fb90f26f2638b6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::FontFaceBitmap::~FontFaceBitmap</definition>
+        <argsstring>() override</argsstring>
+        <name>~FontFaceBitmap</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="40" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1aa7c66b38a3934b0ec5fa4b76afe01f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FontFaceBitmap::Load</definition>
+        <argsstring>(const unsigned char *fontData, unsigned fontDataSize, float pointSize) override</argsstring>
+        <name>Load</name>
+        <reimplements refid="classUrho3D_1_1FontFace_1a5e71997177bf95883de0906fc1ec29f6">Load</reimplements>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>fontData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>fontDataSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pointSize</declname>
+        </param>
+        <briefdescription>
+<para>Load font face. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1a22466db124ed637989633f670036af8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FontFaceBitmap::Load</definition>
+        <argsstring>(FontFace *fontFace, bool usedGlyphs)</argsstring>
+        <name>Load</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1FontFace" kindref="compound">FontFace</ref> *</type>
+          <declname>fontFace</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>usedGlyphs</declname>
+        </param>
+        <briefdescription>
+<para>Load from existed font face, pack used glyphs into smallest texture size and smallest number of texture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1ade4748ab7c5ca954e917db8e47d6ae61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FontFaceBitmap::Save</definition>
+        <argsstring>(Serializer &amp;dest, int pointSize, const String &amp;indentation=&quot;\t&quot;)</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>indentation</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Save as a new bitmap font type in XML format. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="47" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1a3ba04cb7f61d06cf939f553b2b4d7f5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::FontFaceBitmap::ConvertFormatToNumComponents</definition>
+        <argsstring>(unsigned format)</argsstring>
+        <name>ConvertFormatToNumComponents</name>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+<para>Convert graphics format to number of components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="51" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1a83c00ad4e71135f961bdfb285c902a35" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>SharedPtr&lt;Image&gt; Urho3D::FontFaceBitmap::SaveFaceTexture</definition>
+        <argsstring>(Texture2D *texture)</argsstring>
+        <name>SaveFaceTexture</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Save font face texture as image resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="53" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1a8df38e4e95716311c6d0898f95339ec0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FontFaceBitmap::SaveFaceTexture</definition>
+        <argsstring>(Texture2D *texture, const String &amp;fileName)</argsstring>
+        <name>SaveFaceTexture</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Save font face texture as image file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFaceBitmap_1a7753e853daa6d7bc5a0b1f54e3db6105" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FontFaceBitmap::Blit</definition>
+        <argsstring>(Image *dest, int x, int y, int width, int height, Image *source, int sourceX, int sourceY, int components)</argsstring>
+        <name>Blit</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sourceX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sourceY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>components</declname>
+        </param>
+        <briefdescription>
+<para>Blit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="57" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bitmap font face description. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::FontFaceBitmap</label>
+        <link refid="classUrho3D_1_1FontFaceBitmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::FontFace</label>
+        <link refid="classUrho3D_1_1FontFace"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::Font</label>
+        <link refid="classUrho3D_1_1Font"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashMap&lt; unsigned, float &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::FontFaceBitmap</label>
+        <link refid="classUrho3D_1_1FontFaceBitmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Vector&lt; Urho3D::SharedPtr&lt; Urho3D::Texture2D &gt; &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::HashMap&lt; unsigned, Urho3D::FontGlyph &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::FontFace</label>
+        <link refid="classUrho3D_1_1FontFace"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>textures_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>glyphMapping_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>kerningMapping_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>font_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFaceBitmap.h" bodystart="35" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1a7753e853daa6d7bc5a0b1f54e3db6105" prot="private" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>Blit</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1a3ba04cb7f61d06cf939f553b2b4d7f5d" prot="private" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>ConvertFormatToNumComponents</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a3b9183fe383099886668e756d4b33175" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>CreateFaceTexture</name></member>
+      <member refid="classUrho3D_1_1FontFace_1abb2c54779d7c016d65626eb93935ec9c" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>font_</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ae8ca1f635e5dcc8d56c7103ac3798d37" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>FontFace</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1aa898caaef53f0a0dd91aee36c9be1fb5" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>FontFaceBitmap</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a9892e51b29e5a187ec664987ce65f015" prot="public" virt="virtual"><scope>Urho3D::FontFaceBitmap</scope><name>GetGlyph</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a7a5a7c77278cea7c12ac7ce9932d64f2" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>GetKerning</name></member>
+      <member refid="classUrho3D_1_1FontFace_1afb950b2511c55edc016075a0d9bf71f0" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>GetPointSize</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a503984368c0c052770c7ddf4a71e9db8" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>GetRowHeight</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ab6170537fe27a38bec731e9171f57986" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>GetTextures</name></member>
+      <member refid="classUrho3D_1_1FontFace_1abd6616fd513e87d6a98f057e384f7837" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>glyphMapping_</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a95247bfe09ad75ad4fdd0255d089869f" prot="public" virt="virtual"><scope>Urho3D::FontFaceBitmap</scope><name>HasMutableGlyphs</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ae8882a162d9328cb5cdc088267443923" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a4b5d7dfe421fb08677346f241902c593" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>kerningMapping_</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1aa7c66b38a3934b0ec5fa4b76afe01f2a" prot="public" virt="virtual"><scope>Urho3D::FontFaceBitmap</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1a22466db124ed637989633f670036af8f" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a13aa70974c8c9a7f52e216fa103ef852" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>LoadFaceTexture</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ab0e60f9be8afc62bbaa2e6d5ae387214" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>pointSize_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1FontFace_1aae144efc151dc7e9d634439240a7b88f" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>rowHeight_</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1ade4748ab7c5ca954e917db8e47d6ae61" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1a83c00ad4e71135f961bdfb285c902a35" prot="private" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>SaveFaceTexture</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1a8df38e4e95716311c6d0898f95339ec0" prot="private" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>SaveFaceTexture</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ae5aa8d97b378517f05375ae7c05bee82" prot="protected" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>textures_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a38314b6f878cf3c1137b7e4721bd105a" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>~FontFace</name></member>
+      <member refid="classUrho3D_1_1FontFaceBitmap_1a96e43367b384663f6fb90f26f2638b6e" prot="public" virt="non-virtual"><scope>Urho3D::FontFaceBitmap</scope><name>~FontFaceBitmap</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::FontFaceBitmap</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

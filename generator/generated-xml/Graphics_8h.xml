@@ -1,0 +1,1006 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Graphics_8h" kind="file" language="C++">
+    <compoundname>Graphics.h</compoundname>
+    <includes refid="ArrayPtr_8h" local="yes">../Container/ArrayPtr.h</includes>
+    <includes refid="HashSet_8h" local="yes">../Container/HashSet.h</includes>
+    <includes refid="Mutex_8h" local="yes">../Core/Mutex.h</includes>
+    <includes refid="Object_8h" local="yes">../Core/Object.h</includes>
+    <includes refid="GraphicsDefs_8h" local="yes">../Graphics/GraphicsDefs.h</includes>
+    <includes refid="ShaderVariation_8h" local="yes">../Graphics/ShaderVariation.h</includes>
+    <includes refid="Color_8h" local="yes">../Math/Color.h</includes>
+    <includes refid="Plane_8h" local="yes">../Math/Plane.h</includes>
+    <includes refid="Rect_8h" local="yes">../Math/Rect.h</includes>
+    <includes refid="Image_8h" local="yes">../Resource/Image.h</includes>
+    <incdepgraph>
+      <node id="44">
+        <label>../Math/Matrix3.h</label>
+        <link refid="Matrix3_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>../Math/Quaternion.h</label>
+        <link refid="Quaternion_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../Core/Mutex.h</label>
+        <link refid="Mutex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>functional</label>
+      </node>
+      <node id="43">
+        <label>limits</label>
+      </node>
+      <node id="14">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>../Resource/Resource.h</label>
+        <link refid="Resource_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../Container/Pair.h</label>
+        <link refid="Pair_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>../Container/FlagSet.h</label>
+        <link refid="FlagSet_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../Container/HashBase.h</label>
+        <link refid="HashBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../Container/Ptr.h</label>
+        <link refid="Ptr_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>../Math/Vector3.h</label>
+        <link refid="Vector3_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>../Resource/Image.h</label>
+        <link refid="Image_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="45">
+        <label>../Math/Matrix3x4.h</label>
+        <link refid="Matrix3x4_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>../Core/Timer.h</label>
+        <link refid="Timer_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>cstdarg</label>
+      </node>
+      <node id="55">
+        <label>../Math/Plane.h</label>
+        <link refid="Plane_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../Container/HashMap.h</label>
+        <link refid="HashMap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../Container/HashSet.h</label>
+        <link refid="HashSet_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>../Graphics/GPUObject.h</label>
+        <link refid="GPUObject_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../Math/Random.h</label>
+        <link refid="Random_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>../Math/Vector4.h</label>
+        <link refid="Vector4_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>../Math/Color.h</label>
+        <link refid="Color_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>../Resource/JSONValue.h</label>
+        <link refid="JSONValue_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../Math/Rect.h</label>
+        <link refid="Rect_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../Math/StringHash.h</label>
+        <link refid="StringHash_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>typeinfo</label>
+      </node>
+      <node id="5">
+        <label>../Container/Allocator.h</label>
+        <link refid="Allocator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="26">
+        <label>new</label>
+      </node>
+      <node id="27">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>../Container/Hash.h</label>
+        <link refid="Hash_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../Math/MathDefs.h</label>
+        <link refid="MathDefs_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Container/ArrayPtr.h</label>
+        <link refid="ArrayPtr_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>cstdlib</label>
+      </node>
+      <node id="33">
+        <label>cctype</label>
+      </node>
+      <node id="18">
+        <label>../Core/Object.h</label>
+        <link refid="Object_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="46">
+        <label>../Math/Matrix4.h</label>
+        <link refid="Matrix4_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>../Graphics/GraphicsDefs.h</label>
+        <link refid="GraphicsDefs_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Graphics.h</label>
+        <link refid="Graphics_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>../Core/Variant.h</label>
+        <link refid="Variant_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../Container/RefCounted.h</label>
+        <link refid="RefCounted_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../Container/LinkedList.h</label>
+        <link refid="LinkedList_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>../Container/Sort.h</label>
+        <link refid="Sort_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>../Math/Vector2.h</label>
+        <link refid="Vector2_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="24">
+        <label>cstring</label>
+      </node>
+      <node id="16">
+        <label>initializer_list</label>
+      </node>
+      <node id="53">
+        <label>../Graphics/ShaderVariation.h</label>
+        <link refid="ShaderVariation_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../Core/StringHashRegister.h</label>
+        <link refid="StringHashRegister_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structUrho3D_1_1ScratchBuffer" prot="public">Urho3D::ScratchBuffer</innerclass>
+    <innerclass refid="structUrho3D_1_1ScreenModeParams" prot="public">Urho3D::ScreenModeParams</innerclass>
+    <innerclass refid="structUrho3D_1_1WindowModeParams" prot="public">Urho3D::WindowModeParams</innerclass>
+    <innerclass refid="classUrho3D_1_1Graphics" prot="public">Urho3D::Graphics</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Container/ArrayPtr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Container/HashSet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Core/Mutex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Core/Object.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Graphics/GraphicsDefs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Graphics/ShaderVariation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Color.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Plane.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Rect.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Resource/Image.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SDL_Window;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ConstantBuffer;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">File;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Image;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IndexBuffer;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GPUObject;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GraphicsImpl;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RenderSurface;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Shader;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ShaderPrecache;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ShaderProgram;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ShaderVariation;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Texture;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Texture2D;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Texture2DArray;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TextureCube;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Vector3;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Vector4;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">VertexBuffer;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">VertexDeclaration;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ShaderParameter;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structUrho3D_1_1ScratchBuffer" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1ScratchBuffer" kindref="compound">ScratchBuffer</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ScratchBuffer" kindref="compound">ScratchBuffer</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ScratchBuffer_1af16f35d8fcdccb174e5621acbe573146" kindref="member">size_</ref>(0),</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ScratchBuffer_1aef972aaf6c930ccf763481a3e1cff7c8" kindref="member">reserved_</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structUrho3D_1_1ScratchBuffer_1a51146f599cad381056cb947e5faea8ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr&lt;unsigned char&gt;</ref><sp/><ref refid="structUrho3D_1_1ScratchBuffer_1a51146f599cad381056cb947e5faea8ad" kindref="member">data_</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structUrho3D_1_1ScratchBuffer_1af16f35d8fcdccb174e5621acbe573146" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScratchBuffer_1af16f35d8fcdccb174e5621acbe573146" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structUrho3D_1_1ScratchBuffer_1aef972aaf6c930ccf763481a3e1cff7c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScratchBuffer_1aef972aaf6c930ccf763481a3e1cff7c8" kindref="member">reserved_</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structUrho3D_1_1ScreenModeParams" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84" refid="structUrho3D_1_1ScreenModeParams_1aa28f4ba13b0be1eee45a627d6438ca4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1aa28f4ba13b0be1eee45a627d6438ca4f" kindref="member">fullscreen_</ref>{};</highlight></codeline>
+<codeline lineno="86" refid="structUrho3D_1_1ScreenModeParams_1a9fb6755b1fcc4568f02a037160aa17d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a9fb6755b1fcc4568f02a037160aa17d0" kindref="member">borderless_</ref>{};</highlight></codeline>
+<codeline lineno="88" refid="structUrho3D_1_1ScreenModeParams_1afb59f6acfca4eb1866a4f590adc0410b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1afb59f6acfca4eb1866a4f590adc0410b" kindref="member">resizable_</ref>{};</highlight></codeline>
+<codeline lineno="91" refid="structUrho3D_1_1ScreenModeParams_1afc2bbec590df7dd0f13f7b16e305f802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1afc2bbec590df7dd0f13f7b16e305f802" kindref="member">highDPI_</ref>{};</highlight></codeline>
+<codeline lineno="93" refid="structUrho3D_1_1ScreenModeParams_1a78d40271482dba20f37e85a9c949d904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a78d40271482dba20f37e85a9c949d904" kindref="member">vsync_</ref>{};</highlight></codeline>
+<codeline lineno="95" refid="structUrho3D_1_1ScreenModeParams_1aec1e1ac4232736e556bb2693d27770bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1aec1e1ac4232736e556bb2693d27770bd" kindref="member">tripleBuffer_</ref>{};</highlight></codeline>
+<codeline lineno="97" refid="structUrho3D_1_1ScreenModeParams_1a0b727a005d194579ce472eea214bac3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a0b727a005d194579ce472eea214bac3a" kindref="member">multiSample_</ref>{<sp/>1<sp/>};</highlight></codeline>
+<codeline lineno="99" refid="structUrho3D_1_1ScreenModeParams_1a57ca034ecba732c8836c815a4fb0fd3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a57ca034ecba732c8836c815a4fb0fd3b" kindref="member">monitor_</ref>{};</highlight></codeline>
+<codeline lineno="101" refid="structUrho3D_1_1ScreenModeParams_1aa591093cd412ea8afcfab569778e6835" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1aa591093cd412ea8afcfab569778e6835" kindref="member">refreshRate_</ref>{};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="structUrho3D_1_1ScreenModeParams_1ad78d2e0e768685b3b0040c917e6d881e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1ad78d2e0e768685b3b0040c917e6d881e" kindref="member">EqualsExceptVSync</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="105"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1aa28f4ba13b0be1eee45a627d6438ca4f" kindref="member">fullscreen_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1aa28f4ba13b0be1eee45a627d6438ca4f" kindref="member">fullscreen_</ref></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a9fb6755b1fcc4568f02a037160aa17d0" kindref="member">borderless_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1a9fb6755b1fcc4568f02a037160aa17d0" kindref="member">borderless_</ref></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1afb59f6acfca4eb1866a4f590adc0410b" kindref="member">resizable_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1afb59f6acfca4eb1866a4f590adc0410b" kindref="member">resizable_</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1afc2bbec590df7dd0f13f7b16e305f802" kindref="member">highDPI_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1afc2bbec590df7dd0f13f7b16e305f802" kindref="member">highDPI_</ref></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&amp;&amp;<sp/>vsync_<sp/>==<sp/>rhs.vsync_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1aec1e1ac4232736e556bb2693d27770bd" kindref="member">tripleBuffer_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1aec1e1ac4232736e556bb2693d27770bd" kindref="member">tripleBuffer_</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a0b727a005d194579ce472eea214bac3a" kindref="member">multiSample_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1a0b727a005d194579ce472eea214bac3a" kindref="member">multiSample_</ref></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a57ca034ecba732c8836c815a4fb0fd3b" kindref="member">monitor_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1a57ca034ecba732c8836c815a4fb0fd3b" kindref="member">monitor_</ref></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1aa591093cd412ea8afcfab569778e6835" kindref="member">refreshRate_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1aa591093cd412ea8afcfab569778e6835" kindref="member">refreshRate_</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structUrho3D_1_1ScreenModeParams_1a32b9cf3ae1be3bf48ed54bb30a6145d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a32b9cf3ae1be3bf48ed54bb30a6145d6" kindref="member">operator ==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="119"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a78d40271482dba20f37e85a9c949d904" kindref="member">vsync_</ref><sp/>==<sp/>rhs.<ref refid="structUrho3D_1_1ScreenModeParams_1a78d40271482dba20f37e85a9c949d904" kindref="member">vsync_</ref><sp/>&amp;&amp;<sp/><ref refid="structUrho3D_1_1ScreenModeParams_1ad78d2e0e768685b3b0040c917e6d881e" kindref="member">EqualsExceptVSync</ref>(rhs);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="structUrho3D_1_1ScreenModeParams_1a49699afef5fb834d5fd041f572c25926" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams_1a49699afef5fb834d5fd041f572c25926" kindref="member">operator !=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>rhs);<sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="structUrho3D_1_1WindowModeParams" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1WindowModeParams" kindref="compound">WindowModeParams</ref></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131" refid="structUrho3D_1_1WindowModeParams_1a95352eebb3c0eb58b674649cb40f66b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1WindowModeParams_1a95352eebb3c0eb58b674649cb40f66b6" kindref="member">width_</ref>{};</highlight></codeline>
+<codeline lineno="133" refid="structUrho3D_1_1WindowModeParams_1a249f1347c71b2847d24c83cbf2f2a379" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1WindowModeParams_1a249f1347c71b2847d24c83cbf2f2a379" kindref="member">height_</ref>{};</highlight></codeline>
+<codeline lineno="135" refid="structUrho3D_1_1WindowModeParams_1a32fee3048f0f878ce9b34cf0d0296ce9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref><sp/><ref refid="structUrho3D_1_1WindowModeParams_1a32fee3048f0f878ce9b34cf0d0296ce9" kindref="member">screenParams_</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classUrho3D_1_1Graphics" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>URHO3D_OBJECT(<ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref>,<sp/><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145" refid="classUrho3D_1_1Graphics_1a01d1c3a262960e592934f285bfce68db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a01d1c3a262960e592934f285bfce68db" kindref="member">Graphics</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="147" refid="classUrho3D_1_1Graphics_1a4383e66635b706dfece4ff0f2b9eb40d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Graphics_1a4383e66635b706dfece4ff0f2b9eb40d" kindref="member">~Graphics</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classUrho3D_1_1Graphics_1abb1c387ef3e39d11a19066f12c420cc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1abb1c387ef3e39d11a19066f12c420cc6" kindref="member">SetExternalWindow</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>window);</highlight></codeline>
+<codeline lineno="153" refid="classUrho3D_1_1Graphics_1a76a6c8a5a28493a7b2c89550942d168c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a76a6c8a5a28493a7b2c89550942d168c" kindref="member">SetWindowTitle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>windowTitle);</highlight></codeline>
+<codeline lineno="156" refid="classUrho3D_1_1Graphics_1a965c4cfaa32842836185e84b97b57a8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a965c4cfaa32842836185e84b97b57a8f" kindref="member">SetWindowIcon</ref>(<ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref>*<sp/>windowIcon);</highlight></codeline>
+<codeline lineno="159" refid="classUrho3D_1_1Graphics_1a6095d106f98d8feebf88a8e5d888cf29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a6095d106f98d8feebf88a8e5d888cf29" kindref="member">SetWindowPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>position);</highlight></codeline>
+<codeline lineno="161" refid="classUrho3D_1_1Graphics_1a9f1be1b0665ae339705c5e6e2c074e31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a9f1be1b0665ae339705c5e6e2c074e31" kindref="member">SetWindowPosition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="164" refid="classUrho3D_1_1Graphics_1afdcde1ab06c42a77cc58fb29e4594f0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1afdcde1ab06c42a77cc58fb29e4594f0c" kindref="member">SetScreenMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/>params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>maximize<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="167" refid="classUrho3D_1_1Graphics_1a573706d930b58c9d903611affebae991" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a573706d930b58c9d903611affebae991" kindref="member">SetScreenMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="170" refid="classUrho3D_1_1Graphics_1a2adea5d8adacf78e0a5e9093b0aa3f1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a2adea5d8adacf78e0a5e9093b0aa3f1d" kindref="member">SetWindowModes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1WindowModeParams" kindref="compound">WindowModeParams</ref>&amp;<sp/>windowMode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1WindowModeParams" kindref="compound">WindowModeParams</ref>&amp;<sp/>secondaryWindowMode,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>maximize<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172" refid="classUrho3D_1_1Graphics_1a120f99124337d4775a2153c62ec329b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a120f99124337d4775a2153c62ec329b1" kindref="member">SetDefaultWindowModes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/>params);</highlight></codeline>
+<codeline lineno="174" refid="classUrho3D_1_1Graphics_1aac131622deee0f32dffe86943d704f95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aac131622deee0f32dffe86943d704f95" kindref="member">SetMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fullscreen,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>borderless,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resizable,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>highDPI,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vsync,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tripleBuffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>multiSample,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>monitor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refreshRate);</highlight></codeline>
+<codeline lineno="177" refid="classUrho3D_1_1Graphics_1a6bb1ce37325a5ef2f7ba0e3f847b425f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a6bb1ce37325a5ef2f7ba0e3f847b425f" kindref="member">SetMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="180" refid="classUrho3D_1_1Graphics_1af80c739184f6f4e7260a282ee4ace9a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af80c739184f6f4e7260a282ee4ace9a9" kindref="member">SetSRGB</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="183" refid="classUrho3D_1_1Graphics_1ae6b8fbe873ae674483b2a7eefddd3042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae6b8fbe873ae674483b2a7eefddd3042" kindref="member">SetDither</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="186" refid="classUrho3D_1_1Graphics_1a686213415a77f2ce656a6fb823c19dfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a686213415a77f2ce656a6fb823c19dfb" kindref="member">SetFlushGPU</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="188" refid="classUrho3D_1_1Graphics_1a47e45e7d362f8c9f1cd47b1f3dc246ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a47e45e7d362f8c9f1cd47b1f3dc246ff" kindref="member">SetForceGL2</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="191" refid="classUrho3D_1_1Graphics_1ab376231d9cf6828eb33cc1ab796d09bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ab376231d9cf6828eb33cc1ab796d09bb" kindref="member">SetOrientations</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>orientations);</highlight></codeline>
+<codeline lineno="193" refid="classUrho3D_1_1Graphics_1a116de4d90d4b556f408b58878bfd5654" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a116de4d90d4b556f408b58878bfd5654" kindref="member">ToggleFullscreen</ref>();</highlight></codeline>
+<codeline lineno="195" refid="classUrho3D_1_1Graphics_1a22e0894eef1ab48fe9266a9dcb4ddb4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a22e0894eef1ab48fe9266a9dcb4ddb4a" kindref="member">Close</ref>();</highlight></codeline>
+<codeline lineno="197" refid="classUrho3D_1_1Graphics_1aba8bc69f7cae9251dbf3dc99d771ed30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aba8bc69f7cae9251dbf3dc99d771ed30" kindref="member">TakeScreenShot</ref>(<ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref>&amp;<sp/>destImage);</highlight></codeline>
+<codeline lineno="199" refid="classUrho3D_1_1Graphics_1a87d6974090e42a8c0d8ec676ca4da504" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a87d6974090e42a8c0d8ec676ca4da504" kindref="member">BeginFrame</ref>();</highlight></codeline>
+<codeline lineno="201" refid="classUrho3D_1_1Graphics_1a00d056123f2dfd48427a5c421cc11b4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a00d056123f2dfd48427a5c421cc11b4b" kindref="member">EndFrame</ref>();</highlight></codeline>
+<codeline lineno="203" refid="classUrho3D_1_1Graphics_1a72c254ccb779fe20b39574042ba49786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a72c254ccb779fe20b39574042ba49786" kindref="member">Clear</ref>(<ref refid="classUrho3D_1_1FlagSet" kindref="compound">ClearTargetFlags</ref><sp/>flags,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color<sp/>=<sp/><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref>(0.0f,<sp/>0.0f,<sp/>0.0f,<sp/>0.0f),<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth<sp/>=<sp/>1.0f,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>stencil<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="205" refid="classUrho3D_1_1Graphics_1abd08617bb78ea63930fed43edff8d3db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1abd08617bb78ea63930fed43edff8d3db" kindref="member">ResolveToTexture</ref>(<ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref>*<sp/>destination,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref>&amp;<sp/>viewport);</highlight></codeline>
+<codeline lineno="207" refid="classUrho3D_1_1Graphics_1ae2c1387404dd5ed5c9dfd373e3c3f0e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae2c1387404dd5ed5c9dfd373e3c3f0e9" kindref="member">ResolveToTexture</ref>(<ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref>*<sp/>texture);</highlight></codeline>
+<codeline lineno="209" refid="classUrho3D_1_1Graphics_1ad7719998ec41fa9a835c233b0465a056" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ad7719998ec41fa9a835c233b0465a056" kindref="member">ResolveToTexture</ref>(<ref refid="classUrho3D_1_1TextureCube" kindref="compound">TextureCube</ref>*<sp/>texture);</highlight></codeline>
+<codeline lineno="211" refid="classUrho3D_1_1Graphics_1a53af62ede0ca685ae4ad4e65898379a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a53af62ede0ca685ae4ad4e65898379a0" kindref="member">Draw</ref>(<ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>vertexStart,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>vertexCount);</highlight></codeline>
+<codeline lineno="213" refid="classUrho3D_1_1Graphics_1aa4471ed0ed015d4ea57f7ad5561fdfc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aa4471ed0ed015d4ea57f7ad5561fdfc4" kindref="member">Draw</ref>(<ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexStart,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexCount,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>minVertex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>vertexCount);</highlight></codeline>
+<codeline lineno="215" refid="classUrho3D_1_1Graphics_1ad40d2df26e33d72e5beafeed9688dd94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ad40d2df26e33d72e5beafeed9688dd94" kindref="member">Draw</ref>(<ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexStart,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexCount,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>baseVertexIndex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>minVertex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>vertexCount);</highlight></codeline>
+<codeline lineno="217" refid="classUrho3D_1_1Graphics_1a3b3826f68144fb6a1f222811207986b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3b3826f68144fb6a1f222811207986b1" kindref="member">DrawInstanced</ref>(<ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexStart,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexCount,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>minVertex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>vertexCount,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>instanceCount);</highlight></codeline>
+<codeline lineno="220" refid="classUrho3D_1_1Graphics_1ac70644f8ff6fccb95ad2e1cfd32e03d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ac70644f8ff6fccb95ad2e1cfd32e03d1" kindref="member">DrawInstanced</ref>(<ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexStart,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>indexCount,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>baseVertexIndex,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>minVertex,</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>vertexCount,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>instanceCount);</highlight></codeline>
+<codeline lineno="223" refid="classUrho3D_1_1Graphics_1a4f5631b54b7a4717d350b94e0e469b88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a4f5631b54b7a4717d350b94e0e469b88" kindref="member">SetVertexBuffer</ref>(<ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref>*<sp/>buffer);</highlight></codeline>
+<codeline lineno="226" refid="classUrho3D_1_1Graphics_1a2ea0518b94328c3d94377b805ad54e1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a2ea0518b94328c3d94377b805ad54e1e" kindref="member">SetVertexBuffers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;VertexBuffer*&gt;</ref>&amp;<sp/>buffers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>instanceOffset<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="228" refid="classUrho3D_1_1Graphics_1a8200e87e47a345db85552abd3772b66f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a8200e87e47a345db85552abd3772b66f" kindref="member">SetVertexBuffers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt;<ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr&lt;VertexBuffer&gt;</ref><sp/>&gt;&amp;<sp/>buffers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>instanceOffset<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="230" refid="classUrho3D_1_1Graphics_1a4da194cd8c29eadca368f12b380f0fda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a4da194cd8c29eadca368f12b380f0fda" kindref="member">SetIndexBuffer</ref>(<ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref>*<sp/>buffer);</highlight></codeline>
+<codeline lineno="232" refid="classUrho3D_1_1Graphics_1a1f9ba79f344a68937947b6416685fe3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a1f9ba79f344a68937947b6416685fe3a" kindref="member">SetShaders</ref>(<ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/>vs,<sp/><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/>ps);</highlight></codeline>
+<codeline lineno="234" refid="classUrho3D_1_1Graphics_1a4738d35a14589f7d2ff4946fd48b2381" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a4738d35a14589f7d2ff4946fd48b2381" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>count);</highlight></codeline>
+<codeline lineno="236" refid="classUrho3D_1_1Graphics_1a6fb532c168ece083ecf3e70957dda5c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a6fb532c168ece083ecf3e70957dda5c5" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="238" refid="classUrho3D_1_1Graphics_1ad80100b9387218dd1d2a8b44203697a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ad80100b9387218dd1d2a8b44203697a6" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="240" refid="classUrho3D_1_1Graphics_1aabae18a5b3e0b8cfaac840b293ea59b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aabae18a5b3e0b8cfaac840b293ea59b7" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="242" refid="classUrho3D_1_1Graphics_1a2bb6c6306d70b4f1187818d5e3fc6850" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a2bb6c6306d70b4f1187818d5e3fc6850" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref>&amp;<sp/>color);</highlight></codeline>
+<codeline lineno="244" refid="classUrho3D_1_1Graphics_1a46e3c55f1ffb3b6818125e9f54e7b579" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a46e3c55f1ffb3b6818125e9f54e7b579" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref>&amp;<sp/>vector);</highlight></codeline>
+<codeline lineno="246" refid="classUrho3D_1_1Graphics_1ab2bed1932cbc3412aeae6eaf61924beb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ab2bed1932cbc3412aeae6eaf61924beb" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref>&amp;<sp/>matrix);</highlight></codeline>
+<codeline lineno="248" refid="classUrho3D_1_1Graphics_1a620a91a7e0c4cebe89609c6d9899020a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a620a91a7e0c4cebe89609c6d9899020a" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>vector);</highlight></codeline>
+<codeline lineno="250" refid="classUrho3D_1_1Graphics_1a3aee4bf85e5230f7b73e840558358125" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3aee4bf85e5230f7b73e840558358125" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref>&amp;<sp/>matrix);</highlight></codeline>
+<codeline lineno="252" refid="classUrho3D_1_1Graphics_1abe819528461336fa8ce49359fe138e88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1abe819528461336fa8ce49359fe138e88" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref>&amp;<sp/>vector);</highlight></codeline>
+<codeline lineno="254" refid="classUrho3D_1_1Graphics_1a3c6819ea385730543f14e0ca8e0f66ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3c6819ea385730543f14e0ca8e0f66ce" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref>&amp;<sp/>matrix);</highlight></codeline>
+<codeline lineno="256" refid="classUrho3D_1_1Graphics_1a4f821ce1143128a6563139f356c4ab1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a4f821ce1143128a6563139f356c4ab1a" kindref="member">SetShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="258" refid="classUrho3D_1_1Graphics_1a2e0abc455d667cbca1598811917b2006" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a2e0abc455d667cbca1598811917b2006" kindref="member">NeedParameterUpdate</ref>(<ref refid="GraphicsDefs_8h_1a66f0a7cd11164a570c965fe17b803c37" kindref="member">ShaderParameterGroup</ref><sp/>group,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>source);</highlight></codeline>
+<codeline lineno="260" refid="classUrho3D_1_1Graphics_1a9d87895014e4abb8c8e0bcd15fae34c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a9d87895014e4abb8c8e0bcd15fae34c2" kindref="member">HasShaderParameter</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>param);</highlight></codeline>
+<codeline lineno="262" refid="classUrho3D_1_1Graphics_1a82cdab6dc883ff0c20461de08e74b8e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a82cdab6dc883ff0c20461de08e74b8e3" kindref="member">HasTextureUnit</ref>(<ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref><sp/>unit);</highlight></codeline>
+<codeline lineno="264" refid="classUrho3D_1_1Graphics_1af26d8ace78cd24b62caa248579a290ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af26d8ace78cd24b62caa248579a290ad" kindref="member">ClearParameterSource</ref>(<ref refid="GraphicsDefs_8h_1a66f0a7cd11164a570c965fe17b803c37" kindref="member">ShaderParameterGroup</ref><sp/>group);</highlight></codeline>
+<codeline lineno="266" refid="classUrho3D_1_1Graphics_1a0dbed204dd942895efd794eabd4bafdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a0dbed204dd942895efd794eabd4bafdd" kindref="member">ClearParameterSources</ref>();</highlight></codeline>
+<codeline lineno="268" refid="classUrho3D_1_1Graphics_1a175a55d2f747074b04d1d8cf74a3cea4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a175a55d2f747074b04d1d8cf74a3cea4" kindref="member">ClearTransformSources</ref>();</highlight></codeline>
+<codeline lineno="270" refid="classUrho3D_1_1Graphics_1ab7a2098ed479f28acbd7b3549c5dc205" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ab7a2098ed479f28acbd7b3549c5dc205" kindref="member">SetTexture</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index,<sp/><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref>*<sp/>texture);</highlight></codeline>
+<codeline lineno="273" refid="classUrho3D_1_1Graphics_1a8b325a50b867fe7866389f94e8a8575a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a8b325a50b867fe7866389f94e8a8575a" kindref="member">SetTextureForUpdate</ref>(<ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref>*<sp/>texture);</highlight></codeline>
+<codeline lineno="276" refid="classUrho3D_1_1Graphics_1ae783c5fbbf37cffed064bff6a92a8c2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae783c5fbbf37cffed064bff6a92a8c2a" kindref="member">SetTextureParametersDirty</ref>();</highlight></codeline>
+<codeline lineno="278" refid="classUrho3D_1_1Graphics_1aa5cd5d4b7aa461dca5c1e4202bf92b33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aa5cd5d4b7aa461dca5c1e4202bf92b33" kindref="member">SetDefaultTextureFilterMode</ref>(<ref refid="GraphicsDefs_8h_1aa76618ce244fbf4560ec541b4a45845d" kindref="member">TextureFilterMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="280" refid="classUrho3D_1_1Graphics_1a8482c325a24a9c64c69898d39232ff53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a8482c325a24a9c64c69898d39232ff53" kindref="member">SetDefaultTextureAnisotropy</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="282" refid="classUrho3D_1_1Graphics_1ae1d5bec42a30f9b3d6ad41db33084388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae1d5bec42a30f9b3d6ad41db33084388" kindref="member">ResetRenderTargets</ref>();</highlight></codeline>
+<codeline lineno="284" refid="classUrho3D_1_1Graphics_1a26e775154627bab32f74ee92ab204842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a26e775154627bab32f74ee92ab204842" kindref="member">ResetRenderTarget</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="286" refid="classUrho3D_1_1Graphics_1a158d17c4bdef10c48db965e0677022f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a158d17c4bdef10c48db965e0677022f0" kindref="member">ResetDepthStencil</ref>();</highlight></codeline>
+<codeline lineno="288" refid="classUrho3D_1_1Graphics_1a4c192379ba1d77698b440e542e49200e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a4c192379ba1d77698b440e542e49200e" kindref="member">SetRenderTarget</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index,<sp/><ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref>*<sp/>renderTarget);</highlight></codeline>
+<codeline lineno="290" refid="classUrho3D_1_1Graphics_1ac5b4b8e93c09234e8ef16765622dda30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ac5b4b8e93c09234e8ef16765622dda30" kindref="member">SetRenderTarget</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index,<sp/><ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref>*<sp/>texture);</highlight></codeline>
+<codeline lineno="292" refid="classUrho3D_1_1Graphics_1a33e1c860b8638bb3694939fa0b9d93f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a33e1c860b8638bb3694939fa0b9d93f7" kindref="member">SetDepthStencil</ref>(<ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref>*<sp/>depthStencil);</highlight></codeline>
+<codeline lineno="294" refid="classUrho3D_1_1Graphics_1a331dfe88f72d685e394780d3f5506e05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a331dfe88f72d685e394780d3f5506e05" kindref="member">SetDepthStencil</ref>(<ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref>*<sp/>texture);</highlight></codeline>
+<codeline lineno="296" refid="classUrho3D_1_1Graphics_1ad417d2adc6d3fb173ec3e3d8fefd8b48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ad417d2adc6d3fb173ec3e3d8fefd8b48" kindref="member">SetViewport</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref>&amp;<sp/>rect);</highlight></codeline>
+<codeline lineno="298" refid="classUrho3D_1_1Graphics_1a85d518d71a1a56b2b95ad27419b1e375" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a85d518d71a1a56b2b95ad27419b1e375" kindref="member">SetBlendMode</ref>(<ref refid="GraphicsDefs_8h_1a2697a2bc51d21a1bf33367cb01c93d2f" kindref="member">BlendMode</ref><sp/>mode,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alphaToCoverage<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="300" refid="classUrho3D_1_1Graphics_1a491fe007ce9f8dce215ba00f5c27ff0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a491fe007ce9f8dce215ba00f5c27ff0d" kindref="member">SetColorWrite</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="302" refid="classUrho3D_1_1Graphics_1af002db3f0656638b5419e501597bf9db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af002db3f0656638b5419e501597bf9db" kindref="member">SetCullMode</ref>(<ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="304" refid="classUrho3D_1_1Graphics_1a22707260ebed42e3aace6029fecfeab5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a22707260ebed42e3aace6029fecfeab5" kindref="member">SetDepthBias</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constantBias,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slopeScaledBias);</highlight></codeline>
+<codeline lineno="306" refid="classUrho3D_1_1Graphics_1a8caad07fa70c69870bd1ebd33014b931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a8caad07fa70c69870bd1ebd33014b931" kindref="member">SetDepthTest</ref>(<ref refid="GraphicsDefs_8h_1a0ec56159937ce5ecf9d76c82d156623c" kindref="member">CompareMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="308" refid="classUrho3D_1_1Graphics_1abce9b1421f7b2d1179659ca887171f2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1abce9b1421f7b2d1179659ca887171f2a" kindref="member">SetDepthWrite</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="310" refid="classUrho3D_1_1Graphics_1a616f0641be5b78abb3b4b3ef43cba042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a616f0641be5b78abb3b4b3ef43cba042" kindref="member">SetFillMode</ref>(<ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="312" refid="classUrho3D_1_1Graphics_1a80b031187f4c0939d10cad23e970d6e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a80b031187f4c0939d10cad23e970d6e1" kindref="member">SetLineAntiAlias</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="314" refid="classUrho3D_1_1Graphics_1a27670beb9e90540f69da3d24da2d07bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a27670beb9e90540f69da3d24da2d07bd" kindref="member">SetScissorTest</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref>&amp;<sp/>rect<sp/>=<sp/><ref refid="classUrho3D_1_1Rect_1a37b4bef375bb80cd2386a7f1fe8ccf4c" kindref="member">Rect::FULL</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>borderInclusive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="316" refid="classUrho3D_1_1Graphics_1aff191ac385fdb1504efb8bff3e8eaaf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aff191ac385fdb1504efb8bff3e8eaaf2" kindref="member">SetScissorTest</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref>&amp;<sp/>rect);</highlight></codeline>
+<codeline lineno="318" refid="classUrho3D_1_1Graphics_1a11eb4f153875e95af56a4e1eaaea1d4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a11eb4f153875e95af56a4e1eaaea1d4b" kindref="member">SetStencilTest</ref></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable,<sp/><ref refid="GraphicsDefs_8h_1a0ec56159937ce5ecf9d76c82d156623c" kindref="member">CompareMode</ref><sp/>mode<sp/>=<sp/>CMP_ALWAYS,<sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/>pass<sp/>=<sp/>OP_KEEP,<sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/>fail<sp/>=<sp/>OP_KEEP,<sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/>zFail<sp/>=<sp/>OP_KEEP,</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>stencilRef<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>compareMask<sp/>=<sp/>M_MAX_UNSIGNED,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>writeMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="322" refid="classUrho3D_1_1Graphics_1aeb1e917030105cd3887d8c8e8a985b63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aeb1e917030105cd3887d8c8e8a985b63" kindref="member">SetClipPlane</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref>&amp;<sp/>clipPlane<sp/>=<sp/><ref refid="classUrho3D_1_1Plane_1a1839b8c4cee79fb51b197991b77124fc" kindref="member">Plane::UP</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref>&amp;<sp/>view<sp/>=<sp/><ref refid="classUrho3D_1_1Matrix3x4_1a65b89ad9e47464af65f0aab7fe97925e" kindref="member">Matrix3x4::IDENTITY</ref>,</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref>&amp;<sp/>projection<sp/>=<sp/><ref refid="classUrho3D_1_1Matrix4_1a86040251571d238e00bc5253673110f5" kindref="member">Matrix4::IDENTITY</ref>);</highlight></codeline>
+<codeline lineno="325" refid="classUrho3D_1_1Graphics_1a2664f84fe14e6cc7ccd750470427af32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a2664f84fe14e6cc7ccd750470427af32" kindref="member">BeginDumpShaders</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>fileName);</highlight></codeline>
+<codeline lineno="327" refid="classUrho3D_1_1Graphics_1a8bc0261c882ff0c3bc8fc5f2871eb54c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a8bc0261c882ff0c3bc8fc5f2871eb54c" kindref="member">EndDumpShaders</ref>();</highlight></codeline>
+<codeline lineno="329" refid="classUrho3D_1_1Graphics_1ab7a91acbf613629e3b95f600b10e6c2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ab7a91acbf613629e3b95f600b10e6c2a" kindref="member">PrecacheShaders</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source);</highlight></codeline>
+<codeline lineno="332" refid="classUrho3D_1_1Graphics_1af4eb08ce8ac2837061483158aa836874" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af4eb08ce8ac2837061483158aa836874" kindref="member">SetShaderCacheDir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="classUrho3D_1_1Graphics_1ae7b10aecb87bbee9147cda54781a1c60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae7b10aecb87bbee9147cda54781a1c60" kindref="member">IsInitialized</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="classUrho3D_1_1Graphics_1a6f1148eef3b062a61acc9e858bffccbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>GraphicsImpl*<sp/><ref refid="classUrho3D_1_1Graphics_1a6f1148eef3b062a61acc9e858bffccbd" kindref="member">GetImpl</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>impl_;<sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="classUrho3D_1_1Graphics_1a3ed79b54e756e6ee2f49891662bce1bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classUrho3D_1_1Graphics_1a3ed79b54e756e6ee2f49891662bce1bb" kindref="member">GetExternalWindow</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>externalWindow_;<sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="classUrho3D_1_1Graphics_1af77dfcf426c30f818a82a6a7b1b2d6a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Window*<sp/><ref refid="classUrho3D_1_1Graphics_1af77dfcf426c30f818a82a6a7b1b2d6a3" kindref="member">GetWindow</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>window_;<sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="classUrho3D_1_1Graphics_1a1933b7060821bd1519767b7271bf226b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1a1933b7060821bd1519767b7271bf226b" kindref="member">GetWindowTitle</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>windowTitle_;<sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="classUrho3D_1_1Graphics_1acce527136dbd01123e7ad45a380613e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1acce527136dbd01123e7ad45a380613e6" kindref="member">GetApiName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>apiName_;<sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="classUrho3D_1_1Graphics_1ad22e37493b0d7edeee9407a2992a851d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref><sp/><ref refid="classUrho3D_1_1Graphics_1ad22e37493b0d7edeee9407a2992a851d" kindref="member">GetWindowPosition</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="classUrho3D_1_1Graphics_1a497023f6e9e6bee6f8a275c790ccd0ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a497023f6e9e6bee6f8a275c790ccd0ce" kindref="member">GetWidth</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>width_;<sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365" refid="classUrho3D_1_1Graphics_1a453f549f9811a30621f1dcc82c390933" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a453f549f9811a30621f1dcc82c390933" kindref="member">GetHeight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>height_;<sp/>}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="classUrho3D_1_1Graphics_1aa9faffaed46a2b16ef55fa64477e6c91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1aa9faffaed46a2b16ef55fa64477e6c91" kindref="member">GetScreenModeParams</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_;<sp/>}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="classUrho3D_1_1Graphics_1a3ec99c35151defbebe5a1ec0cc17263e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3ec99c35151defbebe5a1ec0cc17263e" kindref="member">GetMultiSample</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.multiSample_;<sp/>}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376" refid="classUrho3D_1_1Graphics_1a874bf5e8481d68422e5869fae14fdacf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a874bf5e8481d68422e5869fae14fdacf" kindref="member">GetSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>(width_,<sp/>height_);<sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="classUrho3D_1_1Graphics_1accb3cf82f51059fa7a709b49c5127f35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1accb3cf82f51059fa7a709b49c5127f35" kindref="member">GetFullscreen</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.fullscreen_;<sp/>}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="classUrho3D_1_1Graphics_1afeb20ea42f76c7906d9de55fcdfa788c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1afeb20ea42f76c7906d9de55fcdfa788c" kindref="member">GetBorderless</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.borderless_;<sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="classUrho3D_1_1Graphics_1ace7b67d0d17170376c819f19b244c212" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ace7b67d0d17170376c819f19b244c212" kindref="member">GetResizable</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.resizable_;<sp/>}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="classUrho3D_1_1Graphics_1a8ebbc4291d7511ba3d8b247793a5d5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a8ebbc4291d7511ba3d8b247793a5d5e4" kindref="member">GetHighDPI</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.highDPI_;<sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395" refid="classUrho3D_1_1Graphics_1a142910273bb4767deb201e575981a439" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a142910273bb4767deb201e575981a439" kindref="member">GetVSync</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.vsync_;<sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="classUrho3D_1_1Graphics_1a69fa452c8e016507fa1f1f73fb74dcf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a69fa452c8e016507fa1f1f73fb74dcf4" kindref="member">GetRefreshRate</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.refreshRate_;<sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401" refid="classUrho3D_1_1Graphics_1a57464e6b75638612b66f3374a90ac628" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a57464e6b75638612b66f3374a90ac628" kindref="member">GetMonitor</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.monitor_;<sp/>}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="classUrho3D_1_1Graphics_1a08da2e43346dd87477a900a9f83ea6d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a08da2e43346dd87477a900a9f83ea6d5" kindref="member">GetTripleBuffer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>screenParams_.tripleBuffer_;<sp/>}</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="classUrho3D_1_1Graphics_1aabb71d35b47ee746485464fcc6f1312c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aabb71d35b47ee746485464fcc6f1312c" kindref="member">GetSRGB</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sRGB_;<sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="classUrho3D_1_1Graphics_1a6434a152be30aea7e307f567c3c28e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a6434a152be30aea7e307f567c3c28e2c" kindref="member">GetDither</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417" refid="classUrho3D_1_1Graphics_1a87160e8e7a4a29ae91b91ecb4a73f3bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a87160e8e7a4a29ae91b91ecb4a73f3bd" kindref="member">GetFlushGPU</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>flushGPU_;<sp/>}</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420" refid="classUrho3D_1_1Graphics_1af3bf733027e48ed1e58588f8b633bb4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af3bf733027e48ed1e58588f8b633bb4b" kindref="member">GetForceGL2</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>forceGL2_;<sp/>}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="classUrho3D_1_1Graphics_1a6ddad47f3078909bf06552479d1fcb38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1a6ddad47f3078909bf06552479d1fcb38" kindref="member">GetOrientations</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>orientations_;<sp/>}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="428" refid="classUrho3D_1_1Graphics_1a66b6675da108ca1de2eae6f5dd03286f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a66b6675da108ca1de2eae6f5dd03286f" kindref="member">IsDeviceLost</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432" refid="classUrho3D_1_1Graphics_1abee060cb91f99ec2ddfc44d628b0a27b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1abee060cb91f99ec2ddfc44d628b0a27b" kindref="member">GetNumPrimitives</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numPrimitives_;<sp/>}</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436" refid="classUrho3D_1_1Graphics_1aee21d082135a919c60330b9bc6e486fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aee21d082135a919c60330b9bc6e486fa" kindref="member">GetNumBatches</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numBatches_;<sp/>}</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight></codeline>
+<codeline lineno="439" refid="classUrho3D_1_1Graphics_1a5fabeb2eff3f77311e3a91436e9d7fa2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a5fabeb2eff3f77311e3a91436e9d7fa2" kindref="member">GetDummyColorFormat</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dummyColorFormat_;<sp/>}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442" refid="classUrho3D_1_1Graphics_1a72092955203582eb14f4dc815a36baf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a72092955203582eb14f4dc815a36baf6" kindref="member">GetShadowMapFormat</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>shadowMapFormat_;<sp/>}</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445" refid="classUrho3D_1_1Graphics_1a3a2f18c765e8a3243da8a4d0698906e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3a2f18c765e8a3243da8a4d0698906e9" kindref="member">GetHiresShadowMapFormat</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hiresShadowMapFormat_;<sp/>}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449" refid="classUrho3D_1_1Graphics_1ab81a4e8c2f249129cf8da18e3c142085" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ab81a4e8c2f249129cf8da18e3c142085" kindref="member">GetInstancingSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instancingSupport_;<sp/>}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453" refid="classUrho3D_1_1Graphics_1a739d428b5260dc80e3a5088bae389889" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a739d428b5260dc80e3a5088bae389889" kindref="member">GetLightPrepassSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lightPrepassSupport_;<sp/>}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457" refid="classUrho3D_1_1Graphics_1a3a6d79346a9358569014e9fa4b36e333" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3a6d79346a9358569014e9fa4b36e333" kindref="member">GetDeferredSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>deferredSupport_;<sp/>}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460" refid="classUrho3D_1_1Graphics_1a291ab9932f77f529a5421d29ed525291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a291ab9932f77f529a5421d29ed525291" kindref="member">GetAnisotropySupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>anisotropySupport_;<sp/>}</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464" refid="classUrho3D_1_1Graphics_1a32c37d1484583eb15c9bdc243a47b4b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a32c37d1484583eb15c9bdc243a47b4b9" kindref="member">GetHardwareShadowSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hardwareShadowSupport_;<sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468" refid="classUrho3D_1_1Graphics_1a2f90350ad6fa5626988a56ebb389efd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a2f90350ad6fa5626988a56ebb389efd0" kindref="member">GetReadableDepthSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetReadableDepthFormat()<sp/>!=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="classUrho3D_1_1Graphics_1a97be23e36fc4b5481b7235ce73f0a859" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a97be23e36fc4b5481b7235ce73f0a859" kindref="member">GetSRGBSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sRGBSupport_;<sp/>}</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476" refid="classUrho3D_1_1Graphics_1a13dd904efc25a01d54aa6bca51eb6882" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a13dd904efc25a01d54aa6bca51eb6882" kindref="member">GetSRGBWriteSupport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sRGBWriteSupport_;<sp/>}</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480" refid="classUrho3D_1_1Graphics_1a6f7ef05a49aa3831c8f39bced0e0588f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;IntVector3&gt;</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a6f7ef05a49aa3831c8f39bced0e0588f" kindref="member">GetResolutions</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>monitor)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="482" refid="classUrho3D_1_1Graphics_1a9bc96a2e6ae51d867ac9a59716bce8a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a9bc96a2e6ae51d867ac9a59716bce8a1" kindref="member">FindBestResolutionIndex</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>monitor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>refreshRate)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="485" refid="classUrho3D_1_1Graphics_1af44f5dc7824c65484ccc49086d472976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;int&gt;</ref><sp/><ref refid="classUrho3D_1_1Graphics_1af44f5dc7824c65484ccc49086d472976" kindref="member">GetMultiSampleLevels</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="488" refid="classUrho3D_1_1Graphics_1aba59cc45386b346ff5b7078516dbb95b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref><sp/><ref refid="classUrho3D_1_1Graphics_1aba59cc45386b346ff5b7078516dbb95b" kindref="member">GetDesktopResolution</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>monitor)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="491" refid="classUrho3D_1_1Graphics_1a752c8c2c1b3d1d97ab07f9e90f3821a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a752c8c2c1b3d1d97ab07f9e90f3821a8" kindref="member">GetMonitorCount</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="494" refid="classUrho3D_1_1Graphics_1a0394b5b1e77edb89f356ec79e8389a4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a0394b5b1e77edb89f356ec79e8389a4a" kindref="member">GetCurrentMonitor</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="497" refid="classUrho3D_1_1Graphics_1ac4295f8686c23586c78b47fa224c4f7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ac4295f8686c23586c78b47fa224c4f7e" kindref="member">GetMaximized</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="500" refid="classUrho3D_1_1Graphics_1a2c84d6aa86c8a355f4a85c9d2409702b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a2c84d6aa86c8a355f4a85c9d2409702b" kindref="member">GetDisplayDPI</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>monitor=0)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503" refid="classUrho3D_1_1Graphics_1aa5f4feec502ecedbd4719b8eb7e25ea8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aa5f4feec502ecedbd4719b8eb7e25ea8" kindref="member">GetFormat</ref>(<ref refid="Image_8h_1a3fb822b0e6638d4b03bed319c30bbcbd" kindref="member">CompressedFormat</ref><sp/>format)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="505" refid="classUrho3D_1_1Graphics_1a7f2a41cc3365ff7e04aaf95ffc8688be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1a7f2a41cc3365ff7e04aaf95ffc8688be" kindref="member">GetShader</ref>(<ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref><sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>defines<sp/>=<sp/><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="507" refid="classUrho3D_1_1Graphics_1a9c469c4929fc854fb0a5b88b107dc80c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1a9c469c4929fc854fb0a5b88b107dc80c" kindref="member">GetShader</ref>(<ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref><sp/>type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>defines)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="509" refid="classUrho3D_1_1Graphics_1ac977dbefc0911253994ecb9e0fd05c9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1ac977dbefc0911253994ecb9e0fd05c9b" kindref="member">GetVertexBuffer</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512" refid="classUrho3D_1_1Graphics_1abe3272fc4c3566ef4854120155a3b080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1abe3272fc4c3566ef4854120155a3b080" kindref="member">GetIndexBuffer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>indexBuffer_;<sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515" refid="classUrho3D_1_1Graphics_1a039da10f671e033d6828fb6b42b22ebe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1a039da10f671e033d6828fb6b42b22ebe" kindref="member">GetVertexShader</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vertexShader_;<sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518" refid="classUrho3D_1_1Graphics_1af2db3cd73f501a81d1e66aea0874f0da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1af2db3cd73f501a81d1e66aea0874f0da" kindref="member">GetPixelShader</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pixelShader_;<sp/>}</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522" refid="classUrho3D_1_1Graphics_1a7d3be70c1145a0bb722950c7a40b2f40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ShaderProgram*<sp/><ref refid="classUrho3D_1_1Graphics_1a7d3be70c1145a0bb722950c7a40b2f40" kindref="member">GetShaderProgram</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525" refid="classUrho3D_1_1Graphics_1a2cf5984ebbee2f37d78a3ae4cdf0a0c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a2cf5984ebbee2f37d78a3ae4cdf0a0c0" kindref="member">GetTextureUnit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="527" refid="classUrho3D_1_1Graphics_1a1933384522ebe7646d569935d0c40fd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1a1933384522ebe7646d569935d0c40fd8" kindref="member">GetTextureUnitName</ref>(<ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref><sp/>unit);</highlight></codeline>
+<codeline lineno="529" refid="classUrho3D_1_1Graphics_1ae8e00ce0d93b181200a413267dbf6807" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1ae8e00ce0d93b181200a413267dbf6807" kindref="member">GetTexture</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="532" refid="classUrho3D_1_1Graphics_1a81ceddeaf7c698dd2f7488059f376b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1aa76618ce244fbf4560ec541b4a45845d" kindref="member">TextureFilterMode</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a81ceddeaf7c698dd2f7488059f376b32" kindref="member">GetDefaultTextureFilterMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>defaultTextureFilterMode_;<sp/>}</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535" refid="classUrho3D_1_1Graphics_1a9ce5bbf3d444e152f95ddd564cc26a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a9ce5bbf3d444e152f95ddd564cc26a75" kindref="member">GetDefaultTextureAnisotropy</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>defaultTextureAnisotropy_;<sp/>}</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538" refid="classUrho3D_1_1Graphics_1aebd71afc9d882f6395dd5d274717d562" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1aebd71afc9d882f6395dd5d274717d562" kindref="member">GetRenderTarget</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541" refid="classUrho3D_1_1Graphics_1a0357d5c902f5bd70bbbf5c547557c66c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1a0357d5c902f5bd70bbbf5c547557c66c" kindref="member">GetDepthStencil</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>depthStencil_;<sp/>}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544" refid="classUrho3D_1_1Graphics_1ade134ba2073c134931adccc03712a889" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref><sp/><ref refid="classUrho3D_1_1Graphics_1ade134ba2073c134931adccc03712a889" kindref="member">GetViewport</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>viewport_;<sp/>}</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547" refid="classUrho3D_1_1Graphics_1a41f8e5d0d2bd8dbaa8032fbef89a61c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a2697a2bc51d21a1bf33367cb01c93d2f" kindref="member">BlendMode</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a41f8e5d0d2bd8dbaa8032fbef89a61c7" kindref="member">GetBlendMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>blendMode_;<sp/>}</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550" refid="classUrho3D_1_1Graphics_1aee9f1b0607d38d7f85050cd63876fd54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aee9f1b0607d38d7f85050cd63876fd54" kindref="member">GetAlphaToCoverage</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>alphaToCoverage_;<sp/>}</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553" refid="classUrho3D_1_1Graphics_1afdaabe0e6fa21f23507671e5dca4f7af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1afdaabe0e6fa21f23507671e5dca4f7af" kindref="member">GetColorWrite</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>colorWrite_;<sp/>}</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556" refid="classUrho3D_1_1Graphics_1a0b48dd006b71d889a4bf2991a73898e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a0b48dd006b71d889a4bf2991a73898e3" kindref="member">GetCullMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cullMode_;<sp/>}</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559" refid="classUrho3D_1_1Graphics_1aa5f73b7d111c15eef116068fd96b18b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aa5f73b7d111c15eef116068fd96b18b0" kindref="member">GetDepthConstantBias</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>constantDepthBias_;<sp/>}</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562" refid="classUrho3D_1_1Graphics_1a60878945c2cdd5ac497f298d420e9871" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a60878945c2cdd5ac497f298d420e9871" kindref="member">GetDepthSlopeScaledBias</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>slopeScaledDepthBias_;<sp/>}</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565" refid="classUrho3D_1_1Graphics_1a7b97a094156afe91d7ea3db8d07079e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a0ec56159937ce5ecf9d76c82d156623c" kindref="member">CompareMode</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a7b97a094156afe91d7ea3db8d07079e8" kindref="member">GetDepthTest</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>depthTestMode_;<sp/>}</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568" refid="classUrho3D_1_1Graphics_1a91b7b1bd5df4dbc4108a87c44a1abde2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a91b7b1bd5df4dbc4108a87c44a1abde2" kindref="member">GetDepthWrite</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>depthWrite_;<sp/>}</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571" refid="classUrho3D_1_1Graphics_1a7758a879cb9324f0dc5e400d0544e279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a7758a879cb9324f0dc5e400d0544e279" kindref="member">GetFillMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fillMode_;<sp/>}</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574" refid="classUrho3D_1_1Graphics_1a869e55d848bbc51c54e42a9fd18afbe7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a869e55d848bbc51c54e42a9fd18afbe7" kindref="member">GetLineAntiAlias</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lineAntiAlias_;<sp/>}</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight></codeline>
+<codeline lineno="577" refid="classUrho3D_1_1Graphics_1a45d560c03240f6c6a08f4de19409606f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a45d560c03240f6c6a08f4de19409606f" kindref="member">GetStencilTest</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilTest_;<sp/>}</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="580" refid="classUrho3D_1_1Graphics_1a3fd5c42b670d9d3c64cee0fabcdb8f51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3fd5c42b670d9d3c64cee0fabcdb8f51" kindref="member">GetScissorTest</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scissorTest_;<sp/>}</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"></highlight></codeline>
+<codeline lineno="583" refid="classUrho3D_1_1Graphics_1a8e2ddd5511ac05b2ec618d8508660d5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1a8e2ddd5511ac05b2ec618d8508660d5f" kindref="member">GetScissorRect</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>scissorRect_;<sp/>}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586" refid="classUrho3D_1_1Graphics_1a6c822ed0ca2e2937fe15d6c9a9ef0698" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a0ec56159937ce5ecf9d76c82d156623c" kindref="member">CompareMode</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a6c822ed0ca2e2937fe15d6c9a9ef0698" kindref="member">GetStencilTestMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilTestMode_;<sp/>}</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589" refid="classUrho3D_1_1Graphics_1aa7e0c843368aa274bf9c0ba28035391a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/><ref refid="classUrho3D_1_1Graphics_1aa7e0c843368aa274bf9c0ba28035391a" kindref="member">GetStencilPass</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilPass_;<sp/>}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592" refid="classUrho3D_1_1Graphics_1ae96c758cc0d274e2e1f14eaafbe943f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/><ref refid="classUrho3D_1_1Graphics_1ae96c758cc0d274e2e1f14eaafbe943f0" kindref="member">GetStencilFail</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilFail_;<sp/>}</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="595" refid="classUrho3D_1_1Graphics_1a6a9cf8430baf38f1d562e2a54b5bfb8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a6a9cf8430baf38f1d562e2a54b5bfb8b" kindref="member">GetStencilZFail</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilZFail_;<sp/>}</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598" refid="classUrho3D_1_1Graphics_1a39961e6a72b9903ebeb4f86b4207b04e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a39961e6a72b9903ebeb4f86b4207b04e" kindref="member">GetStencilRef</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilRef_;<sp/>}</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight></codeline>
+<codeline lineno="601" refid="classUrho3D_1_1Graphics_1a56439bd29c156d16c665d3aac44e1b1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a56439bd29c156d16c665d3aac44e1b1a" kindref="member">GetStencilCompareMask</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilCompareMask_;<sp/>}</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="604" refid="classUrho3D_1_1Graphics_1aedf35c7e1b67b4cf997f9f4861094c09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1aedf35c7e1b67b4cf997f9f4861094c09" kindref="member">GetStencilWriteMask</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stencilWriteMask_;<sp/>}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607" refid="classUrho3D_1_1Graphics_1a9b0a99c68a04398225b6bd4427b79859" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a9b0a99c68a04398225b6bd4427b79859" kindref="member">GetUseClipPlane</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>useClipPlane_;<sp/>}</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611" refid="classUrho3D_1_1Graphics_1ab504d47320be8a7f0816ff3b77b77537" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1ab504d47320be8a7f0816ff3b77b77537" kindref="member">GetShaderCacheDir</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>shaderCacheDir_;<sp/>}</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="614" refid="classUrho3D_1_1Graphics_1a8630db4d2c1e15642f4c5b85e550c625" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref><sp/><ref refid="classUrho3D_1_1Graphics_1a8630db4d2c1e15642f4c5b85e550c625" kindref="member">GetRenderTargetDimensions</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617" refid="classUrho3D_1_1Graphics_1a06fb6279e23991da88b909e71901ed86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a06fb6279e23991da88b909e71901ed86" kindref="member">OnWindowResized</ref>();</highlight></codeline>
+<codeline lineno="619" refid="classUrho3D_1_1Graphics_1adc11514975d4ba30fc8deb0651b40171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1adc11514975d4ba30fc8deb0651b40171" kindref="member">OnWindowMoved</ref>();</highlight></codeline>
+<codeline lineno="622" refid="classUrho3D_1_1Graphics_1a3e4a63886b79fe7b559416836828a90f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3e4a63886b79fe7b559416836828a90f" kindref="member">Restore</ref>();</highlight></codeline>
+<codeline lineno="624" refid="classUrho3D_1_1Graphics_1a7e9aafcf20abf8918b6ba781636ce8e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a7e9aafcf20abf8918b6ba781636ce8e2" kindref="member">Maximize</ref>();</highlight></codeline>
+<codeline lineno="626" refid="classUrho3D_1_1Graphics_1ad96a591cc84498af11261ee7389aedae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ad96a591cc84498af11261ee7389aedae" kindref="member">Minimize</ref>();</highlight></codeline>
+<codeline lineno="628" refid="classUrho3D_1_1Graphics_1abb9681ff79224dc428f5ce266d576ca9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1abb9681ff79224dc428f5ce266d576ca9" kindref="member">Raise</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="630" refid="classUrho3D_1_1Graphics_1ae23ebe8c56633082c5829893efc5c757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae23ebe8c56633082c5829893efc5c757" kindref="member">AddGPUObject</ref>(<ref refid="classUrho3D_1_1GPUObject" kindref="compound">GPUObject</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="632" refid="classUrho3D_1_1Graphics_1a647719836f7c850d56dac7648980c265" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a647719836f7c850d56dac7648980c265" kindref="member">RemoveGPUObject</ref>(<ref refid="classUrho3D_1_1GPUObject" kindref="compound">GPUObject</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="634" refid="classUrho3D_1_1Graphics_1a2cbbf738f1fded79c35fbc3e0265ec18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="classUrho3D_1_1Graphics_1a2cbbf738f1fded79c35fbc3e0265ec18" kindref="member">ReserveScratchBuffer</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="636" refid="classUrho3D_1_1Graphics_1a7818a38e34d85d3cd8dbf87e5ffcd5fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a7818a38e34d85d3cd8dbf87e5ffcd5fe" kindref="member">FreeScratchBuffer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer);</highlight></codeline>
+<codeline lineno="638" refid="classUrho3D_1_1Graphics_1a441c4ad3ef2b035649457a7bc9cc0b2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a441c4ad3ef2b035649457a7bc9cc0b2f" kindref="member">CleanupScratchBuffers</ref>();</highlight></codeline>
+<codeline lineno="640" refid="classUrho3D_1_1Graphics_1a3989818ea9e19988bceb28ab6331e606" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a3989818ea9e19988bceb28ab6331e606" kindref="member">CleanupShaderPrograms</ref>(<ref refid="classUrho3D_1_1ShaderVariation" kindref="compound">ShaderVariation</ref>*<sp/>variation);</highlight></codeline>
+<codeline lineno="643" refid="classUrho3D_1_1Graphics_1a33758d927c34d25bc22005430f7648cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a33758d927c34d25bc22005430f7648cd" kindref="member">CleanupRenderSurface</ref>(<ref refid="classUrho3D_1_1RenderSurface" kindref="compound">RenderSurface</ref>*<sp/>surface);</highlight></codeline>
+<codeline lineno="646" refid="classUrho3D_1_1Graphics_1a1e36e35a8057c861facc948bc3d1e561" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1ConstantBuffer" kindref="compound">ConstantBuffer</ref>*<sp/><ref refid="classUrho3D_1_1Graphics_1a1e36e35a8057c861facc948bc3d1e561" kindref="member">GetOrCreateConstantBuffer</ref>(<ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="649" refid="classUrho3D_1_1Graphics_1a81ed7ddfa8dfc2abd1ef043cfb825a6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a81ed7ddfa8dfc2abd1ef043cfb825a6a" kindref="member">MarkFBODirty</ref>();</highlight></codeline>
+<codeline lineno="652" refid="classUrho3D_1_1Graphics_1a52ca2ba12d371a3365e8769c4247609f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a52ca2ba12d371a3365e8769c4247609f" kindref="member">SetVBO</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="655" refid="classUrho3D_1_1Graphics_1a6926bc669dc9be9446e2eb95935e45b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a6926bc669dc9be9446e2eb95935e45b8" kindref="member">SetUBO</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658" refid="classUrho3D_1_1Graphics_1a4fbff59477e2701b589cd711b34fd7ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a4fbff59477e2701b589cd711b34fd7ed" kindref="member">GetAlphaFormat</ref>();</highlight></codeline>
+<codeline lineno="660" refid="classUrho3D_1_1Graphics_1a80f6ac802d1acfcd877198c0a60d3fdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a80f6ac802d1acfcd877198c0a60d3fdc" kindref="member">GetLuminanceFormat</ref>();</highlight></codeline>
+<codeline lineno="662" refid="classUrho3D_1_1Graphics_1a7c392895092d3cdb87d4c08c9cc6ed6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a7c392895092d3cdb87d4c08c9cc6ed6b" kindref="member">GetLuminanceAlphaFormat</ref>();</highlight></codeline>
+<codeline lineno="664" refid="classUrho3D_1_1Graphics_1a69e5c69e56f886895805981d41a00fec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a69e5c69e56f886895805981d41a00fec" kindref="member">GetRGBFormat</ref>();</highlight></codeline>
+<codeline lineno="666" refid="classUrho3D_1_1Graphics_1ac00a769c116284b23bd77b995d525a02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ac00a769c116284b23bd77b995d525a02" kindref="member">GetRGBAFormat</ref>();</highlight></codeline>
+<codeline lineno="668" refid="classUrho3D_1_1Graphics_1a5a9ab6808288fcca5b588b551cd0f423" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a5a9ab6808288fcca5b588b551cd0f423" kindref="member">GetRGBA16Format</ref>();</highlight></codeline>
+<codeline lineno="670" refid="classUrho3D_1_1Graphics_1a9cd9d4553e65988804e6e74d98d9fd57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a9cd9d4553e65988804e6e74d98d9fd57" kindref="member">GetRGBAFloat16Format</ref>();</highlight></codeline>
+<codeline lineno="672" refid="classUrho3D_1_1Graphics_1a36efc3e58b7fa0b0976f16a3088f19c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a36efc3e58b7fa0b0976f16a3088f19c7" kindref="member">GetRGBAFloat32Format</ref>();</highlight></codeline>
+<codeline lineno="674" refid="classUrho3D_1_1Graphics_1a6b2f1451c5980cee24af99295439a847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a6b2f1451c5980cee24af99295439a847" kindref="member">GetRG16Format</ref>();</highlight></codeline>
+<codeline lineno="676" refid="classUrho3D_1_1Graphics_1a5114d0aa53e5d6b1d6db527be6ac933f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a5114d0aa53e5d6b1d6db527be6ac933f" kindref="member">GetRGFloat16Format</ref>();</highlight></codeline>
+<codeline lineno="678" refid="classUrho3D_1_1Graphics_1ab5120a14cf2193a3445a8b29f8904191" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ab5120a14cf2193a3445a8b29f8904191" kindref="member">GetRGFloat32Format</ref>();</highlight></codeline>
+<codeline lineno="680" refid="classUrho3D_1_1Graphics_1a046411d413827efc921b2f619d3e5068" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a046411d413827efc921b2f619d3e5068" kindref="member">GetFloat16Format</ref>();</highlight></codeline>
+<codeline lineno="682" refid="classUrho3D_1_1Graphics_1a7d59a3cbcac7915d6a168fcbbd260b6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a7d59a3cbcac7915d6a168fcbbd260b6d" kindref="member">GetFloat32Format</ref>();</highlight></codeline>
+<codeline lineno="684" refid="classUrho3D_1_1Graphics_1a57e7821fe7ac3711fe9e2bbfdf3e4c08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a57e7821fe7ac3711fe9e2bbfdf3e4c08" kindref="member">GetLinearDepthFormat</ref>();</highlight></codeline>
+<codeline lineno="686" refid="classUrho3D_1_1Graphics_1ae7ad6703b9ebd1c62d0a81c2169b33f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae7ad6703b9ebd1c62d0a81c2169b33f6" kindref="member">GetDepthStencilFormat</ref>();</highlight></codeline>
+<codeline lineno="688" refid="classUrho3D_1_1Graphics_1ae1182b7e7a6763bd3cff129ad0b4a03d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1ae1182b7e7a6763bd3cff129ad0b4a03d" kindref="member">GetReadableDepthFormat</ref>();</highlight></codeline>
+<codeline lineno="690" refid="classUrho3D_1_1Graphics_1af7c079d2f0d4f3b0647de465d7cdbbc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af7c079d2f0d4f3b0647de465d7cdbbc0" kindref="member">GetFormat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>formatName);</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight></codeline>
+<codeline lineno="693" refid="classUrho3D_1_1Graphics_1a880b53245f4ef195cbe2b948d367fe4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref>&amp;<sp/><ref refid="classUrho3D_1_1Graphics_1a880b53245f4ef195cbe2b948d367fe4a" kindref="member">GetPixelUVOffset</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pixelUVOffset;<sp/>}</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight></codeline>
+<codeline lineno="696" refid="classUrho3D_1_1Graphics_1a488ad1254e12e8766407c2fc9da80b98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1a488ad1254e12e8766407c2fc9da80b98" kindref="member">GetMaxBones</ref>();</highlight></codeline>
+<codeline lineno="698" refid="classUrho3D_1_1Graphics_1af6dd8e4ede9137976b0f178caa511127" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Graphics_1af6dd8e4ede9137976b0f178caa511127" kindref="member">GetGL3Support</ref>();</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OpenWindow(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resizable,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>borderless);</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CreateWindowIcon();</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AdjustScreenMode(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>newWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>newHeight,<sp/><ref refid="structUrho3D_1_1ScreenModeParams" kindref="compound">ScreenModeParams</ref>&amp;<sp/>params,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>maximize)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScreenModeChanged();</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AdjustWindow(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>newWidth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>newHeight,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>newFullscreen,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>newBorderless,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>monitor);</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CreateDevice(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UpdateSwapChain(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CreateInterface();</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CreateDevice(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>adapter,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>deviceType);</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetDevice();</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnDeviceLost();</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnDeviceReset();</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetStreamFrequency(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>frequency);</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetStreamFrequencies();</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CheckFeatureSupport();</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResetCachedState();</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetTextureUnitMappings();</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PrepareDraw();</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CreateResolveTexture();</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CleanupFramebuffers();</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>CreateFramebuffer();</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DeleteFramebuffer(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>fbo);</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BindFramebuffer(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>fbo);</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BindColorAttachment(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>target,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isRenderBuffer);</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BindDepthAttachment(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isRenderBuffer);</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BindStencilAttachment(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isRenderBuffer);</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckFramebuffer();</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetVertexAttribDivisor(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>location,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>divisor);</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Release(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clearGPUObjects,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>closeWindow);</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref><sp/>gpuObjectMutex_;</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/>GraphicsImpl*<sp/>impl_;</highlight></codeline>
+<codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Window*<sp/>window_{};</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref><sp/>windowTitle_;</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr&lt;Image&gt;</ref><sp/>windowIcon_;</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>externalWindow_{};</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/>WindowModeParams<sp/>primaryWindowMode_;</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/>WindowModeParams<sp/>secondaryWindowMode_;</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width_{};</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height_{};</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/>IntVector2<sp/>position_;</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/>ScreenModeParams<sp/>screenParams_;</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flushGPU_{};</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forceGL2_{};</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sRGB_{};</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lightPrepassSupport_{};</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deferredSupport_{};</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>anisotropySupport_{};</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dxtTextureSupport_{};</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>etcTextureSupport_{};</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>etc2TextureSupport_{};</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>pvrtcTextureSupport_{};</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hardwareShadowSupport_{};</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>instancingSupport_{};</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sRGBSupport_{};</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sRGBWriteSupport_{};</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numPrimitives_{};</highlight></codeline>
+<codeline lineno="816"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numBatches_{};</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>maxScratchBufferRequest_{};</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/>PODVector&lt;GPUObject*&gt;<sp/>gpuObjects_;</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector&lt;ScratchBuffer&gt;<sp/>scratchBuffers_;</highlight></codeline>
+<codeline lineno="824"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>dummyColorFormat_{};</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>shadowMapFormat_{};</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>hiresShadowMapFormat_{};</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/>VertexBuffer*<sp/>vertexBuffers_[MAX_VERTEX_STREAMS]{};</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/>IndexBuffer*<sp/>indexBuffer_{};</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>vertexDeclarationHash_{};</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>primitiveType_{};</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/>ShaderVariation*<sp/>vertexShader_{};</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/><sp/><sp/>ShaderVariation*<sp/>pixelShader_{};</highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/>Texture*<sp/>textures_[MAX_TEXTURE_UNITS]{};</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/>HashMap&lt;String,<sp/>TextureUnit&gt;<sp/>textureUnits_;</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/>RenderSurface*<sp/>renderTargets_[MAX_RENDERTARGETS]{};</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/>RenderSurface*<sp/>depthStencil_{};</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/>IntRect<sp/>viewport_;</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1aa76618ce244fbf4560ec541b4a45845d" kindref="member">TextureFilterMode</ref><sp/>defaultTextureFilterMode_{FILTER_TRILINEAR};</highlight></codeline>
+<codeline lineno="854"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>defaultTextureAnisotropy_{4};</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a2697a2bc51d21a1bf33367cb01c93d2f" kindref="member">BlendMode</ref><sp/>blendMode_{};</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alphaToCoverage_{};</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>colorWrite_{};</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref><sp/>cullMode_{};</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constantDepthBias_{};</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slopeScaledDepthBias_{};</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a0ec56159937ce5ecf9d76c82d156623c" kindref="member">CompareMode</ref><sp/>depthTestMode_{};</highlight></codeline>
+<codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthWrite_{};</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lineAntiAlias_{};</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref><sp/>fillMode_{};</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>scissorTest_{};</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/>IntRect<sp/>scissorRect_;</highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a0ec56159937ce5ecf9d76c82d156623c" kindref="member">CompareMode</ref><sp/>stencilTestMode_{};</highlight></codeline>
+<codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/>stencilPass_{};</highlight></codeline>
+<codeline lineno="884"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/>stencilFail_{};</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GraphicsDefs_8h_1a1ac6a4c4f8f854698947ad75f32dbc87" kindref="member">StencilOp</ref><sp/>stencilZFail_{};</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>stencilRef_{};</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>stencilCompareMask_{};</highlight></codeline>
+<codeline lineno="892"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>stencilWriteMask_{};</highlight></codeline>
+<codeline lineno="894"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector4<sp/>clipPlane_;</highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stencilTest_{};</highlight></codeline>
+<codeline lineno="898"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>useClipPlane_{};</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>shaderParameterSources_[MAX_SHADER_PARAMETER_GROUPS]{};</highlight></codeline>
+<codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>shaderPath_;</highlight></codeline>
+<codeline lineno="904"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>shaderCacheDir_;</highlight></codeline>
+<codeline lineno="906"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>shaderExtension_;</highlight></codeline>
+<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>WeakPtr&lt;Shader&gt;<sp/>lastShader_;</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>String<sp/>lastShaderName_;</highlight></codeline>
+<codeline lineno="912"><highlight class="normal"><sp/><sp/><sp/><sp/>SharedPtr&lt;ShaderPrecache&gt;<sp/>shaderPrecache_;</highlight></codeline>
+<codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>orientations_;</highlight></codeline>
+<codeline lineno="916"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>apiName_;</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"></highlight></codeline>
+<codeline lineno="919"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Vector2<sp/>pixelUVOffset;</highlight></codeline>
+<codeline lineno="921"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>gl3Support;</highlight></codeline>
+<codeline lineno="922"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="926"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>URHO3D_API<sp/>RegisterGraphicsLibrary(Context*<sp/>context);</highlight></codeline>
+<codeline lineno="927"><highlight class="normal"></highlight></codeline>
+<codeline lineno="928"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Graphics.h"/>
+  </compounddef>
+</doxygen>

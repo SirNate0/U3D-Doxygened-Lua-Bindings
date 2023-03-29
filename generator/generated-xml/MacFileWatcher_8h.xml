@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="MacFileWatcher_8h" kind="file" language="C++">
+    <compoundname>MacFileWatcher.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="MacFileWatcher_8h_1a861dd7564a07e4f388bc9a2e4ebfe6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CheckMinimalVersion</definition>
+        <argsstring>(int major, int minor)</argsstring>
+        <name>CheckMinimalVersion</name>
+        <param>
+          <type>int</type>
+          <declname>major</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minor</declname>
+        </param>
+        <briefdescription>
+<para>Return true when the running OS has the specified version number or later. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" line="24" column="6" declfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="MacFileWatcher_8h_1ad1ab54343e9627d4bd5cdcb9bd98853e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsFileWatcherSupported</definition>
+        <argsstring>()</argsstring>
+        <name>IsFileWatcherSupported</name>
+        <briefdescription>
+<para>Return true when individual file watcher is supported by the running Mac OS X. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" line="27" column="6" declfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="MacFileWatcher_8h_1a6fbabc82749c2861fba866b789aa5cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* CreateFileWatcher</definition>
+        <argsstring>(const char *pathname, bool watchSubDirs)</argsstring>
+        <name>CreateFileWatcher</name>
+        <param>
+          <type>const char *</type>
+          <declname>pathname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>watchSubDirs</declname>
+        </param>
+        <briefdescription>
+<para>Create and start the file watcher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" line="30" column="6" declfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="MacFileWatcher_8h_1a741ce40ae9ad1587d40da099331d3933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CloseFileWatcher</definition>
+        <argsstring>(void *watcher)</argsstring>
+        <name>CloseFileWatcher</name>
+        <param>
+          <type>void *</type>
+          <declname>watcher</declname>
+        </param>
+        <briefdescription>
+<para>Stop and release the file watcher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" line="33" column="6" declfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="MacFileWatcher_8h_1a40b8e521d8d070e0877129d23c4f0b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* ReadFileWatcher</definition>
+        <argsstring>(void *watcher)</argsstring>
+        <name>ReadFileWatcher</name>
+        <param>
+          <type>void *</type>
+          <declname>watcher</declname>
+        </param>
+        <briefdescription>
+<para>Read changes queued by the file watcher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" line="36" column="12" declfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h" declline="36" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckMinimalVersion(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>major,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minor);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsFileWatcherSupported();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>CreateFileWatcher(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pathname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>watchSubDirs);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CloseFileWatcher(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>watcher);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ReadFileWatcher(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>watcher);</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MacFileWatcher.h"/>
+  </compounddef>
+</doxygen>

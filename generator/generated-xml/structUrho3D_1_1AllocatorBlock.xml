@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1AllocatorBlock" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::AllocatorBlock</compoundname>
+    <includes refid="Allocator_8h" local="no">Allocator.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1AllocatorBlock_1acd9d93cb3cccd91286094d54cc7492f6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::AllocatorBlock::nodeSize_</definition>
+        <argsstring></argsstring>
+        <name>nodeSize_</name>
+        <briefdescription>
+<para>Size of a node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" line="43" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1AllocatorBlock_1ac6dc9322a05cb853545f6e13cd3de823" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::AllocatorBlock::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <briefdescription>
+<para>Number of nodes in this block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" line="45" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1AllocatorBlock_1a71ef9c0386e22fcc1d7c9e6ef1eed408" prot="public" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1AllocatorNode" kindref="compound">AllocatorNode</ref> *</type>
+        <definition>AllocatorNode* Urho3D::AllocatorBlock::free_</definition>
+        <argsstring></argsstring>
+        <name>free_</name>
+        <briefdescription>
+<para>First free node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" line="47" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1AllocatorBlock_1ada76d5d9385e591c970b96b6c3342876" prot="public" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1AllocatorBlock" kindref="compound">AllocatorBlock</ref> *</type>
+        <definition>AllocatorBlock* Urho3D::AllocatorBlock::next_</definition>
+        <argsstring></argsstring>
+        <name>next_</name>
+        <briefdescription>
+<para>Next allocator block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" line="49" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Allocator memory block. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" line="40" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Allocator.h" bodystart="41" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structUrho3D_1_1AllocatorBlock_1ac6dc9322a05cb853545f6e13cd3de823" prot="public" virt="non-virtual"><scope>Urho3D::AllocatorBlock</scope><name>capacity_</name></member>
+      <member refid="structUrho3D_1_1AllocatorBlock_1a71ef9c0386e22fcc1d7c9e6ef1eed408" prot="public" virt="non-virtual"><scope>Urho3D::AllocatorBlock</scope><name>free_</name></member>
+      <member refid="structUrho3D_1_1AllocatorBlock_1ada76d5d9385e591c970b96b6c3342876" prot="public" virt="non-virtual"><scope>Urho3D::AllocatorBlock</scope><name>next_</name></member>
+      <member refid="structUrho3D_1_1AllocatorBlock_1acd9d93cb3cccd91286094d54cc7492f6" prot="public" virt="non-virtual"><scope>Urho3D::AllocatorBlock</scope><name>nodeSize_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

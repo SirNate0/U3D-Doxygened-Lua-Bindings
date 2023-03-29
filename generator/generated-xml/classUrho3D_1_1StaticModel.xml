@@ -1,0 +1,1329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1StaticModel" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::StaticModel</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Drawable" prot="public" virt="non-virtual">Urho3D::Drawable</basecompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1AnimatedModel" prot="public" virt="non-virtual">Urho3D::AnimatedModel</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Skybox" prot="public" virt="non-virtual">Urho3D::Skybox</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1StaticModelGroup" prot="public" virt="non-virtual">Urho3D::StaticModelGroup</derivedcompoundref>
+    <includes refid="StaticModel_8h" local="no">StaticModel.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1StaticModel_1ab76f1b2792ff9f1b79b7230444f59ca8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1StaticModelGeometryData" kindref="compound">StaticModelGeometryData</ref> &gt;</type>
+        <definition>PODVector&lt;StaticModelGeometryData&gt; Urho3D::StaticModel::geometryData_</definition>
+        <argsstring></argsstring>
+        <name>geometryData_</name>
+        <briefdescription>
+<para>Extra per-geometry data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="127" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1StaticModel_1aa7423980f7736a60611e15a0cfa370d9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> &gt; &gt; &gt;</type>
+        <definition>Vector&lt;Vector&lt;SharedPtr&lt;Geometry&gt; &gt; &gt; Urho3D::StaticModel::geometries_</definition>
+        <argsstring></argsstring>
+        <name>geometries_</name>
+        <briefdescription>
+<para>All geometries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="129" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1StaticModel_1a50a3a2becdcb76c1ecb846480e77aa14" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> &gt;</type>
+        <definition>SharedPtr&lt;Model&gt; Urho3D::StaticModel::model_</definition>
+        <argsstring></argsstring>
+        <name>model_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="131" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1StaticModel_1a183c4340b371b4edf51356206b6de1d7" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::StaticModel::occlusionLodLevel_</definition>
+        <argsstring></argsstring>
+        <name>occlusionLodLevel_</name>
+        <briefdescription>
+<para>Occlusion LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="133" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1StaticModel_1a1d412bf0a77b76403be4fa0e4d99172a" prot="protected" static="no" mutable="yes">
+        <type><ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref></type>
+        <definition>ResourceRefList Urho3D::StaticModel::materialsAttr_</definition>
+        <argsstring></argsstring>
+        <name>materialsAttr_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> list attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="135" column="29" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a86628548ad3f9d600346023e2fe7d5a5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::StaticModel::StaticModel</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>StaticModel</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="48" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a812fb7cadb18b0aeb955fc02e1ff1242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::StaticModel::~StaticModel</definition>
+        <argsstring>() override</argsstring>
+        <name>~StaticModel</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a1ce96c597420c576a598e351d0df06a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::ProcessRayQuery</definition>
+        <argsstring>(const RayOctreeQuery &amp;query, PODVector&lt; RayQueryResult &gt; &amp;results) override</argsstring>
+        <name>ProcessRayQuery</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ad7614c648bc6beb1ac8e57dc5b0bedc0">ProcessRayQuery</reimplements>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1acc4292657add55650305d45132d7c4ec">ProcessRayQuery</reimplementedby>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1RayQueryResult" kindref="compound">RayQueryResult</ref> &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Process octree raycast. May be called from a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1ac59f46b979f0e586501f3b4e7689c284" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::UpdateBatches</definition>
+        <argsstring>(const FrameInfo &amp;frame) override</argsstring>
+        <name>UpdateBatches</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ae489279acce1c5c0168de50928391639">UpdateBatches</reimplements>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1a91aa25c17c0160a3673bb985190479af">UpdateBatches</reimplementedby>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Calculate distance and prepare batches for rendering. May be called from worker thread(s), possibly re-entrantly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a15d49713fcd401f5659ec5debd0b205a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>Geometry* Urho3D::StaticModel::GetLodGeometry</definition>
+        <argsstring>(unsigned batchIndex, unsigned level) override</argsstring>
+        <name>GetLodGeometry</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1af56066bfd97cee073565a19d5e6bb307">GetLodGeometry</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>batchIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Return the geometry for a specific LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="60" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1aaf54a9fadd15d371554bdeea827cfe67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::StaticModel::GetNumOccluderTriangles</definition>
+        <argsstring>() override</argsstring>
+        <name>GetNumOccluderTriangles</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1aa9924ef8125d599be958f65fdd874206">GetNumOccluderTriangles</reimplements>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1ac48e6a4b29fe0ed8903744c698c5e0e2">GetNumOccluderTriangles</reimplementedby>
+        <briefdescription>
+<para>Return number of occlusion geometry triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a934ce91d3123ebed38229a8994d8d8b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::StaticModel::DrawOcclusion</definition>
+        <argsstring>(OcclusionBuffer *buffer) override</argsstring>
+        <name>DrawOcclusion</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ad6abc23d5616c4589241d2d428879fa4">DrawOcclusion</reimplements>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1a13fe7ab600249a608a696249ec27b1f2">DrawOcclusion</reimplementedby>
+        <param>
+          <type><ref refid="classUrho3D_1_1OcclusionBuffer" kindref="compound">OcclusionBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Draw to occlusion buffer. Return true if did not run out of triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1aed04de0dbff6fd7af5b4e97f75d0127d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::StaticModel::SetModel</definition>
+        <argsstring>(Model *model)</argsstring>
+        <name>SetModel</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set model. BIND_AS_PROPERTY Formely: manualbind </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="68" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a6c18cd0183ad9c3deb842a9541596da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::StaticModel::SetMaterial</definition>
+        <argsstring>(Material *material)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set material on all geometries. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="71" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1ac3f903097358fa67aecadb93be127fab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Urho3D::StaticModel::SetMaterial</definition>
+        <argsstring>(unsigned index, Material *material)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set material on one geometry. Return true if successful. BIND_AS_ALIAS_set_materials </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a72577798f3e704313c7f729cbd9de9b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::SetOcclusionLodLevel</definition>
+        <argsstring>(unsigned level)</argsstring>
+        <name>SetOcclusionLodLevel</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set occlusion LOD level. By default (M_MAX_UNSIGNED) same as visible. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1abacb48c866a3bf2f6ec386cb59461803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::ApplyMaterialList</definition>
+        <argsstring>(const String &amp;fileName=String::EMPTY)</argsstring>
+        <name>ApplyMaterialList</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Apply default materials from a material list file. If filename is empty (default), the model&apos;s resource name with extension .txt will be used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a54dc848414fb72c2cfc81da66bfba355" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+        <definition>Model* Urho3D::StaticModel::GetModel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return model. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="83" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a928efd177a8a09047de193186f8d5e48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::StaticModel::GetNumGeometries</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumGeometries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of geometries. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="87" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1ad24ac94e47f6198f753357b51501f1af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+        <definition>virtual Material* Urho3D::StaticModel::GetMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return material from the first geometry, assuming all the geometries use the same material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="91" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1aebd22229f686f8ebe9eaab05bb79d483" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+        <definition>virtual Material* Urho3D::StaticModel::GetMaterial</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetMaterial</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return material by geometry index. BIND_AS_ALIAS_get_materials </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="94" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a48be3bb6844d8cd82c518a3badc71929" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::StaticModel::GetOcclusionLodLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOcclusionLodLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return occlusion LOD level. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="98" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a988aaa5d6115a1d179eacccf61bc0066" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::StaticModel::IsInside</definition>
+        <argsstring>(const Vector3 &amp;point) const</argsstring>
+        <name>IsInside</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Determines if the given world space point is within the model geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1abbf0d49e6096d1a269829cb9a19e445e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::StaticModel::IsInsideLocal</definition>
+        <argsstring>(const Vector3 &amp;point) const</argsstring>
+        <name>IsInsideLocal</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Determines if the given local space point is within the model geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1ad0b8df3ed239e295894411942ef4af2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::SetModelAttr</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>SetModelAttr</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set model attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1acf47b8d4682e6f06a367cd52dc4069a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::SetMaterialsAttr</definition>
+        <argsstring>(const ResourceRefList &amp;value)</argsstring>
+        <name>SetMaterialsAttr</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set materials attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1ac22774ee64f0c3f8aa07b04923381e2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::StaticModel::GetModelAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModelAttr</name>
+        <briefdescription>
+<para>Return model attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="110" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a45da942a69ee029c67b6754ecd5af7b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref> &amp;</type>
+        <definition>const ResourceRefList&amp; Urho3D::StaticModel::GetMaterialsAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterialsAttr</name>
+        <briefdescription>
+<para>Return materials attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="112" column="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1abc6733419916f96754a3f711f4b1118b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::StaticModel::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. <ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> must be registered first. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="53" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a6995f2d4053f4551d4862ca4a23f59c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::OnWorldBoundingBoxUpdate</definition>
+        <argsstring>() override</argsstring>
+        <name>OnWorldBoundingBoxUpdate</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1af146747caaf6fd85ab71fda4e364bde4">OnWorldBoundingBoxUpdate</reimplements>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1ae9a4e2a83ebc08833d0e646d10db0136">OnWorldBoundingBoxUpdate</reimplementedby>
+        <briefdescription>
+<para>Recalculate the world-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a3494b599cde3fc49e4e9a8f0b9239aca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::SetBoundingBox</definition>
+        <argsstring>(const BoundingBox &amp;box)</argsstring>
+        <name>SetBoundingBox</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Set local-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a023f70da6e3ec54602c69a363ecf040a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::SetNumGeometries</definition>
+        <argsstring>(unsigned num)</argsstring>
+        <name>SetNumGeometries</name>
+        <param>
+          <type>unsigned</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Set number of geometries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1af8a54f9e53ee7deb02f75db96fb4c662" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::ResetLodLevels</definition>
+        <argsstring>()</argsstring>
+        <name>ResetLodLevels</name>
+        <briefdescription>
+<para>Reset LOD levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="122" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a5725ee05897fb730dbc0794b78eee3d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::CalculateLodLevels</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateLodLevels</name>
+        <briefdescription>
+<para>Choose LOD levels based on distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="124" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1StaticModel_1a4f3c5397ad06d8632620d12314867e8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::StaticModel::HandleModelReloadFinished</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleModelReloadFinished</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle model reload finished. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="139" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Static model component. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>Urho3D::AnimatedModel</label>
+        <link refid="classUrho3D_1_1AnimatedModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::StaticModelGroup</label>
+        <link refid="classUrho3D_1_1StaticModelGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::Skybox</label>
+        <link refid="classUrho3D_1_1Skybox"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::StaticModel</label>
+        <link refid="classUrho3D_1_1StaticModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>Urho3D::Zone</label>
+        <link refid="classUrho3D_1_1Zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>lastAmbientEndZone_</edgelabel>
+          <edgelabel>lastAmbientStartZone_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>zoneTexture_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>lastWorldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ambientColor_</edgelabel>
+          <edgelabel>ambientEndColor_</edgelabel>
+          <edgelabel>ambientStartColor_</edgelabel>
+          <edgelabel>fogColor_</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>inverseWorld_</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Urho3D::PODVector&lt; Urho3D::Camera * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Urho3D::Light</label>
+        <link refid="classUrho3D_1_1Light"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="32">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>drawables_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>center_</edgelabel>
+          <edgelabel>halfSize_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>cullingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>children_</edgelabel>
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Zone &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="33">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::BoundingBox</label>
+        <link refid="classUrho3D_1_1BoundingBox"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>max_</edgelabel>
+          <edgelabel>min_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Urho3D::Vector&lt; Urho3D::Vector&lt; Urho3D::SharedPtr&lt; Urho3D::Geometry &gt; &gt; &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Urho3D::Matrix3x4</label>
+        <link refid="classUrho3D_1_1Matrix3x4"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Urho3D::StringHash</label>
+        <link refid="classUrho3D_1_1StringHash"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Urho3D::PODVector&lt; Urho3D::StaticModelGeometryData &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="35">
+        <label>Urho3D::ResourceRefList</label>
+        <link refid="structUrho3D_1_1ResourceRefList"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>type_</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>names_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>zone_</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>lights_</edgelabel>
+          <edgelabel>vertexLights_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>viewCameras_</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>firstLight_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>boundingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>octant_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="24">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Urho3D::Vector&lt; String &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="17">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="38">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Model &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Urho3D::Vector&lt; Urho3D::SourceBatch &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Urho3D::PODVector&lt; Urho3D::Light * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::StaticModel</label>
+        <link refid="classUrho3D_1_1StaticModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>materialsAttr_</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>model_</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>geometries_</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>geometryData_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" line="42" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/StaticModel.h" bodystart="43" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Drawable_1afce158b2c7a44a5f40d4eea9aabc673b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>AddLight</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adaacb5c93a02cfd9d662b167b0bae813" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>AddToOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a73cece74565f2124ed22d66406760302" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>AddVertexLight</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1abacb48c866a3bf2f6ec386cb59461803" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>ApplyMaterialList</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad0416c01ec4088197c2207971bd046aa" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>basePassFlags_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a748155e7b747b009e4879882ec3bf7c4" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>batches_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abfead28f2b8293a8699d6ac84b8476c9" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>boundingBox_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a5725ee05897fb730dbc0794b78eee3d7" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>CalculateLodLevels</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a69790319fcb6d145ee8753a6db002f33" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>castShadows_</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a786d899e2ebfd595ee15adc70d419175" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>distance_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5a9391dafb2151dde0a717d59413caab" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Drawable</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8ba9d34f65b38b534f499f636834e694" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>drawableFlags_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7a55d25cfff63c42a8cadae6e37b8f8b" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ada7a3ed2c8975c5d6fd11f7e770a699a" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>drawDistance_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a934ce91d3123ebed38229a8994d8d8b6" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>DrawOcclusion</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a147b1459051ad28a7c3583fc30d6765d" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>firstLight_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1aa7423980f7736a60611e15a0cfa370d9" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>geometries_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1ab76f1b2792ff9f1b79b7230444f59ca8" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>geometryData_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5ae831d745f6ff6d9341eae348682613" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetBatches</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7e8f305ed9233705a707803e7a8d92e2" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae888ecaa770f261c32e6f47791d68435" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1696860cd9715781a11f622a9b7025e8" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74be6fab1f5cfdd44da3572015edf6ba" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetDrawableFlags</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aaace7f6327baffa0a0c4adb1d840de24" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac91538e42ed288039d128bdec2e5d008" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetFirstLight</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a365785ecf1a129263bf53b39ccc651cf" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5574ddf773640e9dae5466a7ff6cf8f3" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a415b264905a2ac605c837e38c9f86afe" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetLodBias</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4ccb114792b1a779bf0f714c7aa764d0" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetLodDistance</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a15d49713fcd401f5659ec5debd0b205a" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetLodGeometry</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1ad24ac94e47f6198f753357b51501f1af" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetMaterial</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1aebd22229f686f8ebe9eaab05bb79d483" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetMaterial</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a45da942a69ee029c67b6754ecd5af7b8" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetMaterialsAttr</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4c9553b4aa9d39ff94e92f97519ba89" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af30ebf38b4278cd49fd786776cd73413" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetMaxZ</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab2becad2e313c835156cc98c63af6ce2" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetMinZ</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a54dc848414fb72c2cfc81da66bfba355" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetModel</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1ac22774ee64f0c3f8aa07b04923381e2d" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetModelAttr</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a928efd177a8a09047de193186f8d5e48" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetNumGeometries</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1aaf54a9fadd15d371554bdeea827cfe67" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetNumOccluderTriangles</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a48be3bb6844d8cd82c518a3badc71929" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetOcclusionLodLevel</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6679001692e20900992cb553771e4080" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetOctant</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6072f938c617059fef0fc77ff21dac1f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1732b54098629811101b12b61800c3c7" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad7e22e3881027d4bf3334e06cf64d016" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetSortValue</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::StaticModel</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::StaticModel</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::StaticModel</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a09d563527cd3485f21b485c778e26d7e" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>GetUpdateGeometryType</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2cde3e103a1a8f887e1080095096d77f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetVertexLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae45bf9bcfe8d1c09c72258e77a76f992" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetViewMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fac24cb806464afa69b38b4634cb703" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetWorldBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4e067775f22ef6c92643a3ea6e5807a" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa8ee386880f6aad566f662abd2760d4f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>GetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a4f3c5397ad06d8632620d12314867e8d" prot="private" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HandleModelReloadFinished</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad2faff010ee37e381ace91f59ef7dc1e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HasBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a988aaa5d6115a1d179eacccf61bc0066" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInside</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1abbf0d49e6096d1a269829cb9a19e445e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInsideLocal</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4dd313eab9c863711b8e84d7ce30fc11" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8d892c43788779924ae09ff161ff50c0" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a868163988ad17c777699cd0226ffc68b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aabd4960e08a707a45f9720fcb30dfa39" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a85642d5021a87a361151fd6823bad04f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsOccluder</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aebf5b0230d2cba605ff1f6ca24470ed4" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>IsZoneDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adafccc9b0b4f1cff9c9764b618cb60b4" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>lightMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2c3ef78ebb6b7f1b4fe33ca56a85d46a" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>lights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4230d5696e13e62a419cf7eb543c84f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>LimitLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a58b2ac553e0255df9eb8f52b94d15deb" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>LimitVertexLights</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3781e0be1bdacb9d915c6f2d2439efab" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>lodBias_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3e1d03cadfe54e898b63b7033afa224b" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>lodDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a87d6de3a8a7895228665ef79ad331510" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>MarkForUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1f5358a58f4f0bfa38919dd14c04e240" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abbd26865ea0280500b4ac6c29ce82705" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a1d412bf0a77b76403be4fa0e4d99172a" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>materialsAttr_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a43598df7745628a3dafef95887093a5b" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>maxLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af0c99306fc67cfd108183532f70ef765" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>maxZ_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a426fbc769c215162857ab0aaf1d3bfbb" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>minZ_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a50a3a2becdcb76c1ecb846480e77aa14" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>model_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa88b30c4e2a07c664707c268a889b990" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>occludee_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5013f74c89e1259ea2a4e8a0d4dca571" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>occluder_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a183c4340b371b4edf51356206b6de1d7" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>occlusionLodLevel_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa279857db164197db750c919307491e3" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>octant_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a04a978441415a93f044721f6473df0e3" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa7a00b82f8a07ba71b8a63561023a4c4" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2ab23fcc436cde69fe74bfefa4ead968" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnRemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1acf1d2b41b502aebfa72c2e280470b453" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aeff4f69d702780990bcc4e347a2394f0" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a6995f2d4053f4551d4862ca4a23f59c0" prot="protected" virt="virtual"><scope>Urho3D::StaticModel</scope><name>OnWorldBoundingBoxUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a1ce96c597420c576a598e351d0df06a1" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>ProcessRayQuery</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1abc6733419916f96754a3f711f4b1118b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a48c3be2aa6cb930b2ce959784d76fdbe" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1af8a54f9e53ee7deb02f75db96fb4c662" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>ResetLodLevels</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae5d530586535c7d58d54053c0ac5b954" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a3494b599cde3fc49e4e9a8f0b9239aca" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a326f83aea7b4a6c695543e45cbffafa5" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fa21af838026c1566496968bc7a696c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adae53db9cd636a6583569a17b47717d2" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a31131f13cd30e8f47d201953f0d6293f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetLodBias</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a6c18cd0183ad9c3deb842a9541596da9" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>SetMaterial</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1ac3f903097358fa67aecadb93be127fab" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>SetMaterial</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1acf47b8d4682e6f06a367cd52dc4069a6" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetMaterialsAttr</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8306bfe2f9ba357b9384d2285fcd3902" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3a96ff31da79c263163701b2a1351aab" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetMinMaxZ</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1aed04de0dbff6fd7af5b4e97f75d0127d" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>SetModel</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1ad0b8df3ed239e295894411942ef4af2c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetModelAttr</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a023f70da6e3ec54602c69a363ecf040a" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetNumGeometries</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa1e97bbb2427a3626a5b6816dfc888d6" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae74c979945a77c14647d024f0f824c73" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetOccluder</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a72577798f3e704313c7f729cbd9de9b4" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetOcclusionLodLevel</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3c746486b469ad2c987eaa2faca73afd" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetOctant</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae1f5e010e8a556927758e8eaa7b65e9a" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0e06b99e373bf9c0cec01d17f1384a24" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5234fbefdcf8dc01cc296e18f3b2c916" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetSortValue</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab0a0cb81cefb83249a578069c4adc4d8" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetViewMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3181013d83f6d1b3110abe34316fe435" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a431071bb2e7c05ad55c8aade5c18e659" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1afbc2f50dafd0c9f7d34385cdfacf378f" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>shadowDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a9640ac3a553bc15bfc1826317df39631" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>shadowMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a914180afedfd0fff9d6458bbe2ca548e" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>sortValue_</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a86628548ad3f9d600346023e2fe7d5a5" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>StaticModel</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae865f6d21de70fd7bc95a7207d694b88" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1ac59f46b979f0e586501f3b4e7689c284" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>UpdateBatches</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a00fb66b3ce06e1e9c9bb9ecf402c78b4" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>UpdateGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74445c3c2d016d2ce796683ec63e81b8" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>updateQueued_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7effc9e891517efb4a85104e8e49c9d3" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>vertexLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6de3f920398ae6adb36991175e6f8380" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>viewCameras_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0be4e0aacab060480d106a4a39d24a26" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>viewFrameNumber_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a63e29f96811c72e08c15fd01789d6ef4" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a10f4a0419fadd10735448f7a5b639099" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>worldBoundingBox_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a23281f9ff7eeaa73c147b86fc29f1f9d" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>worldBoundingBoxDirty_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af251651fa16a666b0ec11af053bf80aa" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>zone_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac7871920deb048d9d675ad34c5874a00" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>zoneDirty_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2a5536a40728f773e36238bfe67b3958" prot="protected" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>zoneMask_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4be7208dbdfff0725eef83f33ad28536" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>~Drawable</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::StaticModel</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>~Serializable</name></member>
+      <member refid="classUrho3D_1_1StaticModel_1a812fb7cadb18b0aeb955fc02e1ff1242" prot="public" virt="non-virtual"><scope>Urho3D::StaticModel</scope><name>~StaticModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

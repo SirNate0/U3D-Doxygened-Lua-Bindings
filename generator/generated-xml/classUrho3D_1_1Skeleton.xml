@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Skeleton" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Skeleton</compoundname>
+    <includes refid="Skeleton_8h" local="no">Skeleton.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Skeleton_1af9449df070add42627fcc437bb9d4bf2" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> &gt;</type>
+        <definition>Vector&lt;Bone&gt; Urho3D::Skeleton::bones_</definition>
+        <argsstring></argsstring>
+        <name>bones_</name>
+        <briefdescription>
+<para>Bones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="145" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Skeleton_1a43079df2973a087a2d3b18c287e9e57f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Skeleton::rootBoneIndex_</definition>
+        <argsstring></argsstring>
+        <name>rootBoneIndex_</name>
+        <briefdescription>
+<para>Root bone index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="147" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a1474a2506337433159fabd42b2d6e923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Skeleton::Skeleton</definition>
+        <argsstring>()</argsstring>
+        <name>Skeleton</name>
+        <briefdescription>
+<para>Construct an empty skeleton. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="92" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a807da20c17b8d61c9c48143e5fd2a8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Skeleton::~Skeleton</definition>
+        <argsstring>()</argsstring>
+        <name>~Skeleton</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="94" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a25a96f53e7ed7d3daea21129b6c330f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Skeleton::Load</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>Load</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Read from a stream. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a77b0bf23586e208eff1fdebae4812f52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Skeleton::Save</definition>
+        <argsstring>(Serializer &amp;dest) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Write to a stream. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a11b65ed7788a08627f4ac932d61db2d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Skeleton::Define</definition>
+        <argsstring>(const Skeleton &amp;src)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Skeleton" kindref="compound">Skeleton</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Define from another skeleton. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a191f61b30be08c6bb63c4299fda0dd47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Skeleton::SetRootBoneIndex</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>SetRootBoneIndex</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Set root bone&apos;s index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a0ee8a1225a004ff9ee08bc2606af4dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Skeleton::ClearBones</definition>
+        <argsstring>()</argsstring>
+        <name>ClearBones</name>
+        <briefdescription>
+<para>Clear bones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1aaecb5d9838d09481ecdaabe9323513f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Skeleton::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Reset all animating bones to initial positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a9927ec52e10632a98dfabfc9e966d671" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> &gt; &amp;</type>
+        <definition>const Vector&lt;Bone&gt;&amp; Urho3D::Skeleton::GetBones</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBones</name>
+        <briefdescription>
+<para>Return all bones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="110" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a4de33018b7e6d4e363ef4bcc3e8cfe11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> &gt; &amp;</type>
+        <definition>Vector&lt;Bone&gt;&amp; Urho3D::Skeleton::GetModifiableBones</definition>
+        <argsstring>()</argsstring>
+        <name>GetModifiableBones</name>
+        <briefdescription>
+<para>Return modifiable bones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="113" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1ad2159e16479f1f972b5450722c8f3560" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Skeleton::GetNumBones</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumBones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of bones. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="117" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a2bf5dc6d59c653e93ced179240d0fb41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::Skeleton::GetRootBone</definition>
+        <argsstring>()</argsstring>
+        <name>GetRootBone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return root bone. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a6963a740795f8052cdab2c12ea10da1f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Skeleton::GetBoneIndex</definition>
+        <argsstring>(const String &amp;boneName) const</argsstring>
+        <name>GetBoneIndex</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>boneName</declname>
+        </param>
+        <briefdescription>
+<para>Return index of the bone by name. Return M_MAX_UNSIGNED if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="123" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a04e129642db11d523cc71e35e131fe9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Skeleton::GetBoneIndex</definition>
+        <argsstring>(const StringHash &amp;boneNameHash) const</argsstring>
+        <name>GetBoneIndex</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &amp;</type>
+          <declname>boneNameHash</declname>
+        </param>
+        <briefdescription>
+<para>Return index of the bone by name hash. Return M_MAX_UNSIGNED if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="125" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a4fe610b048973292ac75e4d4bac20e94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Skeleton::GetBoneIndex</definition>
+        <argsstring>(const Bone *bone) const</argsstring>
+        <name>GetBoneIndex</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+          <declname>bone</declname>
+        </param>
+        <briefdescription>
+<para>Return index of the bone by the bone pointer. Return M_MAX_UNSIGNED if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="127" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a59316b5b40c9edf2bcb7641a285764b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::Skeleton::GetBoneParent</definition>
+        <argsstring>(const Bone *bone)</argsstring>
+        <name>GetBoneParent</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+          <declname>bone</declname>
+        </param>
+        <briefdescription>
+<para>Return parent of the given bone. Return null for root bones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a80e4df08c6eb5e66993ee21d789c3a31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::Skeleton::GetBone</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>GetBone</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return bone by index. BIND_AS_ALIAS_get_bones </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="132" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a932053601932dd695f89f0fbb9fad7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::Skeleton::GetBone</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>GetBone</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return bone by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="134" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1a6058732753b5e474abcce823c8709bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::Skeleton::GetBone</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetBone</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return bone by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1ac23e734fe2a9e86ca5336639bdf236a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::Skeleton::GetBone</definition>
+        <argsstring>(const StringHash &amp;boneNameHash)</argsstring>
+        <name>GetBone</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &amp;</type>
+          <declname>boneNameHash</declname>
+        </param>
+        <briefdescription>
+<para>Return bone by name hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="138" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Skeleton_1aa1e9f865c699b794ccfac73c988c98c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Skeleton::ResetSilent</definition>
+        <argsstring>()</argsstring>
+        <name>ResetSilent</name>
+        <briefdescription>
+<para>Reset all animating bones to initial positions without marking the nodes dirty. Requires the node dirtying to be performed later. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="141" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Hierarchical collection of bones. NO_COUNT </para>
+    </detaileddescription>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" line="88" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Skeleton.h" bodystart="89" bodyend="148"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Skeleton_1af9449df070add42627fcc437bb9d4bf2" prot="private" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>bones_</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a0ee8a1225a004ff9ee08bc2606af4dc6" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>ClearBones</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a11b65ed7788a08627f4ac932d61db2d1" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a80e4df08c6eb5e66993ee21d789c3a31" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBone</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a932053601932dd695f89f0fbb9fad7e7" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBone</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a6058732753b5e474abcce823c8709bdf" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBone</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1ac23e734fe2a9e86ca5336639bdf236a9" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBone</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a6963a740795f8052cdab2c12ea10da1f" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBoneIndex</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a04e129642db11d523cc71e35e131fe9c" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBoneIndex</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a4fe610b048973292ac75e4d4bac20e94" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBoneIndex</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a59316b5b40c9edf2bcb7641a285764b2" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBoneParent</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a9927ec52e10632a98dfabfc9e966d671" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetBones</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a4de33018b7e6d4e363ef4bcc3e8cfe11" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetModifiableBones</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1ad2159e16479f1f972b5450722c8f3560" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetNumBones</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a2bf5dc6d59c653e93ced179240d0fb41" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>GetRootBone</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a25a96f53e7ed7d3daea21129b6c330f8" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1aaecb5d9838d09481ecdaabe9323513f2" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>Reset</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1aa1e9f865c699b794ccfac73c988c98c9" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>ResetSilent</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a43079df2973a087a2d3b18c287e9e57f" prot="private" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>rootBoneIndex_</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a77b0bf23586e208eff1fdebae4812f52" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a191f61b30be08c6bb63c4299fda0dd47" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>SetRootBoneIndex</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a1474a2506337433159fabd42b2d6e923" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>Skeleton</name></member>
+      <member refid="classUrho3D_1_1Skeleton_1a807da20c17b8d61c9c48143e5fd2a8ba" prot="public" virt="non-virtual"><scope>Urho3D::Skeleton</scope><name>~Skeleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

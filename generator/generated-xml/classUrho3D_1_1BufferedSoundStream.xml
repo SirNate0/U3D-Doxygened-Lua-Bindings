@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1BufferedSoundStream" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::BufferedSoundStream</compoundname>
+    <basecompoundref refid="classUrho3D_1_1SoundStream" prot="public" virt="non-virtual">Urho3D::SoundStream</basecompoundref>
+    <includes refid="BufferedSoundStream_8h" local="no">BufferedSoundStream.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1BufferedSoundStream_1ac9a266ffe338178382e0e280e7f2ab2d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1List" kindref="compound">List</ref>&lt; <ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; signed char &gt;, unsigned &gt; &gt;</type>
+        <definition>List&lt;Pair&lt;SharedArrayPtr&lt;signed char&gt;, unsigned&gt; &gt; Urho3D::BufferedSoundStream::buffers_</definition>
+        <argsstring></argsstring>
+        <name>buffers_</name>
+        <briefdescription>
+<para>Buffers and their sizes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="62" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1BufferedSoundStream_1a9d64ad83fafdf6d7371341394082714c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BufferedSoundStream::position_</definition>
+        <argsstring></argsstring>
+        <name>position_</name>
+        <briefdescription>
+<para>Byte position in the front most buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="64" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1BufferedSoundStream_1a1de3dded7a05c8f16bbfe2d46c88a80e" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::BufferedSoundStream::bufferMutex_</definition>
+        <argsstring></argsstring>
+        <name>bufferMutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> for buffer data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="66" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1a3666748faa0f231a8934f541a6d4ace1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BufferedSoundStream::BufferedSoundStream</definition>
+        <argsstring>()</argsstring>
+        <name>BufferedSoundStream</name>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1adf37a95ca4190abcc076cbce1cdda3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BufferedSoundStream::~BufferedSoundStream</definition>
+        <argsstring>() override</argsstring>
+        <name>~BufferedSoundStream</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="41" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1a51728179f4b8a602c527c3fcb6ab0d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BufferedSoundStream::GetData</definition>
+        <argsstring>(signed char *dest, unsigned numBytes) override</argsstring>
+        <name>GetData</name>
+        <reimplements refid="classUrho3D_1_1SoundStream_1a7d87ae1420d6fc6f0b7d69fe3efebce2">GetData</reimplements>
+        <param>
+          <type>signed char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+<para>Produce sound data into destination. Return number of bytes produced. Called by <ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref> from the mixing thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1a163dffbabdacc2cde3fcc85fc6510213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BufferedSoundStream::AddData</definition>
+        <argsstring>(void *data, unsigned numBytes)</argsstring>
+        <name>AddData</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+<para>Buffer sound data. Makes a copy of it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1a68ebe8812c20430977c1a237a01f6afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BufferedSoundStream::AddData</definition>
+        <argsstring>(const SharedArrayPtr&lt; signed char &gt; &amp;data, unsigned numBytes)</argsstring>
+        <name>AddData</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; signed char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+<para>Buffer sound data by taking ownership of it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1a4aff2d37464e4c75cb2b61f1d07ce920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BufferedSoundStream::AddData</definition>
+        <argsstring>(const SharedArrayPtr&lt; signed short &gt; &amp;data, unsigned numBytes)</argsstring>
+        <name>AddData</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; signed short &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+<para>Buffer sound data by taking ownership of it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1aa73a521cc890b87e11a33f4ebe61523d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BufferedSoundStream::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Remove all buffered audio data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1adb7b4d9da6a2a677eaa9f2ffd6073b48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BufferedSoundStream::GetBufferNumBytes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBufferNumBytes</name>
+        <briefdescription>
+<para>Return amount of buffered (unplayed) sound data in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="56" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BufferedSoundStream_1aa42f9d785304fb442b0bd547dcfcab87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::BufferedSoundStream::GetBufferLength</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBufferLength</name>
+        <briefdescription>
+<para>Return length of buffered (unplayed) sound data in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="58" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sound stream that supports manual buffering of data from the main thread. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::SoundStream</label>
+        <link refid="classUrho3D_1_1SoundStream"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::BufferedSoundStream</label>
+        <link refid="classUrho3D_1_1BufferedSoundStream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::SoundStream</label>
+        <link refid="classUrho3D_1_1SoundStream"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::BufferedSoundStream</label>
+        <link refid="classUrho3D_1_1BufferedSoundStream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" line="35" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/BufferedSoundStream.h" bodystart="36" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a163dffbabdacc2cde3fcc85fc6510213" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>AddData</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a68ebe8812c20430977c1a237a01f6afe" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>AddData</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a4aff2d37464e4c75cb2b61f1d07ce920" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>AddData</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a3666748faa0f231a8934f541a6d4ace1" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>BufferedSoundStream</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a1de3dded7a05c8f16bbfe2d46c88a80e" prot="private" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>bufferMutex_</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1ac9a266ffe338178382e0e280e7f2ab2d" prot="private" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>buffers_</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1aa73a521cc890b87e11a33f4ebe61523d" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a39b9946606bfd9e9f803f3d4adde7ed1" prot="protected" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>frequency_</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1aa42f9d785304fb442b0bd547dcfcab87" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetBufferLength</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1adb7b4d9da6a2a677eaa9f2ffd6073b48" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetBufferNumBytes</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a51728179f4b8a602c527c3fcb6ab0d4b" prot="public" virt="virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetData</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a0f3eb3a0d67b21ec5a2a2f5ff510174d" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetFrequency</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a6e4221af3f576f973181f863f389bf4a" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetIntFrequency</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1ae0781740cc6aff1547900188002cd478" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetSampleSize</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a204147b46d0adb322bbde359082e0398" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>GetStopAtEnd</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a2babf321e0caef76c9282064c1a08b4e" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>IsSixteenBit</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1ae5ecab63385a5c2a2f76b5639ecdede6" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>IsStereo</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1a9d64ad83fafdf6d7371341394082714c" prot="private" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>position_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1ac9d66a8c0606bbe172633755aa107ef2" prot="public" virt="virtual"><scope>Urho3D::BufferedSoundStream</scope><name>Seek</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a7afb45af3b57d89b188f6035b1861f44" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>SetFormat</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1aebcd0f3bd10ee0259b5ec289683e2a61" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>SetStopAtEnd</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a48a52063b42992900bc66c30f081390e" prot="protected" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>sixteenBit_</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1af3d389af2fdebf8e005dcc54def92001" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>SoundStream</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1abea28978297450df14fbcf1e3f49278c" prot="protected" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>stereo_</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1abcf0fb843fe14d450edf904eb8e9f36b" prot="protected" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>stopAtEnd_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1BufferedSoundStream_1adf37a95ca4190abcc076cbce1cdda3a5" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>~BufferedSoundStream</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::BufferedSoundStream</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a1dc4bfb469fbc33fe35d5b0b17eea6f8" prot="public" virt="non-virtual"><scope>Urho3D::BufferedSoundStream</scope><name>~SoundStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="NavigationMesh_8h" kind="file" language="C++">
+    <compoundname>NavigationMesh.h</compoundname>
+    <includes refid="ArrayPtr_8h" local="yes">../Container/ArrayPtr.h</includes>
+    <includes refid="HashSet_8h" local="yes">../Container/HashSet.h</includes>
+    <includes refid="BoundingBox_8h" local="yes">../Math/BoundingBox.h</includes>
+    <includes refid="Matrix3x4_8h" local="yes">../Math/Matrix3x4.h</includes>
+    <includes refid="Component_8h" local="yes">../Scene/Component.h</includes>
+    <includedby refid="DynamicNavigationMesh_8h" local="yes">/home/nathan/Projects/u3d/Source/Urho3D/Navigation/DynamicNavigationMesh.h</includedby>
+    <incdepgraph>
+      <node id="42">
+        <label>../Scene/Serializable.h</label>
+        <link refid="Serializable_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../Math/Matrix3.h</label>
+        <link refid="Matrix3_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>../Math/Quaternion.h</label>
+        <link refid="Quaternion_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>functional</label>
+      </node>
+      <node id="35">
+        <label>limits</label>
+      </node>
+      <node id="41">
+        <label>../Scene/Animatable.h</label>
+        <link refid="Animatable_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../Container/Pair.h</label>
+        <link refid="Pair_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>../Container/FlagSet.h</label>
+        <link refid="FlagSet_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../Container/HashBase.h</label>
+        <link refid="HashBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../Scene/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>../Container/Ptr.h</label>
+        <link refid="Ptr_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../Math/Vector3.h</label>
+        <link refid="Vector3_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="36">
+        <label>../Math/Matrix3x4.h</label>
+        <link refid="Matrix3x4_8h_source"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>../Scene/AnimationDefs.h</label>
+        <link refid="AnimationDefs_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Navigation/NavigationMesh.h</label>
+        <link refid="NavigationMesh_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>cstdarg</label>
+      </node>
+      <node id="17">
+        <label>../Math/BoundingBox.h</label>
+        <link refid="BoundingBox_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>../Container/HashMap.h</label>
+        <link refid="HashMap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../Container/HashSet.h</label>
+        <link refid="HashSet_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../Core/Attribute.h</label>
+        <link refid="Attribute_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../Math/Random.h</label>
+        <link refid="Random_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../Math/Vector4.h</label>
+        <link refid="Vector4_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>../Scene/ValueAnimationInfo.h</label>
+        <link refid="ValueAnimationInfo_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>../Math/Color.h</label>
+        <link refid="Color_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../Math/Rect.h</label>
+        <link refid="Rect_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>../Math/StringHash.h</label>
+        <link refid="StringHash_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>typeinfo</label>
+      </node>
+      <node id="5">
+        <label>../Container/Allocator.h</label>
+        <link refid="Allocator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="26">
+        <label>new</label>
+      </node>
+      <node id="27">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>../Container/Hash.h</label>
+        <link refid="Hash_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../Math/MathDefs.h</label>
+        <link refid="MathDefs_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Container/ArrayPtr.h</label>
+        <link refid="ArrayPtr_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>cstdlib</label>
+      </node>
+      <node id="30">
+        <label>cctype</label>
+      </node>
+      <node id="52">
+        <label>../Core/Object.h</label>
+        <link refid="Object_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="37">
+        <label>../Math/Matrix4.h</label>
+        <link refid="Matrix4_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>../Core/Variant.h</label>
+        <link refid="Variant_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../Container/RefCounted.h</label>
+        <link refid="RefCounted_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>../Container/LinkedList.h</label>
+        <link refid="LinkedList_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>../Container/Sort.h</label>
+        <link refid="Sort_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../Math/Vector2.h</label>
+        <link refid="Vector2_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="24">
+        <label>cstring</label>
+      </node>
+      <node id="16">
+        <label>initializer_list</label>
+      </node>
+      <node id="54">
+        <label>../Core/StringHashRegister.h</label>
+        <link refid="StringHashRegister_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Navigation/NavigationMesh.h</label>
+        <link refid="NavigationMesh_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Navigation/DynamicNavigationMesh.h</label>
+        <link refid="DynamicNavigationMesh_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structUrho3D_1_1NavigationGeometryInfo" prot="public">Urho3D::NavigationGeometryInfo</innerclass>
+    <innerclass refid="structUrho3D_1_1NavigationPathPoint" prot="public">Urho3D::NavigationPathPoint</innerclass>
+    <innerclass refid="classUrho3D_1_1NavigationMesh" prot="public">Urho3D::NavigationMesh</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="NavigationMesh_8h_1ad7578040efb2800840e3d87a5a95e227" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>using dtPolyRef =  unsigned int</definition>
+        <argsstring></argsstring>
+        <name>dtPolyRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/NavigationMesh.h" line="36" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/NavigationMesh.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Container/ArrayPtr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Container/HashSet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/BoundingBox.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Matrix3x4.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Scene/Component.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DT_POLYREF64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>dtPolyRef<sp/>=<sp/>uint64_t;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>dtPolyRef<sp/>=<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">dtNavMesh;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">dtNavMeshQuery;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">dtQueryFilter;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>NavmeshPartitionType</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>NAVMESH_PARTITION_WATERSHED<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>NAVMESH_PARTITION_MONOTONE</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Geometry;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">NavArea;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">FindPathData;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">NavBuildData;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structUrho3D_1_1NavigationGeometryInfo" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1NavigationGeometryInfo" kindref="compound">NavigationGeometryInfo</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62" refid="structUrho3D_1_1NavigationGeometryInfo_1a07aff5a8aa1e373595e14262cad30ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/><ref refid="structUrho3D_1_1NavigationGeometryInfo_1a07aff5a8aa1e373595e14262cad30ef8" kindref="member">component_</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structUrho3D_1_1NavigationGeometryInfo_1a108878cba545561bd28629267a177658" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1NavigationGeometryInfo_1a108878cba545561bd28629267a177658" kindref="member">lodLevel_</ref>;</highlight></codeline>
+<codeline lineno="66" refid="structUrho3D_1_1NavigationGeometryInfo_1a3bdb847e60fae19421b243ba7f9127d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref><sp/><ref refid="structUrho3D_1_1NavigationGeometryInfo_1a3bdb847e60fae19421b243ba7f9127d0" kindref="member">transform_</ref>;</highlight></codeline>
+<codeline lineno="68" refid="structUrho3D_1_1NavigationGeometryInfo_1ae268c39f11a4082c07787f7cd6f83e2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref><sp/><ref refid="structUrho3D_1_1NavigationGeometryInfo_1ae268c39f11a4082c07787f7cd6f83e2e" kindref="member">boundingBox_</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="NavigationMesh_8h_1aa9206e5c73d857f13e70b02fff9eaedb" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="NavigationMesh_8h_1aa9206e5c73d857f13e70b02fff9eaedb" kindref="member">NavigationPathPointFlag</ref></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>NAVPATHFLAG_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>NAVPATHFLAG_START<sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>NAVPATHFLAG_END<sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>NAVPATHFLAG_OFF_MESH<sp/>=<sp/>0x04</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structUrho3D_1_1NavigationPathPoint" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="structUrho3D_1_1NavigationPathPoint" kindref="compound">NavigationPathPoint</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84" refid="structUrho3D_1_1NavigationPathPoint_1a06946288e67c1990193f4637be138d8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="structUrho3D_1_1NavigationPathPoint_1a06946288e67c1990193f4637be138d8e" kindref="member">position_</ref>;</highlight></codeline>
+<codeline lineno="86" refid="structUrho3D_1_1NavigationPathPoint_1a3c8d77ac8f9122158bcac0872627ec7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="NavigationMesh_8h_1aa9206e5c73d857f13e70b02fff9eaedb" kindref="member">NavigationPathPointFlag</ref><sp/><ref refid="structUrho3D_1_1NavigationPathPoint_1a3c8d77ac8f9122158bcac0872627ec7e" kindref="member">flag_</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structUrho3D_1_1NavigationPathPoint_1a401162867056b637ab62219d0b8f319d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1NavigationPathPoint_1a401162867056b637ab62219d0b8f319d" kindref="member">areaID_</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classUrho3D_1_1NavigationMesh" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1NavigationMesh" kindref="compound">NavigationMesh</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>URHO3D_OBJECT(<ref refid="classUrho3D_1_1NavigationMesh" kindref="compound">NavigationMesh</ref>,<sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUrho3D_1_1CrowdManager" kindref="compound">CrowdManager</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="classUrho3D_1_1NavigationMesh_1ac133cc553d2c615d783bbc40bee2a3ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ac133cc553d2c615d783bbc40bee2a3ad" kindref="member">NavigationMesh</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="102" refid="classUrho3D_1_1NavigationMesh_1a20cc4ef986306be330107fe59bfd9976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a20cc4ef986306be330107fe59bfd9976" kindref="member">~NavigationMesh</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105" refid="classUrho3D_1_1NavigationMesh_1a733092dfa348357a2d354a4bd3b7fd4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a733092dfa348357a2d354a4bd3b7fd4a" kindref="member">RegisterObject</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classUrho3D_1_1NavigationMesh_1aa810398f062f052eb649c02f2ba4f02c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aa810398f062f052eb649c02f2ba4f02c" kindref="member">DrawDebugGeometry</ref>(<ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref>*<sp/>debug,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthTest)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classUrho3D_1_1NavigationMesh_1a0f579e693b90c451161c174be2bf1f9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a0f579e693b90c451161c174be2bf1f9f" kindref="member">SetTileSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="115" refid="classUrho3D_1_1NavigationMesh_1a13a6c99961482cfe71c407dec0b1b090" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a13a6c99961482cfe71c407dec0b1b090" kindref="member">SetCellSize</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="118" refid="classUrho3D_1_1NavigationMesh_1a2894cc1c65d97547bccd5c21d63d30e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a2894cc1c65d97547bccd5c21d63d30e6" kindref="member">SetCellHeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="121" refid="classUrho3D_1_1NavigationMesh_1a3be7466752eb04a67bd9de880691dcea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a3be7466752eb04a67bd9de880691dcea" kindref="member">SetAgentHeight</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="124" refid="classUrho3D_1_1NavigationMesh_1a6c9363662928a76877d8c5607ed31464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a6c9363662928a76877d8c5607ed31464" kindref="member">SetAgentRadius</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
+<codeline lineno="127" refid="classUrho3D_1_1NavigationMesh_1aec635bae0afa695b3c301e07a73ea087" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aec635bae0afa695b3c301e07a73ea087" kindref="member">SetAgentMaxClimb</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxClimb);</highlight></codeline>
+<codeline lineno="130" refid="classUrho3D_1_1NavigationMesh_1a9efdaaead3623ea411232aee95d69682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a9efdaaead3623ea411232aee95d69682" kindref="member">SetAgentMaxSlope</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxSlope);</highlight></codeline>
+<codeline lineno="133" refid="classUrho3D_1_1NavigationMesh_1ab5a382b78185b03af545a1d4c8641c52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ab5a382b78185b03af545a1d4c8641c52" kindref="member">SetRegionMinSize</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="136" refid="classUrho3D_1_1NavigationMesh_1a27b086d3d20d9fd6daed532c54bd24fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a27b086d3d20d9fd6daed532c54bd24fc" kindref="member">SetRegionMergeSize</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="139" refid="classUrho3D_1_1NavigationMesh_1a76ab84f56560dfd152c8ec431982f9a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a76ab84f56560dfd152c8ec431982f9a5" kindref="member">SetEdgeMaxLength</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="142" refid="classUrho3D_1_1NavigationMesh_1a2de85e04cf696a2b32f378b0e630a87d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a2de85e04cf696a2b32f378b0e630a87d" kindref="member">SetEdgeMaxError</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>error);</highlight></codeline>
+<codeline lineno="145" refid="classUrho3D_1_1NavigationMesh_1a07d9c41ae1b8d6a0747734e17030e102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a07d9c41ae1b8d6a0747734e17030e102" kindref="member">SetDetailSampleDistance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance);</highlight></codeline>
+<codeline lineno="148" refid="classUrho3D_1_1NavigationMesh_1a7d47878ee3e91d83e20dc29ba3ede867" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a7d47878ee3e91d83e20dc29ba3ede867" kindref="member">SetDetailSampleMaxError</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>error);</highlight></codeline>
+<codeline lineno="151" refid="classUrho3D_1_1NavigationMesh_1ab9c8e31bdb27f2001102eb1297e744ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ab9c8e31bdb27f2001102eb1297e744ae" kindref="member">SetPadding</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>padding);</highlight></codeline>
+<codeline lineno="153" refid="classUrho3D_1_1NavigationMesh_1a9731e0bf1cfa39e2a80de0c4ecf18968" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a9731e0bf1cfa39e2a80de0c4ecf18968" kindref="member">SetAreaCost</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>areaID,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cost);</highlight></codeline>
+<codeline lineno="155" refid="classUrho3D_1_1NavigationMesh_1acd6ecde1523c0d37150e64eb030bdcce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1acd6ecde1523c0d37150e64eb030bdcce" kindref="member">Allocate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>boundingBox,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>maxTiles);</highlight></codeline>
+<codeline lineno="157" refid="classUrho3D_1_1NavigationMesh_1a45922ec85dcd9d028303e393b09853a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a45922ec85dcd9d028303e393b09853a1" kindref="member">Build</ref>();</highlight></codeline>
+<codeline lineno="159" refid="classUrho3D_1_1NavigationMesh_1a4eda443c05d28ac7b9f7b19f503a3320" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a4eda443c05d28ac7b9f7b19f503a3320" kindref="member">Build</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>boundingBox);</highlight></codeline>
+<codeline lineno="161" refid="classUrho3D_1_1NavigationMesh_1a0a2dd6ba8a27755d59184cc05ada8413" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a0a2dd6ba8a27755d59184cc05ada8413" kindref="member">Build</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>to);</highlight></codeline>
+<codeline lineno="163" refid="classUrho3D_1_1NavigationMesh_1a9cd14ca45ffb83210600e8ea32a344da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;unsigned char&gt;</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a9cd14ca45ffb83210600e8ea32a344da" kindref="member">GetTileData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>tile)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165" refid="classUrho3D_1_1NavigationMesh_1a99040bedfee76e9479a4ead2ae52799e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a99040bedfee76e9479a4ead2ae52799e" kindref="member">AddTile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;unsigned char&gt;</ref>&amp;<sp/>tileData);</highlight></codeline>
+<codeline lineno="167" refid="classUrho3D_1_1NavigationMesh_1aa96128489b0ce0ef556d8957eb91cb82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aa96128489b0ce0ef556d8957eb91cb82" kindref="member">RemoveTile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>tile);</highlight></codeline>
+<codeline lineno="169" refid="classUrho3D_1_1NavigationMesh_1a5d92f458c5739108fb6e1544491add1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a5d92f458c5739108fb6e1544491add1c" kindref="member">RemoveAllTiles</ref>();</highlight></codeline>
+<codeline lineno="171" refid="classUrho3D_1_1NavigationMesh_1a2288e655e4d8698479c779c712527796" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a2288e655e4d8698479c779c712527796" kindref="member">HasTile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>tile)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173" refid="classUrho3D_1_1NavigationMesh_1a6fc3d8aa1cf4e1c7a69c4946c7c6f720" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a6fc3d8aa1cf4e1c7a69c4946c7c6f720" kindref="member">GetTileBoundingBox</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>tile)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175" refid="classUrho3D_1_1NavigationMesh_1a571d4bf92feb5b4e7cb344218f5d1cee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a571d4bf92feb5b4e7cb344218f5d1cee" kindref="member">GetTileIndex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>position)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177" refid="classUrho3D_1_1NavigationMesh_1acdc15f90748942e9836cb19e0e15ed81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1acdc15f90748942e9836cb19e0e15ed81" kindref="member">FindNearestPoint</ref></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>point,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>dtPolyRef*<sp/>nearestRef<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="180" refid="classUrho3D_1_1NavigationMesh_1ae0ddb91baec9162ba568378ece2e04bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ae0ddb91baec9162ba568378ece2e04bb" kindref="member">MoveAlongSurface</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>end,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxVisited<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183" refid="classUrho3D_1_1NavigationMesh_1a4aca6e05000134e8c07a5e4d640ed4c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a4aca6e05000134e8c07a5e4d640ed4c4" kindref="member">FindPath</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Vector3&gt;</ref>&amp;<sp/>dest,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>end,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186" refid="classUrho3D_1_1NavigationMesh_1a91d23e0870d0fe89a1cdc97b95c9486f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a91d23e0870d0fe89a1cdc97b95c9486f" kindref="member">FindPath</ref></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;NavigationPathPoint&gt;</ref>&amp;<sp/>dest,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>end,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="190" refid="classUrho3D_1_1NavigationMesh_1a64c93c20a2427408aca7be27473eaf72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a64c93c20a2427408aca7be27473eaf72" kindref="member">GetRandomPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>dtPolyRef*<sp/>randomRef<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="192" refid="classUrho3D_1_1NavigationMesh_1ac16bd630c005a8a8fffce38b789c1339" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ac16bd630c005a8a8fffce38b789c1339" kindref="member">GetRandomPointInCircle</ref></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>center,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtPolyRef*<sp/>randomRef<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196" refid="classUrho3D_1_1NavigationMesh_1afcea1318ded57257098cba8b902240fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1afcea1318ded57257098cba8b902240fb" kindref="member">GetDistanceToWall</ref></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>point,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>*<sp/>hitPos<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>*<sp/>hitNormal<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="200" refid="classUrho3D_1_1NavigationMesh_1a80184a844e431f9a2f547625838fcfc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a80184a844e431f9a2f547625838fcfc8" kindref="member">Raycast</ref></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>start,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>end,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>extents<sp/>=<sp/><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dtQueryFilter*<sp/>filter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>*<sp/>hitNormal<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204" refid="classUrho3D_1_1NavigationMesh_1a250c94d8ee843a6219679daccf951a1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a250c94d8ee843a6219679daccf951a1f" kindref="member">DrawDebugGeometry</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthTest);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classUrho3D_1_1NavigationMesh_1a6611a18ca11750f7e3d925a5ff905c48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a6611a18ca11750f7e3d925a5ff905c48" kindref="member">GetMeshName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>meshName_;<sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="classUrho3D_1_1NavigationMesh_1a3dcedf0c25cb6c89aec766c164759fbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a3dcedf0c25cb6c89aec766c164759fbc" kindref="member">SetMeshName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>newName);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classUrho3D_1_1NavigationMesh_1a2fbca3ced454e2842b09220e577106b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a2fbca3ced454e2842b09220e577106b7" kindref="member">GetTileSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tileSize_;<sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="classUrho3D_1_1NavigationMesh_1ae684ad092c9e7713b5699b6f304dcdc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ae684ad092c9e7713b5699b6f304dcdc9" kindref="member">GetCellSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cellSize_;<sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="classUrho3D_1_1NavigationMesh_1a953dcf0369a229207700d4958528c411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a953dcf0369a229207700d4958528c411" kindref="member">GetCellHeight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cellHeight_;<sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="classUrho3D_1_1NavigationMesh_1a898b995a20cc9e81d085af3c55f24315" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a898b995a20cc9e81d085af3c55f24315" kindref="member">GetAgentHeight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>agentHeight_;<sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classUrho3D_1_1NavigationMesh_1a74c703605322341110ddb59d512a6700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a74c703605322341110ddb59d512a6700" kindref="member">GetAgentRadius</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>agentRadius_;<sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="classUrho3D_1_1NavigationMesh_1aefded2b1a28a08eacd51939e3f4b2f82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aefded2b1a28a08eacd51939e3f4b2f82" kindref="member">GetAgentMaxClimb</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>agentMaxClimb_;<sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="classUrho3D_1_1NavigationMesh_1a7d187a68d1ca93170076717e7daf0a9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a7d187a68d1ca93170076717e7daf0a9a" kindref="member">GetAgentMaxSlope</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>agentMaxSlope_;<sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="classUrho3D_1_1NavigationMesh_1ae3c5e4955e96c179bb627d6160bda9b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ae3c5e4955e96c179bb627d6160bda9b9" kindref="member">GetRegionMinSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regionMinSize_;<sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="classUrho3D_1_1NavigationMesh_1a4b3e7c3f583e79f289e8794123caa1ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a4b3e7c3f583e79f289e8794123caa1ba" kindref="member">GetRegionMergeSize</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regionMergeSize_;<sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="classUrho3D_1_1NavigationMesh_1ae3f6edda40ca3106877135ebd588e321" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ae3f6edda40ca3106877135ebd588e321" kindref="member">GetEdgeMaxLength</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>edgeMaxLength_;<sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="classUrho3D_1_1NavigationMesh_1a98c0c021dd7538b7fa9e37db9aba32ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a98c0c021dd7538b7fa9e37db9aba32ab" kindref="member">GetEdgeMaxError</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>edgeMaxError_;<sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classUrho3D_1_1NavigationMesh_1a3a166839b04940df9a4022b15c9321f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a3a166839b04940df9a4022b15c9321f6" kindref="member">GetDetailSampleDistance</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>detailSampleDistance_;<sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262" refid="classUrho3D_1_1NavigationMesh_1ad1b814684e922af53cd91eab8e677889" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ad1b814684e922af53cd91eab8e677889" kindref="member">GetDetailSampleMaxError</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>detailSampleMaxError_;<sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="classUrho3D_1_1NavigationMesh_1a964b929a4d2ff5d698d7055ed5214757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="classUrho3D_1_1NavigationMesh_1a964b929a4d2ff5d698d7055ed5214757" kindref="member">GetPadding</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>padding_;<sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="classUrho3D_1_1NavigationMesh_1a875c155d8af84837be665259760aa8f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a875c155d8af84837be665259760aa8f1" kindref="member">GetAreaCost</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>areaID)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="classUrho3D_1_1NavigationMesh_1a12f00051be1d758e0497c700e2e5bff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a12f00051be1d758e0497c700e2e5bff9" kindref="member">IsInitialized</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>navMesh_<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="classUrho3D_1_1NavigationMesh_1a6962354da9fa20c57346a1ccfbbb5b95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/><ref refid="classUrho3D_1_1NavigationMesh_1a6962354da9fa20c57346a1ccfbbb5b95" kindref="member">GetBoundingBox</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boundingBox_;<sp/>}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="classUrho3D_1_1NavigationMesh_1a25512c27eeee749a9f9977b28595790d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a25512c27eeee749a9f9977b28595790d" kindref="member">GetWorldBoundingBox</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="classUrho3D_1_1NavigationMesh_1a457723c37e169fd979943b40ee237542" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a457723c37e169fd979943b40ee237542" kindref="member">GetNumTiles</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>(numTilesX_,<sp/>numTilesZ_);<sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="classUrho3D_1_1NavigationMesh_1a63e109d362ff19894030dca3da730575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a63e109d362ff19894030dca3da730575" kindref="member">SetPartitionType</ref>(NavmeshPartitionType<sp/>partitionType);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="classUrho3D_1_1NavigationMesh_1aebc1a4b7de17de796443effd3d6ab397" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>NavmeshPartitionType<sp/><ref refid="classUrho3D_1_1NavigationMesh_1aebc1a4b7de17de796443effd3d6ab397" kindref="member">GetPartitionType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>partitionType_;<sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="classUrho3D_1_1NavigationMesh_1aaf5009bb8f60fb2011acd5a552324f32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aaf5009bb8f60fb2011acd5a552324f32" kindref="member">SetNavigationDataAttr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;unsigned char&gt;</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="298" refid="classUrho3D_1_1NavigationMesh_1a095de6d0844f6a5a6132519d7cc31b89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;unsigned char&gt;</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a095de6d0844f6a5a6132519d7cc31b89" kindref="member">GetNavigationDataAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="classUrho3D_1_1NavigationMesh_1a4d8da7adeebbadcca84faa6814f4b8b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a4d8da7adeebbadcca84faa6814f4b8b6" kindref="member">SetDrawOffMeshConnections</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)<sp/>{<sp/>drawOffMeshConnections_<sp/>=<sp/>enable;<sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="classUrho3D_1_1NavigationMesh_1af9450eed679d6a1f3c753806adc379b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1af9450eed679d6a1f3c753806adc379b6" kindref="member">GetDrawOffMeshConnections</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>drawOffMeshConnections_;<sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="classUrho3D_1_1NavigationMesh_1a6edf72cc8caeb886bfc56ec651ca5830" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a6edf72cc8caeb886bfc56ec651ca5830" kindref="member">SetDrawNavAreas</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)<sp/>{<sp/>drawNavAreas_<sp/>=<sp/>enable;<sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="classUrho3D_1_1NavigationMesh_1a24052a0be8972ab781825faa6f851572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a24052a0be8972ab781825faa6f851572" kindref="member">GetDrawNavAreas</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>drawNavAreas_;<sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteTile(<ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref>&amp;<sp/>dest,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ReadTile(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>silent);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="324" refid="classUrho3D_1_1NavigationMesh_1a841b7dc758f63dcec5908322d5fa0895" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a841b7dc758f63dcec5908322d5fa0895" kindref="member">CollectGeometries</ref>(<ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;NavigationGeometryInfo&gt;</ref>&amp;<sp/>geometryList);</highlight></codeline>
+<codeline lineno="326" refid="classUrho3D_1_1NavigationMesh_1a9975760e63efcb66d129fbaada30a5a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a9975760e63efcb66d129fbaada30a5a9" kindref="member">CollectGeometries</ref>(<ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;NavigationGeometryInfo&gt;</ref>&amp;<sp/>geometryList,<sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node,<sp/><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet&lt;Node*&gt;</ref>&amp;<sp/>processedNodes,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>recursive);</highlight></codeline>
+<codeline lineno="328" refid="classUrho3D_1_1NavigationMesh_1aa1afd3c3723b93fb9f93f97cc1dc4770" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aa1afd3c3723b93fb9f93f97cc1dc4770" kindref="member">GetTileGeometry</ref>(<ref refid="structUrho3D_1_1NavBuildData" kindref="compound">NavBuildData</ref>*<sp/>build,<sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;NavigationGeometryInfo&gt;</ref>&amp;<sp/>geometryList,<sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box);</highlight></codeline>
+<codeline lineno="330" refid="classUrho3D_1_1NavigationMesh_1ae43a2bf6ba897fa62844ed0169dcc548" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ae43a2bf6ba897fa62844ed0169dcc548" kindref="member">AddTriMeshGeometry</ref>(<ref refid="structUrho3D_1_1NavBuildData" kindref="compound">NavBuildData</ref>*<sp/>build,<sp/><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref>*<sp/>geometry,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref>&amp;<sp/>transform);</highlight></codeline>
+<codeline lineno="332" refid="classUrho3D_1_1NavigationMesh_1acf4036d645e73ec52f4455178dae6245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1acf4036d645e73ec52f4455178dae6245" kindref="member">BuildTile</ref>(<ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;NavigationGeometryInfo&gt;</ref>&amp;<sp/>geometryList,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="334" refid="classUrho3D_1_1NavigationMesh_1ab649eee713babaa030e62c423da0e5f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ab649eee713babaa030e62c423da0e5f8" kindref="member">BuildTiles</ref>(<ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;NavigationGeometryInfo&gt;</ref>&amp;<sp/>geometryList,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>&amp;<sp/>to);</highlight></codeline>
+<codeline lineno="336" refid="classUrho3D_1_1NavigationMesh_1aa50591668a60de1ec65c56aaeaed4f57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aa50591668a60de1ec65c56aaeaed4f57" kindref="member">InitializeQuery</ref>();</highlight></codeline>
+<codeline lineno="338" refid="classUrho3D_1_1NavigationMesh_1ae7e1e92c498fdaeffa772844944e452d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ae7e1e92c498fdaeffa772844944e452d" kindref="member">ReleaseNavigationMesh</ref>();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="classUrho3D_1_1NavigationMesh_1a8d3744be261ffcabd51347a34e9367e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a8d3744be261ffcabd51347a34e9367e0" kindref="member">meshName_</ref>;</highlight></codeline>
+<codeline lineno="343" refid="classUrho3D_1_1NavigationMesh_1af4dbece945f9a97e2fc5344b050de9f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>dtNavMesh*<sp/><ref refid="classUrho3D_1_1NavigationMesh_1af4dbece945f9a97e2fc5344b050de9f6" kindref="member">navMesh_</ref>;</highlight></codeline>
+<codeline lineno="345" refid="classUrho3D_1_1NavigationMesh_1ac15840896fda33006fa4272c37d6a631" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>dtNavMeshQuery*<sp/><ref refid="classUrho3D_1_1NavigationMesh_1ac15840896fda33006fa4272c37d6a631" kindref="member">navMeshQuery_</ref>;</highlight></codeline>
+<codeline lineno="347" refid="classUrho3D_1_1NavigationMesh_1a824c04d6c6c9d0f82a1025aea4a82f9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr&lt;dtQueryFilter&gt;</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a824c04d6c6c9d0f82a1025aea4a82f9d" kindref="member">queryFilter_</ref>;</highlight></codeline>
+<codeline lineno="349" refid="classUrho3D_1_1NavigationMesh_1a309e3aee84849852812aeb8a3845f0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr&lt;FindPathData&gt;</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a309e3aee84849852812aeb8a3845f0d4" kindref="member">pathData_</ref>;</highlight></codeline>
+<codeline lineno="351" refid="classUrho3D_1_1NavigationMesh_1a5cc46968d7d2d271b3984a04282c39ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a5cc46968d7d2d271b3984a04282c39ea" kindref="member">tileSize_</ref>;</highlight></codeline>
+<codeline lineno="353" refid="classUrho3D_1_1NavigationMesh_1ac407215b549103d82bbf20af7e0434df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ac407215b549103d82bbf20af7e0434df" kindref="member">cellSize_</ref>;</highlight></codeline>
+<codeline lineno="355" refid="classUrho3D_1_1NavigationMesh_1acaf1d81b8acf0f471784499f7fc4bd7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1acaf1d81b8acf0f471784499f7fc4bd7a" kindref="member">cellHeight_</ref>;</highlight></codeline>
+<codeline lineno="357" refid="classUrho3D_1_1NavigationMesh_1a5ec19f4cd239f960d852edc8b4409dbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a5ec19f4cd239f960d852edc8b4409dbb" kindref="member">agentHeight_</ref>;</highlight></codeline>
+<codeline lineno="359" refid="classUrho3D_1_1NavigationMesh_1aed44fa60fb52c5eaafc337467ae022fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aed44fa60fb52c5eaafc337467ae022fb" kindref="member">agentRadius_</ref>;</highlight></codeline>
+<codeline lineno="361" refid="classUrho3D_1_1NavigationMesh_1a136e5247cc56c2f72c01120dd36db8a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a136e5247cc56c2f72c01120dd36db8a9" kindref="member">agentMaxClimb_</ref>;</highlight></codeline>
+<codeline lineno="363" refid="classUrho3D_1_1NavigationMesh_1af37d975ff4f27bf4c1ecb1afb52fecd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1af37d975ff4f27bf4c1ecb1afb52fecd1" kindref="member">agentMaxSlope_</ref>;</highlight></codeline>
+<codeline lineno="365" refid="classUrho3D_1_1NavigationMesh_1a9426cbcd9f4d1e932fa2628ef4deb171" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a9426cbcd9f4d1e932fa2628ef4deb171" kindref="member">regionMinSize_</ref>;</highlight></codeline>
+<codeline lineno="367" refid="classUrho3D_1_1NavigationMesh_1ad3c336bf8c694ca07bdb08811ba6fea4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1ad3c336bf8c694ca07bdb08811ba6fea4" kindref="member">regionMergeSize_</ref>;</highlight></codeline>
+<codeline lineno="369" refid="classUrho3D_1_1NavigationMesh_1a07a377420659a40ddb1c31a8184b4137" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a07a377420659a40ddb1c31a8184b4137" kindref="member">edgeMaxLength_</ref>;</highlight></codeline>
+<codeline lineno="371" refid="classUrho3D_1_1NavigationMesh_1a7b391f558a4491d6db8eb89d82bd9a71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a7b391f558a4491d6db8eb89d82bd9a71" kindref="member">edgeMaxError_</ref>;</highlight></codeline>
+<codeline lineno="373" refid="classUrho3D_1_1NavigationMesh_1a4bee1a48044a2616409e94525119f7fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a4bee1a48044a2616409e94525119f7fa" kindref="member">detailSampleDistance_</ref>;</highlight></codeline>
+<codeline lineno="375" refid="classUrho3D_1_1NavigationMesh_1aacd0f13dd214d28bdd32a9662963ef09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aacd0f13dd214d28bdd32a9662963ef09" kindref="member">detailSampleMaxError_</ref>;</highlight></codeline>
+<codeline lineno="377" refid="classUrho3D_1_1NavigationMesh_1af66521f0a85506cba5874728e40bc674" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1af66521f0a85506cba5874728e40bc674" kindref="member">padding_</ref>;</highlight></codeline>
+<codeline lineno="379" refid="classUrho3D_1_1NavigationMesh_1a2503379650f28ad4163dcc9a7c776a67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a2503379650f28ad4163dcc9a7c776a67" kindref="member">numTilesX_</ref>;</highlight></codeline>
+<codeline lineno="381" refid="classUrho3D_1_1NavigationMesh_1aaec210c71276ddaba1058e6f87612339" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1aaec210c71276ddaba1058e6f87612339" kindref="member">numTilesZ_</ref>;</highlight></codeline>
+<codeline lineno="383" refid="classUrho3D_1_1NavigationMesh_1a34ee58aa96b6be19b6fd2eb2bdb2a404" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a34ee58aa96b6be19b6fd2eb2bdb2a404" kindref="member">boundingBox_</ref>;</highlight></codeline>
+<codeline lineno="385" refid="classUrho3D_1_1NavigationMesh_1a3cdfedbee3a5331b8c77a8f98855cf4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>NavmeshPartitionType<sp/><ref refid="classUrho3D_1_1NavigationMesh_1a3cdfedbee3a5331b8c77a8f98855cf4b" kindref="member">partitionType_</ref>;</highlight></codeline>
+<codeline lineno="387" refid="classUrho3D_1_1NavigationMesh_1a7fdb6df7cd6e7d095af2644ff0cc4322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a7fdb6df7cd6e7d095af2644ff0cc4322" kindref="member">keepInterResults_</ref>;</highlight></codeline>
+<codeline lineno="389" refid="classUrho3D_1_1NavigationMesh_1a53211b81a0893db85da2b0227f65f4cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a53211b81a0893db85da2b0227f65f4cd" kindref="member">drawOffMeshConnections_</ref>;</highlight></codeline>
+<codeline lineno="391" refid="classUrho3D_1_1NavigationMesh_1a459e413bfb7d02b1ce4cebbeaeedf69a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1NavigationMesh_1a459e413bfb7d02b1ce4cebbeaeedf69a" kindref="member">drawNavAreas_</ref>;</highlight></codeline>
+<codeline lineno="393" refid="classUrho3D_1_1NavigationMesh_1aad7a14423a96d88b1a47e231c306636e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;WeakPtr&lt;NavArea&gt;</ref><sp/>&gt;<sp/><ref refid="classUrho3D_1_1NavigationMesh_1aad7a14423a96d88b1a47e231c306636e" kindref="member">areas_</ref>;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="NavigationMesh_8h_1aa06069b213978c36451f4c37c53c0052" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>URHO3D_API<sp/><ref refid="NavigationMesh_8h_1aa06069b213978c36451f4c37c53c0052" kindref="member">RegisterNavigationLibrary</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/NavigationMesh.h"/>
+  </compounddef>
+</doxygen>

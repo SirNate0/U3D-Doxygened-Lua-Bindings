@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1WorkItem" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::WorkItem</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <includes refid="WorkQueue_8h" local="no">WorkQueue.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structUrho3D_1_1WorkItem_1afc5a5e65333384e477426c2f77353b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class WorkQueue</definition>
+        <argsstring></argsstring>
+        <name>WorkQueue</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1WorkQueue" kindref="compound">WorkQueue</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="46" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1acf4287efcb36296e86e89eab8d38a68f" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* Urho3D::WorkItem::workFunction_) (const WorkItem *, unsigned)</definition>
+        <argsstring>)(const WorkItem *, unsigned)</argsstring>
+        <name>workFunction_</name>
+        <briefdescription>
+<para>Work function. Called with the work item and thread index (0 = main thread) as parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="50" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1af9455b83e85cac59260de26bf72cd148" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::WorkItem::start_</definition>
+        <argsstring></argsstring>
+        <name>start_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Data start pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="52" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1a6d19b2a36906d48e037326b0ffb7e660" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::WorkItem::end_</definition>
+        <argsstring></argsstring>
+        <name>end_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Data end pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="54" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1ab96d95fe9da1d444562d984f24b926be" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::WorkItem::aux_</definition>
+        <argsstring></argsstring>
+        <name>aux_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Auxiliary data pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="56" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1acea9ee2fdadbde90f74cd9207ecb09be" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::WorkItem::priority_</definition>
+        <argsstring></argsstring>
+        <name>priority_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Priority. Higher value = will be completed first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="58" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1a85fe062120302b3c77e2c73925aa436e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkItem::sendEvent_</definition>
+        <argsstring></argsstring>
+        <name>sendEvent_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Whether to send event on completion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="60" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1a7d6d23b63c32eb947daec5bf062ff84b" prot="public" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; Urho3D::WorkItem::completed_</definition>
+        <argsstring></argsstring>
+        <name>completed_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Completed flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="62" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1WorkItem_1acf5022e3b551312abbcbeb9c5770331e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkItem::pooled_</definition>
+        <argsstring></argsstring>
+        <name>pooled_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="65" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Work queue item. NO_BIND </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::WorkItem</label>
+        <link refid="structUrho3D_1_1WorkItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::WorkItem</label>
+        <link refid="structUrho3D_1_1WorkItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="44" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="45" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>AddRef</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1ab96d95fe9da1d444562d984f24b926be" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>aux_</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1a7d6d23b63c32eb947daec5bf062ff84b" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>completed_</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1a6d19b2a36906d48e037326b0ffb7e660" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>end_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>operator=</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1acf5022e3b551312abbcbeb9c5770331e" prot="private" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>pooled_</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1acea9ee2fdadbde90f74cd9207ecb09be" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>priority_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>ReleaseRef</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1a85fe062120302b3c77e2c73925aa436e" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>sendEvent_</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1af9455b83e85cac59260de26bf72cd148" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>start_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>WeakRefs</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1acf4287efcb36296e86e89eab8d38a68f" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>workFunction_</name></member>
+      <member refid="structUrho3D_1_1WorkItem_1afc5a5e65333384e477426c2f77353b28" prot="public" virt="non-virtual"><scope>Urho3D::WorkItem</scope><name>WorkQueue</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::WorkItem</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

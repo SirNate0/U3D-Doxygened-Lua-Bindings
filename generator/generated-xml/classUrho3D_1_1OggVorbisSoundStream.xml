@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1OggVorbisSoundStream" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::OggVorbisSoundStream</compoundname>
+    <basecompoundref refid="classUrho3D_1_1SoundStream" prot="public" virt="non-virtual">Urho3D::SoundStream</basecompoundref>
+    <includes refid="OggVorbisSoundStream_8h" local="no">OggVorbisSoundStream.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1OggVorbisSoundStream_1a5346741f7cbdefb5c9bc4adac38b5fc6" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::OggVorbisSoundStream::decoder_</definition>
+        <argsstring></argsstring>
+        <name>decoder_</name>
+        <briefdescription>
+<para>Decoder state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="50" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OggVorbisSoundStream_1a2e9e7ead9fd16576d4984b305c831305" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; signed char &gt;</type>
+        <definition>SharedArrayPtr&lt;signed char&gt; Urho3D::OggVorbisSoundStream::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+<para>Compressed sound data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="52" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OggVorbisSoundStream_1a26ec87f1103682b4636d2619c7bf9939" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OggVorbisSoundStream::dataSize_</definition>
+        <argsstring></argsstring>
+        <name>dataSize_</name>
+        <briefdescription>
+<para>Compressed sound data size in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="54" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1OggVorbisSoundStream_1a5d73b32934b05febaa6bdec23d00ab6c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::OggVorbisSoundStream::OggVorbisSoundStream</definition>
+        <argsstring>(const Sound *sound)</argsstring>
+        <name>OggVorbisSoundStream</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Sound" kindref="compound">Sound</ref> *</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+<para>Construct from an Ogg Vorbis compressed sound. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="38" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OggVorbisSoundStream_1aeba71c71c6b353711fc56eb6d4bb99af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::OggVorbisSoundStream::~OggVorbisSoundStream</definition>
+        <argsstring>() override</argsstring>
+        <name>~OggVorbisSoundStream</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="40" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OggVorbisSoundStream_1a65b5194f1b8ea020f40a298702a24430" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::OggVorbisSoundStream::Seek</definition>
+        <argsstring>(unsigned sample_number) override</argsstring>
+        <name>Seek</name>
+        <reimplements refid="classUrho3D_1_1SoundStream_1ac9d66a8c0606bbe172633755aa107ef2">Seek</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>sample_number</declname>
+        </param>
+        <briefdescription>
+<para>Seek to sample number. Return true on success. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="43" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OggVorbisSoundStream_1a01e407bd561042f1692c911af628e912" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OggVorbisSoundStream::GetData</definition>
+        <argsstring>(signed char *dest, unsigned numBytes) override</argsstring>
+        <name>GetData</name>
+        <reimplements refid="classUrho3D_1_1SoundStream_1a7d87ae1420d6fc6f0b7d69fe3efebce2">GetData</reimplements>
+        <param>
+          <type>signed char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>numBytes</declname>
+        </param>
+        <briefdescription>
+<para>Produce sound data into destination. Return number of bytes produced. Called by <ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref> from the mixing thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="46" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ogg Vorbis sound stream. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::SoundStream</label>
+        <link refid="classUrho3D_1_1SoundStream"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::OggVorbisSoundStream</label>
+        <link refid="classUrho3D_1_1OggVorbisSoundStream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::SoundStream</label>
+        <link refid="classUrho3D_1_1SoundStream"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::SharedArrayPtr&lt; signed char &gt;</label>
+        <link refid="classUrho3D_1_1SharedArrayPtr"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::OggVorbisSoundStream</label>
+        <link refid="classUrho3D_1_1OggVorbisSoundStream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>data_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/OggVorbisSoundStream.h" bodystart="35" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1a2e9e7ead9fd16576d4984b305c831305" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>data_</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1a26ec87f1103682b4636d2619c7bf9939" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>dataSize_</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1a5346741f7cbdefb5c9bc4adac38b5fc6" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>decoder_</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a39b9946606bfd9e9f803f3d4adde7ed1" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>frequency_</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1a01e407bd561042f1692c911af628e912" prot="public" virt="virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>GetData</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a0f3eb3a0d67b21ec5a2a2f5ff510174d" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>GetFrequency</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a6e4221af3f576f973181f863f389bf4a" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>GetIntFrequency</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1ae0781740cc6aff1547900188002cd478" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>GetSampleSize</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a204147b46d0adb322bbde359082e0398" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>GetStopAtEnd</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a2babf321e0caef76c9282064c1a08b4e" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>IsSixteenBit</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1ae5ecab63385a5c2a2f76b5639ecdede6" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>IsStereo</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1a5d73b32934b05febaa6bdec23d00ab6c" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>OggVorbisSoundStream</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1a65b5194f1b8ea020f40a298702a24430" prot="public" virt="virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>Seek</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a7afb45af3b57d89b188f6035b1861f44" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>SetFormat</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1aebcd0f3bd10ee0259b5ec289683e2a61" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>SetStopAtEnd</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a48a52063b42992900bc66c30f081390e" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>sixteenBit_</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1af3d389af2fdebf8e005dcc54def92001" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>SoundStream</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1abea28978297450df14fbcf1e3f49278c" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>stereo_</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1abcf0fb843fe14d450edf904eb8e9f36b" prot="protected" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>stopAtEnd_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1OggVorbisSoundStream_1aeba71c71c6b353711fc56eb6d4bb99af" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>~OggVorbisSoundStream</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1SoundStream_1a1dc4bfb469fbc33fe35d5b0b17eea6f8" prot="public" virt="non-virtual"><scope>Urho3D::OggVorbisSoundStream</scope><name>~SoundStream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

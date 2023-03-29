@@ -1,0 +1,643 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Viewport" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Viewport</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="Viewport_8h" local="no">Viewport.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1afb4d8a76f88f9b043e868cc2b497fbf2" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> &gt;</type>
+        <definition>WeakPtr&lt;Scene&gt; Urho3D::Viewport::scene_</definition>
+        <argsstring></argsstring>
+        <name>scene_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="113" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1aed41f4ce276f84ae9c863d621dbfccaf" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>WeakPtr&lt;Camera&gt; Urho3D::Viewport::camera_</definition>
+        <argsstring></argsstring>
+        <name>camera_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="115" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1a7cc7fa89a3bf96206901c1219084753f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> &gt;</type>
+        <definition>WeakPtr&lt;Camera&gt; Urho3D::Viewport::cullCamera_</definition>
+        <argsstring></argsstring>
+        <name>cullCamera_</name>
+        <briefdescription>
+<para>Culling camera pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="117" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1a9b6eba519b5efd927370038e312c0628" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref></type>
+        <definition>IntRect Urho3D::Viewport::rect_</definition>
+        <argsstring></argsstring>
+        <name>rect_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Viewport" kindref="compound">Viewport</ref> rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="119" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1aee075d03a4b3ec13a0328b96eb1be5be" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1RenderPath" kindref="compound">RenderPath</ref> &gt;</type>
+        <definition>SharedPtr&lt;RenderPath&gt; Urho3D::Viewport::renderPath_</definition>
+        <argsstring></argsstring>
+        <name>renderPath_</name>
+        <briefdescription>
+<para>Rendering path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="121" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1a2824ab5524aebc02eba89c92efbef09d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1View" kindref="compound">View</ref> &gt;</type>
+        <definition>SharedPtr&lt;View&gt; Urho3D::Viewport::view_</definition>
+        <argsstring></argsstring>
+        <name>view_</name>
+        <briefdescription>
+<para>Internal rendering structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="123" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Viewport_1ae77cb162865a6fa07a3380ba3e169a19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Viewport::drawDebug_</definition>
+        <argsstring></argsstring>
+        <name>drawDebug_</name>
+        <briefdescription>
+<para>Debug draw flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="125" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a95f90f11837436f3ca78e99212dc9b5f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Viewport::Viewport</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Viewport</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct with defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a5a272a0475417d611703727f99e60394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Viewport::Viewport</definition>
+        <argsstring>(Context *context, Scene *scene, Camera *camera, RenderPath *renderPath=nullptr)</argsstring>
+        <name>Viewport</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1RenderPath" kindref="compound">RenderPath</ref> *</type>
+          <declname>renderPath</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with a full rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a7a541d293d73ad0d4a4e3a32ad4b3729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Viewport::Viewport</definition>
+        <argsstring>(Context *context, Scene *scene, Camera *camera, const IntRect &amp;rect, RenderPath *renderPath=nullptr)</argsstring>
+        <name>Viewport</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1RenderPath" kindref="compound">RenderPath</ref> *</type>
+          <declname>renderPath</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with a specified rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="51" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1ac27ebd9e15afeae5a4d86bc209a03524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Viewport::~Viewport</definition>
+        <argsstring>() override</argsstring>
+        <name>~Viewport</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="53" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a631f6576eb25ae4ad1f24a95e1947e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::SetScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>SetScene</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set scene. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a72e5a9959eb95b23512d52efb1e831b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::SetCamera</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>SetCamera</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set viewport camera. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1acc1acf4531e0762f0e19b6399aaf39a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::SetRect</definition>
+        <argsstring>(const IntRect &amp;rect)</argsstring>
+        <name>SetRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget&apos;s full dimensions. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1ab1ea665002993b6e7308ef85ce4ffbd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::SetRenderPath</definition>
+        <argsstring>(RenderPath *renderPath)</argsstring>
+        <name>SetRenderPath</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1RenderPath" kindref="compound">RenderPath</ref> *</type>
+          <declname>renderPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set rendering path. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a62b971d68362fbe3f455ddf7ab676fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Viewport::SetRenderPath</definition>
+        <argsstring>(XMLFile *file)</argsstring>
+        <name>SetRenderPath</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Set rendering path from an XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a463ebb4f490c112393a3ac573c74cd84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::SetDrawDebug</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetDrawDebug</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to render debug geometry. Default true. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a2fa469c632b7be317d974c4d3ca4bffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::SetCullCamera</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>SetCullCamera</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set separate camera to use for culling. Sharing a culling camera between several viewports allows to prepare the view only once, saving in CPU use. The culling camera&apos;s frustum should cover all the viewport cameras&apos; frusta or else objects may be missing from the rendered view. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a7a6d7e7b2585e89fb020151f6aa7059e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* Urho3D::Viewport::GetScene</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return scene. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="78" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a99d946335dfbd0e3652f3c0f28571cc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+        <definition>Camera* Urho3D::Viewport::GetCamera</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return viewport camera. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="81" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a41d6332ed87f1fcfb1fc49139d126116" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> *</type>
+        <definition>View* Urho3D::Viewport::GetView</definition>
+        <argsstring>() const</argsstring>
+        <name>GetView</name>
+        <briefdescription>
+<para>Return the internal rendering structure. May be null if the viewport has not been rendered yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1af3ac752ae3130a8b91e029688ae846cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &amp;</type>
+        <definition>const IntRect&amp; Urho3D::Viewport::GetRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return view rectangle. A zero rectangle (0 0 0 0) means to use the rendertarget&apos;s full dimensions. In this case you could fetch the actual view rectangle from <ref refid="classUrho3D_1_1View" kindref="compound">View</ref> object, though it will be valid only after the first frame. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="87" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a73f85011a5449c86a7fe15251d4789db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1RenderPath" kindref="compound">RenderPath</ref> *</type>
+        <definition>RenderPath* Urho3D::Viewport::GetRenderPath</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRenderPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return rendering path. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="91" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1ad96fbac45fe545c78bcf10acc5e31a65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Viewport::GetDrawDebug</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDrawDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether to draw debug geometry. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="95" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1abea8266e396926d2993f23f15c117c08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+        <definition>Camera* Urho3D::Viewport::GetCullCamera</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCullCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the culling camera. If null, the viewport camera will be used for culling (normal case). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="99" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a8c4201376e14c0703281473d43527089" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref></type>
+        <definition>Ray Urho3D::Viewport::GetScreenRay</definition>
+        <argsstring>(int x, int y) const</argsstring>
+        <name>GetScreenRay</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Return ray corresponding to normalized screen coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="102" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a5a57ee091281b06807b541d491bd5875" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::Viewport::WorldToScreenPoint</definition>
+        <argsstring>(const Vector3 &amp;worldPos) const</argsstring>
+        <name>WorldToScreenPoint</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPos</declname>
+        </param>
+        <briefdescription>
+<para>Convert a world space point to normalized screen coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="104" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1aada0c3ada21f92bac763432c8754fecd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Viewport::ScreenToWorldPoint</definition>
+        <argsstring>(int x, int y, float depth) const</argsstring>
+        <name>ScreenToWorldPoint</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>Convert screen coordinates and depth to a world space point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="106" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Viewport_1a90420e62386ac8b50fd35d33a07784b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Viewport::AllocateView</definition>
+        <argsstring>()</argsstring>
+        <name>AllocateView</name>
+        <briefdescription>
+<para>Allocate the view structure. Called by <ref refid="classUrho3D_1_1Renderer" kindref="compound">Renderer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="109" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Viewport definition either for a render surface or the backbuffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Viewport</label>
+        <link refid="classUrho3D_1_1Viewport"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Viewport</label>
+        <link refid="classUrho3D_1_1Viewport"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" line="41" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Viewport.h" bodystart="42" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a90420e62386ac8b50fd35d33a07784b0" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>AllocateView</name></member>
+      <member refid="classUrho3D_1_1Viewport_1aed41f4ce276f84ae9c863d621dbfccaf" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>camera_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a7cc7fa89a3bf96206901c1219084753f" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>cullCamera_</name></member>
+      <member refid="classUrho3D_1_1Viewport_1ae77cb162865a6fa07a3380ba3e169a19" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>drawDebug_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a99d946335dfbd0e3652f3c0f28571cc5" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetCamera</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Viewport_1abea8266e396926d2993f23f15c117c08" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetCullCamera</name></member>
+      <member refid="classUrho3D_1_1Viewport_1ad96fbac45fe545c78bcf10acc5e31a65" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetDrawDebug</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Viewport_1af3ac752ae3130a8b91e029688ae846cc" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetRect</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a73f85011a5449c86a7fe15251d4789db" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetRenderPath</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a7a6d7e7b2585e89fb020151f6aa7059e" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a8c4201376e14c0703281473d43527089" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetScreenRay</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Viewport</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Viewport</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Viewport</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a41d6332ed87f1fcfb1fc49139d126116" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>GetView</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Viewport</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a9b6eba519b5efd927370038e312c0628" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>rect_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Viewport_1aee075d03a4b3ec13a0328b96eb1be5be" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>renderPath_</name></member>
+      <member refid="classUrho3D_1_1Viewport_1afb4d8a76f88f9b043e868cc2b497fbf2" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>scene_</name></member>
+      <member refid="classUrho3D_1_1Viewport_1aada0c3ada21f92bac763432c8754fecd" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>ScreenToWorldPoint</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a72e5a9959eb95b23512d52efb1e831b1" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetCamera</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a2fa469c632b7be317d974c4d3ca4bffb" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetCullCamera</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a463ebb4f490c112393a3ac573c74cd84" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetDrawDebug</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Viewport_1acc1acf4531e0762f0e19b6399aaf39a9" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetRect</name></member>
+      <member refid="classUrho3D_1_1Viewport_1ab1ea665002993b6e7308ef85ce4ffbd6" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetRenderPath</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a62b971d68362fbe3f455ddf7ab676fa1" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetRenderPath</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a631f6576eb25ae4ad1f24a95e1947e19" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SetScene</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a2824ab5524aebc02eba89c92efbef09d" prot="private" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>view_</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a95f90f11837436f3ca78e99212dc9b5f" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Viewport</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a5a272a0475417d611703727f99e60394" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Viewport</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a7a541d293d73ad0d4a4e3a32ad4b3729" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>Viewport</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Viewport_1a5a57ee091281b06807b541d491bd5875" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>WorldToScreenPoint</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Viewport</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Viewport_1ac27ebd9e15afeae5a4d86bc209a03524" prot="public" virt="non-virtual"><scope>Urho3D::Viewport</scope><name>~Viewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

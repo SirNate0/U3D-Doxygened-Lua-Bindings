@@ -1,0 +1,2797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1String" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::String</compoundname>
+    <includes refid="Str_8h" local="no">Str.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classUrho3D_1_1String_1a5ca1c538823300d8b08712aa11dfc509" prot="public" static="no">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">RandomAccessIterator</ref>&lt; char &gt;</type>
+        <definition>using Urho3D::String::Iterator =  RandomAccessIterator&lt;char&gt;</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="49" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classUrho3D_1_1String_1a8ff3b59bfebdb70dfa95394525023326" prot="public" static="no">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">RandomAccessConstIterator</ref>&lt; char &gt;</type>
+        <definition>using Urho3D::String::ConstIterator =  RandomAccessConstIterator&lt;char&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="50" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1String_1a9f7135066f45c2571bf9d8414c1e0152" prot="public" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned Urho3D::String::NPOS</definition>
+        <argsstring></argsstring>
+        <name>NPOS</name>
+        <initializer>= 0xffffffff</initializer>
+        <briefdescription>
+<para>Position for &quot;not found&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="516" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1String_1aeea2afc34de7b293f9ef1c974ca2d8bc" prot="public" static="yes" mutable="no">
+        <type>const unsigned</type>
+        <definition>const unsigned Urho3D::String::MIN_CAPACITY</definition>
+        <argsstring></argsstring>
+        <name>MIN_CAPACITY</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+<para>Initial dynamic allocation size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="518" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>const String Urho3D::String::EMPTY</definition>
+        <argsstring></argsstring>
+        <name>EMPTY</name>
+        <briefdescription>
+<para>Empty string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="520" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1String_1afb78a3603ef45a532461a6c4d0892aba" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::length_</definition>
+        <argsstring></argsstring>
+        <name>length_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="551" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1String_1ad4f807bec026a416ed5ff7212d0b0fd3" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <briefdescription>
+<para>Capacity, zero if buffer not allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="553" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1String_1a15c18f1e34a835ee10b3d23c76cedb37" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* Urho3D::String::buffer_</definition>
+        <argsstring></argsstring>
+        <name>buffer_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> buffer, point to &amp;endZero if buffer is not allocated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="555" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1String_1a1b035cc6be33ead8a62957882ce3443a" prot="private" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char Urho3D::String::endZero</definition>
+        <argsstring></argsstring>
+        <name>endZero</name>
+        <briefdescription>
+<para>End zero for empty strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="558" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1String_1aaad16c980aa7b6bbe445af70ac699bb1" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>String</name>
+        <briefdescription>
+<para>Construct empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="53" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a0865ce1246f38b982b3bd3cb75fe55ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(const String &amp;str)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct from another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="61" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1abc3532d15b31fc528c279e9d72e58d5e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(String &amp;&amp;str) noexcept</argsstring>
+        <name>String</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;&amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Move-construct from another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="70" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ac0863435ccb08894dd37d2cd738f8ccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="79" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="79" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aa3abd69afa71ba6d2079fccd2e6bff83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>String</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="88" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a62c0e835feb3daf1f3632d0dd94a32fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(const char *str, unsigned length)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a char array and length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="97" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae9d27b9a38d4c27c1a846692c6dd0a20" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(const wchar_t *str)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a null-terminated wide character array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="107" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="107" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a6fe6e95c327296da20019669d97089bf" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(wchar_t *str)</argsstring>
+        <name>String</name>
+        <param>
+          <type>wchar_t *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a null-terminated wide character array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="116" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a31b0d66455e0726415102bc2ccdf7c7f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(const WString &amp;str)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WString" kindref="compound">WString</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a wide character string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="125" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ab480e661373f368141846592b673a80f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(int value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="128" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae9434debeb06bd77b7b899e7b6620031" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(short value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>short</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a short integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="130" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a4c453490d6293c2d9c8b1e57ed240e34" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(long value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct from a long integer. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="133" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aebfc89ff3cef7691cc7f79f63d361ace" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(long long value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a long long integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="135" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a2d065c091f3c98ceb14411bd825bb9a3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from an unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ad8d8c693dae363d5f307fdc8450e50fd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(unsigned short value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from an unsigned short integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="139" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aa2ddb0f260ec067ced1a5070e42222fd" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(unsigned long value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct from an unsigned long integer. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="142" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1adb185805079fbb72bb6924809a12818d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from an unsigned long long integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="144" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a5b98960b8c05a771413d40f9b1e0c99d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(float value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a float. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="146" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ad959433288ef79c6a1725a70b1b2a0b5" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(double value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="148" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af32dc78ca5f02d9b6a592fccd4b1e28a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="150" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af18093cddc9cbeb8e9cda7177962bfd0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(char value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="152" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a5da5d6949682ec1450ae407d416bd030" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(char value, unsigned length)</argsstring>
+        <name>String</name>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a character and fill length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="154" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a3700df0a2c11ae22fb938fc5fca1c642" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Urho3D::String::String</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a convertible value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="157" column="26" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="157" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a09a6c50cf0161436af5483c9816fb0d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::String::~String</definition>
+        <argsstring>()</argsstring>
+        <name>~String</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="166" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="166" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a2cabe29dc68b7f02e2f716685ac6c9f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator=</definition>
+        <argsstring>(const String &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="173" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="173" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a9136ce4c3fc58eab729312f34215ff11" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator=</definition>
+        <argsstring>(String &amp;&amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move-assign a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="185" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="185" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a5557dcc8e3e650aa2d9f334835f4d25c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator=</definition>
+        <argsstring>(const char *rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="192" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="192" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a7d4c3a7d5700cdd805a15fa63b786ac9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(const String &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="202" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="202" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a4817f43b10d9011074ca1deb1b94e4e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(const char *rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="212" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="212" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a700d2ae10d41396ebecc28ef8a5fcb5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(char rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>char</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign a character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="223" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="223" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a1f877ab2754fa54f018feefe1cc6061b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(int rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>int</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="233" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1acd6ab4d7ffe059af6f46a556153d81e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(short rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>short</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) a short integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="235" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a5b08e43e4a19e2e90802d56fd306ce5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(long rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>long</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add-assign (concatenate as string) a long integer. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="238" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a7685ff69b20065a0c1b3b9760a5f2dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(long long rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>long long</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) a long long integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="240" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aa88a62a22904220dc9c981a39b08d848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(unsigned rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>unsigned</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) an unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="242" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a10f7759590f7bef1a66a732a57f73691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(unsigned short rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) a short unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="244" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af5ed101b33dc5202eb8765a50354304a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(unsigned long rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add-assign (concatenate as string) a long unsigned integer. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="247" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a2cfb4485ecc8b0ff0220b6fad3875ef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(unsigned long long rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) a long long unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="249" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a928784becb1db68c5e672128f2294e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(float rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>float</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) a float. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="251" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1abbbbc2f5e1c4245dff737aac5570c73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(bool rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>bool</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) a bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="253" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a69fc7a4adbd40eab8fa9243581f4b183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::operator+=</definition>
+        <argsstring>(const T &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign (concatenate as string) an arbitrary type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="256" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="256" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a855121d4dc4d80c38792b24443f1385b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::operator+</definition>
+        <argsstring>(const String &amp;rhs) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="259" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="259" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a9d82007c7db9452528ad12fed362ce4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::operator+</definition>
+        <argsstring>(const char *rhs) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="270" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="270" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aad541897f166ba2752eb8fa9a9b121af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator==</definition>
+        <argsstring>(const String &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for equality with another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="282" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a28d0105f90aefedb3f11e6568b54d27d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator!=</definition>
+        <argsstring>(const String &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for inequality with another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="285" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="285" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a1b6184fe8d1476f34f754d038c1a2e02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator&lt;</definition>
+        <argsstring>(const String &amp;rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test if string is less than another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="288" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af4dd4dc5d79f17f4e7852bbce48d5abd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator&gt;</definition>
+        <argsstring>(const String &amp;rhs) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test if string is greater than another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="291" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="291" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a8806610abd5f8644c23331dde41a89d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator==</definition>
+        <argsstring>(const char *rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for equality with a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="294" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a43dbc2311627f36d5c2fed4aa49e975f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator!=</definition>
+        <argsstring>(const char *rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for inequality with a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="297" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="297" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae13b4adae4f7083f6cc5af1eecd9cadb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator&lt;</definition>
+        <argsstring>(const char *rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test if string is less than a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="300" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="300" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aeb3b3b3d373f289e90af83bab5d01ce6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::operator&gt;</definition>
+        <argsstring>(const char *rhs) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test if string is greater than a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="303" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="303" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae1bb45973cdbb8222f077636812344c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; Urho3D::String::operator[]</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return char at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="306" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="306" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a318626e52c0a61664cf3dd3d6be61ca7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char &amp;</type>
+        <definition>const char&amp; Urho3D::String::operator[]</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return const char at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="313" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="313" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a7c1d0c8fa071d8f01836fc27129cd376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; Urho3D::String::At</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>At</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return char at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="320" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1afc16fe42e6584ce781ca73ada89026c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char &amp;</type>
+        <definition>const char&amp; Urho3D::String::At</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>At</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return const char at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="327" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="327" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ab08b5f1f7cee23f3e14eebcb2f7f8d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Replace</definition>
+        <argsstring>(char replaceThis, char replaceWith, bool caseSensitive=true)</argsstring>
+        <name>Replace</name>
+        <param>
+          <type>char</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>replaceWith</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Replace all occurrences of a character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="334" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ac393b2f64bee09e24ed47cc40815484a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Replace</definition>
+        <argsstring>(const String &amp;replaceThis, const String &amp;replaceWith, bool caseSensitive=true)</argsstring>
+        <name>Replace</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>replaceWith</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Replace all occurrences of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="336" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a2e32b6563d040029072850ff1ab2010e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Replace</definition>
+        <argsstring>(unsigned pos, unsigned length, const String &amp;replaceWith)</argsstring>
+        <name>Replace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>replaceWith</declname>
+        </param>
+        <briefdescription>
+<para>Replace a substring. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="338" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae038f7cb91ec42a827ffdd62dc5222b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Replace</definition>
+        <argsstring>(unsigned pos, unsigned length, const char *replaceWith)</argsstring>
+        <name>Replace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>replaceWith</declname>
+        </param>
+        <briefdescription>
+<para>Replace a substring with a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="340" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a094a4b8d70938e6d7428ac75653f642e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Replace</definition>
+        <argsstring>(const Iterator &amp;start, const Iterator &amp;end, const String &amp;replaceWith)</argsstring>
+        <name>Replace</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>replaceWith</declname>
+        </param>
+        <briefdescription>
+<para>Replace a substring by iterators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="342" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af3f67422b866ceb72b79d9ba7df375e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::Replaced</definition>
+        <argsstring>(char replaceThis, char replaceWith, bool caseSensitive=true) const</argsstring>
+        <name>Replaced</name>
+        <param>
+          <type>char</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>replaceWith</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a string with all occurrences of a character replaced. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="344" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a289d7c97b065a38f86d15819f84e4b89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::Replaced</definition>
+        <argsstring>(const String &amp;replaceThis, const String &amp;replaceWith, bool caseSensitive=true) const</argsstring>
+        <name>Replaced</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>replaceWith</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a string with all occurrences of a string replaced. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="346" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ac1530aafa6987720936796abeca73f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::Append</definition>
+        <argsstring>(const String &amp;str)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Append a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="348" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a1a436bb6e85f271da1fbfceeeb872dc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::Append</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Append a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="350" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a1e8a8fa453f20ca54429568265d6ffd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::Append</definition>
+        <argsstring>(char c)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Append a character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="352" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a6d0afa21fe589685ecdb931680c8bb2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::Append</definition>
+        <argsstring>(const char *str, unsigned length)</argsstring>
+        <name>Append</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Append characters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="354" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af145241db072c498e92fa3f6e461f2b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Insert</definition>
+        <argsstring>(unsigned pos, const String &amp;str)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Insert a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="356" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a541369268c622c0e2d9f3c7fcb2cb3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Insert</definition>
+        <argsstring>(unsigned pos, char c)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Insert a character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="358" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a0845ee6c465a81e08ad57e951be27136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, const String &amp;str)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Insert a string by iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="360" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a183e769a4791fffe120edda045491db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, const Iterator &amp;start, const Iterator &amp;end)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Insert a string partially by iterators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="362" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a4d6c766793c691e35861e07f87b5ffc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, char c)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Insert a character by iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="364" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a6b045ae381c8a3db363d44354fcf12ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Erase</definition>
+        <argsstring>(unsigned pos, unsigned length=1)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Erase a substring. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="366" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a1af57686655d32803d4b3c386c6520d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Erase</definition>
+        <argsstring>(const Iterator &amp;it)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Erase a character by iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="368" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a3b1e3f29acb6f48369081b22ab8158e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Erase</definition>
+        <argsstring>(const Iterator &amp;start, const Iterator &amp;end)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Erase a substring by iterators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="370" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aed2d8d23da6f2403c7aaa20082036f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Resize</definition>
+        <argsstring>(unsigned newLength)</argsstring>
+        <name>Resize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>newLength</declname>
+        </param>
+        <briefdescription>
+<para>Resize the string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="372" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae84b3176b67c995a0491851c32ed95ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Reserve</definition>
+        <argsstring>(unsigned newCapacity)</argsstring>
+        <name>Reserve</name>
+        <param>
+          <type>unsigned</type>
+          <declname>newCapacity</declname>
+        </param>
+        <briefdescription>
+<para>Set new capacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="374" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a8784a6ef0299581ae5b6e1656e5dc75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Compact</definition>
+        <argsstring>()</argsstring>
+        <name>Compact</name>
+        <briefdescription>
+<para>Reallocate so that no extra memory is used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="376" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ac6f0b2fb0bce5afbeb088c7cb15abbe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear the string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="378" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af30c9880e57d3a451d7d48319e1f68c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Swap</definition>
+        <argsstring>(String &amp;str)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Swap with another string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="380" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1adf77f95547affd13fe6d45cada9310b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::Begin</definition>
+        <argsstring>()</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+<para>Return iterator to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="383" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="383" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1af1a36c486ccf7dc203df64dd3961c026" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator Urho3D::String::Begin</definition>
+        <argsstring>() const</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+<para>Return const iterator to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="386" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="386" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a873adcbef9b8aa32807df0999be5f2b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::String::End</definition>
+        <argsstring>()</argsstring>
+        <name>End</name>
+        <briefdescription>
+<para>Return iterator to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="389" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="389" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a3b306b4ab85dfa770266a7d7469ed38c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator Urho3D::String::End</definition>
+        <argsstring>() const</argsstring>
+        <name>End</name>
+        <briefdescription>
+<para>Return const iterator to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="392" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="392" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a2c03c90ba946b4ea7cbf53947201dc99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Urho3D::String::Front</definition>
+        <argsstring>() const</argsstring>
+        <name>Front</name>
+        <briefdescription>
+<para>Return first char, or 0 if empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="395" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="395" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ad0c08d8a8228bb534693254b3ad62b56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Urho3D::String::Back</definition>
+        <argsstring>() const</argsstring>
+        <name>Back</name>
+        <briefdescription>
+<para>Return last char, or 0 if empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="398" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="398" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a812ed0a9a7397006169814ac64295b78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::Substring</definition>
+        <argsstring>(unsigned pos) const</argsstring>
+        <name>Substring</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Return a substring from position to end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="401" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a97e9c84a070c3712c8971fc4b2cdc15b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::Substring</definition>
+        <argsstring>(unsigned pos, unsigned length) const</argsstring>
+        <name>Substring</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Return a substring with length from position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="403" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ad100f77dbca5f666613aa300447092a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::Trimmed</definition>
+        <argsstring>() const</argsstring>
+        <name>Trimmed</name>
+        <briefdescription>
+<para>Return string with whitespace trimmed from the beginning and the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="405" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1add58cf48fff88b540e31d30f6235e537" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::ToUpper</definition>
+        <argsstring>() const</argsstring>
+        <name>ToUpper</name>
+        <briefdescription>
+<para>Return string in uppercase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="407" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae4579347cf23bddc5b56291f75aafb05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::ToLower</definition>
+        <argsstring>() const</argsstring>
+        <name>ToLower</name>
+        <briefdescription>
+<para>Return string in lowercase. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="409" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a43f1e9b5e0db83b72737e93be28df62a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>Vector&lt;String&gt; Urho3D::String::Split</definition>
+        <argsstring>(char separator, bool keepEmptyStrings=false) const</argsstring>
+        <name>Split</name>
+        <param>
+          <type>char</type>
+          <declname>separator</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepEmptyStrings</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Return substrings split by a separator char. By default don&apos;t return empty strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="411" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae4b85c625b26ce7f52a70ba9abe50f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Join</definition>
+        <argsstring>(const Vector&lt; String &gt; &amp;subStrings, const String &amp;glue)</argsstring>
+        <name>Join</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>subStrings</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>glue</declname>
+        </param>
+        <briefdescription>
+<para>Join substrings with a &apos;glue&apos; string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="413" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aa9fe9030164a42e2d73dd57f2db7c991" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::Find</definition>
+        <argsstring>(const String &amp;str, unsigned startPos=0, bool caseSensitive=true) const</argsstring>
+        <name>Find</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>startPos</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return index to the first occurrence of a string, or NPOS if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="415" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a59d526d61a11fab4497d6ebf5d09f2ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::Find</definition>
+        <argsstring>(char c, unsigned startPos=0, bool caseSensitive=true) const</argsstring>
+        <name>Find</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>startPos</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return index to the first occurrence of a character, or NPOS if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="417" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a4e5b8a91af2ee6014ef12810da1d82f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::FindLast</definition>
+        <argsstring>(const String &amp;str, unsigned startPos=NPOS, bool caseSensitive=true) const</argsstring>
+        <name>FindLast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>startPos</declname>
+          <defval><ref refid="classUrho3D_1_1String_1a9f7135066f45c2571bf9d8414c1e0152" kindref="member">NPOS</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return index to the last occurrence of a string, or NPOS if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="419" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a7d7113194d16918717bd535a3a1f6a6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::FindLast</definition>
+        <argsstring>(char c, unsigned startPos=NPOS, bool caseSensitive=true) const</argsstring>
+        <name>FindLast</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>startPos</declname>
+          <defval><ref refid="classUrho3D_1_1String_1a9f7135066f45c2571bf9d8414c1e0152" kindref="member">NPOS</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return index to the last occurrence of a character, or NPOS if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="421" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1afa8a3643a9866f6846520794d3b45b47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::StartsWith</definition>
+        <argsstring>(const String &amp;str, bool caseSensitive=true) const</argsstring>
+        <name>StartsWith</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return whether starts with a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="423" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1abb9a80d4cbfd3471a5d5f45afa551a9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::EndsWith</definition>
+        <argsstring>(const String &amp;str, bool caseSensitive=true) const</argsstring>
+        <name>EndsWith</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return whether ends with a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="425" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aff53945d0c649c973851c0605810a3f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Urho3D::String::CString</definition>
+        <argsstring>() const</argsstring>
+        <name>CString</name>
+        <briefdescription>
+<para>Return the C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="428" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="428" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a0a988cc147946dd80bf73cea2c1ac04c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::Length</definition>
+        <argsstring>() const</argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return length. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="432" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="432" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a4c048d78ed3b50f5069be55de6e9cf13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::Capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>Capacity</name>
+        <briefdescription>
+<para>Return buffer capacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="435" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="435" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a8413f000551027cd127996e3c5b00185" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::Empty</definition>
+        <argsstring>() const</argsstring>
+        <name>Empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether the string is empty. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="439" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="439" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a0d2da282b3aede6a8e5ba3ec45ff3945" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::String::Compare</definition>
+        <argsstring>(const String &amp;str, bool caseSensitive=true) const</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return comparison result with a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="442" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a1fe7b05038839eb08ba5342d65b8922f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::String::Compare</definition>
+        <argsstring>(const char *str, bool caseSensitive=true) const</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return comparison result with a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="444" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a4b25def89817c81ac32545396777dbf6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::Contains</definition>
+        <argsstring>(const String &amp;str, bool caseSensitive=true) const</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return whether contains a specific occurrence of a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="447" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="447" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a549312b8af36b8866390bd209d15a57b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::String::Contains</definition>
+        <argsstring>(char c, bool caseSensitive=true) const</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return whether contains a specific character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="450" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="450" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a357b864e70a19624161f28b0846c85f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::SetUTF8FromLatin1</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>SetUTF8FromLatin1</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct UTF8 content from Latin1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="453" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ae12b0795cdccd291dbd33e1b212639c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::SetUTF8FromWChar</definition>
+        <argsstring>(const wchar_t *str)</argsstring>
+        <name>SetUTF8FromWChar</name>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct UTF8 content from wide characters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="455" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ad062c733a6396f806c3e7418a71378b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::LengthUTF8</definition>
+        <argsstring>() const</argsstring>
+        <name>LengthUTF8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate number of characters in UTF8 content. BIND_AS_ALIAS_get_utf8Length </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="458" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a293e23eda3ebaa3fa44db7e858d46d94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::ByteOffsetUTF8</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>ByteOffsetUTF8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return byte offset to char in UTF8 content. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="460" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a16643a545e2cfcf7a59979bd3c290614" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::NextUTF8Char</definition>
+        <argsstring>(unsigned &amp;byteOffset) const</argsstring>
+        <name>NextUTF8Char</name>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>byteOffset</declname>
+        </param>
+        <briefdescription>
+<para>Return next Unicode character from UTF8 content and increase byte offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="462" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1ad334af5a717c5ddd8540d1007139def9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::AtUTF8</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>AtUTF8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return Unicode character at index from UTF8 content. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="464" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aacca53579fa72e5f57e75bbcd132ba70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::ReplaceUTF8</definition>
+        <argsstring>(unsigned index, unsigned unicodeChar)</argsstring>
+        <name>ReplaceUTF8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>unicodeChar</declname>
+        </param>
+        <briefdescription>
+<para>Replace Unicode character at index from UTF8 content. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="466" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a9b5d3ebe7fd5eb02556d10a7503a0431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::AppendUTF8</definition>
+        <argsstring>(unsigned unicodeChar)</argsstring>
+        <name>AppendUTF8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>unicodeChar</declname>
+        </param>
+        <briefdescription>
+<para>Append Unicode character at the end as UTF8. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="468" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a194e2ff9a391edfc4d67c432595c5ea6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::SubstringUTF8</definition>
+        <argsstring>(unsigned pos) const</argsstring>
+        <name>SubstringUTF8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>Return a UTF8 substring from position to end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="470" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a89982ce418cdecf942b9660c5a414d2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::String::SubstringUTF8</definition>
+        <argsstring>(unsigned pos, unsigned length) const</argsstring>
+        <name>SubstringUTF8</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Return a UTF8 substring with length from position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="472" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1aa3acc5cd3ba2ee53be9e619f7fdc6930" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::String::ToHash</definition>
+        <argsstring>() const</argsstring>
+        <name>ToHash</name>
+        <briefdescription>
+<para>Return hash value for <ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref> &amp; <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="475" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="475" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a5a1ba4b119fee46877d4c5d80f6b2ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::AppendWithFormat</definition>
+        <argsstring>(const char *formatString,...)</argsstring>
+        <name>AppendWithFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Append to string using formatting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="508" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a37c9695da04b5b8f2ef8d981698df993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>String&amp; Urho3D::String::AppendWithFormatArgs</definition>
+        <argsstring>(const char *formatString, va_list args)</argsstring>
+        <name>AppendWithFormatArgs</name>
+        <param>
+          <type>const char *</type>
+          <declname>formatString</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Append to string using variable arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="510" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1String_1aaf7f7e82d500a2e9264a7e1200790532" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>static Vector&lt;String&gt; Urho3D::String::Split</definition>
+        <argsstring>(const char *str, char separator, bool keepEmptyStrings=false)</argsstring>
+        <name>Split</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>separator</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepEmptyStrings</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Return substrings split by a separator char. By default don&apos;t return empty strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="489" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a722eb20386644347f7ab634e58f6282e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>static String Urho3D::String::Joined</definition>
+        <argsstring>(const Vector&lt; String &gt; &amp;subStrings, const String &amp;glue)</argsstring>
+        <name>Joined</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>subStrings</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>glue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a string by joining substrings with a &apos;glue&apos; string. MANUAL_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="492" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a6112d0b403740e3292cd2fbf1728fc91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::String::EncodeUTF8</definition>
+        <argsstring>(char *&amp;dest, unsigned unicodeChar)</argsstring>
+        <name>EncodeUTF8</name>
+        <param>
+          <type>char *&amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>unicodeChar</declname>
+        </param>
+        <briefdescription>
+<para>Encode Unicode character to UTF8. Pointer will be incremented. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="494" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a70fe2537c6ff93dc4108fe002d81e4ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::String::DecodeUTF8</definition>
+        <argsstring>(const char *&amp;src)</argsstring>
+        <name>DecodeUTF8</name>
+        <param>
+          <type>const char *&amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Decode Unicode character from UTF8. Pointer will be incremented. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="496" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a78967781d11a0100dcca55391fa09092" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::String::CStringLength</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>CStringLength</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Return length of a C string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="505" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="505" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a75c823d886ae5443ff882efcc5132b9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Urho3D::String::Compare</definition>
+        <argsstring>(const char *lhs, const char *rhs, bool caseSensitive)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const char *</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>caseSensitive</declname>
+        </param>
+        <briefdescription>
+<para>Compare two C strings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="513" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1String_1a537ae31ab4fd07be1d5329a78222b5b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::MoveRange</definition>
+        <argsstring>(unsigned dest, unsigned src, unsigned count)</argsstring>
+        <name>MoveRange</name>
+        <param>
+          <type>unsigned</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Move a range of characters within the string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="524" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="524" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1String_1a40e106d974dc102230b812a4cd152f1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::String::Replace</definition>
+        <argsstring>(unsigned pos, unsigned length, const char *srcStart, unsigned srcLength)</argsstring>
+        <name>Replace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>srcStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>srcLength</declname>
+        </param>
+        <briefdescription>
+<para>Replace a substring with another substring. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="548" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1String_1a953822d6a39e507861ee02a24bb7996e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::String::CopyChars</definition>
+        <argsstring>(char *dest, const char *src, unsigned count)</argsstring>
+        <name>CopyChars</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Copy chars from one buffer to another. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="531" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="531" bodyend="545"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>String class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::String</label>
+        <link refid="classUrho3D_1_1String"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>EMPTY</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" line="46" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Str.h" bodystart="47" bodyend="559"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1String_1ac1530aafa6987720936796abeca73f95" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Append</name></member>
+      <member refid="classUrho3D_1_1String_1a1a436bb6e85f271da1fbfceeeb872dc0" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Append</name></member>
+      <member refid="classUrho3D_1_1String_1a1e8a8fa453f20ca54429568265d6ffd6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Append</name></member>
+      <member refid="classUrho3D_1_1String_1a6d0afa21fe589685ecdb931680c8bb2e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Append</name></member>
+      <member refid="classUrho3D_1_1String_1a9b5d3ebe7fd5eb02556d10a7503a0431" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>AppendUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1a5a1ba4b119fee46877d4c5d80f6b2ab0" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>AppendWithFormat</name></member>
+      <member refid="classUrho3D_1_1String_1a37c9695da04b5b8f2ef8d981698df993" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>AppendWithFormatArgs</name></member>
+      <member refid="classUrho3D_1_1String_1a7c1d0c8fa071d8f01836fc27129cd376" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>At</name></member>
+      <member refid="classUrho3D_1_1String_1afc16fe42e6584ce781ca73ada89026c7" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>At</name></member>
+      <member refid="classUrho3D_1_1String_1ad334af5a717c5ddd8540d1007139def9" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>AtUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1ad0c08d8a8228bb534693254b3ad62b56" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Back</name></member>
+      <member refid="classUrho3D_1_1String_1adf77f95547affd13fe6d45cada9310b5" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Begin</name></member>
+      <member refid="classUrho3D_1_1String_1af1a36c486ccf7dc203df64dd3961c026" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Begin</name></member>
+      <member refid="classUrho3D_1_1String_1a15c18f1e34a835ee10b3d23c76cedb37" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>buffer_</name></member>
+      <member refid="classUrho3D_1_1String_1a293e23eda3ebaa3fa44db7e858d46d94" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>ByteOffsetUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1a4c048d78ed3b50f5069be55de6e9cf13" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Capacity</name></member>
+      <member refid="classUrho3D_1_1String_1ad4f807bec026a416ed5ff7212d0b0fd3" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>capacity_</name></member>
+      <member refid="classUrho3D_1_1String_1ac6f0b2fb0bce5afbeb088c7cb15abbe1" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1String_1a8784a6ef0299581ae5b6e1656e5dc75d" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Compact</name></member>
+      <member refid="classUrho3D_1_1String_1a0d2da282b3aede6a8e5ba3ec45ff3945" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Compare</name></member>
+      <member refid="classUrho3D_1_1String_1a1fe7b05038839eb08ba5342d65b8922f" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Compare</name></member>
+      <member refid="classUrho3D_1_1String_1a75c823d886ae5443ff882efcc5132b9a" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Compare</name></member>
+      <member refid="classUrho3D_1_1String_1a8ff3b59bfebdb70dfa95394525023326" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>ConstIterator</name></member>
+      <member refid="classUrho3D_1_1String_1a4b25def89817c81ac32545396777dbf6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Contains</name></member>
+      <member refid="classUrho3D_1_1String_1a549312b8af36b8866390bd209d15a57b" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Contains</name></member>
+      <member refid="classUrho3D_1_1String_1a953822d6a39e507861ee02a24bb7996e" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>CopyChars</name></member>
+      <member refid="classUrho3D_1_1String_1aff53945d0c649c973851c0605810a3f9" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>CString</name></member>
+      <member refid="classUrho3D_1_1String_1a78967781d11a0100dcca55391fa09092" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>CStringLength</name></member>
+      <member refid="classUrho3D_1_1String_1a70fe2537c6ff93dc4108fe002d81e4ff" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>DecodeUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>EMPTY</name></member>
+      <member refid="classUrho3D_1_1String_1a8413f000551027cd127996e3c5b00185" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Empty</name></member>
+      <member refid="classUrho3D_1_1String_1a6112d0b403740e3292cd2fbf1728fc91" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>EncodeUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1a873adcbef9b8aa32807df0999be5f2b6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>End</name></member>
+      <member refid="classUrho3D_1_1String_1a3b306b4ab85dfa770266a7d7469ed38c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>End</name></member>
+      <member refid="classUrho3D_1_1String_1abb9a80d4cbfd3471a5d5f45afa551a9c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>EndsWith</name></member>
+      <member refid="classUrho3D_1_1String_1a1b035cc6be33ead8a62957882ce3443a" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>endZero</name></member>
+      <member refid="classUrho3D_1_1String_1a6b045ae381c8a3db363d44354fcf12ba" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Erase</name></member>
+      <member refid="classUrho3D_1_1String_1a1af57686655d32803d4b3c386c6520d7" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Erase</name></member>
+      <member refid="classUrho3D_1_1String_1a3b1e3f29acb6f48369081b22ab8158e2" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Erase</name></member>
+      <member refid="classUrho3D_1_1String_1aa9fe9030164a42e2d73dd57f2db7c991" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Find</name></member>
+      <member refid="classUrho3D_1_1String_1a59d526d61a11fab4497d6ebf5d09f2ae" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Find</name></member>
+      <member refid="classUrho3D_1_1String_1a4e5b8a91af2ee6014ef12810da1d82f8" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>FindLast</name></member>
+      <member refid="classUrho3D_1_1String_1a7d7113194d16918717bd535a3a1f6a6e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>FindLast</name></member>
+      <member refid="classUrho3D_1_1String_1a2c03c90ba946b4ea7cbf53947201dc99" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Front</name></member>
+      <member refid="classUrho3D_1_1String_1af145241db072c498e92fa3f6e461f2b9" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1String_1a541369268c622c0e2d9f3c7fcb2cb3e6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1String_1a0845ee6c465a81e08ad57e951be27136" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1String_1a183e769a4791fffe120edda045491db6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1String_1a4d6c766793c691e35861e07f87b5ffc1" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1String_1a5ca1c538823300d8b08712aa11dfc509" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Iterator</name></member>
+      <member refid="classUrho3D_1_1String_1ae4b85c625b26ce7f52a70ba9abe50f8e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Join</name></member>
+      <member refid="classUrho3D_1_1String_1a722eb20386644347f7ab634e58f6282e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Joined</name></member>
+      <member refid="classUrho3D_1_1String_1a0a988cc147946dd80bf73cea2c1ac04c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Length</name></member>
+      <member refid="classUrho3D_1_1String_1afb78a3603ef45a532461a6c4d0892aba" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>length_</name></member>
+      <member refid="classUrho3D_1_1String_1ad062c733a6396f806c3e7418a71378b3" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>LengthUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1aeea2afc34de7b293f9ef1c974ca2d8bc" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>MIN_CAPACITY</name></member>
+      <member refid="classUrho3D_1_1String_1a537ae31ab4fd07be1d5329a78222b5b5" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>MoveRange</name></member>
+      <member refid="classUrho3D_1_1String_1a16643a545e2cfcf7a59979bd3c290614" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>NextUTF8Char</name></member>
+      <member refid="classUrho3D_1_1String_1a9f7135066f45c2571bf9d8414c1e0152" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>NPOS</name></member>
+      <member refid="classUrho3D_1_1String_1a28d0105f90aefedb3f11e6568b54d27d" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator!=</name></member>
+      <member refid="classUrho3D_1_1String_1a43dbc2311627f36d5c2fed4aa49e975f" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator!=</name></member>
+      <member refid="classUrho3D_1_1String_1a855121d4dc4d80c38792b24443f1385b" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+</name></member>
+      <member refid="classUrho3D_1_1String_1a9d82007c7db9452528ad12fed362ce4c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+</name></member>
+      <member refid="classUrho3D_1_1String_1a7d4c3a7d5700cdd805a15fa63b786ac9" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a4817f43b10d9011074ca1deb1b94e4e6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a700d2ae10d41396ebecc28ef8a5fcb5e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a1f877ab2754fa54f018feefe1cc6061b" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1acd6ab4d7ffe059af6f46a556153d81e0" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a5b08e43e4a19e2e90802d56fd306ce5c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a7685ff69b20065a0c1b3b9760a5f2dc8" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1aa88a62a22904220dc9c981a39b08d848" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a10f7759590f7bef1a66a732a57f73691" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1af5ed101b33dc5202eb8765a50354304a" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a2cfb4485ecc8b0ff0220b6fad3875ef3" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a928784becb1db68c5e672128f2294e41" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1abbbbc2f5e1c4245dff737aac5570c73c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a69fc7a4adbd40eab8fa9243581f4b183" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1String_1a1b6184fe8d1476f34f754d038c1a2e02" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator&lt;</name></member>
+      <member refid="classUrho3D_1_1String_1ae13b4adae4f7083f6cc5af1eecd9cadb" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator&lt;</name></member>
+      <member refid="classUrho3D_1_1String_1a2cabe29dc68b7f02e2f716685ac6c9f9" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1String_1a9136ce4c3fc58eab729312f34215ff11" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1String_1a5557dcc8e3e650aa2d9f334835f4d25c" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1String_1aad541897f166ba2752eb8fa9a9b121af" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator==</name></member>
+      <member refid="classUrho3D_1_1String_1a8806610abd5f8644c23331dde41a89d9" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator==</name></member>
+      <member refid="classUrho3D_1_1String_1af4dd4dc5d79f17f4e7852bbce48d5abd" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator&gt;</name></member>
+      <member refid="classUrho3D_1_1String_1aeb3b3b3d373f289e90af83bab5d01ce6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator&gt;</name></member>
+      <member refid="classUrho3D_1_1String_1ae1bb45973cdbb8222f077636812344c2" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1String_1a318626e52c0a61664cf3dd3d6be61ca7" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1String_1ab08b5f1f7cee23f3e14eebcb2f7f8d4e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replace</name></member>
+      <member refid="classUrho3D_1_1String_1ac393b2f64bee09e24ed47cc40815484a" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replace</name></member>
+      <member refid="classUrho3D_1_1String_1a2e32b6563d040029072850ff1ab2010e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replace</name></member>
+      <member refid="classUrho3D_1_1String_1ae038f7cb91ec42a827ffdd62dc5222b4" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replace</name></member>
+      <member refid="classUrho3D_1_1String_1a094a4b8d70938e6d7428ac75653f642e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replace</name></member>
+      <member refid="classUrho3D_1_1String_1a40e106d974dc102230b812a4cd152f1d" prot="private" virt="non-virtual"><scope>Urho3D::String</scope><name>Replace</name></member>
+      <member refid="classUrho3D_1_1String_1af3f67422b866ceb72b79d9ba7df375e2" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replaced</name></member>
+      <member refid="classUrho3D_1_1String_1a289d7c97b065a38f86d15819f84e4b89" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Replaced</name></member>
+      <member refid="classUrho3D_1_1String_1aacca53579fa72e5f57e75bbcd132ba70" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>ReplaceUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1ae84b3176b67c995a0491851c32ed95ac" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Reserve</name></member>
+      <member refid="classUrho3D_1_1String_1aed2d8d23da6f2403c7aaa20082036f88" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Resize</name></member>
+      <member refid="classUrho3D_1_1String_1a357b864e70a19624161f28b0846c85f4" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>SetUTF8FromLatin1</name></member>
+      <member refid="classUrho3D_1_1String_1ae12b0795cdccd291dbd33e1b212639c4" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>SetUTF8FromWChar</name></member>
+      <member refid="classUrho3D_1_1String_1a43f1e9b5e0db83b72737e93be28df62a" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Split</name></member>
+      <member refid="classUrho3D_1_1String_1aaf7f7e82d500a2e9264a7e1200790532" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Split</name></member>
+      <member refid="classUrho3D_1_1String_1afa8a3643a9866f6846520794d3b45b47" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>StartsWith</name></member>
+      <member refid="classUrho3D_1_1String_1aaad16c980aa7b6bbe445af70ac699bb1" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a0865ce1246f38b982b3bd3cb75fe55ba" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1abc3532d15b31fc528c279e9d72e58d5e" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1ac0863435ccb08894dd37d2cd738f8ccc" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1aa3abd69afa71ba6d2079fccd2e6bff83" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a62c0e835feb3daf1f3632d0dd94a32fd" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1ae9d27b9a38d4c27c1a846692c6dd0a20" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a6fe6e95c327296da20019669d97089bf" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a31b0d66455e0726415102bc2ccdf7c7f" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1ab480e661373f368141846592b673a80f" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1ae9434debeb06bd77b7b899e7b6620031" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a4c453490d6293c2d9c8b1e57ed240e34" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1aebfc89ff3cef7691cc7f79f63d361ace" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a2d065c091f3c98ceb14411bd825bb9a3" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1ad8d8c693dae363d5f307fdc8450e50fd" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1aa2ddb0f260ec067ced1a5070e42222fd" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1adb185805079fbb72bb6924809a12818d" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a5b98960b8c05a771413d40f9b1e0c99d" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1ad959433288ef79c6a1725a70b1b2a0b5" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1af32dc78ca5f02d9b6a592fccd4b1e28a" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1af18093cddc9cbeb8e9cda7177962bfd0" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a5da5d6949682ec1450ae407d416bd030" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a3700df0a2c11ae22fb938fc5fca1c642" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>String</name></member>
+      <member refid="classUrho3D_1_1String_1a812ed0a9a7397006169814ac64295b78" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Substring</name></member>
+      <member refid="classUrho3D_1_1String_1a97e9c84a070c3712c8971fc4b2cdc15b" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Substring</name></member>
+      <member refid="classUrho3D_1_1String_1a194e2ff9a391edfc4d67c432595c5ea6" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>SubstringUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1a89982ce418cdecf942b9660c5a414d2a" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>SubstringUTF8</name></member>
+      <member refid="classUrho3D_1_1String_1af30c9880e57d3a451d7d48319e1f68c1" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Swap</name></member>
+      <member refid="classUrho3D_1_1String_1aa3acc5cd3ba2ee53be9e619f7fdc6930" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>ToHash</name></member>
+      <member refid="classUrho3D_1_1String_1ae4579347cf23bddc5b56291f75aafb05" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>ToLower</name></member>
+      <member refid="classUrho3D_1_1String_1add58cf48fff88b540e31d30f6235e537" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>ToUpper</name></member>
+      <member refid="classUrho3D_1_1String_1ad100f77dbca5f666613aa300447092a0" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>Trimmed</name></member>
+      <member refid="classUrho3D_1_1String_1a09a6c50cf0161436af5483c9816fb0d7" prot="public" virt="non-virtual"><scope>Urho3D::String</scope><name>~String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

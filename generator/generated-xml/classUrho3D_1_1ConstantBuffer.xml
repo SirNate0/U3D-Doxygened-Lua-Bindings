@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ConstantBuffer" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ConstantBuffer</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1GPUObject" prot="public" virt="non-virtual">Urho3D::GPUObject</basecompoundref>
+    <includes refid="ConstantBuffer_8h" local="no">ConstantBuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ConstantBuffer_1a994a600ea267f2615e2e92df7f3896d5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::ConstantBuffer::shadowData_</definition>
+        <argsstring></argsstring>
+        <name>shadowData_</name>
+        <briefdescription>
+<para>Shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="66" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ConstantBuffer_1a7e1718df59ef2d45e23fd535e3078e75" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ConstantBuffer::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Buffer byte size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="68" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ConstantBuffer_1a9dfd2e8a845eaf49cafba2fbd3cbc6a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ConstantBuffer::dirty_</definition>
+        <argsstring></argsstring>
+        <name>dirty_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="70" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a2298c42ed175345ec2b2b711810549b7" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ConstantBuffer::ConstantBuffer</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>ConstantBuffer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a666fc1561b05f25ed9c99fefe858b7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ConstantBuffer::~ConstantBuffer</definition>
+        <argsstring>() override</argsstring>
+        <name>~ConstantBuffer</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a634b7a72ff5c46698afb02565b7809bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::ConstantBuffer::OnDeviceReset</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceReset</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a18ab28f33620594506eeb2c5fe168106">OnDeviceReset</reimplements>
+        <briefdescription>
+<para>Recreate the GPU resource and restore data if applicable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a765896a109d0453afa1602d104984436" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::ConstantBuffer::Release</definition>
+        <argsstring>() override</argsstring>
+        <name>Release</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a86d97d51d21841b9c057baee19a17a30">Release</reimplements>
+        <briefdescription>
+<para>Release the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a0f6a0c6d99be9b1f43ada05e3758bb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ConstantBuffer::SetSize</definition>
+        <argsstring>(unsigned size)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set size and create GPU-side buffer. Return true on success. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a0a964b0e54b8c97bd86721b614f2b769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ConstantBuffer::SetParameter</definition>
+        <argsstring>(unsigned offset, unsigned size, const void *data)</argsstring>
+        <name>SetParameter</name>
+        <param>
+          <type>unsigned</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set a generic parameter and mark buffer dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1ad0e4eaed4041edc40840bbe3a7e27aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ConstantBuffer::SetVector3ArrayParameter</definition>
+        <argsstring>(unsigned offset, unsigned rows, const void *data)</argsstring>
+        <name>SetVector3ArrayParameter</name>
+        <param>
+          <type>unsigned</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> array parameter and mark buffer dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1a749b5b53a62be1f11f41353d370242a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ConstantBuffer::Apply</definition>
+        <argsstring>()</argsstring>
+        <name>Apply</name>
+        <briefdescription>
+<para>Apply to GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1ae7c130e85b2285d169a1dad38c0f10a1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ConstantBuffer::GetSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+<para>Return size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="59" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ConstantBuffer_1ae533b6b82e9810f4567640af56a40900" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ConstantBuffer::IsDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDirty</name>
+        <briefdescription>
+<para>Return whether has unapplied data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="62" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Hardware constant buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::ConstantBuffer</label>
+        <link refid="classUrho3D_1_1ConstantBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::ConstantBuffer</label>
+        <link refid="classUrho3D_1_1ConstantBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ConstantBuffer.h" bodystart="35" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a749b5b53a62be1f11f41353d370242a6" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>Apply</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a90de5fa07e164d6b5e95f832a0741088" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>ClearDataLost</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a2298c42ed175345ec2b2b711810549b7" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>ConstantBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ab6c82e62ca8b1098c4157acfe517c772" prot="protected" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>dataLost_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ada5a50cf10c6f65deb6b273bfc1649ab" prot="protected" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>dataPending_</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a9dfd2e8a845eaf49cafba2fbd3cbc6a5" prot="private" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>dirty_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a63ba593256e723f7f15a62fca79fe10d" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetGPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1afeb0a749cfb6c1bb4c7f1b4a35d7f901" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetGPUObjectName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a77fa1abcd0a6b3a7cce431c10b2f7c26" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetGraphics</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1ae7c130e85b2285d169a1dad38c0f10a1" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetSize</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a403872d965887004f1021405870ff865" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>GPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1abf1a902885d2c3bac02f3f58e0e0f037" prot="protected" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a7039fc3a187fd67855a802c00099452b" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>HasPendingData</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a6938a78e8bb131f8c53e136778c9f6c2" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1ae533b6b82e9810f4567640af56a40900" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>IsDirty</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a02851f652df5053623c4434f2cd9a4b8" prot="protected" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>object_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad5ecd882dd04590d38951f897d1f6575" prot="public" virt="virtual"><scope>Urho3D::ConstantBuffer</scope><name>OnDeviceLost</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a634b7a72ff5c46698afb02565b7809bf" prot="public" virt="virtual"><scope>Urho3D::ConstantBuffer</scope><name>OnDeviceReset</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::ConstantBuffer</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a765896a109d0453afa1602d104984436" prot="public" virt="virtual"><scope>Urho3D::ConstantBuffer</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a0a964b0e54b8c97bd86721b614f2b769" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SetParameter</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a0f6a0c6d99be9b1f43ada05e3758bb40" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1ad0e4eaed4041edc40840bbe3a7e27aa9" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SetVector3ArrayParameter</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a994a600ea267f2615e2e92df7f3896d5" prot="private" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>shadowData_</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a7e1718df59ef2d45e23fd535e3078e75" prot="private" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1ConstantBuffer_1a666fc1561b05f25ed9c99fefe858b7e0" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>~ConstantBuffer</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad23b82c85519c520437707ddd4b8097f" prot="public" virt="virtual"><scope>Urho3D::ConstantBuffer</scope><name>~GPUObject</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::ConstantBuffer</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ConstantBuffer</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

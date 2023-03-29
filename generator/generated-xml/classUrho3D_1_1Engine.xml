@@ -1,0 +1,936 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Engine" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Engine</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="Engine_8h" local="no">Engine.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1ab0cb390e63841b4944e4d24842874c0d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HiresTimer" kindref="compound">HiresTimer</ref></type>
+        <definition>HiresTimer Urho3D::Engine::frameTimer_</definition>
+        <argsstring></argsstring>
+        <name>frameTimer_</name>
+        <briefdescription>
+<para>Frame update timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="145" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1ac93e90b3769f519dcf68fed0c2127dd7" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt;</type>
+        <definition>PODVector&lt;float&gt; Urho3D::Engine::lastTimeSteps_</definition>
+        <argsstring></argsstring>
+        <name>lastTimeSteps_</name>
+        <briefdescription>
+<para>Previous timesteps for smoothing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="147" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1abbb412584b22f45a955e6d3fae418a1f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Engine::timeStep_</definition>
+        <argsstring></argsstring>
+        <name>timeStep_</name>
+        <briefdescription>
+<para>Next frame timestep in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="149" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a87425f5fdea1ed10c8f04bcef5ffe6be" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Engine::timeStepSmoothing_</definition>
+        <argsstring></argsstring>
+        <name>timeStepSmoothing_</name>
+        <briefdescription>
+<para>How many frames to average for the smoothed timestep. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="151" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a09b73c9dc561b15dc8acd8357b949441" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Engine::minFps_</definition>
+        <argsstring></argsstring>
+        <name>minFps_</name>
+        <briefdescription>
+<para>Minimum frames per second. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="153" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a61d6c7e5aaaf418456dbe57ce866e534" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Engine::maxFps_</definition>
+        <argsstring></argsstring>
+        <name>maxFps_</name>
+        <briefdescription>
+<para>Maximum frames per second. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="155" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1ac62658e18867803085947fe053aeaaf3" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Engine::maxInactiveFps_</definition>
+        <argsstring></argsstring>
+        <name>maxInactiveFps_</name>
+        <briefdescription>
+<para>Maximum frames per second when the application does not have input focus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="157" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a748c0da0e554ace853e78f5cc97f8a34" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::pauseMinimized_</definition>
+        <argsstring></argsstring>
+        <name>pauseMinimized_</name>
+        <briefdescription>
+<para>Pause when minimized flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="159" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a63516c9c5bdfc251fc34f7f551660f90" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::autoExit_</definition>
+        <argsstring></argsstring>
+        <name>autoExit_</name>
+        <briefdescription>
+<para>Auto-exit flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="165" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1ab154db0b933e65a6a247896724ce3251" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <briefdescription>
+<para>Initialized flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="167" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a07e4afce2f22eaf86c9c5e6e9563601d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::exiting_</definition>
+        <argsstring></argsstring>
+        <name>exiting_</name>
+        <briefdescription>
+<para>Exiting flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="169" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a48b6d0fda52b4907db21078644ba19b5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::headless_</definition>
+        <argsstring></argsstring>
+        <name>headless_</name>
+        <briefdescription>
+<para>Headless mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="171" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Engine_1a9503c4134c2ecdf68105177c2d6c8fbe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::audioPaused_</definition>
+        <argsstring></argsstring>
+        <name>audioPaused_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Audio" kindref="compound">Audio</ref> paused flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="173" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a190250d8e8348740f88773d294e0922d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Engine::Engine</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Engine</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a85b1627f6845fe0547f1ed567d08ef39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Engine::~Engine</definition>
+        <argsstring>() override</argsstring>
+        <name>~Engine</name>
+        <briefdescription>
+<para>Destruct. Free all subsystems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1ae686bb22644561e57a4aaef3f8665c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::Initialize</definition>
+        <argsstring>(const VariantMap &amp;parameters)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>Initialize engine using parameters given and show the application window. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a557bfd8b68b34e09f8ed3999385e9c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::InitializeResourceCache</definition>
+        <argsstring>(const VariantMap &amp;parameters, bool removeOld=true)</argsstring>
+        <name>InitializeResourceCache</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>removeOld</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Reinitialize resource cache subsystem using parameters given. Implicitly called by Initialize. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a7670e665e72f4efd8426ba7a9559d3b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::RunFrame</definition>
+        <argsstring>()</argsstring>
+        <name>RunFrame</name>
+        <briefdescription>
+<para>Run one frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a850a88f1b46d532762bead492c78e83b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Console" kindref="compound">Console</ref> *</type>
+        <definition>Console* Urho3D::Engine::CreateConsole</definition>
+        <argsstring>()</argsstring>
+        <name>CreateConsole</name>
+        <briefdescription>
+<para>Create the console and return it. May return null if engine configuration does not allow creation (headless mode). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a11dbd2da7f3e9a4ec289be755f318305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1DebugHud" kindref="compound">DebugHud</ref> *</type>
+        <definition>DebugHud* Urho3D::Engine::CreateDebugHud</definition>
+        <argsstring>()</argsstring>
+        <name>CreateDebugHud</name>
+        <briefdescription>
+<para>Create the debug hud. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="54" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a108055e5cd2c0ddf97d5769175a75d4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetMinFps</definition>
+        <argsstring>(int fps)</argsstring>
+        <name>SetMinFps</name>
+        <param>
+          <type>int</type>
+          <declname>fps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set minimum frames per second. If FPS goes lower than this, time will appear to slow down. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a1b10f802e6954fa8409cd5398aae9060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetMaxFps</definition>
+        <argsstring>(int fps)</argsstring>
+        <name>SetMaxFps</name>
+        <param>
+          <type>int</type>
+          <declname>fps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum frames per second. The engine will sleep if FPS is higher than this. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a690ce0dff5ffdc0d24b4607d4e23af18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetMaxInactiveFps</definition>
+        <argsstring>(int fps)</argsstring>
+        <name>SetMaxInactiveFps</name>
+        <param>
+          <type>int</type>
+          <declname>fps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum frames per second when the application does not have input focus. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a49f86a240da0674a0733d3090646445d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetTimeStepSmoothing</definition>
+        <argsstring>(int frames)</argsstring>
+        <name>SetTimeStepSmoothing</name>
+        <param>
+          <type>int</type>
+          <declname>frames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how many frames to average for timestep smoothing. Default is 2. 1 disables smoothing. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1ab3fc430d9c0e4fdbfefff85ae66eb65c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetPauseMinimized</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetPauseMinimized</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to pause update events and audio when minimized. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a2eb82b1d81e9232103d22bbefad8c7a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetAutoExit</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetAutoExit</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to exit automatically on exit request (window close button). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1abae24afa5bbfe8775213189ca79f4938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::SetNextTimeStep</definition>
+        <argsstring>(float seconds)</argsstring>
+        <name>SetNextTimeStep</name>
+        <param>
+          <type>float</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+<para>Override timestep of the next frame. Should be called in between <ref refid="classUrho3D_1_1Engine_1a7670e665e72f4efd8426ba7a9559d3b0" kindref="member">RunFrame()</ref> calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1afeccd853454e5deee375a3570f7bc4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::Exit</definition>
+        <argsstring>()</argsstring>
+        <name>Exit</name>
+        <briefdescription>
+<para>Close the graphics window and set the exit flag. No-op on iOS/tvOS, as an iOS/tvOS application can not legally exit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a3128d120bbfc75b8441fb3aaa378d9b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::DumpProfiler</definition>
+        <argsstring>()</argsstring>
+        <name>DumpProfiler</name>
+        <briefdescription>
+<para>Dump profiling information to the log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a72180bed4d023745cc4e9730837ac648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::DumpResources</definition>
+        <argsstring>(bool dumpFileName=false)</argsstring>
+        <name>DumpResources</name>
+        <param>
+          <type>bool</type>
+          <declname>dumpFileName</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Dump information of all resources to the log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a8ca89c7621c8c24944c58ed0ae198d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::DumpMemory</definition>
+        <argsstring>()</argsstring>
+        <name>DumpMemory</name>
+        <briefdescription>
+<para>Dump information of all memory allocations to the log. Supported in MSVC debug mode only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a7661332689a3dc27e2c4eb95d245b7a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Engine::GetNextTimeStep</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNextTimeStep</name>
+        <briefdescription>
+<para>Get timestep of the next frame. Updated by <ref refid="classUrho3D_1_1Engine_1a66664ffe053548c6bfd0d096809f039d" kindref="member">ApplyFrameLimit()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="85" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1ac665fba0fbeddfb5c5879a754648e848" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Engine::GetMinFps</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the minimum frames per second. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="89" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a194b9f0f4199c0d7ddb6d76a3356041c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Engine::GetMaxFps</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the maximum frames per second. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="93" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1aca3bd45b2cab029498d3a6fcc7566923" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Engine::GetMaxInactiveFps</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxInactiveFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the maximum frames per second when the application does not have input focus. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="97" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a020ce391a22a7f0252aaa1a15d524cf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Engine::GetTimeStepSmoothing</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeStepSmoothing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return how many frames to average for timestep smoothing. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="101" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a63e6af1cc17a8c492353dd8187bade81" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::GetPauseMinimized</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPauseMinimized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether to pause update events and audio when minimized. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="105" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1aa7ae6b6f827d871ad1421ecc0fa399fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::GetAutoExit</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAutoExit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether to exit automatically on exit request. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="109" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a3a9f116bc86ba45c8f9cffede7aa3c66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::IsInitialized</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether engine has been initialized. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="113" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a9956f6e6ee3c8c23de85c7053bc00630" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::IsExiting</definition>
+        <argsstring>() const</argsstring>
+        <name>IsExiting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether exit has been requested. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="117" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a4cde7c038429bc1d55e9f4ad159c59d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Engine::IsHeadless</definition>
+        <argsstring>() const</argsstring>
+        <name>IsHeadless</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether the engine has been created in headless mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="121" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a667e06be9a901905055989b9071efb55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Send frame update events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a9c582d4f4e9a7ea2b1a046dac4dea8e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::Render</definition>
+        <argsstring>()</argsstring>
+        <name>Render</name>
+        <briefdescription>
+<para>Render after frame update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a66664ffe053548c6bfd0d096809f039d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::ApplyFrameLimit</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyFrameLimit</name>
+        <briefdescription>
+<para>Get the timestep for the next frame and sleep for frame limiting if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="128" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a4194384f7443b7d09606f965fd2cf387" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>static VariantMap Urho3D::Engine::ParseParameters</definition>
+        <argsstring>(const Vector&lt; String &gt; &amp;arguments)</argsstring>
+        <name>ParseParameters</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+<para>Parse the engine startup parameters map from command line arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="131" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1ae2f029423b19b143e9d22a3d59f2c8cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Urho3D::Engine::HasParameter</definition>
+        <argsstring>(const VariantMap &amp;parameters, const String &amp;parameter)</argsstring>
+        <name>HasParameter</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+<para>Return whether startup parameters contains a specific parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="133" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a9a4cd0d98dceadaad4de3b9ef3f54f0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+        <definition>static const Variant&amp; Urho3D::Engine::GetParameter</definition>
+        <argsstring>(const VariantMap &amp;parameters, const String &amp;parameter, const Variant &amp;defaultValue=Variant::EMPTY)</argsstring>
+        <name>GetParameter</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>parameter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>defaultValue</declname>
+          <defval><ref refid="classUrho3D_1_1Variant_1aa264554e2d846f32506c14b4f61547ef" kindref="member">Variant::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Get an engine startup parameter, with default value if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="136" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a9c49623157d56d15d8ff1bcc337e177f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::HandleExitRequested</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleExitRequested</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle exit requested event. Auto-exit if enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="140" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Engine_1a040d627e20ef8c0ffcdaf57e0c72333a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Engine::DoExit</definition>
+        <argsstring>()</argsstring>
+        <name>DoExit</name>
+        <briefdescription>
+<para>Actually perform the exit actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="142" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Urho3D engine. Creates the other subsystems. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Engine</label>
+        <link refid="classUrho3D_1_1Engine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Engine</label>
+        <link refid="classUrho3D_1_1Engine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" line="35" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Engine/Engine.h" bodystart="36" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Engine_1a66664ffe053548c6bfd0d096809f039d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>ApplyFrameLimit</name></member>
+      <member refid="classUrho3D_1_1Engine_1a9503c4134c2ecdf68105177c2d6c8fbe" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>audioPaused_</name></member>
+      <member refid="classUrho3D_1_1Engine_1a63516c9c5bdfc251fc34f7f551660f90" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>autoExit_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Engine</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Engine_1a850a88f1b46d532762bead492c78e83b" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>CreateConsole</name></member>
+      <member refid="classUrho3D_1_1Engine_1a11dbd2da7f3e9a4ec289be755f318305" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>CreateDebugHud</name></member>
+      <member refid="classUrho3D_1_1Engine_1a040d627e20ef8c0ffcdaf57e0c72333a" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>DoExit</name></member>
+      <member refid="classUrho3D_1_1Engine_1a8ca89c7621c8c24944c58ed0ae198d69" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>DumpMemory</name></member>
+      <member refid="classUrho3D_1_1Engine_1a3128d120bbfc75b8441fb3aaa378d9b8" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>DumpProfiler</name></member>
+      <member refid="classUrho3D_1_1Engine_1a72180bed4d023745cc4e9730837ac648" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>DumpResources</name></member>
+      <member refid="classUrho3D_1_1Engine_1a190250d8e8348740f88773d294e0922d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Engine</name></member>
+      <member refid="classUrho3D_1_1Engine_1afeccd853454e5deee375a3570f7bc4b2" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Exit</name></member>
+      <member refid="classUrho3D_1_1Engine_1a07e4afce2f22eaf86c9c5e6e9563601d" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>exiting_</name></member>
+      <member refid="classUrho3D_1_1Engine_1ab0cb390e63841b4944e4d24842874c0d" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>frameTimer_</name></member>
+      <member refid="classUrho3D_1_1Engine_1aa7ae6b6f827d871ad1421ecc0fa399fc" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetAutoExit</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Engine_1a194b9f0f4199c0d7ddb6d76a3356041c" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetMaxFps</name></member>
+      <member refid="classUrho3D_1_1Engine_1aca3bd45b2cab029498d3a6fcc7566923" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetMaxInactiveFps</name></member>
+      <member refid="classUrho3D_1_1Engine_1ac665fba0fbeddfb5c5879a754648e848" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetMinFps</name></member>
+      <member refid="classUrho3D_1_1Engine_1a7661332689a3dc27e2c4eb95d245b7a7" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetNextTimeStep</name></member>
+      <member refid="classUrho3D_1_1Engine_1a9a4cd0d98dceadaad4de3b9ef3f54f0f" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetParameter</name></member>
+      <member refid="classUrho3D_1_1Engine_1a63e6af1cc17a8c492353dd8187bade81" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetPauseMinimized</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Engine_1a020ce391a22a7f0252aaa1a15d524cf2" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetTimeStepSmoothing</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Engine</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Engine</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Engine</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Engine_1a9c49623157d56d15d8ff1bcc337e177f" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>HandleExitRequested</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Engine_1ae2f029423b19b143e9d22a3d59f2c8cc" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>HasParameter</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Engine_1a48b6d0fda52b4907db21078644ba19b5" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>headless_</name></member>
+      <member refid="classUrho3D_1_1Engine_1ae686bb22644561e57a4aaef3f8665c0e" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Initialize</name></member>
+      <member refid="classUrho3D_1_1Engine_1ab154db0b933e65a6a247896724ce3251" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>initialized_</name></member>
+      <member refid="classUrho3D_1_1Engine_1a557bfd8b68b34e09f8ed3999385e9c1b" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>InitializeResourceCache</name></member>
+      <member refid="classUrho3D_1_1Engine_1a9956f6e6ee3c8c23de85c7053bc00630" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>IsExiting</name></member>
+      <member refid="classUrho3D_1_1Engine_1a4cde7c038429bc1d55e9f4ad159c59d2" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>IsHeadless</name></member>
+      <member refid="classUrho3D_1_1Engine_1a3a9f116bc86ba45c8f9cffede7aa3c66" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>IsInitialized</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Engine_1ac93e90b3769f519dcf68fed0c2127dd7" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>lastTimeSteps_</name></member>
+      <member refid="classUrho3D_1_1Engine_1a61d6c7e5aaaf418456dbe57ce866e534" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>maxFps_</name></member>
+      <member refid="classUrho3D_1_1Engine_1ac62658e18867803085947fe053aeaaf3" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>maxInactiveFps_</name></member>
+      <member refid="classUrho3D_1_1Engine_1a09b73c9dc561b15dc8acd8357b949441" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>minFps_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Engine</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Engine_1a4194384f7443b7d09606f965fd2cf387" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>ParseParameters</name></member>
+      <member refid="classUrho3D_1_1Engine_1a748c0da0e554ace853e78f5cc97f8a34" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>pauseMinimized_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Engine_1a9c582d4f4e9a7ea2b1a046dac4dea8e3" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Render</name></member>
+      <member refid="classUrho3D_1_1Engine_1a7670e665e72f4efd8426ba7a9559d3b0" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>RunFrame</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Engine_1a2eb82b1d81e9232103d22bbefad8c7a3" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetAutoExit</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Engine_1a1b10f802e6954fa8409cd5398aae9060" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetMaxFps</name></member>
+      <member refid="classUrho3D_1_1Engine_1a690ce0dff5ffdc0d24b4607d4e23af18" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetMaxInactiveFps</name></member>
+      <member refid="classUrho3D_1_1Engine_1a108055e5cd2c0ddf97d5769175a75d4d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetMinFps</name></member>
+      <member refid="classUrho3D_1_1Engine_1abae24afa5bbfe8775213189ca79f4938" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetNextTimeStep</name></member>
+      <member refid="classUrho3D_1_1Engine_1ab3fc430d9c0e4fdbfefff85ae66eb65c" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetPauseMinimized</name></member>
+      <member refid="classUrho3D_1_1Engine_1a49f86a240da0674a0733d3090646445d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SetTimeStepSmoothing</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Engine_1abbb412584b22f45a955e6d3fae418a1f" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>timeStep_</name></member>
+      <member refid="classUrho3D_1_1Engine_1a87425f5fdea1ed10c8f04bcef5ffe6be" prot="private" virt="non-virtual"><scope>Urho3D::Engine</scope><name>timeStepSmoothing_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Engine_1a667e06be9a901905055989b9071efb55" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Engine_1a85b1627f6845fe0547f1ed567d08ef39" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>~Engine</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Engine</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Engine</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

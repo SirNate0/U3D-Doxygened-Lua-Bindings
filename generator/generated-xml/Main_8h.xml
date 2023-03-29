@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Main_8h" kind="file" language="C++">
+    <compoundname>Main.h</compoundname>
+    <includes refid="ProcessUtils_8h" local="yes">../Core/ProcessUtils.h</includes>
+    <includedby refid="Application_8h" local="yes">/home/nathan/Projects/u3d/Source/Urho3D/Engine/Application.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Core/Main.h</label>
+        <link refid="Main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="17">
+        <label>cstdarg</label>
+      </node>
+      <node id="2">
+        <label>../Core/ProcessUtils.h</label>
+        <link refid="ProcessUtils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="14">
+        <label>new</label>
+      </node>
+      <node id="15">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>cstdlib</label>
+      </node>
+      <node id="18">
+        <label>cctype</label>
+      </node>
+      <node id="16">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>algorithm</label>
+      </node>
+      <node id="9">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="11">
+        <label>cstring</label>
+      </node>
+      <node id="13">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Core/Main.h</label>
+        <link refid="Main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Engine/Application.h</label>
+        <link refid="Application_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="Main_8h_1a5b6cd796d87763e756468b30685ff0ee" prot="public" static="no">
+        <name>URHO3D_DEFINE_MAIN</name>
+        <param><defname>function</defname></param>
+        <initializer>int main(int argc, char** argv) \
+{ \
+    Urho3D::ParseArguments(argc, argv); \
+    return function; \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Main.h" line="81" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Main.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Core/ProcessUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>!defined(URHO3D_WIN32_CONSOLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Core/MiniDump.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;crtdbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>a<sp/>platform-specific<sp/>main<sp/>function,<sp/>which<sp/>in<sp/>turn<sp/>executes<sp/>the<sp/>user-defined<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MSVC<sp/>debug<sp/>mode:<sp/>use<sp/>memory<sp/>leak<sp/>reporting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>defined(_DEBUG)<sp/>&amp;&amp;<sp/>!defined(URHO3D_WIN32_CONSOLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>URHO3D_DEFINE_MAIN(function)<sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">int<sp/>WINAPI<sp/>WinMain(HINSTANCE<sp/>hInstance,<sp/>HINSTANCE<sp/>prevInstance,<sp/>PSTR<sp/>cmdLine,<sp/>int<sp/>showCmd)<sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF<sp/>|<sp/>_CRTDBG_LEAK_CHECK_DF);<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Urho3D::ParseArguments(GetCommandLineW());<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>function;<sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>MSVC<sp/>release<sp/>mode:<sp/>write<sp/>minidump<sp/>on<sp/>crash</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_MSC_VER)<sp/>&amp;&amp;<sp/>defined(URHO3D_MINIDUMPS)<sp/>&amp;&amp;<sp/>!defined(URHO3D_WIN32_CONSOLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>URHO3D_DEFINE_MAIN(function)<sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor">int<sp/>WINAPI<sp/>WinMain(HINSTANCE<sp/>hInstance,<sp/>HINSTANCE<sp/>prevInstance,<sp/>PSTR<sp/>cmdLine,<sp/>int<sp/>showCmd)<sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Urho3D::ParseArguments(GetCommandLineW());<sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>int<sp/>exitCode;<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__try<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exitCode<sp/>=<sp/>function;<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__except(Urho3D::WriteMiniDump(&quot;Urho3D&quot;</highlight><highlight class="normal">,<sp/>GetExceptionInformation()))<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>exitCode;<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Other<sp/>Win32<sp/>or<sp/>minidumps<sp/>disabled:<sp/>just<sp/>execute<sp/>the<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(_WIN32)<sp/>&amp;&amp;<sp/>!defined(URHO3D_WIN32_CONSOLE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>URHO3D_DEFINE_MAIN(function)<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor">int<sp/>WINAPI<sp/>WinMain(HINSTANCE<sp/>hInstance,<sp/>HINSTANCE<sp/>prevInstance,<sp/>PSTR<sp/>cmdLine,<sp/>int<sp/>showCmd)<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Urho3D::ParseArguments(GetCommandLineW());<sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>function;<sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Android<sp/>or<sp/>iOS<sp/>or<sp/>tvOS:<sp/>use<sp/>SDL_main</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__ANDROID__)<sp/>||<sp/>defined(IOS)<sp/>||<sp/>defined(TVOS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>URHO3D_DEFINE_MAIN(function)<sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor">extern<sp/>&quot;C&quot;</highlight><highlight class="normal"><sp/>__attribute__((visibility(&quot;default&quot;)))<sp/>int<sp/>SDL_main(int<sp/>argc,<sp/>char**<sp/>argv);<sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">int<sp/>SDL_main(int<sp/>argc,<sp/>char**<sp/>argv)<sp/>\</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>Urho3D::ParseArguments(argc,<sp/>argv);<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>function;<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Linux<sp/>or<sp/>OS<sp/>X:<sp/>use<sp/>main</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>URHO3D_DEFINE_MAIN(function)<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor">int<sp/>main(int<sp/>argc,<sp/>char**<sp/>argv)<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Urho3D::ParseArguments(argc,<sp/>argv);<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>function;<sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Main.h"/>
+  </compounddef>
+</doxygen>

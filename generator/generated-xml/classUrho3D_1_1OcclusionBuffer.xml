@@ -1,0 +1,1154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1OcclusionBuffer" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::OcclusionBuffer</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="OcclusionBuffer_8h" local="no">OcclusionBuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a50a0c0f57404f138abd4e7a2fbd326db" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1OcclusionBufferData" kindref="compound">OcclusionBufferData</ref> &gt;</type>
+        <definition>Vector&lt;OcclusionBufferData&gt; Urho3D::OcclusionBuffer::buffers_</definition>
+        <argsstring></argsstring>
+        <name>buffers_</name>
+        <briefdescription>
+<para>Highest-level buffer data per thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="183" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1ae113003592b620de366c5a612dff293e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; <ref refid="structUrho3D_1_1DepthValue" kindref="compound">DepthValue</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedArrayPtr&lt;DepthValue&gt; &gt; Urho3D::OcclusionBuffer::mipBuffers_</definition>
+        <argsstring></argsstring>
+        <name>mipBuffers_</name>
+        <briefdescription>
+<para>Reduced size depth buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="185" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a1971107e7d6da3458b039a8636ed64eb" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1OcclusionBatch" kindref="compound">OcclusionBatch</ref> &gt;</type>
+        <definition>PODVector&lt;OcclusionBatch&gt; Urho3D::OcclusionBuffer::batches_</definition>
+        <argsstring></argsstring>
+        <name>batches_</name>
+        <briefdescription>
+<para>Submitted render jobs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="187" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1aa3614b52aec7b3fd6ea0aae00d1c5ac9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::OcclusionBuffer::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Buffer width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="189" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a8433a142f574ddb44a6c77e897f8a66a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::OcclusionBuffer::height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Buffer height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="191" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1afbcb8716f7cfe4c341d1671b1c021935" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OcclusionBuffer::numTriangles_</definition>
+        <argsstring></argsstring>
+        <name>numTriangles_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Number of rendered triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="193" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1abe0f1ac2e671946f471586dbab0716fb" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OcclusionBuffer::maxTriangles_</definition>
+        <argsstring></argsstring>
+        <name>maxTriangles_</name>
+        <initializer>{OCCLUSION_DEFAULT_MAX_TRIANGLES}</initializer>
+        <briefdescription>
+<para>Maximum number of triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="195" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a27fcefc1daaf1500de62c40ea8ba2bbe" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+        <definition>CullMode Urho3D::OcclusionBuffer::cullMode_</definition>
+        <argsstring></argsstring>
+        <name>cullMode_</name>
+        <initializer>{CULL_CCW}</initializer>
+        <briefdescription>
+<para>Culling mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="197" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a16187145748e9e9cf183196f346213ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::depthHierarchyDirty_</definition>
+        <argsstring></argsstring>
+        <name>depthHierarchyDirty_</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>Depth hierarchy needs update flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="199" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a419cd90c918a111238d1a0d5d442527f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::reverseCulling_</definition>
+        <argsstring></argsstring>
+        <name>reverseCulling_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Culling reverse flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="201" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1ac05514fa79bbaeab63ef1ebfd3a9b5cf" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::OcclusionBuffer::view_</definition>
+        <argsstring></argsstring>
+        <name>view_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> transform matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="203" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1aa615a744b8133b91f62ad92b0da4d8c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::OcclusionBuffer::projection_</definition>
+        <argsstring></argsstring>
+        <name>projection_</name>
+        <briefdescription>
+<para>Projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="205" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a33777c45bc398c97cd7c2590a1d912c4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::OcclusionBuffer::viewProj_</definition>
+        <argsstring></argsstring>
+        <name>viewProj_</name>
+        <briefdescription>
+<para>Combined view and projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="207" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a1f5af425d9f0f4bb036d28069429b36a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer Urho3D::OcclusionBuffer::useTimer_</definition>
+        <argsstring></argsstring>
+        <name>useTimer_</name>
+        <briefdescription>
+<para>Last used timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="209" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1af7efd1cb6b5eea21f42089ebc20dc684" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::nearClip_</definition>
+        <argsstring></argsstring>
+        <name>nearClip_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Near clip distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="211" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a576beca1e44c34546b30c9228f848237" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::farClip_</definition>
+        <argsstring></argsstring>
+        <name>farClip_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Far clip distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="213" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1aaa8a5373dc9d0a1e8b4cfb6f6d664e71" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::scaleX_</definition>
+        <argsstring></argsstring>
+        <name>scaleX_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>X scaling for viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="215" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a1a228b0bb15b11c3c4c43df31004fd42" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::scaleY_</definition>
+        <argsstring></argsstring>
+        <name>scaleY_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Y scaling for viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="217" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a3cb94494b65c8092a3014631065b0dc6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::offsetX_</definition>
+        <argsstring></argsstring>
+        <name>offsetX_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>X offset for viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="219" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a6044d9f941fc378251a6134f921d5664" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::offsetY_</definition>
+        <argsstring></argsstring>
+        <name>offsetY_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Y offset for viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="221" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a2c4e4cc8c98d5be281f5495df9ec3478" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::projOffsetScaleX_</definition>
+        <argsstring></argsstring>
+        <name>projOffsetScaleX_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Combined X projection and viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="223" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1OcclusionBuffer_1a56912f1a2929978035df28992415b5e0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::projOffsetScaleY_</definition>
+        <argsstring></argsstring>
+        <name>projOffsetScaleY_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Combined Y projection and viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="225" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a78df75ac7ca2c3c20da4f2f4ef4b8ed7" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::OcclusionBuffer::OcclusionBuffer</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>OcclusionBuffer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="97" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a9fe2f94c9e2247995cb279224e97eb6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::OcclusionBuffer::~OcclusionBuffer</definition>
+        <argsstring>() override</argsstring>
+        <name>~OcclusionBuffer</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="99" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1afb6eea532ca2f8c396fd29c291a00f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::SetSize</definition>
+        <argsstring>(int width, int height, bool threaded)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>threaded</declname>
+        </param>
+        <briefdescription>
+<para>Set occlusion buffer size and whether to reserve multiple buffers for threading optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a2540b689f2451b6358fd99717151fff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::SetView</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>SetView</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Set camera view to render from. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1aa3b312a2b8966c852a0d65c26b64f9fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::SetMaxTriangles</definition>
+        <argsstring>(unsigned triangles)</argsstring>
+        <name>SetMaxTriangles</name>
+        <param>
+          <type>unsigned</type>
+          <declname>triangles</declname>
+        </param>
+        <briefdescription>
+<para>Set maximum triangles to render. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1abb237b9998494fab164e9fd299aabcf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::SetCullMode</definition>
+        <argsstring>(CullMode mode)</argsstring>
+        <name>SetCullMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set culling mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a324516979db790907e41a1ba4dcb52f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Reset number of triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a6e7f4686a38036fce215dc67d3ea43a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a62a292e64edc586d8d03b1494e2aa46d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::AddTriangles</definition>
+        <argsstring>(const Matrix3x4 &amp;model, const void *vertexData, unsigned vertexSize, unsigned vertexStart, unsigned vertexCount)</argsstring>
+        <name>AddTriangles</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>vertexData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexSize</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexCount</declname>
+        </param>
+        <briefdescription>
+<para>Submit a triangle mesh to the buffer using non-indexed geometry. Return true if did not overflow the allowed triangle count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1ae4e94bdaae8ce72fd240fcbab021e275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::AddTriangles</definition>
+        <argsstring>(const Matrix3x4 &amp;model, const void *vertexData, unsigned vertexSize, const void *indexData, unsigned indexSize, unsigned indexStart, unsigned indexCount)</argsstring>
+        <name>AddTriangles</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>vertexData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexSize</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>indexData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexSize</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexCount</declname>
+        </param>
+        <briefdescription>
+<para>Submit a triangle mesh to the buffer using indexed geometry. Return true if did not overflow the allowed triangle count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a959d9e7ad060ebab9769b866ac66e94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::DrawTriangles</definition>
+        <argsstring>()</argsstring>
+        <name>DrawTriangles</name>
+        <briefdescription>
+<para>Draw submitted batches. Uses worker threads if enabled during <ref refid="classUrho3D_1_1OcclusionBuffer_1afb6eea532ca2f8c396fd29c291a00f3e" kindref="member">SetSize()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1aa697cf5ddca365cf1025520db938f0f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::BuildDepthHierarchy</definition>
+        <argsstring>()</argsstring>
+        <name>BuildDepthHierarchy</name>
+        <briefdescription>
+<para>Build reduced size mip levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a84f6a1d53edb6d1e91ad9f70b2a58f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::ResetUseTimer</definition>
+        <argsstring>()</argsstring>
+        <name>ResetUseTimer</name>
+        <briefdescription>
+<para>Reset last used timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1ab90e5b2fa6345117d8a0d7321f3046c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* Urho3D::OcclusionBuffer::GetBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBuffer</name>
+        <briefdescription>
+<para>Return highest level depth values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="126" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a0c3a4e106ae94706f7eb9d1ee563a35a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+        <definition>const Matrix3x4&amp; Urho3D::OcclusionBuffer::GetView</definition>
+        <argsstring>() const</argsstring>
+        <name>GetView</name>
+        <briefdescription>
+<para>Return view transform matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="129" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a11b698741cf88e5093946a37f9a79657" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+        <definition>const Matrix4&amp; Urho3D::OcclusionBuffer::GetProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetProjection</name>
+        <briefdescription>
+<para>Return projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="132" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a89372e3ed24930ecd3d331d430f60ad1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::OcclusionBuffer::GetWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWidth</name>
+        <briefdescription>
+<para>Return buffer width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="135" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1ad8be5452e3425ec0f90a24f9c05eb334" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::OcclusionBuffer::GetHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeight</name>
+        <briefdescription>
+<para>Return buffer height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="138" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a3440309d52eb89894be7cacf1ee8b576" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OcclusionBuffer::GetNumTriangles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumTriangles</name>
+        <briefdescription>
+<para>Return number of rendered triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="141" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a6ff814297dc75fe98aa28db28b152e7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OcclusionBuffer::GetMaxTriangles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxTriangles</name>
+        <briefdescription>
+<para>Return maximum number of triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="144" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a3c98973d699e96b35ac5de9fa43dcb3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+        <definition>CullMode Urho3D::OcclusionBuffer::GetCullMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCullMode</name>
+        <briefdescription>
+<para>Return culling mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="147" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a13e0d47fcdf3c7b0b2f73296a9b30437" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::IsThreaded</definition>
+        <argsstring>() const</argsstring>
+        <name>IsThreaded</name>
+        <briefdescription>
+<para>Return whether is using threads to speed up rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="150" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a122d59b68ebbf2afd3c8845460c99628" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::OcclusionBuffer::IsVisible</definition>
+        <argsstring>(const BoundingBox &amp;worldSpaceBox) const</argsstring>
+        <name>IsVisible</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>worldSpaceBox</declname>
+        </param>
+        <briefdescription>
+<para>Test a bounding box for visibility. For best performance, build depth hierarchy first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a39327012d55ce413bf2fa277b97f3107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::OcclusionBuffer::GetUseTimer</definition>
+        <argsstring>()</argsstring>
+        <name>GetUseTimer</name>
+        <briefdescription>
+<para>Return time since last use in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="155" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a6655cb8209e629fdeb23a7c45818cab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::DrawBatch</definition>
+        <argsstring>(const OcclusionBatch &amp;batch, unsigned threadIndex)</argsstring>
+        <name>DrawBatch</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1OcclusionBatch" kindref="compound">OcclusionBatch</ref> &amp;</type>
+          <declname>batch</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>threadIndex</declname>
+        </param>
+        <briefdescription>
+<para>Draw a batch. Called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="158" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a09565728fbc7928b30a7e6519a0b3caa" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::OcclusionBuffer::ModelTransform</definition>
+        <argsstring>(const Matrix4 &amp;transform, const Vector3 &amp;vertex) const</argsstring>
+        <name>ModelTransform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>Apply modelview transform to vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="162" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a0e14ac28c9cb4a9268b94530738ef0e9" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::OcclusionBuffer::ViewportTransform</definition>
+        <argsstring>(const Vector4 &amp;vertex) const</argsstring>
+        <name>ViewportTransform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>Apply projection and viewport transform to vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="164" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a247fe111a9fc9a57c552aca03293ee97" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::OcclusionBuffer::ClipEdge</definition>
+        <argsstring>(const Vector4 &amp;v0, const Vector4 &amp;v1, float d0, float d1) const</argsstring>
+        <name>ClipEdge</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>d1</declname>
+        </param>
+        <briefdescription>
+<para>Clip an edge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="166" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1ad3d1aa1a0d8fbff5aa085001e86fdd1a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::OcclusionBuffer::SignedArea</definition>
+        <argsstring>(const Vector3 &amp;v0, const Vector3 &amp;v1, const Vector3 &amp;v2) const</argsstring>
+        <name>SignedArea</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Return signed area of a triangle. If negative, is clockwise. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="168" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1afabce4deed9f3a953f9d12af6dde9a19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::CalculateViewport</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateViewport</name>
+        <briefdescription>
+<para>Calculate viewport transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="170" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a2b616dc185935c8d401ea3f8208d38a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::DrawTriangle</definition>
+        <argsstring>(Vector4 *vertices, unsigned threadIndex)</argsstring>
+        <name>DrawTriangle</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>threadIndex</declname>
+        </param>
+        <briefdescription>
+<para>Draw a triangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a29a3fa095ddc419fa0f51a42b7537560" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::ClipVertices</definition>
+        <argsstring>(const Vector4 &amp;plane, Vector4 *vertices, bool *triangles, unsigned &amp;numTriangles)</argsstring>
+        <name>ClipVertices</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>triangles</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>numTriangles</declname>
+        </param>
+        <briefdescription>
+<para>Clip vertices against a plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a9d3b28454264d832db67116570ec613d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::DrawTriangle2D</definition>
+        <argsstring>(const Vector3 *vertices, bool clockwise, unsigned threadIndex)</argsstring>
+        <name>DrawTriangle2D</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clockwise</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>threadIndex</declname>
+        </param>
+        <briefdescription>
+<para>Draw a clipped triangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a8e7bbdce8ae8719462f5674e0211170f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::ClearBuffer</definition>
+        <argsstring>(unsigned threadIndex)</argsstring>
+        <name>ClearBuffer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>threadIndex</declname>
+        </param>
+        <briefdescription>
+<para>Clear a thread work buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="178" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1OcclusionBuffer_1a2dceb0396853b9b72b21453dc8e6f7f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::OcclusionBuffer::MergeBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>MergeBuffers</name>
+        <briefdescription>
+<para>Merge thread work buffers into the first buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="180" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Software renderer for occlusion. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::OcclusionBuffer</label>
+        <link refid="classUrho3D_1_1OcclusionBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::OcclusionBuffer</label>
+        <link refid="classUrho3D_1_1OcclusionBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" line="91" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OcclusionBuffer.h" bodystart="92" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a62a292e64edc586d8d03b1494e2aa46d" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>AddTriangles</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1ae4e94bdaae8ce72fd240fcbab021e275" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>AddTriangles</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a1971107e7d6da3458b039a8636ed64eb" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>batches_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a50a0c0f57404f138abd4e7a2fbd326db" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>buffers_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1aa697cf5ddca365cf1025520db938f0f3" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>BuildDepthHierarchy</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1afabce4deed9f3a953f9d12af6dde9a19" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>CalculateViewport</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a6e7f4686a38036fce215dc67d3ea43a7" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a8e7bbdce8ae8719462f5674e0211170f" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ClearBuffer</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a247fe111a9fc9a57c552aca03293ee97" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ClipEdge</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a29a3fa095ddc419fa0f51a42b7537560" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ClipVertices</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a27fcefc1daaf1500de62c40ea8ba2bbe" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>cullMode_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a16187145748e9e9cf183196f346213ab" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>depthHierarchyDirty_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a6655cb8209e629fdeb23a7c45818cab3" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>DrawBatch</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a2b616dc185935c8d401ea3f8208d38a6" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>DrawTriangle</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a9d3b28454264d832db67116570ec613d" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>DrawTriangle2D</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a959d9e7ad060ebab9769b866ac66e94b" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>DrawTriangles</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a576beca1e44c34546b30c9228f848237" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>farClip_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1ab90e5b2fa6345117d8a0d7321f3046c7" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a3c98973d699e96b35ac5de9fa43dcb3d" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetCullMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1ad8be5452e3425ec0f90a24f9c05eb334" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetHeight</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a6ff814297dc75fe98aa28db28b152e7e" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetMaxTriangles</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a3440309d52eb89894be7cacf1ee8b576" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetNumTriangles</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a11b698741cf88e5093946a37f9a79657" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetProjection</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a39327012d55ce413bf2fa277b97f3107" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a0c3a4e106ae94706f7eb9d1ee563a35a" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetView</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a89372e3ed24930ecd3d331d430f60ad1" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>GetWidth</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a8433a142f574ddb44a6c77e897f8a66a" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>height_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a13e0d47fcdf3c7b0b2f73296a9b30437" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>IsThreaded</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a122d59b68ebbf2afd3c8845460c99628" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>IsVisible</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1abe0f1ac2e671946f471586dbab0716fb" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>maxTriangles_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a2dceb0396853b9b72b21453dc8e6f7f7" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>MergeBuffers</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1ae113003592b620de366c5a612dff293e" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>mipBuffers_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a09565728fbc7928b30a7e6519a0b3caa" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ModelTransform</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1af7efd1cb6b5eea21f42089ebc20dc684" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>nearClip_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1afbcb8716f7cfe4c341d1671b1c021935" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>numTriangles_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a78df75ac7ca2c3c20da4f2f4ef4b8ed7" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>OcclusionBuffer</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a3cb94494b65c8092a3014631065b0dc6" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>offsetX_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a6044d9f941fc378251a6134f921d5664" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>offsetY_</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::OcclusionBuffer</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1aa615a744b8133b91f62ad92b0da4d8c8" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>projection_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a2c4e4cc8c98d5be281f5495df9ec3478" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>projOffsetScaleX_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a56912f1a2929978035df28992415b5e0" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>projOffsetScaleY_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a324516979db790907e41a1ba4dcb52f3" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>Reset</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a84f6a1d53edb6d1e91ad9f70b2a58f8a" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a419cd90c918a111238d1a0d5d442527f" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>reverseCulling_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1aaa8a5373dc9d0a1e8b4cfb6f6d664e71" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>scaleX_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a1a228b0bb15b11c3c4c43df31004fd42" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>scaleY_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1abb237b9998494fab164e9fd299aabcf9" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SetCullMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1aa3b312a2b8966c852a0d65c26b64f9fd" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SetMaxTriangles</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1afb6eea532ca2f8c396fd29c291a00f3e" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a2540b689f2451b6358fd99717151fff6" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SetView</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1ad3d1aa1a0d8fbff5aa085001e86fdd1a" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SignedArea</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a1f5af425d9f0f4bb036d28069429b36a" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>useTimer_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1ac05514fa79bbaeab63ef1ebfd3a9b5cf" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>view_</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a0e14ac28c9cb4a9268b94530738ef0e9" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>ViewportTransform</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a33777c45bc398c97cd7c2590a1d912c4" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>viewProj_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1aa3614b52aec7b3fd6ea0aae00d1c5ac9" prot="private" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>width_</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1OcclusionBuffer_1a9fe2f94c9e2247995cb279224e97eb6e" prot="public" virt="non-virtual"><scope>Urho3D::OcclusionBuffer</scope><name>~OcclusionBuffer</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::OcclusionBuffer</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1842 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Material" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Material</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <includes refid="Material_8h" local="no">Material.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1af634a5f77f8ed08dbf2341ce0c53c152" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1TechniqueEntry" kindref="compound">TechniqueEntry</ref> &gt;</type>
+        <definition>Vector&lt;TechniqueEntry&gt; Urho3D::Material::techniques_</definition>
+        <argsstring></argsstring>
+        <name>techniques_</name>
+        <briefdescription>
+<para>Techniques. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="317" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1af36fde7fb4fcf9c8e711260b498c3f6d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;TextureUnit, SharedPtr&lt;Texture&gt; &gt; Urho3D::Material::textures_</definition>
+        <argsstring></argsstring>
+        <name>textures_</name>
+        <briefdescription>
+<para>Textures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="319" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a47d4cf8c4ec16895077dec25ca6a7bf2" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="structUrho3D_1_1MaterialShaderParameter" kindref="compound">MaterialShaderParameter</ref> &gt;</type>
+        <definition>HashMap&lt;StringHash, MaterialShaderParameter&gt; Urho3D::Material::shaderParameters_</definition>
+        <argsstring></argsstring>
+        <name>shaderParameters_</name>
+        <briefdescription>
+<para>Shader parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="321" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1ac49f4e9c0fe67e594b8eb41f84225075" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ShaderParameterAnimationInfo" kindref="compound">ShaderParameterAnimationInfo</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;ShaderParameterAnimationInfo&gt; &gt; Urho3D::Material::shaderParameterAnimationInfos_</definition>
+        <argsstring></argsstring>
+        <name>shaderParameterAnimationInfos_</name>
+        <briefdescription>
+<para>Shader parameters animation infos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="323" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a9128f385203f74cfcc7d0a57fb43ef50" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Material::vertexShaderDefines_</definition>
+        <argsstring></argsstring>
+        <name>vertexShaderDefines_</name>
+        <briefdescription>
+<para>Vertex shader defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="325" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a530ba502d0e814508c020e7a1af2b72f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Material::pixelShaderDefines_</definition>
+        <argsstring></argsstring>
+        <name>pixelShaderDefines_</name>
+        <briefdescription>
+<para>Pixel shader defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="327" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1ad059b26ec1b24cc682b6edab9a4b8a5e" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+        <definition>CullMode Urho3D::Material::cullMode_</definition>
+        <argsstring></argsstring>
+        <name>cullMode_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Normal culling mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="329" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1ad3d3e0b78baa987e88649541041c93a0" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+        <definition>CullMode Urho3D::Material::shadowCullMode_</definition>
+        <argsstring></argsstring>
+        <name>shadowCullMode_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Culling mode for shadow rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="331" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a0cea6f6cad84f4e6c0a1822917d4fc96" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref></type>
+        <definition>FillMode Urho3D::Material::fillMode_</definition>
+        <argsstring></argsstring>
+        <name>fillMode_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Polygon fill mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="333" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a2eb93a8934282a22cd021fc77f42cf25" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1BiasParameters" kindref="compound">BiasParameters</ref></type>
+        <definition>BiasParameters Urho3D::Material::depthBias_</definition>
+        <argsstring></argsstring>
+        <name>depthBias_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Depth bias parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="335" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1aa14a05ec4f4975a5fa4d0eeced3e89a4" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::Material::renderOrder_</definition>
+        <argsstring></argsstring>
+        <name>renderOrder_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Render order value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="337" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a41148b9fef801f356ce9ad0bff5402c6" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Material::auxViewFrameNumber_</definition>
+        <argsstring></argsstring>
+        <name>auxViewFrameNumber_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Last auxiliary view rendered frame number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="339" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a9c518f1c4f210ca68e8ea07d53eaab2d" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Material::shaderParameterHash_</definition>
+        <argsstring></argsstring>
+        <name>shaderParameterHash_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> parameter hash value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="341" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a3a4b3b1d3a9b547774281f9e14f284b4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::alphaToCoverage_</definition>
+        <argsstring></argsstring>
+        <name>alphaToCoverage_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Alpha-to-coverage flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="343" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a1e598f331d005814186f6fab0c0014ec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::lineAntiAlias_</definition>
+        <argsstring></argsstring>
+        <name>lineAntiAlias_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Line antialiasing flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="345" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a397b49a6cf3529d208d62d4f966d68b3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::occlusion_</definition>
+        <argsstring></argsstring>
+        <name>occlusion_</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>Render occlusion flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="347" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a5879fc43aa34a6693e4ba2b3e4035e21" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::specular_</definition>
+        <argsstring></argsstring>
+        <name>specular_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Specular lighting flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="349" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1ace8afb0b822db27d002a1d39f8943840" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::subscribed_</definition>
+        <argsstring></argsstring>
+        <name>subscribed_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Flag for whether is subscribed to animation updates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="351" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a84692836e387233e1f42196997b7764c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::batchedParameterUpdate_</definition>
+        <argsstring></argsstring>
+        <name>batchedParameterUpdate_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Flag to suppress parameter hash and memory use recalculation when setting multiple shader parameters (loading or resetting the material). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="353" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a0822f9ebed0696de903d6284bb2c9ab5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> &gt;</type>
+        <definition>SharedPtr&lt;XMLFile&gt; Urho3D::Material::loadXMLFile_</definition>
+        <argsstring></argsstring>
+        <name>loadXMLFile_</name>
+        <briefdescription>
+<para>XML file used while loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="355" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1a72b3d8ebfd1987d83304a91771bb2a3f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1JSONFile" kindref="compound">JSONFile</ref> &gt;</type>
+        <definition>SharedPtr&lt;JSONFile&gt; Urho3D::Material::loadJSONFile_</definition>
+        <argsstring></argsstring>
+        <name>loadJSONFile_</name>
+        <briefdescription>
+<para>JSON file used while loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="357" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Material_1ac82d0b6722d55cdb2c519bb81314d20c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> &gt;</type>
+        <definition>WeakPtr&lt;Scene&gt; Urho3D::Material::scene_</definition>
+        <argsstring></argsstring>
+        <name>scene_</name>
+        <briefdescription>
+<para>Associated scene for shader parameter animation updates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="359" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a54e189178f0bccae32a4a99610e24a37" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Material::Material</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Material</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="112" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ac636b0e0c701747a36dc4f3ff524fb23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Material::~Material</definition>
+        <argsstring>() override</argsstring>
+        <name>~Material</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="114" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a112d8e95b1deb1fee8524f7cc69eb921" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a2ed97bf462e83b2587c88fbabd794229" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::EndLoad</definition>
+        <argsstring>() override</argsstring>
+        <name>EndLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d">EndLoad</reimplements>
+        <briefdescription>
+<para>Finish resource loading. Always called from the main thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="122" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a67d3d47b54ad9c6d5eda78be19491413" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::Save</definition>
+        <argsstring>(Serializer &amp;dest) const override</argsstring>
+        <name>Save</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd">Save</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save resource. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a843c233ee44a1b2d1aaea55d989782fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::Load</definition>
+        <argsstring>(const XMLElement &amp;source)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from an XML element. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1afb17e0a0301cbbdaaa9a258d53b1993b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::Save</definition>
+        <argsstring>(XMLElement &amp;dest) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save to an XML element. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a2f610bf80fad592119370c0682d9c324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::Load</definition>
+        <argsstring>(const JSONValue &amp;source)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from a JSON value. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="134" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a5fa28bf6c031a5bfb92e70b569f55845" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::Save</definition>
+        <argsstring>(JSONValue &amp;dest) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save to a JSON value. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a59dc96684e9d317ad4913880dd22bd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetNumTechniques</definition>
+        <argsstring>(unsigned num)</argsstring>
+        <name>SetNumTechniques</name>
+        <param>
+          <type>unsigned</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set number of techniques. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="140" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ae3128e4b8f3ba47ba1b85f63d9c37bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetTechnique</definition>
+        <argsstring>(unsigned index, Technique *tech, MaterialQuality qualityLevel=QUALITY_LOW, float lodDistance=0.0f)</argsstring>
+        <name>SetTechnique</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Technique" kindref="compound">Technique</ref> *</type>
+          <declname>tech</declname>
+        </param>
+        <param>
+          <type>MaterialQuality</type>
+          <declname>qualityLevel</declname>
+          <defval>QUALITY_LOW</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lodDistance</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+<para>Set technique. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a64449d7c99cf9c27dc9e8ae85d4994c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetVertexShaderDefines</definition>
+        <argsstring>(const String &amp;defines)</argsstring>
+        <name>SetVertexShaderDefines</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>defines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set additional vertex shader defines. Separate multiple defines with spaces. Setting defines at the material level causes technique(s) to be cloned as necessary. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a110cf057d1d8eee5b2f60887fd4bd58a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetPixelShaderDefines</definition>
+        <argsstring>(const String &amp;defines)</argsstring>
+        <name>SetPixelShaderDefines</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>defines</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set additional pixel shader defines. Separate multiple defines with spaces. Setting defines at the material level causes technique(s) to be cloned as necessary. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a27f2b7dd5a1ab57e0be7f9a30be657ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetShaderParameter</definition>
+        <argsstring>(const String &amp;name, const Variant &amp;value)</argsstring>
+        <name>SetShaderParameter</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shader parameter. BIND_AS_ALIAS_set_shaderParameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="151" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1af87458615722fd8505c8d21460910d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetShaderParameterAnimation</definition>
+        <argsstring>(const String &amp;name, ValueAnimation *animation, WrapMode wrapMode=WM_LOOP, float speed=1.0f)</argsstring>
+        <name>SetShaderParameterAnimation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1ValueAnimation" kindref="compound">ValueAnimation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <param>
+          <type><ref refid="AnimationDefs_8h_1af8409fd27c2ac2ee7224ec2b4dde83dd" kindref="member">WrapMode</ref></type>
+          <declname>wrapMode</declname>
+          <defval>WM_LOOP</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+<para>Set shader parameter animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="154" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1af51c8d632947e9ed2f3825c5f971e426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetShaderParameterAnimationWrapMode</definition>
+        <argsstring>(const String &amp;name, WrapMode wrapMode)</argsstring>
+        <name>SetShaderParameterAnimationWrapMode</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="AnimationDefs_8h_1af8409fd27c2ac2ee7224ec2b4dde83dd" kindref="member">WrapMode</ref></type>
+          <declname>wrapMode</declname>
+        </param>
+        <briefdescription>
+<para>Set shader parameter animation wrap mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="156" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a5f26675f114763474799e1be4dcb2bf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetShaderParameterAnimationSpeed</definition>
+        <argsstring>(const String &amp;name, float speed)</argsstring>
+        <name>SetShaderParameterAnimationSpeed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Set shader parameter animation speed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="158" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a740b3f6f56769cb6e2414aedead579b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetTexture</definition>
+        <argsstring>(TextureUnit unit, Texture *texture)</argsstring>
+        <name>SetTexture</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set texture. BIND_AS_ALIAS_set_textures </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="161" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a2470fc628c1bbdb6b52054076714ff41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetUVTransform</definition>
+        <argsstring>(const Vector2 &amp;offset, float rotation, const Vector2 &amp;repeat)</argsstring>
+        <name>SetUVTransform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+<para>Set texture coordinate transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="163" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a9e933fb78c269f4a88353174b0a640ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetUVTransform</definition>
+        <argsstring>(const Vector2 &amp;offset, float rotation, float repeat)</argsstring>
+        <name>SetUVTransform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>repeat</declname>
+        </param>
+        <briefdescription>
+<para>Set texture coordinate transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="165" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a0b424910345ba115deeba4d0a7d44d75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetCullMode</definition>
+        <argsstring>(CullMode mode)</argsstring>
+        <name>SetCullMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set culling mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="168" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a7ad95f9f7e87ff744ec116863b414571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetShadowCullMode</definition>
+        <argsstring>(CullMode mode)</argsstring>
+        <name>SetShadowCullMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set culling mode for shadows. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ad86e30cfd668bc741831a5c270a9de9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetFillMode</definition>
+        <argsstring>(FillMode mode)</argsstring>
+        <name>SetFillMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set polygon fill mode. Interacts with the camera&apos;s fill mode setting so that the &quot;least filled&quot; mode will be used. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a94e2635fff559ea248d0687505fb07a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetDepthBias</definition>
+        <argsstring>(const BiasParameters &amp;parameters)</argsstring>
+        <name>SetDepthBias</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1BiasParameters" kindref="compound">BiasParameters</ref> &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set depth bias parameters for depth write and compare. Note that the normal offset parameter is not used and will not be saved, as it affects only shadow map sampling during light rendering. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="177" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ac8d43c1bb96b837ce13d656960aa9aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetAlphaToCoverage</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetAlphaToCoverage</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set alpha-to-coverage mode on all passes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="180" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a1ff5e0ef7435fc31ce52fc297cc80c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetLineAntiAlias</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetLineAntiAlias</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set line antialiasing on/off. Has effect only on models that consist of line lists. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="183" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a60c107d0bc70408017c10b57fb1ce23e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetRenderOrder</definition>
+        <argsstring>(unsigned char order)</argsstring>
+        <name>SetRenderOrder</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set 8-bit render order within pass. Default 128. Lower values will render earlier and higher values later, taking precedence over e.g. state and distance sorting. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="186" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a3204225b474a7e910dde75a8a7119269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetOcclusion</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetOcclusion</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to use in occlusion rendering. Default true. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="189" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1acefba652015ea89aa6d99149e33e1257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SetScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>SetScene</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Associate the material with a scene to ensure that shader parameter animation happens in sync with scene update, respecting the scene time scale. If no scene is set, the global update events will be used. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="192" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a3668de7a9d2efafeda0b7a76e4ec8430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::RemoveShaderParameter</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RemoveShaderParameter</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove shader parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="194" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a1ece1f1ee7bf9b2b912daf9460ff9783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::ReleaseShaders</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseShaders</name>
+        <briefdescription>
+<para>Reset all shader pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="196" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a77b3e4f469778f4986eb3db3b812b6be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> &gt;</type>
+        <definition>SharedPtr&lt;Material&gt; Urho3D::Material::Clone</definition>
+        <argsstring>(const String &amp;cloneName=String::EMPTY) const</argsstring>
+        <name>Clone</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>cloneName</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Clone the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="198" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a0c25c6b8aba110ea626a8338fb36efc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::SortTechniques</definition>
+        <argsstring>()</argsstring>
+        <name>SortTechniques</name>
+        <briefdescription>
+<para>Ensure that material techniques are listed in correct order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a617012a96bc56929531b7733c686a32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::MarkForAuxView</definition>
+        <argsstring>(unsigned frameNumber)</argsstring>
+        <name>MarkForAuxView</name>
+        <param>
+          <type>unsigned</type>
+          <declname>frameNumber</declname>
+        </param>
+        <briefdescription>
+<para>Mark material for auxiliary view rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="202" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a58ac535edfe319ad23abe0b65c7c3368" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Material::GetNumTechniques</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumTechniques</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of techniques. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="206" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="206" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ae0965614b5ccfeaf1398684e85c15252" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1TechniqueEntry" kindref="compound">TechniqueEntry</ref> &gt; &amp;</type>
+        <definition>const Vector&lt;TechniqueEntry&gt;&amp; Urho3D::Material::GetTechniques</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTechniques</name>
+        <briefdescription>
+<para>Return all techniques. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="209" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a1b65a0255c15e69e78ef146ac60515e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1TechniqueEntry" kindref="compound">TechniqueEntry</ref> &amp;</type>
+        <definition>const TechniqueEntry&amp; Urho3D::Material::GetTechniqueEntry</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetTechniqueEntry</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return technique entry by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="212" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a78244099064dfc1f5bc72bd7145c22cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Technique" kindref="compound">Technique</ref> *</type>
+        <definition>Technique* Urho3D::Material::GetTechnique</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetTechnique</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return technique by index. BIND_AS_ALIAS_get_techniques </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="215" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a7c089bfd09f26dfdb85ecd313a79ee83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Urho3D::Material::GetPass</definition>
+        <argsstring>(unsigned index, const String &amp;passName) const</argsstring>
+        <name>GetPass</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>passName</declname>
+        </param>
+        <briefdescription>
+<para>Return pass by technique index and pass name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="217" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a8404b3f03e288d60fb141ead338769cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* Urho3D::Material::GetTexture</definition>
+        <argsstring>(TextureUnit unit) const</argsstring>
+        <name>GetTexture</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return texture by unit. BIND_AS_ALIAS_get_textures </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="220" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1aad6e909af1e615076199caac6af3b83d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> &gt; &gt; &amp;</type>
+        <definition>const HashMap&lt;TextureUnit, SharedPtr&lt;Texture&gt; &gt;&amp; Urho3D::Material::GetTextures</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTextures</name>
+        <briefdescription>
+<para>Return all textures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="223" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a16154dd5386a9cf2106acd2c8bd2d103" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Material::GetVertexShaderDefines</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexShaderDefines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return additional vertex shader defines. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="227" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a86676be11280c94b2b53aae916b82931" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Material::GetPixelShaderDefines</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPixelShaderDefines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return additional pixel shader defines. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="230" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1aaefaf2f107a78331303ce28791a52282" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+        <definition>const Variant&amp; Urho3D::Material::GetShaderParameter</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetShaderParameter</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shader parameter. BIND_AS_ALIAS_get_shaderParameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="234" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a232b0b3d48c15ff32c46cdd7171bcead" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ValueAnimation" kindref="compound">ValueAnimation</ref> *</type>
+        <definition>ValueAnimation* Urho3D::Material::GetShaderParameterAnimation</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetShaderParameterAnimation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return shader parameter animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="236" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1abcdb98b6cf260e598bbec787e46059ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="AnimationDefs_8h_1af8409fd27c2ac2ee7224ec2b4dde83dd" kindref="member">WrapMode</ref></type>
+        <definition>WrapMode Urho3D::Material::GetShaderParameterAnimationWrapMode</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetShaderParameterAnimationWrapMode</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return shader parameter animation wrap mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="238" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ac472750e632462bb90c844811c7ba993" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Material::GetShaderParameterAnimationSpeed</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetShaderParameterAnimationSpeed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return shader parameter animation speed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="240" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a3d257d8795ea691f1af8f0e5140da865" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="structUrho3D_1_1MaterialShaderParameter" kindref="compound">MaterialShaderParameter</ref> &gt; &amp;</type>
+        <definition>const HashMap&lt;StringHash, MaterialShaderParameter&gt;&amp; Urho3D::Material::GetShaderParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShaderParameters</name>
+        <briefdescription>
+<para>Return all shader parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="243" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="243" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a26428585da68410238f2f9c7dc9a4204" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+        <definition>CullMode Urho3D::Material::GetCullMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCullMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return normal culling mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="247" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="247" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a18dd32e9f241f9bcb93102f5e1ecb2fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a13f034bf0ac8f9317994bb9e91225449" kindref="member">CullMode</ref></type>
+        <definition>CullMode Urho3D::Material::GetShadowCullMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowCullMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return culling mode for shadows. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="251" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="251" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1af27903a915f1841b7efd9349020ef222" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref></type>
+        <definition>FillMode Urho3D::Material::GetFillMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFillMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return polygon fill mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="255" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ad5d4ec8828343a22d71f14d74c3ee24d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1BiasParameters" kindref="compound">BiasParameters</ref> &amp;</type>
+        <definition>const BiasParameters&amp; Urho3D::Material::GetDepthBias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDepthBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return depth bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="259" column="26" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="259" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1abbfd9e7b55655098a6fc494c8d167f7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::GetAlphaToCoverage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAlphaToCoverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return alpha-to-coverage mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="263" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="263" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a095e0bd8f7f85f038b12b33ffdf8f5db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::GetLineAntiAlias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLineAntiAlias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether line antialiasing is enabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="267" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="267" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a5c6c7382c50b7aa989efd420b79b1ed5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::Material::GetRenderOrder</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRenderOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return render order. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="271" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1abd060ecdfbb66e5050de4306446e9c14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Material::GetAuxViewFrameNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAuxViewFrameNumber</name>
+        <briefdescription>
+<para>Return last auxiliary view rendered frame number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="274" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a237123b0f0a5462ddfeff07647e94e9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::GetOcclusion</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOcclusion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether should render occlusion. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="278" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ad3bc770e25068e296b2a47f1956c8dd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::GetSpecular</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpecular</name>
+        <briefdescription>
+<para>Return whether should render specular. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="281" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1affff4505d0e809a7f74cd2d6e2e8b4ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* Urho3D::Material::GetScene</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the scene associated with the material for shader parameter animation updates. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="285" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a61107044603dedd479ecf4572d32e610" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Material::GetShaderParameterHash</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShaderParameterHash</name>
+        <briefdescription>
+<para>Return shader parameter hash value. Used as an optimization to avoid setting shader parameters unnecessarily. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="288" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Resource::Load</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>Load</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource synchronously. Call both <ref refid="classUrho3D_1_1Material_1a112d8e95b1deb1fee8524f7cc69eb921" kindref="member">BeginLoad()</ref> &amp; <ref refid="classUrho3D_1_1Material_1a2ed97bf462e83b2587c88fbabd794229" kindref="member">EndLoad()</ref> and return true if both succeeded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="126" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Material_1aa39789b94691a5128eb9ee6864751eb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Material::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="117" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ab067b77b3ada50c043388d9b7418d8d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>static String Urho3D::Material::GetTextureUnitName</definition>
+        <argsstring>(TextureUnit unit)</argsstring>
+        <name>GetTextureUnitName</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Return name for texture unit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="291" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a92e4d93913fb41bf42ea2258ab11e427" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref></type>
+        <definition>static Variant Urho3D::Material::ParseShaderParameterValue</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>ParseShaderParameterValue</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Parse a shader parameter value from a string. Retunrs either a bool, a float, or a 2 to 4-component vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="293" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a4395cdd6b565b52783713ea1712ec0c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::BeginLoadJSON</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>BeginLoadJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for loading JSON files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="297" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a34c505680ced124298f079470392a3bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Material::BeginLoadXML</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>BeginLoadXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for loading XML files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="299" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a2a6e0e7eae446f7c7513090852aeac21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::ResetToDefaults</definition>
+        <argsstring>()</argsstring>
+        <name>ResetToDefaults</name>
+        <briefdescription>
+<para>Reset to defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="302" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a9c262eda9301a091165f9c1c26df060a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::RefreshShaderParameterHash</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshShaderParameterHash</name>
+        <briefdescription>
+<para>Recalculate shader parameter hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="304" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a5e79bcf19379d52c5057c8a97fdbb288" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::RefreshMemoryUse</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshMemoryUse</name>
+        <briefdescription>
+<para>Recalculate the memory used by the material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="306" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a65d3ea1b8bc385776ddac8e86b136661" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::ApplyShaderDefines</definition>
+        <argsstring>(unsigned index=M_MAX_UNSIGNED)</argsstring>
+        <name>ApplyShaderDefines</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+          <defval>M_MAX_UNSIGNED</defval>
+        </param>
+        <briefdescription>
+<para>Reapply shader defines to technique index. By default reapply all. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="308" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a5d36d7bd4e055004a9b1ab8fdca2a619" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ShaderParameterAnimationInfo" kindref="compound">ShaderParameterAnimationInfo</ref> *</type>
+        <definition>ShaderParameterAnimationInfo* Urho3D::Material::GetShaderParameterAnimationInfo</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetShaderParameterAnimationInfo</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return shader parameter animation info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="310" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1a91ce30ee008cdd6eef192815dd62623c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::UpdateEventSubscription</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateEventSubscription</name>
+        <briefdescription>
+<para>Update whether should be subscribed to scene or global update events for shader parameter animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="312" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Material_1ae986fec7e386899faf5002c532c56ee2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Material::HandleAttributeAnimationUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleAttributeAnimationUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Update shader parameter animations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="314" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes how to render 3D geometries. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Material</label>
+        <link refid="classUrho3D_1_1Material"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Material</label>
+        <link refid="classUrho3D_1_1Material"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" line="106" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Material.h" bodystart="107" bodyend="360"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Material_1a3a4b3b1d3a9b547774281f9e14f284b4" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>alphaToCoverage_</name></member>
+      <member refid="classUrho3D_1_1Material_1a65d3ea1b8bc385776ddac8e86b136661" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>ApplyShaderDefines</name></member>
+      <member refid="classUrho3D_1_1Material_1a41148b9fef801f356ce9ad0bff5402c6" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>auxViewFrameNumber_</name></member>
+      <member refid="classUrho3D_1_1Material_1a84692836e387233e1f42196997b7764c" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>batchedParameterUpdate_</name></member>
+      <member refid="classUrho3D_1_1Material_1a112d8e95b1deb1fee8524f7cc69eb921" prot="public" virt="virtual"><scope>Urho3D::Material</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Material_1a4395cdd6b565b52783713ea1712ec0c1" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>BeginLoadJSON</name></member>
+      <member refid="classUrho3D_1_1Material_1a34c505680ced124298f079470392a3bb" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>BeginLoadXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Material_1a77b3e4f469778f4986eb3db3b812b6be" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Clone</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Material</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Material_1ad059b26ec1b24cc682b6edab9a4b8a5e" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>cullMode_</name></member>
+      <member refid="classUrho3D_1_1Material_1a2eb93a8934282a22cd021fc77f42cf25" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>depthBias_</name></member>
+      <member refid="classUrho3D_1_1Material_1a2ed97bf462e83b2587c88fbabd794229" prot="public" virt="virtual"><scope>Urho3D::Material</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Material_1a0cea6f6cad84f4e6c0a1822917d4fc96" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>fillMode_</name></member>
+      <member refid="classUrho3D_1_1Material_1abbfd9e7b55655098a6fc494c8d167f7e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetAlphaToCoverage</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Material_1abd060ecdfbb66e5050de4306446e9c14" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetAuxViewFrameNumber</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Material_1a26428585da68410238f2f9c7dc9a4204" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetCullMode</name></member>
+      <member refid="classUrho3D_1_1Material_1ad5d4ec8828343a22d71f14d74c3ee24d" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetDepthBias</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Material_1af27903a915f1841b7efd9349020ef222" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetFillMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Material_1a095e0bd8f7f85f038b12b33ffdf8f5db" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetLineAntiAlias</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Material_1a58ac535edfe319ad23abe0b65c7c3368" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetNumTechniques</name></member>
+      <member refid="classUrho3D_1_1Material_1a237123b0f0a5462ddfeff07647e94e9b" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetOcclusion</name></member>
+      <member refid="classUrho3D_1_1Material_1a7c089bfd09f26dfdb85ecd313a79ee83" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetPass</name></member>
+      <member refid="classUrho3D_1_1Material_1a86676be11280c94b2b53aae916b82931" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetPixelShaderDefines</name></member>
+      <member refid="classUrho3D_1_1Material_1a5c6c7382c50b7aa989efd420b79b1ed5" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetRenderOrder</name></member>
+      <member refid="classUrho3D_1_1Material_1affff4505d0e809a7f74cd2d6e2e8b4ba" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Material_1aaefaf2f107a78331303ce28791a52282" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameter</name></member>
+      <member refid="classUrho3D_1_1Material_1a232b0b3d48c15ff32c46cdd7171bcead" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameterAnimation</name></member>
+      <member refid="classUrho3D_1_1Material_1a5d36d7bd4e055004a9b1ab8fdca2a619" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameterAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Material_1ac472750e632462bb90c844811c7ba993" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameterAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Material_1abcdb98b6cf260e598bbec787e46059ee" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameterAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Material_1a61107044603dedd479ecf4572d32e610" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameterHash</name></member>
+      <member refid="classUrho3D_1_1Material_1a3d257d8795ea691f1af8f0e5140da865" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShaderParameters</name></member>
+      <member refid="classUrho3D_1_1Material_1a18dd32e9f241f9bcb93102f5e1ecb2fd" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetShadowCullMode</name></member>
+      <member refid="classUrho3D_1_1Material_1ad3bc770e25068e296b2a47f1956c8dd1" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetSpecular</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Material_1a78244099064dfc1f5bc72bd7145c22cc" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTechnique</name></member>
+      <member refid="classUrho3D_1_1Material_1a1b65a0255c15e69e78ef146ac60515e4" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTechniqueEntry</name></member>
+      <member refid="classUrho3D_1_1Material_1ae0965614b5ccfeaf1398684e85c15252" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTechniques</name></member>
+      <member refid="classUrho3D_1_1Material_1a8404b3f03e288d60fb141ead338769cd" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTexture</name></member>
+      <member refid="classUrho3D_1_1Material_1aad6e909af1e615076199caac6af3b83d" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTextures</name></member>
+      <member refid="classUrho3D_1_1Material_1ab067b77b3ada50c043388d9b7418d8d1" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTextureUnitName</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Material</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Material</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Material</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Material_1a16154dd5386a9cf2106acd2c8bd2d103" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>GetVertexShaderDefines</name></member>
+      <member refid="classUrho3D_1_1Material_1ae986fec7e386899faf5002c532c56ee2" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Material_1a1e598f331d005814186f6fab0c0014ec" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>lineAntiAlias_</name></member>
+      <member refid="classUrho3D_1_1Material_1a843c233ee44a1b2d1aaea55d989782fe" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Material_1a2f610bf80fad592119370c0682d9c324" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Material_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Resource::"><scope>Urho3D::Material</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1Material_1a72b3d8ebfd1987d83304a91771bb2a3f" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>loadJSONFile_</name></member>
+      <member refid="classUrho3D_1_1Material_1a0822f9ebed0696de903d6284bb2c9ab5" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>loadXMLFile_</name></member>
+      <member refid="classUrho3D_1_1Material_1a617012a96bc56929531b7733c686a32e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>MarkForAuxView</name></member>
+      <member refid="classUrho3D_1_1Material_1a54e189178f0bccae32a4a99610e24a37" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Material</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Material_1a397b49a6cf3529d208d62d4f966d68b3" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>occlusion_</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Material</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Material_1a92e4d93913fb41bf42ea2258ab11e427" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>ParseShaderParameterValue</name></member>
+      <member refid="classUrho3D_1_1Material_1a530ba502d0e814508c020e7a1af2b72f" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>pixelShaderDefines_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1Material_1a5e79bcf19379d52c5057c8a97fdbb288" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>RefreshMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Material_1a9c262eda9301a091165f9c1c26df060a" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>RefreshShaderParameterHash</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Material_1aa39789b94691a5128eb9ee6864751eb9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Material_1a1ece1f1ee7bf9b2b912daf9460ff9783" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>ReleaseShaders</name></member>
+      <member refid="classUrho3D_1_1Material_1a3668de7a9d2efafeda0b7a76e4ec8430" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>RemoveShaderParameter</name></member>
+      <member refid="classUrho3D_1_1Material_1aa14a05ec4f4975a5fa4d0eeced3e89a4" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>renderOrder_</name></member>
+      <member refid="classUrho3D_1_1Material_1a2a6e0e7eae446f7c7513090852aeac21" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>ResetToDefaults</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1Material_1a67d3d47b54ad9c6d5eda78be19491413" prot="public" virt="virtual"><scope>Urho3D::Material</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Material_1afb17e0a0301cbbdaaa9a258d53b1993b" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Material_1a5fa28bf6c031a5bfb92e70b569f55845" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::Material</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1Material_1ac82d0b6722d55cdb2c519bb81314d20c" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>scene_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Material_1ac8d43c1bb96b837ce13d656960aa9aba" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetAlphaToCoverage</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Material_1a0b424910345ba115deeba4d0a7d44d75" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetCullMode</name></member>
+      <member refid="classUrho3D_1_1Material_1a94e2635fff559ea248d0687505fb07a2" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetDepthBias</name></member>
+      <member refid="classUrho3D_1_1Material_1ad86e30cfd668bc741831a5c270a9de9f" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetFillMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Material_1a1ff5e0ef7435fc31ce52fc297cc80c34" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetLineAntiAlias</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Material_1a59dc96684e9d317ad4913880dd22bd9f" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetNumTechniques</name></member>
+      <member refid="classUrho3D_1_1Material_1a3204225b474a7e910dde75a8a7119269" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetOcclusion</name></member>
+      <member refid="classUrho3D_1_1Material_1a110cf057d1d8eee5b2f60887fd4bd58a" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetPixelShaderDefines</name></member>
+      <member refid="classUrho3D_1_1Material_1a60c107d0bc70408017c10b57fb1ce23e" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetRenderOrder</name></member>
+      <member refid="classUrho3D_1_1Material_1acefba652015ea89aa6d99149e33e1257" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetScene</name></member>
+      <member refid="classUrho3D_1_1Material_1a27f2b7dd5a1ab57e0be7f9a30be657ed" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetShaderParameter</name></member>
+      <member refid="classUrho3D_1_1Material_1af87458615722fd8505c8d21460910d68" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetShaderParameterAnimation</name></member>
+      <member refid="classUrho3D_1_1Material_1a5f26675f114763474799e1be4dcb2bf3" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetShaderParameterAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Material_1af51c8d632947e9ed2f3825c5f971e426" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetShaderParameterAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Material_1a7ad95f9f7e87ff744ec116863b414571" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetShadowCullMode</name></member>
+      <member refid="classUrho3D_1_1Material_1ae3128e4b8f3ba47ba1b85f63d9c37bd9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetTechnique</name></member>
+      <member refid="classUrho3D_1_1Material_1a740b3f6f56769cb6e2414aedead579b4" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetTexture</name></member>
+      <member refid="classUrho3D_1_1Material_1a2470fc628c1bbdb6b52054076714ff41" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetUVTransform</name></member>
+      <member refid="classUrho3D_1_1Material_1a9e933fb78c269f4a88353174b0a640ee" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetUVTransform</name></member>
+      <member refid="classUrho3D_1_1Material_1a64449d7c99cf9c27dc9e8ae85d4994c9" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SetVertexShaderDefines</name></member>
+      <member refid="classUrho3D_1_1Material_1ac49f4e9c0fe67e594b8eb41f84225075" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>shaderParameterAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Material_1a9c518f1c4f210ca68e8ea07d53eaab2d" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>shaderParameterHash_</name></member>
+      <member refid="classUrho3D_1_1Material_1a47d4cf8c4ec16895077dec25ca6a7bf2" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>shaderParameters_</name></member>
+      <member refid="classUrho3D_1_1Material_1ad3d3e0b78baa987e88649541041c93a0" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>shadowCullMode_</name></member>
+      <member refid="classUrho3D_1_1Material_1a0c25c6b8aba110ea626a8338fb36efc6" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SortTechniques</name></member>
+      <member refid="classUrho3D_1_1Material_1a5879fc43aa34a6693e4ba2b3e4035e21" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>specular_</name></member>
+      <member refid="classUrho3D_1_1Material_1ace8afb0b822db27d002a1d39f8943840" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>subscribed_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Material_1af634a5f77f8ed08dbf2341ce0c53c152" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>techniques_</name></member>
+      <member refid="classUrho3D_1_1Material_1af36fde7fb4fcf9c8e711260b498c3f6d" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>textures_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Material_1a91ce30ee008cdd6eef192815dd62623c" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>UpdateEventSubscription</name></member>
+      <member refid="classUrho3D_1_1Material_1a9128f385203f74cfcc7d0a57fb43ef50" prot="private" virt="non-virtual"><scope>Urho3D::Material</scope><name>vertexShaderDefines_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Material_1ac636b0e0c701747a36dc4f3ff524fb23" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>~Material</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Material</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Material</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

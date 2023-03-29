@@ -1,0 +1,2496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Terrain" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Terrain</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Component" prot="public" virt="non-virtual">Urho3D::Component</basecompoundref>
+    <includes refid="Terrain_8h" local="no">Terrain.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1aa9e7a6790abeef85aee824bbe5ea9c39" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;IndexBuffer&gt; Urho3D::Terrain::indexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer_</name>
+        <briefdescription>
+<para>Shared index buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="293" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a3e1d29b27f0eaf2d3198ec20e8753228" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> &gt;</type>
+        <definition>SharedPtr&lt;Image&gt; Urho3D::Terrain::heightMap_</definition>
+        <argsstring></argsstring>
+        <name>heightMap_</name>
+        <briefdescription>
+<para>Heightmap image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="295" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1adeafeefe3392fc836fb2222f60f86d7f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; float &gt;</type>
+        <definition>SharedArrayPtr&lt;float&gt; Urho3D::Terrain::heightData_</definition>
+        <argsstring></argsstring>
+        <name>heightData_</name>
+        <briefdescription>
+<para>Height data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="297" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1acdeb3b978b0012c89d975f28dcc11e1b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; float &gt;</type>
+        <definition>SharedArrayPtr&lt;float&gt; Urho3D::Terrain::sourceHeightData_</definition>
+        <argsstring></argsstring>
+        <name>sourceHeightData_</name>
+        <briefdescription>
+<para>Source height data for smoothing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="299" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1aaf5870010772f3b2f194dbf94e447411" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> &gt;</type>
+        <definition>SharedPtr&lt;Material&gt; Urho3D::Terrain::material_</definition>
+        <argsstring></argsstring>
+        <name>material_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="301" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a4c99959cc7daf696dc56ae23d0f6af5b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> &gt; &gt;</type>
+        <definition>Vector&lt;WeakPtr&lt;TerrainPatch&gt; &gt; Urho3D::Terrain::patches_</definition>
+        <argsstring></argsstring>
+        <name>patches_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> patches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="303" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ac852c138c831ca40277731d5ae228204" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; unsigned, unsigned &gt; &gt;</type>
+        <definition>PODVector&lt;Pair&lt;unsigned, unsigned&gt; &gt; Urho3D::Terrain::drawRanges_</definition>
+        <argsstring></argsstring>
+        <name>drawRanges_</name>
+        <briefdescription>
+<para>Draw ranges for different LODs and stitching combinations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="305" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a031a305645f4411c18054d223e09e9be" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> &gt;</type>
+        <definition>WeakPtr&lt;Terrain&gt; Urho3D::Terrain::north_</definition>
+        <argsstring></argsstring>
+        <name>north_</name>
+        <briefdescription>
+<para>North neighbor terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="307" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a93aec49a398d0e7f13902b07759f998b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> &gt;</type>
+        <definition>WeakPtr&lt;Terrain&gt; Urho3D::Terrain::south_</definition>
+        <argsstring></argsstring>
+        <name>south_</name>
+        <briefdescription>
+<para>South neighbor terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="309" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ae2f5ef768f5a5ac8592f973171182c52" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> &gt;</type>
+        <definition>WeakPtr&lt;Terrain&gt; Urho3D::Terrain::west_</definition>
+        <argsstring></argsstring>
+        <name>west_</name>
+        <briefdescription>
+<para>West neighbor terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="311" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a6975e89f3dd60f458ae582a317bf80b7" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> &gt;</type>
+        <definition>WeakPtr&lt;Terrain&gt; Urho3D::Terrain::east_</definition>
+        <argsstring></argsstring>
+        <name>east_</name>
+        <briefdescription>
+<para>East neighbor terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="313" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a1642a505360bb482ca29c25536afb4f3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Terrain::spacing_</definition>
+        <argsstring></argsstring>
+        <name>spacing_</name>
+        <briefdescription>
+<para>Vertex and height spacing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="315" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1aa2ac8e3906e8dda9b80161b4ee65264b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Terrain::lastSpacing_</definition>
+        <argsstring></argsstring>
+        <name>lastSpacing_</name>
+        <briefdescription>
+<para>Vertex and height sacing at the time of last update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="317" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a3bc1f54bb3ba3c9f5b5f41b269f4940f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::Terrain::patchWorldOrigin_</definition>
+        <argsstring></argsstring>
+        <name>patchWorldOrigin_</name>
+        <briefdescription>
+<para>Origin of patches on the XZ-plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="319" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ac501fc79da896a19c7d6ffd8d50c7d83" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::Terrain::patchWorldSize_</definition>
+        <argsstring></argsstring>
+        <name>patchWorldSize_</name>
+        <briefdescription>
+<para>Size of a patch on the XZ-plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="321" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a4be9670cbedcafec7aca54d4aa28f8a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::Terrain::numVertices_</definition>
+        <argsstring></argsstring>
+        <name>numVertices_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> size in vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="323" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1aae19f1fde4bc63a3110974a2816d2ad1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::Terrain::lastNumVertices_</definition>
+        <argsstring></argsstring>
+        <name>lastNumVertices_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> size in vertices at the time of last update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="325" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ad4e45a7747d7f5428eddd8fd6bb4fd6d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::Terrain::numPatches_</definition>
+        <argsstring></argsstring>
+        <name>numPatches_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> size in patches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="327" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a353248fa32574b506f5e1848cdc0b5ac" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Terrain::patchSize_</definition>
+        <argsstring></argsstring>
+        <name>patchSize_</name>
+        <briefdescription>
+<para>Patch size, quads per side. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="329" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a5786abc846377ce100b1ba741f858072" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Terrain::lastPatchSize_</definition>
+        <argsstring></argsstring>
+        <name>lastPatchSize_</name>
+        <briefdescription>
+<para>Patch size at the time of last update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="331" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a454a5f1f3307ee64b1c0266ebb0e72fe" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::numLodLevels_</definition>
+        <argsstring></argsstring>
+        <name>numLodLevels_</name>
+        <briefdescription>
+<para>Number of terrain LOD levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="333" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a65b9abf900ba39b73afcb9f2bad80230" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::maxLodLevels_</definition>
+        <argsstring></argsstring>
+        <name>maxLodLevels_</name>
+        <briefdescription>
+<para>Maximum number of LOD levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="335" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a0b5f90a0570866bb76339a479e43e25f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::occlusionLodLevel_</definition>
+        <argsstring></argsstring>
+        <name>occlusionLodLevel_</name>
+        <briefdescription>
+<para>LOD level used for occlusion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="337" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a6bb3c43661cd0f901727701dab8429ea" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::smoothing_</definition>
+        <argsstring></argsstring>
+        <name>smoothing_</name>
+        <briefdescription>
+<para>Smoothing enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="339" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a3c142abfa7aac2e4d4e10e241a0c4229" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::visible_</definition>
+        <argsstring></argsstring>
+        <name>visible_</name>
+        <briefdescription>
+<para>Visible flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="341" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1adba21156eb495bc087fe30a288ae2a7d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::castShadows_</definition>
+        <argsstring></argsstring>
+        <name>castShadows_</name>
+        <briefdescription>
+<para>Shadowcaster flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="343" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1aa2a4068cb04702824eeae7bba04b5c18" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::occluder_</definition>
+        <argsstring></argsstring>
+        <name>occluder_</name>
+        <briefdescription>
+<para>Occluder flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="345" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1aed684c7a5159832fbbe93bdd2664db03" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::occludee_</definition>
+        <argsstring></argsstring>
+        <name>occludee_</name>
+        <briefdescription>
+<para>Occludee flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="347" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a016e6b9941bf0c9e574e0f7fdd0291a2" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::viewMask_</definition>
+        <argsstring></argsstring>
+        <name>viewMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="349" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a14dac5621e78cfcd6258b733204d0d29" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::lightMask_</definition>
+        <argsstring></argsstring>
+        <name>lightMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="351" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ad903eae332d3502c07d8574b8799fd92" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::shadowMask_</definition>
+        <argsstring></argsstring>
+        <name>shadowMask_</name>
+        <briefdescription>
+<para>Shadow mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="353" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ad973a9098dc151fdf09d164c93093203" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::zoneMask_</definition>
+        <argsstring></argsstring>
+        <name>zoneMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="355" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a9479418f3cd94a59f1cf46404e6dddcb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::drawDistance_</definition>
+        <argsstring></argsstring>
+        <name>drawDistance_</name>
+        <briefdescription>
+<para>Draw distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="357" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a9f5cbe04af0281c629be8887486227df" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::shadowDistance_</definition>
+        <argsstring></argsstring>
+        <name>shadowDistance_</name>
+        <briefdescription>
+<para>Shadow distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="359" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1ac4b663157006dcc64e322a19ea33f796" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::lodBias_</definition>
+        <argsstring></argsstring>
+        <name>lodBias_</name>
+        <briefdescription>
+<para>LOD bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="361" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a3089fcf7def4c082e3c31588db04e314" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::maxLights_</definition>
+        <argsstring></argsstring>
+        <name>maxLights_</name>
+        <briefdescription>
+<para>Maximum lights. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="363" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a185f78b033a3f8eee452069d5afd88db" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::northID_</definition>
+        <argsstring></argsstring>
+        <name>northID_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> ID of north neighbor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="365" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a4fdd28250505a8a73266af8638538060" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::southID_</definition>
+        <argsstring></argsstring>
+        <name>southID_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> ID of south neighbor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="367" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a26bda13a497ab8b0e244fe6ef5744137" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::westID_</definition>
+        <argsstring></argsstring>
+        <name>westID_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> ID of west neighbor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="369" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a32fbaeeeb64e853cf1c554256154386c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::eastID_</definition>
+        <argsstring></argsstring>
+        <name>eastID_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> ID of east neighbor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="371" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1a2398276b96e54283ecd49fd935605dbb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::recreateTerrain_</definition>
+        <argsstring></argsstring>
+        <name>recreateTerrain_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> needs regeneration flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="373" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Terrain_1acf063ab78bf2f1f163924d1d7bc6b7a3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::neighborsDirty_</definition>
+        <argsstring></argsstring>
+        <name>neighborsDirty_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> neighbor attributes dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="375" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a4049c50bf7479ec887f197f79cd8f7b4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Terrain::Terrain</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Terrain</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a45605a06e7c5b390e10a381faa797bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Terrain::~Terrain</definition>
+        <argsstring>() override</argsstring>
+        <name>~Terrain</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ab75024299e9c5e44b3c7266ab3b0e361" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::ApplyAttributes</definition>
+        <argsstring>() override</argsstring>
+        <name>ApplyAttributes</name>
+        <reimplements refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593">ApplyAttributes</reimplements>
+        <briefdescription>
+<para>Apply attribute changes that can not be applied immediately. Called after scene load or a network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a7a17f9075b9c8e816f9b9a376e8327b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::OnSetEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>OnSetEnabled</name>
+        <reimplements refid="classUrho3D_1_1Component_1a97c506dfb55216668b1fdf4d4425f7d7">OnSetEnabled</reimplements>
+        <briefdescription>
+<para>Handle enabled/disabled state change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a651f43ce21bc81355ed38a4bafdacaf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetPatchSize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>SetPatchSize</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set patch quads per side. Must be a power of two. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aefd05440a5013e08424f05aba3df2582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetSpacing</definition>
+        <argsstring>(const Vector3 &amp;spacing)</argsstring>
+        <name>SetSpacing</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>spacing</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertex (XZ) and height (Y) spacing. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a55a33ee2d3fa6f25d5ef71f2bcc9e81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetMaxLodLevels</definition>
+        <argsstring>(unsigned levels)</argsstring>
+        <name>SetMaxLodLevels</name>
+        <param>
+          <type>unsigned</type>
+          <declname>levels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum number of LOD levels for terrain patches. This can be between 1-4. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a5f851bd03c1144100d68c1acc21c4342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetOcclusionLodLevel</definition>
+        <argsstring>(unsigned level)</argsstring>
+        <name>SetOcclusionLodLevel</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set LOD level used for terrain patch occlusion. By default (M_MAX_UNSIGNED) the coarsest. Since the LOD level used needs to be fixed, using finer LOD levels may result in false positive occlusion in cases where the actual rendered geometry is coarser, so use with caution. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ae202c49a54a7cc2b1ef3fe0b033031ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetSmoothing</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetSmoothing</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set smoothing of heightmap. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ad2a5a0e30901033ba358b2cf6d35d264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::SetHeightMap</definition>
+        <argsstring>(Image *image)</argsstring>
+        <name>SetHeightMap</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set heightmap image. Dimensions should be a power of two + 1. Uses 8-bit grayscale, or optionally red as MSB and green as LSB for 16-bit accuracy. Return true if successful. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1afd282504b4f9337da2e3baa46bf48ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetMaterial</definition>
+        <argsstring>(Material *material)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a510f9285bbcdd3ea5fdf88832f117d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetNorthNeighbor</definition>
+        <argsstring>(Terrain *north)</argsstring>
+        <name>SetNorthNeighbor</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>north</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set north (positive Z) neighbor terrain for seamless LOD changes across terrains. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a5caf7f0a3c88f72b2b72b9265c26f0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetSouthNeighbor</definition>
+        <argsstring>(Terrain *south)</argsstring>
+        <name>SetSouthNeighbor</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>south</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set south (negative Z) neighbor terrain for seamless LOD changes across terrains. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a95e9c68c96d14efa977ee1cdb1a4f84d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetWestNeighbor</definition>
+        <argsstring>(Terrain *west)</argsstring>
+        <name>SetWestNeighbor</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>west</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set west (negative X) neighbor terrain for seamless LOD changes across terrains. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1af77b74e0b9aeb917ad3fdb78551935d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetEastNeighbor</definition>
+        <argsstring>(Terrain *east)</argsstring>
+        <name>SetEastNeighbor</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>east</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set east (positive X) neighbor terrain for seamless LOD changes across terrains. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aa32023ec65be2e5e05957a97e3bdfd1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetNeighbors</definition>
+        <argsstring>(Terrain *north, Terrain *south, Terrain *west, Terrain *east)</argsstring>
+        <name>SetNeighbors</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>north</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>south</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>west</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>east</declname>
+        </param>
+        <briefdescription>
+<para>Set all neighbor terrains at once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aa9df7603ac2b1fbd89292f8e1369cc88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetDrawDistance</definition>
+        <argsstring>(float distance)</argsstring>
+        <name>SetDrawDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set draw distance for patches. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a535cbc0e83b9da90b0cefe28d71a8bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetShadowDistance</definition>
+        <argsstring>(float distance)</argsstring>
+        <name>SetShadowDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shadow draw distance for patches. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a37d77fadeb6c0f2e75a30f1a7d67dd5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetLodBias</definition>
+        <argsstring>(float bias)</argsstring>
+        <name>SetLodBias</name>
+        <param>
+          <type>float</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set LOD bias for patches. Affects which terrain LOD to display. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a437da028b6582f9d70095098ed782451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetViewMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetViewMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set view mask for patches. Is and&apos;ed with camera&apos;s view mask to see if the object should be rendered. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a1415200f83d8e6fec79790650c452dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetLightMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetLightMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set light mask for patches. Is and&apos;ed with light&apos;s and zone&apos;s light mask to see if the object should be lit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a20daed0587c1743c6f7e8ab186ab3ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetShadowMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetShadowMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shadow mask for patches. Is and&apos;ed with light&apos;s light mask and zone&apos;s shadow mask to see if the object should be rendered to a shadow map. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a02ceda71d925852432f02e28eb262def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetZoneMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetZoneMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set zone mask for patches. Is and&apos;ed with zone&apos;s zone mask to see if the object should belong to the zone. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a04b2a37f8ba75be1a4285dd37bc26f21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetMaxLights</definition>
+        <argsstring>(unsigned num)</argsstring>
+        <name>SetMaxLights</name>
+        <param>
+          <type>unsigned</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum number of per-pixel lights for patches. Default 0 is unlimited. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ad37051217b44880a69a759948542650b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetCastShadows</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetCastShadows</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shadowcaster flag for patches. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a8ab8809041aaa8913f649ab884dad228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetOccluder</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetOccluder</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set occlusion flag for patches. Occlusion uses the coarsest LOD by default. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ab767110a5e1e3f039af7085153571084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetOccludee</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetOccludee</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set occludee flag for patches. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a46e980c5dc1639b4581e10d61c1cb79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::ApplyHeightMap</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyHeightMap</name>
+        <briefdescription>
+<para>Apply changes from the heightmap image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="125" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ac7cccd35587f9757c85cb9b200e1eacf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Terrain::GetPatchSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPatchSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return patch quads per side. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="129" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a6b3b11f9d81c1bb53fca468b533f8da4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::Terrain::GetSpacing</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return vertex and height spacing. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="133" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1adbfee15d73ba003ca14f1948f92ea022" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+        <definition>const IntVector2&amp; Urho3D::Terrain::GetNumVertices</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumVertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return heightmap size in vertices. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="137" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="137" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ab9f8aca317fc4f9a1d245cc928781254" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+        <definition>const IntVector2&amp; Urho3D::Terrain::GetNumPatches</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumPatches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return heightmap size in patches. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="141" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a51fbc0204761e4ef937717d4b7cbadb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetMaxLodLevels</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxLodLevels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum number of LOD levels for terrain patches. This can be between 1-4. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="145" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a015c5283c7bb3f163761cc4c44780411" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetOcclusionLodLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOcclusionLodLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return LOD level used for occlusion. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="149" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a53ea3898045b5af70560eb398e7919a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::GetSmoothing</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSmoothing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether smoothing is in use. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="153" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ad918a8b60e581ea9fc3d0b62fab8159b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> *</type>
+        <definition>Image* Urho3D::Terrain::GetHeightMap</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeightMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return heightmap image. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="157" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a2756fb967401624a2612dccd0fe59bdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+        <definition>Material* Urho3D::Terrain::GetMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="160" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a188d9ebb25ab19eb50b3ca5baab69327" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::Terrain::GetPatch</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetPatch</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return patch by index. BIND_AS_ALIAS_get_patches </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="163" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a64d23d9ba24d390722fe0bd722f58b3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::Terrain::GetPatch</definition>
+        <argsstring>(int x, int z) const</argsstring>
+        <name>GetPatch</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Return patch by patch coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="165" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ae9ad87bb25a5d3c5dcc56b5a3397a5e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::Terrain::GetNeighborPatch</definition>
+        <argsstring>(int x, int z) const</argsstring>
+        <name>GetNeighborPatch</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Return patch by patch coordinates including neighbor terrains. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="167" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a95868faa09f0c2ce2d51aa8021c3ddbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetHeight</definition>
+        <argsstring>(const Vector3 &amp;worldPosition) const</argsstring>
+        <name>GetHeight</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPosition</declname>
+        </param>
+        <briefdescription>
+<para>Return height at world coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="169" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1af76611936b8232b3ba4415049d1a74dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Terrain::GetNormal</definition>
+        <argsstring>(const Vector3 &amp;worldPosition) const</argsstring>
+        <name>GetNormal</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPosition</declname>
+        </param>
+        <briefdescription>
+<para>Return normal at world coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="171" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a3599516869ecc78d8c62e2b7e4790a46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::Terrain::WorldToHeightMap</definition>
+        <argsstring>(const Vector3 &amp;worldPosition) const</argsstring>
+        <name>WorldToHeightMap</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPosition</declname>
+        </param>
+        <briefdescription>
+<para>Convert world position to heightmap pixel position. Note that the internal height data representation is reversed vertically, but in the heightmap image north is at the top. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="173" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a599aafd97db9a067b075dce29cd28707" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Terrain::HeightMapToWorld</definition>
+        <argsstring>(const IntVector2 &amp;pixelPosition) const</argsstring>
+        <name>HeightMapToWorld</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>pixelPosition</declname>
+        </param>
+        <briefdescription>
+<para>Convert heightmap pixel position to world position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="175" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a0d3a1542566ba4334799b9f36b301820" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+        <definition>Terrain* Urho3D::Terrain::GetNorthNeighbor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNorthNeighbor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return north neighbor terrain. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="179" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="179" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a0089db5df2db53d1cc08dd3d2d22bda2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+        <definition>Terrain* Urho3D::Terrain::GetSouthNeighbor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSouthNeighbor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return south neighbor terrain. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="183" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a09aa85bbad1405803554e04ebda20dc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+        <definition>Terrain* Urho3D::Terrain::GetWestNeighbor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWestNeighbor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return west neighbor terrain. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="187" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ad6a1441745dccfd5602eeb47ffaa2a75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+        <definition>Terrain* Urho3D::Terrain::GetEastNeighbor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEastNeighbor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return east neighbor terrain. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="191" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="191" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a9ecbc4f56dcac030b45c1bc51151d8c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; float &gt;</type>
+        <definition>SharedArrayPtr&lt;float&gt; Urho3D::Terrain::GetHeightData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeightData</name>
+        <briefdescription>
+<para>Return raw height data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="194" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="194" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aa3135369a2050fafe05b722745c68f61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetDrawDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDrawDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return draw distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="198" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aa7094ae3cbfa65cccb26e0c9efdff3b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetShadowDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shadow draw distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="202" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ad9761fbdb5dd8fffbf719e6025ed8df3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetLodBias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="206" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="206" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aee5f40008037b5ca4b29f5d009408b7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetViewMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return view mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="210" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="210" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1aca737e18affba6f604c6313a7c54cac5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetLightMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLightMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return light mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="214" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="214" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a63a087d5b1309591d14746e2d654c565" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetShadowMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shadow mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="218" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="218" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a21d4ac98c83a9d38b1b7639395727e37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetZoneMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetZoneMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return zone mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="222" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="222" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a05c80ea82915ea83a0af6d9e27cee863" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Terrain::GetMaxLights</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxLights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum number of per-pixel lights. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="226" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a5d3d8ff8c850ed7d70d4b8425097822f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::IsVisible</definition>
+        <argsstring>() const</argsstring>
+        <name>IsVisible</name>
+        <briefdescription>
+<para>Return visible flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="229" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a4a623a98a4056acc06897a071e70c62f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::GetCastShadows</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCastShadows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shadowcaster flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="233" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a67ef6f7df542490b9259802ecd1cf295" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::IsOccluder</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOccluder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return occluder flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="237" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a9cb7c852a2ce56b47389b4e10d285c72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::IsOccludee</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOccludee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return occludee flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="241" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="241" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a03006159674e5b8e1bb6d34e2afdcc81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::CreatePatchGeometry</definition>
+        <argsstring>(TerrainPatch *patch)</argsstring>
+        <name>CreatePatchGeometry</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>patch</declname>
+        </param>
+        <briefdescription>
+<para>Regenerate patch geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="244" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ac4d9ac6ca4be30689be9e4252d224dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::UpdatePatchLod</definition>
+        <argsstring>(TerrainPatch *patch)</argsstring>
+        <name>UpdatePatchLod</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>patch</declname>
+        </param>
+        <briefdescription>
+<para>Update patch based on LOD and neighbor LOD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="246" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1adf8994ab5546fbe1bc489078d45bc3a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetHeightMapAttr</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>SetHeightMapAttr</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set heightmap attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="248" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1af3da1db6791b521a8b0a4feb8ff73a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetMaterialAttr</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>SetMaterialAttr</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set material attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="250" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a25cddc2dbb2fc2b38e4a567494ff9752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetPatchSizeAttr</definition>
+        <argsstring>(int value)</argsstring>
+        <name>SetPatchSizeAttr</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set patch size attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="252" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1afeaf4799cea6104086fc3996e0bec821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetMaxLodLevelsAttr</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>SetMaxLodLevelsAttr</name>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set max LOD levels attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="254" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a3a0c497b632e83246f437f330362c01c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetOcclusionLodLevelAttr</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>SetOcclusionLodLevelAttr</name>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set occlusion LOD level attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="256" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a3c9d54594a106e0fe2c937660ab207ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::Terrain::GetHeightMapAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeightMapAttr</name>
+        <briefdescription>
+<para>Return heightmap attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="258" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a2f5f201f0189d8e72b51f0a44217d417" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::Terrain::GetMaterialAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterialAttr</name>
+        <briefdescription>
+<para>Return material attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="260" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a4ca2f6749ed6d928f54715f7e86e675b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Terrain::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="49" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a4c3774f5e5fb85197eb87d8fd1fff046" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::CreateGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>CreateGeometry</name>
+        <briefdescription>
+<para>Regenerate terrain geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="264" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ac5f9117661ac3c1b077540c4732cda94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::CreateIndexData</definition>
+        <argsstring>()</argsstring>
+        <name>CreateIndexData</name>
+        <briefdescription>
+<para>Create index data shared by all patches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="266" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a0acc8a5be52b65ae25545069980368a6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetRawHeight</definition>
+        <argsstring>(int x, int z) const</argsstring>
+        <name>GetRawHeight</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Return an uninterpolated terrain height value, clamping to edges. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="268" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a3a73c37ce566bde78994304cdf979866" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetSourceHeight</definition>
+        <argsstring>(int x, int z) const</argsstring>
+        <name>GetSourceHeight</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Return a source terrain height value, clamping to edges. The source data is used for smoothing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="270" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a87b444076169268be59eb09cee208331" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Terrain::GetLodHeight</definition>
+        <argsstring>(int x, int z, unsigned lodLevel) const</argsstring>
+        <name>GetLodHeight</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+        </param>
+        <briefdescription>
+<para>Return interpolated height for a specific LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="272" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a60ba1accba8876b27d699065102a5920" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Terrain::GetRawNormal</definition>
+        <argsstring>(int x, int z) const</argsstring>
+        <name>GetRawNormal</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Get slope-based terrain normal at position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="274" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a3836071d62973e24f72cfaf65d46afee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::CalculateLodErrors</definition>
+        <argsstring>(TerrainPatch *patch)</argsstring>
+        <name>CalculateLodErrors</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>patch</declname>
+        </param>
+        <briefdescription>
+<para>Calculate LOD errors for a patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="276" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a9f004dc87806512d2e1d85596a6088c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::SetPatchNeighbors</definition>
+        <argsstring>(TerrainPatch *patch)</argsstring>
+        <name>SetPatchNeighbors</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>patch</declname>
+        </param>
+        <briefdescription>
+<para>Set neighbors for a patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="278" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a22a49ec302f5976a837f343248e5c28c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Terrain::SetHeightMapInternal</definition>
+        <argsstring>(Image *image, bool recreateNow)</argsstring>
+        <name>SetHeightMapInternal</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recreateNow</declname>
+        </param>
+        <briefdescription>
+<para>Set heightmap image and optionally recreate the geometry immediately. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="280" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a43af67aece762c4ec605c85eb51815ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::HandleHeightMapReloadFinished</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleHeightMapReloadFinished</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle heightmap image reload finished. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="282" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a3085e8bd1df48867f73a4f4799758b39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::HandleNeighborTerrainCreated</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleNeighborTerrainCreated</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle neighbor terrain geometry being created. Update the edge patch neighbors as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="284" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1a64ed912c8f6ee85933cfd9cebc0ba77b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::UpdateEdgePatchNeighbors</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateEdgePatchNeighbors</name>
+        <briefdescription>
+<para>Update edge patch neighbors when neighbor terrain(s) change or are recreated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="286" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1af052a3642e935a6be60f9f7fb8a3a69c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::MarkNeighborsDirty</definition>
+        <argsstring>()</argsstring>
+        <name>MarkNeighborsDirty</name>
+        <briefdescription>
+<para>Mark neighbors dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="288" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="288" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Terrain_1ab3fe476781ca662287494e32502b5ccf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Terrain::MarkTerrainDirty</definition>
+        <argsstring>()</argsstring>
+        <name>MarkTerrainDirty</name>
+        <briefdescription>
+<para>Mark terrain dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="290" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="290" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Heightmap terrain component. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Terrain</label>
+        <link refid="classUrho3D_1_1Terrain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::Terrain</label>
+        <link refid="classUrho3D_1_1Terrain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" line="38" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Terrain.h" bodystart="39" bodyend="376"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ab75024299e9c5e44b3c7266ab3b0e361" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a46e980c5dc1639b4581e10d61c1cb79f" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>ApplyHeightMap</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3836071d62973e24f72cfaf65d46afee" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>CalculateLodErrors</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Terrain_1adba21156eb495bc087fe30a288ae2a7d" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>castShadows_</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4c3774f5e5fb85197eb87d8fd1fff046" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>CreateGeometry</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ac5f9117661ac3c1b077540c4732cda94" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>CreateIndexData</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a03006159674e5b8e1bb6d34e2afdcc81" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>CreatePatchGeometry</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a9479418f3cd94a59f1cf46404e6dddcb" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>drawDistance_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ac852c138c831ca40277731d5ae228204" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>drawRanges_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a6975e89f3dd60f458ae582a317bf80b7" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>east_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a32fbaeeeb64e853cf1c554256154386c" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>eastID_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4a623a98a4056acc06897a071e70c62f" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa3135369a2050fafe05b722745c68f61" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad6a1441745dccfd5602eeb47ffaa2a75" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetEastNeighbor</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a95868faa09f0c2ce2d51aa8021c3ddbf" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetHeight</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a9ecbc4f56dcac030b45c1bc51151d8c1" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetHeightData</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad918a8b60e581ea9fc3d0b62fab8159b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetHeightMap</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3c9d54594a106e0fe2c937660ab207ea" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetHeightMapAttr</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aca737e18affba6f604c6313a7c54cac5" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetLightMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad9761fbdb5dd8fffbf719e6025ed8df3" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetLodBias</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a87b444076169268be59eb09cee208331" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetLodHeight</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a2756fb967401624a2612dccd0fe59bdc" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetMaterial</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a2f5f201f0189d8e72b51f0a44217d417" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetMaterialAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a05c80ea82915ea83a0af6d9e27cee863" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a51fbc0204761e4ef937717d4b7cbadb3" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetMaxLodLevels</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ae9ad87bb25a5d3c5dcc56b5a3397a5e0" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNeighborPatch</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Terrain_1af76611936b8232b3ba4415049d1a74dd" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNormal</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a0d3a1542566ba4334799b9f36b301820" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNorthNeighbor</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ab9f8aca317fc4f9a1d245cc928781254" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNumPatches</name></member>
+      <member refid="classUrho3D_1_1Terrain_1adbfee15d73ba003ca14f1948f92ea022" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetNumVertices</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a015c5283c7bb3f163761cc4c44780411" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetOcclusionLodLevel</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a188d9ebb25ab19eb50b3ca5baab69327" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetPatch</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a64d23d9ba24d390722fe0bd722f58b3d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetPatch</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ac7cccd35587f9757c85cb9b200e1eacf" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetPatchSize</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a0acc8a5be52b65ae25545069980368a6" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetRawHeight</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a60ba1accba8876b27d699065102a5920" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetRawNormal</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa7094ae3cbfa65cccb26e0c9efdff3b4" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a63a087d5b1309591d14746e2d654c565" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a53ea3898045b5af70560eb398e7919a4" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetSmoothing</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3a73c37ce566bde78994304cdf979866" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetSourceHeight</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a0089db5df2db53d1cc08dd3d2d22bda2" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetSouthNeighbor</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a6b3b11f9d81c1bb53fca468b533f8da4" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetSpacing</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Terrain</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Terrain</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Terrain</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aee5f40008037b5ca4b29f5d009408b7f" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetViewMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a09aa85bbad1405803554e04ebda20dc8" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetWestNeighbor</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a21d4ac98c83a9d38b1b7639395727e37" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>GetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a43af67aece762c4ec605c85eb51815ba" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HandleHeightMapReloadFinished</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3085e8bd1df48867f73a4f4799758b39" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HandleNeighborTerrainCreated</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Terrain_1adeafeefe3392fc836fb2222f60f86d7f" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>heightData_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3e1d29b27f0eaf2d3198ec20e8753228" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>heightMap_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a599aafd97db9a067b075dce29cd28707" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>HeightMapToWorld</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa9e7a6790abeef85aee824bbe5ea9c39" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>indexBuffer_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a9cb7c852a2ce56b47389b4e10d285c72" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsOccludee</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a67ef6f7df542490b9259802ecd1cf295" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsOccluder</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a5d3d8ff8c850ed7d70d4b8425097822f" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>IsVisible</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aae19f1fde4bc63a3110974a2816d2ad1" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>lastNumVertices_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a5786abc846377ce100b1ba741f858072" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>lastPatchSize_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa2ac8e3906e8dda9b80161b4ee65264b" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>lastSpacing_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a14dac5621e78cfcd6258b733204d0d29" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>lightMask_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ac4b663157006dcc64e322a19ea33f796" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>lodBias_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1af052a3642e935a6be60f9f7fb8a3a69c" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>MarkNeighborsDirty</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ab3fe476781ca662287494e32502b5ccf" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>MarkTerrainDirty</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aaf5870010772f3b2f194dbf94e447411" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>material_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3089fcf7def4c082e3c31588db04e314" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>maxLights_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a65b9abf900ba39b73afcb9f2bad80230" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>maxLodLevels_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1acf063ab78bf2f1f163924d1d7bc6b7a3" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>neighborsDirty_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a031a305645f4411c18054d223e09e9be" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>north_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a185f78b033a3f8eee452069d5afd88db" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>northID_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a454a5f1f3307ee64b1c0266ebb0e72fe" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>numLodLevels_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad4e45a7747d7f5428eddd8fd6bb4fd6d" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>numPatches_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4be9670cbedcafec7aca54d4aa28f8a8" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>numVertices_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aed684c7a5159832fbbe93bdd2664db03" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>occludee_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa2a4068cb04702824eeae7bba04b5c18" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>occluder_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a0b5f90a0570866bb76339a479e43e25f" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>occlusionLodLevel_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a06ebdba9da30ea5f2599e39f7cd0e24a" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Component_1abdc9feb34a990d3567e9f4fa43d30d75" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679" prot="protected" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a7a17f9075b9c8e816f9b9a376e8327b6" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4c99959cc7daf696dc56ae23d0f6af5b" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>patches_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a353248fa32574b506f5e1848cdc0b5ac" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>patchSize_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3bc1f54bb3ba3c9f5b5f41b269f4940f" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>patchWorldOrigin_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ac501fc79da896a19c7d6ffd8d50c7d83" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>patchWorldSize_</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a2398276b96e54283ecd49fd935605dbb" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>recreateTerrain_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4ca2f6749ed6d928f54715f7e86e675b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad37051217b44880a69a759948542650b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa9df7603ac2b1fbd89292f8e1369cc88" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Terrain_1af77b74e0b9aeb917ad3fdb78551935d1" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetEastNeighbor</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad2a5a0e30901033ba358b2cf6d35d264" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetHeightMap</name></member>
+      <member refid="classUrho3D_1_1Terrain_1adf8994ab5546fbe1bc489078d45bc3a0" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetHeightMapAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a22a49ec302f5976a837f343248e5c28c" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetHeightMapInternal</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a1415200f83d8e6fec79790650c452dff" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetLightMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a37d77fadeb6c0f2e75a30f1a7d67dd5d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetLodBias</name></member>
+      <member refid="classUrho3D_1_1Terrain_1afd282504b4f9337da2e3baa46bf48ff5" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetMaterial</name></member>
+      <member refid="classUrho3D_1_1Terrain_1af3da1db6791b521a8b0a4feb8ff73a3a" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetMaterialAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a04b2a37f8ba75be1a4285dd37bc26f21" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a55a33ee2d3fa6f25d5ef71f2bcc9e81e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetMaxLodLevels</name></member>
+      <member refid="classUrho3D_1_1Terrain_1afeaf4799cea6104086fc3996e0bec821" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetMaxLodLevelsAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aa32023ec65be2e5e05957a97e3bdfd1d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetNeighbors</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a510f9285bbcdd3ea5fdf88832f117d3c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetNorthNeighbor</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ab767110a5e1e3f039af7085153571084" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetOccludee</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a8ab8809041aaa8913f649ab884dad228" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetOccluder</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a5f851bd03c1144100d68c1acc21c4342" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetOcclusionLodLevel</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3a0c497b632e83246f437f330362c01c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetOcclusionLodLevelAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a9f004dc87806512d2e1d85596a6088c9" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetPatchNeighbors</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a651f43ce21bc81355ed38a4bafdacaf1" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetPatchSize</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a25cddc2dbb2fc2b38e4a567494ff9752" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetPatchSizeAttr</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a535cbc0e83b9da90b0cefe28d71a8bf0" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a20daed0587c1743c6f7e8ab186ab3ffb" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ae202c49a54a7cc2b1ef3fe0b033031ec" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetSmoothing</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a5caf7f0a3c88f72b2b72b9265c26f0e7" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetSouthNeighbor</name></member>
+      <member refid="classUrho3D_1_1Terrain_1aefd05440a5013e08424f05aba3df2582" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetSpacing</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a437da028b6582f9d70095098ed782451" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetViewMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a95e9c68c96d14efa977ee1cdb1a4f84d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetWestNeighbor</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a02ceda71d925852432f02e28eb262def" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a9f5cbe04af0281c629be8887486227df" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>shadowDistance_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad903eae332d3502c07d8574b8799fd92" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>shadowMask_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a6bb3c43661cd0f901727701dab8429ea" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>smoothing_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1acdeb3b978b0012c89d975f28dcc11e1b" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>sourceHeightData_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a93aec49a398d0e7f13902b07759f998b" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>south_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4fdd28250505a8a73266af8638538060" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>southID_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a1642a505360bb482ca29c25536afb4f3" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>spacing_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a4049c50bf7479ec887f197f79cd8f7b4" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>Terrain</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a64ed912c8f6ee85933cfd9cebc0ba77b" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UpdateEdgePatchNeighbors</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ac4d9ac6ca4be30689be9e4252d224dee" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>UpdatePatchLod</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a016e6b9941bf0c9e574e0f7fdd0291a2" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3c142abfa7aac2e4d4e10e241a0c4229" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>visible_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ae2f5ef768f5a5ac8592f973171182c52" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>west_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a26bda13a497ab8b0e244fe6ef5744137" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>westID_</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a3599516869ecc78d8c62e2b7e4790a46" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>WorldToHeightMap</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Terrain_1ad973a9098dc151fdf09d164c93093203" prot="private" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>zoneMask_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Terrain</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>~Serializable</name></member>
+      <member refid="classUrho3D_1_1Terrain_1a45605a06e7c5b390e10a381faa797bfa" prot="public" virt="non-virtual"><scope>Urho3D::Terrain</scope><name>~Terrain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

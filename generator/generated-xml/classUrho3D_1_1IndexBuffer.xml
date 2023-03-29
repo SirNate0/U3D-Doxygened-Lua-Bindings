@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1IndexBuffer" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::IndexBuffer</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1GPUObject" prot="public" virt="non-virtual">Urho3D::GPUObject</basecompoundref>
+    <includes refid="IndexBuffer_8h" local="no">IndexBuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a2660613d3a3d2a6fd338c8545c82a332" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::IndexBuffer::shadowData_</definition>
+        <argsstring></argsstring>
+        <name>shadowData_</name>
+        <briefdescription>
+<para>Shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="104" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a198fe3590a089cd09043c4a2ab6eb25c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IndexBuffer::indexCount_</definition>
+        <argsstring></argsstring>
+        <name>indexCount_</name>
+        <briefdescription>
+<para>Number of indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="106" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a05130917f4e71f58100209bb2118f48f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IndexBuffer::indexSize_</definition>
+        <argsstring></argsstring>
+        <name>indexSize_</name>
+        <briefdescription>
+<para>Index size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="108" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a50a25d9e185145253805d2325d770022" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a38ac62f590877bb0035c3ccafa0dcc81" kindref="member">LockState</ref></type>
+        <definition>LockState Urho3D::IndexBuffer::lockState_</definition>
+        <argsstring></argsstring>
+        <name>lockState_</name>
+        <briefdescription>
+<para>Buffer locking state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="110" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1aa516b7e6f6320450682874661c47c081" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IndexBuffer::lockStart_</definition>
+        <argsstring></argsstring>
+        <name>lockStart_</name>
+        <briefdescription>
+<para>Lock start vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="112" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1aa0a5eb08203a9213923b213dc1710dcf" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IndexBuffer::lockCount_</definition>
+        <argsstring></argsstring>
+        <name>lockCount_</name>
+        <briefdescription>
+<para>Lock number of vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="114" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a5724e033659363ae18fba96aa22f6c92" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::IndexBuffer::lockScratchData_</definition>
+        <argsstring></argsstring>
+        <name>lockScratchData_</name>
+        <briefdescription>
+<para>Scratch buffer for fallback locking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="116" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a7b727e3a9a2fd7d0a14a398fef765782" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::dynamic_</definition>
+        <argsstring></argsstring>
+        <name>dynamic_</name>
+        <briefdescription>
+<para>Dynamic flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="118" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1aef8b59930c586632de24c26ebcd68acf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::shadowed_</definition>
+        <argsstring></argsstring>
+        <name>shadowed_</name>
+        <briefdescription>
+<para>Shadowed flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="120" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IndexBuffer_1a42c9563ee3c61fa54327c68ba8896cec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::discardLock_</definition>
+        <argsstring></argsstring>
+        <name>discardLock_</name>
+        <briefdescription>
+<para>Discard lock flag. Used by OpenGL only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="122" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a6d030fcc39285d3cc99d9b5fcbe4af48" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::IndexBuffer::IndexBuffer</definition>
+        <argsstring>(Context *context, bool forceHeadless=false)</argsstring>
+        <name>IndexBuffer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceHeadless</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Construct. Optionally force headless (no GPU-side buffer) operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a6439d7e20488fba13f89d7631bdcbcb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::IndexBuffer::~IndexBuffer</definition>
+        <argsstring>() override</argsstring>
+        <name>~IndexBuffer</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a163a80f91a2e803aa3140fd0610e4b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::IndexBuffer::OnDeviceLost</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceLost</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1ad5ecd882dd04590d38951f897d1f6575">OnDeviceLost</reimplements>
+        <briefdescription>
+<para>Mark the buffer destroyed on graphics context destruction. May be a no-op depending on the API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a3a45b94a13b311c2db4694bef9524c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::IndexBuffer::OnDeviceReset</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceReset</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a18ab28f33620594506eeb2c5fe168106">OnDeviceReset</reimplements>
+        <briefdescription>
+<para>Recreate the buffer and restore data if applicable. May be a no-op depending on the API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a702908f2461350f6bd7a945919c6170e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::IndexBuffer::Release</definition>
+        <argsstring>() override</argsstring>
+        <name>Release</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a86d97d51d21841b9c057baee19a17a30">Release</reimplements>
+        <briefdescription>
+<para>Release buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a842d2d57d5ebe98fa42e53065708682a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IndexBuffer::SetShadowed</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetShadowed</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable shadowing in CPU memory. Shadowing is forced on if the graphics subsystem does not exist. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1acad3ececff56c39f52703e514b730364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::SetSize</definition>
+        <argsstring>(unsigned indexCount, bool largeIndices, bool dynamic=false)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>indexCount</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>largeIndices</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dynamic</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set size and vertex elements and dynamic mode. Previous data will be lost. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a21f9b30d2a72457f6cd33e769e5b59cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::SetData</definition>
+        <argsstring>(const void *data)</argsstring>
+        <name>SetData</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Set all data in the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a6b4939821435c61218cfd58a06211484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::SetDataRange</definition>
+        <argsstring>(const void *data, unsigned start, unsigned count, bool discard=false)</argsstring>
+        <name>SetDataRange</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set a data range in the buffer. Optionally discard data outside the range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a0f93b1ab5d66a317515d4f91d0fdd2e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::IndexBuffer::Lock</definition>
+        <argsstring>(unsigned start, unsigned count, bool discard=false)</argsstring>
+        <name>Lock</name>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Lock the buffer for write-only editing. Return data pointer if successful. Optionally discard data outside the range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1abd80b2ed1d3e4f9243712f3370a59469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IndexBuffer::Unlock</definition>
+        <argsstring>()</argsstring>
+        <name>Unlock</name>
+        <briefdescription>
+<para>Unlock the buffer and apply changes to the GPU buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1ad242a9a7f509afb6a0bcd4aae7ec22d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::IsShadowed</definition>
+        <argsstring>() const</argsstring>
+        <name>IsShadowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether CPU memory shadowing is enabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="67" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1ac00353887921f9d7a0007ae24797f5a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::IsDynamic</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDynamic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is dynamic. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="71" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a8ff498ab99e0ea51962ea849a57eda02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::IsLocked</definition>
+        <argsstring>() const</argsstring>
+        <name>IsLocked</name>
+        <briefdescription>
+<para>Return whether is currently locked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="74" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a34048ffaa4a972faa74ba12fa1d2f8ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IndexBuffer::GetIndexCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIndexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of indices. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="78" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1ae3430ebfb295d9613eb13978511adef7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IndexBuffer::GetIndexSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIndexSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return index size in bytes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="82" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a5aa0d6a4d89ca4f3d79deedc7286042f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::GetUsedVertexRange</definition>
+        <argsstring>(unsigned start, unsigned count, unsigned &amp;minVertex, unsigned &amp;vertexCount)</argsstring>
+        <name>GetUsedVertexRange</name>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>minVertex</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>vertexCount</declname>
+        </param>
+        <briefdescription>
+<para>Return used vertex range from index range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a2d859fe5a928ffaf25a9ad4f107925f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Urho3D::IndexBuffer::GetShadowData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowData</name>
+        <briefdescription>
+<para>Return CPU memory shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="88" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a4e05eaba20be0f83b64c02bc3e514eb0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::IndexBuffer::GetShadowDataShared</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowDataShared</name>
+        <briefdescription>
+<para>Return shared array pointer to the CPU memory shadow data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="91" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1ae31e230aad30bec9beb7483f80f5d9a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Create buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1ac9c048ad7c84bcda500b7265591ffc4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IndexBuffer::UpdateToGPU</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateToGPU</name>
+        <briefdescription>
+<para>Update the shadow data to the GPU buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1ae3fbc0395159ce2addfb5d2fecfcdf05" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::IndexBuffer::MapBuffer</definition>
+        <argsstring>(unsigned start, unsigned count, bool discard)</argsstring>
+        <name>MapBuffer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>discard</declname>
+        </param>
+        <briefdescription>
+<para>Map the GPU buffer into CPU memory. Not used on OpenGL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IndexBuffer_1a354be4f69b3267b3ccddb61f8ba18977" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IndexBuffer::UnmapBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>UnmapBuffer</name>
+        <briefdescription>
+<para>Unmap the GPU buffer. Not used on OpenGL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="101" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Hardware index buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::IndexBuffer</label>
+        <link refid="classUrho3D_1_1IndexBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::IndexBuffer</label>
+        <link refid="classUrho3D_1_1IndexBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/IndexBuffer.h" bodystart="35" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a90de5fa07e164d6b5e95f832a0741088" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>ClearDataLost</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1ae31e230aad30bec9beb7483f80f5d9a8" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Create</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ab6c82e62ca8b1098c4157acfe517c772" prot="protected" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>dataLost_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ada5a50cf10c6f65deb6b273bfc1649ab" prot="protected" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>dataPending_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a42c9563ee3c61fa54327c68ba8896cec" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>discardLock_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a7b727e3a9a2fd7d0a14a398fef765782" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>dynamic_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a63ba593256e723f7f15a62fca79fe10d" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetGPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1afeb0a749cfb6c1bb4c7f1b4a35d7f901" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetGPUObjectName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a77fa1abcd0a6b3a7cce431c10b2f7c26" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetGraphics</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a34048ffaa4a972faa74ba12fa1d2f8ef" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetIndexCount</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1ae3430ebfb295d9613eb13978511adef7" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetIndexSize</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a2d859fe5a928ffaf25a9ad4f107925f5" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetShadowData</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a4e05eaba20be0f83b64c02bc3e514eb0" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetShadowDataShared</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a5aa0d6a4d89ca4f3d79deedc7286042f" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GetUsedVertexRange</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a403872d965887004f1021405870ff865" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>GPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1abf1a902885d2c3bac02f3f58e0e0f037" prot="protected" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a7039fc3a187fd67855a802c00099452b" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>HasPendingData</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a6d030fcc39285d3cc99d9b5fcbe4af48" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IndexBuffer</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a198fe3590a089cd09043c4a2ab6eb25c" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>indexCount_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a05130917f4e71f58100209bb2118f48f" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>indexSize_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a6938a78e8bb131f8c53e136778c9f6c2" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1ac00353887921f9d7a0007ae24797f5a5" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsDynamic</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a8ff498ab99e0ea51962ea849a57eda02" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsLocked</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1ad242a9a7f509afb6a0bcd4aae7ec22d7" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>IsShadowed</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a0f93b1ab5d66a317515d4f91d0fdd2e8" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Lock</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1aa0a5eb08203a9213923b213dc1710dcf" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>lockCount_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a5724e033659363ae18fba96aa22f6c92" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>lockScratchData_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1aa516b7e6f6320450682874661c47c081" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>lockStart_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a50a25d9e185145253805d2325d770022" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>lockState_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1ae3fbc0395159ce2addfb5d2fecfcdf05" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>MapBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a02851f652df5053623c4434f2cd9a4b8" prot="protected" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>object_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a163a80f91a2e803aa3140fd0610e4b9b" prot="public" virt="virtual"><scope>Urho3D::IndexBuffer</scope><name>OnDeviceLost</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a3a45b94a13b311c2db4694bef9524c48" prot="public" virt="virtual"><scope>Urho3D::IndexBuffer</scope><name>OnDeviceReset</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::IndexBuffer</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a702908f2461350f6bd7a945919c6170e" prot="public" virt="virtual"><scope>Urho3D::IndexBuffer</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a21f9b30d2a72457f6cd33e769e5b59cd" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SetData</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a6b4939821435c61218cfd58a06211484" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SetDataRange</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a842d2d57d5ebe98fa42e53065708682a" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SetShadowed</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1acad3ececff56c39f52703e514b730364" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a2660613d3a3d2a6fd338c8545c82a332" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>shadowData_</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1aef8b59930c586632de24c26ebcd68acf" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>shadowed_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1abd80b2ed1d3e4f9243712f3370a59469" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>Unlock</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a354be4f69b3267b3ccddb61f8ba18977" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UnmapBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1ac9c048ad7c84bcda500b7265591ffc4b" prot="private" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>UpdateToGPU</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad23b82c85519c520437707ddd4b8097f" prot="public" virt="virtual"><scope>Urho3D::IndexBuffer</scope><name>~GPUObject</name></member>
+      <member refid="classUrho3D_1_1IndexBuffer_1a6439d7e20488fba13f89d7631bdcbcb5" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>~IndexBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::IndexBuffer</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::IndexBuffer</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

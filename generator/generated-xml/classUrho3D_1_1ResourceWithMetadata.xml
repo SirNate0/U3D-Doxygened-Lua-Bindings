@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ResourceWithMetadata" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ResourceWithMetadata</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Animation" prot="public" virt="non-virtual">Urho3D::Animation</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Model" prot="public" virt="non-virtual">Urho3D::Model</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Sound" prot="public" virt="non-virtual">Urho3D::Sound</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Texture" prot="public" virt="non-virtual">Urho3D::Texture</derivedcompoundref>
+    <includes refid="Resource_8h" local="no">Resource.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceWithMetadata_1a1aa155fda5f2d3d533e8d07eb0b7c744" prot="private" static="no" mutable="no">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>VariantMap Urho3D::ResourceWithMetadata::metadata_</definition>
+        <argsstring></argsstring>
+        <name>metadata_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> metadata variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="155" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceWithMetadata_1a80f80ab69d144af04a6386579b68b02c" prot="private" static="no" mutable="no">
+        <type><ref refid="Variant_8h_1a5f28e7014e5fbb48c5b2a999db00fc29" kindref="member">StringVector</ref></type>
+        <definition>StringVector Urho3D::ResourceWithMetadata::metadataKeys_</definition>
+        <argsstring></argsstring>
+        <name>metadataKeys_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> metadata keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="157" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1acc98571a81271b68210f4f14414e0774" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ResourceWithMetadata::ResourceWithMetadata</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>ResourceWithMetadata</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="127" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1ae42b734952a34d298976e8c5375d9bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::AddMetadata</definition>
+        <argsstring>(const String &amp;name, const Variant &amp;value)</argsstring>
+        <name>AddMetadata</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add new metadata variable or overwrite old value. BIND_AS_ALIAS_set_metadata </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1ad23658b7b267b2d1ec06d16a13d4a2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::RemoveMetadata</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RemoveMetadata</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove metadata variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1a4a1ea688bdfe2518a11336d0753b5ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::RemoveAllMetadata</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAllMetadata</name>
+        <briefdescription>
+<para>Remove all metadata variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1a4409f6edd5c2e7994bd8cff78b9add28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+        <definition>const Variant&amp; Urho3D::ResourceWithMetadata::GetMetadata</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetMetadata</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return metadata variable. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="138" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1a1629581f5187eef675e9a812b23c511d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceWithMetadata::HasMetadata</definition>
+        <argsstring>() const</argsstring>
+        <name>HasMetadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether the resource has metadata. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="141" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1a16dc2ff1d1182913cefeaba7273a571c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::LoadMetadataFromXML</definition>
+        <argsstring>(const XMLElement &amp;source)</argsstring>
+        <name>LoadMetadataFromXML</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load metadata from &lt;metadata&gt; children of XML element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1a85948141c17b39bddd26a2c63acbcc39" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::LoadMetadataFromJSON</definition>
+        <argsstring>(const JSONArray &amp;array)</argsstring>
+        <name>LoadMetadataFromJSON</name>
+        <param>
+          <type>const <ref refid="JSONValue_8h_1a7a32d5c31832a7a42f544d0dc45815f4" kindref="member">JSONArray</ref> &amp;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+<para>Load metadata from JSON array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1a5d03bdec155fe2a32f1931ba40b2dbd6" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::SaveMetadataToXML</definition>
+        <argsstring>(XMLElement &amp;destination) const</argsstring>
+        <name>SaveMetadataToXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>destination</declname>
+        </param>
+        <briefdescription>
+<para>Save as &lt;metadata&gt; children of XML element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceWithMetadata_1af27b1f8c432ed13835bde9130774cb5f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceWithMetadata::CopyMetadata</definition>
+        <argsstring>(const ResourceWithMetadata &amp;source)</argsstring>
+        <name>CopyMetadata</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1ResourceWithMetadata" kindref="compound">ResourceWithMetadata</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Copy metadata from another resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="151" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for resources that support arbitrary metadata stored. Metadata serialization shall be implemented in derived classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>Urho3D::TextureCube</label>
+        <link refid="classUrho3D_1_1TextureCube"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::Texture2D</label>
+        <link refid="classUrho3D_1_1Texture2D"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::Texture3D</label>
+        <link refid="classUrho3D_1_1Texture3D"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Model</label>
+        <link refid="classUrho3D_1_1Model"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Sound</label>
+        <link refid="classUrho3D_1_1Sound"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Animation</label>
+        <link refid="classUrho3D_1_1Animation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::Texture2DArray</label>
+        <link refid="classUrho3D_1_1Texture2DArray"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::Texture</label>
+        <link refid="classUrho3D_1_1Texture"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" line="121" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/Resource.h" bodystart="122" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1ae42b734952a34d298976e8c5375d9bcf" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>AddMetadata</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc" prot="public" virt="virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1af27b1f8c432ed13835bde9130774cb5f" prot="protected" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>CopyMetadata</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d" prot="public" virt="virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a4409f6edd5c2e7994bd8cff78b9add28" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetMetadata</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a1629581f5187eef675e9a812b23c511d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>HasMetadata</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a85948141c17b39bddd26a2c63acbcc39" prot="protected" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>LoadMetadataFromJSON</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a16dc2ff1d1182913cefeaba7273a571c" prot="protected" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>LoadMetadataFromXML</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a1aa155fda5f2d3d533e8d07eb0b7c744" prot="private" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>metadata_</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a80f80ab69d144af04a6386579b68b02c" prot="private" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>metadataKeys_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a4a1ea688bdfe2518a11336d0753b5ed2" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>RemoveAllMetadata</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1ad23658b7b267b2d1ec06d16a13d4a2e7" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>RemoveMetadata</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1acc98571a81271b68210f4f14414e0774" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>ResourceWithMetadata</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd" prot="public" virt="virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a5d03bdec155fe2a32f1931ba40b2dbd6" prot="protected" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SaveMetadataToXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ResourceWithMetadata</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

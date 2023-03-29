@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1TmxFile2D" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::TmxFile2D</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <includes refid="TmxFile2D_8h" local="no">TmxFile2D.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1a8bc03c9ae2a21696e9cf43095ec6cfd1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> &gt;</type>
+        <definition>SharedPtr&lt;XMLFile&gt; Urho3D::TmxFile2D::loadXMLFile_</definition>
+        <argsstring></argsstring>
+        <name>loadXMLFile_</name>
+        <briefdescription>
+<para>XML file used during loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="217" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1a35871b9e53322154b22699f1f50124b4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;String, SharedPtr&lt;XMLFile&gt; &gt; Urho3D::TmxFile2D::tsxXMLFiles_</definition>
+        <argsstring></argsstring>
+        <name>tsxXMLFiles_</name>
+        <briefdescription>
+<para>TSX name to XML file mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="219" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1a70461478ba2ccbc211c5d7370ee6faba" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1TileMapInfo2D" kindref="compound">TileMapInfo2D</ref></type>
+        <definition>TileMapInfo2D Urho3D::TmxFile2D::info_</definition>
+        <argsstring></argsstring>
+        <name>info_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Tile map information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="221" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1a1fbde52f872ddf2afcfa39ef52653e93" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Sprite2D" kindref="compound">Sprite2D</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;unsigned, SharedPtr&lt;Sprite2D&gt; &gt; Urho3D::TmxFile2D::gidToSpriteMapping_</definition>
+        <argsstring></argsstring>
+        <name>gidToSpriteMapping_</name>
+        <briefdescription>
+<para>Gid to tile sprite mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="223" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1a7bece94887bf283b17b1fd33d741e7d5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1PropertySet2D" kindref="compound">PropertySet2D</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;unsigned, SharedPtr&lt;PropertySet2D&gt; &gt; Urho3D::TmxFile2D::gidToPropertySetMapping_</definition>
+        <argsstring></argsstring>
+        <name>gidToPropertySetMapping_</name>
+        <briefdescription>
+<para>Gid to tile property set mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="225" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1aa580967c2a0b1781dd8edd30417ba586" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1TileMapObject2D" kindref="compound">TileMapObject2D</ref> &gt; &gt; &gt;</type>
+        <definition>HashMap&lt;unsigned, Vector&lt;SharedPtr&lt;TileMapObject2D&gt; &gt; &gt; Urho3D::TmxFile2D::gidToCollisionShapeMapping_</definition>
+        <argsstring></argsstring>
+        <name>gidToCollisionShapeMapping_</name>
+        <briefdescription>
+<para>Gid to tile collision shape mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="227" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1a4b158f01eab3b98546d9ac33a28a5be6" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1TmxLayer2D" kindref="compound">TmxLayer2D</ref> * &gt;</type>
+        <definition>Vector&lt;TmxLayer2D*&gt; Urho3D::TmxFile2D::layers_</definition>
+        <argsstring></argsstring>
+        <name>layers_</name>
+        <briefdescription>
+<para>Layers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="229" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TmxFile2D_1ae44481f10309901171cecc5be8e41a33" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::TmxFile2D::edgeOffset_</definition>
+        <argsstring></argsstring>
+        <name>edgeOffset_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> edge offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="231" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a952d2f6691d36850c3e75cf75daa10b0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::TmxFile2D::TmxFile2D</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>TmxFile2D</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="163" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a9c8305d50a0c7ddb27bd8867206d813e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::TmxFile2D::~TmxFile2D</definition>
+        <argsstring>() override</argsstring>
+        <name>~TmxFile2D</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="165" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a86f1ba7084160bad31c79c59e424947e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::TmxFile2D::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a77e4d39d96cfe2323c7dd9f8a34b1806" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::TmxFile2D::EndLoad</definition>
+        <argsstring>() override</argsstring>
+        <name>EndLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d">EndLoad</reimplements>
+        <briefdescription>
+<para>Finish resource loading. Always called from the main thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="173" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1abaac58304204516969257f713c75cae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::TmxFile2D::SetInfo</definition>
+        <argsstring>(Orientation2D orientation, int width, int height, float tileWidth, float tileHeight)</argsstring>
+        <name>SetInfo</name>
+        <param>
+          <type><ref refid="TileMapDefs2D_8h_1ae84ffb31215a70d746919cf113e8f228" kindref="member">Orientation2D</ref></type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>tileWidth</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>tileHeight</declname>
+        </param>
+        <briefdescription>
+<para>Set Tilemap information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a19a49d537b8df169576f3fe8e258cdce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TmxFile2D::AddLayer</definition>
+        <argsstring>(unsigned index, TmxLayer2D *layer)</argsstring>
+        <name>AddLayer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1TmxLayer2D" kindref="compound">TmxLayer2D</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Add layer at index, if index &gt; number of layers then append to end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="179" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1ab903ffa973a9ffdf2741c8ac63240e08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TmxFile2D::AddLayer</definition>
+        <argsstring>(Urho3D::TmxLayer2D *layer)</argsstring>
+        <name>AddLayer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1TmxLayer2D" kindref="compound">Urho3D::TmxLayer2D</ref> *</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+<para>Append layer to end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="182" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a7191067a91b2fd999a4e313b4e279820" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1TileMapInfo2D" kindref="compound">TileMapInfo2D</ref> &amp;</type>
+        <definition>const TileMapInfo2D&amp; Urho3D::TmxFile2D::GetInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInfo</name>
+        <briefdescription>
+<para>Return Tilemap information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="185" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1aa00675e67d1c1f853836b8e4c9445102" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Sprite2D" kindref="compound">Sprite2D</ref> *</type>
+        <definition>Sprite2D* Urho3D::TmxFile2D::GetTileSprite</definition>
+        <argsstring>(unsigned gid) const</argsstring>
+        <name>GetTileSprite</name>
+        <param>
+          <type>unsigned</type>
+          <declname>gid</declname>
+        </param>
+        <briefdescription>
+<para>Return tile sprite by gid, if not exist return 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="188" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a8c4b565cf8e0acf1b16de79538abc5a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1TileMapObject2D" kindref="compound">TileMapObject2D</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;TileMapObject2D&gt; &gt; Urho3D::TmxFile2D::GetTileCollisionShapes</definition>
+        <argsstring>(unsigned gid) const</argsstring>
+        <name>GetTileCollisionShapes</name>
+        <param>
+          <type>unsigned</type>
+          <declname>gid</declname>
+        </param>
+        <briefdescription>
+<para>Return tile collision shapes for a given gid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="191" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1acf4ed0ebe6dffa8e180d82cffc93638c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PropertySet2D" kindref="compound">PropertySet2D</ref> *</type>
+        <definition>PropertySet2D* Urho3D::TmxFile2D::GetTilePropertySet</definition>
+        <argsstring>(unsigned gid) const</argsstring>
+        <name>GetTilePropertySet</name>
+        <param>
+          <type>unsigned</type>
+          <declname>gid</declname>
+        </param>
+        <briefdescription>
+<para>Return tile property set by gid, if not exist return 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="194" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1ac400c79fa36f0d1c59e180a9d5834afa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::TmxFile2D::GetNumLayers</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumLayers</name>
+        <briefdescription>
+<para>Return number of layers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="197" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a977b5fadfcc74bcb8754e6634b2d502a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1TmxLayer2D" kindref="compound">TmxLayer2D</ref> *</type>
+        <definition>const TmxLayer2D* Urho3D::TmxFile2D::GetLayer</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetLayer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return layer at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="200" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1a0ab5d213e58b3d1f96d982d044b4149b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TmxFile2D::SetSpriteTextureEdgeOffset</definition>
+        <argsstring>(float offset)</argsstring>
+        <name>SetSpriteTextureEdgeOffset</name>
+        <param>
+          <type>float</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set texture edge offset for all sprites, in pixels. BIND_AS_ALIAS_set_edgeOffset </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="204" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1ae7333e077c53a4538e600f821762f2ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::TmxFile2D::GetSpriteTextureEdgeOffset</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSpriteTextureEdgeOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return texture edge offset, in pixels. BIND_AS_ALIAS_get_edgeOffset </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="208" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1ac817484f8a73b3dbd0abd948842a1ba3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::TmxFile2D::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="168" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1ade159ca1f7494281684579fe59c520ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> &gt;</type>
+        <definition>SharedPtr&lt;XMLFile&gt; Urho3D::TmxFile2D::LoadTSXFile</definition>
+        <argsstring>(const String &amp;source)</argsstring>
+        <name>LoadTSXFile</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load TSX file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="212" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TmxFile2D_1ac547014321b24294a62bbf61b271768d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::TmxFile2D::LoadTileSet</definition>
+        <argsstring>(const XMLElement &amp;element)</argsstring>
+        <name>LoadTileSet</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Load tile set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="214" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tile map file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::TmxFile2D</label>
+        <link refid="classUrho3D_1_1TmxFile2D"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::TmxFile2D</label>
+        <link refid="classUrho3D_1_1TmxFile2D"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" line="157" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/TmxFile2D.h" bodystart="158" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1TmxFile2D_1a19a49d537b8df169576f3fe8e258cdce" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>AddLayer</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ab903ffa973a9ffdf2741c8ac63240e08" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>AddLayer</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a86f1ba7084160bad31c79c59e424947e" prot="public" virt="virtual"><scope>Urho3D::TmxFile2D</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ae44481f10309901171cecc5be8e41a33" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>edgeOffset_</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a77e4d39d96cfe2323c7dd9f8a34b1806" prot="public" virt="virtual"><scope>Urho3D::TmxFile2D</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a7191067a91b2fd999a4e313b4e279820" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetInfo</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a977b5fadfcc74bcb8754e6634b2d502a" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetLayer</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ac400c79fa36f0d1c59e180a9d5834afa" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetNumLayers</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ae7333e077c53a4538e600f821762f2ad" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetSpriteTextureEdgeOffset</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a8c4b565cf8e0acf1b16de79538abc5a9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetTileCollisionShapes</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1acf4ed0ebe6dffa8e180d82cffc93638c" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetTilePropertySet</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1aa00675e67d1c1f853836b8e4c9445102" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetTileSprite</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1aa580967c2a0b1781dd8edd30417ba586" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>gidToCollisionShapeMapping_</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a7bece94887bf283b17b1fd33d741e7d5" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>gidToPropertySetMapping_</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a1fbde52f872ddf2afcfa39ef52653e93" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>gidToSpriteMapping_</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a70461478ba2ccbc211c5d7370ee6faba" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>info_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a4b158f01eab3b98546d9ac33a28a5be6" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>layers_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ac547014321b24294a62bbf61b271768d" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>LoadTileSet</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ade159ca1f7494281684579fe59c520ff" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>LoadTSXFile</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a8bc03c9ae2a21696e9cf43095ec6cfd1" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>loadXMLFile_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::TmxFile2D</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1ac817484f8a73b3dbd0abd948842a1ba3" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd" prot="public" virt="virtual"><scope>Urho3D::TmxFile2D</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::TmxFile2D</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1abaac58304204516969257f713c75cae1" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetInfo</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a0ab5d213e58b3d1f96d982d044b4149b" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SetSpriteTextureEdgeOffset</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a952d2f6691d36850c3e75cf75daa10b0" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>TmxFile2D</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a35871b9e53322154b22699f1f50124b4" prot="private" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>tsxXMLFiles_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::TmxFile2D</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1TmxFile2D_1a9c8305d50a0c7ddb27bd8867206d813e" prot="public" virt="non-virtual"><scope>Urho3D::TmxFile2D</scope><name>~TmxFile2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

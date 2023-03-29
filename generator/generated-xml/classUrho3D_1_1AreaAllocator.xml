@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1AreaAllocator" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::AreaAllocator</compoundname>
+    <includes refid="AreaAllocator_8h" local="no">AreaAllocator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1AreaAllocator_1a2f28b0a8b3fb5e1537e43698d9b48838" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &gt;</type>
+        <definition>PODVector&lt;IntRect&gt; Urho3D::AreaAllocator::freeAreas_</definition>
+        <argsstring></argsstring>
+        <name>freeAreas_</name>
+        <briefdescription>
+<para>Free rectangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="62" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AreaAllocator_1a95395258e2f118a32c1d007759b8e771" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::AreaAllocator::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+<para>Current size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="64" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AreaAllocator_1a00f0065f43d4b8efedaf7f7763db59c3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::AreaAllocator::maxSize_</definition>
+        <argsstring></argsstring>
+        <name>maxSize_</name>
+        <briefdescription>
+<para>Maximum size it allows to grow. It is zero when it is not allowed to grow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="66" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AreaAllocator_1a5ca78b3d9778a1851942f7748d4a55f7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::AreaAllocator::doubleWidth_</definition>
+        <argsstring></argsstring>
+        <name>doubleWidth_</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>The dimension use for next growth. Used internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="68" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AreaAllocator_1adf864d1a9f039a855d9bb3679c29fa54" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::AreaAllocator::fastMode_</definition>
+        <argsstring></argsstring>
+        <name>fastMode_</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>Fast mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="70" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a616d7f8982858359e03002663a118511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::AreaAllocator::AreaAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>AreaAllocator</name>
+        <briefdescription>
+<para>Default construct with empty size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a7d419c98fbce83fa0b106202dffe46e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::AreaAllocator::AreaAllocator</definition>
+        <argsstring>(int width, int height, bool fastMode=true)</argsstring>
+        <name>AreaAllocator</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fastMode</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Construct with given width and height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="37" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1afa363c8e94933422b5947ca23aec24ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::AreaAllocator::AreaAllocator</definition>
+        <argsstring>(int width, int height, int maxWidth, int maxHeight, bool fastMode=true)</argsstring>
+        <name>AreaAllocator</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxHeight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fastMode</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Construct with given width and height, and set the maximum it allows to grow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a953aa6cd0bb52a869726d9ebb484fe7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AreaAllocator::Reset</definition>
+        <argsstring>(int width, int height, int maxWidth=0, int maxHeight=0, bool fastMode=true)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxWidth</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxHeight</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fastMode</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Reset to given width and height and remove all previous allocations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="42" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a6b6949e6fedd21c43be6182af876bce0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::AreaAllocator::Allocate</definition>
+        <argsstring>(int width, int height, int &amp;x, int &amp;y)</argsstring>
+        <name>Allocate</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Try to allocate an area. Return true if successful, with x &amp; y coordinates filled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a85205a9473c56a8bc7c66657b21b3ed0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::AreaAllocator::GetWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWidth</name>
+        <briefdescription>
+<para>Return the current width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="47" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a79556c68c2026a50670b286e8dc81875" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::AreaAllocator::GetHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeight</name>
+        <briefdescription>
+<para>Return the current height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="50" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1ada57fdf406036b8f9b92295c2c090b35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::AreaAllocator::GetFastMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFastMode</name>
+        <briefdescription>
+<para>Return whether uses fast mode. Fast mode uses a simpler allocation scheme which may waste free space, but is OK for eg. fonts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="53" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1a3b06245372a84faa7e77142652687433" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::AreaAllocator::SplitRect</definition>
+        <argsstring>(unsigned freeAreaIndex, const IntRect &amp;reserve)</argsstring>
+        <name>SplitRect</name>
+        <param>
+          <type>unsigned</type>
+          <declname>freeAreaIndex</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &amp;</type>
+          <declname>reserve</declname>
+        </param>
+        <briefdescription>
+<para>Remove space from a free rectangle. Return true if the original rectangle should be erased from the free list. Not called in fast mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AreaAllocator_1acd0045fee4148a332b3d28b2cbcefe6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AreaAllocator::Cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>Cleanup</name>
+        <briefdescription>
+<para>Clean up redundant free space. Not called in fast mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="59" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Rectangular area allocator. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" line="31" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/AreaAllocator.h" bodystart="32" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1AreaAllocator_1a6b6949e6fedd21c43be6182af876bce0" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>Allocate</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a616d7f8982858359e03002663a118511" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>AreaAllocator</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a7d419c98fbce83fa0b106202dffe46e2" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>AreaAllocator</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1afa363c8e94933422b5947ca23aec24ca" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>AreaAllocator</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1acd0045fee4148a332b3d28b2cbcefe6d" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>Cleanup</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a5ca78b3d9778a1851942f7748d4a55f7" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>doubleWidth_</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1adf864d1a9f039a855d9bb3679c29fa54" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>fastMode_</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a2f28b0a8b3fb5e1537e43698d9b48838" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>freeAreas_</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1ada57fdf406036b8f9b92295c2c090b35" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>GetFastMode</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a79556c68c2026a50670b286e8dc81875" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>GetHeight</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a85205a9473c56a8bc7c66657b21b3ed0" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>GetWidth</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a00f0065f43d4b8efedaf7f7763db59c3" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>maxSize_</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a953aa6cd0bb52a869726d9ebb484fe7d" prot="public" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>Reset</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a95395258e2f118a32c1d007759b8e771" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1AreaAllocator_1a3b06245372a84faa7e77142652687433" prot="private" virt="non-virtual"><scope>Urho3D::AreaAllocator</scope><name>SplitRect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

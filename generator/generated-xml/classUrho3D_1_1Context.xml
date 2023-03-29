@@ -1,0 +1,1263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Context" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Context</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <includes refid="Context_8h" local="no">Context.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1Context_1a0720b5f434e636e22a3ed34f847eec57" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Object</definition>
+        <argsstring></argsstring>
+        <name>Object</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="68" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a58b468c37948e792e09b237cd6f178a7" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ObjectFactory" kindref="compound">ObjectFactory</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;ObjectFactory&gt; &gt; Urho3D::Context::factories_</definition>
+        <argsstring></argsstring>
+        <name>factories_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> factories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="226" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1acf5a2ea6423ae2e05cb0e8c172cb04a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;Object&gt; &gt; Urho3D::Context::subsystems_</definition>
+        <argsstring></argsstring>
+        <name>subsystems_</name>
+        <briefdescription>
+<para>Subsystems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="228" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a1ce8adb8487263cd0df7219e59496613" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, Vector&lt;AttributeInfo&gt; &gt; Urho3D::Context::attributes_</definition>
+        <argsstring></argsstring>
+        <name>attributes_</name>
+        <briefdescription>
+<para>Attribute descriptions per object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="230" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a0237af9dd51be1ec58957fd1dc795bcd" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, Vector&lt;AttributeInfo&gt; &gt; Urho3D::Context::networkAttributes_</definition>
+        <argsstring></argsstring>
+        <name>networkAttributes_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Network" kindref="compound">Network</ref> replication attribute descriptions per object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="232" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a4cf0bed48866bb8ab3bf2b062e7f765b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1EventReceiverGroup" kindref="compound">EventReceiverGroup</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;EventReceiverGroup&gt; &gt; Urho3D::Context::eventReceivers_</definition>
+        <argsstring></argsstring>
+        <name>eventReceivers_</name>
+        <briefdescription>
+<para>Event receivers for non-specific events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="234" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a7a3ff3f5ae7da3020e3a7cb0a5d844b1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *, <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1EventReceiverGroup" kindref="compound">EventReceiverGroup</ref> &gt; &gt; &gt;</type>
+        <definition>HashMap&lt;Object*, HashMap&lt;StringHash, SharedPtr&lt;EventReceiverGroup&gt; &gt; &gt; Urho3D::Context::specificEventReceivers_</definition>
+        <argsstring></argsstring>
+        <name>specificEventReceivers_</name>
+        <briefdescription>
+<para>Event receivers for specific senders&apos; events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="236" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1aa4864c834224ffdc76824a6b451e299c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> * &gt;</type>
+        <definition>PODVector&lt;Object*&gt; Urho3D::Context::eventSenders_</definition>
+        <argsstring></argsstring>
+        <name>eventSenders_</name>
+        <briefdescription>
+<para>Event sender stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="238" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a83b71eab2a0182c243caa698175663c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> * &gt;</type>
+        <definition>PODVector&lt;VariantMap*&gt; Urho3D::Context::eventDataMaps_</definition>
+        <argsstring></argsstring>
+        <name>eventDataMaps_</name>
+        <briefdescription>
+<para>Event data stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="240" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1ac10172b791c6a9a137db49e6f905b752" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1EventHandler" kindref="compound">EventHandler</ref> *</type>
+        <definition>EventHandler* Urho3D::Context::eventHandler_</definition>
+        <argsstring></argsstring>
+        <name>eventHandler_</name>
+        <briefdescription>
+<para>Active event handler. Not stored in a stack for performance reasons; is needed only in esoteric cases. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="242" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a15bb476c59b55d9576947c0a22f6ff33" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref>, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;String, Vector&lt;StringHash&gt; &gt; Urho3D::Context::objectCategories_</definition>
+        <argsstring></argsstring>
+        <name>objectCategories_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> categories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="244" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Context_1a54a5415ff1bee93b50d6841fa88b3800" prot="private" static="no" mutable="no">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>VariantMap Urho3D::Context::globalVars_</definition>
+        <argsstring></argsstring>
+        <name>globalVars_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> map for global variables that can persist throughout application execution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="246" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a275e28ce908798a46feca520ea4693f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Context::Context</definition>
+        <argsstring>()</argsstring>
+        <name>Context</name>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="72" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a72de0447e36979d2e83d577bad37b59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Context::~Context</definition>
+        <argsstring>() override</argsstring>
+        <name>~Context</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="74" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1aaf0f9aea92eb45e19c54a0ea7b5b5156" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; T &gt;</type>
+        <definition>SharedPtr&lt;T&gt; Urho3D::Context::CreateObject</definition>
+        <argsstring>()</argsstring>
+        <name>CreateObject</name>
+        <briefdescription>
+<para>Create an object by type. Return pointer to it or null if no factory found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="77" column="34" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ae7577d1448602168b7779752ccf2ba84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> &gt;</type>
+        <definition>SharedPtr&lt;Object&gt; Urho3D::Context::CreateObject</definition>
+        <argsstring>(StringHash objectType)</argsstring>
+        <name>CreateObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <briefdescription>
+<para>Create an object by type hash. Return pointer to it or null if no factory found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="82" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1aa9b2cffef8d52fa18bfe533a2615a598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RegisterFactory</definition>
+        <argsstring>(ObjectFactory *factory)</argsstring>
+        <name>RegisterFactory</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ObjectFactory" kindref="compound">ObjectFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Register a factory for an object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a4d49b29c4730440c723c0a062610cd64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RegisterFactory</definition>
+        <argsstring>(ObjectFactory *factory, const char *category)</argsstring>
+        <name>RegisterFactory</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ObjectFactory" kindref="compound">ObjectFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+<para>Register a factory for an object type and specify the object category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a1d6f7fd248f44896e0c5f8609485e7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RegisterSubsystem</definition>
+        <argsstring>(Object *object)</argsstring>
+        <name>RegisterSubsystem</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Register a subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac7a83577e0a76a0f04ac62e50b55a83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveSubsystem</definition>
+        <argsstring>(StringHash objectType)</argsstring>
+        <name>RemoveSubsystem</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <briefdescription>
+<para>Remove a subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a55851d5ab03e8f1decedf34ccd510518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1AttributeHandle" kindref="compound">AttributeHandle</ref></type>
+        <definition>AttributeHandle Urho3D::Context::RegisterAttribute</definition>
+        <argsstring>(StringHash objectType, const AttributeInfo &amp;attr)</argsstring>
+        <name>RegisterAttribute</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &amp;</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+<para>Register object attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="92" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a56979dc41e32e3393bb84af4ae42851b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveAttribute</definition>
+        <argsstring>(StringHash objectType, const char *name)</argsstring>
+        <name>RemoveAttribute</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove object attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1aa56d2d8947139e74625cc1a721bafd09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveAllAttributes</definition>
+        <argsstring>(StringHash objectType)</argsstring>
+        <name>RemoveAllAttributes</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <briefdescription>
+<para>Remove all object attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a5ceaa7757f5c5366e45e873f9d155d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::UpdateAttributeDefaultValue</definition>
+        <argsstring>(StringHash objectType, const char *name, const Variant &amp;defaultValue)</argsstring>
+        <name>UpdateAttributeDefaultValue</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+<para>Update object attribute&apos;s default value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="98" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a2cea9dac9f52d00f0fd561a2aea61579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+        <definition>VariantMap&amp; Urho3D::Context::GetEventDataMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetEventDataMap</name>
+        <briefdescription>
+<para>Return a preallocated map for event data. Used for optimization to avoid constant re-allocation of event data maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="100" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a07f129c25cb7934168f07b14fcd4247a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Context::RequireSDL</definition>
+        <argsstring>(unsigned int sdlFlags)</argsstring>
+        <name>RequireSDL</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>sdlFlags</declname>
+        </param>
+        <briefdescription>
+<para>Initialises the specified SDL systems, if not already. Returns true if successful. This call must be matched with <ref refid="classUrho3D_1_1Context_1aead48ab5594165f2a6b6b619e0907aff" kindref="member">ReleaseSDL()</ref> when SDL functions are no longer required, even if this call fails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1aead48ab5594165f2a6b6b619e0907aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::ReleaseSDL</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseSDL</name>
+        <briefdescription>
+<para>Indicate that you are done with using SDL. Must be called after using <ref refid="classUrho3D_1_1Context_1a07f129c25cb7934168f07b14fcd4247a" kindref="member">RequireSDL()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a94368b88b9ec245e284e739d273b67f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::CopyBaseAttributes</definition>
+        <argsstring>(StringHash baseType, StringHash derivedType)</argsstring>
+        <name>CopyBaseAttributes</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>baseType</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>derivedType</declname>
+        </param>
+        <briefdescription>
+<para>Copy base class attributes to derived class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac5a33850efdda5a2e2b096f5e40ea284" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::RegisterFactory</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterFactory</name>
+        <briefdescription>
+<para>Template version of registering an object factory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="115" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a1523036960a4d756d9e00157bcf58f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::RegisterFactory</definition>
+        <argsstring>(const char *category)</argsstring>
+        <name>RegisterFactory</name>
+        <param>
+          <type>const char *</type>
+          <declname>category</declname>
+        </param>
+        <briefdescription>
+<para>Template version of registering an object factory with category. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="117" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ab98fddcc2df740ca52f51a581aac82fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * Urho3D::Context::RegisterSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterSubsystem</name>
+        <briefdescription>
+<para>Template version of registering subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="119" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="256" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac7b7976a5fa7e6b1866adf95780379d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveSubsystem</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveSubsystem</name>
+        <briefdescription>
+<para>Template version of removing a subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="121" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="263" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a5fba2d85bd03dec059392a71b83682bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structUrho3D_1_1AttributeHandle" kindref="compound">AttributeHandle</ref></type>
+        <definition>AttributeHandle Urho3D::Context::RegisterAttribute</definition>
+        <argsstring>(const AttributeInfo &amp;attr)</argsstring>
+        <name>RegisterAttribute</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &amp;</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+<para>Template version of registering an object attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="123" column="33" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="265" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a4dc6db283c1e3f05a4c5e3e3b3f90c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveAttribute</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>RemoveAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Template version of removing an object attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="125" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="267" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac625f7fc126a570da615a194acbe09ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveAllAttributes</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAllAttributes</name>
+        <briefdescription>
+<para>Template version of removing all object attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="127" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a99c072067785fce352de9f78c83907ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::CopyBaseAttributes</definition>
+        <argsstring>()</argsstring>
+        <name>CopyBaseAttributes</name>
+        <briefdescription>
+<para>Template version of copying base class attributes to derived class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="129" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a98cf683770b5dc946021dc77f9bd8427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::Context::UpdateAttributeDefaultValue</definition>
+        <argsstring>(const char *name, const Variant &amp;defaultValue)</argsstring>
+        <name>UpdateAttributeDefaultValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+<para>Template version of updating an object attribute&apos;s default value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="131" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a2aa0b939a18f07b8b89ed631e10772c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+        <definition>Object* Urho3D::Context::GetSubsystem</definition>
+        <argsstring>(StringHash type) const</argsstring>
+        <name>GetSubsystem</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return subsystem by type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="134" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a4837f413f89ddb23a625902e40eb3b11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+        <definition>const Variant&amp; Urho3D::Context::GetGlobalVar</definition>
+        <argsstring>(StringHash key) const</argsstring>
+        <name>GetGlobalVar</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Return global variable based on key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="137" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a76e6d5b0b9fb41a9c5f73f0fd1c1e2e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+        <definition>const VariantMap&amp; Urho3D::Context::GetGlobalVars</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGlobalVars</name>
+        <briefdescription>
+<para>Return all global variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="140" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac4f1f1e7c6f680d890a595b91c054dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::SetGlobalVar</definition>
+        <argsstring>(StringHash key, const Variant &amp;value)</argsstring>
+        <name>SetGlobalVar</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set global variable with the respective key and value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a5a389f82f388642e795c5c36fbed3ff8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> &gt; &gt; &amp;</type>
+        <definition>const HashMap&lt;StringHash, SharedPtr&lt;Object&gt; &gt;&amp; Urho3D::Context::GetSubsystems</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSubsystems</name>
+        <briefdescription>
+<para>Return all subsystems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="146" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a4fe9da59add705de5429da0d5430f283" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ObjectFactory" kindref="compound">ObjectFactory</ref> &gt; &gt; &amp;</type>
+        <definition>const HashMap&lt;StringHash, SharedPtr&lt;ObjectFactory&gt; &gt;&amp; Urho3D::Context::GetObjectFactories</definition>
+        <argsstring>() const</argsstring>
+        <name>GetObjectFactories</name>
+        <briefdescription>
+<para>Return all object factories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="149" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a02815d74def43ff8d875945925b32cf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref>, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt; &gt; &amp;</type>
+        <definition>const HashMap&lt;String, Vector&lt;StringHash&gt; &gt;&amp; Urho3D::Context::GetObjectCategories</definition>
+        <argsstring>() const</argsstring>
+        <name>GetObjectCategories</name>
+        <briefdescription>
+<para>Return all object categories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="152" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1afb02d6b8a441ad89b5a2f58ebe611c8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+        <definition>Object* Urho3D::Context::GetEventSender</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEventSender</name>
+        <briefdescription>
+<para>Return active event sender. Null outside event handling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="155" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1aae7295e0f9539f1cf0c027f75583dc44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1EventHandler" kindref="compound">EventHandler</ref> *</type>
+        <definition>EventHandler* Urho3D::Context::GetEventHandler</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEventHandler</name>
+        <briefdescription>
+<para>Return active event handler. Set by <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref>. Null outside event handling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="158" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a86328ecf6888be4dd3d0088eaffb4d20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Context::GetTypeName</definition>
+        <argsstring>(StringHash objectType) const</argsstring>
+        <name>GetTypeName</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <briefdescription>
+<para>Return object type name from hash, or empty if unknown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="161" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a55543e280f51881a21cd7e775fce2b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> *</type>
+        <definition>AttributeInfo* Urho3D::Context::GetAttribute</definition>
+        <argsstring>(StringHash objectType, const char *name)</argsstring>
+        <name>GetAttribute</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>objectType</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a specific attribute description for an object, or null if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="163" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a0e00bb079d04655cc5010460171ee216" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * Urho3D::Context::GetSubsystem</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSubsystem</name>
+        <briefdescription>
+<para>Template version of returning a subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="165" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="273" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ad0e0c4bc8bda2a5bd27607fe98858922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> *</type>
+        <definition>AttributeInfo * Urho3D::Context::GetAttribute</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Template version of returning a specific attribute description. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="167" column="31" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="275" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a6eff89bd9be287ea8b3f41c86ea497af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &gt; *</type>
+        <definition>const Vector&lt;AttributeInfo&gt;* Urho3D::Context::GetAttributes</definition>
+        <argsstring>(StringHash type) const</argsstring>
+        <name>GetAttributes</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute descriptions for an object type, or null if none defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="170" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="170" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac37914d858b3d316c0298ba3bc110bcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &gt; *</type>
+        <definition>const Vector&lt;AttributeInfo&gt;* Urho3D::Context::GetNetworkAttributes</definition>
+        <argsstring>(StringHash type) const</argsstring>
+        <name>GetNetworkAttributes</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return network replication attribute descriptions for an object type, or null if none defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="177" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1abe4efaa2b1d432b7d33dfdbc8bae3ff3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1AttributeInfo" kindref="compound">AttributeInfo</ref> &gt; &gt; &amp;</type>
+        <definition>const HashMap&lt;StringHash, Vector&lt;AttributeInfo&gt; &gt;&amp; Urho3D::Context::GetAllAttributes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllAttributes</name>
+        <briefdescription>
+<para>Return all registered attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="184" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a9fb05332cbe2a78d23bd6d3e92cfa817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1EventReceiverGroup" kindref="compound">EventReceiverGroup</ref> *</type>
+        <definition>EventReceiverGroup* Urho3D::Context::GetEventReceivers</definition>
+        <argsstring>(Object *sender, StringHash eventType)</argsstring>
+        <name>GetEventReceivers</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Return event receivers for a sender and event type, or null if they do not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="187" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="187" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a82621ec7199069594c0fa7ac01f9a184" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1EventReceiverGroup" kindref="compound">EventReceiverGroup</ref> *</type>
+        <definition>EventReceiverGroup* Urho3D::Context::GetEventReceivers</definition>
+        <argsstring>(StringHash eventType)</argsstring>
+        <name>GetEventReceivers</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Return event receivers for an event type, or null if they do not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="200" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="200" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ae3e0c5db85e2395f3d34941003c816ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::AddEventReceiver</definition>
+        <argsstring>(Object *receiver, StringHash eventType)</argsstring>
+        <name>AddEventReceiver</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Add event receiver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="208" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a5462c794277359b42e4035d14248d9e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::AddEventReceiver</definition>
+        <argsstring>(Object *receiver, Object *sender, StringHash eventType)</argsstring>
+        <name>AddEventReceiver</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Add event receiver for specific event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="210" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a3b2110b5cf78732574cbf823a7e3cfb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveEventSender</definition>
+        <argsstring>(Object *sender)</argsstring>
+        <name>RemoveEventSender</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>Remove an event sender from all receivers. Called on its destruction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="212" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a7b5bd076e695054df7930255c3eee18b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveEventReceiver</definition>
+        <argsstring>(Object *receiver, Object *sender, StringHash eventType)</argsstring>
+        <name>RemoveEventReceiver</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Remove event receiver from specific events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="214" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1ac51cece3ce521865bda2b82008e1acc2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::RemoveEventReceiver</definition>
+        <argsstring>(Object *receiver, StringHash eventType)</argsstring>
+        <name>RemoveEventReceiver</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Remove event receiver from non-specific events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="216" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a003772f629488aa844259d5332de0e7e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::BeginSendEvent</definition>
+        <argsstring>(Object *sender, StringHash eventType)</argsstring>
+        <name>BeginSendEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <briefdescription>
+<para>Begin event send. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="218" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1a7e2deb39ff7a46595669a569d913a0b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::EndSendEvent</definition>
+        <argsstring>()</argsstring>
+        <name>EndSendEvent</name>
+        <briefdescription>
+<para>End event send. Clean up event receivers removed in the meanwhile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="220" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Context_1abfe31e63309944b82052bf2855daea6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Context::SetEventHandler</definition>
+        <argsstring>(EventHandler *handler)</argsstring>
+        <name>SetEventHandler</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1EventHandler" kindref="compound">EventHandler</ref> *</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Set current event handler. Called by <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="223" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Urho3D execution context. Provides access to subsystems, object factories and attributes, and event receivers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="66" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="67" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Context_1ae3e0c5db85e2395f3d34941003c816ad" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>AddEventReceiver</name></member>
+      <member refid="classUrho3D_1_1Context_1a5462c794277359b42e4035d14248d9e6" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>AddEventReceiver</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Context_1a1ce8adb8487263cd0df7219e59496613" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>attributes_</name></member>
+      <member refid="classUrho3D_1_1Context_1a003772f629488aa844259d5332de0e7e" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>BeginSendEvent</name></member>
+      <member refid="classUrho3D_1_1Context_1a275e28ce908798a46feca520ea4693f6" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>Context</name></member>
+      <member refid="classUrho3D_1_1Context_1a94368b88b9ec245e284e739d273b67f1" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>CopyBaseAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1a99c072067785fce352de9f78c83907ab" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>CopyBaseAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1aaf0f9aea92eb45e19c54a0ea7b5b5156" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>CreateObject</name></member>
+      <member refid="classUrho3D_1_1Context_1ae7577d1448602168b7779752ccf2ba84" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>CreateObject</name></member>
+      <member refid="classUrho3D_1_1Context_1a7e2deb39ff7a46595669a569d913a0b1" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>EndSendEvent</name></member>
+      <member refid="classUrho3D_1_1Context_1a83b71eab2a0182c243caa698175663c8" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>eventDataMaps_</name></member>
+      <member refid="classUrho3D_1_1Context_1ac10172b791c6a9a137db49e6f905b752" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>eventHandler_</name></member>
+      <member refid="classUrho3D_1_1Context_1a4cf0bed48866bb8ab3bf2b062e7f765b" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>eventReceivers_</name></member>
+      <member refid="classUrho3D_1_1Context_1aa4864c834224ffdc76824a6b451e299c" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>eventSenders_</name></member>
+      <member refid="classUrho3D_1_1Context_1a58b468c37948e792e09b237cd6f178a7" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>factories_</name></member>
+      <member refid="classUrho3D_1_1Context_1abe4efaa2b1d432b7d33dfdbc8bae3ff3" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetAllAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1a55543e280f51881a21cd7e775fce2b68" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Context_1ad0e0c4bc8bda2a5bd27607fe98858922" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Context_1a6eff89bd9be287ea8b3f41c86ea497af" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1a2cea9dac9f52d00f0fd561a2aea61579" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Context_1aae7295e0f9539f1cf0c027f75583dc44" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Context_1a9fb05332cbe2a78d23bd6d3e92cfa817" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetEventReceivers</name></member>
+      <member refid="classUrho3D_1_1Context_1a82621ec7199069594c0fa7ac01f9a184" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetEventReceivers</name></member>
+      <member refid="classUrho3D_1_1Context_1afb02d6b8a441ad89b5a2f58ebe611c8a" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Context_1a4837f413f89ddb23a625902e40eb3b11" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Context_1a76e6d5b0b9fb41a9c5f73f0fd1c1e2e9" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Context_1ac37914d858b3d316c0298ba3bc110bcc" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1a02815d74def43ff8d875945925b32cf2" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetObjectCategories</name></member>
+      <member refid="classUrho3D_1_1Context_1a4fe9da59add705de5429da0d5430f283" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetObjectFactories</name></member>
+      <member refid="classUrho3D_1_1Context_1a2aa0b939a18f07b8b89ed631e10772c6" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Context_1a0e00bb079d04655cc5010460171ee216" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Context_1a5a389f82f388642e795c5c36fbed3ff8" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetSubsystems</name></member>
+      <member refid="classUrho3D_1_1Context_1a86328ecf6888be4dd3d0088eaffb4d20" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Context_1a54a5415ff1bee93b50d6841fa88b3800" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>globalVars_</name></member>
+      <member refid="classUrho3D_1_1Context_1a0237af9dd51be1ec58957fd1dc795bcd" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>networkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Context_1a0720b5f434e636e22a3ed34f847eec57" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Context_1a15bb476c59b55d9576947c0a22f6ff33" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>objectCategories_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Context_1a55851d5ab03e8f1decedf34ccd510518" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterAttribute</name></member>
+      <member refid="classUrho3D_1_1Context_1a5fba2d85bd03dec059392a71b83682bf" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterAttribute</name></member>
+      <member refid="classUrho3D_1_1Context_1aa9b2cffef8d52fa18bfe533a2615a598" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterFactory</name></member>
+      <member refid="classUrho3D_1_1Context_1a4d49b29c4730440c723c0a062610cd64" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterFactory</name></member>
+      <member refid="classUrho3D_1_1Context_1ac5a33850efdda5a2e2b096f5e40ea284" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterFactory</name></member>
+      <member refid="classUrho3D_1_1Context_1a1523036960a4d756d9e00157bcf58f23" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterFactory</name></member>
+      <member refid="classUrho3D_1_1Context_1a1d6f7fd248f44896e0c5f8609485e7e6" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterSubsystem</name></member>
+      <member refid="classUrho3D_1_1Context_1ab98fddcc2df740ca52f51a581aac82fe" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RegisterSubsystem</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Context_1aead48ab5594165f2a6b6b619e0907aff" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>ReleaseSDL</name></member>
+      <member refid="classUrho3D_1_1Context_1aa56d2d8947139e74625cc1a721bafd09" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveAllAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1ac625f7fc126a570da615a194acbe09ff" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveAllAttributes</name></member>
+      <member refid="classUrho3D_1_1Context_1a56979dc41e32e3393bb84af4ae42851b" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveAttribute</name></member>
+      <member refid="classUrho3D_1_1Context_1a4dc6db283c1e3f05a4c5e3e3b3f90c5d" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveAttribute</name></member>
+      <member refid="classUrho3D_1_1Context_1a7b5bd076e695054df7930255c3eee18b" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveEventReceiver</name></member>
+      <member refid="classUrho3D_1_1Context_1ac51cece3ce521865bda2b82008e1acc2" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveEventReceiver</name></member>
+      <member refid="classUrho3D_1_1Context_1a3b2110b5cf78732574cbf823a7e3cfb7" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveEventSender</name></member>
+      <member refid="classUrho3D_1_1Context_1ac7a83577e0a76a0f04ac62e50b55a83e" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveSubsystem</name></member>
+      <member refid="classUrho3D_1_1Context_1ac7b7976a5fa7e6b1866adf95780379d7" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RemoveSubsystem</name></member>
+      <member refid="classUrho3D_1_1Context_1a07f129c25cb7934168f07b14fcd4247a" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>RequireSDL</name></member>
+      <member refid="classUrho3D_1_1Context_1abfe31e63309944b82052bf2855daea6e" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>SetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Context_1ac4f1f1e7c6f680d890a595b91c054dc4" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Context_1a7a3ff3f5ae7da3020e3a7cb0a5d844b1" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>specificEventReceivers_</name></member>
+      <member refid="classUrho3D_1_1Context_1acf5a2ea6423ae2e05cb0e8c172cb04a8" prot="private" virt="non-virtual"><scope>Urho3D::Context</scope><name>subsystems_</name></member>
+      <member refid="classUrho3D_1_1Context_1a5ceaa7757f5c5366e45e873f9d155d6d" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>UpdateAttributeDefaultValue</name></member>
+      <member refid="classUrho3D_1_1Context_1a98cf683770b5dc946021dc77f9bd8427" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>UpdateAttributeDefaultValue</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Context_1a72de0447e36979d2e83d577bad37b59b" prot="public" virt="non-virtual"><scope>Urho3D::Context</scope><name>~Context</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Context</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

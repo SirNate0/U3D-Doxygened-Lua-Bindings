@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1FontFace" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Urho3D::FontFace</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1FontFaceBitmap" prot="public" virt="non-virtual">Urho3D::FontFaceBitmap</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1FontFaceFreeType" prot="public" virt="non-virtual">Urho3D::FontFaceFreeType</derivedcompoundref>
+    <includes refid="FontFace_8h" local="no">FontFace.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1FontFace_1ad564b94b59dc295de3dfc4415d95cca8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Font</definition>
+        <argsstring></argsstring>
+        <name>Font</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Font" kindref="compound">Font</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="67" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classUrho3D_1_1FontFace_1a0d7f3097b5248cb9cf7ba3651fd708f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FontFaceBitmap</definition>
+        <argsstring></argsstring>
+        <name>FontFaceBitmap</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1FontFaceBitmap" kindref="compound">FontFaceBitmap</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="98" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1FontFace_1abb2c54779d7c016d65626eb93935ec9c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Font" kindref="compound">Font</ref> *</type>
+        <definition>Font* Urho3D::FontFace::font_</definition>
+        <argsstring></argsstring>
+        <name>font_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Parent font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="105" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FontFace_1abd6616fd513e87d6a98f057e384f7837" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, <ref refid="structUrho3D_1_1FontGlyph" kindref="compound">FontGlyph</ref> &gt;</type>
+        <definition>HashMap&lt;unsigned, FontGlyph&gt; Urho3D::FontFace::glyphMapping_</definition>
+        <argsstring></argsstring>
+        <name>glyphMapping_</name>
+        <briefdescription>
+<para>Glyph mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="107" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FontFace_1a4b5d7dfe421fb08677346f241902c593" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, float &gt;</type>
+        <definition>HashMap&lt;unsigned, float&gt; Urho3D::FontFace::kerningMapping_</definition>
+        <argsstring></argsstring>
+        <name>kerningMapping_</name>
+        <briefdescription>
+<para>Kerning mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="109" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FontFace_1ae5aa8d97b378517f05375ae7c05bee82" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;Texture2D&gt; &gt; Urho3D::FontFace::textures_</definition>
+        <argsstring></argsstring>
+        <name>textures_</name>
+        <briefdescription>
+<para>Glyph texture pages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="111" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FontFace_1ab0e60f9be8afc62bbaa2e6d5ae387214" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::FontFace::pointSize_</definition>
+        <argsstring></argsstring>
+        <name>pointSize_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Point size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="113" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FontFace_1aae144efc151dc7e9d634439240a7b88f" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::FontFace::rowHeight_</definition>
+        <argsstring></argsstring>
+        <name>rowHeight_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Row height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="115" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1ae8ca1f635e5dcc8d56c7103ac3798d37" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::FontFace::FontFace</definition>
+        <argsstring>(Font *font)</argsstring>
+        <name>FontFace</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a38314b6f878cf3c1137b7e4721bd105a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::FontFace::~FontFace</definition>
+        <argsstring>() override</argsstring>
+        <name>~FontFace</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="73" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a5e71997177bf95883de0906fc1ec29f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Urho3D::FontFace::Load</definition>
+        <argsstring>(const unsigned char *fontData, unsigned fontDataSize, float pointSize)=0</argsstring>
+        <name>Load</name>
+        <reimplementedby refid="classUrho3D_1_1FontFaceBitmap_1aa7c66b38a3934b0ec5fa4b76afe01f2a">Load</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1FontFaceFreeType_1ad76941dd7b07298359fb6880dd260d77">Load</reimplementedby>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>fontData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>fontDataSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pointSize</declname>
+        </param>
+        <briefdescription>
+<para>Load font face. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="76" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a9892e51b29e5a187ec664987ce65f015" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="structUrho3D_1_1FontGlyph" kindref="compound">FontGlyph</ref> *</type>
+        <definition>virtual const FontGlyph* Urho3D::FontFace::GetGlyph</definition>
+        <argsstring>(unsigned c)</argsstring>
+        <name>GetGlyph</name>
+        <reimplementedby refid="classUrho3D_1_1FontFaceFreeType_1afea3036e07a3028266d59b0fe43717cb">GetGlyph</reimplementedby>
+        <param>
+          <type>unsigned</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Return pointer to the glyph structure corresponding to a character. Return null if glyph not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="78" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a95247bfe09ad75ad4fdd0255d089869f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Urho3D::FontFace::HasMutableGlyphs</definition>
+        <argsstring>() const</argsstring>
+        <name>HasMutableGlyphs</name>
+        <reimplementedby refid="classUrho3D_1_1FontFaceFreeType_1a2f5658b1633ee8ae788038f9dbe42f17">HasMutableGlyphs</reimplementedby>
+        <briefdescription>
+<para>Return if font face uses mutable glyphs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="81" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a7a5a7c77278cea7c12ac7ce9932d64f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::FontFace::GetKerning</definition>
+        <argsstring>(unsigned c, unsigned d) const</argsstring>
+        <name>GetKerning</name>
+        <param>
+          <type>unsigned</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Return the kerning for a character and the next character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="84" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1ae8882a162d9328cb5cdc088267443923" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FontFace::IsDataLost</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDataLost</name>
+        <briefdescription>
+<para>Return true when one of the texture has a data loss. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1afb950b2511c55edc016075a0d9bf71f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::FontFace::GetPointSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPointSize</name>
+        <briefdescription>
+<para>Return point size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="89" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a503984368c0c052770c7ddf4a71e9db8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::FontFace::GetRowHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRowHeight</name>
+        <briefdescription>
+<para>Return row height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="92" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1ab6170537fe27a38bec731e9171f57986" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> &gt; &gt; &amp;</type>
+        <definition>const Vector&lt;SharedPtr&lt;Texture2D&gt; &gt;&amp; Urho3D::FontFace::GetTextures</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTextures</name>
+        <briefdescription>
+<para>Return textures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="95" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a3b9183fe383099886668e756d4b33175" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> &gt;</type>
+        <definition>SharedPtr&lt;Texture2D&gt; Urho3D::FontFace::CreateFaceTexture</definition>
+        <argsstring>()</argsstring>
+        <name>CreateFaceTexture</name>
+        <briefdescription>
+<para>Create a texture for font rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="100" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FontFace_1a13aa70974c8c9a7f52e216fa103ef852" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> &gt;</type>
+        <definition>SharedPtr&lt;Texture2D&gt; Urho3D::FontFace::LoadFaceTexture</definition>
+        <argsstring>(const SharedPtr&lt; Image &gt; &amp;image)</argsstring>
+        <name>LoadFaceTexture</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Image" kindref="compound">Image</ref> &gt; &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Load font face texture from image resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="102" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Font face description. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::FontFaceBitmap</label>
+        <link refid="classUrho3D_1_1FontFaceBitmap"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::FontFace</label>
+        <link refid="classUrho3D_1_1FontFace"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::FontFaceFreeType</label>
+        <link refid="classUrho3D_1_1FontFaceFreeType"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::Font</label>
+        <link refid="classUrho3D_1_1Font"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashMap&lt; unsigned, float &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Vector&lt; Urho3D::SharedPtr&lt; Urho3D::Texture2D &gt; &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::HashMap&lt; unsigned, Urho3D::FontGlyph &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::FontFace</label>
+        <link refid="classUrho3D_1_1FontFace"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>textures_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>glyphMapping_</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>kerningMapping_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>font_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" line="65" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/FontFace.h" bodystart="66" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a3b9183fe383099886668e756d4b33175" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>CreateFaceTexture</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ad564b94b59dc295de3dfc4415d95cca8" prot="private" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>Font</name></member>
+      <member refid="classUrho3D_1_1FontFace_1abb2c54779d7c016d65626eb93935ec9c" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>font_</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ae8ca1f635e5dcc8d56c7103ac3798d37" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>FontFace</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a0d7f3097b5248cb9cf7ba3651fd708f1" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>FontFaceBitmap</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a9892e51b29e5a187ec664987ce65f015" prot="public" virt="virtual"><scope>Urho3D::FontFace</scope><name>GetGlyph</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a7a5a7c77278cea7c12ac7ce9932d64f2" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>GetKerning</name></member>
+      <member refid="classUrho3D_1_1FontFace_1afb950b2511c55edc016075a0d9bf71f0" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>GetPointSize</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a503984368c0c052770c7ddf4a71e9db8" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>GetRowHeight</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ab6170537fe27a38bec731e9171f57986" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>GetTextures</name></member>
+      <member refid="classUrho3D_1_1FontFace_1abd6616fd513e87d6a98f057e384f7837" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>glyphMapping_</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a95247bfe09ad75ad4fdd0255d089869f" prot="public" virt="virtual"><scope>Urho3D::FontFace</scope><name>HasMutableGlyphs</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ae8882a162d9328cb5cdc088267443923" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a4b5d7dfe421fb08677346f241902c593" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>kerningMapping_</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a5e71997177bf95883de0906fc1ec29f6" prot="public" virt="pure-virtual"><scope>Urho3D::FontFace</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a13aa70974c8c9a7f52e216fa103ef852" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>LoadFaceTexture</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ab0e60f9be8afc62bbaa2e6d5ae387214" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>pointSize_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1FontFace_1aae144efc151dc7e9d634439240a7b88f" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>rowHeight_</name></member>
+      <member refid="classUrho3D_1_1FontFace_1ae5aa8d97b378517f05375ae7c05bee82" prot="protected" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>textures_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1FontFace_1a38314b6f878cf3c1137b7e4721bd105a" prot="public" virt="non-virtual"><scope>Urho3D::FontFace</scope><name>~FontFace</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::FontFace</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

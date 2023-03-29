@@ -1,0 +1,561 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1RenderPath" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::RenderPath</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <includes refid="RenderPath_8h" local="no">RenderPath.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1RenderPath_1abb892a5b03de969c68cb0fc37770b618" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1RenderTargetInfo" kindref="compound">RenderTargetInfo</ref> &gt;</type>
+        <definition>Vector&lt;RenderTargetInfo&gt; Urho3D::RenderPath::renderTargets_</definition>
+        <argsstring></argsstring>
+        <name>renderTargets_</name>
+        <briefdescription>
+<para>Rendertargets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="269" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RenderPath_1a470d4d06644ae6dd6c7cae519ee7365a" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1RenderPathCommand" kindref="compound">RenderPathCommand</ref> &gt;</type>
+        <definition>Vector&lt;RenderPathCommand&gt; Urho3D::RenderPath::commands_</definition>
+        <argsstring></argsstring>
+        <name>commands_</name>
+        <briefdescription>
+<para>Rendering commands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="271" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a2253a069d5135b5a6ec8ec22d858b1e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::RenderPath::RenderPath</definition>
+        <argsstring>()</argsstring>
+        <name>RenderPath</name>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="207" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a2c743be13293aa7461d37b87e1ca5564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::RenderPath::~RenderPath</definition>
+        <argsstring>() override</argsstring>
+        <name>~RenderPath</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="209" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1ac53d61000b9ac2fe959ac2ddb20e2723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1RenderPath" kindref="compound">RenderPath</ref> &gt;</type>
+        <definition>SharedPtr&lt;RenderPath&gt; Urho3D::RenderPath::Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <briefdescription>
+<para>Clone the rendering path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="212" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1ae776419ac8a09772b9946f8d866cb6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RenderPath::Load</definition>
+        <argsstring>(XMLFile *file)</argsstring>
+        <name>Load</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Clear existing data and load from an XML file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="214" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a83dc9a84e0ef778f2165bcc76d2f6634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RenderPath::Append</definition>
+        <argsstring>(XMLFile *file)</argsstring>
+        <name>Append</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Append data from an XML file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="216" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a37daf20b9186850fa60e36a5fef5abe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::SetEnabled</definition>
+        <argsstring>(const String &amp;tag, bool active)</argsstring>
+        <name>SetEnabled</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+<para>Enable/disable commands and rendertargets by tag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="218" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a034d4d7580188fbebf046dd8a16941ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RenderPath::IsEnabled</definition>
+        <argsstring>(const String &amp;tag) const</argsstring>
+        <name>IsEnabled</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true of any of render targets or commands with specified tag are enabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="221" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a26bc75cc25ad0fe0f2891201fd113921" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RenderPath::IsAdded</definition>
+        <argsstring>(const String &amp;tag) const</argsstring>
+        <name>IsAdded</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if renderpath or command with given tag exists. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="224" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a3ba2427a6feed595ac675e060be2f55e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::ToggleEnabled</definition>
+        <argsstring>(const String &amp;tag)</argsstring>
+        <name>ToggleEnabled</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Toggle enabled state of commands and rendertargets by tag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="226" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a7673a779bfe3f4c960c2182bf3343f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::SetRenderTarget</definition>
+        <argsstring>(unsigned index, const RenderTargetInfo &amp;info)</argsstring>
+        <name>SetRenderTarget</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RenderTargetInfo" kindref="compound">RenderTargetInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign rendertarget at index. BIND_AS_ALIAS_set_renderTargets </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="229" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a2dc3938a8e0b7d18ff99915cba03fe53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::AddRenderTarget</definition>
+        <argsstring>(const RenderTargetInfo &amp;info)</argsstring>
+        <name>AddRenderTarget</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RenderTargetInfo" kindref="compound">RenderTargetInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Add a rendertarget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="231" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a8b2b79104508d015714b3ed02f261c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::RemoveRenderTarget</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>RemoveRenderTarget</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Remove a rendertarget by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="233" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1abf62a846eb7a961cb5243a7eb046e073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::RemoveRenderTarget</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RemoveRenderTarget</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove a rendertarget by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="235" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a0d73d2bea7e35b6f816dc98e5b7c8089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::RemoveRenderTargets</definition>
+        <argsstring>(const String &amp;tag)</argsstring>
+        <name>RemoveRenderTargets</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Remove rendertargets by tag name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="237" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a352946bfd5f25c3305a55d2083afe246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::SetCommand</definition>
+        <argsstring>(unsigned index, const RenderPathCommand &amp;command)</argsstring>
+        <name>SetCommand</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RenderPathCommand" kindref="compound">RenderPathCommand</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign command at index. BIND_AS_ALIAS_set_commands </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a72774187a3c660a4918c9846f59a877d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::AddCommand</definition>
+        <argsstring>(const RenderPathCommand &amp;command)</argsstring>
+        <name>AddCommand</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RenderPathCommand" kindref="compound">RenderPathCommand</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Add a command to the end of the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="242" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a6c2e58c00b1561e7a6de71d9efc5021b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::InsertCommand</definition>
+        <argsstring>(unsigned index, const RenderPathCommand &amp;command)</argsstring>
+        <name>InsertCommand</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RenderPathCommand" kindref="compound">RenderPathCommand</ref> &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Insert a command at a position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="244" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a62fdbf05481006aab3f5d33800f87025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::RemoveCommand</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>RemoveCommand</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Remove a command by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="246" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1ae0d1d4dc9ae14661414b86f4570c4ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::RemoveCommands</definition>
+        <argsstring>(const String &amp;tag)</argsstring>
+        <name>RemoveCommands</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Remove commands by tag name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="248" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a44645fee0e4a8c88200ae4f4a2d8ef1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RenderPath::SetShaderParameter</definition>
+        <argsstring>(const String &amp;name, const Variant &amp;value)</argsstring>
+        <name>SetShaderParameter</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a shader parameter in all commands that define it. BIND_AS_ALIAS_set_shaderParameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="251" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a060234989692da4ddcee1261cfe9f006" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::RenderPath::GetNumRenderTargets</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumRenderTargets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of rendertargets. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="255" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a33f63e3cef07ad2927e0adb5533673f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::RenderPath::GetNumCommands</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumCommands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of commands. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="259" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" bodystart="259" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a88a7868662d41998f0d3b456b8e95323" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RenderPathCommand" kindref="compound">RenderPathCommand</ref> *</type>
+        <definition>RenderPathCommand* Urho3D::RenderPath::GetCommand</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>GetCommand</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return command at index, or null if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="262" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" bodystart="262" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RenderPath_1a3e2237101e9fcb366b159b3be276a687" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+        <definition>const Variant&amp; Urho3D::RenderPath::GetShaderParameter</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetShaderParameter</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a shader parameter (first appearance in any command). BIND_AS_ALIAS_get_shaderParameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="266" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Rendering path definition. A sequence of commands (e.g. clear screen, draw objects with specific pass) that yields the scene rendering result. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::RenderPath</label>
+        <link refid="classUrho3D_1_1RenderPath"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::RenderPath</label>
+        <link refid="classUrho3D_1_1RenderPath"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>commands_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>renderTargets_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Vector&lt; Urho3D::RenderTargetInfo &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Vector&lt; Urho3D::RenderPathCommand &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" line="203" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RenderPath.h" bodystart="204" bodyend="272"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RenderPath_1a72774187a3c660a4918c9846f59a877d" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>AddCommand</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a2dc3938a8e0b7d18ff99915cba03fe53" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>AddRenderTarget</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a83dc9a84e0ef778f2165bcc76d2f6634" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>Append</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1ac53d61000b9ac2fe959ac2ddb20e2723" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>Clone</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a470d4d06644ae6dd6c7cae519ee7365a" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>commands_</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a88a7868662d41998f0d3b456b8e95323" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>GetCommand</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a33f63e3cef07ad2927e0adb5533673f7" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>GetNumCommands</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a060234989692da4ddcee1261cfe9f006" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>GetNumRenderTargets</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a3e2237101e9fcb366b159b3be276a687" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>GetShaderParameter</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a6c2e58c00b1561e7a6de71d9efc5021b" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>InsertCommand</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a26bc75cc25ad0fe0f2891201fd113921" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>IsAdded</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a034d4d7580188fbebf046dd8a16941ee" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1ae776419ac8a09772b9946f8d866cb6db" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a62fdbf05481006aab3f5d33800f87025" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RemoveCommand</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1ae0d1d4dc9ae14661414b86f4570c4ee8" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RemoveCommands</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a8b2b79104508d015714b3ed02f261c18" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RemoveRenderTarget</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1abf62a846eb7a961cb5243a7eb046e073" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RemoveRenderTarget</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a0d73d2bea7e35b6f816dc98e5b7c8089" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RemoveRenderTargets</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a2253a069d5135b5a6ec8ec22d858b1e2" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>RenderPath</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1abb892a5b03de969c68cb0fc37770b618" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>renderTargets_</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a352946bfd5f25c3305a55d2083afe246" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>SetCommand</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a37daf20b9186850fa60e36a5fef5abe3" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a7673a779bfe3f4c960c2182bf3343f9b" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>SetRenderTarget</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a44645fee0e4a8c88200ae4f4a2d8ef1f" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>SetShaderParameter</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a3ba2427a6feed595ac675e060be2f55e" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>ToggleEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::RenderPath</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1RenderPath_1a2c743be13293aa7461d37b87e1ca5564" prot="public" virt="non-virtual"><scope>Urho3D::RenderPath</scope><name>~RenderPath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

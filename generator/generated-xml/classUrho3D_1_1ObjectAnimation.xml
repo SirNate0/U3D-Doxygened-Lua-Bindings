@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ObjectAnimation" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ObjectAnimation</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <includes refid="ObjectAnimation_8h" local="no">ObjectAnimation.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ObjectAnimation_1a1d852df4213d203a5101b79b74255480" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ValueAnimationInfo" kindref="compound">ValueAnimationInfo</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;String, SharedPtr&lt;ValueAnimationInfo&gt; &gt; Urho3D::ObjectAnimation::attributeAnimationInfos_</definition>
+        <argsstring></argsstring>
+        <name>attributeAnimationInfos_</name>
+        <briefdescription>
+<para>Name to attribute animation info mapping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="94" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a2cf7e4fc6c10452a98a4b225e6ce30af" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ObjectAnimation::ObjectAnimation</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>ObjectAnimation</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="43" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a2465fec4414e07f9a8eee41eb81ed322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ObjectAnimation::~ObjectAnimation</definition>
+        <argsstring>() override</argsstring>
+        <name>~ObjectAnimation</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a46f94474d9e82b864567c4c8665c0d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ObjectAnimation::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1afced8f1fb7812b395e4d2b7db94e046a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ObjectAnimation::Save</definition>
+        <argsstring>(Serializer &amp;dest) const override</argsstring>
+        <name>Save</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd">Save</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save resource. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a5253f72da8a691b195697d6328fcd7df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ObjectAnimation::LoadXML</definition>
+        <argsstring>(const XMLElement &amp;source)</argsstring>
+        <name>LoadXML</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from XML data. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a52b207cefc63104d97287c011b8a94cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ObjectAnimation::SaveXML</definition>
+        <argsstring>(XMLElement &amp;dest) const</argsstring>
+        <name>SaveXML</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save as XML data. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a6abe177f7630bc448bf4ffe7d0a0695c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ObjectAnimation::LoadJSON</definition>
+        <argsstring>(const JSONValue &amp;source)</argsstring>
+        <name>LoadJSON</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load from JSON data. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a7349efe4965b22ec992eba6da2723b86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ObjectAnimation::SaveJSON</definition>
+        <argsstring>(JSONValue &amp;dest) const</argsstring>
+        <name>SaveJSON</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save as JSON data. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a4697083a7b99d79403191ac341560459" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ObjectAnimation::AddAttributeAnimation</definition>
+        <argsstring>(const String &amp;name, ValueAnimation *attributeAnimation, WrapMode wrapMode=WM_LOOP, float speed=1.0f)</argsstring>
+        <name>AddAttributeAnimation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1ValueAnimation" kindref="compound">ValueAnimation</ref> *</type>
+          <declname>attributeAnimation</declname>
+        </param>
+        <param>
+          <type><ref refid="AnimationDefs_8h_1af8409fd27c2ac2ee7224ec2b4dde83dd" kindref="member">WrapMode</ref></type>
+          <declname>wrapMode</declname>
+          <defval>WM_LOOP</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+<para>Add attribute animation, attribute name can in following format: &quot;attribute&quot; or &quot;#0/#1/attribute&quot; or &quot;&quot;#0/#1/@component#1/attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1adb55fe8fad1b003fe2f1dd7a6861be82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ObjectAnimation::RemoveAttributeAnimation</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RemoveAttributeAnimation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove attribute animation, attribute name can in following format: &quot;attribute&quot; or &quot;#0/#1/attribute&quot; or &quot;&quot;#0/#1/@component#1/attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1ab6d8a5c0c1f781cf7aa85dbf25d7a642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ObjectAnimation::RemoveAttributeAnimation</definition>
+        <argsstring>(ValueAnimation *attributeAnimation)</argsstring>
+        <name>RemoveAttributeAnimation</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ValueAnimation" kindref="compound">ValueAnimation</ref> *</type>
+          <declname>attributeAnimation</declname>
+        </param>
+        <briefdescription>
+<para>Remove attribute animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1ad1f765c95db233b7128e902c198d8777" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ValueAnimation" kindref="compound">ValueAnimation</ref> *</type>
+        <definition>ValueAnimation* Urho3D::ObjectAnimation::GetAttributeAnimation</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetAttributeAnimation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return attribute animation by name. BIND_AS_ALIAS_get_attributeAnimations </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="73" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a1ec1d37b98181c285c98870539408aef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="AnimationDefs_8h_1af8409fd27c2ac2ee7224ec2b4dde83dd" kindref="member">WrapMode</ref></type>
+        <definition>WrapMode Urho3D::ObjectAnimation::GetAttributeAnimationWrapMode</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetAttributeAnimationWrapMode</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return attribute animation wrap mode by name. BIND_AS_ALIAS_get_wrapModes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1aee12d5ae06f401bfb0ffe59a12bbd92f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ObjectAnimation::GetAttributeAnimationSpeed</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetAttributeAnimationSpeed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return attribute animation speed by name. BIND_AS_ALIAS_get_speeds </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="79" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a89b92d69166b53e9aaaf33c92da70789" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ValueAnimationInfo" kindref="compound">ValueAnimationInfo</ref> &gt; &gt; &amp;</type>
+        <definition>const HashMap&lt;String, SharedPtr&lt;ValueAnimationInfo&gt; &gt;&amp; Urho3D::ObjectAnimation::GetAttributeAnimationInfos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAttributeAnimationInfos</name>
+        <briefdescription>
+<para>Return all attribute animations infos. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="82" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1a9079b508c0ada443ee5914310d5fc98a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ValueAnimationInfo" kindref="compound">ValueAnimationInfo</ref> *</type>
+        <definition>ValueAnimationInfo* Urho3D::ObjectAnimation::GetAttributeAnimationInfo</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetAttributeAnimationInfo</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute animation info by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="85" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1afac71af8a422ed40c497078348cfaa9e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::ObjectAnimation::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="48" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1acb4cd4c20bfda2de66da86c5fbe46c77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ObjectAnimation::SendAttributeAnimationAddedEvent</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>SendAttributeAnimationAddedEvent</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Send attribute animation added event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectAnimation_1ab114f4ddc927346d68be1fcf656f70d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ObjectAnimation::SendAttributeAnimationRemovedEvent</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>SendAttributeAnimationRemovedEvent</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Send attribute animation remove event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="91" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> animation class, an object animation include one or more attribute animations and theirs wrap mode and speed for an <ref refid="classUrho3D_1_1Animatable" kindref="compound">Animatable</ref> object. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::ObjectAnimation</label>
+        <link refid="classUrho3D_1_1ObjectAnimation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::ObjectAnimation</label>
+        <link refid="classUrho3D_1_1ObjectAnimation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" line="37" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Scene/ObjectAnimation.h" bodystart="38" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a4697083a7b99d79403191ac341560459" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>AddAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a1d852df4213d203a5101b79b74255480" prot="private" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a46f94474d9e82b864567c4c8665c0d76" prot="public" virt="virtual"><scope>Urho3D::ObjectAnimation</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d" prot="public" virt="virtual"><scope>Urho3D::ObjectAnimation</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1ad1f765c95db233b7128e902c198d8777" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a9079b508c0ada443ee5914310d5fc98a" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a89b92d69166b53e9aaaf33c92da70789" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetAttributeAnimationInfos</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1aee12d5ae06f401bfb0ffe59a12bbd92f" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a1ec1d37b98181c285c98870539408aef" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a6abe177f7630bc448bf4ffe7d0a0695c" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a5253f72da8a691b195697d6328fcd7df" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a2cf7e4fc6c10452a98a4b225e6ce30af" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>ObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::ObjectAnimation</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1afac71af8a422ed40c497078348cfaa9e" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1adb55fe8fad1b003fe2f1dd7a6861be82" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1ab6d8a5c0c1f781cf7aa85dbf25d7a642" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1afced8f1fb7812b395e4d2b7db94e046a" prot="public" virt="virtual"><scope>Urho3D::ObjectAnimation</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::ObjectAnimation</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a7349efe4965b22ec992eba6da2723b86" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a52b207cefc63104d97287c011b8a94cd" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1acb4cd4c20bfda2de66da86c5fbe46c77" prot="private" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SendAttributeAnimationAddedEvent</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1ab114f4ddc927346d68be1fcf656f70d9" prot="private" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SendAttributeAnimationRemovedEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1ObjectAnimation_1a2465fec4414e07f9a8eee41eb81ed322" prot="public" virt="non-virtual"><scope>Urho3D::ObjectAnimation</scope><name>~ObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ObjectAnimation</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,853 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1AnimationState" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::AnimationState</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <includes refid="AnimationState_8h" local="no">AnimationState.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1a3469a253972fbd386d34296906a1dc3d" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1AnimatedModel" kindref="compound">AnimatedModel</ref> &gt;</type>
+        <definition>WeakPtr&lt;AnimatedModel&gt; Urho3D::AnimationState::model_</definition>
+        <argsstring></argsstring>
+        <name>model_</name>
+        <briefdescription>
+<para>Animated model (model mode). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="179" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1aa5507e1b67307645602f5d5a8b767eec" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>WeakPtr&lt;Node&gt; Urho3D::AnimationState::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <briefdescription>
+<para>Root scene node (node hierarchy mode). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="181" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1a70cb30c8125f4132486711417c310faa" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> &gt;</type>
+        <definition>SharedPtr&lt;Animation&gt; Urho3D::AnimationState::animation_</definition>
+        <argsstring></argsstring>
+        <name>animation_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="183" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1ab0e0718c8167ce9bc6c37c3a1650fe61" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::AnimationState::startBone_</definition>
+        <argsstring></argsstring>
+        <name>startBone_</name>
+        <briefdescription>
+<para>Start bone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="185" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1a563e2ad39db838284100b07cc466b3bd" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1AnimationStateTrack" kindref="compound">AnimationStateTrack</ref> &gt;</type>
+        <definition>Vector&lt;AnimationStateTrack&gt; Urho3D::AnimationState::stateTracks_</definition>
+        <argsstring></argsstring>
+        <name>stateTracks_</name>
+        <briefdescription>
+<para>Per-track data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="187" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1a6718a0b465223e93d2781ad38ada2dcf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::AnimationState::looped_</definition>
+        <argsstring></argsstring>
+        <name>looped_</name>
+        <briefdescription>
+<para>Looped flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="189" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1afb278f1b7fa369ef5cf586a385f013b6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::weight_</definition>
+        <argsstring></argsstring>
+        <name>weight_</name>
+        <briefdescription>
+<para>Blending weight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="191" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1a910dbae742e18513a310db3859ad9fa5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::time_</definition>
+        <argsstring></argsstring>
+        <name>time_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Time" kindref="compound">Time</ref> position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="193" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1a2b0386eb56f2d3a67a7424805997b85a" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::AnimationState::layer_</definition>
+        <argsstring></argsstring>
+        <name>layer_</name>
+        <briefdescription>
+<para>Blending layer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="195" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1AnimationState_1adc74776d465a72d7b6e14c81d9ae5742" prot="private" static="no" mutable="no">
+        <type><ref refid="AnimationState_8h_1a6e7f73b4fa3656f65388c305b73f2e32" kindref="member">AnimationBlendMode</ref></type>
+        <definition>AnimationBlendMode Urho3D::AnimationState::blendingMode_</definition>
+        <argsstring></argsstring>
+        <name>blendingMode_</name>
+        <briefdescription>
+<para>Blending mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="197" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a345dfb4137ec34a49b0abc34d443ea8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::AnimationState::AnimationState</definition>
+        <argsstring>(AnimatedModel *model, Animation *animation)</argsstring>
+        <name>AnimationState</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1AnimatedModel" kindref="compound">AnimatedModel</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+<para>Construct with animated model and animation pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="77" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1aeb42ac6c4d41adc1dc936aa6265af2ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::AnimationState::AnimationState</definition>
+        <argsstring>(Node *node, Animation *animation)</argsstring>
+        <name>AnimationState</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> *</type>
+          <declname>animation</declname>
+        </param>
+        <briefdescription>
+<para>Construct with root scene node and animation pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="79" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a47ce3d0b9e19739afe08027c833345ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::AnimationState::~AnimationState</definition>
+        <argsstring>() override</argsstring>
+        <name>~AnimationState</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="81" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a73efb90d9d6a41debe30e4d151a50e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetStartBone</definition>
+        <argsstring>(Bone *startBone)</argsstring>
+        <name>SetStartBone</name>
+        <param>
+          <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+          <declname>startBone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set start bone. Not supported in node animation mode. Resets any assigned per-bone weights. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1aeea798794f1baf7e230824a033b92b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetLooped</definition>
+        <argsstring>(bool looped)</argsstring>
+        <name>SetLooped</name>
+        <param>
+          <type>bool</type>
+          <declname>looped</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set looping enabled/disabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a249563003fdad42c1333c702c456fb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetWeight</definition>
+        <argsstring>(float weight)</argsstring>
+        <name>SetWeight</name>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set blending weight. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1acd96350691fd4daa46a57363b2c57561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetBlendMode</definition>
+        <argsstring>(AnimationBlendMode mode)</argsstring>
+        <name>SetBlendMode</name>
+        <param>
+          <type><ref refid="AnimationState_8h_1a6e7f73b4fa3656f65388c305b73f2e32" kindref="member">AnimationBlendMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set blending mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a515279183f29b838f906e87620336ab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetTime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetTime</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set time position. Does not fire animation triggers. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a4b3b4cfcd7f553a95d0752c8d5322792" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetBoneWeight</definition>
+        <argsstring>(unsigned index, float weight, bool recursive=false)</argsstring>
+        <name>SetBoneWeight</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set per-bone blending weight by track index. Default is 1.0 (full), is multiplied with the state&apos;s blending weight when applying the animation. Optionally recurses to child bones. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a60a90b60b4972a2cd5eb219dec34b3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetBoneWeight</definition>
+        <argsstring>(const String &amp;name, float weight, bool recursive=false)</argsstring>
+        <name>SetBoneWeight</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set per-bone blending weight by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1afb605701d8bd6656e764a8625ed02912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetBoneWeight</definition>
+        <argsstring>(StringHash nameHash, float weight, bool recursive=false)</argsstring>
+        <name>SetBoneWeight</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>nameHash</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set per-bone blending weight by name hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a13b00d3249c2576b21b357297f76360c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::AddWeight</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>AddWeight</name>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Modify blending weight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a7ae6a442fb5681d75cefe81ebbad19e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::AddTime</definition>
+        <argsstring>(float delta)</argsstring>
+        <name>AddTime</name>
+        <param>
+          <type>float</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Modify time position. Animation triggers will be fired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1aacf83b779ed66c92e1896eea837b6f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::SetLayer</definition>
+        <argsstring>(unsigned char layer)</argsstring>
+        <name>SetLayer</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>layer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set blending layer. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1af54c54f76c9946cb9c09d87e933fbbe2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> *</type>
+        <definition>Animation* Urho3D::AnimationState::GetAnimation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return animation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="114" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1aa6df68887b898f7d96cb243b3dfec097" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1AnimatedModel" kindref="compound">AnimatedModel</ref> *</type>
+        <definition>AnimatedModel* Urho3D::AnimationState::GetModel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return animated model this state belongs to (model mode). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="118" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1af5d17023ba044d4b7f287b029e26b9cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Urho3D::AnimationState::GetNode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return root scene node this state controls (node hierarchy mode). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a42996b277a5a899a1b5f5bdac4d40885" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref> *</type>
+        <definition>Bone* Urho3D::AnimationState::GetStartBone</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStartBone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return start bone. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1ac58fa00977b4c6553bacb688f34073b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::GetBoneWeight</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetBoneWeight</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return per-bone blending weight by track index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="126" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1abb226890a55fcd3bf20ae274a0fbd4c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::GetBoneWeight</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetBoneWeight</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return per-bone blending weight by name. BIND_AS_ALIAS_get_boneWeights </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="129" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a54f5f9546442d729be7bee4ceda6bd9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::GetBoneWeight</definition>
+        <argsstring>(StringHash nameHash) const</argsstring>
+        <name>GetBoneWeight</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>nameHash</declname>
+        </param>
+        <briefdescription>
+<para>Return per-bone blending weight by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="131" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a6f15d9d1f976dab473951e59e3404c96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::AnimationState::GetTrackIndex</definition>
+        <argsstring>(Node *node) const</argsstring>
+        <name>GetTrackIndex</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Return track index with matching bone node, or M_MAX_UNSIGNED if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="133" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a9bd583c22af5918f14f20ab63e732f81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::AnimationState::GetTrackIndex</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetTrackIndex</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return track index by bone name, or M_MAX_UNSIGNED if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="135" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a84c6cefece891f45f9e9153e238c11c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::AnimationState::GetTrackIndex</definition>
+        <argsstring>(StringHash nameHash) const</argsstring>
+        <name>GetTrackIndex</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>nameHash</declname>
+        </param>
+        <briefdescription>
+<para>Return track index by bone name hash, or M_MAX_UNSIGNED if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a0ad03c7c72ae7a1800999426fe684f73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::AnimationState::IsEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether weight is nonzero. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="141" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a17237854b026d01be8df8b0f2d2a3c7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::AnimationState::IsLooped</definition>
+        <argsstring>() const</argsstring>
+        <name>IsLooped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether looped. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="145" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1aa3418074b845e542074341c2a5e8da9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::GetWeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return blending weight. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="149" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1ab266ab3f7cf13998b6540c66b62b7127" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="AnimationState_8h_1a6e7f73b4fa3656f65388c305b73f2e32" kindref="member">AnimationBlendMode</ref></type>
+        <definition>AnimationBlendMode Urho3D::AnimationState::GetBlendMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBlendMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return blending mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="153" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a4f496b0b2a5ccbef5145c65ba4970685" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::GetTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return time position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="157" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1ae5df1e6ad1d6bcb25f5fd69ff18ebc59" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::AnimationState::GetLength</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return animation length. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="161" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a128515b46dbd571162439872bb265403" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::AnimationState::GetLayer</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return blending layer. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="165" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1ae662a588f71a9adfb4aea3162bb2a742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::Apply</definition>
+        <argsstring>()</argsstring>
+        <name>Apply</name>
+        <briefdescription>
+<para>Apply the animation at the current time position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="168" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a09d3f8acf5b318a2a5ad9f1816a1073c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::ApplyToModel</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyToModel</name>
+        <briefdescription>
+<para>Apply animation to a skeleton. Transform changes are applied silently, so the model needs to dirty its root model afterward. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a4ebbb3962edd5a28f17fc54151a341e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::ApplyToNodes</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyToNodes</name>
+        <briefdescription>
+<para>Apply animation to a scene node hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1AnimationState_1a2618e6f947c1a9be664b370cfaf27c09" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::AnimationState::ApplyTrack</definition>
+        <argsstring>(AnimationStateTrack &amp;stateTrack, float weight, bool silent)</argsstring>
+        <name>ApplyTrack</name>
+        <param>
+          <type><ref refid="structUrho3D_1_1AnimationStateTrack" kindref="compound">AnimationStateTrack</ref> &amp;</type>
+          <declname>stateTrack</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>silent</declname>
+        </param>
+        <briefdescription>
+<para>Apply track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="176" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Animation instance. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::AnimationState</label>
+        <link refid="classUrho3D_1_1AnimationState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::AnimationState</label>
+        <link refid="classUrho3D_1_1AnimationState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" line="73" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/AnimationState.h" bodystart="74" bodyend="198"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a7ae6a442fb5681d75cefe81ebbad19e8" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>AddTime</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a13b00d3249c2576b21b357297f76360c" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>AddWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a70cb30c8125f4132486711417c310faa" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>animation_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a345dfb4137ec34a49b0abc34d443ea8f" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>AnimationState</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1aeb42ac6c4d41adc1dc936aa6265af2ac" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>AnimationState</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1ae662a588f71a9adfb4aea3162bb2a742" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>Apply</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a09d3f8acf5b318a2a5ad9f1816a1073c" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>ApplyToModel</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a4ebbb3962edd5a28f17fc54151a341e4" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>ApplyToNodes</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a2618e6f947c1a9be664b370cfaf27c09" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>ApplyTrack</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1adc74776d465a72d7b6e14c81d9ae5742" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>blendingMode_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1af54c54f76c9946cb9c09d87e933fbbe2" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetAnimation</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1ab266ab3f7cf13998b6540c66b62b7127" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetBlendMode</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1ac58fa00977b4c6553bacb688f34073b6" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetBoneWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1abb226890a55fcd3bf20ae274a0fbd4c1" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetBoneWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a54f5f9546442d729be7bee4ceda6bd9b" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetBoneWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a128515b46dbd571162439872bb265403" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetLayer</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1ae5df1e6ad1d6bcb25f5fd69ff18ebc59" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetLength</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1aa6df68887b898f7d96cb243b3dfec097" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetModel</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1af5d17023ba044d4b7f287b029e26b9cf" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a42996b277a5a899a1b5f5bdac4d40885" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetStartBone</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a4f496b0b2a5ccbef5145c65ba4970685" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetTime</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a6f15d9d1f976dab473951e59e3404c96" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetTrackIndex</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a9bd583c22af5918f14f20ab63e732f81" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetTrackIndex</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a84c6cefece891f45f9e9153e238c11c3" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetTrackIndex</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1aa3418074b845e542074341c2a5e8da9e" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>GetWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a0ad03c7c72ae7a1800999426fe684f73" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a17237854b026d01be8df8b0f2d2a3c7f" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>IsLooped</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a2b0386eb56f2d3a67a7424805997b85a" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>layer_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a6718a0b465223e93d2781ad38ada2dcf" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>looped_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a3469a253972fbd386d34296906a1dc3d" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>model_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1aa5507e1b67307645602f5d5a8b767eec" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1acd96350691fd4daa46a57363b2c57561" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetBlendMode</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a4b3b4cfcd7f553a95d0752c8d5322792" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetBoneWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a60a90b60b4972a2cd5eb219dec34b3ec" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetBoneWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1afb605701d8bd6656e764a8625ed02912" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetBoneWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1aacf83b779ed66c92e1896eea837b6f61" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetLayer</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1aeea798794f1baf7e230824a033b92b66" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetLooped</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a73efb90d9d6a41debe30e4d151a50e85" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetStartBone</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a515279183f29b838f906e87620336ab4" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetTime</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a249563003fdad42c1333c702c456fb7a" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>SetWeight</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1ab0e0718c8167ce9bc6c37c3a1650fe61" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>startBone_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a563e2ad39db838284100b07cc466b3bd" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>stateTracks_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a910dbae742e18513a310db3859ad9fa5" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>time_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1afb278f1b7fa369ef5cf586a385f013b6" prot="private" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>weight_</name></member>
+      <member refid="classUrho3D_1_1AnimationState_1a47ce3d0b9e19739afe08027c833345ff" prot="public" virt="non-virtual"><scope>Urho3D::AnimationState</scope><name>~AnimationState</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::AnimationState</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

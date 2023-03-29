@@ -1,0 +1,1359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1TerrainPatch" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::TerrainPatch</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Drawable" prot="public" virt="non-virtual">Urho3D::Drawable</basecompoundref>
+    <includes refid="TerrainPatch_8h" local="no">TerrainPatch.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a962c75416b5ee0dbdca001abbd66d9f0" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> &gt;</type>
+        <definition>SharedPtr&lt;Geometry&gt; Urho3D::TerrainPatch::geometry_</definition>
+        <argsstring></argsstring>
+        <name>geometry_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="119" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1ad1f38f3d19558eefaeb2842df09c90b0" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> &gt;</type>
+        <definition>SharedPtr&lt;Geometry&gt; Urho3D::TerrainPatch::maxLodGeometry_</definition>
+        <argsstring></argsstring>
+        <name>maxLodGeometry_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> that is locked to the max LOD level. Used for decals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="121" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1aebea381306f65f3045cc4854d90838c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> &gt;</type>
+        <definition>SharedPtr&lt;Geometry&gt; Urho3D::TerrainPatch::occlusionGeometry_</definition>
+        <argsstring></argsstring>
+        <name>occlusionGeometry_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> that is used for occlusion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="123" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a1d550df7be92a0f77f13577919d5c3b3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;VertexBuffer&gt; Urho3D::TerrainPatch::vertexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer_</name>
+        <briefdescription>
+<para>Vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="125" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a387a63e922f28ba8db356127063fb3d4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> &gt;</type>
+        <definition>WeakPtr&lt;Terrain&gt; Urho3D::TerrainPatch::owner_</definition>
+        <argsstring></argsstring>
+        <name>owner_</name>
+        <briefdescription>
+<para>Parent terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="127" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1aaf625c683d48c3dc2fe72b08122ebf48" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> &gt;</type>
+        <definition>WeakPtr&lt;TerrainPatch&gt; Urho3D::TerrainPatch::north_</definition>
+        <argsstring></argsstring>
+        <name>north_</name>
+        <briefdescription>
+<para>North neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="129" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a6cf7b941b2da8401794616ba4e63e6a8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> &gt;</type>
+        <definition>WeakPtr&lt;TerrainPatch&gt; Urho3D::TerrainPatch::south_</definition>
+        <argsstring></argsstring>
+        <name>south_</name>
+        <briefdescription>
+<para>South neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="131" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a4625b16a31269320d689233ef73d0930" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> &gt;</type>
+        <definition>WeakPtr&lt;TerrainPatch&gt; Urho3D::TerrainPatch::west_</definition>
+        <argsstring></argsstring>
+        <name>west_</name>
+        <briefdescription>
+<para>West neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="133" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a6f410fc20464126a225f10add90dd801" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> &gt;</type>
+        <definition>WeakPtr&lt;TerrainPatch&gt; Urho3D::TerrainPatch::east_</definition>
+        <argsstring></argsstring>
+        <name>east_</name>
+        <briefdescription>
+<para>East neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="135" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a8e57f97d4ba65163d9bd6d398651f340" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt;</type>
+        <definition>PODVector&lt;float&gt; Urho3D::TerrainPatch::lodErrors_</definition>
+        <argsstring></argsstring>
+        <name>lodErrors_</name>
+        <briefdescription>
+<para>Geometrical error per LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="137" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a8a2acfed86a435ca02d6c9477768cfd6" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::TerrainPatch::coordinates_</definition>
+        <argsstring></argsstring>
+        <name>coordinates_</name>
+        <briefdescription>
+<para>Patch coordinates in the terrain. (0,0) is the northwest corner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="139" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1TerrainPatch_1a5a68b955b43326786016985ad23000f5" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::TerrainPatch::lodLevel_</definition>
+        <argsstring></argsstring>
+        <name>lodLevel_</name>
+        <briefdescription>
+<para>Current LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="141" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1add3f13caf06eebfd71f3f88dc093f58f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::TerrainPatch::TerrainPatch</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>TerrainPatch</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a620f49018aa2c25cb0aa638430cda46c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::TerrainPatch::~TerrainPatch</definition>
+        <argsstring>() override</argsstring>
+        <name>~TerrainPatch</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a3a7a0ac33b5134318173c1eed81e2d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::ProcessRayQuery</definition>
+        <argsstring>(const RayOctreeQuery &amp;query, PODVector&lt; RayQueryResult &gt; &amp;results) override</argsstring>
+        <name>ProcessRayQuery</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ad7614c648bc6beb1ac8e57dc5b0bedc0">ProcessRayQuery</reimplements>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1RayQueryResult" kindref="compound">RayQueryResult</ref> &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Process octree raycast. May be called from a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a98b34fad89336d4641241f0e4993d003" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::UpdateBatches</definition>
+        <argsstring>(const FrameInfo &amp;frame) override</argsstring>
+        <name>UpdateBatches</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ae489279acce1c5c0168de50928391639">UpdateBatches</reimplements>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Calculate distance and prepare batches for rendering. May be called from worker thread(s), possibly re-entrantly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a902bd1e2350323ecd4b9d7c6a8503178" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::UpdateGeometry</definition>
+        <argsstring>(const FrameInfo &amp;frame) override</argsstring>
+        <name>UpdateGeometry</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1a00fb66b3ce06e1e9c9bb9ecf402c78b4">UpdateGeometry</reimplements>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Prepare geometry for rendering. Called from a worker thread if possible (no GPU update). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1abf9cc3a09db9dff74190764deb79f317" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Drawable_8h_1affe9ba89cc323bc37aff22afec7ade35" kindref="member">UpdateGeometryType</ref></type>
+        <definition>UpdateGeometryType Urho3D::TerrainPatch::GetUpdateGeometryType</definition>
+        <argsstring>() override</argsstring>
+        <name>GetUpdateGeometryType</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1a09d563527cd3485f21b485c778e26d7e">GetUpdateGeometryType</reimplements>
+        <briefdescription>
+<para>Return whether a geometry update is necessary, and if it can happen in a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="55" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a03c18c893ed4f762a1085afed9572585" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>Geometry* Urho3D::TerrainPatch::GetLodGeometry</definition>
+        <argsstring>(unsigned batchIndex, unsigned level) override</argsstring>
+        <name>GetLodGeometry</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1af56066bfd97cee073565a19d5e6bb307">GetLodGeometry</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>batchIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Return the geometry for a specific LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a38ee9b2d0cc4c9156ebdba0b86bd934f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::TerrainPatch::GetNumOccluderTriangles</definition>
+        <argsstring>() override</argsstring>
+        <name>GetNumOccluderTriangles</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1aa9924ef8125d599be958f65fdd874206">GetNumOccluderTriangles</reimplements>
+        <briefdescription>
+<para>Return number of occlusion geometry triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="59" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a88a34eac04ed50670992e3371f5821d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::TerrainPatch::DrawOcclusion</definition>
+        <argsstring>(OcclusionBuffer *buffer) override</argsstring>
+        <name>DrawOcclusion</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ad6abc23d5616c4589241d2d428879fa4">DrawOcclusion</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1OcclusionBuffer" kindref="compound">OcclusionBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Draw to occlusion buffer. Return true if did not run out of triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1aa8e4b46ed37c8a1911058cc7cad054a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest) override</argsstring>
+        <name>DrawDebugGeometry</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1a7a55d25cfff63c42a8cadae6e37b8f8b">DrawDebugGeometry</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Visualize the component as debug geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a44e179882d9f7e70206e4f1f027898fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::SetOwner</definition>
+        <argsstring>(Terrain *terrain)</argsstring>
+        <name>SetOwner</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>terrain</declname>
+        </param>
+        <briefdescription>
+<para>Set owner terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a27c7ecc96334275b59c2c27dba4e1d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::SetNeighbors</definition>
+        <argsstring>(TerrainPatch *north, TerrainPatch *south, TerrainPatch *west, TerrainPatch *east)</argsstring>
+        <name>SetNeighbors</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>north</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>south</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>west</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+          <declname>east</declname>
+        </param>
+        <briefdescription>
+<para>Set neighbor patches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a29dc3502ac31838658e0a90ea42917a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::SetMaterial</definition>
+        <argsstring>(Material *material)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+<para>Set material. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="70" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a88a00b7170c5b32b5920f09d64553954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::SetBoundingBox</definition>
+        <argsstring>(const BoundingBox &amp;box)</argsstring>
+        <name>SetBoundingBox</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Set local-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1ae0837ba6fdcc3c6414aad0a832bc9929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::SetCoordinates</definition>
+        <argsstring>(const IntVector2 &amp;coordinates)</argsstring>
+        <name>SetCoordinates</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>coordinates</declname>
+        </param>
+        <briefdescription>
+<para>Set patch coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1ada5db9de77685c16a2a32499edd2806d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::ResetLod</definition>
+        <argsstring>()</argsstring>
+        <name>ResetLod</name>
+        <briefdescription>
+<para>Reset to LOD level 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a15a1a9e51dd3cc8bb3331b5a10a30e99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>Geometry* Urho3D::TerrainPatch::GetGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGeometry</name>
+        <briefdescription>
+<para>Return visible geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="79" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a5920e4e162205ca2e6cfab46d5749d5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>Geometry* Urho3D::TerrainPatch::GetMaxLodGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxLodGeometry</name>
+        <briefdescription>
+<para>Return max LOD geometry. Used for decals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a51001a70465a6e2ac16a7b79f276e88f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>Geometry* Urho3D::TerrainPatch::GetOcclusionGeometry</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOcclusionGeometry</name>
+        <briefdescription>
+<para>Return geometry used for occlusion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="83" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a672b4c2cfea43aa0a0f4f01910c658ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> *</type>
+        <definition>VertexBuffer* Urho3D::TerrainPatch::GetVertexBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexBuffer</name>
+        <briefdescription>
+<para>Return vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="85" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a9ad08da9322381d4705b830d20d0d036" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> *</type>
+        <definition>Terrain* Urho3D::TerrainPatch::GetOwner</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOwner</name>
+        <briefdescription>
+<para>Return owner terrain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="87" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a95763c22a27b814f49884832e81662ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::TerrainPatch::GetNorthPatch</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNorthPatch</name>
+        <briefdescription>
+<para>Return north neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="90" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a27e8ed096e65d989be0576aaec4dd000" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::TerrainPatch::GetSouthPatch</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSouthPatch</name>
+        <briefdescription>
+<para>Return south neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="93" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1ab186a05908d432f9ea1c7bd8a41b2aa2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::TerrainPatch::GetWestPatch</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWestPatch</name>
+        <briefdescription>
+<para>Return west neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="96" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1ab59d22aa659fba62536710ea1f2bb394" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1TerrainPatch" kindref="compound">TerrainPatch</ref> *</type>
+        <definition>TerrainPatch* Urho3D::TerrainPatch::GetEastPatch</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEastPatch</name>
+        <briefdescription>
+<para>Return east neighbor patch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="99" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1ad3267e7f5ca5efbb1c3e70eb60a648cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt; &amp;</type>
+        <definition>PODVector&lt;float&gt;&amp; Urho3D::TerrainPatch::GetLodErrors</definition>
+        <argsstring>()</argsstring>
+        <name>GetLodErrors</name>
+        <briefdescription>
+<para>Return geometrical error array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="102" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1acfbace861b41b56cb78640efc1753a7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+        <definition>const IntVector2&amp; Urho3D::TerrainPatch::GetCoordinates</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCoordinates</name>
+        <briefdescription>
+<para>Return patch coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="105" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a94289b53d8f924ac363115038a448679" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::TerrainPatch::GetLodLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodLevel</name>
+        <briefdescription>
+<para>Return current LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="108" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1abffe7dc6268fc9ffffa4bd7001bb79a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::TerrainPatch::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="46" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a5e764d84310b1455e122652233746145" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::TerrainPatch::OnWorldBoundingBoxUpdate</definition>
+        <argsstring>() override</argsstring>
+        <name>OnWorldBoundingBoxUpdate</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1af146747caaf6fd85ab71fda4e364bde4">OnWorldBoundingBoxUpdate</reimplements>
+        <briefdescription>
+<para>Recalculate the world-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="112" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1TerrainPatch_1a008fa90074af9915b13a5fa603f2c8db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::TerrainPatch::GetCorrectedLodLevel</definition>
+        <argsstring>(unsigned lodLevel)</argsstring>
+        <name>GetCorrectedLodLevel</name>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+        </param>
+        <briefdescription>
+<para>Return a corrected LOD level to ensure stitching can work correctly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="116" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Individually rendered part of a heightmap terrain. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::TerrainPatch</label>
+        <link refid="classUrho3D_1_1TerrainPatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>Urho3D::Zone</label>
+        <link refid="classUrho3D_1_1Zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>lastAmbientEndZone_</edgelabel>
+          <edgelabel>lastAmbientStartZone_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>zoneTexture_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>lastWorldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ambientColor_</edgelabel>
+          <edgelabel>ambientEndColor_</edgelabel>
+          <edgelabel>ambientStartColor_</edgelabel>
+          <edgelabel>fogColor_</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>inverseWorld_</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Urho3D::PODVector&lt; Urho3D::Camera * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Urho3D::Light</label>
+        <link refid="classUrho3D_1_1Light"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="32">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>drawables_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>center_</edgelabel>
+          <edgelabel>halfSize_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>cullingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>children_</edgelabel>
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Zone &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="33">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::BoundingBox</label>
+        <link refid="classUrho3D_1_1BoundingBox"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>max_</edgelabel>
+          <edgelabel>min_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Urho3D::Matrix3x4</label>
+        <link refid="classUrho3D_1_1Matrix3x4"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>zone_</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>lights_</edgelabel>
+          <edgelabel>vertexLights_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>viewCameras_</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>firstLight_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>boundingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>octant_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="24">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::TerrainPatch</label>
+        <link refid="classUrho3D_1_1TerrainPatch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="17">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Urho3D::Vector&lt; Urho3D::SourceBatch &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Urho3D::PODVector&lt; Urho3D::Light * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" line="35" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/TerrainPatch.h" bodystart="36" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Drawable_1afce158b2c7a44a5f40d4eea9aabc673b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>AddLight</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adaacb5c93a02cfd9d662b167b0bae813" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>AddToOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a73cece74565f2124ed22d66406760302" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>AddVertexLight</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad0416c01ec4088197c2207971bd046aa" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>basePassFlags_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a748155e7b747b009e4879882ec3bf7c4" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>batches_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abfead28f2b8293a8699d6ac84b8476c9" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>boundingBox_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a69790319fcb6d145ee8753a6db002f33" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>castShadows_</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a8a2acfed86a435ca02d6c9477768cfd6" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>coordinates_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a786d899e2ebfd595ee15adc70d419175" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>distance_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5a9391dafb2151dde0a717d59413caab" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Drawable</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8ba9d34f65b38b534f499f636834e694" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>drawableFlags_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1aa8e4b46ed37c8a1911058cc7cad054a3" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ada7a3ed2c8975c5d6fd11f7e770a699a" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>drawDistance_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a88a34eac04ed50670992e3371f5821d8" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>DrawOcclusion</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a6f410fc20464126a225f10add90dd801" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>east_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a147b1459051ad28a7c3583fc30d6765d" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>firstLight_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a962c75416b5ee0dbdca001abbd66d9f0" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>geometry_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5ae831d745f6ff6d9341eae348682613" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetBatches</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7e8f305ed9233705a707803e7a8d92e2" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae888ecaa770f261c32e6f47791d68435" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1acfbace861b41b56cb78640efc1753a7f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetCoordinates</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a008fa90074af9915b13a5fa603f2c8db" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetCorrectedLodLevel</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1696860cd9715781a11f622a9b7025e8" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74be6fab1f5cfdd44da3572015edf6ba" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetDrawableFlags</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aaace7f6327baffa0a0c4adb1d840de24" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1ab59d22aa659fba62536710ea1f2bb394" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetEastPatch</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac91538e42ed288039d128bdec2e5d008" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetFirstLight</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a15a1a9e51dd3cc8bb3331b5a10a30e99" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetGeometry</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a365785ecf1a129263bf53b39ccc651cf" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5574ddf773640e9dae5466a7ff6cf8f3" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a415b264905a2ac605c837e38c9f86afe" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLodBias</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4ccb114792b1a779bf0f714c7aa764d0" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLodDistance</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1ad3267e7f5ca5efbb1c3e70eb60a648cf" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLodErrors</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a03c18c893ed4f762a1085afed9572585" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLodGeometry</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a94289b53d8f924ac363115038a448679" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetLodLevel</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4c9553b4aa9d39ff94e92f97519ba89" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetMaxLights</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a5920e4e162205ca2e6cfab46d5749d5b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetMaxLodGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af30ebf38b4278cd49fd786776cd73413" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetMaxZ</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab2becad2e313c835156cc98c63af6ce2" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetMinZ</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a95763c22a27b814f49884832e81662ca" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNorthPatch</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a38ee9b2d0cc4c9156ebdba0b86bd934f" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>GetNumOccluderTriangles</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a51001a70465a6e2ac16a7b79f276e88f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetOcclusionGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6679001692e20900992cb553771e4080" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetOctant</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a9ad08da9322381d4705b830d20d0d036" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetOwner</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6072f938c617059fef0fc77ff21dac1f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1732b54098629811101b12b61800c3c7" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad7e22e3881027d4bf3334e06cf64d016" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetSortValue</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a27e8ed096e65d989be0576aaec4dd000" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetSouthPatch</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1abf9cc3a09db9dff74190764deb79f317" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>GetUpdateGeometryType</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a672b4c2cfea43aa0a0f4f01910c658ce" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetVertexBuffer</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2cde3e103a1a8f887e1080095096d77f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetVertexLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae45bf9bcfe8d1c09c72258e77a76f992" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetViewMask</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1ab186a05908d432f9ea1c7bd8a41b2aa2" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetWestPatch</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fac24cb806464afa69b38b4634cb703" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetWorldBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4e067775f22ef6c92643a3ea6e5807a" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa8ee386880f6aad566f662abd2760d4f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>GetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad2faff010ee37e381ace91f59ef7dc1e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HasBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4dd313eab9c863711b8e84d7ce30fc11" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8d892c43788779924ae09ff161ff50c0" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a868163988ad17c777699cd0226ffc68b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aabd4960e08a707a45f9720fcb30dfa39" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a85642d5021a87a361151fd6823bad04f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsOccluder</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aebf5b0230d2cba605ff1f6ca24470ed4" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>IsZoneDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adafccc9b0b4f1cff9c9764b618cb60b4" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>lightMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2c3ef78ebb6b7f1b4fe33ca56a85d46a" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>lights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4230d5696e13e62a419cf7eb543c84f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>LimitLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a58b2ac553e0255df9eb8f52b94d15deb" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>LimitVertexLights</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3781e0be1bdacb9d915c6f2d2439efab" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>lodBias_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3e1d03cadfe54e898b63b7033afa224b" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>lodDistance_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a8e57f97d4ba65163d9bd6d398651f340" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>lodErrors_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a5a68b955b43326786016985ad23000f5" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>lodLevel_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a87d6de3a8a7895228665ef79ad331510" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>MarkForUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1f5358a58f4f0bfa38919dd14c04e240" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abbd26865ea0280500b4ac6c29ce82705" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a43598df7745628a3dafef95887093a5b" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>maxLights_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1ad1f38f3d19558eefaeb2842df09c90b0" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>maxLodGeometry_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af0c99306fc67cfd108183532f70ef765" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>maxZ_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a426fbc769c215162857ab0aaf1d3bfbb" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>minZ_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1aaf625c683d48c3dc2fe72b08122ebf48" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>north_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa88b30c4e2a07c664707c268a889b990" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>occludee_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5013f74c89e1259ea2a4e8a0d4dca571" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>occluder_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1aebea381306f65f3045cc4854d90838c6" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>occlusionGeometry_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa279857db164197db750c919307491e3" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>octant_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a04a978441415a93f044721f6473df0e3" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa7a00b82f8a07ba71b8a63561023a4c4" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2ab23fcc436cde69fe74bfefa4ead968" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnRemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1acf1d2b41b502aebfa72c2e280470b453" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aeff4f69d702780990bcc4e347a2394f0" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a5e764d84310b1455e122652233746145" prot="protected" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>OnWorldBoundingBoxUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a387a63e922f28ba8db356127063fb3d4" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>owner_</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a3a7a0ac33b5134318173c1eed81e2d0f" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>ProcessRayQuery</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1abffe7dc6268fc9ffffa4bd7001bb79a3" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a48c3be2aa6cb930b2ce959784d76fdbe" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1ada5db9de77685c16a2a32499edd2806d" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>ResetLod</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae5d530586535c7d58d54053c0ac5b954" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a88a00b7170c5b32b5920f09d64553954" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a326f83aea7b4a6c695543e45cbffafa5" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetCastShadows</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1ae0837ba6fdcc3c6414aad0a832bc9929" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetCoordinates</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fa21af838026c1566496968bc7a696c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adae53db9cd636a6583569a17b47717d2" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a31131f13cd30e8f47d201953f0d6293f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetLodBias</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a29dc3502ac31838658e0a90ea42917a6" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetMaterial</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8306bfe2f9ba357b9384d2285fcd3902" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3a96ff31da79c263163701b2a1351aab" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetMinMaxZ</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a27c7ecc96334275b59c2c27dba4e1d37" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetNeighbors</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa1e97bbb2427a3626a5b6816dfc888d6" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae74c979945a77c14647d024f0f824c73" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetOccluder</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3c746486b469ad2c987eaa2faca73afd" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetOctant</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a44e179882d9f7e70206e4f1f027898fb" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetOwner</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae1f5e010e8a556927758e8eaa7b65e9a" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0e06b99e373bf9c0cec01d17f1384a24" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5234fbefdcf8dc01cc296e18f3b2c916" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetSortValue</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab0a0cb81cefb83249a578069c4adc4d8" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetViewMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3181013d83f6d1b3110abe34316fe435" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a431071bb2e7c05ad55c8aade5c18e659" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1afbc2f50dafd0c9f7d34385cdfacf378f" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>shadowDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a9640ac3a553bc15bfc1826317df39631" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>shadowMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a914180afedfd0fff9d6458bbe2ca548e" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>sortValue_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a6cf7b941b2da8401794616ba4e63e6a8" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>south_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1add3f13caf06eebfd71f3f88dc093f58f" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>TerrainPatch</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae865f6d21de70fd7bc95a7207d694b88" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a98b34fad89336d4641241f0e4993d003" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>UpdateBatches</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a902bd1e2350323ecd4b9d7c6a8503178" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>UpdateGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74445c3c2d016d2ce796683ec63e81b8" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>updateQueued_</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a1d550df7be92a0f77f13577919d5c3b3" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>vertexBuffer_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7effc9e891517efb4a85104e8e49c9d3" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>vertexLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6de3f920398ae6adb36991175e6f8380" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>viewCameras_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0be4e0aacab060480d106a4a39d24a26" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>viewFrameNumber_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a63e29f96811c72e08c15fd01789d6ef4" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a4625b16a31269320d689233ef73d0930" prot="private" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>west_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a10f4a0419fadd10735448f7a5b639099" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>worldBoundingBox_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a23281f9ff7eeaa73c147b86fc29f1f9d" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>worldBoundingBoxDirty_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af251651fa16a666b0ec11af053bf80aa" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>zone_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac7871920deb048d9d675ad34c5874a00" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>zoneDirty_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2a5536a40728f773e36238bfe67b3958" prot="protected" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>zoneMask_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4be7208dbdfff0725eef83f33ad28536" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>~Drawable</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::TerrainPatch</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>~Serializable</name></member>
+      <member refid="classUrho3D_1_1TerrainPatch_1a620f49018aa2c25cb0aa638430cda46c" prot="public" virt="non-virtual"><scope>Urho3D::TerrainPatch</scope><name>~TerrainPatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

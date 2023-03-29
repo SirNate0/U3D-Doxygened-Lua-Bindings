@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="RaycastVehicle_8h" kind="file" language="C++">
+    <compoundname>RaycastVehicle.h</compoundname>
+    <includes refid="LogicComponent_8h" local="yes">../Scene/LogicComponent.h</includes>
+    <includes refid="PhysicsUtils_8h" local="yes">../Physics/PhysicsUtils.h</includes>
+    <includes refid="RigidBody_8h" local="yes">../Physics/RigidBody.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>../Scene/Serializable.h</label>
+        <link refid="Serializable_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>../Math/Matrix3.h</label>
+        <link refid="Matrix3_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>../Math/Quaternion.h</label>
+        <link refid="Quaternion_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>functional</label>
+      </node>
+      <node id="43">
+        <label>limits</label>
+      </node>
+      <node id="6">
+        <label>../Scene/Animatable.h</label>
+        <link refid="Animatable_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../Container/Pair.h</label>
+        <link refid="Pair_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../Container/FlagSet.h</label>
+        <link refid="FlagSet_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../Container/HashBase.h</label>
+        <link refid="HashBase_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../Scene/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../Container/Ptr.h</label>
+        <link refid="Ptr_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>../Math/Vector3.h</label>
+        <link refid="Vector3_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Scene/LogicComponent.h</label>
+        <link refid="LogicComponent_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>cassert</label>
+      </node>
+      <node id="45">
+        <label>../Math/Matrix3x4.h</label>
+        <link refid="Matrix3x4_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>../Scene/AnimationDefs.h</label>
+        <link refid="AnimationDefs_8h"/>
+      </node>
+      <node id="37">
+        <label>cstdarg</label>
+      </node>
+      <node id="60">
+        <label>../Physics/RigidBody.h</label>
+        <link refid="RigidBody_8h"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Physics/RaycastVehicle.h</label>
+        <link refid="RaycastVehicle_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>../Math/BoundingBox.h</label>
+        <link refid="BoundingBox_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../Container/HashMap.h</label>
+        <link refid="HashMap_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../Container/HashSet.h</label>
+        <link refid="HashSet_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../Core/Attribute.h</label>
+        <link refid="Attribute_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>../IO/VectorBuffer.h</label>
+        <link refid="VectorBuffer_8h_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../Math/Random.h</label>
+        <link refid="Random_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>../Math/Vector4.h</label>
+        <link refid="Vector4_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>../Scene/ValueAnimationInfo.h</label>
+        <link refid="ValueAnimationInfo_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>../IO/AbstractFile.h</label>
+        <link refid="AbstractFile_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../Math/Color.h</label>
+        <link refid="Color_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../Math/Rect.h</label>
+        <link refid="Rect_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>../Math/StringHash.h</label>
+        <link refid="StringHash_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>../IO/Serializer.h</label>
+        <link refid="Serializer_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>typeinfo</label>
+      </node>
+      <node id="57">
+        <label>../Physics/PhysicsUtils.h</label>
+        <link refid="PhysicsUtils_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>../IO/Deserializer.h</label>
+        <link refid="Deserializer_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Bullet/LinearMath/btMotionState.h</label>
+      </node>
+      <node id="10">
+        <label>../Container/Allocator.h</label>
+        <link refid="Allocator_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="31">
+        <label>new</label>
+      </node>
+      <node id="24">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>../Container/Hash.h</label>
+        <link refid="Hash_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>../Math/MathDefs.h</label>
+        <link refid="MathDefs_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Bullet/LinearMath/btQuaternion.h</label>
+      </node>
+      <node id="41">
+        <label>cstdlib</label>
+      </node>
+      <node id="38">
+        <label>cctype</label>
+      </node>
+      <node id="51">
+        <label>../Core/Object.h</label>
+        <link refid="Object_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Bullet/LinearMath/btVector3.h</label>
+      </node>
+      <node id="11">
+        <label>cstddef</label>
+      </node>
+      <node id="46">
+        <label>../Math/Matrix4.h</label>
+        <link refid="Matrix4_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>../Core/Variant.h</label>
+        <link refid="Variant_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../Container/RefCounted.h</label>
+        <link refid="RefCounted_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>../Container/LinkedList.h</label>
+        <link refid="LinkedList_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>type_traits</label>
+      </node>
+      <node id="14">
+        <label>../Container/Sort.h</label>
+        <link refid="Sort_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>../Math/Vector2.h</label>
+        <link refid="Vector2_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>algorithm</label>
+      </node>
+      <node id="13">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="29">
+        <label>cstring</label>
+      </node>
+      <node id="19">
+        <label>initializer_list</label>
+      </node>
+      <node id="53">
+        <label>../Core/StringHashRegister.h</label>
+        <link refid="StringHashRegister_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classUrho3D_1_1RaycastVehicle" prot="public">Urho3D::RaycastVehicle</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Scene/LogicComponent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Physics/PhysicsUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Physics/RigidBody.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">RaycastVehicleData;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classUrho3D_1_1RaycastVehicle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1RaycastVehicle" kindref="compound">RaycastVehicle</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1LogicComponent" kindref="compound">LogicComponent</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>URHO3D_OBJECT(<ref refid="classUrho3D_1_1RaycastVehicle" kindref="compound">RaycastVehicle</ref>,<sp/><ref refid="classUrho3D_1_1LogicComponent" kindref="compound">LogicComponent</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39" refid="classUrho3D_1_1RaycastVehicle_1ac4eb2502a1dad1f68eb8976da8fb5d0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ac4eb2502a1dad1f68eb8976da8fb5d0e" kindref="member">RaycastVehicle</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Urho3D::Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="41" refid="classUrho3D_1_1RaycastVehicle_1aa7ed84f43568dfb73503e8785134351d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aa7ed84f43568dfb73503e8785134351d" kindref="member">~RaycastVehicle</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classUrho3D_1_1RaycastVehicle_1a8c868de563e2b211336e9680adacf9ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a8c868de563e2b211336e9680adacf9ea" kindref="member">RegisterObject</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classUrho3D_1_1RaycastVehicle_1a1e88fbea39f52e869b11d3e810a2a412" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a1e88fbea39f52e869b11d3e810a2a412" kindref="member">OnSetEnabled</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classUrho3D_1_1RaycastVehicle_1adc47ce3c6093158230b3c09e36c35afc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1adc47ce3c6093158230b3c09e36c35afc" kindref="member">ApplyAttributes</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classUrho3D_1_1RaycastVehicle_1af981f15be395db66a1ae5cbdee4bbcc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1af981f15be395db66a1ae5cbdee4bbcc4" kindref="member">AddWheel</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>wheelNode,<sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/>wheelDirection,<sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/>wheelAxle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>restLength,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wheelRadius,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>frontWheel);</highlight></codeline>
+<codeline lineno="56" refid="classUrho3D_1_1RaycastVehicle_1a8e2e3792ddb12f51df7f785804084c1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a8e2e3792ddb12f51df7f785804084c1e" kindref="member">ResetSuspension</ref>();</highlight></codeline>
+<codeline lineno="58" refid="classUrho3D_1_1RaycastVehicle_1a68cb82935b12834bec8fa54b350c31b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a68cb82935b12834bec8fa54b350c31b2" kindref="member">UpdateWheelTransform</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>interpolated);</highlight></codeline>
+<codeline lineno="60" refid="classUrho3D_1_1RaycastVehicle_1a92d99b123a3f09358a79e3f5041f6f35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a92d99b123a3f09358a79e3f5041f6f35" kindref="member">SetSteeringValue</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>steeringValue);</highlight></codeline>
+<codeline lineno="62" refid="classUrho3D_1_1RaycastVehicle_1a80d64515e7b94ddb787101a8e8e3b5a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a80d64515e7b94ddb787101a8e8e3b5a9" kindref="member">SetWheelSuspensionStiffness</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>stiffness);</highlight></codeline>
+<codeline lineno="64" refid="classUrho3D_1_1RaycastVehicle_1ad9a8c64e842699441b958eb3640bed86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ad9a8c64e842699441b958eb3640bed86" kindref="member">SetWheelMaxSuspensionForce</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="66" refid="classUrho3D_1_1RaycastVehicle_1aea57405a08cd4bedead8eb9ef3c1ab43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aea57405a08cd4bedead8eb9ef3c1ab43" kindref="member">SetWheelDampingRelaxation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>damping);</highlight></codeline>
+<codeline lineno="68" refid="classUrho3D_1_1RaycastVehicle_1afd4d7ab5516f8b2447ba2b4b65a75838" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1afd4d7ab5516f8b2447ba2b4b65a75838" kindref="member">SetWheelDampingCompression</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>compression);</highlight></codeline>
+<codeline lineno="70" refid="classUrho3D_1_1RaycastVehicle_1aabf29507a385b8ab58be843fec3c6f94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aabf29507a385b8ab58be843fec3c6f94" kindref="member">SetWheelFrictionSlip</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>slip);</highlight></codeline>
+<codeline lineno="72" refid="classUrho3D_1_1RaycastVehicle_1a3f04499f21b162be602817d9cdb15e94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a3f04499f21b162be602817d9cdb15e94" kindref="member">SetWheelRollInfluence</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rollInfluence);</highlight></codeline>
+<codeline lineno="74" refid="classUrho3D_1_1RaycastVehicle_1a7df6aad1fecb0586f1475dc5395e57af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a7df6aad1fecb0586f1475dc5395e57af" kindref="member">SetEngineForce</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="76" refid="classUrho3D_1_1RaycastVehicle_1a5f6465373f503a666f60f5213a75c166" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a5f6465373f503a666f60f5213a75c166" kindref="member">SetBrake</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>force);</highlight></codeline>
+<codeline lineno="78" refid="classUrho3D_1_1RaycastVehicle_1ab1746bf455027a2eddc459d10d32138c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ab1746bf455027a2eddc459d10d32138c" kindref="member">SetWheelRadius</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wheelRadius);</highlight></codeline>
+<codeline lineno="80" refid="classUrho3D_1_1RaycastVehicle_1a9e0099927ccacd0750812984c203a96c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a9e0099927ccacd0750812984c203a96c" kindref="member">ResetWheels</ref>();</highlight></codeline>
+<codeline lineno="82" refid="classUrho3D_1_1RaycastVehicle_1a46b0766c61d51f5f656d4e9317f530c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a46b0766c61d51f5f656d4e9317f530c8" kindref="member">SetWheelSkidInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>factor);</highlight></codeline>
+<codeline lineno="84" refid="classUrho3D_1_1RaycastVehicle_1aa7051418fae1cb117bc1d2c8a1b6a77e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aa7051418fae1cb117bc1d2c8a1b6a77e" kindref="member">WheelIsGrounded</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86" refid="classUrho3D_1_1RaycastVehicle_1a711463e9d89235185a93cfffd1d70e3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a711463e9d89235185a93cfffd1d70e3d" kindref="member">SetMaxSuspensionTravel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxSuspensionTravel);</highlight></codeline>
+<codeline lineno="88" refid="classUrho3D_1_1RaycastVehicle_1a16249e49cb3f66f908e4766817a47b93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a16249e49cb3f66f908e4766817a47b93" kindref="member">SetWheelDirection</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/>direction);</highlight></codeline>
+<codeline lineno="90" refid="classUrho3D_1_1RaycastVehicle_1a915fa41ae3ecb2367b9632f94b12731f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a915fa41ae3ecb2367b9632f94b12731f" kindref="member">SetWheelAxle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/>axle);</highlight></codeline>
+<codeline lineno="93" refid="classUrho3D_1_1RaycastVehicle_1ab41908b6af2105b743096a64551bbb7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ab41908b6af2105b743096a64551bbb7d" kindref="member">SetMaxSideSlipSpeed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speed);</highlight></codeline>
+<codeline lineno="95" refid="classUrho3D_1_1RaycastVehicle_1a3345e1ff51fcd8c5f399eb321e1e90aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a3345e1ff51fcd8c5f399eb321e1e90aa" kindref="member">SetWheelSkidInfoCumulative</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>skid);</highlight></codeline>
+<codeline lineno="98" refid="classUrho3D_1_1RaycastVehicle_1a311759e072f5eb4bed939081c433d34f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a311759e072f5eb4bed939081c433d34f" kindref="member">SetInAirRPM</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rpm);</highlight></codeline>
+<codeline lineno="101" refid="classUrho3D_1_1RaycastVehicle_1a3d3498dae909b1e329365213bc9bf21e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a3d3498dae909b1e329365213bc9bf21e" kindref="member">SetCoordinateSystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref>&amp;<sp/>coordinateSystem<sp/>=<sp/>RIGHT_FORWARD_UP);</highlight></codeline>
+<codeline lineno="103" refid="classUrho3D_1_1RaycastVehicle_1adaa3caceeaba3f96973e97bbb0288e30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1adaa3caceeaba3f96973e97bbb0288e30" kindref="member">Init</ref>();</highlight></codeline>
+<codeline lineno="105" refid="classUrho3D_1_1RaycastVehicle_1aa7321f21d4f94331935870f23c0580d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aa7321f21d4f94331935870f23c0580d2" kindref="member">FixedUpdate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107" refid="classUrho3D_1_1RaycastVehicle_1a114ce68c6184ef9278f7782c799307eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a114ce68c6184ef9278f7782c799307eb" kindref="member">FixedPostUpdate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109" refid="classUrho3D_1_1RaycastVehicle_1af8fbffa173151c09fa798fac6eaf1b8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1af8fbffa173151c09fa798fac6eaf1b8d" kindref="member">PostUpdate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classUrho3D_1_1RaycastVehicle_1a501393d2add01285dd6a3db72de87ebc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a501393d2add01285dd6a3db72de87ebc" kindref="member">GetWheelPosition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel);</highlight></codeline>
+<codeline lineno="114" refid="classUrho3D_1_1RaycastVehicle_1a23d3ca7446bf71b76f36a0f178e6020f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a23d3ca7446bf71b76f36a0f178e6020f" kindref="member">GetWheelRotation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel);</highlight></codeline>
+<codeline lineno="116" refid="classUrho3D_1_1RaycastVehicle_1abe640b43d0bd8b5f17bfc5023e1527ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1abe640b43d0bd8b5f17bfc5023e1527ee" kindref="member">GetWheelConnectionPoint</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119" refid="classUrho3D_1_1RaycastVehicle_1a65a0ae7d5201ae6ebde6d6325ddb814d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a65a0ae7d5201ae6ebde6d6325ddb814d" kindref="member">GetNumWheels</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121" refid="classUrho3D_1_1RaycastVehicle_1af8fbac29db38c843f51f15af9f10b82e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1RaycastVehicle_1af8fbac29db38c843f51f15af9f10b82e" kindref="member">GetWheelNode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123" refid="classUrho3D_1_1RaycastVehicle_1a1f5040ade15d86b4711f1fc92be2c41d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a1f5040ade15d86b4711f1fc92be2c41d" kindref="member">GetSteeringValue</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125" refid="classUrho3D_1_1RaycastVehicle_1acd792a0b5d85d809a3611f546f5b78f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1acd792a0b5d85d809a3611f546f5b78f8" kindref="member">GetWheelSuspensionStiffness</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127" refid="classUrho3D_1_1RaycastVehicle_1af502dc8b8aad32eda15a6450566e9711" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1af502dc8b8aad32eda15a6450566e9711" kindref="member">GetWheelMaxSuspensionForce</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129" refid="classUrho3D_1_1RaycastVehicle_1ae8ddcaafd9ed33b178180c8291bd3b7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ae8ddcaafd9ed33b178180c8291bd3b7d" kindref="member">GetWheelDampingRelaxation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131" refid="classUrho3D_1_1RaycastVehicle_1a369f3d6f9179838142820e1e315b3cde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a369f3d6f9179838142820e1e315b3cde" kindref="member">GetWheelDampingCompression</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133" refid="classUrho3D_1_1RaycastVehicle_1a04e4c3c6f24526e3a78a76af8efa1c19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a04e4c3c6f24526e3a78a76af8efa1c19" kindref="member">GetWheelFrictionSlip</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135" refid="classUrho3D_1_1RaycastVehicle_1aff389b9021e558a2c80a86b57f8b0ded" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aff389b9021e558a2c80a86b57f8b0ded" kindref="member">GetWheelRollInfluence</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137" refid="classUrho3D_1_1RaycastVehicle_1a6cd7c98ef98522369a099c8872102076" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a6cd7c98ef98522369a099c8872102076" kindref="member">GetEngineForce</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139" refid="classUrho3D_1_1RaycastVehicle_1ada7ad359e613452330dcfb3673ae88e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ada7ad359e613452330dcfb3673ae88e1" kindref="member">GetBrake</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141" refid="classUrho3D_1_1RaycastVehicle_1aa0650eb5695ded0fa4003fd45419b886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aa0650eb5695ded0fa4003fd45419b886" kindref="member">GetWheelRadius</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143" refid="classUrho3D_1_1RaycastVehicle_1a796b7aa3a3fea4bf4c0e5667890fe02a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a796b7aa3a3fea4bf4c0e5667890fe02a" kindref="member">SetWheelRestLength</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="145" refid="classUrho3D_1_1RaycastVehicle_1a1f7947587bdcb7e31d74a638948ede05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a1f7947587bdcb7e31d74a638948ede05" kindref="member">GetWheelRestLength</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147" refid="classUrho3D_1_1RaycastVehicle_1ab66105cbc7c20d6a02b7d8e790817669" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ab66105cbc7c20d6a02b7d8e790817669" kindref="member">GetMaxSuspensionTravel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel);</highlight></codeline>
+<codeline lineno="149" refid="classUrho3D_1_1RaycastVehicle_1afe67b91f84e5ea31a948eab7eb04d83d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1afe67b91f84e5ea31a948eab7eb04d83d" kindref="member">GetWheelAxle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151" refid="classUrho3D_1_1RaycastVehicle_1ade1777d095d210ee858cb492dfb4ecec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ade1777d095d210ee858cb492dfb4ecec" kindref="member">GetWheelSideSlipSpeed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154" refid="classUrho3D_1_1RaycastVehicle_1aae96fe5a5776238eea68fc845be4d363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aae96fe5a5776238eea68fc845be4d363" kindref="member">GetMaxSideSlipSpeed</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156" refid="classUrho3D_1_1RaycastVehicle_1a5525534a76f60ce7909b7f022625c200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a5525534a76f60ce7909b7f022625c200" kindref="member">GetWheelSkidInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158" refid="classUrho3D_1_1RaycastVehicle_1aed2230aa074f7260e297b4231ec8fcf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aed2230aa074f7260e297b4231ec8fcf6" kindref="member">GetWheelDirection</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160" refid="classUrho3D_1_1RaycastVehicle_1aaccb319c87a15d7b6c3c6eb1db476e6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aaccb319c87a15d7b6c3c6eb1db476e6c" kindref="member">GetWheelSkidInfoCumulative</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162" refid="classUrho3D_1_1RaycastVehicle_1a6ddc41fdb9c3743321d14edc6ce07109" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a6ddc41fdb9c3743321d14edc6ce07109" kindref="member">IsFrontWheel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164" refid="classUrho3D_1_1RaycastVehicle_1aed3776b4edbc1d41d16fb44b8b6d7000" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1aed3776b4edbc1d41d16fb44b8b6d7000" kindref="member">GetContactPosition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166" refid="classUrho3D_1_1RaycastVehicle_1a7d8f37727db2ca3f58aea19f3425a4ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a7d8f37727db2ca3f58aea19f3425a4ed" kindref="member">GetContactNormal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wheel)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169" refid="classUrho3D_1_1RaycastVehicle_1ae141037b1f900a0189ebbae4fef1ffd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ae141037b1f900a0189ebbae4fef1ffd5" kindref="member">GetInAirRPM</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172" refid="classUrho3D_1_1RaycastVehicle_1abacf3fbec0f81d7010e957ed2f25ddc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1abacf3fbec0f81d7010e957ed2f25ddc9" kindref="member">GetCoordinateSystem</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>coordinateSystem_;<sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="classUrho3D_1_1RaycastVehicle_1afb2e747a991eaef885084e2ee68918d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">VariantVector</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1afb2e747a991eaef885084e2ee68918d2" kindref="member">GetWheelDataAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177" refid="classUrho3D_1_1RaycastVehicle_1adb8e7db4c2151caed76274d2d81e2446" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1adb8e7db4c2151caed76274d2d81e2446" kindref="member">SetWheelDataAttr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">VariantVector</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="classUrho3D_1_1RaycastVehicle_1a8796870f0da70b0d9226c26a4affeae8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a8796870f0da70b0d9226c26a4affeae8" kindref="member">RIGHT_UP_FORWARD</ref>;</highlight></codeline>
+<codeline lineno="182" refid="classUrho3D_1_1RaycastVehicle_1a3d2336c76dc89cb18a63ba1ae4098105" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a3d2336c76dc89cb18a63ba1ae4098105" kindref="member">RIGHT_FORWARD_UP</ref>;</highlight></codeline>
+<codeline lineno="184" refid="classUrho3D_1_1RaycastVehicle_1af908be4985cdec0ce832f5f6e6fea579" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1af908be4985cdec0ce832f5f6e6fea579" kindref="member">UP_FORWARD_RIGHT</ref>;</highlight></codeline>
+<codeline lineno="186" refid="classUrho3D_1_1RaycastVehicle_1a978c0ccccf67df5529904f0a78775d57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a978c0ccccf67df5529904f0a78775d57" kindref="member">UP_RIGHT_FORWARD</ref>;</highlight></codeline>
+<codeline lineno="188" refid="classUrho3D_1_1RaycastVehicle_1a2fa84ed88b59ea05511267e89ab8fdb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1a2fa84ed88b59ea05511267e89ab8fdb9" kindref="member">FORWARD_RIGHT_UP</ref>;</highlight></codeline>
+<codeline lineno="190" refid="classUrho3D_1_1RaycastVehicle_1ac9a3851f27fcefa40d23b350d55ae9e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/><ref refid="classUrho3D_1_1RaycastVehicle_1ac9a3851f27fcefa40d23b350d55ae9e7" kindref="member">FORWARD_UP_RIGHT</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>activate_;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr&lt;RigidBody&gt;</ref><sp/>hullBody_;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>RaycastVehicleData*<sp/>vehicleData_;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref><sp/>coordinateSystem_;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;Node*&gt;</ref><sp/>wheelNodes_;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;Quaternion&gt;</ref><sp/>origRotation_;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inAirRPM_;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>skidInfoCumulative_;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>wheelSideSlipSpeed_;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxSideSlipSpeed_;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">VariantVector</ref><sp/>loadedWheelData_;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/RaycastVehicle.h"/>
+  </compounddef>
+</doxygen>

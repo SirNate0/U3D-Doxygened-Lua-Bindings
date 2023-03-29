@@ -1,0 +1,2436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ParticleEffect" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ParticleEffect</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <includes refid="ParticleEffect_8h" local="no">ParticleEffect.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a9195f9042889625a67477b2d11400d15" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> &gt;</type>
+        <definition>SharedPtr&lt;Material&gt; Urho3D::ParticleEffect::material_</definition>
+        <argsstring></argsstring>
+        <name>material_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="430" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a9869e6912148b97162e030c61b76765f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ParticleEffect::numParticles_</definition>
+        <argsstring></argsstring>
+        <name>numParticles_</name>
+        <briefdescription>
+<para>Number of particles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="432" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a0a15688d807180e3d5497f24dc890bf1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::updateInvisible_</definition>
+        <argsstring></argsstring>
+        <name>updateInvisible_</name>
+        <briefdescription>
+<para>Update when invisible flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="434" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1ad8322db5b91540fa44868ef48425477c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::relative_</definition>
+        <argsstring></argsstring>
+        <name>relative_</name>
+        <briefdescription>
+<para>Billboards relative flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="436" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a965fde2da48944b6d4e3a69768c85472" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::scaled_</definition>
+        <argsstring></argsstring>
+        <name>scaled_</name>
+        <briefdescription>
+<para>Scale affects billboard scale flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="438" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a679acc3acfc067b5186cbd1bc59f7e6d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::sorted_</definition>
+        <argsstring></argsstring>
+        <name>sorted_</name>
+        <briefdescription>
+<para>Billboards sorted flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="440" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1af2af1a7e9507228fbc800db16a9a6cdd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::fixedScreenSize_</definition>
+        <argsstring></argsstring>
+        <name>fixedScreenSize_</name>
+        <briefdescription>
+<para>Billboards fixed screen size flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="442" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a6cbce8901427ed91eee5917d2fd875b0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::animationLodBias_</definition>
+        <argsstring></argsstring>
+        <name>animationLodBias_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> LOD bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="444" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a7e03a4317a25c3b0734610908957c4b9" prot="private" static="no" mutable="no">
+        <type><ref refid="ParticleEffect_8h_1aea8304c154f19d70448701f7c1e49012" kindref="member">EmitterType</ref></type>
+        <definition>EmitterType Urho3D::ParticleEffect::emitterType_</definition>
+        <argsstring></argsstring>
+        <name>emitterType_</name>
+        <briefdescription>
+<para>Emitter shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="446" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1aa71b69d84930e36008974b22fe4bf168" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::ParticleEffect::emitterSize_</definition>
+        <argsstring></argsstring>
+        <name>emitterSize_</name>
+        <briefdescription>
+<para>Emitter size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="448" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1ad5889a5dc9848f948a20cda10c8f36dc" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::ParticleEffect::directionMin_</definition>
+        <argsstring></argsstring>
+        <name>directionMin_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> direction minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="450" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1ad9c9cb69a5552bd909cfd6e3bd53e7f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::ParticleEffect::directionMax_</definition>
+        <argsstring></argsstring>
+        <name>directionMax_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> direction maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="452" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1aa9094766f217a21f468ba21ebd57dc01" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::ParticleEffect::constantForce_</definition>
+        <argsstring></argsstring>
+        <name>constantForce_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> constant force. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="454" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a08aa1c7cb0946e9d2bc8588f9ba84da3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::dampingForce_</definition>
+        <argsstring></argsstring>
+        <name>dampingForce_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> velocity damping force. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="456" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a3e7e6249291b294863f373aab9e7cdaf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::activeTime_</definition>
+        <argsstring></argsstring>
+        <name>activeTime_</name>
+        <briefdescription>
+<para>Active period. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="458" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1ab66444df571fc2b824e5b487bd57072d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::inactiveTime_</definition>
+        <argsstring></argsstring>
+        <name>inactiveTime_</name>
+        <briefdescription>
+<para>Inactive period. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="460" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a9dec0e16aafee74e16968849e8876dd5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::emissionRateMin_</definition>
+        <argsstring></argsstring>
+        <name>emissionRateMin_</name>
+        <briefdescription>
+<para>Particles per second minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="462" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1acf94865f8df825df244b83049d18dd12" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::emissionRateMax_</definition>
+        <argsstring></argsstring>
+        <name>emissionRateMax_</name>
+        <briefdescription>
+<para>Particles per second maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="464" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a6f666a2948ddba1e9d080a79f2997fb9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::ParticleEffect::sizeMin_</definition>
+        <argsstring></argsstring>
+        <name>sizeMin_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> size minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="466" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a144f095c2d0400afc0cf5f4add3ecd31" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::ParticleEffect::sizeMax_</definition>
+        <argsstring></argsstring>
+        <name>sizeMax_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> size maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="468" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a7eed0f3908c96be706a1ea733510b192" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::timeToLiveMin_</definition>
+        <argsstring></argsstring>
+        <name>timeToLiveMin_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> time to live minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="470" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a915442e280e2038165fc471b882969d0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::timeToLiveMax_</definition>
+        <argsstring></argsstring>
+        <name>timeToLiveMax_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> time to live maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="472" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a6e2bcc67542924368f1558ffd8d41d36" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::velocityMin_</definition>
+        <argsstring></argsstring>
+        <name>velocityMin_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> velocity minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="474" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a7ed5c153a46c3892bb1d08ae43abf575" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::velocityMax_</definition>
+        <argsstring></argsstring>
+        <name>velocityMax_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> velocity maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="476" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a93a47d1eeabf08c7e5e6dff03b5c533f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::rotationMin_</definition>
+        <argsstring></argsstring>
+        <name>rotationMin_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> rotation angle minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="478" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1afbe4c848f194ec373f4e19909133d7ec" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::rotationMax_</definition>
+        <argsstring></argsstring>
+        <name>rotationMax_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> rotation angle maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="480" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a8a2a3ce90e4abb48bffb1b34bd9aa50b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::rotationSpeedMin_</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeedMin_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> rotation speed minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="482" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a7aae08630f8cbb3a9ea335bc0fbfddc6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::rotationSpeedMax_</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeedMax_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> rotation speed maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="484" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a9927312e4bf71f3231f35ff5fdb6f7e6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::sizeAdd_</definition>
+        <argsstring></argsstring>
+        <name>sizeAdd_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> size additive parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="486" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a738d8ff981e478f9a8754519aaaa120c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::sizeMul_</definition>
+        <argsstring></argsstring>
+        <name>sizeMul_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> size multiplicative parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="488" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a600714eefe3d563e53c1de8a5518dc8b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1ColorFrame" kindref="compound">ColorFrame</ref> &gt;</type>
+        <definition>Vector&lt;ColorFrame&gt; Urho3D::ParticleEffect::colorFrames_</definition>
+        <argsstring></argsstring>
+        <name>colorFrames_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> color animation frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="490" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1aa5462636b86a175ceb08b8535c37bf0b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1TextureFrame" kindref="compound">TextureFrame</ref> &gt;</type>
+        <definition>Vector&lt;TextureFrame&gt; Urho3D::ParticleEffect::textureFrames_</definition>
+        <argsstring></argsstring>
+        <name>textureFrames_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> animation frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="492" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1aa76339c1efa2d85fa9055941bd3c19b3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ParticleEffect::loadMaterialName_</definition>
+        <argsstring></argsstring>
+        <name>loadMaterialName_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> name acquired during <ref refid="classUrho3D_1_1ParticleEffect_1aa0d9efcb340d6a16860aef9d7cd9916f" kindref="member">BeginLoad()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="494" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ParticleEffect_1a4a21f65907778b1199a1ead8daff693c" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1aef443f97b15d5c7ff39d3199a9a0c5c1" kindref="member">FaceCameraMode</ref></type>
+        <definition>FaceCameraMode Urho3D::ParticleEffect::faceCameraMode_</definition>
+        <argsstring></argsstring>
+        <name>faceCameraMode_</name>
+        <briefdescription>
+<para><ref refid="structUrho3D_1_1Particle" kindref="compound">Particle</ref> rotation mode in relation to the camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="496" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a3287e49cbe9b4acb3ad7777bc82bcbf7" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ParticleEffect::ParticleEffect</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>ParticleEffect</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="116" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a1b48a1396d5f225ab844a82ebcfb68e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ParticleEffect::~ParticleEffect</definition>
+        <argsstring>() override</argsstring>
+        <name>~ParticleEffect</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="118" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aa0d9efcb340d6a16860aef9d7cd9916f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a5c9edfc9dbd9b88a6caae0122f1d7805" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::EndLoad</definition>
+        <argsstring>() override</argsstring>
+        <name>EndLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d">EndLoad</reimplements>
+        <briefdescription>
+<para>Finish resource loading. Always called from the main thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a65e1eaacceb0772359425437d953f94f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::Save</definition>
+        <argsstring>(Serializer &amp;dest) const override</argsstring>
+        <name>Save</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd">Save</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save resource. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="128" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9ace98e5fccc8ec89dfdf17f91fb67df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::Save</definition>
+        <argsstring>(XMLElement &amp;dest) const</argsstring>
+        <name>Save</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+<para>Save resource to <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref>. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a6dc4d9435d5a4231bbe2e062a8868a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::Load</definition>
+        <argsstring>(const XMLElement &amp;source)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> synchronously. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ac365cce2799ec135da82b71cdedc3b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaterial</definition>
+        <argsstring>(Material *material)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="138" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a5c45a5457e5b743478f53a926e5eb7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetNumParticles</definition>
+        <argsstring>(unsigned num)</argsstring>
+        <name>SetNumParticles</name>
+        <param>
+          <type>unsigned</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum number of particles. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a8acb74a9c0e94066a3787bdf4cc8835e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetUpdateInvisible</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUpdateInvisible</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to update when particles are not visible. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ad8a2a51c494a4529f923579f60c77336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetRelative</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetRelative</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether billboards are relative to the scene node. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a4d4deed97a94ab0722f47cd23b4af04c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetScaled</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetScaled</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether scene node scale affects billboards&apos; size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a543c5756f39a8cdc2fdaffb95084a662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetSorted</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetSorted</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether billboards are sorted by distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a34a4c4d99879577bc11876836c82acb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetFixedScreenSize</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetFixedScreenSize</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether billboards have fixed size on screen (measured in pixels) regardless of distance to camera. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="156" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a3e14884fabcdce65662c5a93dc8f01eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetAnimationLodBias</definition>
+        <argsstring>(float lodBias)</argsstring>
+        <name>SetAnimationLodBias</name>
+        <param>
+          <type>float</type>
+          <declname>lodBias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set animation LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a8c8e3584d05cc2bc64c2e3e1a97d6ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetEmitterType</definition>
+        <argsstring>(EmitterType type)</argsstring>
+        <name>SetEmitterType</name>
+        <param>
+          <type><ref refid="ParticleEffect_8h_1aea8304c154f19d70448701f7c1e49012" kindref="member">EmitterType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set emitter type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ade2e0575554b6a2c3b223a3c300480c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetEmitterSize</definition>
+        <argsstring>(const Vector3 &amp;size)</argsstring>
+        <name>SetEmitterSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set emitter size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="165" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a61c602773d4ffddf3bef8807dde1c25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinDirection</definition>
+        <argsstring>(const Vector3 &amp;direction)</argsstring>
+        <name>SetMinDirection</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set negative direction limit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="168" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a106306c412b6a16335382e49b7bb82a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxDirection</definition>
+        <argsstring>(const Vector3 &amp;direction)</argsstring>
+        <name>SetMaxDirection</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set positive direction limit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aba3fc4c331d7675fa3913d9dc91da545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetConstantForce</definition>
+        <argsstring>(const Vector3 &amp;force)</argsstring>
+        <name>SetConstantForce</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set constant force acting on particles. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a343263da9202d33431b122eb1dc2c1bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetDampingForce</definition>
+        <argsstring>(float force)</argsstring>
+        <name>SetDampingForce</name>
+        <param>
+          <type>float</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle velocity damping force. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="177" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a2e750d01fc2551a8a728eb2bdef296c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetActiveTime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetActiveTime</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set emission active period length (0 = infinite). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="180" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a859f33968124a94a7d42ef91bdf07f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetInactiveTime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetInactiveTime</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set emission inactive period length (0 = infinite). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="183" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a32474bb22944ec8ec6c62083371a807f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinEmissionRate</definition>
+        <argsstring>(float rate)</argsstring>
+        <name>SetMinEmissionRate</name>
+        <param>
+          <type>float</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set minimum emission rate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="186" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a48d273040806b2bb37cf9444f8b667f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxEmissionRate</definition>
+        <argsstring>(float rate)</argsstring>
+        <name>SetMaxEmissionRate</name>
+        <param>
+          <type>float</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum emission rate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="189" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a7042621f9909e4ff4e0c9cc8931aee40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinParticleSize</definition>
+        <argsstring>(const Vector2 &amp;size)</argsstring>
+        <name>SetMinParticleSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle minimum size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="192" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a64edfe41af8d77acf970ae9decb1f485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxParticleSize</definition>
+        <argsstring>(const Vector2 &amp;size)</argsstring>
+        <name>SetMaxParticleSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle maximum size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="195" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a4b1c6f605d87e8edddc5253887c54fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinTimeToLive</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetMinTimeToLive</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle minimum time to live. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="198" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9f26b68be7aedf595ee774976d1508bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxTimeToLive</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetMaxTimeToLive</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle maximum time to live. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="201" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a3079abee4eeb2e5c6c6424dc3cecb1a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinVelocity</definition>
+        <argsstring>(float velocity)</argsstring>
+        <name>SetMinVelocity</name>
+        <param>
+          <type>float</type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle minimum velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="204" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a38474a3942bb2b80332026d1360e47f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxVelocity</definition>
+        <argsstring>(float velocity)</argsstring>
+        <name>SetMaxVelocity</name>
+        <param>
+          <type>float</type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle maximum velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="207" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1abe3898cb8a5f0279ff94d5f1bb7784e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinRotation</definition>
+        <argsstring>(float rotation)</argsstring>
+        <name>SetMinRotation</name>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle minimum rotation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="210" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a6ba16df1c4ffbcd17a9006a34c58e18c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxRotation</definition>
+        <argsstring>(float rotation)</argsstring>
+        <name>SetMaxRotation</name>
+        <param>
+          <type>float</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle maximum rotation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="213" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a891b534deb38f8644009a7eeb2da6dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMinRotationSpeed</definition>
+        <argsstring>(float speed)</argsstring>
+        <name>SetMinRotationSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle minimum rotation speed. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="216" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a67715cdfd2a35dc3e17ad17159a236c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetMaxRotationSpeed</definition>
+        <argsstring>(float speed)</argsstring>
+        <name>SetMaxRotationSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle maximum rotation speed. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="219" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ac868940b6fc0269d079119f3f02eab85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetSizeAdd</definition>
+        <argsstring>(float sizeAdd)</argsstring>
+        <name>SetSizeAdd</name>
+        <param>
+          <type>float</type>
+          <declname>sizeAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle size additive modifier. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="222" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1af9934991495f41e5a34b3df400d732d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetSizeMul</definition>
+        <argsstring>(float sizeMul)</argsstring>
+        <name>SetSizeMul</name>
+        <param>
+          <type>float</type>
+          <declname>sizeMul</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set particle size multiplicative modifier. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="225" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a77e289d22dc455df9c1d300a1ff29d6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetFaceCameraMode</definition>
+        <argsstring>(FaceCameraMode mode)</argsstring>
+        <name>SetFaceCameraMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aef443f97b15d5c7ff39d3199a9a0c5c1" kindref="member">FaceCameraMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how the particles should rotate in relation to the camera. Default is to follow camera rotation on all axes (FC_ROTATE_XYZ). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="228" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a2d91278ccbb6e24a83c25a0e7a895867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::AddColorTime</definition>
+        <argsstring>(const Color &amp;color, float time)</argsstring>
+        <name>AddColorTime</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Add a color frame sorted in the correct position based on time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="231" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a586754238d8b9ec3a0054071204bbe28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::AddColorFrame</definition>
+        <argsstring>(const ColorFrame &amp;colorFrame)</argsstring>
+        <name>AddColorFrame</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ColorFrame" kindref="compound">ColorFrame</ref> &amp;</type>
+          <declname>colorFrame</declname>
+        </param>
+        <briefdescription>
+<para>Add a color frame sorted in the correct position based on time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="233" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9f724af6a57cb517f8599e6974586a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::RemoveColorFrame</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>RemoveColorFrame</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Remove color frame at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="235" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a238f5fda3cdc8420bb6a6274df5d435b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetColorFrames</definition>
+        <argsstring>(const Vector&lt; ColorFrame &gt; &amp;colorFrames)</argsstring>
+        <name>SetColorFrames</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1ColorFrame" kindref="compound">ColorFrame</ref> &gt; &amp;</type>
+          <declname>colorFrames</declname>
+        </param>
+        <briefdescription>
+<para>Set color animation of particles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="237" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a2c81c7f18da026e58f04539f03030a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetColorFrame</definition>
+        <argsstring>(unsigned index, const ColorFrame &amp;colorFrame)</argsstring>
+        <name>SetColorFrame</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ColorFrame" kindref="compound">ColorFrame</ref> &amp;</type>
+          <declname>colorFrame</declname>
+        </param>
+        <briefdescription>
+<para>Set color animation frame at index. If index is greater than number of color frames, new color frames are added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aa4d6b0a5ace02e657fadbff7d66f1bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetNumColorFrames</definition>
+        <argsstring>(unsigned number)</argsstring>
+        <name>SetNumColorFrames</name>
+        <param>
+          <type>unsigned</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set number of color frames. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="242" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a56b6ac37854e99f07b933fd428481776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SortColorFrames</definition>
+        <argsstring>()</argsstring>
+        <name>SortColorFrames</name>
+        <briefdescription>
+<para>Sort the list of color frames based on time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="244" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a49934089eda2087f79a17c9005a444c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::AddTextureTime</definition>
+        <argsstring>(const Rect &amp;uv, float time)</argsstring>
+        <name>AddTextureTime</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>uv</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Add a texture frame sorted in the correct position based on time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="247" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a5639688d1f802dc0a0d5ef369a88755b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::AddTextureFrame</definition>
+        <argsstring>(const TextureFrame &amp;textureFrame)</argsstring>
+        <name>AddTextureFrame</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1TextureFrame" kindref="compound">TextureFrame</ref> &amp;</type>
+          <declname>textureFrame</declname>
+        </param>
+        <briefdescription>
+<para>Add a texture frame sorted in the correct position based on time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="249" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aee96ac16f163c8d56480e7f8ea264291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::RemoveTextureFrame</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>RemoveTextureFrame</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Remove texture frame at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="251" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a0f3cde37d2f6f8fe8ed4c02fe8f46e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetTextureFrames</definition>
+        <argsstring>(const Vector&lt; TextureFrame &gt; &amp;textureFrames)</argsstring>
+        <name>SetTextureFrames</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1TextureFrame" kindref="compound">TextureFrame</ref> &gt; &amp;</type>
+          <declname>textureFrames</declname>
+        </param>
+        <briefdescription>
+<para>Set particle texture animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="253" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ad81d64e74e201e35fcc3b31e6a176086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetTextureFrame</definition>
+        <argsstring>(unsigned index, const TextureFrame &amp;textureFrame)</argsstring>
+        <name>SetTextureFrame</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1TextureFrame" kindref="compound">TextureFrame</ref> &amp;</type>
+          <declname>textureFrame</declname>
+        </param>
+        <briefdescription>
+<para>Set number of texture animation frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="255" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a732d2bc869d490201a4cf7459acd6d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SetNumTextureFrames</definition>
+        <argsstring>(unsigned number)</argsstring>
+        <name>SetNumTextureFrames</name>
+        <param>
+          <type>unsigned</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set number of texture frames. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="258" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a1cdc0eaac358d6e39d42b805c126ad26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::SortTextureFrames</definition>
+        <argsstring>()</argsstring>
+        <name>SortTextureFrames</name>
+        <briefdescription>
+<para>Sort the list of texture frames based on time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="260" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a25c489a11759e507081eaf5a048ef0b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ParticleEffect" kindref="compound">ParticleEffect</ref> &gt;</type>
+        <definition>SharedPtr&lt;ParticleEffect&gt; Urho3D::ParticleEffect::Clone</definition>
+        <argsstring>(const String &amp;cloneName=String::EMPTY) const</argsstring>
+        <name>Clone</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>cloneName</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Clone the particle effect. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="262" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aef5210a28d8d79a87b2e6cd7f4733cda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+        <definition>Material* Urho3D::ParticleEffect::GetMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="266" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="266" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aa34187b6d8c3d861d8a359076cd87c8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ParticleEffect::GetNumParticles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum number of particles. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="270" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a2481cf13ed33e254233860770603eee6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::GetUpdateInvisible</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUpdateInvisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether to update when particles are not visible. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="274" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ad6c615cc4ea8d7642aade4c69c0a19f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::IsRelative</definition>
+        <argsstring>() const</argsstring>
+        <name>IsRelative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether billboards are relative to the scene node. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="278" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="278" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a1a89ea4c81ad744c0bbe1c43e729d836" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::IsScaled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsScaled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether scene node scale affects billboards&apos; size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="282" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a8e05516236eae1ee8c19e85b186b01ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::IsSorted</definition>
+        <argsstring>() const</argsstring>
+        <name>IsSorted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether billboards are sorted. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="286" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="286" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9e7a4d1bb4938b0a5f8775ce9ed7cfa3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ParticleEffect::IsFixedScreenSize</definition>
+        <argsstring>() const</argsstring>
+        <name>IsFixedScreenSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether billboards are fixed screen size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="290" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="290" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a0f5ec358f67438b57ccd670ff263e368" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetAnimationLodBias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAnimationLodBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return animation Lod bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="294" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="294" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a290bce51cf1e372df022897dd00705ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="ParticleEffect_8h_1aea8304c154f19d70448701f7c1e49012" kindref="member">EmitterType</ref></type>
+        <definition>EmitterType Urho3D::ParticleEffect::GetEmitterType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEmitterType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return emitter type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="298" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="298" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1abbd5bb6d1362f94e7f877a575bf143c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::ParticleEffect::GetEmitterSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEmitterSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return emitter size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="302" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="302" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a43dddaa8e36a58e01b8c8fca91104351" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::ParticleEffect::GetMinDirection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return negative direction limit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="306" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="306" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a1c456f30584f87c8e9bb19b6d8afcacc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::ParticleEffect::GetMaxDirection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return positive direction limit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="310" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="310" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ace9cb0e06bf81f9c823d1d79da5ea623" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::ParticleEffect::GetConstantForce</definition>
+        <argsstring>() const</argsstring>
+        <name>GetConstantForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return constant force acting on particles. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="314" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="314" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a511438dbd55d6fc72d3ca9c044bbf0b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetDampingForce</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDampingForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle velocity damping force. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="318" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="318" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a00a4148b0e03f3d1b86a46c7a27e612d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetActiveTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetActiveTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return emission active period length (0 = infinite). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="322" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="322" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ad43397f554817eeda60459372a0f5590" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetInactiveTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInactiveTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return emission inactive period length (0 = infinite). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="326" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="326" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9162f7e1da577bca6e2febc60f48f848" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMinEmissionRate</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinEmissionRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return minimum emission rate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="330" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="330" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9320e7e3a418be90c26457bc95a6fc97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMaxEmissionRate</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxEmissionRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum emission rate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="334" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="334" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1af517b2a15f708514e0ab831c5ec72f9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; Urho3D::ParticleEffect::GetMinParticleSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinParticleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle minimum size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="338" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="338" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a5fb94af9180486b8af24ab8a1e35f691" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; Urho3D::ParticleEffect::GetMaxParticleSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxParticleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle maximum size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="342" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="342" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a055a1f349ea7ce926f9b446eb1bf80ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMinTimeToLive</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinTimeToLive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle minimum time to live. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="346" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="346" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a671d10a4971ce89ea4f4ca0342423b83" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMaxTimeToLive</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxTimeToLive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle maximum time to live. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="350" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="350" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ae60e984939b3f8f2ceed959bf1494999" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMinVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle minimum velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="354" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="354" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a7b7c19c5639c80669683e9f3e6db7dce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMaxVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle maximum velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="358" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="358" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1acbcb8a5d066af0d650df5650aded2d2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMinRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle minimum rotation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="362" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="362" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a724f95b80fe98d3346d31460992c055e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMaxRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle maximum rotation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="366" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="366" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1acc3ffcca9ba53a1f59177a72e3b755ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMinRotationSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinRotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle minimum rotation speed. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="370" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="370" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a9479f5574a6f17553a5d77f72fc3463e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetMaxRotationSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxRotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle maximum rotation speed. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="374" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="374" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a2c3800bcc10fbd0c240f23ed23270de0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetSizeAdd</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSizeAdd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle size additive modifier. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="378" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="378" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a95ac2930321ad659f7758cd5dceeb041" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetSizeMul</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSizeMul</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return particle size multiplicative modifier. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="382" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="382" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ab8482ce696ccb05f1c82938d9b5bd572" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1ColorFrame" kindref="compound">ColorFrame</ref> &gt; &amp;</type>
+        <definition>const Vector&lt;ColorFrame&gt;&amp; Urho3D::ParticleEffect::GetColorFrames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetColorFrames</name>
+        <briefdescription>
+<para>Return all color animation frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="385" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="385" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a79ee4e30a75f5a1a5ac2d01c0aeb0728" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ParticleEffect::GetNumColorFrames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumColorFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of color animation frames. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="389" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="389" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aae1162e533c48305954a55010108fd43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1ColorFrame" kindref="compound">ColorFrame</ref> *</type>
+        <definition>const ColorFrame* Urho3D::ParticleEffect::GetColorFrame</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetColorFrame</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return a color animation frame, or null if outside range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="392" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a19176458fc59260f6ca6b7cdc1b5793d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1TextureFrame" kindref="compound">TextureFrame</ref> &gt; &amp;</type>
+        <definition>const Vector&lt;TextureFrame&gt;&amp; Urho3D::ParticleEffect::GetTextureFrames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTextureFrames</name>
+        <briefdescription>
+<para>Return all texture animation frames. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="395" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="395" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a7270233f83af72a1f6435e30108e189a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ParticleEffect::GetNumTextureFrames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumTextureFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of texture animation frames. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="399" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="399" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aaf94ea9c09bba506b2ff9e44cbd8095f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="structUrho3D_1_1TextureFrame" kindref="compound">TextureFrame</ref> *</type>
+        <definition>const TextureFrame* Urho3D::ParticleEffect::GetTextureFrame</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetTextureFrame</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return a texture animation frame, or null if outside range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="402" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ae2c8e0067c3581d36698ff9f7a2f17e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1aef443f97b15d5c7ff39d3199a9a0c5c1" kindref="member">FaceCameraMode</ref></type>
+        <definition>FaceCameraMode Urho3D::ParticleEffect::GetFaceCameraMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFaceCameraMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return how the particles rotate in relation to the camera. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="406" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="406" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a79a2c7edaf1947f79189652f0dafca6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::ParticleEffect::GetRandomDirection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomDirection</name>
+        <briefdescription>
+<para>Return random direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="409" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a8a15a9b17fcea1e4ad3cc1e34fd01a65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::ParticleEffect::GetRandomSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomSize</name>
+        <briefdescription>
+<para>Return random size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="411" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a0ad518b9c46fdc0f8ad529a3584ab99c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetRandomVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomVelocity</name>
+        <briefdescription>
+<para>Return random velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="413" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ae20189fbc3dabab0c4d074e07835f84d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetRandomTimeToLive</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomTimeToLive</name>
+        <briefdescription>
+<para>Return random timetolive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="415" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a0237882aee90631e88ce5c660d7af476" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetRandomRotationSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomRotationSpeed</name>
+        <briefdescription>
+<para>Return random rotationspeed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="417" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a2b8a7fa09ae20346f764d6a582fbdc19" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::ParticleEffect::GetRandomRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRandomRotation</name>
+        <briefdescription>
+<para>Return random rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="419" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Resource::Load</definition>
+        <argsstring>(Deserializer &amp;source)</argsstring>
+        <name>Load</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource synchronously. Call both <ref refid="classUrho3D_1_1ParticleEffect_1aa0d9efcb340d6a16860aef9d7cd9916f" kindref="member">BeginLoad()</ref> &amp; <ref refid="classUrho3D_1_1ParticleEffect_1a5c9edfc9dbd9b88a6caae0122f1d7805" kindref="member">EndLoad()</ref> and return true if both succeeded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="130" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a8bd6c44d7042150154fe379ff55a647b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::ParticleEffect::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="121" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1ad4c5be7e7d289782cd30729c55123baa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::GetFloatMinMax</definition>
+        <argsstring>(const XMLElement &amp;element, float &amp;minValue, float &amp;maxValue)</argsstring>
+        <name>GetFloatMinMax</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Read a float range from an XML element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="423" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1aa5d97729e6ada2433663415846e7c064" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::GetVector2MinMax</definition>
+        <argsstring>(const XMLElement &amp;element, Vector2 &amp;minValue, Vector2 &amp;maxValue)</argsstring>
+        <name>GetVector2MinMax</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> range from an XML element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="425" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ParticleEffect_1a5b59cb70a3df1c8208c67d2fc8b06a6c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ParticleEffect::GetVector3MinMax</definition>
+        <argsstring>(const XMLElement &amp;element, Vector3 &amp;minValue, Vector3 &amp;maxValue)</argsstring>
+        <name>GetVector3MinMax</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> from an XML element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="427" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Particle effect definition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::ParticleEffect</label>
+        <link refid="classUrho3D_1_1ParticleEffect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::ParticleEffect</label>
+        <link refid="classUrho3D_1_1ParticleEffect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" line="110" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ParticleEffect.h" bodystart="111" bodyend="497"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1ParticleEffect_1a3e7e6249291b294863f373aab9e7cdaf" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>activeTime_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a586754238d8b9ec3a0054071204bbe28" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>AddColorFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a2d91278ccbb6e24a83c25a0e7a895867" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>AddColorTime</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a5639688d1f802dc0a0d5ef369a88755b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>AddTextureFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a49934089eda2087f79a17c9005a444c6" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>AddTextureTime</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a6cbce8901427ed91eee5917d2fd875b0" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>animationLodBias_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa0d9efcb340d6a16860aef9d7cd9916f" prot="public" virt="virtual"><scope>Urho3D::ParticleEffect</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a25c489a11759e507081eaf5a048ef0b3" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Clone</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a600714eefe3d563e53c1de8a5518dc8b" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>colorFrames_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa9094766f217a21f468ba21ebd57dc01" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>constantForce_</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a08aa1c7cb0946e9d2bc8588f9ba84da3" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>dampingForce_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad9c9cb69a5552bd909cfd6e3bd53e7f8" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>directionMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad5889a5dc9848f948a20cda10c8f36dc" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>directionMin_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1acf94865f8df825df244b83049d18dd12" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>emissionRateMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9dec0e16aafee74e16968849e8876dd5" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>emissionRateMin_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa71b69d84930e36008974b22fe4bf168" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>emitterSize_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7e03a4317a25c3b0734610908957c4b9" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>emitterType_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a5c9edfc9dbd9b88a6caae0122f1d7805" prot="public" virt="virtual"><scope>Urho3D::ParticleEffect</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a4a21f65907778b1199a1ead8daff693c" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>faceCameraMode_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1af2af1a7e9507228fbc800db16a9a6cdd" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>fixedScreenSize_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a00a4148b0e03f3d1b86a46c7a27e612d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetActiveTime</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a0f5ec358f67438b57ccd670ff263e368" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetAnimationLodBias</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aae1162e533c48305954a55010108fd43" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetColorFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ab8482ce696ccb05f1c82938d9b5bd572" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetColorFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ace9cb0e06bf81f9c823d1d79da5ea623" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetConstantForce</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a511438dbd55d6fc72d3ca9c044bbf0b0" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetDampingForce</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1abbd5bb6d1362f94e7f877a575bf143c5" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetEmitterSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a290bce51cf1e372df022897dd00705ad" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetEmitterType</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ae2c8e0067c3581d36698ff9f7a2f17e0" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetFaceCameraMode</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad4c5be7e7d289782cd30729c55123baa" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetFloatMinMax</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad43397f554817eeda60459372a0f5590" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetInactiveTime</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aef5210a28d8d79a87b2e6cd7f4733cda" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaterial</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a1c456f30584f87c8e9bb19b6d8afcacc" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxDirection</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9320e7e3a418be90c26457bc95a6fc97" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxEmissionRate</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a5fb94af9180486b8af24ab8a1e35f691" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxParticleSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a724f95b80fe98d3346d31460992c055e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxRotation</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9479f5574a6f17553a5d77f72fc3463e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxRotationSpeed</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a671d10a4971ce89ea4f4ca0342423b83" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxTimeToLive</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7b7c19c5639c80669683e9f3e6db7dce" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMaxVelocity</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a43dddaa8e36a58e01b8c8fca91104351" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinDirection</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9162f7e1da577bca6e2febc60f48f848" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinEmissionRate</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1af517b2a15f708514e0ab831c5ec72f9c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinParticleSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1acbcb8a5d066af0d650df5650aded2d2f" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinRotation</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1acc3ffcca9ba53a1f59177a72e3b755ab" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinRotationSpeed</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a055a1f349ea7ce926f9b446eb1bf80ce" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinTimeToLive</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ae60e984939b3f8f2ceed959bf1494999" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetMinVelocity</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a79ee4e30a75f5a1a5ac2d01c0aeb0728" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetNumColorFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa34187b6d8c3d861d8a359076cd87c8a" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetNumParticles</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7270233f83af72a1f6435e30108e189a" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetNumTextureFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a79a2c7edaf1947f79189652f0dafca6b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetRandomDirection</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a2b8a7fa09ae20346f764d6a582fbdc19" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetRandomRotation</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a0237882aee90631e88ce5c660d7af476" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetRandomRotationSpeed</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a8a15a9b17fcea1e4ad3cc1e34fd01a65" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetRandomSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ae20189fbc3dabab0c4d074e07835f84d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetRandomTimeToLive</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a0ad518b9c46fdc0f8ad529a3584ab99c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetRandomVelocity</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a2c3800bcc10fbd0c240f23ed23270de0" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetSizeAdd</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a95ac2930321ad659f7758cd5dceeb041" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetSizeMul</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aaf94ea9c09bba506b2ff9e44cbd8095f" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetTextureFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a19176458fc59260f6ca6b7cdc1b5793d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetTextureFrames</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a2481cf13ed33e254233860770603eee6" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetUpdateInvisible</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa5d97729e6ada2433663415846e7c064" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetVector2MinMax</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a5b59cb70a3df1c8208c67d2fc8b06a6c" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>GetVector3MinMax</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ab66444df571fc2b824e5b487bd57072d" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>inactiveTime_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9e7a4d1bb4938b0a5f8775ce9ed7cfa3" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsFixedScreenSize</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad6c615cc4ea8d7642aade4c69c0a19f9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsRelative</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a1a89ea4c81ad744c0bbe1c43e729d836" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsScaled</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a8e05516236eae1ee8c19e85b186b01ce" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>IsSorted</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a6dc4d9435d5a4231bbe2e062a8868a8c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual" ambiguityscope="Urho3D::Resource::"><scope>Urho3D::ParticleEffect</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa76339c1efa2d85fa9055941bd3c19b3" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>loadMaterialName_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9195f9042889625a67477b2d11400d15" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>material_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9869e6912148b97162e030c61b76765f" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>numParticles_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::ParticleEffect</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a3287e49cbe9b4acb3ad7777bc82bcbf7" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>ParticleEffect</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a8bd6c44d7042150154fe379ff55a647b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad8322db5b91540fa44868ef48425477c" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>relative_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9f724af6a57cb517f8599e6974586a41" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>RemoveColorFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aee96ac16f163c8d56480e7f8ea264291" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>RemoveTextureFrame</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1afbe4c848f194ec373f4e19909133d7ec" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>rotationMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a93a47d1eeabf08c7e5e6dff03b5c533f" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>rotationMin_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7aae08630f8cbb3a9ea335bc0fbfddc6" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>rotationSpeedMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a8a2a3ce90e4abb48bffb1b34bd9aa50b" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>rotationSpeedMin_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a65e1eaacceb0772359425437d953f94f" prot="public" virt="virtual"><scope>Urho3D::ParticleEffect</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9ace98e5fccc8ec89dfdf17f91fb67df" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::ParticleEffect</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a965fde2da48944b6d4e3a69768c85472" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>scaled_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a2e750d01fc2551a8a728eb2bdef296c2" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetActiveTime</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a3e14884fabcdce65662c5a93dc8f01eb" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetAnimationLodBias</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a2c81c7f18da026e58f04539f03030a76" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetColorFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a238f5fda3cdc8420bb6a6274df5d435b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetColorFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aba3fc4c331d7675fa3913d9dc91da545" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetConstantForce</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a343263da9202d33431b122eb1dc2c1bb" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetDampingForce</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ade2e0575554b6a2c3b223a3c300480c8" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetEmitterSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a8c8e3584d05cc2bc64c2e3e1a97d6ef5" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetEmitterType</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a77e289d22dc455df9c1d300a1ff29d6b" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetFaceCameraMode</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a34a4c4d99879577bc11876836c82acb2" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetFixedScreenSize</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a859f33968124a94a7d42ef91bdf07f7f" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetInactiveTime</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ac365cce2799ec135da82b71cdedc3b43" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaterial</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a106306c412b6a16335382e49b7bb82a6" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxDirection</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a48d273040806b2bb37cf9444f8b667f1" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxEmissionRate</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a64edfe41af8d77acf970ae9decb1f485" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxParticleSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a6ba16df1c4ffbcd17a9006a34c58e18c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxRotation</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a67715cdfd2a35dc3e17ad17159a236c0" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxRotationSpeed</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9f26b68be7aedf595ee774976d1508bb" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxTimeToLive</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a38474a3942bb2b80332026d1360e47f7" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMaxVelocity</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a61c602773d4ffddf3bef8807dde1c25c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinDirection</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a32474bb22944ec8ec6c62083371a807f" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinEmissionRate</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7042621f9909e4ff4e0c9cc8931aee40" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinParticleSize</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1abe3898cb8a5f0279ff94d5f1bb7784e1" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinRotation</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a891b534deb38f8644009a7eeb2da6dc7" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinRotationSpeed</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a4b1c6f605d87e8edddc5253887c54fa1" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinTimeToLive</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a3079abee4eeb2e5c6c6424dc3cecb1a1" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetMinVelocity</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa4d6b0a5ace02e657fadbff7d66f1bc9" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetNumColorFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a5c45a5457e5b743478f53a926e5eb7c0" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetNumParticles</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a732d2bc869d490201a4cf7459acd6d35" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetNumTextureFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad8a2a51c494a4529f923579f60c77336" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetRelative</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a4d4deed97a94ab0722f47cd23b4af04c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetScaled</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ac868940b6fc0269d079119f3f02eab85" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetSizeAdd</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1af9934991495f41e5a34b3df400d732d5" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetSizeMul</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a543c5756f39a8cdc2fdaffb95084a662" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetSorted</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1ad81d64e74e201e35fcc3b31e6a176086" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetTextureFrame</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a0f3cde37d2f6f8fe8ed4c02fe8f46e34" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetTextureFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a8acb74a9c0e94066a3787bdf4cc8835e" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SetUpdateInvisible</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a9927312e4bf71f3231f35ff5fdb6f7e6" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>sizeAdd_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a144f095c2d0400afc0cf5f4add3ecd31" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>sizeMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a6f666a2948ddba1e9d080a79f2997fb9" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>sizeMin_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a738d8ff981e478f9a8754519aaaa120c" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>sizeMul_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a56b6ac37854e99f07b933fd428481776" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SortColorFrames</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a679acc3acfc067b5186cbd1bc59f7e6d" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>sorted_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a1cdc0eaac358d6e39d42b805c126ad26" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SortTextureFrames</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1aa5462636b86a175ceb08b8535c37bf0b" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>textureFrames_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a915442e280e2038165fc471b882969d0" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>timeToLiveMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7eed0f3908c96be706a1ea733510b192" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>timeToLiveMin_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a0a15688d807180e3d5497f24dc890bf1" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>updateInvisible_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a7ed5c153a46c3892bb1d08ae43abf575" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>velocityMax_</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a6e2bcc67542924368f1558ffd8d41d36" prot="private" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>velocityMin_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1ParticleEffect_1a1b48a1396d5f225ab844a82ebcfb68e5" prot="public" virt="non-virtual"><scope>Urho3D::ParticleEffect</scope><name>~ParticleEffect</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ParticleEffect</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

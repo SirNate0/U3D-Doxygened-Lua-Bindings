@@ -1,0 +1,2956 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1UI" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::UI</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="UI_8h" local="no">UI.h</includes>
+    <innerclass refid="structUrho3D_1_1UI_1_1DragData" prot="public">Urho3D::UI::DragData</innerclass>
+    <innerclass refid="structUrho3D_1_1UI_1_1RenderToTextureData" prot="private">Urho3D::UI::RenderToTextureData</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a9d52e4b4707529b50ba2d1594562632c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref> &gt;</type>
+        <definition>WeakPtr&lt;Graphics&gt; Urho3D::UI::graphics_</definition>
+        <argsstring></argsstring>
+        <name>graphics_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref> subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="392" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a0119e994ab4664d2343237eea2e42255" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;</type>
+        <definition>SharedPtr&lt;UIElement&gt; Urho3D::UI::rootElement_</definition>
+        <argsstring></argsstring>
+        <name>rootElement_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> root element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="394" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ae4b9b704fc84ca58f1514f932adcd38e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;</type>
+        <definition>SharedPtr&lt;UIElement&gt; Urho3D::UI::rootModalElement_</definition>
+        <argsstring></argsstring>
+        <name>rootModalElement_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> root modal element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="396" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1aba5322d649b81f96aac7304295c343cb" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> &gt;</type>
+        <definition>SharedPtr&lt;Cursor&gt; Urho3D::UI::cursor_</definition>
+        <argsstring></argsstring>
+        <name>cursor_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="398" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a8aac3df8db433f24e4f5bda091b83151" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;</type>
+        <definition>WeakPtr&lt;UIElement&gt; Urho3D::UI::focusElement_</definition>
+        <argsstring></argsstring>
+        <name>focusElement_</name>
+        <briefdescription>
+<para>Currently focused element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="400" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a4804e2e721a32e867d2815d5decdb06a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1UIBatch" kindref="compound">UIBatch</ref> &gt;</type>
+        <definition>PODVector&lt;UIBatch&gt; Urho3D::UI::batches_</definition>
+        <argsstring></argsstring>
+        <name>batches_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> rendering batches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="402" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a1ecf18f7175227a7d2a918129af5a143" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt;</type>
+        <definition>PODVector&lt;float&gt; Urho3D::UI::vertexData_</definition>
+        <argsstring></argsstring>
+        <name>vertexData_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> rendering vertex data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="404" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a6177dbca39ea8a19adaa380383157b84" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1UIBatch" kindref="compound">UIBatch</ref> &gt;</type>
+        <definition>PODVector&lt;UIBatch&gt; Urho3D::UI::debugDrawBatches_</definition>
+        <argsstring></argsstring>
+        <name>debugDrawBatches_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> rendering batches for debug draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="406" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a55ffabacd0f5e3296a53ea6a7a0e3894" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt;</type>
+        <definition>PODVector&lt;float&gt; Urho3D::UI::debugVertexData_</definition>
+        <argsstring></argsstring>
+        <name>debugVertexData_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> rendering vertex data for debug draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="408" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1abb4cf4dff13aae75d636812785d0fcd5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;VertexBuffer&gt; Urho3D::UI::vertexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="410" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a845bdd29a74f0847edb69613266a261e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;VertexBuffer&gt; Urho3D::UI::debugVertexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>debugVertexBuffer_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> debug geometry vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="412" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a494957df71e930b169cc30801a9ec857" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> * &gt;</type>
+        <definition>PODVector&lt;UIElement*&gt; Urho3D::UI::tempElements_</definition>
+        <argsstring></argsstring>
+        <name>tempElements_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element query vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="414" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a0cc9033da8e7d3c6f5cc22b188bbb500" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::UI::clipBoard_</definition>
+        <argsstring></argsstring>
+        <name>clipBoard_</name>
+        <briefdescription>
+<para>Clipboard text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="416" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a3c67b368f49d996699e14969d0e2962a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::UI::doubleClickInterval_</definition>
+        <argsstring></argsstring>
+        <name>doubleClickInterval_</name>
+        <briefdescription>
+<para>Seconds between clicks to register a double click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="418" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a56c6cedfb0df5388dcc77580706274d5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::UI::dragBeginInterval_</definition>
+        <argsstring></argsstring>
+        <name>dragBeginInterval_</name>
+        <briefdescription>
+<para>Seconds from mouse button down to begin a drag if there has been no movement exceeding pixel threshold. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="420" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a02b9f41f7c78a7eec8933646b788cee5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::UI::defaultToolTipDelay_</definition>
+        <argsstring></argsstring>
+        <name>defaultToolTipDelay_</name>
+        <briefdescription>
+<para>Tooltip default display delay in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="422" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a54cd04e3d8cfdf0e201839d325c74a7f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::UI::dragBeginDistance_</definition>
+        <argsstring></argsstring>
+        <name>dragBeginDistance_</name>
+        <briefdescription>
+<para>Drag begin event distance threshold in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="424" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a23f570eb03c6c16dcce751c33c63c2e3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+        <definition>MouseButtonFlags Urho3D::UI::mouseButtons_</definition>
+        <argsstring></argsstring>
+        <name>mouseButtons_</name>
+        <briefdescription>
+<para>Mouse buttons held down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="426" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a1a986ef6f1cf429d85a56d69a1c9f016" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+        <definition>MouseButtonFlags Urho3D::UI::lastMouseButtons_</definition>
+        <argsstring></argsstring>
+        <name>lastMouseButtons_</name>
+        <briefdescription>
+<para>Last mouse button pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="428" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ab55e007115277f705593db302a0b9ff5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+        <definition>QualifierFlags Urho3D::UI::qualifiers_</definition>
+        <argsstring></argsstring>
+        <name>qualifiers_</name>
+        <briefdescription>
+<para>Qualifier keys held down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="430" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1afcb52afb80f6bf148ab12bc5fe644053" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::UI::maxFontTextureSize_</definition>
+        <argsstring></argsstring>
+        <name>maxFontTextureSize_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Font" kindref="compound">Font</ref> texture maximum size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="432" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ab0ed29f21c35235309f9a2133e379061" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <briefdescription>
+<para>Initialized flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="434" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a34e16ef6641d3ec6d8fd73bad4b60b94" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::usingTouchInput_</definition>
+        <argsstring></argsstring>
+        <name>usingTouchInput_</name>
+        <briefdescription>
+<para>Touch used flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="436" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1aae50a1043655ed1849ef34b424fc0637" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::nonFocusedMouseWheel_</definition>
+        <argsstring></argsstring>
+        <name>nonFocusedMouseWheel_</name>
+        <briefdescription>
+<para>Flag to switch mouse wheel event to be sent to non-focused element at cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="438" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1aafcaa8a6c0b62fb69a9de1358944eff8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::useSystemClipboard_</definition>
+        <argsstring></argsstring>
+        <name>useSystemClipboard_</name>
+        <briefdescription>
+<para>Flag for using operating system clipboard instead of internal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="440" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a80c9a5c0172b7611df13c8f3b3c7cbca" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::useScreenKeyboard_</definition>
+        <argsstring></argsstring>
+        <name>useScreenKeyboard_</name>
+        <briefdescription>
+<para>Flag for showing the on-screen keyboard on focusing a LineEdit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="442" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a428bd74d9025f6caa0f50d6c031d3a77" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::useMutableGlyphs_</definition>
+        <argsstring></argsstring>
+        <name>useMutableGlyphs_</name>
+        <briefdescription>
+<para>Flag for using mutable (erasable) font glyphs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="444" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ae4f5f5a5e2e1b624acfb7ac060f97d60" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::forceAutoHint_</definition>
+        <argsstring></argsstring>
+        <name>forceAutoHint_</name>
+        <briefdescription>
+<para>Flag for forcing FreeType auto hinting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="446" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a1c6bf3d43a0c1ddb92712ad01a0ddf34" prot="private" static="no" mutable="no">
+        <type><ref refid="UI_8h_1abc25f48f67a57480b1b674ca317f120e" kindref="member">FontHintLevel</ref></type>
+        <definition>FontHintLevel Urho3D::UI::fontHintLevel_</definition>
+        <argsstring></argsstring>
+        <name>fontHintLevel_</name>
+        <briefdescription>
+<para>FreeType hinting level (default is FONT_HINT_LEVEL_NORMAL). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="448" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a170dc2f73b9171937e0aa340ace1dc80" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::UI::fontSubpixelThreshold_</definition>
+        <argsstring></argsstring>
+        <name>fontSubpixelThreshold_</name>
+        <briefdescription>
+<para>Maxmimum font size for subpixel glyph positioning and oversampling (default is 12). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="450" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ac3768049c13d701a2bc43f1a68d22dce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::UI::fontOversampling_</definition>
+        <argsstring></argsstring>
+        <name>fontOversampling_</name>
+        <briefdescription>
+<para>Horizontal oversampling for subpixel fonts (default is 2). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="452" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a6d4fde77ea8a546dfc545f89916d055c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::uiRendered_</definition>
+        <argsstring></argsstring>
+        <name>uiRendered_</name>
+        <briefdescription>
+<para>Flag for <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> already being rendered this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="454" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a0d26f06325bff9ee27f2b1ca15c5b164" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::UI::nonModalBatchSize_</definition>
+        <argsstring></argsstring>
+        <name>nonModalBatchSize_</name>
+        <briefdescription>
+<para>Non-modal batch size (used internally for rendering). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="456" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a354d1e92f410d95262255651757db64a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Timer" kindref="compound">Timer</ref></type>
+        <definition>Timer Urho3D::UI::clickTimer_</definition>
+        <argsstring></argsstring>
+        <name>clickTimer_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Timer" kindref="compound">Timer</ref> used to trigger double click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="458" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a71579095f6e960656a8a247f8e3c19dc" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;</type>
+        <definition>WeakPtr&lt;UIElement&gt; Urho3D::UI::doubleClickElement_</definition>
+        <argsstring></argsstring>
+        <name>doubleClickElement_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element last clicked for tracking double clicks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="460" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ae94449044092b4c22a99db31d49d5ece" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::doubleClickFirstPos_</definition>
+        <argsstring></argsstring>
+        <name>doubleClickFirstPos_</name>
+        <briefdescription>
+<para>Screen position of first mouse click for double click distance checking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="462" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1aecf041a3fdeebe985a483a9baf2ca1cb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::UI::maxDoubleClickDist_</definition>
+        <argsstring></argsstring>
+        <name>maxDoubleClickDist_</name>
+        <briefdescription>
+<para>Max screen distance the first click in a double click can be from the second click in a double click. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="464" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a93fd6671fd9b27fa5be7eb793f1e5274" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;, bool &gt;</type>
+        <definition>HashMap&lt;WeakPtr&lt;UIElement&gt;, bool&gt; Urho3D::UI::hoveredElements_</definition>
+        <argsstring></argsstring>
+        <name>hoveredElements_</name>
+        <briefdescription>
+<para>Currently hovered elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="466" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1abf9281fbb8b466e68ee70ec952b9da2b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;, <ref refid="structUrho3D_1_1UI_1_1DragData" kindref="compound">DragData</ref> * &gt;</type>
+        <definition>HashMap&lt;WeakPtr&lt;UIElement&gt;, DragData*&gt; Urho3D::UI::dragElements_</definition>
+        <argsstring></argsstring>
+        <name>dragElements_</name>
+        <briefdescription>
+<para>Currently dragged elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="468" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1afb8de06b9f0f127e9c85bf13791c29aa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::UI::dragElementsCount_</definition>
+        <argsstring></argsstring>
+        <name>dragElementsCount_</name>
+        <briefdescription>
+<para>Number of elements in dragElements_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="470" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a611f1fc8af42ecd78a26a7cc1780a8ef" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::UI::dragConfirmedCount_</definition>
+        <argsstring></argsstring>
+        <name>dragConfirmedCount_</name>
+        <briefdescription>
+<para>Number of elements in dragElements_ with dragPending = false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="472" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a39b858c8029f553f35a30ff87723f8fc" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;, <ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref> &gt;</type>
+        <definition>HashMap&lt;WeakPtr&lt;UIElement&gt;, MouseButtonFlags&gt; Urho3D::UI::touchDragElements_</definition>
+        <argsstring></argsstring>
+        <name>touchDragElements_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> elements that are being touched with touch input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="474" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a550d82652e76b255e84976d8a83a4469" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> * &gt;</type>
+        <definition>Vector&lt;UIElement*&gt; Urho3D::UI::dragElementsConfirmed_</definition>
+        <argsstring></argsstring>
+        <name>dragElementsConfirmed_</name>
+        <briefdescription>
+<para>Confirmed drag elements cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="476" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a9c4127f0690050b87e01d96c0222106a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::UI::uiScale_</definition>
+        <argsstring></argsstring>
+        <name>uiScale_</name>
+        <briefdescription>
+<para>Current scale of <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="478" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1ab6aca12021fc6429cc8767e0814b16a3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::customSize_</definition>
+        <argsstring></argsstring>
+        <name>customSize_</name>
+        <briefdescription>
+<para>Root element custom size. 0,0 for automatic resizing (default). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="480" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1UI_1a7d53010727de8a586ddc40f18126d6da" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *, RenderToTextureData &gt;</type>
+        <definition>HashMap&lt;UIElement*, RenderToTextureData&gt; Urho3D::UI::renderToTexture_</definition>
+        <argsstring></argsstring>
+        <name>renderToTexture_</name>
+        <briefdescription>
+<para>Elements that should be rendered to textures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="482" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a2c011c43ca66ff4270e98601e4f9c4cf" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::UI::UI</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>UI</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="66" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a7848cfbc7819e06dbfd720106b94a05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::UI::~UI</definition>
+        <argsstring>() override</argsstring>
+        <name>~UI</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="68" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ab7d94a2bf8f5fa20722957f0b0f8d716" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetCursor</definition>
+        <argsstring>(Cursor *cursor)</argsstring>
+        <name>SetCursor</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set cursor <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a1354d0acce25fb4c12d08a4addc09612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetFocusElement</definition>
+        <argsstring>(UIElement *element, bool byKey=false)</argsstring>
+        <name>SetFocusElement</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>byKey</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set focused <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a70d676b6b63b600b08b56c18389f63c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::SetModalElement</definition>
+        <argsstring>(UIElement *modalElement, bool enable)</argsstring>
+        <name>SetModalElement</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>modalElement</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set modal element. Until all the modal elements are dismissed, all the inputs and events are only sent to them. Return true when successful. Only the modal element can clear its modal status or when it is being destructed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa820ea19a96913819df9672d95094f60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear the <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> (excluding the cursor). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a72b99e98631cc015245568170dc221e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::Update</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Update the <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> logic. Called by HandlePostUpdate(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa007010436204316b3fe4859db32458e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::RenderUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>RenderUpdate</name>
+        <briefdescription>
+<para>Update the <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> for rendering. Called by HandleRenderUpdate(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a134bf8272c7a86fccd27a8437996adfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::Render</definition>
+        <argsstring>(bool renderUICommand=false)</argsstring>
+        <name>Render</name>
+        <param>
+          <type>bool</type>
+          <declname>renderUICommand</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Render the <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref>. If renderUICommand is false (default), is assumed to be the default <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> render to backbuffer called by <ref refid="classUrho3D_1_1Engine" kindref="compound">Engine</ref>, and will be performed only once. Additional <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> renders to a different rendertarget may be triggered from the renderpath. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ae9abe9e6d8b996feaa7466a47d9e7c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::DebugDraw</definition>
+        <argsstring>(UIElement *element)</argsstring>
+        <name>DebugDraw</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Debug draw a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a936b1dde690d24a31eec73dd80306ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;</type>
+        <definition>SharedPtr&lt;UIElement&gt; Urho3D::UI::LoadLayout</definition>
+        <argsstring>(Deserializer &amp;source, XMLFile *styleFile=nullptr)</argsstring>
+        <name>LoadLayout</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>styleFile</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Load a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> layout from an XML file. Optionally specify another XML file for element style. Return the root element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="89" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa4c5a7612ea874219a4d2f58325d26d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;</type>
+        <definition>SharedPtr&lt;UIElement&gt; Urho3D::UI::LoadLayout</definition>
+        <argsstring>(XMLFile *file, XMLFile *styleFile=nullptr)</argsstring>
+        <name>LoadLayout</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>styleFile</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Load a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> layout from an XML file. Optionally specify another XML file for element style. Return the root element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="91" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a5cd07643076e6439a75cb6de7e038df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::SaveLayout</definition>
+        <argsstring>(Serializer &amp;dest, UIElement *element)</argsstring>
+        <name>SaveLayout</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Save a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> layout to an XML file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a45b6ad972b2f5fe0f50912b74d209209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetClipboardText</definition>
+        <argsstring>(const String &amp;text)</argsstring>
+        <name>SetClipboardText</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set clipboard text. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a7d66d21c4b7f72f310ad00f47257e490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetDoubleClickInterval</definition>
+        <argsstring>(float interval)</argsstring>
+        <name>SetDoubleClickInterval</name>
+        <param>
+          <type>float</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element double click interval in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a1c3ad4aff2b4278c7c080a7473f0cee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetMaxDoubleClickDistance</definition>
+        <argsstring>(float distPixels)</argsstring>
+        <name>SetMaxDoubleClickDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distPixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set max screen distance in pixels between double click clicks. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a246e421939905d6b9ce449dde586401b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetDragBeginInterval</definition>
+        <argsstring>(float interval)</argsstring>
+        <name>SetDragBeginInterval</name>
+        <param>
+          <type>float</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> drag event start interval in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a0139fe20b617fe2db097783b59a03172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetDragBeginDistance</definition>
+        <argsstring>(int pixels)</argsstring>
+        <name>SetDragBeginDistance</name>
+        <param>
+          <type>int</type>
+          <declname>pixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> drag event start distance threshold in pixels. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a47ac88d68d9e4bc648e7b1b892d02778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetDefaultToolTipDelay</definition>
+        <argsstring>(float delay)</argsstring>
+        <name>SetDefaultToolTipDelay</name>
+        <param>
+          <type>float</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set tooltip default display delay in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a47474698321610582940b681d9d94314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetMaxFontTextureSize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>SetMaxFontTextureSize</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum font face texture size. Must be a power of two. Default is 2048. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ab9f9a3c281c6e12949c18349a41d994b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetNonFocusedMouseWheel</definition>
+        <argsstring>(bool nonFocusedMouseWheel)</argsstring>
+        <name>SetNonFocusedMouseWheel</name>
+        <param>
+          <type>bool</type>
+          <declname>nonFocusedMouseWheel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether mouse wheel can control also a non-focused element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aae70a982e3eb0c59f2a49bf7113e2584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetUseSystemClipboard</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUseSystemClipboard</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to use system clipboard. Default false. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ad589c4fa698684727046bfd1da5e8854" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetUseScreenKeyboard</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUseScreenKeyboard</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to show the on-screen keyboard (if supported) when a LineEdit is focused. Default true on mobile devices. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ae3c4899c916faa7d4911975bd7e25372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetUseMutableGlyphs</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUseMutableGlyphs</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to use mutable (eraseable) glyphs to ensure a font face never expands to more than one texture. Default false. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a3136d55d1cc4ea112324d890a332b810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetForceAutoHint</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetForceAutoHint</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to force font autohinting instead of using FreeType&apos;s TTF bytecode interpreter. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa0d8d9ace57d3dec84e96d92addf7f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetFontHintLevel</definition>
+        <argsstring>(FontHintLevel level)</argsstring>
+        <name>SetFontHintLevel</name>
+        <param>
+          <type><ref refid="UI_8h_1abc25f48f67a57480b1b674ca317f120e" kindref="member">FontHintLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the hinting level used by FreeType fonts. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="132" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a4326a98edbefb4bf516bbb528e79e7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetFontSubpixelThreshold</definition>
+        <argsstring>(float threshold)</argsstring>
+        <name>SetFontSubpixelThreshold</name>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a42bd2fdb0910d88ccd48cfeed172b0fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetFontOversampling</definition>
+        <argsstring>(int oversampling)</argsstring>
+        <name>SetFontOversampling</name>
+        <param>
+          <type>int</type>
+          <declname>oversampling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="138" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a3c1e9ed8137e895cd9d2cf4e9be5796f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetScale</definition>
+        <argsstring>(float scale)</argsstring>
+        <name>SetScale</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set UI scale. 1.0 is default (pixel perfect). Resize the root element to match. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ab7bfd17a2b528bd11d3348ab1bdd1fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetWidth</definition>
+        <argsstring>(float width)</argsstring>
+        <name>SetWidth</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Scale UI to the specified width in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a65d29ca3b07a6002e702deec015c5d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetHeight</definition>
+        <argsstring>(float height)</argsstring>
+        <name>SetHeight</name>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Scale UI to the specified height in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ae6fc5d536a21f287476fafa07801ef5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetCustomSize</definition>
+        <argsstring>(const IntVector2 &amp;size)</argsstring>
+        <name>SetCustomSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set custom size of the root element. This disables automatic resizing of the root element according to window size. Set custom size 0,0 to return to automatic resizing. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a95ba1e77d91c7c37394d6cb5e1c442ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetCustomSize</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>SetCustomSize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Set custom size of the root element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa72d6a822a2b0ad607639e50eed06dec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetRoot</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return root <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="154" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a31438be3f7675e26a6fa9d5600b22728" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetRootModalElement</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRootModalElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return root modal element. BIND_AS_ALIAS_get_modalRoot </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="158" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a213eb5357af3f3bd44a2c3f3a22bb0b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> *</type>
+        <definition>Cursor* Urho3D::UI::GetCursor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return cursor. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="162" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a3ae2e44e029886eeb0b12182bb002648" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::GetCursorPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCursorPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return cursor position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="166" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa0e7d2ba4e38df53be22d421add1e50c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetElementAt</definition>
+        <argsstring>(const IntVector2 &amp;position, bool enabledOnly=true)</argsstring>
+        <name>GetElementAt</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabledOnly</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element at global screen coordinates. By default returns only input-enabled elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="168" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a1e395c7e10f494211894e12c3acf30eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetElementAt</definition>
+        <argsstring>(int x, int y, bool enabledOnly=true)</argsstring>
+        <name>GetElementAt</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabledOnly</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element at global screen coordinates. By default returns only input-enabled elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="170" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a9725736cab6d815b4f51dc63293208ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetElementAt</definition>
+        <argsstring>(UIElement *root, const IntVector2 &amp;position, bool enabledOnly=true)</argsstring>
+        <name>GetElementAt</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabledOnly</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get a child element at element&apos;s screen position relative to specified root element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="172" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1af26cf457fe79738d08052a434e525f72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::ConvertSystemToUI</definition>
+        <argsstring>(const IntVector2 &amp;systemPos) const</argsstring>
+        <name>ConvertSystemToUI</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>systemPos</declname>
+        </param>
+        <briefdescription>
+<para>Convert system mouse position (or offset) to scaled <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> position (or offset). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="174" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a76db3cfa0cbacb1c0ded6c60dcd32470" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::ConvertUIToSystem</definition>
+        <argsstring>(const IntVector2 &amp;uiPos) const</argsstring>
+        <name>ConvertUIToSystem</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>uiPos</declname>
+        </param>
+        <briefdescription>
+<para>Convert scaled <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> position (or offset) to system mouse position (or offset). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="176" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1acd384c13565dc7a1bd8f56ae82d1d349" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetFocusElement</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFocusElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return focused element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="180" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a0dc31a7fd1445cd35baabd99645021d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetFrontElement</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFrontElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return topmost enabled root-level non-modal element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="184" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ac77dc096b6f76d47ddefdd7596c49baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> * &gt;</type>
+        <definition>const Vector&lt;UIElement*&gt; Urho3D::UI::GetDragElements</definition>
+        <argsstring>()</argsstring>
+        <name>GetDragElements</name>
+        <briefdescription>
+<para>Return currently dragged elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="186" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a2eae37a78be6c135b8bbc735f3533b24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::UI::GetNumDragElements</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumDragElements</name>
+        <briefdescription>
+<para>Return the number of currently dragged elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="189" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a142a4a76e24e5f91bda57617c000970c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetDragElement</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>GetDragElement</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return the drag element at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="192" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1af46ddc5321c53518e2ea24263bc1a05e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::UI::GetClipboardText</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClipboardText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return clipboard text. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="195" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a65c1f800df801b4377838d9d2f6c1ad9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::UI::GetDoubleClickInterval</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDoubleClickInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element double click interval in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="199" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a73c45ddf24a6fced2b1576560cf1c2fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::UI::GetMaxDoubleClickDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxDoubleClickDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return max screen distance in pixels for double clicks to register. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="203" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a6a05f87c92941189d0c2e6976df2c905" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::UI::GetDragBeginInterval</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDragBeginInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> drag start event interval in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="207" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ae17e800a74053bfe63c7ef75118ac05b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::UI::GetDragBeginDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDragBeginDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> drag start event distance threshold in pixels. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="211" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1af03eddaec815060372242bae1e1d4fd0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::UI::GetDefaultToolTipDelay</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDefaultToolTipDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return tooltip default display delay in seconds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="215" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a3716d6e6d234c790ca5fc63542ccf7ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::UI::GetMaxFontTextureSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxFontTextureSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return font texture maximum size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="219" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a6218e301deedaf7eb31ff74ba3fcdcd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::IsNonFocusedMouseWheel</definition>
+        <argsstring>() const</argsstring>
+        <name>IsNonFocusedMouseWheel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether mouse wheel can control also a non-focused element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="223" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a2defe70f623606384482ed328fe85d91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::GetUseSystemClipboard</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUseSystemClipboard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is using the system clipboard. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="227" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1af8bef6358501427f9854b57a013bf7cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::GetUseScreenKeyboard</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUseScreenKeyboard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether focusing a LineEdit will show the on-screen keyboard. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="231" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a31eb531ba7ae25b6f178c73a0b230945" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::GetUseMutableGlyphs</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUseMutableGlyphs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is using mutable (eraseable) glyphs for fonts. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="235" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a7a32d86084ee54963500d01a6a3f41ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::GetForceAutoHint</definition>
+        <argsstring>() const</argsstring>
+        <name>GetForceAutoHint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is using forced autohinting. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="239" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="239" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aaf53a4ed2561a48f885599f7db3f9562" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="UI_8h_1abc25f48f67a57480b1b674ca317f120e" kindref="member">FontHintLevel</ref></type>
+        <definition>FontHintLevel Urho3D::UI::GetFontHintLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFontHintLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the current FreeType font hinting level. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="243" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="243" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a65152b0c9d272e4c0194a504ae50c7ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::UI::GetFontSubpixelThreshold</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFontSubpixelThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the font subpixel threshold. Below this size, if the hint level is LIGHT or NONE, fonts will use subpixel positioning plus oversampling for higher-quality rendering. Has no effect at hint level NORMAL. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="247" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="247" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aaa817429eb0bd5a60dd92db99d2cf747" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::UI::GetFontOversampling</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFontOversampling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the oversampling (horizonal stretching) used to improve subpixel font rendering. Only affects fonts smaller than the subpixel limit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="251" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="251" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a130650a1b81cec2403030078e1e56298" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::HasModalElement</definition>
+        <argsstring>() const</argsstring>
+        <name>HasModalElement</name>
+        <briefdescription>
+<para>Return true when <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> has modal element(s). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="254" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a2425df9cf0640d7ec66e4504a03a13ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::UI::IsDragging</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDragging</name>
+        <briefdescription>
+<para>Return whether a drag is in progress. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="257" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="257" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1acfb2418515b35357fa94d483b58cd292" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::UI::GetScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return current <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> scale. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="261" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="261" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a36b02ca5bca8fc1dbfee62c54e4a29e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+        <definition>const IntVector2&amp; Urho3D::UI::GetCustomSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCustomSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return root element custom size. Returns 0,0 when custom size is not being used and automatic resizing according to window size is in use instead (default). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="265" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="265" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ac00c2460ea4afffbe17cbf3acc62a105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetElementRenderTexture</definition>
+        <argsstring>(UIElement *element, Texture2D *texture)</argsstring>
+        <name>SetElementRenderTexture</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Texture2D" kindref="compound">Texture2D</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+<para>Set texture to which element will be rendered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="268" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a5bb71ed105d2bb465a10f66c9bfcb275" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Initialize when screen mode initially set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="310" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a1b01d7a10ff43c74906548d2af23ed0c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::Update</definition>
+        <argsstring>(float timeStep, UIElement *element)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Update <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element logic recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="312" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a81a47eaae0ed7eb793eca83f711ee272" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetVertexData</definition>
+        <argsstring>(VertexBuffer *dest, const PODVector&lt; float &gt; &amp;vertexData)</argsstring>
+        <name>SetVertexData</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt; &amp;</type>
+          <declname>vertexData</declname>
+        </param>
+        <briefdescription>
+<para>Upload <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> geometry into a vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="314" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a5f23155e2af111b3f82736beb7929e44" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::Render</definition>
+        <argsstring>(VertexBuffer *buffer, const PODVector&lt; UIBatch &gt; &amp;batches, unsigned batchStart, unsigned batchEnd)</argsstring>
+        <name>Render</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1UIBatch" kindref="compound">UIBatch</ref> &gt; &amp;</type>
+          <declname>batches</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>batchStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>batchEnd</declname>
+        </param>
+        <briefdescription>
+<para>Render <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> batches to the current rendertarget. <ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> must have been uploaded first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="316" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aef695d9bbefb2724ac9f68b085769051" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::GetBatches</definition>
+        <argsstring>(PODVector&lt; UIBatch &gt; &amp;batches, PODVector&lt; float &gt; &amp;vertexData, UIElement *element, IntRect currentScissor)</argsstring>
+        <name>GetBatches</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1UIBatch" kindref="compound">UIBatch</ref> &gt; &amp;</type>
+          <declname>batches</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; float &gt; &amp;</type>
+          <declname>vertexData</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref></type>
+          <declname>currentScissor</declname>
+        </param>
+        <briefdescription>
+<para>Generate batches from an <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element recursively. Skip the cursor element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="318" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a3a77777a01fd858521004e9c93e6b740" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetElementAt</definition>
+        <argsstring>(const IntVector2 &amp;position, bool enabledOnly, IntVector2 *elementScreenPosition)</argsstring>
+        <name>GetElementAt</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabledOnly</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> *</type>
+          <declname>elementScreenPosition</declname>
+        </param>
+        <briefdescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element at global screen coordinates. Return position converted to element&apos;s screen coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="320" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a64c370ff3f5dcbee044573fae5db7a43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::GetElementAt</definition>
+        <argsstring>(UIElement *&amp;result, UIElement *current, const IntVector2 &amp;position, bool enabledOnly)</argsstring>
+        <name>GetElementAt</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *&amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabledOnly</declname>
+        </param>
+        <briefdescription>
+<para>Return <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element at screen position recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="322" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a32c89e705286580ae6eddb3fa4d39094" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+        <definition>UIElement* Urho3D::UI::GetFocusableElement</definition>
+        <argsstring>(UIElement *element)</argsstring>
+        <name>GetFocusableElement</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Return the first element in hierarchy that can alter focus. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="324" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a0af4d994bd99764d04ac7a252fdcc088" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::GetCursorPositionAndVisible</definition>
+        <argsstring>(IntVector2 &amp;pos, bool &amp;visible)</argsstring>
+        <name>GetCursorPositionAndVisible</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+<para>Return cursor position and visibility either from the cursor element, or the <ref refid="classUrho3D_1_1Input" kindref="compound">Input</ref> subsystem. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="326" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a334732fd743cb98f97b6fbaa2465fc5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SetCursorShape</definition>
+        <argsstring>(CursorShape shape)</argsstring>
+        <name>SetCursorShape</name>
+        <param>
+          <type><ref refid="Cursor_8h_1a560423741ed1239c09a6eea787eed2aa" kindref="member">CursorShape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+<para>Set active cursor&apos;s shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="328" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aba4acefa333c93be113dcdacd366585e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ReleaseFontFaces</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseFontFaces</name>
+        <briefdescription>
+<para>Force release of font faces when global font properties change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="330" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a444cb18d7cdbab6b37be5a6245c77388" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ProcessHover</definition>
+        <argsstring>(const IntVector2 &amp;windowCursorPos, MouseButtonFlags buttons, QualifierFlags qualifiers, Cursor *cursor)</argsstring>
+        <name>ProcessHover</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>windowCursorPos</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+          <declname>buttons</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+          <declname>qualifiers</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <briefdescription>
+<para>Handle button or touch hover. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="332" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a78d9ccf1b8ff40f9d04d7a85c99a5f4e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ProcessClickBegin</definition>
+        <argsstring>(const IntVector2 &amp;windowCursorPos, MouseButton button, MouseButtonFlags buttons, QualifierFlags qualifiers, Cursor *cursor, bool cursorVisible)</argsstring>
+        <name>ProcessClickBegin</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>windowCursorPos</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+          <declname>buttons</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+          <declname>qualifiers</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cursorVisible</declname>
+        </param>
+        <briefdescription>
+<para>Handle button or touch begin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="335" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a0b6b1255ad63bf5e9a68152113b6b97b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ProcessClickEnd</definition>
+        <argsstring>(const IntVector2 &amp;windowCursorPos, MouseButton button, MouseButtonFlags buttons, QualifierFlags qualifiers, Cursor *cursor, bool cursorVisible)</argsstring>
+        <name>ProcessClickEnd</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>windowCursorPos</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+          <declname>buttons</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+          <declname>qualifiers</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cursorVisible</declname>
+        </param>
+        <briefdescription>
+<para>Handle button or touch end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="337" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a2efa993d5cd9644feb5b915c746fab19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ProcessMove</definition>
+        <argsstring>(const IntVector2 &amp;windowCursorPos, const IntVector2 &amp;cursorDeltaPos, MouseButtonFlags buttons, QualifierFlags qualifiers, Cursor *cursor, bool cursorVisible)</argsstring>
+        <name>ProcessMove</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>windowCursorPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>cursorDeltaPos</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+          <declname>buttons</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+          <declname>qualifiers</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Cursor" kindref="compound">Cursor</ref> *</type>
+          <declname>cursor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cursorVisible</declname>
+        </param>
+        <briefdescription>
+<para>Handle mouse or touch move. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="339" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ade4982e869bc50740a842cbee1a826a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SendDragOrHoverEvent</definition>
+        <argsstring>(StringHash eventType, UIElement *element, const IntVector2 &amp;screenPos, const IntVector2 &amp;deltaPos, UI::DragData *dragData)</argsstring>
+        <name>SendDragOrHoverEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>deltaPos</declname>
+        </param>
+        <param>
+          <type><ref refid="structUrho3D_1_1UI_1_1DragData" kindref="compound">UI::DragData</ref> *</type>
+          <declname>dragData</declname>
+        </param>
+        <briefdescription>
+<para>Send a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> element drag or hover begin event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="342" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ab5160dd63acdfaed27978378980ecdbc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SendClickEvent</definition>
+        <argsstring>(StringHash eventType, UIElement *beginElement, UIElement *endElement, const IntVector2 &amp;pos, MouseButton button, MouseButtonFlags buttons, QualifierFlags qualifiers)</argsstring>
+        <name>SendClickEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>beginElement</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>endElement</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+          <declname>buttons</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+          <declname>qualifiers</declname>
+        </param>
+        <briefdescription>
+<para>Send a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> click event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="345" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a908e89573ca1d50bdd0968fecd747e5d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::SendDoubleClickEvent</definition>
+        <argsstring>(UIElement *beginElement, UIElement *endElement, const IntVector2 &amp;firstPos, const IntVector2 &amp;secondPos, MouseButton button, MouseButtonFlags buttons, QualifierFlags qualifiers)</argsstring>
+        <name>SendDoubleClickEvent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>beginElement</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> *</type>
+          <declname>endElement</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>firstPos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>secondPos</declname>
+        </param>
+        <param>
+          <type>MouseButton</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">MouseButtonFlags</ref></type>
+          <declname>buttons</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">QualifierFlags</ref></type>
+          <declname>qualifiers</declname>
+        </param>
+        <briefdescription>
+<para>Send a <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> double click event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="350" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aefd3544d155762334a00429ef8196bae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleScreenMode</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleScreenMode</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle screen mode event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="353" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a0c3fcb4a57507c8c853110327a37e78e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleMouseButtonDown</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleMouseButtonDown</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle mouse button down event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="355" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a202ce9721e6df2268a76fd2a2eaf6137" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleMouseButtonUp</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleMouseButtonUp</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle mouse button up event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="357" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1ab060eae35465694dc81aae13d95a38ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleMouseMove</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleMouseMove</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle mouse move event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="359" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa0f1800447d1a747be7e2c7c71e5e069" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleMouseWheel</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleMouseWheel</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle mouse wheel event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="361" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a63fbf9f726a2e7819a9327cb4aeea381" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleTouchBegin</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleTouchBegin</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle touch begin event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="363" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a13758a604f1ecbc65b79a9d2557515f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleTouchEnd</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleTouchEnd</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle touch end event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="365" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a278173dfecab92ee2e34545a7a861048" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleTouchMove</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleTouchMove</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle touch move event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="367" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1aa7966075651b12fe5bc1dae57a5bb636" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleKeyDown</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleKeyDown</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle keypress event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="369" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a4a2c486b01a8b5d5a44a84a3d9b02db1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleTextInput</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleTextInput</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle text input event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="371" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a97eef32a016b76c0d9ee93730772abb5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleBeginFrame</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleBeginFrame</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle frame begin event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="373" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a13c304d61ad9f05554b32fe017e07e0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandlePostUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandlePostUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle logic post-update event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="375" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a05bd51bad1a135929174fcd7fe5fcf96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleRenderUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleRenderUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle render update event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="377" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a61b6b9a0bf5f98fa5bdce42808e0ccc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::HandleDropFile</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleDropFile</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle a file being drag-dropped into the application window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="379" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a96a0f5cfe96ea4584aeabcef986ec94c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;, <ref refid="structUrho3D_1_1UI_1_1DragData" kindref="compound">DragData</ref> * &gt;::Iterator</type>
+        <definition>HashMap&lt;WeakPtr&lt;UIElement&gt;, DragData*&gt;::Iterator Urho3D::UI::DragElementErase</definition>
+        <argsstring>(HashMap&lt; WeakPtr&lt; UIElement &gt;, DragData * &gt;::Iterator i)</argsstring>
+        <name>DragElementErase</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1UIElement" kindref="compound">UIElement</ref> &gt;, <ref refid="structUrho3D_1_1UI_1_1DragData" kindref="compound">DragData</ref> * &gt;::Iterator</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Remove drag data and return next iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="381" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a1c229cf9c4379637441b75fe2ff714f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ProcessDragCancel</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessDragCancel</name>
+        <briefdescription>
+<para>Handle clean up on a drag cancel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="383" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a32697eb918b172f9371e3a3b26e45783" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::SumTouchPositions</definition>
+        <argsstring>(UI::DragData *dragData, const IntVector2 &amp;oldSendPos)</argsstring>
+        <name>SumTouchPositions</name>
+        <param>
+          <type><ref refid="structUrho3D_1_1UI_1_1DragData" kindref="compound">UI::DragData</ref> *</type>
+          <declname>dragData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>oldSendPos</declname>
+        </param>
+        <briefdescription>
+<para>Sum touch positions and return the begin position ready to send. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="385" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a0c77edf9094ab2df2011c36c74514400" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::UI::ResizeRootElement</definition>
+        <argsstring>()</argsstring>
+        <name>ResizeRootElement</name>
+        <briefdescription>
+<para>Resize root element to effective size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="387" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1UI_1a38fcbcb1cdf8ba23084fe52d4601d6b8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::UI::GetEffectiveRootElementSize</definition>
+        <argsstring>(bool applyScale=true) const</argsstring>
+        <name>GetEffectiveRootElementSize</name>
+        <param>
+          <type>bool</type>
+          <declname>applyScale</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return effective size of the root element, according to <ref refid="classUrho3D_1_1UI" kindref="compound">UI</ref> scale and resolution / custom size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="389" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UI subsystem. Manages the graphical user interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::UI</label>
+        <link refid="classUrho3D_1_1UI"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::UI</label>
+        <link refid="classUrho3D_1_1UI"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" line="60" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/UI/UI.h" bodystart="61" bodyend="483"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1UI_1a4804e2e721a32e867d2815d5decdb06a" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>batches_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1UI_1aa820ea19a96913819df9672d95094f60" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1UI_1a354d1e92f410d95262255651757db64a" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>clickTimer_</name></member>
+      <member refid="classUrho3D_1_1UI_1a0cc9033da8e7d3c6f5cc22b188bbb500" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>clipBoard_</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::UI</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1UI_1af26cf457fe79738d08052a434e525f72" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>ConvertSystemToUI</name></member>
+      <member refid="classUrho3D_1_1UI_1a76db3cfa0cbacb1c0ded6c60dcd32470" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>ConvertUIToSystem</name></member>
+      <member refid="classUrho3D_1_1UI_1aba5322d649b81f96aac7304295c343cb" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>cursor_</name></member>
+      <member refid="classUrho3D_1_1UI_1ab6aca12021fc6429cc8767e0814b16a3" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>customSize_</name></member>
+      <member refid="classUrho3D_1_1UI_1ae9abe9e6d8b996feaa7466a47d9e7c0c" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>DebugDraw</name></member>
+      <member refid="classUrho3D_1_1UI_1a6177dbca39ea8a19adaa380383157b84" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>debugDrawBatches_</name></member>
+      <member refid="classUrho3D_1_1UI_1a845bdd29a74f0847edb69613266a261e" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>debugVertexBuffer_</name></member>
+      <member refid="classUrho3D_1_1UI_1a55ffabacd0f5e3296a53ea6a7a0e3894" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>debugVertexData_</name></member>
+      <member refid="classUrho3D_1_1UI_1a02b9f41f7c78a7eec8933646b788cee5" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>defaultToolTipDelay_</name></member>
+      <member refid="classUrho3D_1_1UI_1a71579095f6e960656a8a247f8e3c19dc" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>doubleClickElement_</name></member>
+      <member refid="classUrho3D_1_1UI_1ae94449044092b4c22a99db31d49d5ece" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>doubleClickFirstPos_</name></member>
+      <member refid="classUrho3D_1_1UI_1a3c67b368f49d996699e14969d0e2962a" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>doubleClickInterval_</name></member>
+      <member refid="classUrho3D_1_1UI_1a54cd04e3d8cfdf0e201839d325c74a7f" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>dragBeginDistance_</name></member>
+      <member refid="classUrho3D_1_1UI_1a56c6cedfb0df5388dcc77580706274d5" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>dragBeginInterval_</name></member>
+      <member refid="classUrho3D_1_1UI_1a611f1fc8af42ecd78a26a7cc1780a8ef" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>dragConfirmedCount_</name></member>
+      <member refid="classUrho3D_1_1UI_1a96a0f5cfe96ea4584aeabcef986ec94c" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>DragElementErase</name></member>
+      <member refid="classUrho3D_1_1UI_1abf9281fbb8b466e68ee70ec952b9da2b" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>dragElements_</name></member>
+      <member refid="classUrho3D_1_1UI_1a550d82652e76b255e84976d8a83a4469" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>dragElementsConfirmed_</name></member>
+      <member refid="classUrho3D_1_1UI_1afb8de06b9f0f127e9c85bf13791c29aa" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>dragElementsCount_</name></member>
+      <member refid="classUrho3D_1_1UI_1a8aac3df8db433f24e4f5bda091b83151" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>focusElement_</name></member>
+      <member refid="classUrho3D_1_1UI_1a1c6bf3d43a0c1ddb92712ad01a0ddf34" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>fontHintLevel_</name></member>
+      <member refid="classUrho3D_1_1UI_1ac3768049c13d701a2bc43f1a68d22dce" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>fontOversampling_</name></member>
+      <member refid="classUrho3D_1_1UI_1a170dc2f73b9171937e0aa340ace1dc80" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>fontSubpixelThreshold_</name></member>
+      <member refid="classUrho3D_1_1UI_1ae4f5f5a5e2e1b624acfb7ac060f97d60" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>forceAutoHint_</name></member>
+      <member refid="classUrho3D_1_1UI_1aef695d9bbefb2724ac9f68b085769051" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetBatches</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1UI_1af46ddc5321c53518e2ea24263bc1a05e" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetClipboardText</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1UI_1a213eb5357af3f3bd44a2c3f3a22bb0b6" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetCursor</name></member>
+      <member refid="classUrho3D_1_1UI_1a3ae2e44e029886eeb0b12182bb002648" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetCursorPosition</name></member>
+      <member refid="classUrho3D_1_1UI_1a0af4d994bd99764d04ac7a252fdcc088" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetCursorPositionAndVisible</name></member>
+      <member refid="classUrho3D_1_1UI_1a36b02ca5bca8fc1dbfee62c54e4a29e6" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetCustomSize</name></member>
+      <member refid="classUrho3D_1_1UI_1af03eddaec815060372242bae1e1d4fd0" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetDefaultToolTipDelay</name></member>
+      <member refid="classUrho3D_1_1UI_1a65c1f800df801b4377838d9d2f6c1ad9" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetDoubleClickInterval</name></member>
+      <member refid="classUrho3D_1_1UI_1ae17e800a74053bfe63c7ef75118ac05b" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetDragBeginDistance</name></member>
+      <member refid="classUrho3D_1_1UI_1a6a05f87c92941189d0c2e6976df2c905" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetDragBeginInterval</name></member>
+      <member refid="classUrho3D_1_1UI_1a142a4a76e24e5f91bda57617c000970c" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetDragElement</name></member>
+      <member refid="classUrho3D_1_1UI_1ac77dc096b6f76d47ddefdd7596c49baf" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetDragElements</name></member>
+      <member refid="classUrho3D_1_1UI_1a38fcbcb1cdf8ba23084fe52d4601d6b8" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetEffectiveRootElementSize</name></member>
+      <member refid="classUrho3D_1_1UI_1aa0e7d2ba4e38df53be22d421add1e50c" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetElementAt</name></member>
+      <member refid="classUrho3D_1_1UI_1a1e395c7e10f494211894e12c3acf30eb" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetElementAt</name></member>
+      <member refid="classUrho3D_1_1UI_1a9725736cab6d815b4f51dc63293208ef" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetElementAt</name></member>
+      <member refid="classUrho3D_1_1UI_1a3a77777a01fd858521004e9c93e6b740" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetElementAt</name></member>
+      <member refid="classUrho3D_1_1UI_1a64c370ff3f5dcbee044573fae5db7a43" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetElementAt</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1UI_1a32c89e705286580ae6eddb3fa4d39094" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetFocusableElement</name></member>
+      <member refid="classUrho3D_1_1UI_1acd384c13565dc7a1bd8f56ae82d1d349" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetFocusElement</name></member>
+      <member refid="classUrho3D_1_1UI_1aaf53a4ed2561a48f885599f7db3f9562" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetFontHintLevel</name></member>
+      <member refid="classUrho3D_1_1UI_1aaa817429eb0bd5a60dd92db99d2cf747" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetFontOversampling</name></member>
+      <member refid="classUrho3D_1_1UI_1a65152b0c9d272e4c0194a504ae50c7ec" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetFontSubpixelThreshold</name></member>
+      <member refid="classUrho3D_1_1UI_1a7a32d86084ee54963500d01a6a3f41ae" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetForceAutoHint</name></member>
+      <member refid="classUrho3D_1_1UI_1a0dc31a7fd1445cd35baabd99645021d0" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetFrontElement</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1UI_1a73c45ddf24a6fced2b1576560cf1c2fb" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetMaxDoubleClickDistance</name></member>
+      <member refid="classUrho3D_1_1UI_1a3716d6e6d234c790ca5fc63542ccf7ee" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetMaxFontTextureSize</name></member>
+      <member refid="classUrho3D_1_1UI_1a2eae37a78be6c135b8bbc735f3533b24" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetNumDragElements</name></member>
+      <member refid="classUrho3D_1_1UI_1aa72d6a822a2b0ad607639e50eed06dec" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetRoot</name></member>
+      <member refid="classUrho3D_1_1UI_1a31438be3f7675e26a6fa9d5600b22728" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetRootModalElement</name></member>
+      <member refid="classUrho3D_1_1UI_1acfb2418515b35357fa94d483b58cd292" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetScale</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::UI</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::UI</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::UI</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1UI_1a31eb531ba7ae25b6f178c73a0b230945" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetUseMutableGlyphs</name></member>
+      <member refid="classUrho3D_1_1UI_1af8bef6358501427f9854b57a013bf7cc" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetUseScreenKeyboard</name></member>
+      <member refid="classUrho3D_1_1UI_1a2defe70f623606384482ed328fe85d91" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>GetUseSystemClipboard</name></member>
+      <member refid="classUrho3D_1_1UI_1a9d52e4b4707529b50ba2d1594562632c" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1UI_1a97eef32a016b76c0d9ee93730772abb5" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleBeginFrame</name></member>
+      <member refid="classUrho3D_1_1UI_1a61b6b9a0bf5f98fa5bdce42808e0ccc1" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleDropFile</name></member>
+      <member refid="classUrho3D_1_1UI_1aa7966075651b12fe5bc1dae57a5bb636" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleKeyDown</name></member>
+      <member refid="classUrho3D_1_1UI_1a0c3fcb4a57507c8c853110327a37e78e" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleMouseButtonDown</name></member>
+      <member refid="classUrho3D_1_1UI_1a202ce9721e6df2268a76fd2a2eaf6137" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleMouseButtonUp</name></member>
+      <member refid="classUrho3D_1_1UI_1ab060eae35465694dc81aae13d95a38ca" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleMouseMove</name></member>
+      <member refid="classUrho3D_1_1UI_1aa0f1800447d1a747be7e2c7c71e5e069" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleMouseWheel</name></member>
+      <member refid="classUrho3D_1_1UI_1a13c304d61ad9f05554b32fe017e07e0b" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandlePostUpdate</name></member>
+      <member refid="classUrho3D_1_1UI_1a05bd51bad1a135929174fcd7fe5fcf96" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleRenderUpdate</name></member>
+      <member refid="classUrho3D_1_1UI_1aefd3544d155762334a00429ef8196bae" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleScreenMode</name></member>
+      <member refid="classUrho3D_1_1UI_1a4a2c486b01a8b5d5a44a84a3d9b02db1" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleTextInput</name></member>
+      <member refid="classUrho3D_1_1UI_1a63fbf9f726a2e7819a9327cb4aeea381" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleTouchBegin</name></member>
+      <member refid="classUrho3D_1_1UI_1a13758a604f1ecbc65b79a9d2557515f1" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleTouchEnd</name></member>
+      <member refid="classUrho3D_1_1UI_1a278173dfecab92ee2e34545a7a861048" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>HandleTouchMove</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1UI_1a130650a1b81cec2403030078e1e56298" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>HasModalElement</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1UI_1a93fd6671fd9b27fa5be7eb793f1e5274" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>hoveredElements_</name></member>
+      <member refid="classUrho3D_1_1UI_1a5bb71ed105d2bb465a10f66c9bfcb275" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>Initialize</name></member>
+      <member refid="classUrho3D_1_1UI_1ab0ed29f21c35235309f9a2133e379061" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>initialized_</name></member>
+      <member refid="classUrho3D_1_1UI_1a2425df9cf0640d7ec66e4504a03a13ab" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>IsDragging</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1UI_1a6218e301deedaf7eb31ff74ba3fcdcd4" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>IsNonFocusedMouseWheel</name></member>
+      <member refid="classUrho3D_1_1UI_1a1a986ef6f1cf429d85a56d69a1c9f016" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>lastMouseButtons_</name></member>
+      <member refid="classUrho3D_1_1UI_1a936b1dde690d24a31eec73dd80306ff8" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>LoadLayout</name></member>
+      <member refid="classUrho3D_1_1UI_1aa4c5a7612ea874219a4d2f58325d26d3" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>LoadLayout</name></member>
+      <member refid="classUrho3D_1_1UI_1aecf041a3fdeebe985a483a9baf2ca1cb" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>maxDoubleClickDist_</name></member>
+      <member refid="classUrho3D_1_1UI_1afcb52afb80f6bf148ab12bc5fe644053" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>maxFontTextureSize_</name></member>
+      <member refid="classUrho3D_1_1UI_1a23f570eb03c6c16dcce751c33c63c2e3" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>mouseButtons_</name></member>
+      <member refid="classUrho3D_1_1UI_1aae50a1043655ed1849ef34b424fc0637" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>nonFocusedMouseWheel_</name></member>
+      <member refid="classUrho3D_1_1UI_1a0d26f06325bff9ee27f2b1ca15c5b164" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>nonModalBatchSize_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::UI</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1UI_1a78d9ccf1b8ff40f9d04d7a85c99a5f4e" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ProcessClickBegin</name></member>
+      <member refid="classUrho3D_1_1UI_1a0b6b1255ad63bf5e9a68152113b6b97b" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ProcessClickEnd</name></member>
+      <member refid="classUrho3D_1_1UI_1a1c229cf9c4379637441b75fe2ff714f6" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ProcessDragCancel</name></member>
+      <member refid="classUrho3D_1_1UI_1a444cb18d7cdbab6b37be5a6245c77388" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ProcessHover</name></member>
+      <member refid="classUrho3D_1_1UI_1a2efa993d5cd9644feb5b915c746fab19" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ProcessMove</name></member>
+      <member refid="classUrho3D_1_1UI_1ab55e007115277f705593db302a0b9ff5" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>qualifiers_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1UI_1aba4acefa333c93be113dcdacd366585e" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ReleaseFontFaces</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1UI_1a134bf8272c7a86fccd27a8437996adfb" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Render</name></member>
+      <member refid="classUrho3D_1_1UI_1a5f23155e2af111b3f82736beb7929e44" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>Render</name></member>
+      <member refid="classUrho3D_1_1UI_1a7d53010727de8a586ddc40f18126d6da" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>renderToTexture_</name></member>
+      <member refid="classUrho3D_1_1UI_1aa007010436204316b3fe4859db32458e" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>RenderUpdate</name></member>
+      <member refid="classUrho3D_1_1UI_1a0c77edf9094ab2df2011c36c74514400" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>ResizeRootElement</name></member>
+      <member refid="classUrho3D_1_1UI_1a0119e994ab4664d2343237eea2e42255" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>rootElement_</name></member>
+      <member refid="classUrho3D_1_1UI_1ae4b9b704fc84ca58f1514f932adcd38e" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>rootModalElement_</name></member>
+      <member refid="classUrho3D_1_1UI_1a5cd07643076e6439a75cb6de7e038df9" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SaveLayout</name></member>
+      <member refid="classUrho3D_1_1UI_1ab5160dd63acdfaed27978378980ecdbc" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>SendClickEvent</name></member>
+      <member refid="classUrho3D_1_1UI_1a908e89573ca1d50bdd0968fecd747e5d" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>SendDoubleClickEvent</name></member>
+      <member refid="classUrho3D_1_1UI_1ade4982e869bc50740a842cbee1a826a3" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>SendDragOrHoverEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1UI_1a45b6ad972b2f5fe0f50912b74d209209" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetClipboardText</name></member>
+      <member refid="classUrho3D_1_1UI_1ab7d94a2bf8f5fa20722957f0b0f8d716" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetCursor</name></member>
+      <member refid="classUrho3D_1_1UI_1a334732fd743cb98f97b6fbaa2465fc5b" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetCursorShape</name></member>
+      <member refid="classUrho3D_1_1UI_1ae6fc5d536a21f287476fafa07801ef5e" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetCustomSize</name></member>
+      <member refid="classUrho3D_1_1UI_1a95ba1e77d91c7c37394d6cb5e1c442ce" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetCustomSize</name></member>
+      <member refid="classUrho3D_1_1UI_1a47ac88d68d9e4bc648e7b1b892d02778" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetDefaultToolTipDelay</name></member>
+      <member refid="classUrho3D_1_1UI_1a7d66d21c4b7f72f310ad00f47257e490" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetDoubleClickInterval</name></member>
+      <member refid="classUrho3D_1_1UI_1a0139fe20b617fe2db097783b59a03172" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetDragBeginDistance</name></member>
+      <member refid="classUrho3D_1_1UI_1a246e421939905d6b9ce449dde586401b" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetDragBeginInterval</name></member>
+      <member refid="classUrho3D_1_1UI_1ac00c2460ea4afffbe17cbf3acc62a105" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetElementRenderTexture</name></member>
+      <member refid="classUrho3D_1_1UI_1a1354d0acce25fb4c12d08a4addc09612" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetFocusElement</name></member>
+      <member refid="classUrho3D_1_1UI_1aa0d8d9ace57d3dec84e96d92addf7f3b" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetFontHintLevel</name></member>
+      <member refid="classUrho3D_1_1UI_1a42bd2fdb0910d88ccd48cfeed172b0fd" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetFontOversampling</name></member>
+      <member refid="classUrho3D_1_1UI_1a4326a98edbefb4bf516bbb528e79e7bd" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetFontSubpixelThreshold</name></member>
+      <member refid="classUrho3D_1_1UI_1a3136d55d1cc4ea112324d890a332b810" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetForceAutoHint</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1UI_1a65d29ca3b07a6002e702deec015c5d5f" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetHeight</name></member>
+      <member refid="classUrho3D_1_1UI_1a1c3ad4aff2b4278c7c080a7473f0cee7" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetMaxDoubleClickDistance</name></member>
+      <member refid="classUrho3D_1_1UI_1a47474698321610582940b681d9d94314" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetMaxFontTextureSize</name></member>
+      <member refid="classUrho3D_1_1UI_1a70d676b6b63b600b08b56c18389f63c4" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetModalElement</name></member>
+      <member refid="classUrho3D_1_1UI_1ab9f9a3c281c6e12949c18349a41d994b" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetNonFocusedMouseWheel</name></member>
+      <member refid="classUrho3D_1_1UI_1a3c1e9ed8137e895cd9d2cf4e9be5796f" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetScale</name></member>
+      <member refid="classUrho3D_1_1UI_1ae3c4899c916faa7d4911975bd7e25372" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetUseMutableGlyphs</name></member>
+      <member refid="classUrho3D_1_1UI_1ad589c4fa698684727046bfd1da5e8854" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetUseScreenKeyboard</name></member>
+      <member refid="classUrho3D_1_1UI_1aae70a982e3eb0c59f2a49bf7113e2584" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetUseSystemClipboard</name></member>
+      <member refid="classUrho3D_1_1UI_1a81a47eaae0ed7eb793eca83f711ee272" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetVertexData</name></member>
+      <member refid="classUrho3D_1_1UI_1ab7bfd17a2b528bd11d3348ab1bdd1fc8" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SetWidth</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1UI_1a32697eb918b172f9371e3a3b26e45783" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>SumTouchPositions</name></member>
+      <member refid="classUrho3D_1_1UI_1a494957df71e930b169cc30801a9ec857" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>tempElements_</name></member>
+      <member refid="classUrho3D_1_1UI_1a39b858c8029f553f35a30ff87723f8fc" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>touchDragElements_</name></member>
+      <member refid="classUrho3D_1_1UI_1a2c011c43ca66ff4270e98601e4f9c4cf" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>UI</name></member>
+      <member refid="classUrho3D_1_1UI_1a6d4fde77ea8a546dfc545f89916d055c" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>uiRendered_</name></member>
+      <member refid="classUrho3D_1_1UI_1a9c4127f0690050b87e01d96c0222106a" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>uiScale_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1UI_1a72b99e98631cc015245568170dc221e0" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1UI_1a1b01d7a10ff43c74906548d2af23ed0c" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1UI_1a428bd74d9025f6caa0f50d6c031d3a77" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>useMutableGlyphs_</name></member>
+      <member refid="classUrho3D_1_1UI_1a80c9a5c0172b7611df13c8f3b3c7cbca" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>useScreenKeyboard_</name></member>
+      <member refid="classUrho3D_1_1UI_1aafcaa8a6c0b62fb69a9de1358944eff8" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>useSystemClipboard_</name></member>
+      <member refid="classUrho3D_1_1UI_1a34e16ef6641d3ec6d8fd73bad4b60b94" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>usingTouchInput_</name></member>
+      <member refid="classUrho3D_1_1UI_1abb4cf4dff13aae75d636812785d0fcd5" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>vertexBuffer_</name></member>
+      <member refid="classUrho3D_1_1UI_1a1ecf18f7175227a7d2a918129af5a143" prot="private" virt="non-virtual"><scope>Urho3D::UI</scope><name>vertexData_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::UI</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1UI_1a7848cfbc7819e06dbfd720106b94a05f" prot="public" virt="non-virtual"><scope>Urho3D::UI</scope><name>~UI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

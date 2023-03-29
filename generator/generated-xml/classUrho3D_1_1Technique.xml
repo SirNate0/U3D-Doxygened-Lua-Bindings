@@ -1,0 +1,757 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Technique" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Technique</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Resource" prot="public" virt="non-virtual">Urho3D::Resource</basecompoundref>
+    <includes refid="Technique_8h" local="no">Technique.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1Technique_1a70538530bc36e033e360880ef311df61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Renderer</definition>
+        <argsstring></argsstring>
+        <name>Renderer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Renderer" kindref="compound">Renderer</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="220" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a1626ebbdd89bce82f8218cc58e462589" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::basePassIndex</definition>
+        <argsstring></argsstring>
+        <name>basePassIndex</name>
+        <briefdescription>
+<para>Index for base pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="293" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a1383bedd12eb162729677de6e7917c8f" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::alphaPassIndex</definition>
+        <argsstring></argsstring>
+        <name>alphaPassIndex</name>
+        <briefdescription>
+<para>Index for alpha pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="295" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a5f02e7667abe200d5d4cba11bfd95a26" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::materialPassIndex</definition>
+        <argsstring></argsstring>
+        <name>materialPassIndex</name>
+        <briefdescription>
+<para>Index for prepass material pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="297" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1aa905b3fe4408f8635592c9d567273e2b" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::deferredPassIndex</definition>
+        <argsstring></argsstring>
+        <name>deferredPassIndex</name>
+        <briefdescription>
+<para>Index for deferred G-buffer pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="299" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a541ef35543b75dd4984cd9b4fa394f42" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::lightPassIndex</definition>
+        <argsstring></argsstring>
+        <name>lightPassIndex</name>
+        <briefdescription>
+<para>Index for per-pixel light pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="301" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1ac0829d66dc0b907d7627807055df5380" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::litBasePassIndex</definition>
+        <argsstring></argsstring>
+        <name>litBasePassIndex</name>
+        <briefdescription>
+<para>Index for lit base pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="303" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1aeaf08cbf1bdc3b0b48dc33fb6943efcb" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::litAlphaPassIndex</definition>
+        <argsstring></argsstring>
+        <name>litAlphaPassIndex</name>
+        <briefdescription>
+<para>Index for lit alpha pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="305" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a4a66b3bb74c56512df1da09c9f025fb7" prot="public" static="yes" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::shadowPassIndex</definition>
+        <argsstring></argsstring>
+        <name>shadowPassIndex</name>
+        <briefdescription>
+<para>Index for shadow pass. Initialized once <ref refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" kindref="member">GetPassIndex()</ref> has been called for the first time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="307" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a8723319320fdb9f1a1146fcdf8a3217e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::isDesktop_</definition>
+        <argsstring></argsstring>
+        <name>isDesktop_</name>
+        <briefdescription>
+<para>Require desktop GPU flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="311" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a63c5838361341744eff51bf1c0ea4ebf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::desktopSupport_</definition>
+        <argsstring></argsstring>
+        <name>desktopSupport_</name>
+        <briefdescription>
+<para>Cached desktop GPU support flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="313" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a127aed81b662cea37b0b4a95606c0834" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;Pass&gt; &gt; Urho3D::Technique::passes_</definition>
+        <argsstring></argsstring>
+        <name>passes_</name>
+        <briefdescription>
+<para>Passes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="315" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1a6959eeaa31acf6c3a9aadcf4cef53d1b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt;, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Technique" kindref="compound">Technique</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;Pair&lt;StringHash, StringHash&gt;, SharedPtr&lt;Technique&gt; &gt; Urho3D::Technique::cloneTechniques_</definition>
+        <argsstring></argsstring>
+        <name>cloneTechniques_</name>
+        <briefdescription>
+<para>Cached clones with added shader compilation defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="317" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Technique_1ad9998513900949eb5d42280973d03fc5" prot="private" static="yes" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref>, unsigned &gt;</type>
+        <definition>HashMap&lt;String, unsigned&gt; Urho3D::Technique::passIndices</definition>
+        <argsstring></argsstring>
+        <name>passIndices</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> index assignments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="320" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1ad80ba9a32af5c20d13a3cea3e35d2d9c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Technique::Technique</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Technique</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="224" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a5446726720ddfd53c2586f8446df23ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Technique::~Technique</definition>
+        <argsstring>() override</argsstring>
+        <name>~Technique</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="226" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a4760819cb750bd6c268ae6456df3493a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::BeginLoad</definition>
+        <argsstring>(Deserializer &amp;source) override</argsstring>
+        <name>BeginLoad</name>
+        <reimplements refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc">BeginLoad</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Load resource from stream. May be called from a worker thread. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="232" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1ab22bafdfa04b26d5134581d79521959d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Technique::SetIsDesktop</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetIsDesktop</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether requires desktop level hardware. BIND_AS_ALIAS_set_desktop </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="236" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1acf762c75b77aa62d2e139c2780bc4b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Urho3D::Technique::CreatePass</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>CreatePass</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a new pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="238" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1aca01010c78a647ccbfd7dba06915ee6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Technique::RemovePass</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RemovePass</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove a pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a89ef9105e42b2f4ebf620d3021034487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Technique::ReleaseShaders</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseShaders</name>
+        <briefdescription>
+<para>Reset shader pointers in all passes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="242" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1ae68453a4611d65d45f23d740ded1062c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Technique" kindref="compound">Technique</ref> &gt;</type>
+        <definition>SharedPtr&lt;Technique&gt; Urho3D::Technique::Clone</definition>
+        <argsstring>(const String &amp;cloneName=String::EMPTY) const</argsstring>
+        <name>Clone</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>cloneName</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Clone the technique. Passes will be deep copied to allow independent modification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="244" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1ae70af1cb3a560e7e61b421c543dd089a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::IsDesktop</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDesktop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether requires desktop level hardware. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="248" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1af60527b88f9000baa2162449df401de1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::IsSupported</definition>
+        <argsstring>() const</argsstring>
+        <name>IsSupported</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether technique is supported by the current hardware. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="252" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="252" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1afcbb590842f1208d608dbc7314516b3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::HasPass</definition>
+        <argsstring>(unsigned passIndex) const</argsstring>
+        <name>HasPass</name>
+        <param>
+          <type>unsigned</type>
+          <declname>passIndex</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has a pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="255" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a010efbe4645a1a34a141038a21a584fd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Technique::HasPass</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>HasPass</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has a pass by name. This overload should not be called in time-critical rendering loops; use a pre-acquired pass index instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="258" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a854e777a69d2f26daf076a85f2200ca1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Urho3D::Technique::GetPass</definition>
+        <argsstring>(unsigned passIndex) const</argsstring>
+        <name>GetPass</name>
+        <param>
+          <type>unsigned</type>
+          <declname>passIndex</declname>
+        </param>
+        <briefdescription>
+<para>Return a pass, or null if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="261" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="261" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a5b58836dc1fb1a99ac3e60f5ceac9dae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Urho3D::Technique::GetPass</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetPass</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a pass by name, or null if not found. This overload should not be called in time-critical rendering loops; use a pre-acquired pass index instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="264" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1af7b81482eec548fe9cada9ca05afa61b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Urho3D::Technique::GetSupportedPass</definition>
+        <argsstring>(unsigned passIndex) const</argsstring>
+        <name>GetSupportedPass</name>
+        <param>
+          <type>unsigned</type>
+          <declname>passIndex</declname>
+        </param>
+        <briefdescription>
+<para>Return a pass that is supported for rendering, or null if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="267" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="267" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a0bc501ffee01434541fb3459235512f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> *</type>
+        <definition>Pass* Urho3D::Technique::GetSupportedPass</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetSupportedPass</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a supported pass by name. This overload should not be called in time-critical rendering loops; use a pre-acquired pass index instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="274" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1ab057594403d9ff53c0038014a369348b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Technique::GetNumPasses</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumPasses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of passes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="278" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1aeee15f32782a01bba0d90b4540e2335d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>Vector&lt;String&gt; Urho3D::Technique::GetPassNames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPassNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all pass names. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="281" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a9b3f81914d22e1d38f04642628cacdf7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> * &gt;</type>
+        <definition>PODVector&lt;Pass*&gt; Urho3D::Technique::GetPasses</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPasses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return all passes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="284" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1afec06ec4c6e3e034ad027552445e1e5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Technique" kindref="compound">Technique</ref> &gt;</type>
+        <definition>SharedPtr&lt;Technique&gt; Urho3D::Technique::CloneWithDefines</definition>
+        <argsstring>(const String &amp;vsDefines, const String &amp;psDefines)</argsstring>
+        <name>CloneWithDefines</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>vsDefines</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>psDefines</declname>
+        </param>
+        <briefdescription>
+<para>Return a clone with added shader compilation defines. Called internally by <ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="287" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a386ce881f03158410a760462fcc82d7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Technique::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="229" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Technique::GetPassIndex</definition>
+        <argsstring>(const String &amp;passName)</argsstring>
+        <name>GetPassIndex</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>passName</declname>
+        </param>
+        <briefdescription>
+<para>Return a pass type index by name. Allocate new if not used yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="290" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Material technique. Consists of several passes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Technique</label>
+        <link refid="classUrho3D_1_1Technique"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Technique</label>
+        <link refid="classUrho3D_1_1Technique"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" line="216" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Technique.h" bodystart="217" bodyend="321"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Technique_1a1383bedd12eb162729677de6e7917c8f" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>alphaPassIndex</name></member>
+      <member refid="classUrho3D_1_1Technique_1a1626ebbdd89bce82f8218cc58e462589" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>basePassIndex</name></member>
+      <member refid="classUrho3D_1_1Technique_1a4760819cb750bd6c268ae6456df3493a" prot="public" virt="virtual"><scope>Urho3D::Technique</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Technique_1ae68453a4611d65d45f23d740ded1062c" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Clone</name></member>
+      <member refid="classUrho3D_1_1Technique_1a6959eeaa31acf6c3a9aadcf4cef53d1b" prot="private" virt="non-virtual"><scope>Urho3D::Technique</scope><name>cloneTechniques_</name></member>
+      <member refid="classUrho3D_1_1Technique_1afec06ec4c6e3e034ad027552445e1e5e" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>CloneWithDefines</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Technique</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Technique_1acf762c75b77aa62d2e139c2780bc4b18" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>CreatePass</name></member>
+      <member refid="classUrho3D_1_1Technique_1aa905b3fe4408f8635592c9d567273e2b" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>deferredPassIndex</name></member>
+      <member refid="classUrho3D_1_1Technique_1a63c5838361341744eff51bf1c0ea4ebf" prot="private" virt="non-virtual"><scope>Urho3D::Technique</scope><name>desktopSupport_</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d" prot="public" virt="virtual"><scope>Urho3D::Technique</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Technique_1ab057594403d9ff53c0038014a369348b" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetNumPasses</name></member>
+      <member refid="classUrho3D_1_1Technique_1a854e777a69d2f26daf076a85f2200ca1" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetPass</name></member>
+      <member refid="classUrho3D_1_1Technique_1a5b58836dc1fb1a99ac3e60f5ceac9dae" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetPass</name></member>
+      <member refid="classUrho3D_1_1Technique_1a9b3f81914d22e1d38f04642628cacdf7" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetPasses</name></member>
+      <member refid="classUrho3D_1_1Technique_1a0d7d71687120bbd39017b0308466972f" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetPassIndex</name></member>
+      <member refid="classUrho3D_1_1Technique_1aeee15f32782a01bba0d90b4540e2335d" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetPassNames</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Technique_1af7b81482eec548fe9cada9ca05afa61b" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetSupportedPass</name></member>
+      <member refid="classUrho3D_1_1Technique_1a0bc501ffee01434541fb3459235512f9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetSupportedPass</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Technique</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Technique</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Technique</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Technique_1afcbb590842f1208d608dbc7314516b3b" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>HasPass</name></member>
+      <member refid="classUrho3D_1_1Technique_1a010efbe4645a1a34a141038a21a584fd" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>HasPass</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Technique_1ae70af1cb3a560e7e61b421c543dd089a" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>IsDesktop</name></member>
+      <member refid="classUrho3D_1_1Technique_1a8723319320fdb9f1a1146fcdf8a3217e" prot="private" virt="non-virtual"><scope>Urho3D::Technique</scope><name>isDesktop_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Technique_1af60527b88f9000baa2162449df401de1" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>IsSupported</name></member>
+      <member refid="classUrho3D_1_1Technique_1a541ef35543b75dd4984cd9b4fa394f42" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>lightPassIndex</name></member>
+      <member refid="classUrho3D_1_1Technique_1aeaf08cbf1bdc3b0b48dc33fb6943efcb" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>litAlphaPassIndex</name></member>
+      <member refid="classUrho3D_1_1Technique_1ac0829d66dc0b907d7627807055df5380" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>litBasePassIndex</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1Technique_1a5f02e7667abe200d5d4cba11bfd95a26" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>materialPassIndex</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Technique</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Technique_1a127aed81b662cea37b0b4a95606c0834" prot="private" virt="non-virtual"><scope>Urho3D::Technique</scope><name>passes_</name></member>
+      <member refid="classUrho3D_1_1Technique_1ad9998513900949eb5d42280973d03fc5" prot="private" virt="non-virtual"><scope>Urho3D::Technique</scope><name>passIndices</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Technique_1a386ce881f03158410a760462fcc82d7c" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Technique_1a89ef9105e42b2f4ebf620d3021034487" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>ReleaseShaders</name></member>
+      <member refid="classUrho3D_1_1Technique_1aca01010c78a647ccbfd7dba06915ee6a" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>RemovePass</name></member>
+      <member refid="classUrho3D_1_1Technique_1a70538530bc36e033e360880ef311df61" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Renderer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd" prot="public" virt="virtual"><scope>Urho3D::Technique</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::Technique</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Technique_1ab22bafdfa04b26d5134581d79521959d" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SetIsDesktop</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Technique_1a4a66b3bb74c56512df1da09c9f025fb7" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>shadowPassIndex</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Technique_1ad80ba9a32af5c20d13a3cea3e35d2d9c" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>Technique</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Technique</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Technique_1a5446726720ddfd53c2586f8446df23ea" prot="public" virt="non-virtual"><scope>Urho3D::Technique</scope><name>~Technique</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,817 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Octant" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Octant</compoundname>
+    <derivedcompoundref refid="classUrho3D_1_1Octree" prot="public" virt="non-virtual">Urho3D::Octree</derivedcompoundref>
+    <includes refid="Octree_8h" local="no">Octree.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1abf376faa7fbdd20448c0782af73ee5e6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::Octant::worldBoundingBox_</definition>
+        <argsstring></argsstring>
+        <name>worldBoundingBox_</name>
+        <briefdescription>
+<para>World bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="139" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a6a4e6fa7bef5f84fb8b42f5e25b5ea0f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::Octant::cullingBox_</definition>
+        <argsstring></argsstring>
+        <name>cullingBox_</name>
+        <briefdescription>
+<para>Bounding box used for drawable object fitting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="141" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a108f540cf98ea89320f8e0fd1a5a3782" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> * &gt;</type>
+        <definition>PODVector&lt;Drawable*&gt; Urho3D::Octant::drawables_</definition>
+        <argsstring></argsstring>
+        <name>drawables_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="143" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1ae52a4716ad2ab161a1311e8b76624f12" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+        <definition>Octant* Urho3D::Octant::children_[NUM_OCTANTS]</definition>
+        <argsstring>[NUM_OCTANTS]</argsstring>
+        <name>children_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Child octants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="145" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1ad402316410a7f537b4a73fba90df55c4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Octant::center_</definition>
+        <argsstring></argsstring>
+        <name>center_</name>
+        <briefdescription>
+<para>World bounding box center. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="147" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a6a3aefdf0a4d920d418e540d4bc5dc50" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Octant::halfSize_</definition>
+        <argsstring></argsstring>
+        <name>halfSize_</name>
+        <briefdescription>
+<para>World bounding box half size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="149" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1acd00b21e2f22e37697c12299ca20339d" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Octant::level_</definition>
+        <argsstring></argsstring>
+        <name>level_</name>
+        <briefdescription>
+<para>Subdivision level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="151" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a61e9ad0ca606be6790fcdbb0801a4e55" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Octant::numDrawables_</definition>
+        <argsstring></argsstring>
+        <name>numDrawables_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Number of drawable objects in this octant and child octants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="153" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a5ad23d7d6efed939ca9035303cdbc7b6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+        <definition>Octant* Urho3D::Octant::parent_</definition>
+        <argsstring></argsstring>
+        <name>parent_</name>
+        <briefdescription>
+<para>Parent octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="155" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a33ce784c538181c58558eb371ec3d81a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref> *</type>
+        <definition>Octree* Urho3D::Octant::root_</definition>
+        <argsstring></argsstring>
+        <name>root_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref> root. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="157" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Octant_1a70211885df734b6607dc5e76df3a77dc" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Octant::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> index relative to its siblings or ROOT_INDEX for root octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="159" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a45c74cdea87783c7b5e65e1d5559eaaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Octant::Octant</definition>
+        <argsstring>(const BoundingBox &amp;box, unsigned level, Octant *parent, Octree *root, unsigned index=ROOT_INDEX)</argsstring>
+        <name>Octant</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+          <defval>ROOT_INDEX</defval>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="44" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a51819453503948f158b472fca3428cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Urho3D::Octant::~Octant</definition>
+        <argsstring>()</argsstring>
+        <name>~Octant</name>
+        <briefdescription>
+<para>Destruct. Move drawables to root if available (detach if not) and free child octants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="46" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1ae390f54e476fc71f707a3843e425ca72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+        <definition>Octant* Urho3D::Octant::GetOrCreateChild</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>GetOrCreateChild</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return or create a child octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="49" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a1929306ec143ce0c28e1b10a59b80f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::DeleteChild</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>DeleteChild</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Delete child octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a2065c1ede777a63ec52954ca57a6de45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::InsertDrawable</definition>
+        <argsstring>(Drawable *drawable)</argsstring>
+        <name>InsertDrawable</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> *</type>
+          <declname>drawable</declname>
+        </param>
+        <briefdescription>
+<para>Insert a drawable object by checking for fit recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a666ad6843dbf9c4a7d151be1c74911fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Octant::CheckDrawableFit</definition>
+        <argsstring>(const BoundingBox &amp;box) const</argsstring>
+        <name>CheckDrawableFit</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Check if a drawable object fits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1aa7b2de9f47533029665353d6cc2285fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::AddDrawable</definition>
+        <argsstring>(Drawable *drawable)</argsstring>
+        <name>AddDrawable</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> *</type>
+          <declname>drawable</declname>
+        </param>
+        <briefdescription>
+<para>Add a drawable object to this octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="58" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a74b7ecc1123df089ec72bcee7067db80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::RemoveDrawable</definition>
+        <argsstring>(Drawable *drawable, bool resetOctant=true)</argsstring>
+        <name>RemoveDrawable</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> *</type>
+          <declname>drawable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>resetOctant</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Remove a drawable object from this octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="66" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="66" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a50751c38c5001aea44fd530da62c22d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+        <definition>const BoundingBox&amp; Urho3D::Octant::GetWorldBoundingBox</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWorldBoundingBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return world-space bounding box. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="78" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1ac2850c7762a5333b92d254254e3de900" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+        <definition>const BoundingBox&amp; Urho3D::Octant::GetCullingBox</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCullingBox</name>
+        <briefdescription>
+<para>Return bounding box used for fitting drawable objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="81" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1acc66e8c24bd98db31e857ee8715f8d71" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Octant::GetLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLevel</name>
+        <briefdescription>
+<para>Return subdivision level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="84" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a14e3b95ab1730459ebd81b7eaeabf319" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+        <definition>Octant* Urho3D::Octant::GetParent</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParent</name>
+        <briefdescription>
+<para>Return parent octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="87" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a360158ca482e5cd6fc8412e9510ed582" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref> *</type>
+        <definition>Octree* Urho3D::Octant::GetRoot</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRoot</name>
+        <briefdescription>
+<para>Return octree root. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="90" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a150cca44cc71ca9237f7fe95b1752b8d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Octant::GetNumDrawables</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumDrawables</name>
+        <briefdescription>
+<para>Return number of drawables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="93" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a8382b02628fd755af2a20f83125d5b23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Octant::IsEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+<para>Return true if there are no drawable objects in this octant and child octants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="96" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a4c5871d090555bd4f5c749ffe3d07fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::ResetRoot</definition>
+        <argsstring>()</argsstring>
+        <name>ResetRoot</name>
+        <briefdescription>
+<para>Reset root pointer recursively. Called when the whole octree is being destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a0cc41080dea82194594c51583b1a2d62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest)</argsstring>
+        <name>DrawDebugGeometry</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw bounds to the debug graphics recursively. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="102" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a6304500141e75a6b6537a334d3922cec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::Initialize</definition>
+        <argsstring>(const BoundingBox &amp;box)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Initialize bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1af3fa8d34fbf5cd8bd8862cad88924812" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::GetDrawablesInternal</definition>
+        <argsstring>(OctreeQuery &amp;query, bool inside) const</argsstring>
+        <name>GetDrawablesInternal</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inside</declname>
+        </param>
+        <briefdescription>
+<para>Return drawable objects by a query, called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1af538bf340823bb42d8a3037a9ffd4d6d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::GetDrawablesInternal</definition>
+        <argsstring>(RayOctreeQuery &amp;query) const</argsstring>
+        <name>GetDrawablesInternal</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Return drawable objects by a ray query, called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a6403db50466326b28398f2277406d2cc" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::GetDrawablesOnlyInternal</definition>
+        <argsstring>(RayOctreeQuery &amp;query, PODVector&lt; Drawable * &gt; &amp;drawables) const</argsstring>
+        <name>GetDrawablesOnlyInternal</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> * &gt; &amp;</type>
+          <declname>drawables</declname>
+        </param>
+        <briefdescription>
+<para>Return drawable objects only for a threaded ray query, called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1add5b5e10c67f736f2003bf27c697ea5e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::IncDrawableCount</definition>
+        <argsstring>()</argsstring>
+        <name>IncDrawableCount</name>
+        <briefdescription>
+<para>Increase drawable object count recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="115" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Octant_1a84976e89a98dba0b3c112c47adde6309" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Octant::DecDrawableCount</definition>
+        <argsstring>()</argsstring>
+        <name>DecDrawableCount</name>
+        <briefdescription>
+<para>Decrease drawable object count recursively and remove octant if it becomes empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="123" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="123" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Octree octant. NO_BIND </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>drawables_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>center_</edgelabel>
+          <edgelabel>halfSize_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cullingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>children_</edgelabel>
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::BoundingBox</label>
+        <link refid="classUrho3D_1_1BoundingBox"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>max_</edgelabel>
+          <edgelabel>min_</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="10">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="19">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="21">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="8">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" line="40" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h" bodystart="41" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Octant_1aa7b2de9f47533029665353d6cc2285fc" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>AddDrawable</name></member>
+      <member refid="classUrho3D_1_1Octant_1ad402316410a7f537b4a73fba90df55c4" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>center_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a666ad6843dbf9c4a7d151be1c74911fb" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>CheckDrawableFit</name></member>
+      <member refid="classUrho3D_1_1Octant_1ae52a4716ad2ab161a1311e8b76624f12" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>children_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a6a4e6fa7bef5f84fb8b42f5e25b5ea0f" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>cullingBox_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a84976e89a98dba0b3c112c47adde6309" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>DecDrawableCount</name></member>
+      <member refid="classUrho3D_1_1Octant_1a1929306ec143ce0c28e1b10a59b80f4a" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>DeleteChild</name></member>
+      <member refid="classUrho3D_1_1Octant_1a108f540cf98ea89320f8e0fd1a5a3782" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>drawables_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a0cc41080dea82194594c51583b1a2d62" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Octant_1ac2850c7762a5333b92d254254e3de900" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetCullingBox</name></member>
+      <member refid="classUrho3D_1_1Octant_1af3fa8d34fbf5cd8bd8862cad88924812" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetDrawablesInternal</name></member>
+      <member refid="classUrho3D_1_1Octant_1af538bf340823bb42d8a3037a9ffd4d6d" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetDrawablesInternal</name></member>
+      <member refid="classUrho3D_1_1Octant_1a6403db50466326b28398f2277406d2cc" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetDrawablesOnlyInternal</name></member>
+      <member refid="classUrho3D_1_1Octant_1acc66e8c24bd98db31e857ee8715f8d71" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetLevel</name></member>
+      <member refid="classUrho3D_1_1Octant_1a150cca44cc71ca9237f7fe95b1752b8d" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetNumDrawables</name></member>
+      <member refid="classUrho3D_1_1Octant_1ae390f54e476fc71f707a3843e425ca72" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetOrCreateChild</name></member>
+      <member refid="classUrho3D_1_1Octant_1a14e3b95ab1730459ebd81b7eaeabf319" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetParent</name></member>
+      <member refid="classUrho3D_1_1Octant_1a360158ca482e5cd6fc8412e9510ed582" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetRoot</name></member>
+      <member refid="classUrho3D_1_1Octant_1a50751c38c5001aea44fd530da62c22d5" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>GetWorldBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Octant_1a6a3aefdf0a4d920d418e540d4bc5dc50" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>halfSize_</name></member>
+      <member refid="classUrho3D_1_1Octant_1add5b5e10c67f736f2003bf27c697ea5e" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>IncDrawableCount</name></member>
+      <member refid="classUrho3D_1_1Octant_1a70211885df734b6607dc5e76df3a77dc" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>index_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a6304500141e75a6b6537a334d3922cec" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>Initialize</name></member>
+      <member refid="classUrho3D_1_1Octant_1a2065c1ede777a63ec52954ca57a6de45" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>InsertDrawable</name></member>
+      <member refid="classUrho3D_1_1Octant_1a8382b02628fd755af2a20f83125d5b23" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>IsEmpty</name></member>
+      <member refid="classUrho3D_1_1Octant_1acd00b21e2f22e37697c12299ca20339d" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>level_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a61e9ad0ca606be6790fcdbb0801a4e55" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>numDrawables_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a45c74cdea87783c7b5e65e1d5559eaaa" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>Octant</name></member>
+      <member refid="classUrho3D_1_1Octant_1a5ad23d7d6efed939ca9035303cdbc7b6" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>parent_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a74b7ecc1123df089ec72bcee7067db80" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>RemoveDrawable</name></member>
+      <member refid="classUrho3D_1_1Octant_1a4c5871d090555bd4f5c749ffe3d07fc0" prot="public" virt="non-virtual"><scope>Urho3D::Octant</scope><name>ResetRoot</name></member>
+      <member refid="classUrho3D_1_1Octant_1a33ce784c538181c58558eb371ec3d81a" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>root_</name></member>
+      <member refid="classUrho3D_1_1Octant_1abf376faa7fbdd20448c0782af73ee5e6" prot="protected" virt="non-virtual"><scope>Urho3D::Octant</scope><name>worldBoundingBox_</name></member>
+      <member refid="classUrho3D_1_1Octant_1a51819453503948f158b472fca3428cc0" prot="public" virt="virtual"><scope>Urho3D::Octant</scope><name>~Octant</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

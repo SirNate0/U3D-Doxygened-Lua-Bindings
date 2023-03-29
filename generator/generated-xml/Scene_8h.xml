@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Scene_8h" kind="file" language="C++">
+    <compoundname>Scene.h</compoundname>
+    <includes refid="HashSet_8h" local="yes">../Container/HashSet.h</includes>
+    <includes refid="Mutex_8h" local="yes">../Core/Mutex.h</includes>
+    <includes refid="XMLElement_8h" local="yes">../Resource/XMLElement.h</includes>
+    <includes refid="JSONFile_8h" local="yes">../Resource/JSONFile.h</includes>
+    <includes refid="Node_8h" local="yes">../Scene/Node.h</includes>
+    <includes refid="SceneResolver_8h" local="yes">../Scene/SceneResolver.h</includes>
+    <includedby refid="IKEffector_8h" local="yes">/home/nathan/Projects/u3d/Source/Urho3D/IK/IKEffector.h</includedby>
+    <incdepgraph>
+      <node id="62">
+        <label>../Scene/Serializable.h</label>
+        <link refid="Serializable_8h_source"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>../Math/Matrix3.h</label>
+        <link refid="Matrix3_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../Math/Quaternion.h</label>
+        <link refid="Quaternion_8h_source"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../Core/Mutex.h</label>
+        <link refid="Mutex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>functional</label>
+      </node>
+      <node id="39">
+        <label>limits</label>
+      </node>
+      <node id="61">
+        <label>../Scene/Animatable.h</label>
+        <link refid="Animatable_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>../Resource/Resource.h</label>
+        <link refid="Resource_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>../Container/Pair.h</label>
+        <link refid="Pair_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>../Container/FlagSet.h</label>
+        <link refid="FlagSet_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../Container/HashBase.h</label>
+        <link refid="HashBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../Container/Ptr.h</label>
+        <link refid="Ptr_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../Math/Vector3.h</label>
+        <link refid="Vector3_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>cassert</label>
+      </node>
+      <node id="41">
+        <label>../Math/Matrix3x4.h</label>
+        <link refid="Matrix3x4_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>../Scene/AnimationDefs.h</label>
+        <link refid="AnimationDefs_8h"/>
+      </node>
+      <node id="54">
+        <label>../Core/Timer.h</label>
+        <link refid="Timer_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>cstdarg</label>
+      </node>
+      <node id="47">
+        <label>../Math/BoundingBox.h</label>
+        <link refid="BoundingBox_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>../Container/HashMap.h</label>
+        <link refid="HashMap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Container/HashSet.h</label>
+        <link refid="HashSet_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>../Core/Attribute.h</label>
+        <link refid="Attribute_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>../IO/VectorBuffer.h</label>
+        <link refid="VectorBuffer_8h_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>../Math/Random.h</label>
+        <link refid="Random_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../Math/Vector4.h</label>
+        <link refid="Vector4_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>../Scene/ValueAnimationInfo.h</label>
+        <link refid="ValueAnimationInfo_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>../IO/AbstractFile.h</label>
+        <link refid="AbstractFile_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../Math/Color.h</label>
+        <link refid="Color_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>../Resource/JSONValue.h</label>
+        <link refid="JSONValue_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>../Math/Rect.h</label>
+        <link refid="Rect_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>../Math/StringHash.h</label>
+        <link refid="StringHash_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>../IO/Serializer.h</label>
+        <link refid="Serializer_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>typeinfo</label>
+      </node>
+      <node id="60">
+        <label>../IO/Deserializer.h</label>
+        <link refid="Deserializer_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../Container/Allocator.h</label>
+        <link refid="Allocator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h</label>
+        <link refid="Scene_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="26">
+        <label>new</label>
+      </node>
+      <node id="19">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>../Container/Hash.h</label>
+        <link refid="Hash_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>../Math/MathDefs.h</label>
+        <link refid="MathDefs_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>../Scene/Node.h</label>
+        <link refid="Node_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>cstdlib</label>
+      </node>
+      <node id="34">
+        <label>cctype</label>
+      </node>
+      <node id="50">
+        <label>../Core/Object.h</label>
+        <link refid="Object_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="42">
+        <label>../Math/Matrix4.h</label>
+        <link refid="Matrix4_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>../Scene/SceneResolver.h</label>
+        <link refid="SceneResolver_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../Core/Variant.h</label>
+        <link refid="Variant_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../Container/RefCounted.h</label>
+        <link refid="RefCounted_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../Resource/JSONFile.h</label>
+        <link refid="JSONFile_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>../Container/LinkedList.h</label>
+        <link refid="LinkedList_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>type_traits</label>
+      </node>
+      <node id="9">
+        <label>../Container/Sort.h</label>
+        <link refid="Sort_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../Resource/XMLElement.h</label>
+        <link refid="XMLElement_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../Math/Vector2.h</label>
+        <link refid="Vector2_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="24">
+        <label>cstring</label>
+      </node>
+      <node id="14">
+        <label>initializer_list</label>
+      </node>
+      <node id="52">
+        <label>../Core/StringHashRegister.h</label>
+        <link refid="StringHashRegister_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/IK/IKEffector.h</label>
+        <link refid="IKEffector_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h</label>
+        <link refid="Scene_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structUrho3D_1_1AsyncProgress" prot="public">Urho3D::AsyncProgress</innerclass>
+    <innerclass refid="classUrho3D_1_1Scene" prot="public">Urho3D::Scene</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Container/HashSet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Core/Mutex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Resource/XMLElement.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Resource/JSONFile.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Scene/Node.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Scene/SceneResolver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">File;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">PackageFile;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>FIRST_REPLICATED_ID<sp/>=<sp/>0x1;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>LAST_REPLICATED_ID<sp/>=<sp/>0xffffff;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>FIRST_LOCAL_ID<sp/>=<sp/>0x01000000;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>LAST_LOCAL_ID<sp/>=<sp/>0xffffffff;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49" refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dca62f7f87f2a6a73b7e78b0e52237abc0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dca62f7f87f2a6a73b7e78b0e52237abc0b" kindref="member">LOAD_RESOURCES_ONLY</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="51" refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dca937d0d090f45208f9c7fdba1257a264d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dca937d0d090f45208f9c7fdba1257a264d" kindref="member">LOAD_SCENE</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dcaf797ff65555a6cc7136e096692658358" kindref="member">LOAD_SCENE_AND_RESOURCES</ref></highlight></codeline>
+<codeline lineno="54" refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dcaf797ff65555a6cc7136e096692658358" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="structUrho3D_1_1AsyncProgress" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1AsyncProgress" kindref="compound">AsyncProgress</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="structUrho3D_1_1AsyncProgress_1acade45aa9dcf1b86e0756b66ee7747ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr&lt;File&gt;</ref><sp/><ref refid="structUrho3D_1_1AsyncProgress_1acade45aa9dcf1b86e0756b66ee7747ba" kindref="member">file_</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structUrho3D_1_1AsyncProgress_1ab3f5b1ac12ff8f53c2b1ef7dec7850a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr&lt;XMLFile&gt;</ref><sp/><ref refid="structUrho3D_1_1AsyncProgress_1ab3f5b1ac12ff8f53c2b1ef7dec7850a7" kindref="member">xmlFile_</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structUrho3D_1_1AsyncProgress_1a7b67addf22616612b48ae357dfb91c4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr&lt;JSONFile&gt;</ref><sp/><ref refid="structUrho3D_1_1AsyncProgress_1a7b67addf22616612b48ae357dfb91c4b" kindref="member">jsonFile_</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structUrho3D_1_1AsyncProgress_1a7169ea22da4ded3e7793e41f5c511ec1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref><sp/><ref refid="structUrho3D_1_1AsyncProgress_1a7169ea22da4ded3e7793e41f5c511ec1" kindref="member">xmlElement_</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structUrho3D_1_1AsyncProgress_1ae004ddfd0c3990fe626409f85b841ea6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1AsyncProgress_1ae004ddfd0c3990fe626409f85b841ea6" kindref="member">jsonIndex_</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structUrho3D_1_1AsyncProgress_1a18248334617ad7d1975869836f20d425" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref><sp/><ref refid="structUrho3D_1_1AsyncProgress_1a18248334617ad7d1975869836f20d425" kindref="member">mode_</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structUrho3D_1_1AsyncProgress_1a11e4582e6e114bb4b475b492cd24b27c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet&lt;StringHash&gt;</ref><sp/><ref refid="structUrho3D_1_1AsyncProgress_1a11e4582e6e114bb4b475b492cd24b27c" kindref="member">resources_</ref>;</highlight></codeline>
+<codeline lineno="77" refid="structUrho3D_1_1AsyncProgress_1a22e40c9422f3df41f91b98b45c0f0824" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1AsyncProgress_1a22e40c9422f3df41f91b98b45c0f0824" kindref="member">loadedResources_</ref>;</highlight></codeline>
+<codeline lineno="79" refid="structUrho3D_1_1AsyncProgress_1af4591182c1ff1c7b34a16bfed73083c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1AsyncProgress_1af4591182c1ff1c7b34a16bfed73083c7" kindref="member">totalResources_</ref>;</highlight></codeline>
+<codeline lineno="81" refid="structUrho3D_1_1AsyncProgress_1a1039f5090bf35168547a465ece8a1ca0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1AsyncProgress_1a1039f5090bf35168547a465ece8a1ca0" kindref="member">loadedNodes_</ref>;</highlight></codeline>
+<codeline lineno="83" refid="structUrho3D_1_1AsyncProgress_1aa28e554a161e5f1664c18e32f870ec61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1AsyncProgress_1aa28e554a161e5f1664c18e32f870ec61" kindref="member">totalNodes_</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classUrho3D_1_1Scene" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>URHO3D_OBJECT(<ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref>,<sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Node_1afc62cfe6e0befb7e5023009f7a4700f6" kindref="member">Node::GetComponent</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Node_1aee9138da9786316c8355e6bcec11a8cf" kindref="member">Node::SaveXML</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Node_1a47b9c64700e94b5b2bdc2df02b4ba7f7" kindref="member">Node::SaveJSON</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classUrho3D_1_1Scene_1aecd178e1857bd96c3e4537651fd7f60c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1aecd178e1857bd96c3e4537651fd7f60c" kindref="member">Scene</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="102" refid="classUrho3D_1_1Scene_1a31c0af326c14b256492dbeba6fb29866" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Scene_1a31c0af326c14b256492dbeba6fb29866" kindref="member">~Scene</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105" refid="classUrho3D_1_1Scene_1a459bd56019d800840e3576d8c66fa748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a459bd56019d800840e3576d8c66fa748" kindref="member">RegisterObject</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classUrho3D_1_1Scene_1a3b1c5f7476658c0e7e236d20765bf670" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a3b1c5f7476658c0e7e236d20765bf670" kindref="member">Load</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110" refid="classUrho3D_1_1Scene_1a1ad663ce520307b5acf22d9c88012448" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a1ad663ce520307b5acf22d9c88012448" kindref="member">Save</ref>(<ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref>&amp;<sp/>dest)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112" refid="classUrho3D_1_1Scene_1a238a6b49c396e644dcaa8844110b9d1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a238a6b49c396e644dcaa8844110b9d1b" kindref="member">LoadXML</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref>&amp;<sp/>source)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114" refid="classUrho3D_1_1Scene_1afadea687110ecd2d6074d99cb7c44853" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1afadea687110ecd2d6074d99cb7c44853" kindref="member">LoadJSON</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref>&amp;<sp/>source)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116" refid="classUrho3D_1_1Scene_1a00b724dfff718639b9de12d71139499c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a00b724dfff718639b9de12d71139499c" kindref="member">MarkNetworkUpdate</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118" refid="classUrho3D_1_1Scene_1aef92923d99f0bdecfc24d0d677a86c46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1aef92923d99f0bdecfc24d0d677a86c46" kindref="member">AddReplicationState</ref>(<ref refid="structUrho3D_1_1NodeReplicationState" kindref="compound">NodeReplicationState</ref>*<sp/>state)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classUrho3D_1_1Scene_1a2773f04916fe39bed1fbf0ee08f7c1c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a2773f04916fe39bed1fbf0ee08f7c1c0" kindref="member">LoadXML</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source);</highlight></codeline>
+<codeline lineno="123" refid="classUrho3D_1_1Scene_1ac0d709ca533b3a22a800adad0b87077e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ac0d709ca533b3a22a800adad0b87077e" kindref="member">LoadJSON</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source);</highlight></codeline>
+<codeline lineno="125" refid="classUrho3D_1_1Scene_1a5ac1e6f39612b29299fcb0939dcfb939" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a5ac1e6f39612b29299fcb0939dcfb939" kindref="member">SaveXML</ref>(<ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref>&amp;<sp/>dest,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>indentation<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127" refid="classUrho3D_1_1Scene_1ae2e6b27d5bc30eabcc8bc007d0527e5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ae2e6b27d5bc30eabcc8bc007d0527e5d" kindref="member">SaveJSON</ref>(<ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref>&amp;<sp/>dest,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>indentation<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129" refid="classUrho3D_1_1Scene_1a37aeb39ae74b420d003a597adccac577" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a37aeb39ae74b420d003a597adccac577" kindref="member">LoadAsync</ref>(<ref refid="classUrho3D_1_1File" kindref="compound">File</ref>*<sp/>file,<sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref><sp/>mode<sp/>=<sp/>LOAD_SCENE_AND_RESOURCES);</highlight></codeline>
+<codeline lineno="131" refid="classUrho3D_1_1Scene_1a3cd90a6194226a9279aa127222401cf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a3cd90a6194226a9279aa127222401cf4" kindref="member">LoadAsyncXML</ref>(<ref refid="classUrho3D_1_1File" kindref="compound">File</ref>*<sp/>file,<sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref><sp/>mode<sp/>=<sp/>LOAD_SCENE_AND_RESOURCES);</highlight></codeline>
+<codeline lineno="133" refid="classUrho3D_1_1Scene_1aa66ba16b03bd936a00b96e18da703947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1aa66ba16b03bd936a00b96e18da703947" kindref="member">LoadAsyncJSON</ref>(<ref refid="classUrho3D_1_1File" kindref="compound">File</ref>*<sp/>file,<sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref><sp/>mode<sp/>=<sp/>LOAD_SCENE_AND_RESOURCES);</highlight></codeline>
+<codeline lineno="135" refid="classUrho3D_1_1Scene_1a08f99dc8b2497499e581f2eb7ce1a082" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a08f99dc8b2497499e581f2eb7ce1a082" kindref="member">StopAsyncLoading</ref>();</highlight></codeline>
+<codeline lineno="137" refid="classUrho3D_1_1Scene_1ab30e67d79d2cd0d82684a1957fc2df59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1ab30e67d79d2cd0d82684a1957fc2df59" kindref="member">Instantiate</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>rotation,<sp/><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode<sp/>=<sp/>REPLICATED);</highlight></codeline>
+<codeline lineno="139" refid="classUrho3D_1_1Scene_1a4022d5d112b6a2af42bcdb8c2472c0b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1a4022d5d112b6a2af42bcdb8c2472c0b2" kindref="member">InstantiateXML</ref></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref>&amp;<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>rotation,<sp/><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode<sp/>=<sp/>REPLICATED);</highlight></codeline>
+<codeline lineno="142" refid="classUrho3D_1_1Scene_1a7155c1d625afe08c35fdafc0e23f10ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1a7155c1d625afe08c35fdafc0e23f10ea" kindref="member">InstantiateXML</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>rotation,<sp/><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode<sp/>=<sp/>REPLICATED);</highlight></codeline>
+<codeline lineno="144" refid="classUrho3D_1_1Scene_1a562e0f74f7f291dc46818162a5ce85cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1a562e0f74f7f291dc46818162a5ce85cf" kindref="member">InstantiateJSON</ref></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref>&amp;<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>rotation,<sp/><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode<sp/>=<sp/>REPLICATED);</highlight></codeline>
+<codeline lineno="147" refid="classUrho3D_1_1Scene_1ab3100919edea4b46a1d05ef8fff80fda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1ab3100919edea4b46a1d05ef8fff80fda" kindref="member">InstantiateJSON</ref>(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>&amp;<sp/>source,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>rotation,<sp/><ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode<sp/>=<sp/>REPLICATED);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classUrho3D_1_1Scene_1a45ba116883b4aca1bb0572c485788172" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a45ba116883b4aca1bb0572c485788172" kindref="member">Clear</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clearReplicated<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clearLocal<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153" refid="classUrho3D_1_1Scene_1a44c46009d055c833246a44cfd95db635" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a44c46009d055c833246a44cfd95db635" kindref="member">SetUpdateEnabled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="156" refid="classUrho3D_1_1Scene_1ac8b0f11b63f431f1e605dd7379f39ede" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ac8b0f11b63f431f1e605dd7379f39ede" kindref="member">SetTimeScale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="159" refid="classUrho3D_1_1Scene_1a1ea4268272c328699017abfd3407eb30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a1ea4268272c328699017abfd3407eb30" kindref="member">SetElapsedTime</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="162" refid="classUrho3D_1_1Scene_1a1a98707b3d010c1260553d2465dc1848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a1a98707b3d010c1260553d2465dc1848" kindref="member">SetSmoothingConstant</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constant);</highlight></codeline>
+<codeline lineno="165" refid="classUrho3D_1_1Scene_1a8290804ab553ae30abe3d6ad00869e6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a8290804ab553ae30abe3d6ad00869e6f" kindref="member">SetSnapThreshold</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>threshold);</highlight></codeline>
+<codeline lineno="168" refid="classUrho3D_1_1Scene_1a3fd5ebce11f76099b794ceadc6117bf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a3fd5ebce11f76099b794ceadc6117bf4" kindref="member">SetAsyncLoadingMs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ms);</highlight></codeline>
+<codeline lineno="170" refid="classUrho3D_1_1Scene_1adb229515c3873cb6dbafe3ac58ab2053" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1adb229515c3873cb6dbafe3ac58ab2053" kindref="member">AddRequiredPackageFile</ref>(<ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref>*<sp/>package);</highlight></codeline>
+<codeline lineno="172" refid="classUrho3D_1_1Scene_1a50ef7c9239ecc6fd3a2c77604fe72f96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a50ef7c9239ecc6fd3a2c77604fe72f96" kindref="member">ClearRequiredPackageFiles</ref>();</highlight></codeline>
+<codeline lineno="174" refid="classUrho3D_1_1Scene_1ae57770dd69fc9f167d3b3954c6d766e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ae57770dd69fc9f167d3b3954c6d766e4" kindref="member">RegisterVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="176" refid="classUrho3D_1_1Scene_1a399d1f929856f16fa90af3154340cd8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a399d1f929856f16fa90af3154340cd8b" kindref="member">UnregisterVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="178" refid="classUrho3D_1_1Scene_1aa696692927ca2360290f70d4d0ed73fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1aa696692927ca2360290f70d4d0ed73fd" kindref="member">UnregisterAllVars</ref>();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classUrho3D_1_1Scene_1a2c1abfd03e7eee3d0f86b6fd7709209a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1a2c1abfd03e7eee3d0f86b6fd7709209a" kindref="member">GetNode</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183" refid="classUrho3D_1_1Scene_1a32eb80c8181d83ab1c3c0082a62eee39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/><ref refid="classUrho3D_1_1Scene_1a32eb80c8181d83ab1c3c0082a62eee39" kindref="member">GetComponent</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185" refid="classUrho3D_1_1Scene_1a9b72e4bbab23427d7265fce529a67e18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a9b72e4bbab23427d7265fce529a67e18" kindref="member">GetNodesWithTag</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Node*&gt;</ref>&amp;<sp/>dest,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>tag)<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="classUrho3D_1_1Scene_1a3bb23961ac954692216aa0f34cc546f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a3bb23961ac954692216aa0f34cc546f1" kindref="member">IsUpdateEnabled</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>updateEnabled_;<sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="classUrho3D_1_1Scene_1afb19f909e12d09ec9884e192a5843ffc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1afb19f909e12d09ec9884e192a5843ffc" kindref="member">IsAsyncLoading</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>asyncLoading_;<sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classUrho3D_1_1Scene_1ad71997f0cd10c31ff725a5efc71b401d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ad71997f0cd10c31ff725a5efc71b401d" kindref="member">GetAsyncProgress</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classUrho3D_1_1Scene_1af090f042ca4ddcc432af8841007b8a46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Scene_8h_1ace8b2ee715729b639a896ba7c7c2d0dc" kindref="member">LoadMode</ref><sp/><ref refid="classUrho3D_1_1Scene_1af090f042ca4ddcc432af8841007b8a46" kindref="member">GetAsyncLoadMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>asyncProgress_.mode_;<sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classUrho3D_1_1Scene_1a12059dc357a3080d9122e93c184baaa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Scene_1a12059dc357a3080d9122e93c184baaa6" kindref="member">GetFileName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fileName_;<sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="classUrho3D_1_1Scene_1aa0e1014070edae85d8088d5aab361184" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1aa0e1014070edae85d8088d5aab361184" kindref="member">GetChecksum</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>checksum_;<sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="classUrho3D_1_1Scene_1ac86d58c3b2cae8506016bee6f2194478" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ac86d58c3b2cae8506016bee6f2194478" kindref="member">GetTimeScale</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timeScale_;<sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="classUrho3D_1_1Scene_1a15626a9ebb993c67fe50701f158626c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a15626a9ebb993c67fe50701f158626c7" kindref="member">GetElapsedTime</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elapsedTime_;<sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="classUrho3D_1_1Scene_1a5f12adcba9cedf49639ea2cfc9ead7be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a5f12adcba9cedf49639ea2cfc9ead7be" kindref="member">GetSmoothingConstant</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>smoothingConstant_;<sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="classUrho3D_1_1Scene_1a46a89ab84b3647c017fc6d4188f085d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a46a89ab84b3647c017fc6d4188f085d3" kindref="member">GetSnapThreshold</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>snapThreshold_;<sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classUrho3D_1_1Scene_1a2c8dd9d17bea315cfd11676df7d3d8c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a2c8dd9d17bea315cfd11676df7d3d8c4" kindref="member">GetAsyncLoadingMs</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>asyncLoadingMs_;<sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classUrho3D_1_1Scene_1ab5d17b0edd7411051dcc387e8733cae2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;SharedPtr&lt;PackageFile&gt;</ref><sp/>&gt;&amp;<sp/><ref refid="classUrho3D_1_1Scene_1ab5d17b0edd7411051dcc387e8733cae2" kindref="member">GetRequiredPackageFiles</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>requiredPackageFiles_;<sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="classUrho3D_1_1Scene_1ab86b9bf5889dfd5732f4f2c1f58b8357" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/><ref refid="classUrho3D_1_1Scene_1ab86b9bf5889dfd5732f4f2c1f58b8357" kindref="member">GetVarName</ref>(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>hash)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classUrho3D_1_1Scene_1afb949e0fedbb2becb9aa7a3dfb0ed7b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1afb949e0fedbb2becb9aa7a3dfb0ed7b2" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep);</highlight></codeline>
+<codeline lineno="241" refid="classUrho3D_1_1Scene_1a6ccdc02bb8807ec15e9d095552b47084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a6ccdc02bb8807ec15e9d095552b47084" kindref="member">BeginThreadedUpdate</ref>();</highlight></codeline>
+<codeline lineno="243" refid="classUrho3D_1_1Scene_1a43a363d398b5622f092849953f8fb912" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a43a363d398b5622f092849953f8fb912" kindref="member">EndThreadedUpdate</ref>();</highlight></codeline>
+<codeline lineno="245" refid="classUrho3D_1_1Scene_1a3cd5eac8dc19288118ed5578257a17cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a3cd5eac8dc19288118ed5578257a17cb" kindref="member">DelayedMarkedDirty</ref>(<ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/>component);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="classUrho3D_1_1Scene_1a5a3132086218d7b7e6d8f3ccd50f7249" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a5a3132086218d7b7e6d8f3ccd50f7249" kindref="member">IsThreadedUpdate</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>threadedUpdate_;<sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="classUrho3D_1_1Scene_1ad9c34a640c81736de56d397c0dbd3cce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ad9c34a640c81736de56d397c0dbd3cce" kindref="member">GetFreeNodeID</ref>(<ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="253" refid="classUrho3D_1_1Scene_1a1011fadd1f7da49e3eb59b34d0d5f3de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a1011fadd1f7da49e3eb59b34d0d5f3de" kindref="member">GetFreeComponentID</ref>(<ref refid="Node_8h_1a45c3b749fa88ba012ae3eb5d1a1a4552" kindref="member">CreateMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="255" refid="classUrho3D_1_1Scene_1a97fb1222bd2f38e6c1c433c0b7e54d40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a97fb1222bd2f38e6c1c433c0b7e54d40" kindref="member">IsReplicatedID</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;<sp/>FIRST_LOCAL_ID;<sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258" refid="classUrho3D_1_1Scene_1a33cdc37dfa0f4d34961be75247c5c991" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a33cdc37dfa0f4d34961be75247c5c991" kindref="member">NodeTagAdded</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="260" refid="classUrho3D_1_1Scene_1a1b9a5cc5b133c9f25c67e9d03de4c28a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a1b9a5cc5b133c9f25c67e9d03de4c28a" kindref="member">NodeTagRemoved</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>tag);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classUrho3D_1_1Scene_1af7c4ba456a0fdbd205c063761126b02e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1af7c4ba456a0fdbd205c063761126b02e" kindref="member">NodeAdded</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="265" refid="classUrho3D_1_1Scene_1ae689b835fa42ad65090796e0a88d2410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ae689b835fa42ad65090796e0a88d2410" kindref="member">NodeRemoved</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="267" refid="classUrho3D_1_1Scene_1a6b1a145dd07c1d09ac9126c35577aa09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a6b1a145dd07c1d09ac9126c35577aa09" kindref="member">ComponentAdded</ref>(<ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/>component);</highlight></codeline>
+<codeline lineno="269" refid="classUrho3D_1_1Scene_1a72dbbc1c1e593069b21ec3e608d39ba6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a72dbbc1c1e593069b21ec3e608d39ba6" kindref="member">ComponentRemoved</ref>(<ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/>component);</highlight></codeline>
+<codeline lineno="271" refid="classUrho3D_1_1Scene_1a2feb9c3be8b1a8a080b33879a4ff29fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a2feb9c3be8b1a8a080b33879a4ff29fc" kindref="member">SetVarNamesAttr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="273" refid="classUrho3D_1_1Scene_1a6474fffb49a8fb541ae930341589cb56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref><sp/><ref refid="classUrho3D_1_1Scene_1a6474fffb49a8fb541ae930341589cb56" kindref="member">GetVarNamesAttr</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275" refid="classUrho3D_1_1Scene_1a355bbd2fc23e394d8b8a4cad0090519c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a355bbd2fc23e394d8b8a4cad0090519c" kindref="member">PrepareNetworkUpdate</ref>();</highlight></codeline>
+<codeline lineno="278" refid="classUrho3D_1_1Scene_1ad75c80d3e505a49a6ea069549477ee41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ad75c80d3e505a49a6ea069549477ee41" kindref="member">CleanupConnection</ref>(<ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref>*<sp/>connection);</highlight></codeline>
+<codeline lineno="280" refid="classUrho3D_1_1Scene_1ad1907f6104a0367b0e77672a3b36a347" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ad1907f6104a0367b0e77672a3b36a347" kindref="member">MarkNetworkUpdate</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="282" refid="classUrho3D_1_1Scene_1a7e6a52ecf14db5d598710f5ae05d2932" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1a7e6a52ecf14db5d598710f5ae05d2932" kindref="member">MarkNetworkUpdate</ref>(<ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/>component);</highlight></codeline>
+<codeline lineno="284" refid="classUrho3D_1_1Scene_1ab30a771ebbe990bc6746e8cd9f180bf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Scene_1ab30a771ebbe990bc6746e8cd9f180bf2" kindref="member">MarkReplicationDirty</ref>(<ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/>node);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HandleUpdate(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>eventType,<sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">VariantMap</ref>&amp;<sp/>eventData);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HandleResourceBackgroundLoaded(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>eventType,<sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">VariantMap</ref>&amp;<sp/>eventData);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateAsyncLoading();</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FinishAsyncLoading();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FinishLoading(<ref refid="classUrho3D_1_1Deserializer" kindref="compound">Deserializer</ref>*<sp/>source);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FinishSaving(<ref refid="classUrho3D_1_1Serializer" kindref="compound">Serializer</ref>*<sp/>dest)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PreloadResources(<ref refid="classUrho3D_1_1File" kindref="compound">File</ref>*<sp/>file,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSceneFile);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PreloadResourcesXML(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref>&amp;<sp/>element);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PreloadResourcesJSON(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1JSONValue" kindref="compound">JSONValue</ref>&amp;<sp/>value);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;unsigned, Node*&gt;</ref><sp/>replicatedNodes_;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;unsigned, Node*&gt;</ref><sp/>localNodes_;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;unsigned, Component*&gt;</ref><sp/>replicatedComponents_;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;unsigned, Component*&gt;</ref><sp/>localComponents_;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;StringHash, PODVector&lt;Node*&gt;</ref><sp/>&gt;<sp/>taggedNodes_;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1AsyncProgress" kindref="compound">AsyncProgress</ref><sp/>asyncProgress_;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1SceneResolver" kindref="compound">SceneResolver</ref><sp/>resolver_;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref><sp/>fileName_;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector&lt;SharedPtr&lt;PackageFile&gt;</ref><sp/>&gt;<sp/>requiredPackageFiles_;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;StringHash, String&gt;</ref><sp/>varNames_;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet&lt;unsigned&gt;</ref><sp/>networkUpdateNodes_;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet&lt;unsigned&gt;</ref><sp/>networkUpdateComponents_;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Component*&gt;</ref><sp/>delayedDirtyComponents_;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref><sp/>sceneMutex_;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">VariantMap</ref><sp/>smoothingData_;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>replicatedNodeID_;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>replicatedComponentID_;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>localNodeID_;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>localComponentID_;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>checksum_;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>asyncLoadingMs_;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeScale_;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>elapsedTime_;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>smoothingConstant_;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>snapThreshold_;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updateEnabled_;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>asyncLoading_;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>threadedUpdate_;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="Scene_8h_1a1ff2538cb56afa07f6a12cf2a48b845c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>URHO3D_API<sp/><ref refid="Scene_8h_1a1ff2538cb56afa07f6a12cf2a48b845c" kindref="member">RegisterSceneLibrary</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Scene/Scene.h"/>
+  </compounddef>
+</doxygen>

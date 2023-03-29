@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1BackgroundLoadItem" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::BackgroundLoadItem</compoundname>
+    <includes refid="BackgroundLoader_8h" local="no">BackgroundLoader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1BackgroundLoadItem_1afb16b283d97a1485af6667fce8649484" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> &gt;</type>
+        <definition>SharedPtr&lt;Resource&gt; Urho3D::BackgroundLoadItem::resource_</definition>
+        <argsstring></argsstring>
+        <name>resource_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="43" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BackgroundLoadItem_1a1ba8579b8e323193d2ec9ac2a68955bb" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt; &gt;</type>
+        <definition>HashSet&lt;Pair&lt;StringHash, StringHash&gt; &gt; Urho3D::BackgroundLoadItem::dependencies_</definition>
+        <argsstring></argsstring>
+        <name>dependencies_</name>
+        <briefdescription>
+<para>Resources depended on for loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="45" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BackgroundLoadItem_1a7d4f4773af255851d1b9defad8053be0" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt; &gt;</type>
+        <definition>HashSet&lt;Pair&lt;StringHash, StringHash&gt; &gt; Urho3D::BackgroundLoadItem::dependents_</definition>
+        <argsstring></argsstring>
+        <name>dependents_</name>
+        <briefdescription>
+<para>Resources that depend on this resource&apos;s loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="47" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BackgroundLoadItem_1a1af25b1cab503dbe63fa44f724b77346" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::BackgroundLoadItem::sendEventOnFailure_</definition>
+        <argsstring></argsstring>
+        <name>sendEventOnFailure_</name>
+        <briefdescription>
+<para>Whether to send failure event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="49" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Queue item for background loading of a resource. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Urho3D::HashSet&lt; Urho3D::Pair&lt; Urho3D::StringHash, Urho3D::StringHash &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Resource &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="6">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::BackgroundLoadItem</label>
+        <link refid="structUrho3D_1_1BackgroundLoadItem"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>resource_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dependencies_</edgelabel>
+          <edgelabel>dependents_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="40" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="41" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structUrho3D_1_1BackgroundLoadItem_1a1ba8579b8e323193d2ec9ac2a68955bb" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoadItem</scope><name>dependencies_</name></member>
+      <member refid="structUrho3D_1_1BackgroundLoadItem_1a7d4f4773af255851d1b9defad8053be0" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoadItem</scope><name>dependents_</name></member>
+      <member refid="structUrho3D_1_1BackgroundLoadItem_1afb16b283d97a1485af6667fce8649484" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoadItem</scope><name>resource_</name></member>
+      <member refid="structUrho3D_1_1BackgroundLoadItem_1a1af25b1cab503dbe63fa44f724b77346" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoadItem</scope><name>sendEventOnFailure_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

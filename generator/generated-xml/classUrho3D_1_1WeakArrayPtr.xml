@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1WeakArrayPtr" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::WeakArrayPtr</compoundname>
+    <includes refid="ArrayPtr_8h" local="no">ArrayPtr.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1WeakArrayPtr_1a4c21884bd051fcdb89d4c44c85b5b665" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Urho3D::WeakArrayPtr&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <briefdescription>
+<para>Pointer to the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="426" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WeakArrayPtr_1a9da718dc0d7fed63f650f649dfc6abd8" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> *</type>
+        <definition>RefCount* Urho3D::WeakArrayPtr&lt; T &gt;::refCount_</definition>
+        <argsstring></argsstring>
+        <name>refCount_</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="428" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a0bfb81785eab9e406364c701ffa19eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakArrayPtr&lt; T &gt;::WeakArrayPtr</definition>
+        <argsstring>()</argsstring>
+        <name>WeakArrayPtr</name>
+        <briefdescription>
+<para>Construct a null weak array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="235" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="235" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a665e2c3a42f13135ffdc6ac69d8d99d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakArrayPtr&lt; T &gt;::WeakArrayPtr</definition>
+        <argsstring>(const WeakArrayPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>WeakArrayPtr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another weak array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="242" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="242" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1aee88ede5ff7b7563c28c4e5ef655d356" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakArrayPtr&lt; T &gt;::WeakArrayPtr</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>WeakArrayPtr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="250" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="250" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a9159eff472e438d31552724e3d6b3851" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakArrayPtr&lt; T &gt;::~WeakArrayPtr</definition>
+        <argsstring>()</argsstring>
+        <name>~WeakArrayPtr</name>
+        <briefdescription>
+<para>Destruct. Release the weak reference to the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="258" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a02a256b21a4e4078ebdae692d250dac2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakArrayPtr&lt;T&gt;&amp; Urho3D::WeakArrayPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from a shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="264" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="264" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a112decc9aad97a9cc7c8938df20a26bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakArrayPtr&lt;T&gt;&amp; Urho3D::WeakArrayPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const WeakArrayPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from another weak array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="278" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="278" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1aafbd014c0d7d7ff395baf8b98a242657" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt;</type>
+        <definition>SharedArrayPtr&lt;T&gt; Urho3D::WeakArrayPtr&lt; T &gt;::Lock</definition>
+        <argsstring>() const</argsstring>
+        <name>Lock</name>
+        <briefdescription>
+<para>Convert to shared array pointer. If expired, return a null shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="292" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="292" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a058ec52c96ff0c4ebcd2bd284b2c5bf0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::WeakArrayPtr&lt; T &gt;::Get</definition>
+        <argsstring>() const</argsstring>
+        <name>Get</name>
+        <briefdescription>
+<para>Return raw pointer. If expired, return null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="301" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="301" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a1d95ff1b8be0bf58827266de173c8598" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::WeakArrayPtr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>Point to the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="310" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="310" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a389b03333b1ce51e09aa0b49568fe304" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::WeakArrayPtr&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Dereference the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="318" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="318" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a73fdd3905525c46b12709b778c74dcfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::WeakArrayPtr&lt; T &gt;::operator[]</definition>
+        <argsstring>(const int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Subscript the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="326" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="326" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1aeded6c08e7c554358d5cbe4cd1eb0292" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakArrayPtr&lt; T &gt;::operator==</definition>
+        <argsstring>(const WeakArrayPtr&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for equality with another weak array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="334" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="334" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a289ccf5f66127b6f0b1abd3e222d6136" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakArrayPtr&lt; T &gt;::operator!=</definition>
+        <argsstring>(const WeakArrayPtr&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for inequality with another weak array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="337" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="337" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a566b0e98d3ed4ac0f8c3b241e2748ae5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakArrayPtr&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(const WeakArrayPtr&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for less than with another weak array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="340" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="340" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a09d8dfc92657568d5487aa7d0c9373f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WeakArrayPtr&lt; T &gt;::operator T*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T*</name>
+        <briefdescription>
+<para>Convert to a raw pointer, null if array is expired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="343" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="343" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1aec4734a02477dddbc8d6e827706926b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakArrayPtr&lt; T &gt;::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Reset to null and release the weak reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="346" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="346" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a1efe8c2b4ef3097900b0a1cac0e5292e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::WeakArrayPtr&lt; T &gt;::StaticCast</definition>
+        <argsstring>(const WeakArrayPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>StaticCast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Perform a static cast from a weak array pointer of another type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="349" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="349" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1aaebd880a7ee712f18b8077a8eabda1da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::WeakArrayPtr&lt; T &gt;::DynamicCast</definition>
+        <argsstring>(const WeakArrayPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>DynamicCast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Perform a dynamic cast from a weak array pointer of another type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="358" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="358" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1afebd25fb1cd083a941ab4642cda3deb7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakArrayPtr&lt; T &gt;::Null</definition>
+        <argsstring>() const</argsstring>
+        <name>Null</name>
+        <briefdescription>
+<para>Check if the pointer is null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="373" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="373" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a7dcc97bfce81ef75dd8a5cbc2f73f64a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakArrayPtr&lt; T &gt;::NotNull</definition>
+        <argsstring>() const</argsstring>
+        <name>NotNull</name>
+        <briefdescription>
+<para>Check if the pointer is not null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="376" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="376" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a211ee25dfbf6067f054c8c2a1f4d77db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::WeakArrayPtr&lt; T &gt;::Refs</definition>
+        <argsstring>() const</argsstring>
+        <name>Refs</name>
+        <briefdescription>
+<para>Return the array&apos;s reference count, or 0 if null pointer or if array has expired. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="379" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="379" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1af1c6ff024da790896579bff37e689ee6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::WeakArrayPtr&lt; T &gt;::WeakRefs</definition>
+        <argsstring>() const</argsstring>
+        <name>WeakRefs</name>
+        <briefdescription>
+<para>Return the array&apos;s weak reference count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="382" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="382" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1ab6fdcb54db26ca65351dbdfb43ce387c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WeakArrayPtr&lt; T &gt;::Expired</definition>
+        <argsstring>() const</argsstring>
+        <name>Expired</name>
+        <briefdescription>
+<para>Return whether the array has expired. If null pointer, always return true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="385" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="385" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1aa27dc419348f92e2b72237d0837e9891" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> *</type>
+        <definition>RefCount* Urho3D::WeakArrayPtr&lt; T &gt;::RefCountPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>RefCountPtr</name>
+        <briefdescription>
+<para>Return pointer to <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="388" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="388" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a3d8f79f277de41029e66b2a50033c5b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::WeakArrayPtr&lt; T &gt;::ToHash</definition>
+        <argsstring>() const</argsstring>
+        <name>ToHash</name>
+        <briefdescription>
+<para>Return hash value for <ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref> &amp; <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="391" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="391" bodyend="391"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1ae77a6c680d32b9224873f330a88a79fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>WeakArrayPtr&lt;T&gt;&amp; Urho3D::WeakArrayPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const WeakArrayPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1WeakArrayPtr" kindref="compound">WeakArrayPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Prevent direct assignment from a weak array pointer of different type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="395" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1abe20b130cc939a55cd6dc70950bbc85a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakArrayPtr&lt; T &gt;::AddRef</definition>
+        <argsstring>()</argsstring>
+        <name>AddRef</name>
+        <briefdescription>
+<para>Add a weak reference to the array pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="398" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="398" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WeakArrayPtr_1a2d94d407a4688394e4221cf7d253479a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WeakArrayPtr&lt; T &gt;::ReleaseRef</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseRef</name>
+        <briefdescription>
+<para>Release the weak reference. Delete the Refcount structure if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="408" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="408" bodyend="423"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Weak array pointer template class. Uses non-intrusive reference counting. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="231" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="232" bodyend="429"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1abe20b130cc939a55cd6dc70950bbc85a" prot="private" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1aaebd880a7ee712f18b8077a8eabda1da" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>DynamicCast</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1ab6fdcb54db26ca65351dbdfb43ce387c" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>Expired</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a058ec52c96ff0c4ebcd2bd284b2c5bf0" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>Get</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1aafbd014c0d7d7ff395baf8b98a242657" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>Lock</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a7dcc97bfce81ef75dd8a5cbc2f73f64a" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>NotNull</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1afebd25fb1cd083a941ab4642cda3deb7" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>Null</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a09d8dfc92657568d5487aa7d0c9373f2" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator T*</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a289ccf5f66127b6f0b1abd3e222d6136" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator!=</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a389b03333b1ce51e09aa0b49568fe304" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator*</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a1d95ff1b8be0bf58827266de173c8598" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator-&gt;</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a566b0e98d3ed4ac0f8c3b241e2748ae5" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator&lt;</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a02a256b21a4e4078ebdae692d250dac2" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a112decc9aad97a9cc7c8938df20a26bd" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1ae77a6c680d32b9224873f330a88a79fc" prot="private" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1aeded6c08e7c554358d5cbe4cd1eb0292" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator==</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a73fdd3905525c46b12709b778c74dcfd" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a4c21884bd051fcdb89d4c44c85b5b665" prot="private" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>ptr_</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a9da718dc0d7fed63f650f649dfc6abd8" prot="private" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>refCount_</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1aa27dc419348f92e2b72237d0837e9891" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a211ee25dfbf6067f054c8c2a1f4d77db" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a2d94d407a4688394e4221cf7d253479a" prot="private" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1aec4734a02477dddbc8d6e827706926b2" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>Reset</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a1efe8c2b4ef3097900b0a1cac0e5292e" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>StaticCast</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a3d8f79f277de41029e66b2a50033c5b8" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>ToHash</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a0bfb81785eab9e406364c701ffa19eb1" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>WeakArrayPtr</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a665e2c3a42f13135ffdc6ac69d8d99d7" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>WeakArrayPtr</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1aee88ede5ff7b7563c28c4e5ef655d356" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>WeakArrayPtr</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1af1c6ff024da790896579bff37e689ee6" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1WeakArrayPtr_1a9159eff472e438d31552724e3d6b3851" prot="public" virt="non-virtual"><scope>Urho3D::WeakArrayPtr</scope><name>~WeakArrayPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

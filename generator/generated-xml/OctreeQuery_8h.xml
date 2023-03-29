@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="OctreeQuery_8h" kind="file" language="C++">
+    <compoundname>OctreeQuery.h</compoundname>
+    <includes refid="Drawable_8h" local="yes">../Graphics/Drawable.h</includes>
+    <includes refid="BoundingBox_8h" local="yes">../Math/BoundingBox.h</includes>
+    <includes refid="Frustum_8h" local="yes">../Math/Frustum.h</includes>
+    <includes refid="Ray_8h" local="yes">../Math/Ray.h</includes>
+    <includes refid="Sphere_8h" local="yes">../Math/Sphere.h</includes>
+    <includedby refid="Octree_8h" local="yes">/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h</includedby>
+    <incdepgraph>
+      <node id="40">
+        <label>../Scene/Serializable.h</label>
+        <link refid="Serializable_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>../Math/Matrix3.h</label>
+        <link refid="Matrix3_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>../Math/Quaternion.h</label>
+        <link refid="Quaternion_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>functional</label>
+      </node>
+      <node id="35">
+        <label>limits</label>
+      </node>
+      <node id="37">
+        <label>../Scene/Animatable.h</label>
+        <link refid="Animatable_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>../Container/Pair.h</label>
+        <link refid="Pair_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../Container/FlagSet.h</label>
+        <link refid="FlagSet_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h</label>
+        <link refid="OctreeQuery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../Container/HashBase.h</label>
+        <link refid="HashBase_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>../Scene/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>../Container/Ptr.h</label>
+        <link refid="Ptr_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../Math/Vector3.h</label>
+        <link refid="Vector3_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>../Math/Sphere.h</label>
+        <link refid="Sphere_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>cmath</label>
+      </node>
+      <node id="18">
+        <label>cassert</label>
+      </node>
+      <node id="49">
+        <label>../Math/Matrix3x4.h</label>
+        <link refid="Matrix3x4_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>../Scene/AnimationDefs.h</label>
+        <link refid="AnimationDefs_8h"/>
+      </node>
+      <node id="24">
+        <label>cstdarg</label>
+      </node>
+      <node id="60">
+        <label>../Math/Plane.h</label>
+        <link refid="Plane_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../Math/BoundingBox.h</label>
+        <link refid="BoundingBox_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>../Container/HashMap.h</label>
+        <link refid="HashMap_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>../Container/HashSet.h</label>
+        <link refid="HashSet_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../Core/Attribute.h</label>
+        <link refid="Attribute_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../Math/Random.h</label>
+        <link refid="Random_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../Math/Vector4.h</label>
+        <link refid="Vector4_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>../Scene/ValueAnimationInfo.h</label>
+        <link refid="ValueAnimationInfo_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>../Math/Color.h</label>
+        <link refid="Color_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../Math/Rect.h</label>
+        <link refid="Rect_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../Math/StringHash.h</label>
+        <link refid="StringHash_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>../Math/Ray.h</label>
+        <link refid="Ray_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>typeinfo</label>
+      </node>
+      <node id="8">
+        <label>../Container/Allocator.h</label>
+        <link refid="Allocator_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="22">
+        <label>new</label>
+      </node>
+      <node id="23">
+        <label>utility</label>
+      </node>
+      <node id="10">
+        <label>../Container/Hash.h</label>
+        <link refid="Hash_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Graphics/Drawable.h</label>
+        <link refid="Drawable_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../Math/MathDefs.h</label>
+        <link refid="MathDefs_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>../Math/Frustum.h</label>
+        <link refid="Frustum_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>cstdlib</label>
+      </node>
+      <node id="25">
+        <label>cctype</label>
+      </node>
+      <node id="53">
+        <label>../Core/Object.h</label>
+        <link refid="Object_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>cstddef</label>
+      </node>
+      <node id="50">
+        <label>../Math/Matrix4.h</label>
+        <link refid="Matrix4_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../Graphics/GraphicsDefs.h</label>
+        <link refid="GraphicsDefs_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>../Core/Variant.h</label>
+        <link refid="Variant_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../Container/RefCounted.h</label>
+        <link refid="RefCounted_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>../Container/LinkedList.h</label>
+        <link refid="LinkedList_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+      <node id="39">
+        <label>../Container/Sort.h</label>
+        <link refid="Sort_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../Math/Vector2.h</label>
+        <link refid="Vector2_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>algorithm</label>
+      </node>
+      <node id="11">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="19">
+        <label>cstring</label>
+      </node>
+      <node id="21">
+        <label>initializer_list</label>
+      </node>
+      <node id="55">
+        <label>../Core/StringHashRegister.h</label>
+        <link refid="StringHashRegister_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h</label>
+        <link refid="OctreeQuery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Octree.h</label>
+        <link refid="Octree_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classUrho3D_1_1OctreeQuery" prot="public">Urho3D::OctreeQuery</innerclass>
+    <innerclass refid="classUrho3D_1_1PointOctreeQuery" prot="public">Urho3D::PointOctreeQuery</innerclass>
+    <innerclass refid="classUrho3D_1_1SphereOctreeQuery" prot="public">Urho3D::SphereOctreeQuery</innerclass>
+    <innerclass refid="classUrho3D_1_1BoxOctreeQuery" prot="public">Urho3D::BoxOctreeQuery</innerclass>
+    <innerclass refid="classUrho3D_1_1FrustumOctreeQuery" prot="public">Urho3D::FrustumOctreeQuery</innerclass>
+    <innerclass refid="structUrho3D_1_1OctreeQueryResult" prot="public">Urho3D::OctreeQueryResult</innerclass>
+    <innerclass refid="structUrho3D_1_1RayQueryResult" prot="public">Urho3D::RayQueryResult</innerclass>
+    <innerclass refid="classUrho3D_1_1RayOctreeQuery" prot="public">Urho3D::RayOctreeQuery</innerclass>
+    <innerclass refid="classUrho3D_1_1AllContentOctreeQuery" prot="public">Urho3D::AllContentOctreeQuery</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Graphics/Drawable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/BoundingBox.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Frustum.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Ray.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Sphere.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Drawable;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Node;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classUrho3D_1_1OctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="classUrho3D_1_1OctreeQuery_1a263ee40b401403b8a2ab69cb0526dbb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a263ee40b401403b8a2ab69cb0526dbb4" kindref="member">OctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask)<sp/>:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_(result),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drawableFlags_(drawableFlags),</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>viewMask_(viewMask)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classUrho3D_1_1OctreeQuery_1a2c984c0098f42fe6fcf22fcd1d3507d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a2c984c0098f42fe6fcf22fcd1d3507d2" kindref="member">~OctreeQuery</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classUrho3D_1_1OctreeQuery_1a08e9c212426259195720d2ded6d64872" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a08e9c212426259195720d2ded6d64872" kindref="member">OctreeQuery</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57" refid="classUrho3D_1_1OctreeQuery_1a10f60572b42c001d3ee48258c59424d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>&amp;<sp/>operator<sp/>=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classUrho3D_1_1OctreeQuery_1a45d0a7fc737a9568275e275f38a7d2da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a45d0a7fc737a9568275e275f38a7d2da" kindref="member">TestOctant</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62" refid="classUrho3D_1_1OctreeQuery_1a5963c8409ce72b85bd9377b773d40c73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a5963c8409ce72b85bd9377b773d40c73" kindref="member">TestDrawables</ref>(<ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>start,<sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classUrho3D_1_1OctreeQuery_1aa57c45fc937d6f1336f788361e82fdeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/><ref refid="classUrho3D_1_1OctreeQuery_1aa57c45fc937d6f1336f788361e82fdeb" kindref="member">result_</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classUrho3D_1_1OctreeQuery_1a4a3608064b9da6320a62b2c0db7b32e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a4a3608064b9da6320a62b2c0db7b32e3" kindref="member">drawableFlags_</ref>;</highlight></codeline>
+<codeline lineno="69" refid="classUrho3D_1_1OctreeQuery_1a8e6e7966103b4a5482ea36829027e2cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery_1a8e6e7966103b4a5482ea36829027e2cd" kindref="member">viewMask_</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classUrho3D_1_1PointOctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1PointOctreeQuery" kindref="compound">PointOctreeQuery</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78" refid="classUrho3D_1_1PointOctreeQuery_1a64d25a35849bb5fbde7b395f5b6134bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PointOctreeQuery_1a64d25a35849bb5fbde7b395f5b6134bf" kindref="member">PointOctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>point,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags<sp/>=<sp/>DRAWABLE_ANY,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask<sp/>=<sp/>DEFAULT_VIEWMASK)<sp/>:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>(result,<sp/>drawableFlags,<sp/>viewMask),</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point_(point)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classUrho3D_1_1PointOctreeQuery_1a854c9f9ad62a4a27b366bca61614d023" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref><sp/><ref refid="classUrho3D_1_1PointOctreeQuery_1a854c9f9ad62a4a27b366bca61614d023" kindref="member">TestOctant</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88" refid="classUrho3D_1_1PointOctreeQuery_1a6fcf3680c6a0c843ec369516e6eadd37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PointOctreeQuery_1a6fcf3680c6a0c843ec369516e6eadd37" kindref="member">TestDrawables</ref>(<ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>start,<sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classUrho3D_1_1PointOctreeQuery_1ac4d90b504e19a0b016779da242b8a4d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1PointOctreeQuery_1ac4d90b504e19a0b016779da242b8a4d1" kindref="member">point_</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classUrho3D_1_1SphereOctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1SphereOctreeQuery" kindref="compound">SphereOctreeQuery</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100" refid="classUrho3D_1_1SphereOctreeQuery_1a7c499e2d95220faf9be86e78cc3ea883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1SphereOctreeQuery_1a7c499e2d95220faf9be86e78cc3ea883" kindref="member">SphereOctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Sphere" kindref="compound">Sphere</ref>&amp;<sp/>sphere,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags<sp/>=<sp/>DRAWABLE_ANY,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask<sp/>=<sp/>DEFAULT_VIEWMASK)<sp/>:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>(result,<sp/>drawableFlags,<sp/>viewMask),</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sphere_(sphere)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classUrho3D_1_1SphereOctreeQuery_1ad9265cf350b38d32df106489fd9b55b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref><sp/><ref refid="classUrho3D_1_1SphereOctreeQuery_1ad9265cf350b38d32df106489fd9b55b2" kindref="member">TestOctant</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110" refid="classUrho3D_1_1SphereOctreeQuery_1abd5bb776d0fcf468b5793a00a6c94f85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1SphereOctreeQuery_1abd5bb776d0fcf468b5793a00a6c94f85" kindref="member">TestDrawables</ref>(<ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>start,<sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classUrho3D_1_1SphereOctreeQuery_1a580a2b7190c9d419c6bdf0ff5db6f149" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Sphere" kindref="compound">Sphere</ref><sp/><ref refid="classUrho3D_1_1SphereOctreeQuery_1a580a2b7190c9d419c6bdf0ff5db6f149" kindref="member">sphere_</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classUrho3D_1_1BoxOctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1BoxOctreeQuery" kindref="compound">BoxOctreeQuery</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="122" refid="classUrho3D_1_1BoxOctreeQuery_1a741fc6644094e861a6cb9897e4969483" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1BoxOctreeQuery_1a741fc6644094e861a6cb9897e4969483" kindref="member">BoxOctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags<sp/>=<sp/>DRAWABLE_ANY,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask<sp/>=<sp/>DEFAULT_VIEWMASK)<sp/>:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>(result,<sp/>drawableFlags,<sp/>viewMask),</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>box_(box)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classUrho3D_1_1BoxOctreeQuery_1a36eef3564da88ce6d2ee96e29b6d4306" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref><sp/><ref refid="classUrho3D_1_1BoxOctreeQuery_1a36eef3564da88ce6d2ee96e29b6d4306" kindref="member">TestOctant</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132" refid="classUrho3D_1_1BoxOctreeQuery_1a9373e6af2e2013f12d31e6c6f583d6c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoxOctreeQuery_1a9373e6af2e2013f12d31e6c6f583d6c1" kindref="member">TestDrawables</ref>(<ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>start,<sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classUrho3D_1_1BoxOctreeQuery_1a4853708824cd2f9b0ba608e7fdfed847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref><sp/><ref refid="classUrho3D_1_1BoxOctreeQuery_1a4853708824cd2f9b0ba608e7fdfed847" kindref="member">box_</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classUrho3D_1_1FrustumOctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1FrustumOctreeQuery" kindref="compound">FrustumOctreeQuery</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="144" refid="classUrho3D_1_1FrustumOctreeQuery_1a0ada552c570e0bb2ec098ae11f10a16e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1FrustumOctreeQuery_1a0ada552c570e0bb2ec098ae11f10a16e" kindref="member">FrustumOctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref>&amp;<sp/>frustum,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags<sp/>=<sp/>DRAWABLE_ANY,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask<sp/>=<sp/>DEFAULT_VIEWMASK)<sp/>:</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>(result,<sp/>drawableFlags,<sp/>viewMask),</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frustum_(frustum)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classUrho3D_1_1FrustumOctreeQuery_1abe87994774279c12ef8eee6223c02650" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref><sp/><ref refid="classUrho3D_1_1FrustumOctreeQuery_1abe87994774279c12ef8eee6223c02650" kindref="member">TestOctant</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154" refid="classUrho3D_1_1FrustumOctreeQuery_1a2f14a7a9a1e62cf68e955360c38050a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1FrustumOctreeQuery_1a2f14a7a9a1e62cf68e955360c38050a1" kindref="member">TestDrawables</ref>(<ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>start,<sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classUrho3D_1_1FrustumOctreeQuery_1a96ed6e2ad30ad0c8f1a572917a6f67b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref><sp/><ref refid="classUrho3D_1_1FrustumOctreeQuery_1a96ed6e2ad30ad0c8f1a572917a6f67b3" kindref="member">frustum_</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structUrho3D_1_1OctreeQueryResult" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="structUrho3D_1_1OctreeQueryResult" kindref="compound">OctreeQueryResult</ref></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164" refid="structUrho3D_1_1OctreeQueryResult_1ab33889b5672b2e62ef00dd4e072836b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1OctreeQueryResult_1ab33889b5672b2e62ef00dd4e072836b0" kindref="member">OctreeQueryResult</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drawable_(nullptr),</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_(nullptr)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="structUrho3D_1_1OctreeQueryResult_1a5cedbc6f7845f6f80a4badf2a9018364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1OctreeQueryResult" kindref="compound">OctreeQueryResult</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>drawable_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1OctreeQueryResult_1a1cef682d453f97408a5d9df36ce98595" kindref="member">drawable_</ref><sp/>||<sp/>node_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1OctreeQueryResult_1a916a794ad1d77dc728155f60c2f1eefe" kindref="member">node_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="structUrho3D_1_1OctreeQueryResult_1a1cef682d453f97408a5d9df36ce98595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="structUrho3D_1_1OctreeQueryResult_1a1cef682d453f97408a5d9df36ce98595" kindref="member">drawable_</ref>;</highlight></codeline>
+<codeline lineno="176" refid="structUrho3D_1_1OctreeQueryResult_1a916a794ad1d77dc728155f60c2f1eefe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="structUrho3D_1_1OctreeQueryResult_1a916a794ad1d77dc728155f60c2f1eefe" kindref="member">node_</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="OctreeQuery_8h_1a87b77f7eab5a2ec750d2541c90e6eae8" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="OctreeQuery_8h_1a87b77f7eab5a2ec750d2541c90e6eae8" kindref="member">RayQueryLevel</ref></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>RAY_AABB<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>RAY_OBB,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>RAY_TRIANGLE,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>RAY_TRIANGLE_UV</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="structUrho3D_1_1RayQueryResult" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="structUrho3D_1_1RayQueryResult" kindref="compound">RayQueryResult</ref></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192" refid="structUrho3D_1_1RayQueryResult_1a1b3e7a655ad248c700c891dd0fb2cbdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1RayQueryResult_1a1b3e7a655ad248c700c891dd0fb2cbdd" kindref="member">RayQueryResult</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drawable_(nullptr),</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_(nullptr)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="structUrho3D_1_1RayQueryResult_1aad9b754e53a09ad1af407032fd950cce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1RayQueryResult" kindref="compound">RayQueryResult</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="200"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1a3639c0c1b9857cba19eccf53261019de" kindref="member">position_</ref><sp/>||</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>normal_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1a94d74afd25a4aede5f5fab38b887261e" kindref="member">normal_</ref><sp/>||</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>textureUV_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1a844538e0f53394d318f90c653073eac6" kindref="member">textureUV_</ref><sp/>||</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>distance_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1a48ec7438ad7e3e4a4bb1a5b93582b8eb" kindref="member">distance_</ref><sp/>||</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drawable_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1aa6cf1605fa0dfc2017a57573afce1de8" kindref="member">drawable_</ref><sp/>||</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1ae52c2e8ab4b1250cedce42fec9b2719b" kindref="member">node_</ref><sp/>||</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subObject_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1RayQueryResult_1a7f595f6027f1cdfcdb1bc286c551ce04" kindref="member">subObject_</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="structUrho3D_1_1RayQueryResult_1a3639c0c1b9857cba19eccf53261019de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="structUrho3D_1_1RayQueryResult_1a3639c0c1b9857cba19eccf53261019de" kindref="member">position_</ref>;</highlight></codeline>
+<codeline lineno="213" refid="structUrho3D_1_1RayQueryResult_1a94d74afd25a4aede5f5fab38b887261e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="structUrho3D_1_1RayQueryResult_1a94d74afd25a4aede5f5fab38b887261e" kindref="member">normal_</ref>;</highlight></codeline>
+<codeline lineno="215" refid="structUrho3D_1_1RayQueryResult_1a844538e0f53394d318f90c653073eac6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref><sp/><ref refid="structUrho3D_1_1RayQueryResult_1a844538e0f53394d318f90c653073eac6" kindref="member">textureUV_</ref>;</highlight></codeline>
+<codeline lineno="217" refid="structUrho3D_1_1RayQueryResult_1a48ec7438ad7e3e4a4bb1a5b93582b8eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance_{};</highlight></codeline>
+<codeline lineno="219" refid="structUrho3D_1_1RayQueryResult_1aa6cf1605fa0dfc2017a57573afce1de8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="structUrho3D_1_1RayQueryResult_1aa6cf1605fa0dfc2017a57573afce1de8" kindref="member">drawable_</ref>;</highlight></codeline>
+<codeline lineno="221" refid="structUrho3D_1_1RayQueryResult_1ae52c2e8ab4b1250cedce42fec9b2719b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref>*<sp/><ref refid="structUrho3D_1_1RayQueryResult_1ae52c2e8ab4b1250cedce42fec9b2719b" kindref="member">node_</ref>;</highlight></codeline>
+<codeline lineno="223" refid="structUrho3D_1_1RayQueryResult_1a7f595f6027f1cdfcdb1bc286c551ce04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>subObject_{};</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228" refid="classUrho3D_1_1RayOctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="232" refid="classUrho3D_1_1RayOctreeQuery_1a6d1faa4a6729eda2ae5866c005631988" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1a6d1faa4a6729eda2ae5866c005631988" kindref="member">RayOctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RayQueryResult&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref>&amp;<sp/>ray,<sp/><ref refid="OctreeQuery_8h_1a87b77f7eab5a2ec750d2541c90e6eae8" kindref="member">RayQueryLevel</ref><sp/>level<sp/>=<sp/>RAY_TRIANGLE,</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxDistance<sp/>=<sp/>M_INFINITY,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags<sp/>=<sp/>DRAWABLE_ANY,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask<sp/>=<sp/>DEFAULT_VIEWMASK)<sp/>:</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_(result),</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ray_(ray),</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>drawableFlags_(drawableFlags),</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>viewMask_(viewMask),</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxDistance_(maxDistance),</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>level_(level)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="classUrho3D_1_1RayOctreeQuery_1aa37ecc1ecdd66d5d5e5fd6829a8a167a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1aa37ecc1ecdd66d5d5e5fd6829a8a167a" kindref="member">RayOctreeQuery</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref>&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246" refid="classUrho3D_1_1RayOctreeQuery_1a51f9dbdd42d33883aa45e9fa36e7b570" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref>&amp;<sp/>operator<sp/>=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref>&amp;<sp/>rhs)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="classUrho3D_1_1RayOctreeQuery_1a11a87820ec71778e34317f2954bd3da1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RayQueryResult&gt;</ref>&amp;<sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1a11a87820ec71778e34317f2954bd3da1" kindref="member">result_</ref>;</highlight></codeline>
+<codeline lineno="251" refid="classUrho3D_1_1RayOctreeQuery_1a433178c8a9a6c707e3e49b4b5b9cc931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1a433178c8a9a6c707e3e49b4b5b9cc931" kindref="member">ray_</ref>;</highlight></codeline>
+<codeline lineno="253" refid="classUrho3D_1_1RayOctreeQuery_1abbaa5aaef647e41f74b863c2b3ee4208" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1abbaa5aaef647e41f74b863c2b3ee4208" kindref="member">drawableFlags_</ref>;</highlight></codeline>
+<codeline lineno="255" refid="classUrho3D_1_1RayOctreeQuery_1a960e05dc69a509ef726fffe9137ccd5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1a960e05dc69a509ef726fffe9137ccd5d" kindref="member">viewMask_</ref>;</highlight></codeline>
+<codeline lineno="257" refid="classUrho3D_1_1RayOctreeQuery_1afa4a7c030a345dc79ee04d44f3561302" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1afa4a7c030a345dc79ee04d44f3561302" kindref="member">maxDistance_</ref>;</highlight></codeline>
+<codeline lineno="259" refid="classUrho3D_1_1RayOctreeQuery_1a46e82454603d2d2c15f5a06923419a37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="OctreeQuery_8h_1a87b77f7eab5a2ec750d2541c90e6eae8" kindref="member">RayQueryLevel</ref><sp/><ref refid="classUrho3D_1_1RayOctreeQuery_1a46e82454603d2d2c15f5a06923419a37" kindref="member">level_</ref>;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classUrho3D_1_1AllContentOctreeQuery" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1AllContentOctreeQuery" kindref="compound">AllContentOctreeQuery</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="267" refid="classUrho3D_1_1AllContentOctreeQuery_1aa8cd0d25c6f0ce0635a9f14a7f24ab94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1AllContentOctreeQuery_1aa8cd0d25c6f0ce0635a9f14a7f24ab94" kindref="member">AllContentOctreeQuery</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Drawable*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>drawableFlags,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>viewMask)<sp/>:</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1OctreeQuery" kindref="compound">OctreeQuery</ref>(result,<sp/>drawableFlags,<sp/>viewMask)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273" refid="classUrho3D_1_1AllContentOctreeQuery_1ad6a06328777e8cf947c6fafb97a98352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref><sp/><ref refid="classUrho3D_1_1AllContentOctreeQuery_1ad6a06328777e8cf947c6fafb97a98352" kindref="member">TestOctant</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="275" refid="classUrho3D_1_1AllContentOctreeQuery_1a7e492d7f9b53dd9d7320da5626700127" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1AllContentOctreeQuery_1a7e492d7f9b53dd9d7320da5626700127" kindref="member">TestDrawables</ref>(<ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>start,<sp/><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref>**<sp/>end,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inside)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/OctreeQuery.h"/>
+  </compounddef>
+</doxygen>

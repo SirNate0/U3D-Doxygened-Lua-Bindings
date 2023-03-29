@@ -1,0 +1,885 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Geometry" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Geometry</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="Geometry_8h" local="no">Geometry.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a79cf7b66faeb3a4c4365d154df7032fb" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;VertexBuffer&gt; &gt; Urho3D::Geometry::vertexBuffers_</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffers_</name>
+        <briefdescription>
+<para>Vertex buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="130" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a19a266ea7ed249dfff487f2a978f90ef" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;IndexBuffer&gt; Urho3D::Geometry::indexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer_</name>
+        <briefdescription>
+<para>Index buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="132" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a7829b1c45576d075654ddf36d99249a5" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref></type>
+        <definition>PrimitiveType Urho3D::Geometry::primitiveType_</definition>
+        <argsstring></argsstring>
+        <name>primitiveType_</name>
+        <briefdescription>
+<para>Primitive type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="134" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a77ce4c33e394a2f53297bb45fde9c2d6" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::indexStart_</definition>
+        <argsstring></argsstring>
+        <name>indexStart_</name>
+        <briefdescription>
+<para>Start index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="136" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a4250a6175dcb9465d8add0fa807a446b" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::indexCount_</definition>
+        <argsstring></argsstring>
+        <name>indexCount_</name>
+        <briefdescription>
+<para>Number of indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="138" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a8f7d415cef8852f4fd0e3b4b27048fc5" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::vertexStart_</definition>
+        <argsstring></argsstring>
+        <name>vertexStart_</name>
+        <briefdescription>
+<para>First used vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="140" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1ace92ac6bf44f51077a531d014e36838f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::vertexCount_</definition>
+        <argsstring></argsstring>
+        <name>vertexCount_</name>
+        <briefdescription>
+<para>Number of used vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="142" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1aa028e4a71207b1a6f10077706a2f85ca" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Geometry::lodDistance_</definition>
+        <argsstring></argsstring>
+        <name>lodDistance_</name>
+        <briefdescription>
+<para>LOD distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="144" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a4c47277c1afd938c3b6edf0c6d15e1da" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt;</type>
+        <definition>PODVector&lt;VertexElement&gt; Urho3D::Geometry::rawElements_</definition>
+        <argsstring></argsstring>
+        <name>rawElements_</name>
+        <briefdescription>
+<para>Raw vertex data elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="146" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1aac8824e08c12c4db63eec854e4a018cf" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::Geometry::rawVertexData_</definition>
+        <argsstring></argsstring>
+        <name>rawVertexData_</name>
+        <briefdescription>
+<para>Raw vertex data override. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="148" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1aec19fb3551371feaa84d697f7af13594" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::Geometry::rawIndexData_</definition>
+        <argsstring></argsstring>
+        <name>rawIndexData_</name>
+        <briefdescription>
+<para>Raw index data override. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="150" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a4c544c5f631e6dee1e04ed23d848966a" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::rawVertexSize_</definition>
+        <argsstring></argsstring>
+        <name>rawVertexSize_</name>
+        <briefdescription>
+<para>Raw vertex data override size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="152" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Geometry_1a75ad3078445dab15a2f5fb333cfba933" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::rawIndexSize_</definition>
+        <argsstring></argsstring>
+        <name>rawIndexSize_</name>
+        <briefdescription>
+<para>Raw index data override size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="154" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a01ca8248a9fef5f91dcea32dbfbc4e2d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Geometry::Geometry</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Geometry</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct with one empty vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a8d230be4c825ab0602c5755d311b6a4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Geometry::~Geometry</definition>
+        <argsstring>() override</argsstring>
+        <name>~Geometry</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a525e58b2342454d4cf5c547960b4f330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Geometry::SetNumVertexBuffers</definition>
+        <argsstring>(unsigned num)</argsstring>
+        <name>SetNumVertexBuffers</name>
+        <param>
+          <type>unsigned</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set number of vertex buffers. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a7fe506eb49e6036e35fec6edc08ef8f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Geometry::SetVertexBuffer</definition>
+        <argsstring>(unsigned index, VertexBuffer *buffer)</argsstring>
+        <name>SetVertexBuffer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Set a vertex buffer by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a2c8b3a06312378f6dea4deab6600cf2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::SetIndexBuffer</definition>
+        <argsstring>(IndexBuffer *buffer)</argsstring>
+        <name>SetIndexBuffer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the index buffer. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1aeb6ac4fb32bebb05e54fac9a1d44da69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Geometry::SetDrawRange</definition>
+        <argsstring>(PrimitiveType type, unsigned indexStart, unsigned indexCount, bool getUsedVertexRange=true)</argsstring>
+        <name>SetDrawRange</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexCount</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>getUsedVertexRange</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set the draw range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1af3a3404a2b201245685231ba2874fb9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Geometry::SetDrawRange</definition>
+        <argsstring>(PrimitiveType type, unsigned indexStart, unsigned indexCount, unsigned vertexStart, unsigned vertexCount, bool checkIllegal=true)</argsstring>
+        <name>SetDrawRange</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexCount</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexStart</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>vertexCount</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkIllegal</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Set the draw range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a54ab90c05bb910d73d4e5c0d8a49cd30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::SetLodDistance</definition>
+        <argsstring>(float distance)</argsstring>
+        <name>SetLodDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the LOD distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a7ac855096c17c44c87778c92f0a9200d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::SetRawVertexData</definition>
+        <argsstring>(const SharedArrayPtr&lt; unsigned char &gt; &amp;data, const PODVector&lt; VertexElement &gt; &amp;elements)</argsstring>
+        <name>SetRawVertexData</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; &amp;</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+<para>Override raw vertex data to be returned for CPU-side operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1aec937b08757a662709aeb838b9cb4ef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::SetRawVertexData</definition>
+        <argsstring>(const SharedArrayPtr&lt; unsigned char &gt; &amp;data, unsigned elementMask)</argsstring>
+        <name>SetRawVertexData</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>elementMask</declname>
+        </param>
+        <briefdescription>
+<para>Override raw vertex data to be returned for CPU-side operations using a legacy vertex bitmask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1ae4729a8767143cc1572666861bba363f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::SetRawIndexData</definition>
+        <argsstring>(const SharedArrayPtr&lt; unsigned char &gt; &amp;data, unsigned indexSize)</argsstring>
+        <name>SetRawIndexData</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>indexSize</declname>
+        </param>
+        <briefdescription>
+<para>Override raw index data to be returned for CPU-side operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a4a7263e950743d3a59f18469766bfe19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::Draw</definition>
+        <argsstring>(Graphics *graphics)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref> *</type>
+          <declname>graphics</declname>
+        </param>
+        <briefdescription>
+<para>Draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a5570592acce0b750388b8582fd26195c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &gt; &gt; &amp;</type>
+        <definition>const Vector&lt;SharedPtr&lt;VertexBuffer&gt; &gt;&amp; Urho3D::Geometry::GetVertexBuffers</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexBuffers</name>
+        <briefdescription>
+<para>Return all vertex buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="74" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a3fd01453f3aac6712ad8dad1e5378d68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::GetNumVertexBuffers</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumVertexBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of vertex buffers. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="78" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a684947b4890e1b692af95494c852dfe1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> *</type>
+        <definition>VertexBuffer* Urho3D::Geometry::GetVertexBuffer</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetVertexBuffer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return vertex buffer by index. BIND_AS_ALIAS_get_vertexBuffers </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="82" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a27a254ba37e7259991b576e548f9dd9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> *</type>
+        <definition>IndexBuffer* Urho3D::Geometry::GetIndexBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIndexBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the index buffer. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="86" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a4bd221bf77289e0cca43265a9a292ed2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a81232b006e10e8bdacec055d6d4f637d" kindref="member">PrimitiveType</ref></type>
+        <definition>PrimitiveType Urho3D::Geometry::GetPrimitiveType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPrimitiveType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return primitive type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="90" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a98faaf23ff0c4ab8a8e16011517fea80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::GetIndexStart</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIndexStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return start index. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="94" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a00c09617cfdc7175df34b3701050de7e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::GetIndexCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetIndexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of indices. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="98" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a9985765cea3457bbb80a2441fc13a1ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::GetVertexStart</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return first used vertex. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="102" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a83dab7be1e1ca752552d9fc4ad56b2d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Geometry::GetVertexCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of used vertices. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="106" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a2d8c62757c90f0115f02ccb9dcec4e32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Geometry::GetLodDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return LOD distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="110" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a1ac5664e37d8c59e0f69d10dce35cc6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Urho3D::Geometry::GetBufferHash</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBufferHash</name>
+        <briefdescription>
+<para>Return buffers&apos; combined hash value for state sorting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="113" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1aec935a4a9c832f37255d72bc172c8f78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::GetRawData</definition>
+        <argsstring>(const unsigned char *&amp;vertexData, unsigned &amp;vertexSize, const unsigned char *&amp;indexData, unsigned &amp;indexSize, const PODVector&lt; VertexElement &gt; *&amp;elements) const</argsstring>
+        <name>GetRawData</name>
+        <param>
+          <type>const unsigned char *&amp;</type>
+          <declname>vertexData</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>vertexSize</declname>
+        </param>
+        <param>
+          <type>const unsigned char *&amp;</type>
+          <declname>indexData</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>indexSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; *&amp;</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+<para>Return raw vertex and index data for CPU operations, or null pointers if not available. Will return data of the first vertex buffer if override data not set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a3456722b826bbc0d7350f7eed3516b5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Geometry::GetRawDataShared</definition>
+        <argsstring>(SharedArrayPtr&lt; unsigned char &gt; &amp;vertexData, unsigned &amp;vertexSize, SharedArrayPtr&lt; unsigned char &gt; &amp;indexData, unsigned &amp;indexSize, const PODVector&lt; VertexElement &gt; *&amp;elements) const</argsstring>
+        <name>GetRawDataShared</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>vertexData</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>vertexSize</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>indexData</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>indexSize</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1VertexElement" kindref="compound">VertexElement</ref> &gt; *&amp;</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+<para>Return raw vertex and index data for CPU operations, or null pointers if not available. Will return data of the first vertex buffer if override data not set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1af24681caecc64ad63e7aa44fce638947" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Geometry::GetHitDistance</definition>
+        <argsstring>(const Ray &amp;ray, Vector3 *outNormal=nullptr, Vector2 *outUV=nullptr) const</argsstring>
+        <name>GetHitDistance</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> *</type>
+          <declname>outNormal</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> *</type>
+          <declname>outUV</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Return ray hit distance or infinity if no hit. Requires raw data to be set. Optionally return hit normal and hit uv coordinates at intersect point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="120" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a5c39ea0ce09a7d0e344b7cced50e4bb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Geometry::IsInside</definition>
+        <argsstring>(const Ray &amp;ray) const</argsstring>
+        <name>IsInside</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref> &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <briefdescription>
+<para>Return whether or not the ray is inside geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="122" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Geometry_1a3550ba8894e97adee7fa32c1d367d9fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Geometry::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether has empty draw range. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="126" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines one or more vertex buffers, an index buffer and a draw range. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Geometry</label>
+        <link refid="classUrho3D_1_1Geometry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Geometry</label>
+        <link refid="classUrho3D_1_1Geometry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" line="38" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Geometry.h" bodystart="39" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a4a7263e950743d3a59f18469766bfe19" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>Draw</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a01ca8248a9fef5f91dcea32dbfbc4e2d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>Geometry</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a1ac5664e37d8c59e0f69d10dce35cc6f" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetBufferHash</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Geometry_1af24681caecc64ad63e7aa44fce638947" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetHitDistance</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a27a254ba37e7259991b576e548f9dd9a" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetIndexBuffer</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a00c09617cfdc7175df34b3701050de7e" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetIndexCount</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a98faaf23ff0c4ab8a8e16011517fea80" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetIndexStart</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a2d8c62757c90f0115f02ccb9dcec4e32" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetLodDistance</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a3fd01453f3aac6712ad8dad1e5378d68" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetNumVertexBuffers</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a4bd221bf77289e0cca43265a9a292ed2" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetPrimitiveType</name></member>
+      <member refid="classUrho3D_1_1Geometry_1aec935a4a9c832f37255d72bc172c8f78" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetRawData</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a3456722b826bbc0d7350f7eed3516b5d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetRawDataShared</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Geometry</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Geometry</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Geometry</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a684947b4890e1b692af95494c852dfe1" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetVertexBuffer</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a5570592acce0b750388b8582fd26195c" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetVertexBuffers</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a83dab7be1e1ca752552d9fc4ad56b2d7" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetVertexCount</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a9985765cea3457bbb80a2441fc13a1ec" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>GetVertexStart</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a19a266ea7ed249dfff487f2a978f90ef" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>indexBuffer_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a4250a6175dcb9465d8add0fa807a446b" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>indexCount_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a77ce4c33e394a2f53297bb45fde9c2d6" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>indexStart_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a3550ba8894e97adee7fa32c1d367d9fd" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>IsEmpty</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a5c39ea0ce09a7d0e344b7cced50e4bb4" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>IsInside</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Geometry_1aa028e4a71207b1a6f10077706a2f85ca" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>lodDistance_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Geometry</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a7829b1c45576d075654ddf36d99249a5" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>primitiveType_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a4c47277c1afd938c3b6edf0c6d15e1da" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>rawElements_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1aec19fb3551371feaa84d697f7af13594" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>rawIndexData_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a75ad3078445dab15a2f5fb333cfba933" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>rawIndexSize_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1aac8824e08c12c4db63eec854e4a018cf" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>rawVertexData_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a4c544c5f631e6dee1e04ed23d848966a" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>rawVertexSize_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Geometry_1aeb6ac4fb32bebb05e54fac9a1d44da69" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetDrawRange</name></member>
+      <member refid="classUrho3D_1_1Geometry_1af3a3404a2b201245685231ba2874fb9a" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetDrawRange</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a2c8b3a06312378f6dea4deab6600cf2e" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetIndexBuffer</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a54ab90c05bb910d73d4e5c0d8a49cd30" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetLodDistance</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a525e58b2342454d4cf5c547960b4f330" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetNumVertexBuffers</name></member>
+      <member refid="classUrho3D_1_1Geometry_1ae4729a8767143cc1572666861bba363f" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetRawIndexData</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a7ac855096c17c44c87778c92f0a9200d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetRawVertexData</name></member>
+      <member refid="classUrho3D_1_1Geometry_1aec937b08757a662709aeb838b9cb4ef1" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetRawVertexData</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a7fe506eb49e6036e35fec6edc08ef8f8" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SetVertexBuffer</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a79cf7b66faeb3a4c4365d154df7032fb" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>vertexBuffers_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1ace92ac6bf44f51077a531d014e36838f" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>vertexCount_</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a8f7d415cef8852f4fd0e3b4b27048fc5" prot="private" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>vertexStart_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Geometry_1a8d230be4c825ab0602c5755d311b6a4a" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>~Geometry</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Geometry</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Geometry</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

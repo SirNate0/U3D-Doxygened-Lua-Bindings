@@ -1,0 +1,2019 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Camera" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Camera</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Component" prot="public" virt="non-virtual">Urho3D::Component</basecompoundref>
+    <includes refid="Camera_8h" local="no">Camera.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a311c5cb52ca76ebb523dfa701d997df4" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::Camera::view_</definition>
+        <argsstring></argsstring>
+        <name>view_</name>
+        <briefdescription>
+<para>Cached view matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="273" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a270ecd201e0a0cca5ea021f5fb2bc9bd" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::Camera::projection_</definition>
+        <argsstring></argsstring>
+        <name>projection_</name>
+        <briefdescription>
+<para>Cached projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="275" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1ac3138ffc6cfb8becc72510c474ce16a8" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>Frustum Urho3D::Camera::frustum_</definition>
+        <argsstring></argsstring>
+        <name>frustum_</name>
+        <briefdescription>
+<para>Cached world space frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="277" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1acb66972c70ba4fe144a7286cea027f9f" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::viewDirty_</definition>
+        <argsstring></argsstring>
+        <name>viewDirty_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> matrix dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="279" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1ac915da10e0e028634a43611d346324b1" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::projectionDirty_</definition>
+        <argsstring></argsstring>
+        <name>projectionDirty_</name>
+        <briefdescription>
+<para>Projection matrix dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="281" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aa697a36eaeb350b6c9036756f1e4913a" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::frustumDirty_</definition>
+        <argsstring></argsstring>
+        <name>frustumDirty_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="283" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a5a69408fd45628c90b3fb7b54925b622" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::orthographic_</definition>
+        <argsstring></argsstring>
+        <name>orthographic_</name>
+        <briefdescription>
+<para>Orthographic mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="285" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aa996b3eb9cddd24a1bf4ef2a6c89a281" prot="private" static="no" mutable="yes">
+        <type>float</type>
+        <definition>float Urho3D::Camera::projNearClip_</definition>
+        <argsstring></argsstring>
+        <name>projNearClip_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Cached actual near clip distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="287" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aaf982e0d480b0de259f0b1169e9e34db" prot="private" static="no" mutable="yes">
+        <type>float</type>
+        <definition>float Urho3D::Camera::projFarClip_</definition>
+        <argsstring></argsstring>
+        <name>projFarClip_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Cached actual far clip distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="289" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a841253060ee1b515c4007ef14d7bcda7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::nearClip_</definition>
+        <argsstring></argsstring>
+        <name>nearClip_</name>
+        <briefdescription>
+<para>Near clip distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="291" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aa7790aed822f9176bfa5296c5e796c64" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::farClip_</definition>
+        <argsstring></argsstring>
+        <name>farClip_</name>
+        <briefdescription>
+<para>Far clip distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="293" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a98f3fa73b5faf6cfd2a7adf5aa6421b1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::fov_</definition>
+        <argsstring></argsstring>
+        <name>fov_</name>
+        <briefdescription>
+<para>Field of view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="295" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1ad185cdb362658ff4371badde63b3d408" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::orthoSize_</definition>
+        <argsstring></argsstring>
+        <name>orthoSize_</name>
+        <briefdescription>
+<para>Orthographic view size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="297" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1ab456d96548b6c43edb94733e7513615c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::aspectRatio_</definition>
+        <argsstring></argsstring>
+        <name>aspectRatio_</name>
+        <briefdescription>
+<para>Aspect ratio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="299" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aa9202d5788ed45ee7b46d8ecc50fe05b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::zoom_</definition>
+        <argsstring></argsstring>
+        <name>zoom_</name>
+        <briefdescription>
+<para>Zoom. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="301" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a3c69b7f8dabacfea0de748af823d8868" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Camera::lodBias_</definition>
+        <argsstring></argsstring>
+        <name>lodBias_</name>
+        <briefdescription>
+<para>LOD bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="303" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a05fac8e6dd25006724dd742c8caf4a06" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Camera::viewMask_</definition>
+        <argsstring></argsstring>
+        <name>viewMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="305" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1ad83b3f27cc6d6b78c65d4e0806b6ddf4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">ViewOverrideFlags</ref></type>
+        <definition>ViewOverrideFlags Urho3D::Camera::viewOverrideFlags_</definition>
+        <argsstring></argsstring>
+        <name>viewOverrideFlags_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> override flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="307" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a8f1086a3e4ed079a1a3a1e171efc4cc6" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref></type>
+        <definition>FillMode Urho3D::Camera::fillMode_</definition>
+        <argsstring></argsstring>
+        <name>fillMode_</name>
+        <briefdescription>
+<para>Fill mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="309" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a3195888349d72bf137f8af0926f7ebe8" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::Camera::projectionOffset_</definition>
+        <argsstring></argsstring>
+        <name>projectionOffset_</name>
+        <briefdescription>
+<para>Projection offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="311" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aace08dbcdaa4371ef00a0e3793d01bc3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref></type>
+        <definition>Plane Urho3D::Camera::reflectionPlane_</definition>
+        <argsstring></argsstring>
+        <name>reflectionPlane_</name>
+        <briefdescription>
+<para>Reflection plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="313" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a72e00c1d191ed66f65bc975791c11f50" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref></type>
+        <definition>Plane Urho3D::Camera::clipPlane_</definition>
+        <argsstring></argsstring>
+        <name>clipPlane_</name>
+        <briefdescription>
+<para>Clipping plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="315" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1accf4f1b1fd18058fa64fed516963c116" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::Camera::reflectionMatrix_</definition>
+        <argsstring></argsstring>
+        <name>reflectionMatrix_</name>
+        <briefdescription>
+<para>Reflection matrix calculated from the plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="317" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1adc89ffbdc54f452c257bfc710d49b4e4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::autoAspectRatio_</definition>
+        <argsstring></argsstring>
+        <name>autoAspectRatio_</name>
+        <briefdescription>
+<para>Auto aspect ratio flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="319" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1aba03af3574d98e875aed7e97deffedd8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::flipVertical_</definition>
+        <argsstring></argsstring>
+        <name>flipVertical_</name>
+        <briefdescription>
+<para>Flip vertical flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="321" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a23ae06b61f79865b81f33b43402db68f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::useReflection_</definition>
+        <argsstring></argsstring>
+        <name>useReflection_</name>
+        <briefdescription>
+<para>Reflection mode enabled flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="323" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1a579f87270b9f654232c6b531bf8650e0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::useClipping_</definition>
+        <argsstring></argsstring>
+        <name>useClipping_</name>
+        <briefdescription>
+<para>Use custom clip plane flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="325" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Camera_1addf092705066c6e432d714d150b19b18" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::customProjection_</definition>
+        <argsstring></argsstring>
+        <name>customProjection_</name>
+        <briefdescription>
+<para>Use custom projection matrix flag. Used internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="327" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1aa890e45022efe5fbd8013039b8cea689" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Camera::Camera</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Camera</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="56" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a0164e4fc82bf8bb42690bad3b5b4db4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Camera::~Camera</definition>
+        <argsstring>() override</argsstring>
+        <name>~Camera</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a35b2f97c4a3370a26b10ff133f86d2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest) override</argsstring>
+        <name>DrawDebugGeometry</name>
+        <reimplements refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a">DrawDebugGeometry</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Visualize the component as debug geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a4ae07f2e2794c60a1a10f16931d9fca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetNearClip</definition>
+        <argsstring>(float nearClip)</argsstring>
+        <name>SetNearClip</name>
+        <param>
+          <type>float</type>
+          <declname>nearClip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set near clip distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1afbbbdb5dfb8aa68f72e27ea4877ea107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetFarClip</definition>
+        <argsstring>(float farClip)</argsstring>
+        <name>SetFarClip</name>
+        <param>
+          <type>float</type>
+          <declname>farClip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set far clip distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a3023fe6f2ff7ad76dde4ce5aa360bdfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetFov</definition>
+        <argsstring>(float fov)</argsstring>
+        <name>SetFov</name>
+        <param>
+          <type>float</type>
+          <declname>fov</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertical field of view in degrees. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1acd2f8cf63bf03f7db51d6f570108f12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetOrthoSize</definition>
+        <argsstring>(float orthoSize)</argsstring>
+        <name>SetOrthoSize</name>
+        <param>
+          <type>float</type>
+          <declname>orthoSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set orthographic mode view uniform size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a9d04a0cf674ef6d6cc713fd1ce107009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetOrthoSize</definition>
+        <argsstring>(const Vector2 &amp;orthoSize)</argsstring>
+        <name>SetOrthoSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>orthoSize</declname>
+        </param>
+        <briefdescription>
+<para>Set orthographic mode view non-uniform size. Disables the auto aspect ratio -mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a3d019eccd642a9d67fc50e424964d9b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetAspectRatio</definition>
+        <argsstring>(float aspectRatio)</argsstring>
+        <name>SetAspectRatio</name>
+        <param>
+          <type>float</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set aspect ratio manually. Disables the auto aspect ratio -mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a0343192a92c8a1401453e2f718da0c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetFillMode</definition>
+        <argsstring>(FillMode mode)</argsstring>
+        <name>SetFillMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set polygon fill mode to use when rendering a scene. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1aef7f8a3cb5229d3fb8636520ffaaf2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetZoom</definition>
+        <argsstring>(float zoom)</argsstring>
+        <name>SetZoom</name>
+        <param>
+          <type>float</type>
+          <declname>zoom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set zoom. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a5a3ec8be90b203c50d5baa766a7ac9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetLodBias</definition>
+        <argsstring>(float bias)</argsstring>
+        <name>SetLodBias</name>
+        <param>
+          <type>float</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1ac95b124eb9a3f66362f875dc57242839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetViewMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetViewMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set view mask. Will be and&apos;ed with object&apos;s view mask to see if the object should be rendered. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a87d1e9d1c1fe5d5fd477087c5c09a831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetViewOverrideFlags</definition>
+        <argsstring>(ViewOverrideFlags flags)</argsstring>
+        <name>SetViewOverrideFlags</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">ViewOverrideFlags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set view override flags. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1aecb62b3e8076c2023a8e03674046cc70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetOrthographic</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetOrthographic</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set orthographic mode enabled/disabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a10d341cbad5bb260baf64ccb9d6a677a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetAutoAspectRatio</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetAutoAspectRatio</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set automatic aspect ratio based on viewport dimensions. Enabled by default. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a94aba04d500a85ec13dc09c36dde9079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetProjectionOffset</definition>
+        <argsstring>(const Vector2 &amp;offset)</argsstring>
+        <name>SetProjectionOffset</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set projection offset. It needs to be calculated as (offset in pixels) / (viewport dimensions). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1abb499e25a5a78309ac2350fec2b67612" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetUseReflection</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUseReflection</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set reflection mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1af52f7b50981f8f3128621dd3724cdc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetReflectionPlane</definition>
+        <argsstring>(const Plane &amp;plane)</argsstring>
+        <name>SetReflectionPlane</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set reflection plane in world space for reflection mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a6488fc7429c37e9cdbb5b80591b32b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetUseClipping</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUseClipping</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to use a custom clip plane. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a9fe879515fbbc52197cb7dba84b589f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetClipPlane</definition>
+        <argsstring>(const Plane &amp;plane)</argsstring>
+        <name>SetClipPlane</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set custom clipping plane in world space. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a45cb0bc0d42e4ad5a0ef357951f58d91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetFlipVertical</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetFlipVertical</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Set vertical flipping mode. Called internally by <ref refid="classUrho3D_1_1View" kindref="compound">View</ref> to resolve OpenGL / Direct3D9 rendertarget sampling differences. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a41ca95f4bb7b712650f0e9a2aa8ef83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetProjection</definition>
+        <argsstring>(const Matrix4 &amp;projection)</argsstring>
+        <name>SetProjection</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set custom projection matrix, which should be specified in D3D convention with depth range 0 - 1. Disables auto aspect ratio. BIND_AS_PROPERTY Change any of the standard view parameters (FOV, far clip, zoom, etc.) to revert to the standard projection. Note that the custom projection is not serialized or replicated through the network. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1aca9722244be40c0db7c31f891b8cb1bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetFarClip</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFarClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return far clip distance. If a custom projection matrix is in use, is calculated from it instead of the value assigned with <ref refid="classUrho3D_1_1Camera_1afbbbdb5dfb8aa68f72e27ea4877ea107" kindref="member">SetFarClip()</ref>. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="130" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a24305d3e4346c9eb4f8f3c2e50c5323d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetNearClip</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNearClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return near clip distance. If a custom projection matrix is in use, is calculated from it instead of the value assigned with <ref refid="classUrho3D_1_1Camera_1a4ae07f2e2794c60a1a10f16931d9fca4" kindref="member">SetNearClip()</ref>. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="134" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a10227381e0ffba9f2073f748f35de20d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetFov</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return vertical field of view in degrees. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="138" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1ad97a3fd76c809674ff101e8854d54a59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetOrthoSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOrthoSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return orthographic mode size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="142" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a9a4e29fa5079aa592c265a7b37ee7049" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetAspectRatio</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAspectRatio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return aspect ratio. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="146" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a2cf7d551c0c054c92086c88c65f95759" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetZoom</definition>
+        <argsstring>() const</argsstring>
+        <name>GetZoom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return zoom. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="150" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1af172887e8a3143279ced2d6f682d1938" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetLodBias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="154" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1afb7a23d0a062cef8147871a397f94fd8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Camera::GetViewMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return view mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="158" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1adea8f7f2fa1d192bd768c34d027c9c50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1FlagSet" kindref="compound">ViewOverrideFlags</ref></type>
+        <definition>ViewOverrideFlags Urho3D::Camera::GetViewOverrideFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewOverrideFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return view override flags. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="162" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a33a600e0f12f5a728a9b8bb5535a1906" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a4cc067d71ed1f457806c2104d8a9ec11" kindref="member">FillMode</ref></type>
+        <definition>FillMode Urho3D::Camera::GetFillMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFillMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return fill mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="166" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1acab170a8af63b2c412a908c52f43139c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::IsOrthographic</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOrthographic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return orthographic flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="170" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a2007a85f77f8f2ad8f81ac49c79bee87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::GetAutoAspectRatio</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAutoAspectRatio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return auto aspect ratio flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="174" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="174" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1af336f38fe6fd4b2990f552ddc8ff8332" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+        <definition>const Frustum&amp; Urho3D::Camera::GetFrustum</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFrustum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return frustum in world space. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="178" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1ad705a7447b5db893eb5642f0d05c02ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::Camera::GetProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return projection matrix. It&apos;s in D3D convention with depth range 0 - 1. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="181" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a03fccdfb98ae3788628eed114d1b37ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::Camera::GetGPUProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGPUProjection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return projection matrix converted to API-specific format for use as a shader parameter. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="184" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a4b0846e77de7dc588149f1c706944205" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+        <definition>const Matrix3x4&amp; Urho3D::Camera::GetView</definition>
+        <argsstring>() const</argsstring>
+        <name>GetView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return view matrix. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="187" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a2f9539871c9224f9482a3ac26e059351" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::GetFrustumSize</definition>
+        <argsstring>(Vector3 &amp;near, Vector3 &amp;far) const</argsstring>
+        <name>GetFrustumSize</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>near</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>far</declname>
+        </param>
+        <briefdescription>
+<para>Return frustum near and far sizes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="189" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a0fd32e1ea1548d47099dfa40e72653dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetHalfViewSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHalfViewSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return half view size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="192" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1abf6c369a0b6c33979d21efd080439ef6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>Frustum Urho3D::Camera::GetSplitFrustum</definition>
+        <argsstring>(float nearClip, float farClip) const</argsstring>
+        <name>GetSplitFrustum</name>
+        <param>
+          <type>float</type>
+          <declname>nearClip</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>farClip</declname>
+        </param>
+        <briefdescription>
+<para>Return frustum split by custom near and far clip distances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="194" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1ab7e166e8cd5a482b25d4caf9792821eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>Frustum Urho3D::Camera::GetViewSpaceFrustum</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewSpaceFrustum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return frustum in view space. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="197" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1adcbe2609c3b9543dcdb6ac5b2147b210" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>Frustum Urho3D::Camera::GetViewSpaceSplitFrustum</definition>
+        <argsstring>(float nearClip, float farClip) const</argsstring>
+        <name>GetViewSpaceSplitFrustum</name>
+        <param>
+          <type>float</type>
+          <declname>nearClip</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>farClip</declname>
+        </param>
+        <briefdescription>
+<para>Return split frustum in view space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="199" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a653cf41d95901dc68abdc463b4b3d5fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref></type>
+        <definition>Ray Urho3D::Camera::GetScreenRay</definition>
+        <argsstring>(float x, float y) const</argsstring>
+        <name>GetScreenRay</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Return ray corresponding to normalized screen coordinates (0 - 1), with origin on the near clip plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="201" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a11f8754c90c4d6aff4bd88d48ae3373d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::Camera::WorldToScreenPoint</definition>
+        <argsstring>(const Vector3 &amp;worldPos) const</argsstring>
+        <name>WorldToScreenPoint</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPos</declname>
+        </param>
+        <briefdescription>
+<para>Convert a world space point to normalized screen coordinates (0 - 1). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="203" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a8d093c3479b71a707f3ec8887380396a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Camera::ScreenToWorldPoint</definition>
+        <argsstring>(const Vector3 &amp;screenPos) const</argsstring>
+        <name>ScreenToWorldPoint</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>screenPos</declname>
+        </param>
+        <briefdescription>
+<para>Convert normalized screen coordinates (0 - 1) and distance along view Z axis (in Z coordinate) to a world space point. The distance can not be closer than the near clip plane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that a HitDistance() from the camera screen ray is not the same as distance along the view Z axis, as under a perspective projection the ray is likely to not be Z-aligned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="207" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a9511bd2e6c4e5d8594aabe4a3bf2e653" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; Urho3D::Camera::GetProjectionOffset</definition>
+        <argsstring>() const</argsstring>
+        <name>GetProjectionOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return projection offset. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="211" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a5d2c78bc9d46b7a908c62b11b0be0ae6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::GetUseReflection</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUseReflection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is using reflection. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="215" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a0ec1b7dc4526f0e798ff2b78565fdaf6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref> &amp;</type>
+        <definition>const Plane&amp; Urho3D::Camera::GetReflectionPlane</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReflectionPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the reflection plane. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="219" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="219" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a566d2e6dc6072b95edb7ce98df0dab6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::GetUseClipping</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUseClipping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is using a custom clipping plane. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="223" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1add744ce968fa84bc358f5a6d9e940213" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref> &amp;</type>
+        <definition>const Plane&amp; Urho3D::Camera::GetClipPlane</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClipPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the custom clipping plane. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="227" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="227" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a0c4c64256ac952f0e1b93ba456be8f8c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::GetFlipVertical</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFlipVertical</name>
+        <briefdescription>
+<para>Return vertical flipping mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="230" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a137286ffb1de51dd78754cd0681d1e39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::GetReverseCulling</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReverseCulling</name>
+        <briefdescription>
+<para>Return whether to reverse culling; affected by vertical flipping and reflection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="233" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1adc14322198c5fd70f75ed8a739212e54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetDistance</definition>
+        <argsstring>(const Vector3 &amp;worldPos) const</argsstring>
+        <name>GetDistance</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPos</declname>
+        </param>
+        <briefdescription>
+<para>Return distance to position. In orthographic mode uses only Z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="236" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a68a03b28634de2c029279eb3105b5a3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetDistanceSquared</definition>
+        <argsstring>(const Vector3 &amp;worldPos) const</argsstring>
+        <name>GetDistanceSquared</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>worldPos</declname>
+        </param>
+        <briefdescription>
+<para>Return squared distance to position. In orthographic mode uses only Z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="238" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a165a829d35ab50d0df4bfcd17b1a6255" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Camera::GetLodDistance</definition>
+        <argsstring>(float distance, float scale, float bias) const</argsstring>
+        <name>GetLodDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+<para>Return a scene node&apos;s LOD scaled distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="240" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a550d2bdf61207a877e5ecf7bbb6e247e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion Urho3D::Camera::GetFaceCameraRotation</definition>
+        <argsstring>(const Vector3 &amp;position, const Quaternion &amp;rotation, FaceCameraMode mode, float minAngle=0.0f)</argsstring>
+        <name>GetFaceCameraRotation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aef443f97b15d5c7ff39d3199a9a0c5c1" kindref="member">FaceCameraMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minAngle</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+<para>Return a world rotation for facing a camera on certain axes based on the existing world rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="242" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a08d24e076d62c0b397817f2c9f92cc41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::Camera::GetEffectiveWorldTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEffectiveWorldTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get effective world transform for matrix and frustum calculations including reflection but excluding node scaling. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="245" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1ab80937e50cbb6c26ee2b653d9bbd1a1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Camera::IsProjectionValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsProjectionValid</name>
+        <briefdescription>
+<para>Return if projection parameters are valid for rendering and raycasting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="247" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a08d17ad089f5210843a83e9c9d37c2d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetAspectRatioInternal</definition>
+        <argsstring>(float aspectRatio)</argsstring>
+        <name>SetAspectRatioInternal</name>
+        <param>
+          <type>float</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <briefdescription>
+<para>Set aspect ratio without disabling the &quot;auto aspect ratio&quot; mode. Called internally by <ref refid="classUrho3D_1_1View" kindref="compound">View</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="250" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a2abcb14731a64b677605e1db451dc626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetOrthoSizeAttr</definition>
+        <argsstring>(float orthoSize)</argsstring>
+        <name>SetOrthoSizeAttr</name>
+        <param>
+          <type>float</type>
+          <declname>orthoSize</declname>
+        </param>
+        <briefdescription>
+<para>Set orthographic size attribute without forcing the aspect ratio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="252" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a5f2c512f46dccaf57cdc5b35a7341eea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetReflectionPlaneAttr</definition>
+        <argsstring>(const Vector4 &amp;value)</argsstring>
+        <name>SetReflectionPlaneAttr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set reflection plane attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="254" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a8941229b8377b4daeae6859bbdf3dd52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::Camera::GetReflectionPlaneAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReflectionPlaneAttr</name>
+        <briefdescription>
+<para>Return reflection plane attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="256" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a422a8cb567bee6d2b93c324acae7c860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::SetClipPlaneAttr</definition>
+        <argsstring>(const Vector4 &amp;value)</argsstring>
+        <name>SetClipPlaneAttr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set clipping plane attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="258" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1af3e08b8acc97f41ca27359fdbb96a61b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::Camera::GetClipPlaneAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClipPlaneAttr</name>
+        <briefdescription>
+<para>Return clipping plane attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="260" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a84bd91d7e16be0fab3d8fbf65ef97d21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Camera::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="61" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1ad79e0ea6490ce36910898597a15d7dd3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::OnNodeSet</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnNodeSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1abdc9feb34a990d3567e9f4fa43d30d75">OnNodeSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="264" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1a7971868380dd815668eb00c2c69b57e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::OnMarkedDirty</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnMarkedDirty</name>
+        <reimplements refid="classUrho3D_1_1Component_1a06ebdba9da30ea5f2599e39f7cd0e24a">OnMarkedDirty</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node transform being dirtied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="266" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Camera_1aa2ca83a0c0ffdede12922e6ed72b69b6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Camera::UpdateProjection</definition>
+        <argsstring>() const</argsstring>
+        <name>UpdateProjection</name>
+        <briefdescription>
+<para>Recalculate projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="270" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Camera component. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Camera</label>
+        <link refid="classUrho3D_1_1Camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Camera</label>
+        <link refid="classUrho3D_1_1Camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" line="50" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Camera.h" bodystart="51" bodyend="328"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Camera_1ab456d96548b6c43edb94733e7513615c" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>aspectRatio_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Camera_1adc89ffbdc54f452c257bfc710d49b4e4" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>autoAspectRatio_</name></member>
+      <member refid="classUrho3D_1_1Camera_1aa890e45022efe5fbd8013039b8cea689" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Camera</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Camera_1a72e00c1d191ed66f65bc975791c11f50" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>clipPlane_</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Camera_1addf092705066c6e432d714d150b19b18" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>customProjection_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Camera_1a35b2f97c4a3370a26b10ff133f86d2fa" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Camera_1aa7790aed822f9176bfa5296c5e796c64" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>farClip_</name></member>
+      <member refid="classUrho3D_1_1Camera_1a8f1086a3e4ed079a1a3a1e171efc4cc6" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>fillMode_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Camera_1aba03af3574d98e875aed7e97deffedd8" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>flipVertical_</name></member>
+      <member refid="classUrho3D_1_1Camera_1a98f3fa73b5faf6cfd2a7adf5aa6421b1" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>fov_</name></member>
+      <member refid="classUrho3D_1_1Camera_1ac3138ffc6cfb8becc72510c474ce16a8" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>frustum_</name></member>
+      <member refid="classUrho3D_1_1Camera_1aa697a36eaeb350b6c9036756f1e4913a" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>frustumDirty_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Camera_1a9a4e29fa5079aa592c265a7b37ee7049" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAspectRatio</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Camera_1a2007a85f77f8f2ad8f81ac49c79bee87" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetAutoAspectRatio</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Camera_1add744ce968fa84bc358f5a6d9e940213" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetClipPlane</name></member>
+      <member refid="classUrho3D_1_1Camera_1af3e08b8acc97f41ca27359fdbb96a61b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetClipPlaneAttr</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Camera_1adc14322198c5fd70f75ed8a739212e54" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetDistance</name></member>
+      <member refid="classUrho3D_1_1Camera_1a68a03b28634de2c029279eb3105b5a3e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetDistanceSquared</name></member>
+      <member refid="classUrho3D_1_1Camera_1a08d24e076d62c0b397817f2c9f92cc41" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetEffectiveWorldTransform</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Camera_1a550d2bdf61207a877e5ecf7bbb6e247e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFaceCameraRotation</name></member>
+      <member refid="classUrho3D_1_1Camera_1aca9722244be40c0db7c31f891b8cb1bb" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFarClip</name></member>
+      <member refid="classUrho3D_1_1Camera_1a33a600e0f12f5a728a9b8bb5535a1906" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFillMode</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Camera_1a0c4c64256ac952f0e1b93ba456be8f8c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFlipVertical</name></member>
+      <member refid="classUrho3D_1_1Camera_1a10227381e0ffba9f2073f748f35de20d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFov</name></member>
+      <member refid="classUrho3D_1_1Camera_1af336f38fe6fd4b2990f552ddc8ff8332" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFrustum</name></member>
+      <member refid="classUrho3D_1_1Camera_1a2f9539871c9224f9482a3ac26e059351" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetFrustumSize</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Camera_1a03fccdfb98ae3788628eed114d1b37ed" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetGPUProjection</name></member>
+      <member refid="classUrho3D_1_1Camera_1a0fd32e1ea1548d47099dfa40e72653dc" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetHalfViewSize</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Camera_1af172887e8a3143279ced2d6f682d1938" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetLodBias</name></member>
+      <member refid="classUrho3D_1_1Camera_1a165a829d35ab50d0df4bfcd17b1a6255" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetLodDistance</name></member>
+      <member refid="classUrho3D_1_1Camera_1a24305d3e4346c9eb4f8f3c2e50c5323d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetNearClip</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Camera_1ad97a3fd76c809674ff101e8854d54a59" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetOrthoSize</name></member>
+      <member refid="classUrho3D_1_1Camera_1ad705a7447b5db893eb5642f0d05c02ca" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetProjection</name></member>
+      <member refid="classUrho3D_1_1Camera_1a9511bd2e6c4e5d8594aabe4a3bf2e653" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetProjectionOffset</name></member>
+      <member refid="classUrho3D_1_1Camera_1a0ec1b7dc4526f0e798ff2b78565fdaf6" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetReflectionPlane</name></member>
+      <member refid="classUrho3D_1_1Camera_1a8941229b8377b4daeae6859bbdf3dd52" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetReflectionPlaneAttr</name></member>
+      <member refid="classUrho3D_1_1Camera_1a137286ffb1de51dd78754cd0681d1e39" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetReverseCulling</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Camera_1a653cf41d95901dc68abdc463b4b3d5fc" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetScreenRay</name></member>
+      <member refid="classUrho3D_1_1Camera_1abf6c369a0b6c33979d21efd080439ef6" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetSplitFrustum</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Camera</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Camera</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Camera</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Camera_1a566d2e6dc6072b95edb7ce98df0dab6e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetUseClipping</name></member>
+      <member refid="classUrho3D_1_1Camera_1a5d2c78bc9d46b7a908c62b11b0be0ae6" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetUseReflection</name></member>
+      <member refid="classUrho3D_1_1Camera_1a4b0846e77de7dc588149f1c706944205" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetView</name></member>
+      <member refid="classUrho3D_1_1Camera_1afb7a23d0a062cef8147871a397f94fd8" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetViewMask</name></member>
+      <member refid="classUrho3D_1_1Camera_1adea8f7f2fa1d192bd768c34d027c9c50" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetViewOverrideFlags</name></member>
+      <member refid="classUrho3D_1_1Camera_1ab7e166e8cd5a482b25d4caf9792821eb" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetViewSpaceFrustum</name></member>
+      <member refid="classUrho3D_1_1Camera_1adcbe2609c3b9543dcdb6ac5b2147b210" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetViewSpaceSplitFrustum</name></member>
+      <member refid="classUrho3D_1_1Camera_1a2cf7d551c0c054c92086c88c65f95759" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>GetZoom</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Camera_1acab170a8af63b2c412a908c52f43139c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsOrthographic</name></member>
+      <member refid="classUrho3D_1_1Camera_1ab80937e50cbb6c26ee2b653d9bbd1a1e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsProjectionValid</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Camera_1a3c69b7f8dabacfea0de748af823d8868" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>lodBias_</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Camera_1a841253060ee1b515c4007ef14d7bcda7" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>nearClip_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Camera_1a7971868380dd815668eb00c2c69b57e0" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Camera_1ad79e0ea6490ce36910898597a15d7dd3" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679" prot="protected" virt="virtual"><scope>Urho3D::Camera</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a97c506dfb55216668b1fdf4d4425f7d7" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Camera_1a5a69408fd45628c90b3fb7b54925b622" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>orthographic_</name></member>
+      <member refid="classUrho3D_1_1Camera_1ad185cdb362658ff4371badde63b3d408" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>orthoSize_</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Camera_1a270ecd201e0a0cca5ea021f5fb2bc9bd" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>projection_</name></member>
+      <member refid="classUrho3D_1_1Camera_1ac915da10e0e028634a43611d346324b1" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>projectionDirty_</name></member>
+      <member refid="classUrho3D_1_1Camera_1a3195888349d72bf137f8af0926f7ebe8" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>projectionOffset_</name></member>
+      <member refid="classUrho3D_1_1Camera_1aaf982e0d480b0de259f0b1169e9e34db" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>projFarClip_</name></member>
+      <member refid="classUrho3D_1_1Camera_1aa996b3eb9cddd24a1bf4ef2a6c89a281" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>projNearClip_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1Camera_1accf4f1b1fd18058fa64fed516963c116" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>reflectionMatrix_</name></member>
+      <member refid="classUrho3D_1_1Camera_1aace08dbcdaa4371ef00a0e3793d01bc3" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>reflectionPlane_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Camera_1a84bd91d7e16be0fab3d8fbf65ef97d21" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Camera_1a8d093c3479b71a707f3ec8887380396a" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>ScreenToWorldPoint</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Camera_1a3d019eccd642a9d67fc50e424964d9b2" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAspectRatio</name></member>
+      <member refid="classUrho3D_1_1Camera_1a08d17ad089f5210843a83e9c9d37c2d8" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAspectRatioInternal</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Camera_1a10d341cbad5bb260baf64ccb9d6a677a" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetAutoAspectRatio</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Camera_1a9fe879515fbbc52197cb7dba84b589f3" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetClipPlane</name></member>
+      <member refid="classUrho3D_1_1Camera_1a422a8cb567bee6d2b93c324acae7c860" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetClipPlaneAttr</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Camera_1afbbbdb5dfb8aa68f72e27ea4877ea107" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetFarClip</name></member>
+      <member refid="classUrho3D_1_1Camera_1a0343192a92c8a1401453e2f718da0c1a" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetFillMode</name></member>
+      <member refid="classUrho3D_1_1Camera_1a45cb0bc0d42e4ad5a0ef357951f58d91" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetFlipVertical</name></member>
+      <member refid="classUrho3D_1_1Camera_1a3023fe6f2ff7ad76dde4ce5aa360bdfe" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetFov</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Camera_1a5a3ec8be90b203c50d5baa766a7ac9d0" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetLodBias</name></member>
+      <member refid="classUrho3D_1_1Camera_1a4ae07f2e2794c60a1a10f16931d9fca4" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetNearClip</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Camera_1aecb62b3e8076c2023a8e03674046cc70" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetOrthographic</name></member>
+      <member refid="classUrho3D_1_1Camera_1acd2f8cf63bf03f7db51d6f570108f12f" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetOrthoSize</name></member>
+      <member refid="classUrho3D_1_1Camera_1a9d04a0cf674ef6d6cc713fd1ce107009" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetOrthoSize</name></member>
+      <member refid="classUrho3D_1_1Camera_1a2abcb14731a64b677605e1db451dc626" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetOrthoSizeAttr</name></member>
+      <member refid="classUrho3D_1_1Camera_1a41ca95f4bb7b712650f0e9a2aa8ef83e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetProjection</name></member>
+      <member refid="classUrho3D_1_1Camera_1a94aba04d500a85ec13dc09c36dde9079" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetProjectionOffset</name></member>
+      <member refid="classUrho3D_1_1Camera_1af52f7b50981f8f3128621dd3724cdc60" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetReflectionPlane</name></member>
+      <member refid="classUrho3D_1_1Camera_1a5f2c512f46dccaf57cdc5b35a7341eea" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetReflectionPlaneAttr</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1Camera_1a6488fc7429c37e9cdbb5b80591b32b93" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetUseClipping</name></member>
+      <member refid="classUrho3D_1_1Camera_1abb499e25a5a78309ac2350fec2b67612" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetUseReflection</name></member>
+      <member refid="classUrho3D_1_1Camera_1ac95b124eb9a3f66362f875dc57242839" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetViewMask</name></member>
+      <member refid="classUrho3D_1_1Camera_1a87d1e9d1c1fe5d5fd477087c5c09a831" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetViewOverrideFlags</name></member>
+      <member refid="classUrho3D_1_1Camera_1aef7f8a3cb5229d3fb8636520ffaaf2da" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SetZoom</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1Camera_1aa2ca83a0c0ffdede12922e6ed72b69b6" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>UpdateProjection</name></member>
+      <member refid="classUrho3D_1_1Camera_1a579f87270b9f654232c6b531bf8650e0" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>useClipping_</name></member>
+      <member refid="classUrho3D_1_1Camera_1a23ae06b61f79865b81f33b43402db68f" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>useReflection_</name></member>
+      <member refid="classUrho3D_1_1Camera_1a311c5cb52ca76ebb523dfa701d997df4" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>view_</name></member>
+      <member refid="classUrho3D_1_1Camera_1acb66972c70ba4fe144a7286cea027f9f" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>viewDirty_</name></member>
+      <member refid="classUrho3D_1_1Camera_1a05fac8e6dd25006724dd742c8caf4a06" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1Camera_1ad83b3f27cc6d6b78c65d4e0806b6ddf4" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>viewOverrideFlags_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Camera_1a11f8754c90c4d6aff4bd88d48ae3373d" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>WorldToScreenPoint</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Camera_1aa9202d5788ed45ee7b46d8ecc50fe05b" prot="private" virt="non-virtual"><scope>Urho3D::Camera</scope><name>zoom_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Camera_1a0164e4fc82bf8bb42690bad3b5b4db4c" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>~Camera</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Camera</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::Camera</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

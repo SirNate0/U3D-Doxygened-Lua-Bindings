@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1HttpRequest" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::HttpRequest</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1Deserializer" prot="public" virt="non-virtual">Urho3D::Deserializer</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1Thread" prot="public" virt="non-virtual">Urho3D::Thread</basecompoundref>
+    <includes refid="HttpRequest_8h" local="no">HttpRequest.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1a7da67a07eb9d59c9cb0aa9d416b31673" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::HttpRequest::url_</definition>
+        <argsstring></argsstring>
+        <name>url_</name>
+        <briefdescription>
+<para>URL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="91" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1a6ddf86be04e84db4a45c9cd2cc8e3d38" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::HttpRequest::verb_</definition>
+        <argsstring></argsstring>
+        <name>verb_</name>
+        <briefdescription>
+<para>Verb. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="93" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1a32d37bcaabe0653a16231d5050afc59a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::HttpRequest::error_</definition>
+        <argsstring></argsstring>
+        <name>error_</name>
+        <briefdescription>
+<para>Error string. Empty if no error. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="95" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1a64d972870cb379694e15ee6d17c66b87" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>Vector&lt;String&gt; Urho3D::HttpRequest::headers_</definition>
+        <argsstring></argsstring>
+        <name>headers_</name>
+        <briefdescription>
+<para>Headers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="97" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1a87da6218395d6f4afbbbbb302dea608c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::HttpRequest::postData_</definition>
+        <argsstring></argsstring>
+        <name>postData_</name>
+        <briefdescription>
+<para>POST data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="99" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1ac857b1da935941418ee65ce8e408f463" prot="private" static="no" mutable="no">
+        <type><ref refid="HttpRequest_8h_1ac0226ea12106b96d99f1ff9b9ed1a34e" kindref="member">HttpRequestState</ref></type>
+        <definition>HttpRequestState Urho3D::HttpRequest::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Connection" kindref="compound">Connection</ref> state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="101" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1acc88b3b718a4e58da74ad92a7b2ac2da" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::HttpRequest::mutex_</definition>
+        <argsstring></argsstring>
+        <name>mutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> for synchronizing the worker and the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="103" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1ab919bcd27878a6d41e69a891977b3e66" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::HttpRequest::httpReadBuffer_</definition>
+        <argsstring></argsstring>
+        <name>httpReadBuffer_</name>
+        <briefdescription>
+<para>Read buffer for the worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="105" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1ad2023864240159417f69b8254344caf3" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; unsigned char &gt;</type>
+        <definition>SharedArrayPtr&lt;unsigned char&gt; Urho3D::HttpRequest::readBuffer_</definition>
+        <argsstring></argsstring>
+        <name>readBuffer_</name>
+        <briefdescription>
+<para>Read buffer for the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="107" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1aaee1e81a37e6dbee7b7bdd36473862ce" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::HttpRequest::readPosition_</definition>
+        <argsstring></argsstring>
+        <name>readPosition_</name>
+        <briefdescription>
+<para>Read buffer read cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="109" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1HttpRequest_1a898c35b4f4e775dc030b376850cf072f" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::HttpRequest::writePosition_</definition>
+        <argsstring></argsstring>
+        <name>writePosition_</name>
+        <briefdescription>
+<para>Read buffer write cursor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="111" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1aa0dff1a396bb6487876dd20a1e3c77f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::HttpRequest::HttpRequest</definition>
+        <argsstring>(const String &amp;url, const String &amp;verb, const Vector&lt; String &gt; &amp;headers, const String &amp;postData)</argsstring>
+        <name>HttpRequest</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>verb</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>headers</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>postData</declname>
+        </param>
+        <briefdescription>
+<para>Construct with parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1ad2b86e768d003cfeeefbdae02b594a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::HttpRequest::~HttpRequest</definition>
+        <argsstring>() override</argsstring>
+        <name>~HttpRequest</name>
+        <briefdescription>
+<para>Destruct. Release the connection object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="52" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a4db849ffc1a4031e2f2da62704d0c566" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::HttpRequest::ThreadFunction</definition>
+        <argsstring>() override</argsstring>
+        <name>ThreadFunction</name>
+        <reimplements refid="classUrho3D_1_1Thread_1a4cbd298c7f15b818d7d01ea6466acd29">ThreadFunction</reimplements>
+        <briefdescription>
+<para>Process the connection in the worker thread until closed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1ab9ed1dd50303836c3f3e1839dfe7efc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::HttpRequest::Read</definition>
+        <argsstring>(void *dest, unsigned size) override</argsstring>
+        <name>Read</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1ae82036f72896194adc1cd02f3b03509b">Read</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Read response data from the HTTP connection and return number of bytes actually read. While the connection is open, will block while trying to read the specified size. To avoid blocking, only read up to as many bytes as <ref refid="classUrho3D_1_1HttpRequest_1a8cb68df22c51ceeed001ccce31b103d6" kindref="member">GetAvailableSize()</ref> returns. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="58" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a11a33d5f1eb1b32bcbf7798336a8af3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::HttpRequest::Seek</definition>
+        <argsstring>(unsigned position) override</argsstring>
+        <name>Seek</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1a04335b8bfc3e845d1e95599d362b2115">Seek</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set position from the beginning of the stream. Not supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="60" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a5b83ae3fd9b78b1de195bd9cd9103173" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::HttpRequest::IsEof</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsEof</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1a62d8b0e28fa886adfdde1c42c6913477">IsEof</reimplements>
+        <briefdescription>
+<para>Return whether all response data has been read. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a0858c697573e3ab2d030d30938c5a1b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::HttpRequest::GetURL</definition>
+        <argsstring>() const</argsstring>
+        <name>GetURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return URL used in the request. BIND_AS_ALIAS_get_url </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="66" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a50f7391755cf04e4b3c2b7ef2a866b22" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::HttpRequest::GetVerb</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVerb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return verb used in the request. Default GET if empty verb specified on construction. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="70" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a2251db96322081b5eba52146cf930e20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::HttpRequest::GetError</definition>
+        <argsstring>() const</argsstring>
+        <name>GetError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return error. Only non-empty in the error state. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="74" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a687c17d7c33831e6f68ceddd643d7383" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="HttpRequest_8h_1ac0226ea12106b96d99f1ff9b9ed1a34e" kindref="member">HttpRequestState</ref></type>
+        <definition>HttpRequestState Urho3D::HttpRequest::GetState</definition>
+        <argsstring>() const</argsstring>
+        <name>GetState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return connection state. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="77" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1a8cb68df22c51ceeed001ccce31b103d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::HttpRequest::GetAvailableSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAvailableSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return amount of bytes in the read buffer. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1ae1433fcc1ab5dd871e185b920674fe2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::HttpRequest::IsOpen</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether connection is in the open state. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="84" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1HttpRequest_1ac9cf2b816bf0221af78a14f4d0c43b2a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; unsigned, bool &gt;</type>
+        <definition>Pair&lt;unsigned, bool&gt; Urho3D::HttpRequest::CheckAvailableSizeAndEof</definition>
+        <argsstring>() const</argsstring>
+        <name>CheckAvailableSizeAndEof</name>
+        <briefdescription>
+<para>Check for available read data in buffer and whether end has been reached. Must only be called when the mutex is held by the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="88" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An HTTP connection with response data stream. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::HttpRequest</label>
+        <link refid="classUrho3D_1_1HttpRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Thread</label>
+        <link refid="classUrho3D_1_1Thread"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::HttpRequest</label>
+        <link refid="classUrho3D_1_1HttpRequest"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Thread</label>
+        <link refid="classUrho3D_1_1Thread"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" line="46" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Network/HttpRequest.h" bodystart="47" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ac9cf2b816bf0221af78a14f4d0c43b2a" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>CheckAvailableSizeAndEof</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d2945f96e7a91278d7347c842ddf475" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a997993e65958f9c3a4c436b29cfa295a" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a32d37bcaabe0653a16231d5050afc59a" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>error_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a8cb68df22c51ceeed001ccce31b103d6" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetAvailableSize</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a180786160003602647f480b18baaafcf" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>GetChecksum</name></member>
+      <member refid="classUrho3D_1_1Thread_1a2022a821700e56332ff09b9de175bc2f" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetCurrentThreadID</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a2251db96322081b5eba52146cf930e20" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetError</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ab262323dbbb2f36ee6a3773d5dc6d8c7" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ad0eb039dde5cc9ec8fedaa044d850db1" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a29f095da2db6cf9e4c7e76365341466e" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetSize</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a687c17d7c33831e6f68ceddd643d7383" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetState</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a0858c697573e3ab2d030d30938c5a1b2" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetURL</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a50f7391755cf04e4b3c2b7ef2a866b22" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>GetVerb</name></member>
+      <member refid="classUrho3D_1_1Thread_1a2cfb3d871653aeb2c750811e0a62f2e6" prot="protected" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>handle_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a64d972870cb379694e15ee6d17c66b87" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>headers_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ab919bcd27878a6d41e69a891977b3e66" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>httpReadBuffer_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1aa0dff1a396bb6487876dd20a1e3c77f1" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>HttpRequest</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a5b83ae3fd9b78b1de195bd9cd9103173" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>IsEof</name></member>
+      <member refid="classUrho3D_1_1Thread_1a8d5c2b426303c65327ef09e88816dad4" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>IsMainThread</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ae1433fcc1ab5dd871e185b920674fe2d" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>IsOpen</name></member>
+      <member refid="classUrho3D_1_1Thread_1acd3eeb9a8fa8a5429de271718bd19055" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>IsStarted</name></member>
+      <member refid="classUrho3D_1_1Thread_1ac2346434e8b953e5a33ca3c19f5cb3cc" prot="protected" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>mainThreadID</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1acc88b3b718a4e58da74ad92a7b2ac2da" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>mutex_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae3abef03d5bd18c80c70c4bc907f7951" prot="protected" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>position_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a87da6218395d6f4afbbbbb302dea608c" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>postData_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ab9ed1dd50303836c3f3e1839dfe7efc7" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>Read</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a18e879f71f2fc03551358b39d73931bc" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadBool</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6de9c7c5ea5594a93b3ad5ab57df0f95" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a93c7d0f8e514b5e2258485b84a438563" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadBuffer</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ad2023864240159417f69b8254344caf3" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>readBuffer_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acb3a5d6bec79624077c060ec0640bdfe" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a595ef621948edddd04c1a4d63541163a" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadColor</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acc590c8a496ed45d39106a08e369512f" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadDouble</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a50fb98730fae281e2fdac0f83c451f13" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadFileID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5e715bb883005d93ca8aa9d03ebccb87" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadFloat</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ac237484f24d551dd8ccd812b181b500b" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1aa8ccfd2f2784af5fc4943843dee19ef7" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a654bf31218c52d3a481033b91fee41bc" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadIntRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a14bd90722793f19622fc989bf5e40163" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadIntVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a403d5e8df2cbc84bea47892a7353b7ec" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadIntVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a39678eb4265b015cd7140cd7f9d96df6" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadLine</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a46a6e5e8d3819a9376cc399cf78fd875" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadMatrix3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6c297c21a8569c401b921a1690e39527" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a0c2ce15716c0cbdc7182683ba5f51b0a" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadMatrix4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a508036fa8d83b204d775690a1dd8bc4a" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadNetID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a659f2ec244eb3e50d1136707eb45d53a" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadPackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a05ca8bfa66c243ef6ac4d8fdcad0a3aa" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadPackedVector3</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1aaee1e81a37e6dbee7b7bdd36473862ce" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>readPosition_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a13d8433924e409593da96c1aa785866f" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a919252c073115ed4a19f23883e209b1b" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a76b41087aaa3359615bdddf4e7cf65c7" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadResourceRef</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a58a0c484704d9499f550239f29cb2023" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a765451570f6241e74591439d757f3647" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5645dce4244a3f13e9253f0c35605a83" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadString</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a98b32d12ab5e2226b897521c4ddcfa45" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadStringHash</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d0304784fb92fd0334b5d9a6b402d94" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadStringVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ab86746f3f96c7264b5e2b7abe0d977b4" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadUByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1fcc8ffc3d0744f90616d0d4feacba10" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadUInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae41b781bf743c959b1d835a0fefa8b85" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadUInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a779317ca224e8350cf9b10ec4cb65145" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadUShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a4f7070a0dd21b4627e5603e1557efb0a" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1af39531e4c08952e621b1eae4381ca8ff" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a2bbcf0ebe55be7554b6eefbe83b5b47c" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVariantMap</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a488959558d58eb39e88d240071c1f4e3" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVariantVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a24fca5b0832f3129a82fcf2215380336" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1088b0c0c767b838e1c4fd7cfc0ea922" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1abe3246a0947bfb1535516eb81b73e3bc" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVector4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1798cf3925097557803752554b7b519f" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReadVLE</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Thread_1a7fc81f2afdcb233e00f0f6405a95225f" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Run</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a11a33d5f1eb1b32bcbf7798336a8af3f" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>Seek</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acff4d7732f540451137b8b0de0dba0ed" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>SeekRelative</name></member>
+      <member refid="classUrho3D_1_1Thread_1a9af829d3f34769e6205bc2f3eb2ac9d3" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>SetMainThread</name></member>
+      <member refid="classUrho3D_1_1Thread_1a378bc8be68c5239553d836b6a073b28c" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>SetPriority</name></member>
+      <member refid="classUrho3D_1_1Thread_1a6ff80e8a4039a452f1bfedaf36e8b1d1" prot="protected" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>shouldRun_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a9d781873581e4227b44778d4d157405b" prot="protected" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ac857b1da935941418ee65ce8e408f463" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>state_</name></member>
+      <member refid="classUrho3D_1_1Thread_1a8192e1dfca6363a4190d9162837cc3bd" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Stop</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a8e253b647308a6cecb25d787b17edc18" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Tell</name></member>
+      <member refid="classUrho3D_1_1Thread_1a3f0344e25501a204632c202c3458e36d" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>Thread</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a4db849ffc1a4031e2f2da62704d0c566" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>ThreadFunction</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a7da67a07eb9d59c9cb0aa9d416b31673" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>url_</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a6ddf86be04e84db4a45c9cd2cc8e3d38" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>verb_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1a898c35b4f4e775dc030b376850cf072f" prot="private" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>writePosition_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a873f01aa820848f5b4d652af6b4df1c5" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>~Deserializer</name></member>
+      <member refid="classUrho3D_1_1HttpRequest_1ad2b86e768d003cfeeefbdae02b594a70" prot="public" virt="non-virtual"><scope>Urho3D::HttpRequest</scope><name>~HttpRequest</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Thread_1a74cb78ac76cfb47b7da951cd291182a9" prot="public" virt="virtual"><scope>Urho3D::HttpRequest</scope><name>~Thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1WorkQueue" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::WorkQueue</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="WorkQueue_8h" local="no">WorkQueue.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1WorkQueue_1a5cd181bfe09cfad66e8f3d87feef1439" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class WorkerThread</definition>
+        <argsstring></argsstring>
+        <name>WorkerThread</name>
+        <param>
+          <type>WorkerThread</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="73" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a88cdd900f13ba0b6b308e19fa8cbec74" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; WorkerThread &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;WorkerThread&gt; &gt; Urho3D::WorkQueue::threads_</definition>
+        <argsstring></argsstring>
+        <name>threads_</name>
+        <briefdescription>
+<para>Worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="131" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1ad6d551a348a5999f3f18aa06c83bb510" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1List" kindref="compound">List</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt; &gt;</type>
+        <definition>List&lt;SharedPtr&lt;WorkItem&gt; &gt; Urho3D::WorkQueue::poolItems_</definition>
+        <argsstring></argsstring>
+        <name>poolItems_</name>
+        <briefdescription>
+<para>Work item pool for reuse to cut down on allocation. The bool is a flag for item pooling and whether it is available or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="133" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a7c112a722d438baf85afe183cd7ebfb1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1List" kindref="compound">List</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt; &gt;</type>
+        <definition>List&lt;SharedPtr&lt;WorkItem&gt; &gt; Urho3D::WorkQueue::workItems_</definition>
+        <argsstring></argsstring>
+        <name>workItems_</name>
+        <briefdescription>
+<para>Work item collection. Accessed only by the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="135" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a7b186dd7825a63b2203a5870f96a4476" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1List" kindref="compound">List</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> * &gt;</type>
+        <definition>List&lt;WorkItem*&gt; Urho3D::WorkQueue::queue_</definition>
+        <argsstring></argsstring>
+        <name>queue_</name>
+        <briefdescription>
+<para>Work item prioritized queue for worker threads. Pointers are guaranteed to be valid (point to workItems). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="137" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a81893236fc55f04d947701207582e9e4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::WorkQueue::queueMutex_</definition>
+        <argsstring></argsstring>
+        <name>queueMutex_</name>
+        <briefdescription>
+<para>Worker queue mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="139" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a9a4098b040b44239c19af9ad433e2b83" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; Urho3D::WorkQueue::shutDown_</definition>
+        <argsstring></argsstring>
+        <name>shutDown_</name>
+        <briefdescription>
+<para>Shutting down flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="141" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1ab34d3942910d40ac9dd5811ed0ba1cf0" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; Urho3D::WorkQueue::pausing_</definition>
+        <argsstring></argsstring>
+        <name>pausing_</name>
+        <briefdescription>
+<para>Pausing flag. Indicates the worker threads should not contend for the queue mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="143" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1aef9f213bd32e658774120971666ddf6b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkQueue::paused_</definition>
+        <argsstring></argsstring>
+        <name>paused_</name>
+        <briefdescription>
+<para>Paused flag. Indicates the queue mutex being locked to prevent worker threads using up CPU time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="145" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a12eb56f40710d5e33f4ae763997a2cee" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkQueue::completing_</definition>
+        <argsstring></argsstring>
+        <name>completing_</name>
+        <briefdescription>
+<para>Completing work in the main thread flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="147" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1a1c1ecce51ec02c42f4c1bed751f0ebdf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::WorkQueue::tolerance_</definition>
+        <argsstring></argsstring>
+        <name>tolerance_</name>
+        <briefdescription>
+<para>Tolerance for the shared pool before it begins to deallocate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="149" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1aeb4b2c98286ed52c652340cb29d6e65c" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::WorkQueue::lastSize_</definition>
+        <argsstring></argsstring>
+        <name>lastSize_</name>
+        <briefdescription>
+<para>Last size of the shared pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="151" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1WorkQueue_1af92ac9e3dff9fbf74b3f0907d560929d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::WorkQueue::maxNonThreadedWorkMs_</definition>
+        <argsstring></argsstring>
+        <name>maxNonThreadedWorkMs_</name>
+        <briefdescription>
+<para>Maximum milliseconds per frame to spend on low-priority work, when there are no worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="153" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1ad5d240cf16ca2561d2732cebf942a94c" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WorkQueue::WorkQueue</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>WorkQueue</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="77" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a2e5fb72456edba1d923756f9e264b864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::WorkQueue::~WorkQueue</definition>
+        <argsstring>() override</argsstring>
+        <name>~WorkQueue</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="79" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1adb9eb0a5dfe85dd84b872de320b85a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::CreateThreads</definition>
+        <argsstring>(unsigned numThreads)</argsstring>
+        <name>CreateThreads</name>
+        <param>
+          <type>unsigned</type>
+          <declname>numThreads</declname>
+        </param>
+        <briefdescription>
+<para>Create worker threads. Can only be called once. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a8974ddedd2dd0c9f577ab8d0243db8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt;</type>
+        <definition>SharedPtr&lt;WorkItem&gt; Urho3D::WorkQueue::GetFreeItem</definition>
+        <argsstring>()</argsstring>
+        <name>GetFreeItem</name>
+        <briefdescription>
+<para>Get pointer to an usable <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> from the item pool. Allocate one if no more free items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="84" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1ab717544bbd92f6bece773423b50a13f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::AddWorkItem</definition>
+        <argsstring>(const SharedPtr&lt; WorkItem &gt; &amp;item)</argsstring>
+        <name>AddWorkItem</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt; &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Add a work item and resume worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1af3c746e348650f444fe222ee391fbe41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkQueue::RemoveWorkItem</definition>
+        <argsstring>(SharedPtr&lt; WorkItem &gt; item)</argsstring>
+        <name>RemoveWorkItem</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Remove a work item before it has started executing. Return true if successfully removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a003fb2f4ea8657be0fe3063b13e6fe29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::WorkQueue::RemoveWorkItems</definition>
+        <argsstring>(const Vector&lt; SharedPtr&lt; WorkItem &gt; &gt; &amp;items)</argsstring>
+        <name>RemoveWorkItems</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt; &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+<para>Remove a number of work items before they have started executing. Return the number of items successfully removed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="90" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1aa9494a512578eeb36ed2a2cd3369af30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::Pause</definition>
+        <argsstring>()</argsstring>
+        <name>Pause</name>
+        <briefdescription>
+<para>Pause worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a1ae7a62343ff193da235dcc5f21b335f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::Resume</definition>
+        <argsstring>()</argsstring>
+        <name>Resume</name>
+        <briefdescription>
+<para>Resume worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a00cb4ea7cf4dce0e4b2c183bd952e739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::Complete</definition>
+        <argsstring>(unsigned priority)</argsstring>
+        <name>Complete</name>
+        <param>
+          <type>unsigned</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Finish all queued work which has at least the specified priority. Main thread will also execute priority work. Pause worker threads if no more work remains. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a98973b5f1d083edae7467c9e781cb6d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::SetTolerance</definition>
+        <argsstring>(int tolerance)</argsstring>
+        <name>SetTolerance</name>
+        <param>
+          <type>int</type>
+          <declname>tolerance</declname>
+        </param>
+        <briefdescription>
+<para>Set the pool telerance before it starts deleting pool items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="99" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a7f7e58daad2dc7d1962d5d8a2b48708f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::SetNonThreadedWorkMs</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>SetNonThreadedWorkMs</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>Set how many milliseconds maximum per frame to spend on low-priority work, when there are no worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="102" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a95f970e51f4c2ceb692b6ab49f59cc46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::WorkQueue::GetNumThreads</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumThreads</name>
+        <briefdescription>
+<para>Return number of worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="105" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1aa83b6f230c5db6d195b3d18f88303d51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkQueue::IsCompleted</definition>
+        <argsstring>(unsigned priority) const</argsstring>
+        <name>IsCompleted</name>
+        <param>
+          <type>unsigned</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Return whether all work with at least the specified priority is finished. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a54e59eda074d182b81d542f804386ddc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::WorkQueue::IsCompleting</definition>
+        <argsstring>() const</argsstring>
+        <name>IsCompleting</name>
+        <briefdescription>
+<para>Return whether the queue is currently completing work in the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="110" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a760e423ad714f7dc75722d955fbe5c86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::WorkQueue::GetTolerance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTolerance</name>
+        <briefdescription>
+<para>Return the pool tolerance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="113" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1af540953dcc67e4f529419001e65d7c3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::WorkQueue::GetNonThreadedWorkMs</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNonThreadedWorkMs</name>
+        <briefdescription>
+<para>Return how many milliseconds maximum to spend on non-threaded low-priority work. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="116" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="116" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a0ea072d691b47601ced28c6b26923c8c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::ProcessItems</definition>
+        <argsstring>(unsigned threadIndex)</argsstring>
+        <name>ProcessItems</name>
+        <param>
+          <type>unsigned</type>
+          <declname>threadIndex</declname>
+        </param>
+        <briefdescription>
+<para>Process work items until shut down. Called by the worker threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a2276d78d6e136224d48c02a18019c8c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::PurgeCompleted</definition>
+        <argsstring>(unsigned priority)</argsstring>
+        <name>PurgeCompleted</name>
+        <param>
+          <type>unsigned</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Purge completed work items which have at least the specified priority, and send completion events as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="122" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a2ab2c89afff9530e6e5f1767fb7d7d21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::PurgePool</definition>
+        <argsstring>()</argsstring>
+        <name>PurgePool</name>
+        <briefdescription>
+<para>Purge the pool to reduce allocation where its unneeded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1a779fffc8eac54d4a9d86b92d4060d67a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::ReturnToPool</definition>
+        <argsstring>(SharedPtr&lt; WorkItem &gt; &amp;item)</argsstring>
+        <name>ReturnToPool</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> &gt; &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Return a work item to the pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1WorkQueue_1aa30c10bef2ab469916043c7d4d089a00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::WorkQueue::HandleBeginFrame</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleBeginFrame</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle frame start event. Purge completed work from the main thread queue, and perform work if no threads at all. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="128" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Work queue subsystem for multithreading. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::WorkQueue</label>
+        <link refid="classUrho3D_1_1WorkQueue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::WorkQueue</label>
+        <link refid="classUrho3D_1_1WorkQueue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" line="69" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/WorkQueue.h" bodystart="70" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1ab717544bbd92f6bece773423b50a13f3" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>AddWorkItem</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a00cb4ea7cf4dce0e4b2c183bd952e739" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Complete</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a12eb56f40710d5e33f4ae763997a2cee" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>completing_</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1adb9eb0a5dfe85dd84b872de320b85a0c" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>CreateThreads</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a8974ddedd2dd0c9f577ab8d0243db8fd" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetFreeItem</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1af540953dcc67e4f529419001e65d7c3b" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetNonThreadedWorkMs</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a95f970e51f4c2ceb692b6ab49f59cc46" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetNumThreads</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a760e423ad714f7dc75722d955fbe5c86" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetTolerance</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::WorkQueue</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::WorkQueue</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::WorkQueue</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1aa30c10bef2ab469916043c7d4d089a00" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>HandleBeginFrame</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1aa83b6f230c5db6d195b3d18f88303d51" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>IsCompleted</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a54e59eda074d182b81d542f804386ddc" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>IsCompleting</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1aeb4b2c98286ed52c652340cb29d6e65c" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>lastSize_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1af92ac9e3dff9fbf74b3f0907d560929d" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>maxNonThreadedWorkMs_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::WorkQueue</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1aa9494a512578eeb36ed2a2cd3369af30" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Pause</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1aef9f213bd32e658774120971666ddf6b" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>paused_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1ab34d3942910d40ac9dd5811ed0ba1cf0" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>pausing_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1ad6d551a348a5999f3f18aa06c83bb510" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>poolItems_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a0ea072d691b47601ced28c6b26923c8c" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>ProcessItems</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a2276d78d6e136224d48c02a18019c8c4" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>PurgeCompleted</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a2ab2c89afff9530e6e5f1767fb7d7d21" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>PurgePool</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a7b186dd7825a63b2203a5870f96a4476" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>queue_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a81893236fc55f04d947701207582e9e4" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>queueMutex_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1af3c746e348650f444fe222ee391fbe41" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>RemoveWorkItem</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a003fb2f4ea8657be0fe3063b13e6fe29" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>RemoveWorkItems</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a1ae7a62343ff193da235dcc5f21b335f" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>Resume</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a779fffc8eac54d4a9d86b92d4060d67a" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>ReturnToPool</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a7f7e58daad2dc7d1962d5d8a2b48708f" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SetNonThreadedWorkMs</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a98973b5f1d083edae7467c9e781cb6d1" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SetTolerance</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a9a4098b040b44239c19af9ad433e2b83" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>shutDown_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a88cdd900f13ba0b6b308e19fa8cbec74" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>threads_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a1c1ecce51ec02c42f4c1bed751f0ebdf" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>tolerance_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a5cd181bfe09cfad66e8f3d87feef1439" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>WorkerThread</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a7c112a722d438baf85afe183cd7ebfb1" prot="private" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>workItems_</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1ad5d240cf16ca2561d2732cebf942a94c" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>WorkQueue</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::WorkQueue</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1WorkQueue_1a2e5fb72456edba1d923756f9e264b864" prot="public" virt="non-virtual"><scope>Urho3D::WorkQueue</scope><name>~WorkQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

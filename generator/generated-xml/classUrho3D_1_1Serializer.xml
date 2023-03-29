@@ -1,0 +1,860 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Serializer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Urho3D::Serializer</compoundname>
+    <derivedcompoundref refid="classUrho3D_1_1AbstractFile" prot="public" virt="non-virtual">Urho3D::AbstractFile</derivedcompoundref>
+    <includes refid="Serializer_8h" local="no">Serializer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1ae62db7411f059446debfc21c68c0b620" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Urho3D::Serializer::~Serializer</definition>
+        <argsstring>()</argsstring>
+        <name>~Serializer</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="49" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1af1212487507dad99d9f389f9c8b48a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned</type>
+        <definition>virtual unsigned Urho3D::Serializer::Write</definition>
+        <argsstring>(const void *data, unsigned size)=0</argsstring>
+        <name>Write</name>
+        <reimplementedby refid="classUrho3D_1_1File_1ad1686ab39e8979917bca432929a63b6b">Write</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1MemoryBuffer_1a783a34da056bedbc4f063fcd73b23b96">Write</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1NamedPipe_1a3bcb08d891cfb916861ae30a464d8470">Write</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1VectorBuffer_1a69e3d44e433b55fee41ff1f8667ad116">Write</reimplementedby>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Write bytes to the stream. Return number of bytes actually written. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="52" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a6a3448da9e75eda69642a452d7d097dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteInt64</definition>
+        <argsstring>(long long value)</argsstring>
+        <name>WriteInt64</name>
+        <param>
+          <type>long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 64-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a8fafd0034fc92b582689802c41112376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteInt</definition>
+        <argsstring>(int value)</argsstring>
+        <name>WriteInt</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 32-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a3af3c5b41495c07411886122aa7fa71f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteShort</definition>
+        <argsstring>(short value)</argsstring>
+        <name>WriteShort</name>
+        <param>
+          <type>short</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 16-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1ae8dca217acc7e982a97262ce8f0d7357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteByte</definition>
+        <argsstring>(signed char value)</argsstring>
+        <name>WriteByte</name>
+        <param>
+          <type>signed char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write an 8-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1adfd19ac70fa22d009d70469d039cd0d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteUInt64</definition>
+        <argsstring>(unsigned long long value)</argsstring>
+        <name>WriteUInt64</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 64-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1aca5302ccd24e73a82da4aecee5343e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteUInt</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>WriteUInt</name>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 32-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a7952d1242f92862ee07add3c2769f3e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteUShort</definition>
+        <argsstring>(unsigned short value)</argsstring>
+        <name>WriteUShort</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 16-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a4f90c5159c785e81d4ba74ebcfb961a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteUByte</definition>
+        <argsstring>(unsigned char value)</argsstring>
+        <name>WriteUByte</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write an 8-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a44ddefbaf5a7b7b67a002ed1c6d6d0da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteBool</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>WriteBool</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1af2b0a9945e01a6e05ff0392970d86df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteFloat</definition>
+        <argsstring>(float value)</argsstring>
+        <name>WriteFloat</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a float. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a4160a15e582a7af8f9bb36a85d3e42ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteDouble</definition>
+        <argsstring>(double value)</argsstring>
+        <name>WriteDouble</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a9a85efe8f04338e7565304261c40818f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteIntRect</definition>
+        <argsstring>(const IntRect &amp;value)</argsstring>
+        <name>WriteIntRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write an <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a2cf295d4596dcc525341e7e27bb8b7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteIntVector2</definition>
+        <argsstring>(const IntVector2 &amp;value)</argsstring>
+        <name>WriteIntVector2</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write an <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a6e3397f313f571cf3b8fb401052890bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteIntVector3</definition>
+        <argsstring>(const IntVector3 &amp;value)</argsstring>
+        <name>WriteIntVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write an <ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a67369c8dd151445b0ed9279acfa94cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteRect</definition>
+        <argsstring>(const Rect &amp;value)</argsstring>
+        <name>WriteRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1adc661f61e8350e917e25f95b987e3bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVector2</definition>
+        <argsstring>(const Vector2 &amp;value)</argsstring>
+        <name>WriteVector2</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a007d70f03e5cdc1d6403c0a56cf264bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVector3</definition>
+        <argsstring>(const Vector3 &amp;value)</argsstring>
+        <name>WriteVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a84359205f9647ecfe629608e1ce98755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WritePackedVector3</definition>
+        <argsstring>(const Vector3 &amp;value, float maxAbsCoord)</argsstring>
+        <name>WritePackedVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxAbsCoord</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> packed into 3 x 16 bits with the specified maximum absolute range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1afb33f2ac3f65dd7cafa5425f7f452069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVector4</definition>
+        <argsstring>(const Vector4 &amp;value)</argsstring>
+        <name>WriteVector4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a6d5a8c0a55e6be4beb8ac5d79ecac47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteQuaternion</definition>
+        <argsstring>(const Quaternion &amp;value)</argsstring>
+        <name>WriteQuaternion</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a quaternion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1afb76ec5a55bd12f882a691214b827a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WritePackedQuaternion</definition>
+        <argsstring>(const Quaternion &amp;value)</argsstring>
+        <name>WritePackedQuaternion</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a quaternion with each component packed in 16 bits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a34fb547b576189eff542c51bed5678de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteMatrix3</definition>
+        <argsstring>(const Matrix3 &amp;value)</argsstring>
+        <name>WriteMatrix3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1abc7c1181cd16ccffc7533b79b181f1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteMatrix3x4</definition>
+        <argsstring>(const Matrix3x4 &amp;value)</argsstring>
+        <name>WriteMatrix3x4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a286ca64bad3944c577bcae31565e5782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteMatrix4</definition>
+        <argsstring>(const Matrix4 &amp;value)</argsstring>
+        <name>WriteMatrix4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1acda150736508d053316a8a3d7c5ca629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteColor</definition>
+        <argsstring>(const Color &amp;value)</argsstring>
+        <name>WriteColor</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a5b72d159d2d843c9ffaf3e17be25fef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteBoundingBox</definition>
+        <argsstring>(const BoundingBox &amp;value)</argsstring>
+        <name>WriteBoundingBox</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a51c8222e9c2f0ce9deac7298ab0189c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteString</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>WriteString</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a null-terminated string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a467e97940ee0e2911b7d8bfa837a875b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteFileID</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>WriteFileID</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a four-letter file ID. If the string is not long enough, spaces will be appended. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1acfae08593bb40a16a3a78a2bc6426a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteStringHash</definition>
+        <argsstring>(const StringHash &amp;value)</argsstring>
+        <name>WriteStringHash</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 32-bit <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1aa7905727b8aa970eed2c02fcb4ca7047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteBuffer</definition>
+        <argsstring>(const PODVector&lt; unsigned char &gt; &amp;value)</argsstring>
+        <name>WriteBuffer</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a buffer, with size encoded as VLE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a3df14ec89889593e0171a8949fc398f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteResourceRef</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>WriteResourceRef</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a resource reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1ae9248a2f3e66bd1a44891cbc0109dd8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteResourceRefList</definition>
+        <argsstring>(const ResourceRefList &amp;value)</argsstring>
+        <name>WriteResourceRefList</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a resource reference list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a512b833ebf115c9c25df30ed4ccb7a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVariant</definition>
+        <argsstring>(const Variant &amp;value)</argsstring>
+        <name>WriteVariant</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a variant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1a33ad05e0f6b05140fe8941ebee14cc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVariantData</definition>
+        <argsstring>(const Variant &amp;value)</argsstring>
+        <name>WriteVariantData</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a variant without the type information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1aafa0871855a21d84adbc84f180c3c41e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVariantVector</definition>
+        <argsstring>(const VariantVector &amp;value)</argsstring>
+        <name>WriteVariantVector</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1a1c145ed010e3c0e10e22cc20bc3a2cac" kindref="member">VariantVector</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a variant vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1af0ff771e589cb61086bb1452bdd189c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteStringVector</definition>
+        <argsstring>(const StringVector &amp;value)</argsstring>
+        <name>WriteStringVector</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1a5f28e7014e5fbb48c5b2a999db00fc29" kindref="member">StringVector</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a variant vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="125" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1ad5837d72917b6819d89cb63c093e31e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVariantMap</definition>
+        <argsstring>(const VariantMap &amp;value)</argsstring>
+        <name>WriteVariantMap</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1ae4429a6ec1f94508037c2d21430d2124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteVLE</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>WriteVLE</name>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a variable-length encoded unsigned integer, which can use 29 bits maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1ae3e43493e05e9cbd2b771bb49ec10b46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteNetID</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>WriteNetID</name>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a 24-bit network object ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Serializer_1aadc5e07763395ee773fe007a9ba3d858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Serializer::WriteLine</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Write a text line. Char codes 13 &amp; 10 will be automatically appended. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="133" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract stream for writing. NO_COUNT </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Urho3D::VectorBuffer</label>
+        <link refid="classUrho3D_1_1VectorBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::MemoryBuffer</label>
+        <link refid="classUrho3D_1_1MemoryBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Serializer</label>
+        <link refid="classUrho3D_1_1Serializer"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::NamedPipe</label>
+        <link refid="classUrho3D_1_1NamedPipe"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::File</label>
+        <link refid="classUrho3D_1_1File"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::AbstractFile</label>
+        <link refid="classUrho3D_1_1AbstractFile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" line="45" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Serializer.h" bodystart="46" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Serializer_1af1212487507dad99d9f389f9c8b48a60" prot="public" virt="pure-virtual"><scope>Urho3D::Serializer</scope><name>Write</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a44ddefbaf5a7b7b67a002ed1c6d6d0da" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteBool</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a5b72d159d2d843c9ffaf3e17be25fef7" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aa7905727b8aa970eed2c02fcb4ca7047" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteBuffer</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae8dca217acc7e982a97262ce8f0d7357" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteByte</name></member>
+      <member refid="classUrho3D_1_1Serializer_1acda150736508d053316a8a3d7c5ca629" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteColor</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a4160a15e582a7af8f9bb36a85d3e42ff" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteDouble</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a467e97940ee0e2911b7d8bfa837a875b" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteFileID</name></member>
+      <member refid="classUrho3D_1_1Serializer_1af2b0a9945e01a6e05ff0392970d86df2" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteFloat</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a8fafd0034fc92b582689802c41112376" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteInt</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6a3448da9e75eda69642a452d7d097dc" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteInt64</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a9a85efe8f04338e7565304261c40818f" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteIntRect</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a2cf295d4596dcc525341e7e27bb8b7a4" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteIntVector2</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6e3397f313f571cf3b8fb401052890bf" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteIntVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aadc5e07763395ee773fe007a9ba3d858" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteLine</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a34fb547b576189eff542c51bed5678de" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteMatrix3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1abc7c1181cd16ccffc7533b79b181f1b5" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a286ca64bad3944c577bcae31565e5782" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteMatrix4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae3e43493e05e9cbd2b771bb49ec10b46" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteNetID</name></member>
+      <member refid="classUrho3D_1_1Serializer_1afb76ec5a55bd12f882a691214b827a1d" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WritePackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a84359205f9647ecfe629608e1ce98755" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WritePackedVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6d5a8c0a55e6be4beb8ac5d79ecac47b" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteQuaternion</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a67369c8dd151445b0ed9279acfa94cc5" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteRect</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a3df14ec89889593e0171a8949fc398f4" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteResourceRef</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae9248a2f3e66bd1a44891cbc0109dd8d" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a3af3c5b41495c07411886122aa7fa71f" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteShort</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a51c8222e9c2f0ce9deac7298ab0189c6" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteString</name></member>
+      <member refid="classUrho3D_1_1Serializer_1acfae08593bb40a16a3a78a2bc6426a88" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteStringHash</name></member>
+      <member refid="classUrho3D_1_1Serializer_1af0ff771e589cb61086bb1452bdd189c2" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteStringVector</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a4f90c5159c785e81d4ba74ebcfb961a5" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteUByte</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aca5302ccd24e73a82da4aecee5343e4b" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteUInt</name></member>
+      <member refid="classUrho3D_1_1Serializer_1adfd19ac70fa22d009d70469d039cd0d0" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteUInt64</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a7952d1242f92862ee07add3c2769f3e5" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteUShort</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a512b833ebf115c9c25df30ed4ccb7a11" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVariant</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a33ad05e0f6b05140fe8941ebee14cc15" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVariantData</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ad5837d72917b6819d89cb63c093e31e0" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVariantMap</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aafa0871855a21d84adbc84f180c3c41e" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVariantVector</name></member>
+      <member refid="classUrho3D_1_1Serializer_1adc661f61e8350e917e25f95b987e3bc2" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVector2</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a007d70f03e5cdc1d6403c0a56cf264bb" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1afb33f2ac3f65dd7cafa5425f7f452069" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVector4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae4429a6ec1f94508037c2d21430d2124" prot="public" virt="non-virtual"><scope>Urho3D::Serializer</scope><name>WriteVLE</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae62db7411f059446debfc21c68c0b620" prot="public" virt="virtual"><scope>Urho3D::Serializer</scope><name>~Serializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

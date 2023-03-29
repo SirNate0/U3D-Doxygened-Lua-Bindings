@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1BatchGroup" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::BatchGroup</compoundname>
+    <basecompoundref refid="structUrho3D_1_1Batch" prot="public" virt="non-virtual">Urho3D::Batch</basecompoundref>
+    <includes refid="Batch_8h" local="no">Batch.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1BatchGroup_1a041c3e2831b3e88ebf815df14977ffee" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1InstanceData" kindref="compound">InstanceData</ref> &gt;</type>
+        <definition>PODVector&lt;InstanceData&gt; Urho3D::BatchGroup::instances_</definition>
+        <argsstring></argsstring>
+        <name>instances_</name>
+        <briefdescription>
+<para>Instance data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="172" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchGroup_1a61e51d298f681bb4a069ed9bbafb27d8" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BatchGroup::startIndex_</definition>
+        <argsstring></argsstring>
+        <name>startIndex_</name>
+        <briefdescription>
+<para>Instance stream start index, or M_MAX_UNSIGNED if transforms not pre-set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="174" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structUrho3D_1_1BatchGroup_1adefedc16a2726e1471b8212b173eb7c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BatchGroup::BatchGroup</definition>
+        <argsstring>()</argsstring>
+        <name>BatchGroup</name>
+        <briefdescription>
+<para>Construct with defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="137" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchGroup_1a6050c30b8be3bca523d7372e2b89deda" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BatchGroup::BatchGroup</definition>
+        <argsstring>(const Batch &amp;batch)</argsstring>
+        <name>BatchGroup</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1Batch" kindref="compound">Batch</ref> &amp;</type>
+          <declname>batch</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a batch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="143" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchGroup_1abf872d813119c832a5c8bf50ea3cc340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BatchGroup::~BatchGroup</definition>
+        <argsstring>()=default</argsstring>
+        <name>~BatchGroup</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="150" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchGroup_1a1307f350fc30c7c69c5aef76661ef7bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchGroup::AddTransforms</definition>
+        <argsstring>(const Batch &amp;batch)</argsstring>
+        <name>AddTransforms</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1Batch" kindref="compound">Batch</ref> &amp;</type>
+          <declname>batch</declname>
+        </param>
+        <briefdescription>
+<para>Add world transform(s) from a batch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="153" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="153" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchGroup_1a92889a8fd53bea74dcd4f3ec0e6623a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchGroup::SetInstancingData</definition>
+        <argsstring>(void *lockedData, unsigned stride, unsigned &amp;freeIndex)</argsstring>
+        <name>SetInstancingData</name>
+        <param>
+          <type>void *</type>
+          <declname>lockedData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>freeIndex</declname>
+        </param>
+        <briefdescription>
+<para>Pre-set the instance data. Buffer must be big enough to hold all data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="167" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchGroup_1ae44c18517fde1462221ddc7c7a1b2cd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchGroup::Draw</definition>
+        <argsstring>(View *view, Camera *camera, bool allowDepthWrite) const</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allowDepthWrite</declname>
+        </param>
+        <briefdescription>
+<para>Prepare and draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="169" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Instanced 3D geometry draw call. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Batch</label>
+        <link refid="structUrho3D_1_1Batch"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::BatchGroup</label>
+        <link refid="structUrho3D_1_1BatchGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>Urho3D::Zone</label>
+        <link refid="classUrho3D_1_1Zone"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>lastAmbientEndZone_</edgelabel>
+          <edgelabel>lastAmbientStartZone_</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>zoneTexture_</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>lastWorldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>ambientColor_</edgelabel>
+          <edgelabel>ambientEndColor_</edgelabel>
+          <edgelabel>ambientStartColor_</edgelabel>
+          <edgelabel>fogColor_</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>inverseWorld_</edgelabel>
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Urho3D::ShaderVariation</label>
+        <link refid="classUrho3D_1_1ShaderVariation"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>Urho3D::PODVector&lt; Urho3D::Camera * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Urho3D::Light</label>
+        <link refid="classUrho3D_1_1Light"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="15">
+        <label>Urho3D::PODVector&lt; Urho3D::BatchGroup * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Urho3D::PODVector&lt; Urho3D::Batch * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>drawables_</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>center_</edgelabel>
+          <edgelabel>halfSize_</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>cullingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>children_</edgelabel>
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::String</label>
+        <link refid="classUrho3D_1_1String"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>EMPTY</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::Texture2D</label>
+        <link refid="classUrho3D_1_1Texture2D"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Zone &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="52">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Urho3D::Pass</label>
+        <link refid="classUrho3D_1_1Pass"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Urho3D::BoundingBox</label>
+        <link refid="classUrho3D_1_1BoundingBox"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>max_</edgelabel>
+          <edgelabel>min_</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Urho3D::PODVector&lt; Urho3D::Batch &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::LightBatchQueue</label>
+        <link refid="structUrho3D_1_1LightBatchQueue"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>shadowSplits_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>vertexLights_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>litBaseBatches_</edgelabel>
+          <edgelabel>litBatches_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>shadowMap_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>volumeBatches_</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>light_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="8">
+        <label>Urho3D::HashMap&lt; unsigned short, unsigned short &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>Urho3D::Matrix3x4</label>
+        <link refid="classUrho3D_1_1Matrix3x4"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::StringHash</label>
+        <link refid="classUrho3D_1_1StringHash"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="14">
+        <label>Urho3D::HashMap&lt; Urho3D::BatchGroupKey, Urho3D::BatchGroup &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::HashMap&lt; unsigned, unsigned &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Urho3D::Geometry</label>
+        <link refid="classUrho3D_1_1Geometry"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>zone_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lights_</edgelabel>
+          <edgelabel>vertexLights_</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>viewCameras_</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>firstLight_</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>boundingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>octant_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::BatchQueue</label>
+        <link refid="structUrho3D_1_1BatchQueue"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>geometryRemapping_</edgelabel>
+          <edgelabel>materialRemapping_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>shaderRemapping_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>batchGroups_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>sortedBatchGroups_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>psExtraDefines_</edgelabel>
+          <edgelabel>vsExtraDefines_</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>psExtraDefinesHash_</edgelabel>
+          <edgelabel>vsExtraDefinesHash_</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>sortedBatches_</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="31">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Batch</label>
+        <link refid="structUrho3D_1_1Batch"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lightQueue_</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>zone_</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>geometry_</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>material_</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>pixelShader_</edgelabel>
+          <edgelabel>vertexShader_</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>pass_</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>worldTransform_</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="55">
+        <label>Urho3D::Material</label>
+        <link refid="classUrho3D_1_1Material"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Urho3D::Texture</label>
+        <link refid="classUrho3D_1_1Texture"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>backupTexture_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>borderColor_</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="42">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Vector&lt; Urho3D::ShadowBatchQueue &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::BatchGroup</label>
+        <link refid="structUrho3D_1_1BatchGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>instances_</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Urho3D::Vector&lt; Urho3D::SourceBatch &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::PODVector&lt; Urho3D::Light * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+      <node id="41">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Urho3D::PODVector&lt; Urho3D::InstanceData &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="134" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="135" bodyend="175"/>
+    <listofallmembers>
+      <member refid="structUrho3D_1_1BatchGroup_1a1307f350fc30c7c69c5aef76661ef7bc" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>AddTransforms</name></member>
+      <member refid="structUrho3D_1_1Batch_1a6d3e1acd6fa01bd44eca1ba5e4434e2d" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>Batch</name></member>
+      <member refid="structUrho3D_1_1Batch_1a3edf36908e9c74e396fee7641764b752" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>Batch</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1adefedc16a2726e1471b8212b173eb7c6" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>BatchGroup</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1a6050c30b8be3bca523d7372e2b89deda" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>BatchGroup</name></member>
+      <member refid="structUrho3D_1_1Batch_1a03e6c90ef0f19b20114e096ca71f3484" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>CalculateSortKey</name></member>
+      <member refid="structUrho3D_1_1Batch_1ab67e488dbd06fb4ad5d4ca30a0c142b3" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>distance_</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1ae44c18517fde1462221ddc7c7a1b2cd4" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>Draw</name></member>
+      <member refid="structUrho3D_1_1Batch_1a02bda9ff330190fea1f629671f1be8f7" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>geometry_</name></member>
+      <member refid="structUrho3D_1_1Batch_1ae6fe944557b76f3bbfaefbeac01add0a" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>geometryType_</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1a041c3e2831b3e88ebf815df14977ffee" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>instances_</name></member>
+      <member refid="structUrho3D_1_1Batch_1ab288acc04a9fd9169601c1bc733f1031" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>instancingData_</name></member>
+      <member refid="structUrho3D_1_1Batch_1afe92f4bb95a256a6c9ea7fc90d9fbcc7" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>isBase_</name></member>
+      <member refid="structUrho3D_1_1Batch_1abbcddea31d881e1915c19563875b0a57" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>lightMask_</name></member>
+      <member refid="structUrho3D_1_1Batch_1ab763b56431b05a56c2fbace86f669538" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>lightQueue_</name></member>
+      <member refid="structUrho3D_1_1Batch_1a3b1bdfa165af35fe384ca4fe60d04833" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>material_</name></member>
+      <member refid="structUrho3D_1_1Batch_1a10fef31fefa9d8ed7128457804a74ae4" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>numWorldTransforms_</name></member>
+      <member refid="structUrho3D_1_1Batch_1ac5e6b173cf2a3e9882b1f423fbf116a3" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>pass_</name></member>
+      <member refid="structUrho3D_1_1Batch_1ae7fb02aba577c825192fb0093c939fa7" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>pixelShader_</name></member>
+      <member refid="structUrho3D_1_1Batch_1ad8794a08ef43585f0c54aebf11f39e11" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>Prepare</name></member>
+      <member refid="structUrho3D_1_1Batch_1a0e4667708b433727cf0fc0a1ced52bc0" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>renderOrder_</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1a92889a8fd53bea74dcd4f3ec0e6623a3" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>SetInstancingData</name></member>
+      <member refid="structUrho3D_1_1Batch_1a280b4f65a46d3f91576956fb7a697e08" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>sortKey_</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1a61e51d298f681bb4a069ed9bbafb27d8" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>startIndex_</name></member>
+      <member refid="structUrho3D_1_1Batch_1a35a531db51177128fd9c57d602a3d1fa" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>vertexShader_</name></member>
+      <member refid="structUrho3D_1_1Batch_1aba6007620d79f6be14048848f46f665e" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>worldTransform_</name></member>
+      <member refid="structUrho3D_1_1Batch_1afd0e368ed367f3e69deb02ed356401d9" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>zone_</name></member>
+      <member refid="structUrho3D_1_1BatchGroup_1abf872d813119c832a5c8bf50ea3cc340" prot="public" virt="non-virtual"><scope>Urho3D::BatchGroup</scope><name>~BatchGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

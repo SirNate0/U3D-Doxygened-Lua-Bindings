@@ -1,0 +1,798 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1FileSystem" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::FileSystem</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="FileSystem_8h" local="no">FileSystem.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1FileSystem_1a308a788f0cefffbdb2af34500d995b2f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>HashSet&lt;String&gt; Urho3D::FileSystem::allowedPaths_</definition>
+        <argsstring></argsstring>
+        <name>allowedPaths_</name>
+        <briefdescription>
+<para>Allowed directories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="124" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FileSystem_1a91f0b77d743ca4408a9b77160aff8cba" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1List" kindref="compound">List</ref>&lt; AsyncExecRequest * &gt;</type>
+        <definition>List&lt;AsyncExecRequest*&gt; Urho3D::FileSystem::asyncExecQueue_</definition>
+        <argsstring></argsstring>
+        <name>asyncExecQueue_</name>
+        <briefdescription>
+<para>Async execution queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="126" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FileSystem_1aabe0af8ac355b278a54949e0abb86719" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::FileSystem::nextAsyncExecID_</definition>
+        <argsstring></argsstring>
+        <name>nextAsyncExecID_</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+<para>Next async execution ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="128" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1FileSystem_1a7e155c16dadc27181d74913643edb90a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::executeConsoleCommands_</definition>
+        <argsstring></argsstring>
+        <name>executeConsoleCommands_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Flag for executing engine console commands as OS-specific system command. Default to true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="130" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a15db0d3234c8eb1f03c1f5d0c61deaaa" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::FileSystem::FileSystem</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>FileSystem</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="48" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a401c5a53b327f5882b87620c44460ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::FileSystem::~FileSystem</definition>
+        <argsstring>() override</argsstring>
+        <name>~FileSystem</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="50" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1af32c36adad154e2a4759a18bd82870bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::SetCurrentDir</definition>
+        <argsstring>(const String &amp;pathName)</argsstring>
+        <name>SetCurrentDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the current working directory. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a09594968968c8ce5511523f6a002d8d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::CreateDir</definition>
+        <argsstring>(const String &amp;pathName)</argsstring>
+        <name>CreateDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <briefdescription>
+<para>Create a directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a08a99c4e2661a009f2ef61ed665dea25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FileSystem::SetExecuteConsoleCommands</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetExecuteConsoleCommands</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to execute engine console commands as OS-specific system command. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="59" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a0149d36ce7946f6d0feec557ec8245a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::FileSystem::SystemCommand</definition>
+        <argsstring>(const String &amp;commandLine, bool redirectStdOutToLog=false)</argsstring>
+        <name>SystemCommand</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>commandLine</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>redirectStdOutToLog</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Run a program using the command interpreter, block until it exits and return the exit code. Will fail if any allowed paths are defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="61" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a58d430f0fa0724294df51f0b292ef6da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::FileSystem::SystemRun</definition>
+        <argsstring>(const String &amp;fileName, const Vector&lt; String &gt; &amp;arguments)</argsstring>
+        <name>SystemRun</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+<para>Run a specific program, block until it exits and return the exit code. Will fail if any allowed paths are defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="63" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1ac41addf8aca3d3a227ab3d40521bbd88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::FileSystem::SystemCommandAsync</definition>
+        <argsstring>(const String &amp;commandLine)</argsstring>
+        <name>SystemCommandAsync</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>commandLine</declname>
+        </param>
+        <briefdescription>
+<para>Run a program using the command interpreter asynchronously. Return a request ID or M_MAX_UNSIGNED if failed. The exit code will be posted together with the request ID in an AsyncExecFinished event. Will fail if any allowed paths are defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="65" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a14b57b04fdb0e3794fe4d36bfc291a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::FileSystem::SystemRunAsync</definition>
+        <argsstring>(const String &amp;fileName, const Vector&lt; String &gt; &amp;arguments)</argsstring>
+        <name>SystemRunAsync</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>arguments</declname>
+        </param>
+        <briefdescription>
+<para>Run a specific program asynchronously. Return a request ID or M_MAX_UNSIGNED if failed. The exit code will be posted together with the request ID in an AsyncExecFinished event. Will fail if any allowed paths are defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="67" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1aaa92aa00773df60ebc86680e433e156f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::SystemOpen</definition>
+        <argsstring>(const String &amp;fileName, const String &amp;mode=String::EMPTY)</argsstring>
+        <name>SystemOpen</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>mode</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Open a file in an external program, with mode such as &quot;edit&quot; optionally specified. Will fail if any allowed paths are defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a362520e5a74b590b05fa0f7204790235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::Copy</definition>
+        <argsstring>(const String &amp;srcFileName, const String &amp;destFileName)</argsstring>
+        <name>Copy</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>srcFileName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>destFileName</declname>
+        </param>
+        <briefdescription>
+<para>Copy a file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a186b7fab6527e891aa0a8541da3dbb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::Rename</definition>
+        <argsstring>(const String &amp;srcFileName, const String &amp;destFileName)</argsstring>
+        <name>Rename</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>srcFileName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>destFileName</declname>
+        </param>
+        <briefdescription>
+<para>Rename a file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1ac803ab7aa678335adcc3dabac93eead3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::Delete</definition>
+        <argsstring>(const String &amp;fileName)</argsstring>
+        <name>Delete</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Delete a file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a7efdd8723ddb68cd314928345c6f4739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FileSystem::RegisterPath</definition>
+        <argsstring>(const String &amp;pathName)</argsstring>
+        <name>RegisterPath</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <briefdescription>
+<para>Register a path as allowed to access. If no paths are registered, all are allowed. Registering allowed paths is considered securing the Urho3D execution environment: running programs and opening files externally through the system will fail afterward. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1ab2a39ddcfbbde943be9801c8b4bd5797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::SetLastModifiedTime</definition>
+        <argsstring>(const String &amp;fileName, unsigned newTime)</argsstring>
+        <name>SetLastModifiedTime</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>newTime</declname>
+        </param>
+        <briefdescription>
+<para>Set a file&apos;s last modified time as seconds since 1.1.1970. Return true on success. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a913e0214044626dca6fe671dd3360e6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::FileSystem::GetCurrentDir</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the absolute current working directory. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="83" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1aa09beb70a0158e7450637a6f7d0d6532" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::GetExecuteConsoleCommands</definition>
+        <argsstring>() const</argsstring>
+        <name>GetExecuteConsoleCommands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is executing engine console commands as OS-specific system command. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="87" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a31b2922f9b92e5ef7bd8401670fc2ea6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::HasRegisteredPaths</definition>
+        <argsstring>() const</argsstring>
+        <name>HasRegisteredPaths</name>
+        <briefdescription>
+<para>Return whether paths have been registered. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="90" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a137dae13be5ce618500b67bdf6c3df32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::CheckAccess</definition>
+        <argsstring>(const String &amp;pathName) const</argsstring>
+        <name>CheckAccess</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <briefdescription>
+<para>Check if a path is allowed to be accessed. If no paths are registered, all are allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a7dd9945fa131b07fb5289e128a34e9ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::FileSystem::GetLastModifiedTime</definition>
+        <argsstring>(const String &amp;fileName) const</argsstring>
+        <name>GetLastModifiedTime</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Returns the file&apos;s last modified time as seconds since 1.1.1970, or 0 if can not be accessed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="95" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a2f5d83750d748cc1b80202ae904f1ab2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::FileExists</definition>
+        <argsstring>(const String &amp;fileName) const</argsstring>
+        <name>FileExists</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Check if a file exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a1fb669d14c2a288f094641a02bfcab5a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::FileSystem::DirExists</definition>
+        <argsstring>(const String &amp;pathName) const</argsstring>
+        <name>DirExists</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <briefdescription>
+<para>Check if a directory exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a3740cccb20c0743cb3930edd67d8eb56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FileSystem::ScanDir</definition>
+        <argsstring>(Vector&lt; String &gt; &amp;result, const String &amp;pathName, const String &amp;filter, unsigned flags, bool recursive) const</argsstring>
+        <name>ScanDir</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Scan a directory for specified files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a716fac5e2037799e3723e347e8aad441" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::FileSystem::GetProgramDir</definition>
+        <argsstring>() const</argsstring>
+        <name>GetProgramDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the program&apos;s directory. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="104" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a220bb74fc73328187be2250b65aa0e21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::FileSystem::GetUserDocumentsDir</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUserDocumentsDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the user documents directory. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="107" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a365147e1fd0c360d90218bb049e5eec3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::FileSystem::GetAppPreferencesDir</definition>
+        <argsstring>(const String &amp;org, const String &amp;app) const</argsstring>
+        <name>GetAppPreferencesDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>org</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>Return the application preferences directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="109" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a2237334a2086017b1dddc2e6718693fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::FileSystem::GetTemporaryDir</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTemporaryDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return path of temporary directory. Path always ends with a forward slash. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="112" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1ab66778624626a29a84688a1c4cb9f71d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FileSystem::ScanDirInternal</definition>
+        <argsstring>(Vector&lt; String &gt; &amp;result, String path, const String &amp;startPath, const String &amp;filter, unsigned flags, bool recursive) const</argsstring>
+        <name>ScanDirInternal</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>startPath</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>recursive</declname>
+        </param>
+        <briefdescription>
+<para>Scan directory, called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a67d807c13f09d57b1c2e96618ddcbfb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FileSystem::HandleBeginFrame</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleBeginFrame</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle begin frame event to check for completed async executions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1FileSystem_1a0160529012807d4a61dee3bfcc477784" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::FileSystem::HandleConsoleCommand</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleConsoleCommand</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle a console command event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="121" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Subsystem for file and directory operations and access control. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::FileSystem</label>
+        <link refid="classUrho3D_1_1FileSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::FileSystem</label>
+        <link refid="classUrho3D_1_1FileSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" line="42" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/FileSystem.h" bodystart="43" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a308a788f0cefffbdb2af34500d995b2f" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>allowedPaths_</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a91f0b77d743ca4408a9b77160aff8cba" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>asyncExecQueue_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a137dae13be5ce618500b67bdf6c3df32" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>CheckAccess</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a362520e5a74b590b05fa0f7204790235" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Copy</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a09594968968c8ce5511523f6a002d8d1" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>CreateDir</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1ac803ab7aa678335adcc3dabac93eead3" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Delete</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a1fb669d14c2a288f094641a02bfcab5a" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>DirExists</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a7e155c16dadc27181d74913643edb90a" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>executeConsoleCommands_</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a2f5d83750d748cc1b80202ae904f1ab2" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>FileExists</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a15db0d3234c8eb1f03c1f5d0c61deaaa" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>FileSystem</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a365147e1fd0c360d90218bb049e5eec3" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetAppPreferencesDir</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a913e0214044626dca6fe671dd3360e6f" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetCurrentDir</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1aa09beb70a0158e7450637a6f7d0d6532" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetExecuteConsoleCommands</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a7dd9945fa131b07fb5289e128a34e9ac" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetLastModifiedTime</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a716fac5e2037799e3723e347e8aad441" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetProgramDir</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a2237334a2086017b1dddc2e6718693fb" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetTemporaryDir</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::FileSystem</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::FileSystem</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::FileSystem</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a220bb74fc73328187be2250b65aa0e21" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>GetUserDocumentsDir</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a67d807c13f09d57b1c2e96618ddcbfb8" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>HandleBeginFrame</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a0160529012807d4a61dee3bfcc477784" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>HandleConsoleCommand</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a31b2922f9b92e5ef7bd8401670fc2ea6" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>HasRegisteredPaths</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1aabe0af8ac355b278a54949e0abb86719" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>nextAsyncExecID_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::FileSystem</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a7efdd8723ddb68cd314928345c6f4739" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>RegisterPath</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a186b7fab6527e891aa0a8541da3dbb5c" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>Rename</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a3740cccb20c0743cb3930edd67d8eb56" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>ScanDir</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1ab66778624626a29a84688a1c4cb9f71d" prot="private" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>ScanDirInternal</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1af32c36adad154e2a4759a18bd82870bd" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SetCurrentDir</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a08a99c4e2661a009f2ef61ed665dea25" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SetExecuteConsoleCommands</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1ab2a39ddcfbbde943be9801c8b4bd5797" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SetLastModifiedTime</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a0149d36ce7946f6d0feec557ec8245a9" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SystemCommand</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1ac41addf8aca3d3a227ab3d40521bbd88" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SystemCommandAsync</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1aaa92aa00773df60ebc86680e433e156f" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SystemOpen</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a58d430f0fa0724294df51f0b292ef6da" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SystemRun</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a14b57b04fdb0e3794fe4d36bfc291a0f" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>SystemRunAsync</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1FileSystem_1a401c5a53b327f5882b87620c44460ba9" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>~FileSystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::FileSystem</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::FileSystem</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

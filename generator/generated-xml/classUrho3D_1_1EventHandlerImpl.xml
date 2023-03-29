@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1EventHandlerImpl" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::EventHandlerImpl</compoundname>
+    <basecompoundref refid="classUrho3D_1_1EventHandler" prot="public" virt="non-virtual">Urho3D::EventHandler</basecompoundref>
+    <includes refid="Object_8h" local="no">Object.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classUrho3D_1_1EventHandlerImpl_1affe89c530a314d649b69a673c5089e88" prot="public" static="no">
+        <type>void(T::*)(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;)</type>
+        <definition>using Urho3D::EventHandlerImpl&lt; T &gt;::HandlerFunctionPtr =  void (T::*)(StringHash, VariantMap&amp;)</definition>
+        <argsstring></argsstring>
+        <name>HandlerFunctionPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="308" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1EventHandlerImpl_1ae0b1ab2a2a87516cc9cf555f1b1829c7" prot="private" static="no" mutable="no">
+        <type>HandlerFunctionPtr</type>
+        <definition>HandlerFunctionPtr Urho3D::EventHandlerImpl&lt; T &gt;::function_</definition>
+        <argsstring></argsstring>
+        <name>function_</name>
+        <briefdescription>
+<para>Class-specific pointer to handler function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="334" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1EventHandlerImpl_1aaf32967575a35c3ebaf886a6fffbc8bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::EventHandlerImpl&lt; T &gt;::EventHandlerImpl</definition>
+        <argsstring>(T *receiver, HandlerFunctionPtr function, void *userData=nullptr)</argsstring>
+        <name>EventHandlerImpl</name>
+        <param>
+          <type>T *</type>
+          <declname>receiver</declname>
+        </param>
+        <param>
+          <type>HandlerFunctionPtr</type>
+          <declname>function</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userData</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct with receiver and function pointers and userdata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="311" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="311" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1EventHandlerImpl_1a81d52c95f0d62db58085ea17ddfee366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::EventHandlerImpl&lt; T &gt;::Invoke</definition>
+        <argsstring>(VariantMap &amp;eventData) override</argsstring>
+        <name>Invoke</name>
+        <reimplements refid="classUrho3D_1_1EventHandler_1a1e00d3b7b55273ff586f5bff1dc9bc6d">Invoke</reimplements>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Invoke event handler function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="320" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1EventHandlerImpl_1ad046ed94beb813714c30269e90fcbd43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classUrho3D_1_1EventHandler" kindref="compound">EventHandler</ref> *</type>
+        <definition>EventHandler* Urho3D::EventHandlerImpl&lt; T &gt;::Clone</definition>
+        <argsstring>() const override</argsstring>
+        <name>Clone</name>
+        <reimplements refid="classUrho3D_1_1EventHandler_1ab115661c20d44cf26def026dc8d213fa">Clone</reimplements>
+        <briefdescription>
+<para>Return a unique copy of the event handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="327" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="327" bodyend="330"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template implementation of the event handler invoke helper (stores a function pointer of specific class). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::LinkedListNode</label>
+        <link refid="structUrho3D_1_1LinkedListNode"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::EventHandlerImpl&lt; T &gt;</label>
+        <link refid="classUrho3D_1_1EventHandlerImpl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::EventHandler</label>
+        <link refid="classUrho3D_1_1EventHandler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Urho3D::StringHash</label>
+        <link refid="classUrho3D_1_1StringHash"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::LinkedListNode</label>
+        <link refid="structUrho3D_1_1LinkedListNode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::EventHandlerImpl&lt; T &gt;</label>
+        <link refid="classUrho3D_1_1EventHandlerImpl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::EventHandler</label>
+        <link refid="classUrho3D_1_1EventHandler"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>receiver_</edgelabel>
+          <edgelabel>sender_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>eventType_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="305" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="306" bodyend="335"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1EventHandlerImpl_1ad046ed94beb813714c30269e90fcbd43" prot="public" virt="virtual"><scope>Urho3D::EventHandlerImpl</scope><name>Clone</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a277d84f848158154a0180fc464b9c46f" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>EventHandler</name></member>
+      <member refid="classUrho3D_1_1EventHandlerImpl_1aaf32967575a35c3ebaf886a6fffbc8bb" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>EventHandlerImpl</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1afb77aa899e7ec40385b255c1d6c21888" prot="protected" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>eventType_</name></member>
+      <member refid="classUrho3D_1_1EventHandlerImpl_1ae0b1ab2a2a87516cc9cf555f1b1829c7" prot="private" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>function_</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a9ca2279f2ae089c9c99965e3edfe6bf7" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>GetEventType</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a2fe854df06155d8fdebcdb86cd26ab73" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>GetReceiver</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a623bae83762aa730b7e1025437834b3a" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>GetSender</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a07771b40d1595e81809fb66b90583e65" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>GetUserData</name></member>
+      <member refid="classUrho3D_1_1EventHandlerImpl_1affe89c530a314d649b69a673c5089e88" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>HandlerFunctionPtr</name></member>
+      <member refid="classUrho3D_1_1EventHandlerImpl_1a81d52c95f0d62db58085ea17ddfee366" prot="public" virt="virtual"><scope>Urho3D::EventHandlerImpl</scope><name>Invoke</name></member>
+      <member refid="structUrho3D_1_1LinkedListNode_1ae27b2e0a190ec73c2b5784ec64434a9f" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>LinkedListNode</name></member>
+      <member refid="structUrho3D_1_1LinkedListNode_1a170fc9eff22dc4f88624a5f60880042f" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>next_</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a92094e283b8e8856945b29a5f1b2041f" prot="protected" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>receiver_</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a53533c1f5a5757ce8649cfb2fce0184a" prot="protected" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>sender_</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1abe76f0245895dadac146b7a4b7d78713" prot="public" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>SetSenderAndEventType</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1a966c36c2d67740dc768077f63e97e445" prot="protected" virt="non-virtual"><scope>Urho3D::EventHandlerImpl</scope><name>userData_</name></member>
+      <member refid="classUrho3D_1_1EventHandler_1abd1ffef4d89cedbf5578965b7246117e" prot="public" virt="virtual"><scope>Urho3D::EventHandlerImpl</scope><name>~EventHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

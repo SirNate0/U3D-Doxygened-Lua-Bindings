@@ -1,0 +1,1635 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ResourceCache" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ResourceCache</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="ResourceCache_8h" local="no">ResourceCache.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a4a71c415f8d9cc386f83c625cfcbfb5e" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::ResourceCache::resourceMutex_</definition>
+        <argsstring></argsstring>
+        <name>resourceMutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> for thread-safe access to the resource directories, resource packages and resource dependencies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="248" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a23a99f207826b9517721eda457aae943" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="structUrho3D_1_1ResourceGroup" kindref="compound">ResourceGroup</ref> &gt;</type>
+        <definition>HashMap&lt;StringHash, ResourceGroup&gt; Urho3D::ResourceCache::resourceGroups_</definition>
+        <argsstring></argsstring>
+        <name>resourceGroups_</name>
+        <briefdescription>
+<para>Resources by type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="250" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1abca7fe07b1e82685750d068840260956" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>Vector&lt;String&gt; Urho3D::ResourceCache::resourceDirs_</definition>
+        <argsstring></argsstring>
+        <name>resourceDirs_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> load directories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="252" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a736c7789c755edea67a914578ba8f3ad" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1FileWatcher" kindref="compound">FileWatcher</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;FileWatcher&gt; &gt; Urho3D::ResourceCache::fileWatchers_</definition>
+        <argsstring></argsstring>
+        <name>fileWatchers_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> watchers for resource directories, if automatic reloading enabled. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="254" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a966675253b1b2582f933f088ccfa3106" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;PackageFile&gt; &gt; Urho3D::ResourceCache::packages_</definition>
+        <argsstring></argsstring>
+        <name>packages_</name>
+        <briefdescription>
+<para>Package files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="256" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a05ae811d6321749d38e99cd2e50ad3b2" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, HashSet&lt;StringHash&gt; &gt; Urho3D::ResourceCache::dependentResources_</definition>
+        <argsstring></argsstring>
+        <name>dependentResources_</name>
+        <briefdescription>
+<para>Dependent resources. Only used with automatic reload to eg. trigger reload of a cube texture when any of its faces change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="258" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1afe89c792f8587a4da5ef1e4c765bbe29" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1BackgroundLoader" kindref="compound">BackgroundLoader</ref> &gt;</type>
+        <definition>SharedPtr&lt;BackgroundLoader&gt; Urho3D::ResourceCache::backgroundLoader_</definition>
+        <argsstring></argsstring>
+        <name>backgroundLoader_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> background loader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="260" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a0205840423951f62fc4aaebc9b247242" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1ResourceRouter" kindref="compound">ResourceRouter</ref> &gt; &gt;</type>
+        <definition>Vector&lt;SharedPtr&lt;ResourceRouter&gt; &gt; Urho3D::ResourceCache::resourceRouters_</definition>
+        <argsstring></argsstring>
+        <name>resourceRouters_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> routers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="262" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a6dfcdd45c58adcb85922ba36000d97b5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::autoReloadResources_</definition>
+        <argsstring></argsstring>
+        <name>autoReloadResources_</name>
+        <briefdescription>
+<para>Automatic resource reloading flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="264" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a1396e2b0a006c67c61cbc47a529fddba" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::returnFailedResources_</definition>
+        <argsstring></argsstring>
+        <name>returnFailedResources_</name>
+        <briefdescription>
+<para>Return failed resources flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="266" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a5bf69cbb17aa18a4b17a3c28f41b3580" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::searchPackagesFirst_</definition>
+        <argsstring></argsstring>
+        <name>searchPackagesFirst_</name>
+        <briefdescription>
+<para>Search priority flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="268" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1aa903df2d5687121884269ddcd84737da" prot="private" static="no" mutable="yes">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::isRouting_</definition>
+        <argsstring></argsstring>
+        <name>isRouting_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> routing flag to prevent endless recursion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="270" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ResourceCache_1a1e0fc9fc5a62ecc0f0cfb6f1f09200ea" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::ResourceCache::finishBackgroundResourcesMs_</definition>
+        <argsstring></argsstring>
+        <name>finishBackgroundResourcesMs_</name>
+        <briefdescription>
+<para>How many milliseconds maximum per frame to spend on finishing background loaded resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="272" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a43e64e32120b4e9acf83fb5e2ea77aab" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ResourceCache::ResourceCache</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>ResourceCache</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="90" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a2e124f006be5be76c5f842ab63a5b8eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ResourceCache::~ResourceCache</definition>
+        <argsstring>() override</argsstring>
+        <name>~ResourceCache</name>
+        <briefdescription>
+<para>Destruct. Free all resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="92" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ad23a60a58db971ff3d714e5d6f33e856" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::AddResourceDir</definition>
+        <argsstring>(const String &amp;pathName, unsigned priority=PRIORITY_LAST)</argsstring>
+        <name>AddResourceDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>priority</declname>
+          <defval>PRIORITY_LAST</defval>
+        </param>
+        <briefdescription>
+<para>Add a resource load directory. Optional priority parameter which will control search order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a286aba429fd463fbc3eba29e44d69cf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::AddPackageFile</definition>
+        <argsstring>(PackageFile *package, unsigned priority=PRIORITY_LAST)</argsstring>
+        <name>AddPackageFile</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> *</type>
+          <declname>package</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>priority</declname>
+          <defval>PRIORITY_LAST</defval>
+        </param>
+        <briefdescription>
+<para>Add a package file for loading resources from. Optional priority parameter which will control search order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a9d0bc41b3b1e568d54c3634ecaf3a333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::AddPackageFile</definition>
+        <argsstring>(const String &amp;fileName, unsigned priority=PRIORITY_LAST)</argsstring>
+        <name>AddPackageFile</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>priority</declname>
+          <defval>PRIORITY_LAST</defval>
+        </param>
+        <briefdescription>
+<para>Add a package file for loading resources from by name. Optional priority parameter which will control search order. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ae277181563b9fd28edec13c109fc8b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::AddManualResource</definition>
+        <argsstring>(Resource *resource)</argsstring>
+        <name>AddManualResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+<para>Add a manually created resource. Must be uniquely named within its type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a89bb2543d35de4396febe6310edd7319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::RemoveResourceDir</definition>
+        <argsstring>(const String &amp;pathName)</argsstring>
+        <name>RemoveResourceDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>pathName</declname>
+        </param>
+        <briefdescription>
+<para>Remove a resource load directory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1adbd85ce2d31c96595b2067e9d2d39b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::RemovePackageFile</definition>
+        <argsstring>(PackageFile *package, bool releaseResources=true, bool forceRelease=false)</argsstring>
+        <name>RemovePackageFile</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> *</type>
+          <declname>package</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>releaseResources</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceRelease</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Remove a package file. Optionally release the resources loaded from it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1af554e7e137ca07b6b0918caffac90703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::RemovePackageFile</definition>
+        <argsstring>(const String &amp;fileName, bool releaseResources=true, bool forceRelease=false)</argsstring>
+        <name>RemovePackageFile</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>releaseResources</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceRelease</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Remove a package file by name. Optionally release the resources loaded from it. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a7176967774c35bcf1aaf8c5b2312e9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleaseResource</definition>
+        <argsstring>(StringHash type, const String &amp;name, bool force=false)</argsstring>
+        <name>ReleaseResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release a resource by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a2301642b69c186196e493b721e667848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleaseResources</definition>
+        <argsstring>(StringHash type, bool force=false)</argsstring>
+        <name>ReleaseResources</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release all resources of a specific type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ad4c08b133d363f54899252fc3f7eadb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleaseResources</definition>
+        <argsstring>(StringHash type, const String &amp;partialName, bool force=false)</argsstring>
+        <name>ReleaseResources</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>partialName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release resources of a specific type and partial name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a6d51295193a15cb51b167e685e954684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleaseResources</definition>
+        <argsstring>(const String &amp;partialName, bool force=false)</argsstring>
+        <name>ReleaseResources</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>partialName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release resources of all types by partial name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a7ea584bf640ad59e61923c234b04e3f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleaseAllResources</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>ReleaseAllResources</name>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release all resources. When called with the force flag false, releases all currently unused resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a95d38fca7d46be128efaa865acad0ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::ReloadResource</definition>
+        <argsstring>(Resource *resource)</argsstring>
+        <name>ReloadResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+<para>Reload a resource. Return true on success. The resource will not be removed from the cache in case of failure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a4d3296328ea7bc08bcbeec2c973ffe37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReloadResourceWithDependencies</definition>
+        <argsstring>(const String &amp;fileName)</argsstring>
+        <name>ReloadResourceWithDependencies</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Reload a resource based on filename. Causes also reload of dependent resources if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a1210f3bd5a5c88d09c6b7081b1bf20a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::SetMemoryBudget</definition>
+        <argsstring>(StringHash type, unsigned long long budget)</argsstring>
+        <name>SetMemoryBudget</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned long long</type>
+          <declname>budget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set memory budget for a specific resource type, default 0 is unlimited. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a6607638a54d3051d14226cfd2873a1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::SetAutoReloadResources</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetAutoReloadResources</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable automatic reloading of resources as files are modified. Default false. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a73f74689d1714ebdca92913da3f4ce39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::SetReturnFailedResources</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetReturnFailedResources</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable returning resources that failed to load. Default false. This may be useful in editing to not lose resource ref attributes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="130" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1aa04ba54e17fbc01455c76bb1a5720b62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::SetSearchPackagesFirst</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>SetSearchPackagesFirst</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Define whether when getting resources should check package files or directories first. True for packages, false for directories. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="134" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a06423b2b66b8f5537a8ae5f8fca30049" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::SetFinishBackgroundResourcesMs</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>SetFinishBackgroundResourcesMs</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how many milliseconds maximum per frame to spend on finishing background loaded resources. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="138" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a7cbabe826ab808a583c70cc139f82b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::AddResourceRouter</definition>
+        <argsstring>(ResourceRouter *router, bool addAsFirst=false)</argsstring>
+        <name>AddResourceRouter</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ResourceRouter" kindref="compound">ResourceRouter</ref> *</type>
+          <declname>router</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>addAsFirst</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Add a resource router object. By default there is none, so the routing process is skipped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a7dd46b28b1628d87cb4f0d60bd09568e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::RemoveResourceRouter</definition>
+        <argsstring>(ResourceRouter *router)</argsstring>
+        <name>RemoveResourceRouter</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ResourceRouter" kindref="compound">ResourceRouter</ref> *</type>
+          <declname>router</declname>
+        </param>
+        <briefdescription>
+<para>Remove a resource router object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a47a4479d26e34fcdbc6244b371d91e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1File" kindref="compound">File</ref> &gt;</type>
+        <definition>SharedPtr&lt;File&gt; Urho3D::ResourceCache::GetFile</definition>
+        <argsstring>(const String &amp;name, bool sendEventOnFailure=true)</argsstring>
+        <name>GetFile</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Open and return a file from the resource load paths or from inside a package file. If not found, use a fallback search with absolute path. Return null if fails. Can be called from outside the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="146" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a469ac5069508abf93280e15bd5f18dc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+        <definition>Resource* Urho3D::ResourceCache::GetResource</definition>
+        <argsstring>(StringHash type, const String &amp;name, bool sendEventOnFailure=true)</argsstring>
+        <name>GetResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a resource by type and name. Load if not loaded yet. Return null if not found or if fails, unless SetReturnFailedResources(true) has been called. Can be called only from the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="148" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a439bec0ef372ee2c88806c4d1b5b0f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> &gt;</type>
+        <definition>SharedPtr&lt;Resource&gt; Urho3D::ResourceCache::GetTempResource</definition>
+        <argsstring>(StringHash type, const String &amp;name, bool sendEventOnFailure=true)</argsstring>
+        <name>GetTempResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Load a resource without storing it in the resource cache. Return null if not found or if fails. Can be called from outside the main thread if the resource itself is safe to load completely (it does not possess for example GPU data). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="150" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ac1ffaede8b37d132d053b092a7ddcf9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::BackgroundLoadResource</definition>
+        <argsstring>(StringHash type, const String &amp;name, bool sendEventOnFailure=true, Resource *caller=nullptr)</argsstring>
+        <name>BackgroundLoadResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>caller</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Background load a resource. An event will be sent when complete. Return true if successfully stored to the load queue, false if eg. already exists. Can be called from outside the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a521c6d5018ec32d3968ffd0cf8a18816" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ResourceCache::GetNumBackgroundLoadResources</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumBackgroundLoadResources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of pending background-loaded resources. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="155" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1aa11204b016339232581423c6bc9fb3b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::GetResources</definition>
+        <argsstring>(PODVector&lt; Resource * &gt; &amp;result, StringHash type) const</argsstring>
+        <name>GetResources</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> * &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return all loaded resources of a specific type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a09641871a8dfeb351876260af5c828d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+        <definition>Resource* Urho3D::ResourceCache::GetExistingResource</definition>
+        <argsstring>(StringHash type, const String &amp;name)</argsstring>
+        <name>GetExistingResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an already loaded resource of specific type &amp; name, or null if not found. Will not load if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="159" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a76d8d087a231e4a8d4f206848fa25b3f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="structUrho3D_1_1ResourceGroup" kindref="compound">ResourceGroup</ref> &gt; &amp;</type>
+        <definition>const HashMap&lt;StringHash, ResourceGroup&gt;&amp; Urho3D::ResourceCache::GetAllResources</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAllResources</name>
+        <briefdescription>
+<para>Return all loaded resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="162" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a8385dabc1a8fd10d671ea246f7b9ab0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt; &amp;</type>
+        <definition>const Vector&lt;String&gt;&amp; Urho3D::ResourceCache::GetResourceDirs</definition>
+        <argsstring>() const</argsstring>
+        <name>GetResourceDirs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return added resource load directories. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="166" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ac1395bb0809e088b9b00068c3e5f0a41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> &gt; &gt; &amp;</type>
+        <definition>const Vector&lt;SharedPtr&lt;PackageFile&gt; &gt;&amp; Urho3D::ResourceCache::GetPackageFiles</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPackageFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return added package files. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="170" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a66ddaeb13f6dcfd170233b324167afa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * Urho3D::ResourceCache::GetResource</definition>
+        <argsstring>(const String &amp;name, bool sendEventOnFailure=true)</argsstring>
+        <name>GetResource</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Template version of returning a resource by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="173" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="281" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a2678be870a85f95eba12a03ce21b5556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * Urho3D::ResourceCache::GetExistingResource</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>GetExistingResource</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Template version of returning an existing resource by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="175" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="275" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ae968ed9a0868e45fd3ca83acc5d1fdff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; T &gt;</type>
+        <definition>SharedPtr&lt; T &gt; Urho3D::ResourceCache::GetTempResource</definition>
+        <argsstring>(const String &amp;name, bool sendEventOnFailure=true)</argsstring>
+        <name>GetTempResource</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Template version of loading a resource without storing it to the cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="177" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="293" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1affd6966d39ad932dee8844b9f632e783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleaseResource</definition>
+        <argsstring>(const String &amp;name, bool force=false)</argsstring>
+        <name>ReleaseResource</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Template version of releasing a resource by name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="179" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="287" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1adbf55a7210b92803afa4c57503ae58be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::BackgroundLoadResource</definition>
+        <argsstring>(const String &amp;name, bool sendEventOnFailure=true, Resource *caller=nullptr)</argsstring>
+        <name>BackgroundLoadResource</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>caller</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Template version of queueing a resource background load. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="181" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="299" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ab979514bfce9cdc6e70064133644cd53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::GetResources</definition>
+        <argsstring>(PODVector&lt; T * &gt; &amp;result) const</argsstring>
+        <name>GetResources</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; T * &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Template version of returning loaded resources of a specific type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="183" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="305" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a5bef63d50185f80af5cc4f37e71311f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::Exists</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>Exists</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return whether a file exists in the resource directories or package files. Does not check manually added in-memory resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="185" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a1fe5f563793be5e2cad8f47faa9d2075" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ResourceCache::GetMemoryBudget</definition>
+        <argsstring>(StringHash type) const</argsstring>
+        <name>GetMemoryBudget</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return memory budget for a resource type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="188" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a3b6c2ccfeb10412aef9b07c820ac04a6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ResourceCache::GetMemoryUse</definition>
+        <argsstring>(StringHash type) const</argsstring>
+        <name>GetMemoryUse</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return total memory use for a resource type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="191" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a305bfbd0e4115c4fc632b1b5ba3f3af7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ResourceCache::GetTotalMemoryUse</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalMemoryUse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return total memory use for all resources. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="194" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a1f50906901edc0f861b32a50869266cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ResourceCache::GetResourceFileName</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetResourceFileName</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return full absolute file name of resource if possible, or empty if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="196" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a0425f2d723c329eeca5e567fb4b52835" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::GetAutoReloadResources</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAutoReloadResources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether automatic resource reloading is enabled. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="200" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ae25a0af4ccd67c2c11e0988cf3492c8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::GetReturnFailedResources</definition>
+        <argsstring>() const</argsstring>
+        <name>GetReturnFailedResources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether resources that failed to load are returned. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="204" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1aaddca1d53b72cbbf9528a684838dfd05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ResourceCache::GetSearchPackagesFirst</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSearchPackagesFirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether when getting resources should check package files or directories first. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="208" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a55a7491c387f62d909efbd42344435c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::ResourceCache::GetFinishBackgroundResourcesMs</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFinishBackgroundResourcesMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return how many milliseconds maximum to spend on finishing background loaded resources. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="212" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1af152227afcf7b7348c6e01182633a530" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1ResourceRouter" kindref="compound">ResourceRouter</ref> *</type>
+        <definition>ResourceRouter* Urho3D::ResourceCache::GetResourceRouter</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetResourceRouter</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return a resource router by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="215" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a684da2a6a1e0433175878273ded1f3e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ResourceCache::GetPreferredResourceDir</definition>
+        <argsstring>(const String &amp;path) const</argsstring>
+        <name>GetPreferredResourceDir</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Return either the path itself or its parent, based on which of them has recognized resource subdirectories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="218" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a4786244e0d30467779253ea0d397a763" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ResourceCache::SanitateResourceName</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>SanitateResourceName</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove unsupported constructs from the resource name to prevent ambiguity, and normalize absolute filename to resource path relative if possible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="220" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ab105f0c0a874b2c3295b08d5c796e6b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ResourceCache::SanitateResourceDirName</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>SanitateResourceDirName</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove unnecessary constructs from a resource directory name and ensure it to be an absolute path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="222" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ad7e4af193a42aee59f07236b532f2df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::StoreResourceDependency</definition>
+        <argsstring>(Resource *resource, const String &amp;dependency)</argsstring>
+        <name>StoreResourceDependency</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>dependency</declname>
+        </param>
+        <briefdescription>
+<para>Store a dependency for a resource. If a dependency file changes, the resource will be reloaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="224" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a0aa3eef3e5c006619019a5d5711a7374" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ResetDependencies</definition>
+        <argsstring>(Resource *resource)</argsstring>
+        <name>ResetDependencies</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+<para>Reset dependencies for a resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="226" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ad9265ae66e3a3968ab9f221ea23a8708" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ResourceCache::PrintMemoryUsage</definition>
+        <argsstring>() const</argsstring>
+        <name>PrintMemoryUsage</name>
+        <briefdescription>
+<para>Returns a formatted string containing the memory actively used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="229" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1ad083ffa9b30f696b679c161c5aa2234e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> &gt; &amp;</type>
+        <definition>const SharedPtr&lt;Resource&gt;&amp; Urho3D::ResourceCache::FindResource</definition>
+        <argsstring>(StringHash type, StringHash nameHash)</argsstring>
+        <name>FindResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>nameHash</declname>
+        </param>
+        <briefdescription>
+<para>Find a resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="233" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a1e66670a4d00a9715ebada0187af8d9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> &gt; &amp;</type>
+        <definition>const SharedPtr&lt;Resource&gt;&amp; Urho3D::ResourceCache::FindResource</definition>
+        <argsstring>(StringHash nameHash)</argsstring>
+        <name>FindResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>nameHash</declname>
+        </param>
+        <briefdescription>
+<para>Find a resource by name only. Searches all type groups. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="235" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1acc0895ca46642d39017dcfbd4981d6b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::ReleasePackageResources</definition>
+        <argsstring>(PackageFile *package, bool force=false)</argsstring>
+        <name>ReleasePackageResources</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PackageFile" kindref="compound">PackageFile</ref> *</type>
+          <declname>package</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Release resources loaded from a package file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="237" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a4318c338dc69d899ed1e28c0e5c6fccb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::UpdateResourceGroup</definition>
+        <argsstring>(StringHash type)</argsstring>
+        <name>UpdateResourceGroup</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Update a resource group. Recalculate memory use and release resources if over memory budget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a8cc5a76256fc43875016a8ae85c15ab3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ResourceCache::HandleBeginFrame</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleBeginFrame</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle begin frame event. Automatic resource reloads and the finalization of background loaded resources are processed here. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="241" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a2aab7b8fea7a85fa491e1635259caf21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> *</type>
+        <definition>File* Urho3D::ResourceCache::SearchResourceDirs</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>SearchResourceDirs</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Search <ref refid="classUrho3D_1_1FileSystem" kindref="compound">FileSystem</ref> for file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="243" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ResourceCache_1a4fbf363865442b8e1dd51bd8096ced12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1File" kindref="compound">File</ref> *</type>
+        <definition>File* Urho3D::ResourceCache::SearchPackages</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>SearchPackages</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Search resource packages for file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="245" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Resource cache subsystem. Loads resources on demand and stores them for later access. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::ResourceCache</label>
+        <link refid="classUrho3D_1_1ResourceCache"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::ResourceCache</label>
+        <link refid="classUrho3D_1_1ResourceCache"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="84" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="85" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1ResourceCache_1ae277181563b9fd28edec13c109fc8b98" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>AddManualResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a286aba429fd463fbc3eba29e44d69cf3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>AddPackageFile</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a9d0bc41b3b1e568d54c3634ecaf3a333" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>AddPackageFile</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ad23a60a58db971ff3d714e5d6f33e856" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>AddResourceDir</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a7cbabe826ab808a583c70cc139f82b21" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>AddResourceRouter</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a6dfcdd45c58adcb85922ba36000d97b5" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>autoReloadResources_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1afe89c792f8587a4da5ef1e4c765bbe29" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>backgroundLoader_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ac1ffaede8b37d132d053b092a7ddcf9c" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>BackgroundLoadResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1adbf55a7210b92803afa4c57503ae58be" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>BackgroundLoadResource</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a05ae811d6321749d38e99cd2e50ad3b2" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>dependentResources_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a5bef63d50185f80af5cc4f37e71311f0" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>Exists</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a736c7789c755edea67a914578ba8f3ad" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>fileWatchers_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ad083ffa9b30f696b679c161c5aa2234e" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>FindResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a1e66670a4d00a9715ebada0187af8d9f" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>FindResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a1e0fc9fc5a62ecc0f0cfb6f1f09200ea" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>finishBackgroundResourcesMs_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a76d8d087a231e4a8d4f206848fa25b3f" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetAllResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a0425f2d723c329eeca5e567fb4b52835" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetAutoReloadResources</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a09641871a8dfeb351876260af5c828d3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetExistingResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a2678be870a85f95eba12a03ce21b5556" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetExistingResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a47a4479d26e34fcdbc6244b371d91e8e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetFile</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a55a7491c387f62d909efbd42344435c2" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetFinishBackgroundResourcesMs</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a1fe5f563793be5e2cad8f47faa9d2075" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetMemoryBudget</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a3b6c2ccfeb10412aef9b07c820ac04a6" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a521c6d5018ec32d3968ffd0cf8a18816" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetNumBackgroundLoadResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ac1395bb0809e088b9b00068c3e5f0a41" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetPackageFiles</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a684da2a6a1e0433175878273ded1f3e3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetPreferredResourceDir</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a469ac5069508abf93280e15bd5f18dc9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a66ddaeb13f6dcfd170233b324167afa3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a8385dabc1a8fd10d671ea246f7b9ab0c" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResourceDirs</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a1f50906901edc0f861b32a50869266cf" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResourceFileName</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1af152227afcf7b7348c6e01182633a530" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResourceRouter</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1aa11204b016339232581423c6bc9fb3b0" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ab979514bfce9cdc6e70064133644cd53" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ae25a0af4ccd67c2c11e0988cf3492c8e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetReturnFailedResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1aaddca1d53b72cbbf9528a684838dfd05" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetSearchPackagesFirst</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a439bec0ef372ee2c88806c4d1b5b0f7b" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetTempResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ae968ed9a0868e45fd3ca83acc5d1fdff" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetTempResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a305bfbd0e4115c4fc632b1b5ba3f3af7" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetTotalMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::ResourceCache</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::ResourceCache</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::ResourceCache</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a8cc5a76256fc43875016a8ae85c15ab3" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>HandleBeginFrame</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1aa903df2d5687121884269ddcd84737da" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>isRouting_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::ResourceCache</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a966675253b1b2582f933f088ccfa3106" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>packages_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ad9265ae66e3a3968ab9f221ea23a8708" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>PrintMemoryUsage</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a7ea584bf640ad59e61923c234b04e3f8" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseAllResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1acc0895ca46642d39017dcfbd4981d6b9" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleasePackageResources</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a7176967774c35bcf1aaf8c5b2312e9ae" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1affd6966d39ad932dee8844b9f632e783" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a2301642b69c186196e493b721e667848" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ad4c08b133d363f54899252fc3f7eadb3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a6d51295193a15cb51b167e685e954684" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReleaseResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a95d38fca7d46be128efaa865acad0ec3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReloadResource</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a4d3296328ea7bc08bcbeec2c973ffe37" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ReloadResourceWithDependencies</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1adbd85ce2d31c96595b2067e9d2d39b41" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RemovePackageFile</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1af554e7e137ca07b6b0918caffac90703" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RemovePackageFile</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a89bb2543d35de4396febe6310edd7319" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RemoveResourceDir</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a7dd46b28b1628d87cb4f0d60bd09568e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>RemoveResourceRouter</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a0aa3eef3e5c006619019a5d5711a7374" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ResetDependencies</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a43e64e32120b4e9acf83fb5e2ea77aab" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>ResourceCache</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1abca7fe07b1e82685750d068840260956" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>resourceDirs_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a23a99f207826b9517721eda457aae943" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>resourceGroups_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a4a71c415f8d9cc386f83c625cfcbfb5e" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>resourceMutex_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a0205840423951f62fc4aaebc9b247242" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>resourceRouters_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a1396e2b0a006c67c61cbc47a529fddba" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>returnFailedResources_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ab105f0c0a874b2c3295b08d5c796e6b1" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SanitateResourceDirName</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a4786244e0d30467779253ea0d397a763" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SanitateResourceName</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a4fbf363865442b8e1dd51bd8096ced12" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SearchPackages</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a5bf69cbb17aa18a4b17a3c28f41b3580" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>searchPackagesFirst_</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a2aab7b8fea7a85fa491e1635259caf21" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SearchResourceDirs</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a6607638a54d3051d14226cfd2873a1d3" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetAutoReloadResources</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a06423b2b66b8f5537a8ae5f8fca30049" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetFinishBackgroundResourcesMs</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a1210f3bd5a5c88d09c6b7081b1bf20a0" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetMemoryBudget</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a73f74689d1714ebdca92913da3f4ce39" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetReturnFailedResources</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1aa04ba54e17fbc01455c76bb1a5720b62" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SetSearchPackagesFirst</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1ad7e4af193a42aee59f07236b532f2df6" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>StoreResourceDependency</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a4318c338dc69d899ed1e28c0e5c6fccb" prot="private" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>UpdateResourceGroup</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ResourceCache</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1ResourceCache_1a2e124f006be5be76c5f842ab63a5b8eb" prot="public" virt="non-virtual"><scope>Urho3D::ResourceCache</scope><name>~ResourceCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

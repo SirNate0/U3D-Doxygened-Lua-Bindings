@@ -1,0 +1,1498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1CrowdAgent" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::CrowdAgent</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Component" prot="public" virt="non-virtual">Urho3D::Component</basecompoundref>
+    <includes refid="CrowdAgent_8h" local="no">CrowdAgent.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1CrowdAgent_1acea4ff3dadb2fc834509fb67f477bb36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class CrowdManager</definition>
+        <argsstring></argsstring>
+        <name>CrowdManager</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1CrowdManager" kindref="compound">CrowdManager</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="78" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classUrho3D_1_1CrowdAgent_1a20ce05503be854a9f080f87fc80bcad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CrowdAgentUpdateCallback</definition>
+        <argsstring>(dtCrowdAgent *ag, float dt)</argsstring>
+        <name>CrowdAgentUpdateCallback</name>
+        <param>
+          <type>dtCrowdAgent *</type>
+          <declname>ag</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="79" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a28fc6870bae1d8863067b68bda1c5783" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1CrowdManager" kindref="compound">CrowdManager</ref> &gt;</type>
+        <definition>WeakPtr&lt;CrowdManager&gt; Urho3D::CrowdAgent::crowdManager_</definition>
+        <argsstring></argsstring>
+        <name>crowdManager_</name>
+        <briefdescription>
+<para>Crowd manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="236" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a89016d267e63ac135a17cabf3ba81390" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::CrowdAgent::agentCrowdId_</definition>
+        <argsstring></argsstring>
+        <name>agentCrowdId_</name>
+        <briefdescription>
+<para>Crowd manager reference to this agent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="238" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1aaeaa0cdfa17bd6dc71ea7d33fec6d10f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CrowdAgent::targetPosition_</definition>
+        <argsstring></argsstring>
+        <name>targetPosition_</name>
+        <briefdescription>
+<para>Requested target position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="240" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1aacfb4d8a52ce6ba979e23cae40520684" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CrowdAgent::targetVelocity_</definition>
+        <argsstring></argsstring>
+        <name>targetVelocity_</name>
+        <briefdescription>
+<para>Requested target velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="242" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1ae4075d8da7d84a8737675e32e07f8a18" prot="private" static="no" mutable="no">
+        <type>CrowdAgentRequestedTarget</type>
+        <definition>CrowdAgentRequestedTarget Urho3D::CrowdAgent::requestedTargetType_</definition>
+        <argsstring></argsstring>
+        <name>requestedTargetType_</name>
+        <briefdescription>
+<para>Requested target type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="244" column="31" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a2243e61a859f16b7b1901916b9216416" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::CrowdAgent::updateNodePosition_</definition>
+        <argsstring></argsstring>
+        <name>updateNodePosition_</name>
+        <briefdescription>
+<para>Flag indicating the node&apos;s position should be updated by Detour crowd manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="246" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a721c3cbcf88027c7e074a055746559d2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::maxAccel_</definition>
+        <argsstring></argsstring>
+        <name>maxAccel_</name>
+        <briefdescription>
+<para>Agent&apos;s max acceleration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="248" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a6c37124d028ca907fbf961664b86be10" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::maxSpeed_</definition>
+        <argsstring></argsstring>
+        <name>maxSpeed_</name>
+        <briefdescription>
+<para>Agent&apos;s max Velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="250" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1ad8703b79b0c2269f5a446224728acef1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::radius_</definition>
+        <argsstring></argsstring>
+        <name>radius_</name>
+        <briefdescription>
+<para>Agent&apos;s radius, if 0 the navigation mesh&apos;s setting will be used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="252" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1ac0002d9b40abc9b0b3ac481b966370cf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <briefdescription>
+<para>Agent&apos;s height, if 0 the navigation mesh&apos;s setting will be used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="254" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a3d9cb564b5571d914cf03fca9a434209" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CrowdAgent::queryFilterType_</definition>
+        <argsstring></argsstring>
+        <name>queryFilterType_</name>
+        <briefdescription>
+<para>Agent&apos;s query filter type, it is an index to the query filter buffer configured in Detour crowd manager. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="256" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a66f73415acd8ca43b52275fa094e83f5" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CrowdAgent::obstacleAvoidanceType_</definition>
+        <argsstring></argsstring>
+        <name>obstacleAvoidanceType_</name>
+        <briefdescription>
+<para>Agent&apos;s obstacle avoidance type, it is an index to the obstacle avoidance array configured in Detour crowd manager. It is ignored when agent&apos;s navigation quality is not set to &quot;NAVIGATIONQUALITY_HIGH&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="258" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1add2683f62f7119519c76cf76693dcdc1" prot="private" static="no" mutable="no">
+        <type>NavigationQuality</type>
+        <definition>NavigationQuality Urho3D::CrowdAgent::navQuality_</definition>
+        <argsstring></argsstring>
+        <name>navQuality_</name>
+        <briefdescription>
+<para>Agent&apos;s navigation quality. The higher the setting, the higher the CPU usage during crowd simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="260" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1ac51c21b648e07f94e9e3fe7bc8f5d825" prot="private" static="no" mutable="no">
+        <type>NavigationPushiness</type>
+        <definition>NavigationPushiness Urho3D::CrowdAgent::navPushiness_</definition>
+        <argsstring></argsstring>
+        <name>navPushiness_</name>
+        <briefdescription>
+<para>Agent&apos;s navigation pushiness. The higher the setting, the stronger the agent pushes its colliding neighbours around. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="262" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a9fa9d6673733efa5c8c0f260e7a54c19" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CrowdAgent::previousPosition_</definition>
+        <argsstring></argsstring>
+        <name>previousPosition_</name>
+        <briefdescription>
+<para>Agent&apos;s previous position used to check for position changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="264" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a5f288342343201d10ca1b0be18c50eb2" prot="private" static="no" mutable="no">
+        <type>CrowdAgentTargetState</type>
+        <definition>CrowdAgentTargetState Urho3D::CrowdAgent::previousTargetState_</definition>
+        <argsstring></argsstring>
+        <name>previousTargetState_</name>
+        <briefdescription>
+<para>Agent&apos;s previous target state used to check for state changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="266" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a16ce5a7f5a5f9e76dab68f4507af42bf" prot="private" static="no" mutable="no">
+        <type><ref refid="CrowdAgent_8h_1add00b029bcac047bfc03d01f412a19e0" kindref="member">CrowdAgentState</ref></type>
+        <definition>CrowdAgentState Urho3D::CrowdAgent::previousAgentState_</definition>
+        <argsstring></argsstring>
+        <name>previousAgentState_</name>
+        <briefdescription>
+<para>Agent&apos;s previous agent state used to check for state changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="268" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CrowdAgent_1a25956990e09ab457549604042c9a101d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::CrowdAgent::ignoreTransformChanges_</definition>
+        <argsstring></argsstring>
+        <name>ignoreTransformChanges_</name>
+        <briefdescription>
+<para>Internal flag to ignore transform changes because it came from us, used in OnCrowdAgentReposition(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="270" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a08530bc9650e8b2b49f8054b207f76cb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::CrowdAgent::CrowdAgent</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>CrowdAgent</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="83" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1ac7577c32a41271f58b90862a46dbb91c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::CrowdAgent::~CrowdAgent</definition>
+        <argsstring>() override</argsstring>
+        <name>~CrowdAgent</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="85" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a74d8463b0d5555025468631be1655fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::ApplyAttributes</definition>
+        <argsstring>() override</argsstring>
+        <name>ApplyAttributes</name>
+        <reimplements refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593">ApplyAttributes</reimplements>
+        <briefdescription>
+<para>Apply attribute changes that can not be applied immediately. Called after scene load or a network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a64f312f91d82a57355673d0c8cc4bd94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::OnSetEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>OnSetEnabled</name>
+        <reimplements refid="classUrho3D_1_1Component_1a97c506dfb55216668b1fdf4d4425f7d7">OnSetEnabled</reimplements>
+        <briefdescription>
+<para>Handle enabled/disabled state change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a29b649a27aa3a906b2abcd67152b157f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::DrawDebugGeometry</definition>
+        <argsstring>(bool depthTest)</argsstring>
+        <name>DrawDebugGeometry</name>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Draw debug geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a2f73a57dd1f4a5adccdf80a87ed0dab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest) override</argsstring>
+        <name>DrawDebugGeometry</name>
+        <reimplements refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a">DrawDebugGeometry</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Draw debug feelers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a54ada3350dd622792e0447102c993819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetTargetPosition</definition>
+        <argsstring>(const Vector3 &amp;position)</argsstring>
+        <name>SetTargetPosition</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Submit a new target position request for this agent. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1afe2055fa49b9a4d10d6668ecafedf24d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetTargetVelocity</definition>
+        <argsstring>(const Vector3 &amp;velocity)</argsstring>
+        <name>SetTargetVelocity</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Submit a new target velocity request for this agent. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="104" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a72f4e3378a2a6ef1679f1e94b409d286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::ResetTarget</definition>
+        <argsstring>()</argsstring>
+        <name>ResetTarget</name>
+        <briefdescription>
+<para>Reset any target request for the specified agent. Note that the agent will continue to move into the current direction; set a zero target velocity to actually stop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a5975f317bdc1d689a945408e3e049083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetUpdateNodePosition</definition>
+        <argsstring>(bool unodepos)</argsstring>
+        <name>SetUpdateNodePosition</name>
+        <param>
+          <type>bool</type>
+          <declname>unodepos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the node position. When set to false, the node position should be updated by other means (e.g. using Physics) in response to the E_CROWD_AGENT_REPOSITION event. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a3d6615a972655b7544b36fe4b4665da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetMaxAccel</definition>
+        <argsstring>(float maxAccel)</argsstring>
+        <name>SetMaxAccel</name>
+        <param>
+          <type>float</type>
+          <declname>maxAccel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s max acceleration. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a543b7224d786125b9ea1028d8f55db05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetMaxSpeed</definition>
+        <argsstring>(float maxSpeed)</argsstring>
+        <name>SetMaxSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>maxSpeed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s max velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a51d3a23292d2721ed286181779391d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetRadius</definition>
+        <argsstring>(float radius)</argsstring>
+        <name>SetRadius</name>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s radius. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a46b4de25074c8dd6c0e97bdcd6e03a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetHeight</definition>
+        <argsstring>(float height)</argsstring>
+        <name>SetHeight</name>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s height. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a14ce3979c7fc59098bb91f4c0314e534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetQueryFilterType</definition>
+        <argsstring>(unsigned queryFilterType)</argsstring>
+        <name>SetQueryFilterType</name>
+        <param>
+          <type>unsigned</type>
+          <declname>queryFilterType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s query filter type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a2d9f04ca295d5fc1351ff106b6867d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetObstacleAvoidanceType</definition>
+        <argsstring>(unsigned obstacleAvoidanceType)</argsstring>
+        <name>SetObstacleAvoidanceType</name>
+        <param>
+          <type>unsigned</type>
+          <declname>obstacleAvoidanceType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s obstacle avoidance type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a1136ecd8745f04f6d841b6d47ce74803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetNavigationQuality</definition>
+        <argsstring>(NavigationQuality val)</argsstring>
+        <name>SetNavigationQuality</name>
+        <param>
+          <type>NavigationQuality</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s navigation quality. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="130" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1ae7055208fb4cce7c2cbd15a1471a6e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::SetNavigationPushiness</definition>
+        <argsstring>(NavigationPushiness val)</argsstring>
+        <name>SetNavigationPushiness</name>
+        <param>
+          <type>NavigationPushiness</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the agent&apos;s navigation pushiness. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a817b1390bcfaa25c2b7ef4d6d5fd4758" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CrowdAgent::GetPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="137" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1ab0c51a78ac8c7b78afc1322a26a66117" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CrowdAgent::GetDesiredVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDesiredVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s desired velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="140" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a10bc365863ee6cf7868dc3d0c104713d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CrowdAgent::GetActualVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetActualVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s actual velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="143" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a2ba1d6693d748c2ad6075ea53fb4436d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::CrowdAgent::GetTargetPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTargetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s requested target position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="147" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a5bef464b3f9321ed50a1815e30238f65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::CrowdAgent::GetTargetVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTargetVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s requested target velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="151" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1aa734d8480cdd985bc20655b99806e876" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>CrowdAgentRequestedTarget</type>
+        <definition>CrowdAgentRequestedTarget Urho3D::CrowdAgent::GetRequestedTargetType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRequestedTargetType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s requested target type, if any. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="155" column="31" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1ae23e8523d663fa975f4354da53f22332" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="CrowdAgent_8h_1add00b029bcac047bfc03d01f412a19e0" kindref="member">CrowdAgentState</ref></type>
+        <definition>CrowdAgentState Urho3D::CrowdAgent::GetAgentState</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAgentState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s state. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="159" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a077caac909aa421b1e39c375c3021e07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CrowdAgentTargetState</type>
+        <definition>CrowdAgentTargetState Urho3D::CrowdAgent::GetTargetState</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTargetState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the agent&apos;s target state. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="162" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1ac2100355dbc13bb84157104e24950f17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::CrowdAgent::GetUpdateNodePosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUpdateNodePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true when the node&apos;s position should be updated by the <ref refid="classUrho3D_1_1CrowdManager" kindref="compound">CrowdManager</ref>. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="166" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1aebf660e07a15428a52fcffc2886b9c0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::CrowdAgent::GetAgentCrowdId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAgentCrowdId</name>
+        <briefdescription>
+<para>Return the agent id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="169" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1acb2a663ac8a34351628fe7d035b9add4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::GetMaxAccel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s max acceleration. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="173" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1ac8326878ee9b122d62e17f10f8cf7b48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::GetMaxSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s max velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="177" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a1b8061ae69c3b2af5dd2796862b82b13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::GetRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s radius. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="181" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a9442f81c653428453983085b97dc99cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::CrowdAgent::GetHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s height. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="185" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a66fa42c34780c8710a52f15e749576d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CrowdAgent::GetQueryFilterType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetQueryFilterType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s query filter type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="189" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a16c09a616670ceeff4ebe5528f5ef8ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CrowdAgent::GetObstacleAvoidanceType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetObstacleAvoidanceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s obstacle avoidance type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="193" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a073b4c42589ff455aaee669e9b91a73e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NavigationQuality</type>
+        <definition>NavigationQuality Urho3D::CrowdAgent::GetNavigationQuality</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNavigationQuality</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s navigation quality. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="197" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1abb303d9f5eda478b07a160a10ca8f69e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>NavigationPushiness</type>
+        <definition>NavigationPushiness Urho3D::CrowdAgent::GetNavigationPushiness</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNavigationPushiness</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the agent&apos;s navigation pushiness. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="201" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a8c7a07f80f30c046e91b6d5ff56f4837" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::CrowdAgent::HasRequestedTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>HasRequestedTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true when the agent has a target. BIND_AS_ALIAS_get_requestedTarget </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="205" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1afd2b18da05e1a2e3b258de9ca0f80c7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::CrowdAgent::HasArrived</definition>
+        <argsstring>() const</argsstring>
+        <name>HasArrived</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true when the agent has arrived at its target. BIND_AS_ALIAS_get_arrived </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="209" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a10ee874b4a7c18600a751cb8630a1179" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::CrowdAgent::IsInCrowd</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInCrowd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true when the agent is in crowd (being managed by a crowd manager). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="212" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a56a57054c706f38b3dd257dc31c0701c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::CrowdAgent::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="88" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a1f07a63e3e791ef1abaa9647269c2f6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::CrowdAgent::OnCrowdUpdate</definition>
+        <argsstring>(dtCrowdAgent *ag, float dt)</argsstring>
+        <name>OnCrowdUpdate</name>
+        <param>
+          <type>dtCrowdAgent *</type>
+          <declname>ag</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Handle crowd agent being updated. It is called by <ref refid="classUrho3D_1_1CrowdManager_1aebb15dfdba49db0d5ae19fa101491318" kindref="member">CrowdManager::Update()</ref> via callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="216" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a4fb8f2d0ca54df3f0c139dc237631b1f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::OnNodeSet</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnNodeSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1abdc9feb34a990d3567e9f4fa43d30d75">OnNodeSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="218" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a579c4cf2fad3ab4d79ed1bc2b3baf055" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::OnSceneSet</definition>
+        <argsstring>(Scene *scene) override</argsstring>
+        <name>OnSceneSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679">OnSceneSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>Handle node being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="220" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1af46aaf3983f59aee19ad367d03fcbcd3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::OnMarkedDirty</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnMarkedDirty</name>
+        <reimplements refid="classUrho3D_1_1Component_1a06ebdba9da30ea5f2599e39f7cd0e24a">OnMarkedDirty</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>Handle node transform being dirtied. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="222" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a4218a8b6614301a738dbc6a0f92be015" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const dtCrowdAgent *</type>
+        <definition>const dtCrowdAgent* Urho3D::CrowdAgent::GetDetourCrowdAgent</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDetourCrowdAgent</name>
+        <briefdescription>
+<para>Get internal Detour crowd agent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="224" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a82ba0aab8a4077dc76f61a59f9944609" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::HandleNavigationTileAdded</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleNavigationTileAdded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle navigation mesh tile added. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="226" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1af7bd90820dbf00df2aa763f606663f38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::UpdateParameters</definition>
+        <argsstring>(unsigned scope=M_MAX_UNSIGNED)</argsstring>
+        <name>UpdateParameters</name>
+        <param>
+          <type>unsigned</type>
+          <declname>scope</declname>
+          <defval>M_MAX_UNSIGNED</defval>
+        </param>
+        <briefdescription>
+<para>Update Detour crowd agent parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="230" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1a5f8ee77ec07f0b2337f5396b09f1230b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::CrowdAgent::AddAgentToCrowd</definition>
+        <argsstring>(bool force=false)</argsstring>
+        <name>AddAgentToCrowd</name>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Add agent into crowd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="232" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CrowdAgent_1aaece7e290f7941476f7ceeb2676e2fa1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CrowdAgent::RemoveAgentFromCrowd</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAgentFromCrowd</name>
+        <briefdescription>
+<para>Remove agent from crowd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="234" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Crowd agent component, requires a <ref refid="classUrho3D_1_1CrowdManager" kindref="compound">CrowdManager</ref> component in the scene. When not set explicitly, agent&apos;s radius and height are defaulted to navigation mesh&apos;s agent radius and height, respectively. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::CrowdAgent</label>
+        <link refid="classUrho3D_1_1CrowdAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::CrowdAgent</label>
+        <link refid="classUrho3D_1_1CrowdAgent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" line="74" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Navigation/CrowdAgent.h" bodystart="75" bodyend="271"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1CrowdAgent_1a5f8ee77ec07f0b2337f5396b09f1230b" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>AddAgentToCrowd</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a89016d267e63ac135a17cabf3ba81390" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>agentCrowdId_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a74d8463b0d5555025468631be1655fbd" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a08530bc9650e8b2b49f8054b207f76cb" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>CrowdAgent</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a20ce05503be854a9f080f87fc80bcad5" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>CrowdAgentUpdateCallback</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1acea4ff3dadb2fc834509fb67f477bb36" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>CrowdManager</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a28fc6870bae1d8863067b68bda1c5783" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>crowdManager_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a29b649a27aa3a906b2abcd67152b157f" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a2f73a57dd1f4a5adccdf80a87ed0dab0" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a10bc365863ee6cf7868dc3d0c104713d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetActualVelocity</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1aebf660e07a15428a52fcffc2886b9c0c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAgentCrowdId</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ae23e8523d663fa975f4354da53f22332" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAgentState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ab0c51a78ac8c7b78afc1322a26a66117" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetDesiredVelocity</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a4218a8b6614301a738dbc6a0f92be015" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetDetourCrowdAgent</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a9442f81c653428453983085b97dc99cb" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetHeight</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1acb2a663ac8a34351628fe7d035b9add4" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetMaxAccel</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ac8326878ee9b122d62e17f10f8cf7b48" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetMaxSpeed</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1abb303d9f5eda478b07a160a10ca8f69e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNavigationPushiness</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a073b4c42589ff455aaee669e9b91a73e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNavigationQuality</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a16c09a616670ceeff4ebe5528f5ef8ba" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetObstacleAvoidanceType</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a817b1390bcfaa25c2b7ef4d6d5fd4758" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a66fa42c34780c8710a52f15e749576d8" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetQueryFilterType</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a1b8061ae69c3b2af5dd2796862b82b13" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetRadius</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1aa734d8480cdd985bc20655b99806e876" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetRequestedTargetType</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a2ba1d6693d748c2ad6075ea53fb4436d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetTargetPosition</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a077caac909aa421b1e39c375c3021e07" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetTargetState</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a5bef464b3f9321ed50a1815e30238f65" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetTargetVelocity</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ac2100355dbc13bb84157104e24950f17" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>GetUpdateNodePosition</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a82ba0aab8a4077dc76f61a59f9944609" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HandleNavigationTileAdded</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1afd2b18da05e1a2e3b258de9ca0f80c7c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HasArrived</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a8c7a07f80f30c046e91b6d5ff56f4837" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HasRequestedTarget</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ac0002d9b40abc9b0b3ac481b966370cf" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>height_</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a25956990e09ab457549604042c9a101d" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>ignoreTransformChanges_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a10ee874b4a7c18600a751cb8630a1179" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsInCrowd</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a721c3cbcf88027c7e074a055746559d2" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>maxAccel_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a6c37124d028ca907fbf961664b86be10" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>maxSpeed_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ac51c21b648e07f94e9e3fe7bc8f5d825" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>navPushiness_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1add2683f62f7119519c76cf76693dcdc1" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>navQuality_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a66f73415acd8ca43b52275fa094e83f5" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>obstacleAvoidanceType_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a1f07a63e3e791ef1abaa9647269c2f6d" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnCrowdUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1af46aaf3983f59aee19ad367d03fcbcd3" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a4fb8f2d0ca54df3f0c139dc237631b1f" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a579c4cf2fad3ab4d79ed1bc2b3baf055" prot="protected" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a64f312f91d82a57355673d0c8cc4bd94" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a16ce5a7f5a5f9e76dab68f4507af42bf" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>previousAgentState_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a9fa9d6673733efa5c8c0f260e7a54c19" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>previousPosition_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a5f288342343201d10ca1b0be18c50eb2" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>previousTargetState_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a3d9cb564b5571d914cf03fca9a434209" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>queryFilterType_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ad8703b79b0c2269f5a446224728acef1" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>radius_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a56a57054c706f38b3dd257dc31c0701c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1aaece7e290f7941476f7ceeb2676e2fa1" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RemoveAgentFromCrowd</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ae4075d8da7d84a8737675e32e07f8a18" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>requestedTargetType_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a72f4e3378a2a6ef1679f1e94b409d286" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>ResetTarget</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a46b4de25074c8dd6c0e97bdcd6e03a23" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetHeight</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a3d6615a972655b7544b36fe4b4665da6" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetMaxAccel</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a543b7224d786125b9ea1028d8f55db05" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetMaxSpeed</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ae7055208fb4cce7c2cbd15a1471a6e07" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetNavigationPushiness</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a1136ecd8745f04f6d841b6d47ce74803" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetNavigationQuality</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a2d9f04ca295d5fc1351ff106b6867d97" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetObstacleAvoidanceType</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a14ce3979c7fc59098bb91f4c0314e534" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetQueryFilterType</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a51d3a23292d2721ed286181779391d0d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetRadius</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a54ada3350dd622792e0447102c993819" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetTargetPosition</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1afe2055fa49b9a4d10d6668ecafedf24d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetTargetVelocity</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a5975f317bdc1d689a945408e3e049083" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SetUpdateNodePosition</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1aaeaa0cdfa17bd6dc71ea7d33fec6d10f" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>targetPosition_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1aacfb4d8a52ce6ba979e23cae40520684" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>targetVelocity_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1a2243e61a859f16b7b1901916b9216416" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>updateNodePosition_</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1af7bd90820dbf00df2aa763f606663f38" prot="private" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>UpdateParameters</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1CrowdAgent_1ac7577c32a41271f58b90862a46dbb91c" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>~CrowdAgent</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::CrowdAgent</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::CrowdAgent</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

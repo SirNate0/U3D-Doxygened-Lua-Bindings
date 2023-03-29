@@ -1,0 +1,2452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1XMLElement" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::XMLElement</compoundname>
+    <includes refid="XMLElement_8h" local="no">XMLElement.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1XMLElement_1a4fa8e8a2cf3618e9bc976019fce0b5c4" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>const XMLElement Urho3D::XMLElement::EMPTY</definition>
+        <argsstring></argsstring>
+        <name>EMPTY</name>
+        <briefdescription>
+<para>Empty <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="312" column="29" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1XMLElement_1ae00e3eae6e339e307a812d9acd88dec1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> &gt;</type>
+        <definition>WeakPtr&lt;XMLFile&gt; Urho3D::XMLElement::file_</definition>
+        <argsstring></argsstring>
+        <name>file_</name>
+        <briefdescription>
+<para>XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="316" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1XMLElement_1a8cc7f10ef18cdfbcc1623dc9cfee346e" prot="private" static="no" mutable="no">
+        <type>pugi::xml_node_struct *</type>
+        <definition>pugi::xml_node_struct* Urho3D::XMLElement::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <briefdescription>
+<para>Pugixml node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="318" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1XMLElement_1ae287bc6a8fe436480eb843930297bda1" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref> *</type>
+        <definition>const XPathResultSet* Urho3D::XMLElement::xpathResultSet_</definition>
+        <argsstring></argsstring>
+        <name>xpathResultSet_</name>
+        <briefdescription>
+<para>XPath query result set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="320" column="26" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1XMLElement_1a25fe4cd23857e8bd8ba4cf3caa7605b8" prot="private" static="no" mutable="no">
+        <type>const pugi::xpath_node *</type>
+        <definition>const pugi::xpath_node* Urho3D::XMLElement::xpathNode_</definition>
+        <argsstring></argsstring>
+        <name>xpathNode_</name>
+        <briefdescription>
+<para>Pugixml xpath_node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="322" column="28" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1XMLElement_1a0ffa7fedf822b6c23d7d98a46c4157fd" prot="private" static="no" mutable="yes">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::XMLElement::xpathResultIndex_</definition>
+        <argsstring></argsstring>
+        <name>xpathResultIndex_</name>
+        <briefdescription>
+<para>Current XPath query result index (used internally to advance to subsequent query result). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="324" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8dd6d311d1d9d33a802a7b08d99666ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XMLElement::XMLElement</definition>
+        <argsstring>()</argsstring>
+        <name>XMLElement</name>
+        <briefdescription>
+<para>Construct null element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="53" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a808ed7fa11445338c63ee1aaab721629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XMLElement::XMLElement</definition>
+        <argsstring>(XMLFile *file, pugi::xml_node_struct *node)</argsstring>
+        <name>XMLElement</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>pugi::xml_node_struct *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Construct with document and node pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a280e2e61894a38b8fc6ae5646b4dd7c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XMLElement::XMLElement</definition>
+        <argsstring>(XMLFile *file, const XPathResultSet *resultSet, const pugi::xpath_node *xpathNode, unsigned xpathResultIndex)</argsstring>
+        <name>XMLElement</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref> *</type>
+          <declname>resultSet</declname>
+        </param>
+        <param>
+          <type>const pugi::xpath_node *</type>
+          <declname>xpathNode</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>xpathResultIndex</declname>
+        </param>
+        <briefdescription>
+<para>Construct from xpath query result set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="57" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aaa0c4d4940455ad48ca4eabbd19b5950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XMLElement::XMLElement</definition>
+        <argsstring>(const XMLElement &amp;rhs)</argsstring>
+        <name>XMLElement</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="59" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1abaf23e9af228fc79f58549dda0c905e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XMLElement::~XMLElement</definition>
+        <argsstring>()</argsstring>
+        <name>~XMLElement</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="61" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a31849a0f94781f0cfc7df07a587ce2f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+        <definition>XMLElement&amp; Urho3D::XMLElement::operator=</definition>
+        <argsstring>(const XMLElement &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="63" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af8968bd1a431788069818955496490d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::CreateChild</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>CreateChild</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a child element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="66" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a7ff5a148ff1e06025cfacaa1de08c4cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::CreateChild</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>CreateChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a child element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="68" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aae4d51b6c365538737cbec1a22add914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetOrCreateChild</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>GetOrCreateChild</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return the first child element with name or create if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="70" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a38da82d89415326af3b44b293c0260ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetOrCreateChild</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>GetOrCreateChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return the first child element with name or create if does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="72" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1afa984dd7a6e77c6a4d610b00ac31b192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::AppendChild</definition>
+        <argsstring>(XMLElement element, bool asCopy=false)</argsstring>
+        <name>AppendChild</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>asCopy</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Append element. If asCopy is set to true then original element is copied and appended, otherwise specified element is appended. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aab892e182c2ee5c4d0478b83679b3f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::Remove</definition>
+        <argsstring>()</argsstring>
+        <name>Remove</name>
+        <briefdescription>
+<para>Remove element from its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a562a34e40cd98016c3a770466a439a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveChild</definition>
+        <argsstring>(const XMLElement &amp;element)</argsstring>
+        <name>RemoveChild</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Remove a child element. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a1decf306791cbbeddaa44b0eb520121c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveChild</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>RemoveChild</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove a child element by name. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a4b62c7e68fa1c89d8e5eeb238057f19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveChild</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>RemoveChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove a child element by name. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a03566428329fd84e12bdbaaab2724be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveChildren</definition>
+        <argsstring>(const String &amp;name=String::EMPTY)</argsstring>
+        <name>RemoveChildren</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Remove child elements of certain name, or all child elements if name is empty. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a0df2a361d34fc7a7238a1ef7742de6eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveChildren</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>RemoveChildren</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove child elements of certain name, or all child elements if name is empty. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1adcba0f19ebc27edd11488625be3997ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveAttribute</definition>
+        <argsstring>(const String &amp;name=String::EMPTY)</argsstring>
+        <name>RemoveAttribute</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Remove an attribute by name. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8edd7de18f34848066d53743d0974368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::RemoveAttribute</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>RemoveAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Remove an attribute by name. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ae10d2efdce8a56be4403df0f08ac5b97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::SelectSingle</definition>
+        <argsstring>(const String &amp;query, pugi::xpath_variable_set *variables=nullptr) const</argsstring>
+        <name>SelectSingle</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>pugi::xpath_variable_set *</type>
+          <declname>variables</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Select an element/attribute using XPath query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="93" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a49f0b7c1cec40b16581bc24d86ee5e25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::SelectSinglePrepared</definition>
+        <argsstring>(const XPathQuery &amp;query) const</argsstring>
+        <name>SelectSinglePrepared</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XPathQuery" kindref="compound">XPathQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Select an element/attribute using XPath query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="95" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a3fb4bd9d98c41fd662304f25a9721559" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref></type>
+        <definition>XPathResultSet Urho3D::XMLElement::Select</definition>
+        <argsstring>(const String &amp;query, pugi::xpath_variable_set *variables=nullptr) const</argsstring>
+        <name>Select</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type>pugi::xpath_variable_set *</type>
+          <declname>variables</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Select elements/attributes using XPath query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="97" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af649983d0b218f6a588b5e35e99e69c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref></type>
+        <definition>XPathResultSet Urho3D::XMLElement::SelectPrepared</definition>
+        <argsstring>(const XPathQuery &amp;query) const</argsstring>
+        <name>SelectPrepared</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XPathQuery" kindref="compound">XPathQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <briefdescription>
+<para>Select elements/attributes using XPath query. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="99" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a51a87310ff921549ef18e04f0f505e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetValue</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the value for an inner node in the following format &lt;node&gt;value&lt;/node&gt;. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a26bba51994acc18861d2058c89ae3b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetValue</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the value for an inner node in the following format &lt;node&gt;value&lt;/node&gt;. Must be used on the &lt;node&gt; element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ae8956473bc7d5907f82a4b4b2533a051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetAttribute</definition>
+        <argsstring>(const String &amp;name, const String &amp;value)</argsstring>
+        <name>SetAttribute</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a03803f7f76044bb7d0128515aa8f7ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetAttribute</definition>
+        <argsstring>(const char *name, const char *value)</argsstring>
+        <name>SetAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aaa2a2d3c43d2600266fd7128fbdbbf6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetAttribute</definition>
+        <argsstring>(const String &amp;value)</argsstring>
+        <name>SetAttribute</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an attribute. Only valid if it is an attribute only XPath query result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a9c21015a0d8d523644ef388c6f1ca755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetAttribute</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>SetAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an attribute. Only valid if it is an attribute only XPath query result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a38913cde7c196c658a9a858007d8efe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetBool</definition>
+        <argsstring>(const String &amp;name, bool value)</argsstring>
+        <name>SetBool</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a bool attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a733ca44ff7ac7242f5c0006d9d26b276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetBoundingBox</definition>
+        <argsstring>(const BoundingBox &amp;value)</argsstring>
+        <name>SetBoundingBox</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a542139b765c2e5bbd55e6612e3ccadf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetBuffer</definition>
+        <argsstring>(const String &amp;name, const void *data, unsigned size)</argsstring>
+        <name>SetBuffer</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set a buffer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ab66c24bf7c9ac1fb57fed38a26e19138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetBuffer</definition>
+        <argsstring>(const String &amp;name, const PODVector&lt; unsigned char &gt; &amp;value)</argsstring>
+        <name>SetBuffer</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a buffer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a7ab5b0db5077e55000f4741b9b4f892e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetColor</definition>
+        <argsstring>(const String &amp;name, const Color &amp;value)</argsstring>
+        <name>SetColor</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a color attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad22d73e151580d42f4486feec1c58a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetFloat</definition>
+        <argsstring>(const String &amp;name, float value)</argsstring>
+        <name>SetFloat</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a float attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="125" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad959f4a4a021007ad03f15911f913933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetDouble</definition>
+        <argsstring>(const String &amp;name, double value)</argsstring>
+        <name>SetDouble</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a double attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a39c51ce20667815d596d5b6c75149796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetUInt</definition>
+        <argsstring>(const String &amp;name, unsigned value)</argsstring>
+        <name>SetUInt</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an unsigned integer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ac01095ae8ee7304ea5de928fb53b0092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetInt</definition>
+        <argsstring>(const String &amp;name, int value)</argsstring>
+        <name>SetInt</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an integer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aebd4532a25d273f3bb86572c39589936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetUInt64</definition>
+        <argsstring>(const String &amp;name, unsigned long long value)</argsstring>
+        <name>SetUInt64</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>unsigned long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an unsigned long long integer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a913e850a580d03cee58d11ba04c38a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetInt64</definition>
+        <argsstring>(const String &amp;name, long long value)</argsstring>
+        <name>SetInt64</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>long long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a long long integer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ab099c65975d663f91dcd3341e1fbfa5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetIntRect</definition>
+        <argsstring>(const String &amp;name, const IntRect &amp;value)</argsstring>
+        <name>SetIntRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="137" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af2fda9843eeb974dc8da2b6e0e8fd042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetIntVector2</definition>
+        <argsstring>(const String &amp;name, const IntVector2 &amp;value)</argsstring>
+        <name>SetIntVector2</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="139" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a2abee316c605f18b7d0359d0c4b55267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetIntVector3</definition>
+        <argsstring>(const String &amp;name, const IntVector3 &amp;value)</argsstring>
+        <name>SetIntVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set an <ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="141" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aaa95119794a41990c6bac03f468f922c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetRect</definition>
+        <argsstring>(const String &amp;name, const Rect &amp;value)</argsstring>
+        <name>SetRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="143" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a97c64081c5da709340d04c80e16d1372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetQuaternion</definition>
+        <argsstring>(const String &amp;name, const Quaternion &amp;value)</argsstring>
+        <name>SetQuaternion</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a quaternion attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a4b76864ac2e5d9345eda301a19469dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetString</definition>
+        <argsstring>(const String &amp;name, const String &amp;value)</argsstring>
+        <name>SetString</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a string attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad1c6f524bcba2da8d00f55d169caac19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVariant</definition>
+        <argsstring>(const Variant &amp;value)</argsstring>
+        <name>SetVariant</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a variant attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1abcddcb142e2672f6ef1131cacdd907b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVariantValue</definition>
+        <argsstring>(const Variant &amp;value)</argsstring>
+        <name>SetVariantValue</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a variant attribute excluding the type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="151" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a06b5c37142f45e1a3c57ada81862c93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetResourceRef</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>SetResourceRef</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a resource reference attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a64567bf24b83ee9f43f5b94b7b669275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetResourceRefList</definition>
+        <argsstring>(const ResourceRefList &amp;value)</argsstring>
+        <name>SetResourceRefList</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a resource reference list attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aa9a4b14072f37b4e6eaf07b071eb296f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVariantVector</definition>
+        <argsstring>(const VariantVector &amp;value)</argsstring>
+        <name>SetVariantVector</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1a1c145ed010e3c0e10e22cc20bc3a2cac" kindref="member">VariantVector</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a variant vector attribute. Creates child elements as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af04273694b02a468b8a0a5b100a8d1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetStringVector</definition>
+        <argsstring>(const StringVector &amp;value)</argsstring>
+        <name>SetStringVector</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1a5f28e7014e5fbb48c5b2a999db00fc29" kindref="member">StringVector</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a string vector attribute. Creates child elements as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a46558fc4621b551bf9f8d48369c4250f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVariantMap</definition>
+        <argsstring>(const VariantMap &amp;value)</argsstring>
+        <name>SetVariantMap</name>
+        <param>
+          <type>const <ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a variant map attribute. Creates child elements as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="161" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aad32f6fc9a4b1716033337e4d182d771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVector2</definition>
+        <argsstring>(const String &amp;name, const Vector2 &amp;value)</argsstring>
+        <name>SetVector2</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="163" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a742c57afbbb7833eea22fa35f37718ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVector3</definition>
+        <argsstring>(const String &amp;name, const Vector3 &amp;value)</argsstring>
+        <name>SetVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="165" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad3467937323b4c55ae57e4ef3e9a2623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVector4</definition>
+        <argsstring>(const String &amp;name, const Vector4 &amp;value)</argsstring>
+        <name>SetVector4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="167" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad12a4b8470fc5cbffeebd4421afd2ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetVectorVariant</definition>
+        <argsstring>(const String &amp;name, const Variant &amp;value)</argsstring>
+        <name>SetVectorVariant</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a float, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref> or Matrix attribute stored in a variant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="169" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af1b681e812ed5020ebfca37f506ef12d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetMatrix3</definition>
+        <argsstring>(const String &amp;name, const Matrix3 &amp;value)</argsstring>
+        <name>SetMatrix3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="171" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a7ae9d6c7a28e118eb4fc9fbf65163a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetMatrix3x4</definition>
+        <argsstring>(const String &amp;name, const Matrix3x4 &amp;value)</argsstring>
+        <name>SetMatrix3x4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="173" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8171ec60ea0da4cf83fb8672791adf59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::SetMatrix4</definition>
+        <argsstring>(const String &amp;name, const Matrix4 &amp;value)</argsstring>
+        <name>SetMatrix4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set a <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="175" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad7c2e67e5dfefddc309e1c809aa1ba74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::IsNull</definition>
+        <argsstring>() const</argsstring>
+        <name>IsNull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether does not refer to an element or an XPath node. BIND_AS_ALIAS_get_isNull </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="179" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a83c9e8cdf51efcf7a24fb02c1d94d1f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::NotNull</definition>
+        <argsstring>() const</argsstring>
+        <name>NotNull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether refers to an element or an XPath node. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="182" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aacc9e3bec66d051bf12699f5be266e69" prot="public" static="no" const="yes" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::XMLElement::operator bool</definition>
+        <argsstring>() const</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Return true if refers to an element or an XPath node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="184" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a1f84658a22a7c492f3406ad4e58163ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return element name (or attribute name if it is an attribute only XPath query result). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="187" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aa66e272b400e97935e02face59b81eae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::HasChild</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>HasChild</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has a child element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="189" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a27f3ac3a204818655f2966e7977a8098" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::HasChild</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>HasChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has a child element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="191" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1abb0379163b8d534a37e24740a4e0cd0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetChild</definition>
+        <argsstring>(const String &amp;name=String::EMPTY) const</argsstring>
+        <name>GetChild</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Return child element, or null if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="193" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a9fd6ecc592f49f84e8032b7980280636" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetChild</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>GetChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return child element, or null if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="195" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a9aafd5a9e7302bcda8cf64b0664b588b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetNext</definition>
+        <argsstring>(const String &amp;name=String::EMPTY) const</argsstring>
+        <name>GetNext</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Return next sibling element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="197" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aff1302041d5fe308f7d88d2f9faeb5e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetNext</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>GetNext</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return next sibling element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="199" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a483b8492396d38188a16eed36339b63c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::GetParent</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return parent element. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="202" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8e45cb956f1d95e1336821e8d9de7a86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::XMLElement::GetNumAttributes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of attributes. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="205" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ac0e88c8f1412e65469cc4ebc9457f8ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::HasAttribute</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>HasAttribute</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has an attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="207" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad4a15f933b4bf72cba911a755b737a32" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::HasAttribute</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>HasAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has an attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="209" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aab1f748e00aafad537f2a32f96404d2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return inner value, or empty if missing for nodes like &lt;node&gt;value&lt;/node&gt;. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="212" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a6de3d4f87f59ced8e52fa31f3a83873c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetAttribute</definition>
+        <argsstring>(const String &amp;name=String::EMPTY) const</argsstring>
+        <name>GetAttribute</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+          <defval><ref refid="classUrho3D_1_1String_1ac4b764c2af370a120fb9e3470329c96e" kindref="member">String::EMPTY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Return attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="214" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aacd5fd8758b634909f33ef714cfaaf68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetAttribute</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>GetAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="216" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8e0579ad7559e484e5ae7bfb59e28abe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Urho3D::XMLElement::GetAttributeCString</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>GetAttributeCString</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute as C string, or null if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="218" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a92036a0cb99ae57618057338d1145f38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetAttributeLower</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetAttributeLower</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute in lowercase, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="220" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a90b28d66dc92331311b1500582bd7d46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetAttributeLower</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>GetAttributeLower</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute in lowercase, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="222" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8a23e05b1d0f38e1324c8fe8e2b71810" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetAttributeUpper</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetAttributeUpper</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute in lowercase, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="224" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8654cc2ce5e35af8deaf3511d1ac0911" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::XMLElement::GetAttributeUpper</definition>
+        <argsstring>(const char *name) const</argsstring>
+        <name>GetAttributeUpper</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return attribute in lowercase, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="226" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a3ffa9a1b9582a9a3e9d898b19b436af1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &gt;</type>
+        <definition>Vector&lt;String&gt; Urho3D::XMLElement::GetAttributeNames</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAttributeNames</name>
+        <briefdescription>
+<para>Return names of all attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="228" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a2451ba18a17d36d2c6e9b1ef94979198" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::GetBool</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetBool</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return bool attribute, or false if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="230" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a55f81e720de52f84f4cbb6d97471b798" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt;</type>
+        <definition>PODVector&lt;unsigned char&gt; Urho3D::XMLElement::GetBuffer</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetBuffer</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return buffer attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="232" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a0b50e0fa5c440a9118ca8517e80779b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::XMLElement::GetBuffer</definition>
+        <argsstring>(const String &amp;name, void *dest, unsigned size) const</argsstring>
+        <name>GetBuffer</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Copy buffer attribute into a supplied buffer. Return true if buffer was large enough. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="234" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a0b3c968e58e950d4bffab4f6c32a366c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::XMLElement::GetBoundingBox</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBoundingBox</name>
+        <briefdescription>
+<para>Return bounding box attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="236" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a5df7e4c9778435ad1f023a2e45fc4b0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Urho3D::XMLElement::GetColor</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetColor</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a color attribute, or default if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="238" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af7c1e4d20b23c78b43b10a7d11d5aafd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::XMLElement::GetFloat</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetFloat</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a float attribute, or zero if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="240" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a6ee61eba29b155ea7255b985d346dde3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Urho3D::XMLElement::GetDouble</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetDouble</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a double attribute, or zero if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="242" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a355dd709c5aa4cef307fd928cf5c37a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::XMLElement::GetUInt</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetUInt</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an unsigned integer attribute, or zero if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="244" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1aee06acb7085894da986940750c2735be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::XMLElement::GetInt</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetInt</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an integer attribute, or zero if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="246" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a601f69b3a05c7a228fcd951e418da1cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::XMLElement::GetUInt64</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetUInt64</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an unsigned long long integer attribute, or zero if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="248" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a6b3426f96cd9fe7988585be7ac88562c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long Urho3D::XMLElement::GetInt64</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetInt64</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a long long integer attribute, or zero if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="250" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1adaae64ed523c324b542a5ac45aeece93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref></type>
+        <definition>IntRect Urho3D::XMLElement::GetIntRect</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetIntRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref> attribute, or default if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="252" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a17139847c3b8bac825caa87bc2debafa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::XMLElement::GetIntVector2</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetIntVector2</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref> attribute, or default if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="254" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a8729d4b5901d8717eb88926ef01f4b26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref></type>
+        <definition>IntVector3 Urho3D::XMLElement::GetIntVector3</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetIntVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return an <ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref> attribute, or default if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="256" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a5539ade2453330edf0405708e1235768" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref></type>
+        <definition>Rect Urho3D::XMLElement::GetRect</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetRect</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref> attribute, or default if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="258" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a99f47ce179efba0ed6dc0d86471b250d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion Urho3D::XMLElement::GetQuaternion</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetQuaternion</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a quaternion attribute, or default if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="260" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a36ddc2dc076cb372c82c52c73d7ca5ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref></type>
+        <definition>Variant Urho3D::XMLElement::GetVariant</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVariant</name>
+        <briefdescription>
+<para>Return a variant attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="262" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1af5aeb48b8ff507f49752705f0a127114" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref></type>
+        <definition>Variant Urho3D::XMLElement::GetVariantValue</definition>
+        <argsstring>(VariantType type) const</argsstring>
+        <name>GetVariantValue</name>
+        <param>
+          <type><ref refid="Variant_8h_1ab8af059a1b749f7143ecf40baaaed0f2" kindref="member">VariantType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return a variant attribute with static type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="264" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ad00f0dd518fc28c1950c817ba98be435" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::XMLElement::GetResourceRef</definition>
+        <argsstring>() const</argsstring>
+        <name>GetResourceRef</name>
+        <briefdescription>
+<para>Return a resource reference attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="266" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a091da4a3ef5e02bbb6205c636abfa1e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref></type>
+        <definition>ResourceRefList Urho3D::XMLElement::GetResourceRefList</definition>
+        <argsstring>() const</argsstring>
+        <name>GetResourceRefList</name>
+        <briefdescription>
+<para>Return a resource reference list attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="268" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ae684fd0e1c8c2cdde0a245678ef4af17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1a1c145ed010e3c0e10e22cc20bc3a2cac" kindref="member">VariantVector</ref></type>
+        <definition>VariantVector Urho3D::XMLElement::GetVariantVector</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVariantVector</name>
+        <briefdescription>
+<para>Return a variant vector attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="270" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a889dc5c013f08e10c07a5e0aa94af3a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1a5f28e7014e5fbb48c5b2a999db00fc29" kindref="member">StringVector</ref></type>
+        <definition>StringVector Urho3D::XMLElement::GetStringVector</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStringVector</name>
+        <briefdescription>
+<para>Return a string vector attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="272" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1acb3fcf0b9f824896a110628a228bb260" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>VariantMap Urho3D::XMLElement::GetVariantMap</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVariantMap</name>
+        <briefdescription>
+<para>Return a variant map attribute, or empty if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="274" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a97a31f01c000c7a1d77dae3292ad2293" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::XMLElement::GetVector2</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetVector2</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> attribute, or zero vector if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="276" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a1d3f451aaf22d50185260c5c63ec1513" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::XMLElement::GetVector3</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetVector3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> attribute, or zero vector if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="278" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a5b4fef1487d3e4d9c4ca98f281e41629" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::XMLElement::GetVector4</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetVector4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref> attribute, or zero vector if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="280" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a7dadd5c7e45b6fe12d83177cc9cb3acd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::XMLElement::GetVector</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetVector</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return any <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref> attribute as <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref>. Missing coordinates will be zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="282" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a0ba9199b8d66f397f9e4cabeeb8fd33f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref></type>
+        <definition>Variant Urho3D::XMLElement::GetVectorVariant</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetVectorVariant</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a float, <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref> or Matrix attribute as <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="284" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a0d4f606ec845b7d918190ca95b96871b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref></type>
+        <definition>Matrix3 Urho3D::XMLElement::GetMatrix3</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetMatrix3</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> attribute, or zero matrix if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="286" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ac68440fea26321d9d07b926f96dd5315" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::XMLElement::GetMatrix3x4</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetMatrix3x4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> attribute, or zero matrix if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="288" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a56f62ed48f76046f3ac3e48339931a7c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::XMLElement::GetMatrix4</definition>
+        <argsstring>(const String &amp;name) const</argsstring>
+        <name>GetMatrix4</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Return a <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> attribute, or zero matrix if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="290" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ae276975ff216eabcafa91111d5764fc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+        <definition>XMLFile* Urho3D::XMLElement::GetFile</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return XML file. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="293" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a77513536031bf20b2a62f519deeb5dc9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>pugi::xml_node_struct *</type>
+        <definition>pugi::xml_node_struct* Urho3D::XMLElement::GetNode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNode</name>
+        <briefdescription>
+<para>Return pugixml xml_node_struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="296" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="296" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a95349a5e533c5a2101193a16cf46e8c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1XPathResultSet" kindref="compound">XPathResultSet</ref> *</type>
+        <definition>const XPathResultSet* Urho3D::XMLElement::GetXPathResultSet</definition>
+        <argsstring>() const</argsstring>
+        <name>GetXPathResultSet</name>
+        <briefdescription>
+<para>Return XPath query result set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="299" column="26" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a6d738329845ae47a2ced5ff0a57af53d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const pugi::xpath_node *</type>
+        <definition>const pugi::xpath_node* Urho3D::XMLElement::GetXPathNode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetXPathNode</name>
+        <briefdescription>
+<para>Return pugixml xpath_node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="302" column="28" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="302" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1ac17e415897611fda250cf082be33809e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::XMLElement::GetXPathResultIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>GetXPathResultIndex</name>
+        <briefdescription>
+<para>Return current result index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="305" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="305" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1XMLElement_1a51de9799a837e725c6b8c12b48da0215" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        <definition>XMLElement Urho3D::XMLElement::NextResult</definition>
+        <argsstring>() const</argsstring>
+        <name>NextResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return next XPath query result. Only valid when this instance of <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> is itself one of the query result in the result set. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="309" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Element in an XML file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::XMLElement</label>
+        <link refid="classUrho3D_1_1XMLElement"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>EMPTY</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" line="49" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/XMLElement.h" bodystart="50" bodyend="325"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1XMLElement_1afa984dd7a6e77c6a4d610b00ac31b192" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>AppendChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af8968bd1a431788069818955496490d7" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>CreateChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a7ff5a148ff1e06025cfacaa1de08c4cc" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>CreateChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a4fa8e8a2cf3618e9bc976019fce0b5c4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>EMPTY</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ae00e3eae6e339e307a812d9acd88dec1" prot="private" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>file_</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a6de3d4f87f59ced8e52fa31f3a83873c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aacd5fd8758b634909f33ef714cfaaf68" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8e0579ad7559e484e5ae7bfb59e28abe" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttributeCString</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a92036a0cb99ae57618057338d1145f38" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttributeLower</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a90b28d66dc92331311b1500582bd7d46" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttributeLower</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a3ffa9a1b9582a9a3e9d898b19b436af1" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttributeNames</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8a23e05b1d0f38e1324c8fe8e2b71810" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttributeUpper</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8654cc2ce5e35af8deaf3511d1ac0911" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetAttributeUpper</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a2451ba18a17d36d2c6e9b1ef94979198" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetBool</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a0b3c968e58e950d4bffab4f6c32a366c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a55f81e720de52f84f4cbb6d97471b798" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetBuffer</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a0b50e0fa5c440a9118ca8517e80779b4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetBuffer</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1abb0379163b8d534a37e24740a4e0cd0f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a9fd6ecc592f49f84e8032b7980280636" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a5df7e4c9778435ad1f023a2e45fc4b0f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetColor</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a6ee61eba29b155ea7255b985d346dde3" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetDouble</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ae276975ff216eabcafa91111d5764fc8" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetFile</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af7c1e4d20b23c78b43b10a7d11d5aafd" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetFloat</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aee06acb7085894da986940750c2735be" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetInt</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a6b3426f96cd9fe7988585be7ac88562c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetInt64</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1adaae64ed523c324b542a5ac45aeece93" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetIntRect</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a17139847c3b8bac825caa87bc2debafa" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetIntVector2</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8729d4b5901d8717eb88926ef01f4b26" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetIntVector3</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a0d4f606ec845b7d918190ca95b96871b" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetMatrix3</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ac68440fea26321d9d07b926f96dd5315" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a56f62ed48f76046f3ac3e48339931a7c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetMatrix4</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a1f84658a22a7c492f3406ad4e58163ca" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a9aafd5a9e7302bcda8cf64b0664b588b" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetNext</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aff1302041d5fe308f7d88d2f9faeb5e1" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetNext</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a77513536031bf20b2a62f519deeb5dc9" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8e45cb956f1d95e1336821e8d9de7a86" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aae4d51b6c365538737cbec1a22add914" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetOrCreateChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a38da82d89415326af3b44b293c0260ac" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetOrCreateChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a483b8492396d38188a16eed36339b63c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetParent</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a99f47ce179efba0ed6dc0d86471b250d" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetQuaternion</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a5539ade2453330edf0405708e1235768" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetRect</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad00f0dd518fc28c1950c817ba98be435" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetResourceRef</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a091da4a3ef5e02bbb6205c636abfa1e1" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetResourceRefList</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a889dc5c013f08e10c07a5e0aa94af3a3" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetStringVector</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a355dd709c5aa4cef307fd928cf5c37a4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetUInt</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a601f69b3a05c7a228fcd951e418da1cb" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetUInt64</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aab1f748e00aafad537f2a32f96404d2e" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetValue</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a36ddc2dc076cb372c82c52c73d7ca5ce" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVariant</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1acb3fcf0b9f824896a110628a228bb260" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVariantMap</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af5aeb48b8ff507f49752705f0a127114" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVariantValue</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ae684fd0e1c8c2cdde0a245678ef4af17" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVariantVector</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a7dadd5c7e45b6fe12d83177cc9cb3acd" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVector</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a97a31f01c000c7a1d77dae3292ad2293" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVector2</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a1d3f451aaf22d50185260c5c63ec1513" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVector3</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a5b4fef1487d3e4d9c4ca98f281e41629" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVector4</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a0ba9199b8d66f397f9e4cabeeb8fd33f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetVectorVariant</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a6d738329845ae47a2ced5ff0a57af53d" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetXPathNode</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ac17e415897611fda250cf082be33809e" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetXPathResultIndex</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a95349a5e533c5a2101193a16cf46e8c4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>GetXPathResultSet</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ac0e88c8f1412e65469cc4ebc9457f8ee" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>HasAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad4a15f933b4bf72cba911a755b737a32" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>HasAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aa66e272b400e97935e02face59b81eae" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>HasChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a27f3ac3a204818655f2966e7977a8098" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>HasChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad7c2e67e5dfefddc309e1c809aa1ba74" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>IsNull</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a51de9799a837e725c6b8c12b48da0215" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>NextResult</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8cc7f10ef18cdfbcc1623dc9cfee346e" prot="private" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a83c9e8cdf51efcf7a24fb02c1d94d1f7" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>NotNull</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aacc9e3bec66d051bf12699f5be266e69" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>operator bool</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a31849a0f94781f0cfc7df07a587ce2f2" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aab892e182c2ee5c4d0478b83679b3f75" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1adcba0f19ebc27edd11488625be3997ce" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8edd7de18f34848066d53743d0974368" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a562a34e40cd98016c3a770466a439a50" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a1decf306791cbbeddaa44b0eb520121c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a4b62c7e68fa1c89d8e5eeb238057f19f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveChild</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a03566428329fd84e12bdbaaab2724be3" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveChildren</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a0df2a361d34fc7a7238a1ef7742de6eb" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>RemoveChildren</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a3fb4bd9d98c41fd662304f25a9721559" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>Select</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af649983d0b218f6a588b5e35e99e69c6" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SelectPrepared</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ae10d2efdce8a56be4403df0f08ac5b97" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SelectSingle</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a49f0b7c1cec40b16581bc24d86ee5e25" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SelectSinglePrepared</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ae8956473bc7d5907f82a4b4b2533a051" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a03803f7f76044bb7d0128515aa8f7ac4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aaa2a2d3c43d2600266fd7128fbdbbf6f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a9c21015a0d8d523644ef388c6f1ca755" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a38913cde7c196c658a9a858007d8efe4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetBool</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a733ca44ff7ac7242f5c0006d9d26b276" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a542139b765c2e5bbd55e6612e3ccadf4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetBuffer</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ab66c24bf7c9ac1fb57fed38a26e19138" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetBuffer</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a7ab5b0db5077e55000f4741b9b4f892e" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetColor</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad959f4a4a021007ad03f15911f913933" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetDouble</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad22d73e151580d42f4486feec1c58a06" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetFloat</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ac01095ae8ee7304ea5de928fb53b0092" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetInt</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a913e850a580d03cee58d11ba04c38a24" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetInt64</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ab099c65975d663f91dcd3341e1fbfa5e" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetIntRect</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af2fda9843eeb974dc8da2b6e0e8fd042" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetIntVector2</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a2abee316c605f18b7d0359d0c4b55267" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetIntVector3</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af1b681e812ed5020ebfca37f506ef12d" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetMatrix3</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a7ae9d6c7a28e118eb4fc9fbf65163a32" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8171ec60ea0da4cf83fb8672791adf59" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetMatrix4</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a97c64081c5da709340d04c80e16d1372" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetQuaternion</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aaa95119794a41990c6bac03f468f922c" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetRect</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a06b5c37142f45e1a3c57ada81862c93e" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetResourceRef</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a64567bf24b83ee9f43f5b94b7b669275" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetResourceRefList</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a4b76864ac2e5d9345eda301a19469dcd" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetString</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1af04273694b02a468b8a0a5b100a8d1dc" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetStringVector</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a39c51ce20667815d596d5b6c75149796" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetUInt</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aebd4532a25d273f3bb86572c39589936" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetUInt64</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a51a87310ff921549ef18e04f0f505e33" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetValue</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a26bba51994acc18861d2058c89ae3b38" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetValue</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad1c6f524bcba2da8d00f55d169caac19" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVariant</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a46558fc4621b551bf9f8d48369c4250f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVariantMap</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1abcddcb142e2672f6ef1131cacdd907b1" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVariantValue</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aa9a4b14072f37b4e6eaf07b071eb296f" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVariantVector</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aad32f6fc9a4b1716033337e4d182d771" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVector2</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a742c57afbbb7833eea22fa35f37718ca" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVector3</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad3467937323b4c55ae57e4ef3e9a2623" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVector4</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ad12a4b8470fc5cbffeebd4421afd2ad6" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>SetVectorVariant</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a8dd6d311d1d9d33a802a7b08d99666ba" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>XMLElement</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a808ed7fa11445338c63ee1aaab721629" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>XMLElement</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a280e2e61894a38b8fc6ae5646b4dd7c4" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>XMLElement</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1aaa0c4d4940455ad48ca4eabbd19b5950" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>XMLElement</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a25fe4cd23857e8bd8ba4cf3caa7605b8" prot="private" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>xpathNode_</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1a0ffa7fedf822b6c23d7d98a46c4157fd" prot="private" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>xpathResultIndex_</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1ae287bc6a8fe436480eb843930297bda1" prot="private" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>xpathResultSet_</name></member>
+      <member refid="classUrho3D_1_1XMLElement_1abaf23e9af228fc79f58549dda0c905e3" prot="public" virt="non-virtual"><scope>Urho3D::XMLElement</scope><name>~XMLElement</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

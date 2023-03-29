@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Thread" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Urho3D::Thread</compoundname>
+    <derivedcompoundref refid="classUrho3D_1_1BackgroundLoader" prot="public" virt="non-virtual">Urho3D::BackgroundLoader</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1FileWatcher" prot="public" virt="non-virtual">Urho3D::FileWatcher</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1HttpRequest" prot="public" virt="non-virtual">Urho3D::HttpRequest</derivedcompoundref>
+    <includes refid="Thread_8h" local="no">Thread.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Thread_1a2cfb3d871653aeb2c750811e0a62f2e6" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::Thread::handle_</definition>
+        <argsstring></argsstring>
+        <name>handle_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Thread" kindref="compound">Thread</ref> handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="73" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Thread_1a6ff80e8a4039a452f1bfedaf36e8b1d1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>volatile bool Urho3D::Thread::shouldRun_</definition>
+        <argsstring></argsstring>
+        <name>shouldRun_</name>
+        <briefdescription>
+<para>Running flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="75" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Thread_1ac2346434e8b953e5a33ca3c19f5cb3cc" prot="protected" static="yes" mutable="no">
+        <type>ThreadID</type>
+        <definition>ThreadID Urho3D::Thread::mainThreadID</definition>
+        <argsstring></argsstring>
+        <name>mainThreadID</name>
+        <briefdescription>
+<para>Main thread&apos;s thread ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="78" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a3f0344e25501a204632c202c3458e36d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Thread::Thread</definition>
+        <argsstring>()</argsstring>
+        <name>Thread</name>
+        <briefdescription>
+<para>Construct. Does not start the thread yet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="46" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a74cb78ac76cfb47b7da951cd291182a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Urho3D::Thread::~Thread</definition>
+        <argsstring>()</argsstring>
+        <name>~Thread</name>
+        <briefdescription>
+<para>Destruct. If running, stop and wait for thread to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="48" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a4cbd298c7f15b818d7d01ea6466acd29" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Thread::ThreadFunction</definition>
+        <argsstring>()=0</argsstring>
+        <name>ThreadFunction</name>
+        <reimplementedby refid="classUrho3D_1_1FileWatcher_1ab52e7ffa8ca7ab587a428c2fd328136a">ThreadFunction</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1HttpRequest_1a4db849ffc1a4031e2f2da62704d0c566">ThreadFunction</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1BackgroundLoader_1a93c27ce23cd1a2a088ec04bc04209265">ThreadFunction</reimplementedby>
+        <briefdescription>
+<para>The function to run in the thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="51" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a7fc81f2afdcb233e00f0f6405a95225f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Thread::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+<para>Start running the thread. Return true if successful, or false if already running or if can not create the thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a8192e1dfca6363a4190d9162837cc3bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Thread::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Set the running flag to false and wait for the thread to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a378bc8be68c5239553d836b6a073b28c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Thread::SetPriority</definition>
+        <argsstring>(int priority)</argsstring>
+        <name>SetPriority</name>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Set thread priority. The thread must have been started first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1acd3eeb9a8fa8a5429de271718bd19055" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Thread::IsStarted</definition>
+        <argsstring>() const</argsstring>
+        <name>IsStarted</name>
+        <briefdescription>
+<para>Return whether thread exists. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="61" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a9af829d3f34769e6205bc2f3eb2ac9d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Thread::SetMainThread</definition>
+        <argsstring>()</argsstring>
+        <name>SetMainThread</name>
+        <briefdescription>
+<para>Set the current thread as the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="64" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a2022a821700e56332ff09b9de175bc2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ThreadID</type>
+        <definition>static ThreadID Urho3D::Thread::GetCurrentThreadID</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentThreadID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the current thread&apos;s ID. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="67" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Thread_1a8d5c2b426303c65327ef09e88816dad4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Urho3D::Thread::IsMainThread</definition>
+        <argsstring>()</argsstring>
+        <name>IsMainThread</name>
+        <briefdescription>
+<para>Return whether is executing in the main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="69" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Operating system thread. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::BackgroundLoader</label>
+        <link refid="classUrho3D_1_1BackgroundLoader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::HttpRequest</label>
+        <link refid="classUrho3D_1_1HttpRequest"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Thread</label>
+        <link refid="classUrho3D_1_1Thread"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::FileWatcher</label>
+        <link refid="classUrho3D_1_1FileWatcher"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" line="42" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Thread.h" bodystart="43" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Thread_1a2022a821700e56332ff09b9de175bc2f" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>GetCurrentThreadID</name></member>
+      <member refid="classUrho3D_1_1Thread_1a2cfb3d871653aeb2c750811e0a62f2e6" prot="protected" virt="non-virtual"><scope>Urho3D::Thread</scope><name>handle_</name></member>
+      <member refid="classUrho3D_1_1Thread_1a8d5c2b426303c65327ef09e88816dad4" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>IsMainThread</name></member>
+      <member refid="classUrho3D_1_1Thread_1acd3eeb9a8fa8a5429de271718bd19055" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>IsStarted</name></member>
+      <member refid="classUrho3D_1_1Thread_1ac2346434e8b953e5a33ca3c19f5cb3cc" prot="protected" virt="non-virtual"><scope>Urho3D::Thread</scope><name>mainThreadID</name></member>
+      <member refid="classUrho3D_1_1Thread_1a7fc81f2afdcb233e00f0f6405a95225f" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>Run</name></member>
+      <member refid="classUrho3D_1_1Thread_1a9af829d3f34769e6205bc2f3eb2ac9d3" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>SetMainThread</name></member>
+      <member refid="classUrho3D_1_1Thread_1a378bc8be68c5239553d836b6a073b28c" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>SetPriority</name></member>
+      <member refid="classUrho3D_1_1Thread_1a6ff80e8a4039a452f1bfedaf36e8b1d1" prot="protected" virt="non-virtual"><scope>Urho3D::Thread</scope><name>shouldRun_</name></member>
+      <member refid="classUrho3D_1_1Thread_1a8192e1dfca6363a4190d9162837cc3bd" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>Stop</name></member>
+      <member refid="classUrho3D_1_1Thread_1a3f0344e25501a204632c202c3458e36d" prot="public" virt="non-virtual"><scope>Urho3D::Thread</scope><name>Thread</name></member>
+      <member refid="classUrho3D_1_1Thread_1a4cbd298c7f15b818d7d01ea6466acd29" prot="public" virt="pure-virtual"><scope>Urho3D::Thread</scope><name>ThreadFunction</name></member>
+      <member refid="classUrho3D_1_1Thread_1a74cb78ac76cfb47b7da951cd291182a9" prot="public" virt="virtual"><scope>Urho3D::Thread</scope><name>~Thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

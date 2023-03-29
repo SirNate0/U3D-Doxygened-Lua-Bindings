@@ -1,0 +1,876 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Audio" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Audio</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="Audio_8h" local="no">Audio.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a23c90447deb1a746cf6fc598cec5b8a1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; int &gt;</type>
+        <definition>SharedArrayPtr&lt;int&gt; Urho3D::Audio::clipBuffer_</definition>
+        <argsstring></argsstring>
+        <name>clipBuffer_</name>
+        <briefdescription>
+<para>Clipping buffer for mixing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="137" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a296de9827293f65597e328f0c96d5ed6" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::Audio::audioMutex_</definition>
+        <argsstring></argsstring>
+        <name>audioMutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Audio" kindref="compound">Audio</ref> thread mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="139" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a83d3076e516b61f4a0711bbecf3e2fa8" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Audio::deviceID_</definition>
+        <argsstring></argsstring>
+        <name>deviceID_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>SDL audio device ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="141" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1af65209077ad79c89e5e9dfe0aee417ec" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Audio::sampleSize_</definition>
+        <argsstring></argsstring>
+        <name>sampleSize_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Sample size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="143" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a44906a6a9ab1c7dacc9268a0365097ef" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Audio::fragmentSize_</definition>
+        <argsstring></argsstring>
+        <name>fragmentSize_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Clip buffer size in samples. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="145" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1afbc0422382086cf545eb35f14b6215db" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Audio::mixRate_</definition>
+        <argsstring></argsstring>
+        <name>mixRate_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Mixing rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="147" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1abe4eb81b194ff23566170238221d60d8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::interpolation_</definition>
+        <argsstring></argsstring>
+        <name>interpolation_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Mixing interpolation flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="149" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a1d99c36ff58900e7adc3267b85de9763" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::stereo_</definition>
+        <argsstring></argsstring>
+        <name>stereo_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Stereo flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="151" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a983b8c068c17cadcb57e23cae59cd711" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::playing_</definition>
+        <argsstring></argsstring>
+        <name>playing_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Playing flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="153" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a95f305000a3a3fca313a03bbbadf5932" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref> &gt;</type>
+        <definition>HashMap&lt;StringHash, Variant&gt; Urho3D::Audio::masterGain_</definition>
+        <argsstring></argsstring>
+        <name>masterGain_</name>
+        <briefdescription>
+<para>Master gain by sound source type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="155" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a650504267de8e8b6c6ce37b5babc360c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt;</type>
+        <definition>HashSet&lt;StringHash&gt; Urho3D::Audio::pausedSoundTypes_</definition>
+        <argsstring></argsstring>
+        <name>pausedSoundTypes_</name>
+        <briefdescription>
+<para>Paused sound types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="157" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a160fda6347cd3ab3a2528078fa7e0b42" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref> * &gt;</type>
+        <definition>PODVector&lt;SoundSource*&gt; Urho3D::Audio::soundSources_</definition>
+        <argsstring></argsstring>
+        <name>soundSources_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Sound" kindref="compound">Sound</ref> sources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="159" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Audio_1a647dd564b71e5642a9981784e96adfae" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1SoundListener" kindref="compound">SoundListener</ref> &gt;</type>
+        <definition>WeakPtr&lt;SoundListener&gt; Urho3D::Audio::listener_</definition>
+        <argsstring></argsstring>
+        <name>listener_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Sound" kindref="compound">Sound</ref> listener. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="161" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a794332db2cbd49b835dded0df11a9f9f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Audio::Audio</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Audio</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="46" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a012d8cbd1f9c91d2126440668427b3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Audio::~Audio</definition>
+        <argsstring>() override</argsstring>
+        <name>~Audio</name>
+        <briefdescription>
+<para>Destruct. Terminate the audio thread and free the audio buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="48" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a47d9e2bbbd31dc8ded6f4e83486cdcb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::SetMode</definition>
+        <argsstring>(int bufferLengthMSec, int mixRate, bool stereo, bool interpolation=true)</argsstring>
+        <name>SetMode</name>
+        <param>
+          <type>int</type>
+          <declname>bufferLengthMSec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mixRate</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>stereo</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>interpolation</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Initialize sound output with specified buffer length and output mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a06e397e757fdd20e747c16b78ede8a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::Update</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Run update on sound sources. Not required for continued playback, but frees unused sound sources &amp; sounds and updates 3D positions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a185245f1c7242dd78b14042e3e8267f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::Play</definition>
+        <argsstring>()</argsstring>
+        <name>Play</name>
+        <briefdescription>
+<para>Restart sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a46b977a4182cdcc28364e235e4fe684b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Suspend sound output. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a2b47694ead30275f9351de2669dd2bfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::SetMasterGain</definition>
+        <argsstring>(const String &amp;type, float gain)</argsstring>
+        <name>SetMasterGain</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set master gain on a specific sound type such as sound effects, music or voice. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a2fe8ef5add17ebe19211f0a8aee1f4e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::PauseSoundType</definition>
+        <argsstring>(const String &amp;type)</argsstring>
+        <name>PauseSoundType</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Pause playback of specific sound type. This allows to suspend e.g. sound effects or voice when the game is paused. By default all sound types are unpaused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="62" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a79935c51456e54b1d97a22d73a84be7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::ResumeSoundType</definition>
+        <argsstring>(const String &amp;type)</argsstring>
+        <name>ResumeSoundType</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Resume playback of specific sound type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a433ee54bdc8ac9f891166888dbc0647b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::ResumeAll</definition>
+        <argsstring>()</argsstring>
+        <name>ResumeAll</name>
+        <briefdescription>
+<para>Resume playback of all sound types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="66" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a87cace304281aa90eadd825ab161db25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::SetListener</definition>
+        <argsstring>(SoundListener *listener)</argsstring>
+        <name>SetListener</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1SoundListener" kindref="compound">SoundListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set active sound listener for 3D sounds. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a1f0398096b2d33ebbe928498c6eb674a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::StopSound</definition>
+        <argsstring>(Sound *sound)</argsstring>
+        <name>StopSound</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Sound" kindref="compound">Sound</ref> *</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+<para>Stop any sound source playing a certain sound clip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1acdba78239fb22e22c2944fcbcb6cb5ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Audio::GetSampleSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSampleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return byte size of one sample. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="75" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1ad72f4a97918d63d5ddab3e3402ee578c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Audio::GetMixRate</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMixRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return mixing rate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="79" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1acd08c4db72527f82e85bd95c29104c20" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::GetInterpolation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInterpolation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether output is interpolated. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="83" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a5a282c033ec1ea6da7d9b02a03bd81f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::IsStereo</definition>
+        <argsstring>() const</argsstring>
+        <name>IsStereo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether output is stereo. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="87" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a05dc4c2afc9e5297a8fc3db221a90c36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::IsPlaying</definition>
+        <argsstring>() const</argsstring>
+        <name>IsPlaying</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether audio is being output. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="91" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1abe81f2e8d40517066f815b717758fe66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::IsInitialized</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether an audio stream has been reserved. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="95" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a022929a58d174842076605826966f423" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Audio::GetMasterGain</definition>
+        <argsstring>(const String &amp;type) const</argsstring>
+        <name>GetMasterGain</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return master gain for a specific sound source type. Unknown sound types will return full gain (1). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="99" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1aaa1d6afb6671ca0c6e4fb5fa4989e66d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::IsSoundTypePaused</definition>
+        <argsstring>(const String &amp;type) const</argsstring>
+        <name>IsSoundTypePaused</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return whether specific sound type has been paused. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1ad708ed315300ef31e3bf24c479530a58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SoundListener" kindref="compound">SoundListener</ref> *</type>
+        <definition>SoundListener* Urho3D::Audio::GetListener</definition>
+        <argsstring>() const</argsstring>
+        <name>GetListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return active sound listener. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="106" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1ab43dfa4ba55746d6b9f47db0f43f387d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref> * &gt; &amp;</type>
+        <definition>const PODVector&lt;SoundSource*&gt;&amp; Urho3D::Audio::GetSoundSources</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSoundSources</name>
+        <briefdescription>
+<para>Return all sound sources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="109" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1ac92c1a41fdd7a942c6cc05d24b0d3f79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Audio::HasMasterGain</definition>
+        <argsstring>(const String &amp;type) const</argsstring>
+        <name>HasMasterGain</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return whether the specified master gain has been defined. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="112" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a9e4aaedd1d1838cde5d9f549e836bb5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::AddSoundSource</definition>
+        <argsstring>(SoundSource *soundSource)</argsstring>
+        <name>AddSoundSource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref> *</type>
+          <declname>soundSource</declname>
+        </param>
+        <briefdescription>
+<para>Add a sound source to keep track of. Called by <ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a36c77a2bb70700fc62d71959830bc6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::RemoveSoundSource</definition>
+        <argsstring>(SoundSource *soundSource)</argsstring>
+        <name>RemoveSoundSource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref> *</type>
+          <declname>soundSource</declname>
+        </param>
+        <briefdescription>
+<para>Remove a sound source. Called by <ref refid="classUrho3D_1_1SoundSource" kindref="compound">SoundSource</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a6add8ca498d399db7cfa255d89514199" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> &amp;</type>
+        <definition>Mutex&amp; Urho3D::Audio::GetMutex</definition>
+        <argsstring>()</argsstring>
+        <name>GetMutex</name>
+        <briefdescription>
+<para>Return audio thread mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="120" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a8f19d3eb9fc1abd62000ea3d6d5c4a8e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Audio::GetSoundSourceMasterGain</definition>
+        <argsstring>(StringHash typeHash) const</argsstring>
+        <name>GetSoundSourceMasterGain</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>typeHash</declname>
+        </param>
+        <briefdescription>
+<para>Return sound type specific gain multiplied by master gain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="123" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1afd99707417a45cad089e18681e231b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::MixOutput</definition>
+        <argsstring>(void *dest, unsigned samples)</argsstring>
+        <name>MixOutput</name>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>samples</declname>
+        </param>
+        <briefdescription>
+<para>Mix sound sources into the buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="126" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a087de3d1eb52ea426b9fa6db017aa851" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::HandleRenderUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleRenderUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle render update event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="130" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1a1f44ada73709b4539f6ab1e14c094d28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::Release</definition>
+        <argsstring>()</argsstring>
+        <name>Release</name>
+        <briefdescription>
+<para>Stop sound output and release the sound buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="132" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Audio_1afe2741a7a803a4e5fec31b7bd0ecb677" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Audio::UpdateInternal</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>UpdateInternal</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Actually update sound sources with the specific timestep. Called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="134" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Audio subsystem. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Audio</label>
+        <link refid="classUrho3D_1_1Audio"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Audio</label>
+        <link refid="classUrho3D_1_1Audio"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" line="40" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Audio/Audio.h" bodystart="41" bodyend="162"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Audio_1a9e4aaedd1d1838cde5d9f549e836bb5d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>AddSoundSource</name></member>
+      <member refid="classUrho3D_1_1Audio_1a794332db2cbd49b835dded0df11a9f9f" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Audio</name></member>
+      <member refid="classUrho3D_1_1Audio_1a296de9827293f65597e328f0c96d5ed6" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>audioMutex_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Audio_1a23c90447deb1a746cf6fc598cec5b8a1" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>clipBuffer_</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Audio</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Audio_1a83d3076e516b61f4a0711bbecf3e2fa8" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>deviceID_</name></member>
+      <member refid="classUrho3D_1_1Audio_1a44906a6a9ab1c7dacc9268a0365097ef" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>fragmentSize_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Audio_1acd08c4db72527f82e85bd95c29104c20" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetInterpolation</name></member>
+      <member refid="classUrho3D_1_1Audio_1ad708ed315300ef31e3bf24c479530a58" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetListener</name></member>
+      <member refid="classUrho3D_1_1Audio_1a022929a58d174842076605826966f423" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetMasterGain</name></member>
+      <member refid="classUrho3D_1_1Audio_1ad72f4a97918d63d5ddab3e3402ee578c" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetMixRate</name></member>
+      <member refid="classUrho3D_1_1Audio_1a6add8ca498d399db7cfa255d89514199" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetMutex</name></member>
+      <member refid="classUrho3D_1_1Audio_1acdba78239fb22e22c2944fcbcb6cb5ad" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetSampleSize</name></member>
+      <member refid="classUrho3D_1_1Audio_1a8f19d3eb9fc1abd62000ea3d6d5c4a8e" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetSoundSourceMasterGain</name></member>
+      <member refid="classUrho3D_1_1Audio_1ab43dfa4ba55746d6b9f47db0f43f387d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetSoundSources</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Audio</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Audio</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Audio</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Audio_1a087de3d1eb52ea426b9fa6db017aa851" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>HandleRenderUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Audio_1ac92c1a41fdd7a942c6cc05d24b0d3f79" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>HasMasterGain</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Audio_1abe4eb81b194ff23566170238221d60d8" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>interpolation_</name></member>
+      <member refid="classUrho3D_1_1Audio_1abe81f2e8d40517066f815b717758fe66" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsInitialized</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Audio_1a05dc4c2afc9e5297a8fc3db221a90c36" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsPlaying</name></member>
+      <member refid="classUrho3D_1_1Audio_1aaa1d6afb6671ca0c6e4fb5fa4989e66d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsSoundTypePaused</name></member>
+      <member refid="classUrho3D_1_1Audio_1a5a282c033ec1ea6da7d9b02a03bd81f5" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>IsStereo</name></member>
+      <member refid="classUrho3D_1_1Audio_1a647dd564b71e5642a9981784e96adfae" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>listener_</name></member>
+      <member refid="classUrho3D_1_1Audio_1a95f305000a3a3fca313a03bbbadf5932" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>masterGain_</name></member>
+      <member refid="classUrho3D_1_1Audio_1afd99707417a45cad089e18681e231b4d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>MixOutput</name></member>
+      <member refid="classUrho3D_1_1Audio_1afbc0422382086cf545eb35f14b6215db" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>mixRate_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Audio</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Audio_1a650504267de8e8b6c6ce37b5babc360c" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>pausedSoundTypes_</name></member>
+      <member refid="classUrho3D_1_1Audio_1a2fe8ef5add17ebe19211f0a8aee1f4e9" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>PauseSoundType</name></member>
+      <member refid="classUrho3D_1_1Audio_1a185245f1c7242dd78b14042e3e8267f3" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Play</name></member>
+      <member refid="classUrho3D_1_1Audio_1a983b8c068c17cadcb57e23cae59cd711" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>playing_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Audio_1a1f44ada73709b4539f6ab1e14c094d28" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Audio_1a36c77a2bb70700fc62d71959830bc6d5" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>RemoveSoundSource</name></member>
+      <member refid="classUrho3D_1_1Audio_1a433ee54bdc8ac9f891166888dbc0647b" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>ResumeAll</name></member>
+      <member refid="classUrho3D_1_1Audio_1a79935c51456e54b1d97a22d73a84be7c" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>ResumeSoundType</name></member>
+      <member refid="classUrho3D_1_1Audio_1af65209077ad79c89e5e9dfe0aee417ec" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>sampleSize_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Audio_1a87cace304281aa90eadd825ab161db25" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SetListener</name></member>
+      <member refid="classUrho3D_1_1Audio_1a2b47694ead30275f9351de2669dd2bfb" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SetMasterGain</name></member>
+      <member refid="classUrho3D_1_1Audio_1a47d9e2bbbd31dc8ded6f4e83486cdcb4" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SetMode</name></member>
+      <member refid="classUrho3D_1_1Audio_1a160fda6347cd3ab3a2528078fa7e0b42" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>soundSources_</name></member>
+      <member refid="classUrho3D_1_1Audio_1a1d99c36ff58900e7adc3267b85de9763" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>stereo_</name></member>
+      <member refid="classUrho3D_1_1Audio_1a46b977a4182cdcc28364e235e4fe684b" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Stop</name></member>
+      <member refid="classUrho3D_1_1Audio_1a1f0398096b2d33ebbe928498c6eb674a" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>StopSound</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Audio_1a06e397e757fdd20e747c16b78ede8a37" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Audio_1afe2741a7a803a4e5fec31b7bd0ecb677" prot="private" virt="non-virtual"><scope>Urho3D::Audio</scope><name>UpdateInternal</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Audio_1a012d8cbd1f9c91d2126440668427b3f9" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>~Audio</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Audio</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Audio</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

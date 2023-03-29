@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Profiler" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Profiler</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1EventProfiler" prot="public" virt="non-virtual">Urho3D::EventProfiler</derivedcompoundref>
+    <includes refid="Profiler_8h" local="no">Profiler.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Profiler_1a4500b2552f173ac624fd53cea8e9c405" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1ProfilerBlock" kindref="compound">ProfilerBlock</ref> *</type>
+        <definition>ProfilerBlock* Urho3D::Profiler::current_</definition>
+        <argsstring></argsstring>
+        <name>current_</name>
+        <briefdescription>
+<para>Current profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="229" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Profiler_1abd0e2da7eeffc552850f6216575f9e53" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1ProfilerBlock" kindref="compound">ProfilerBlock</ref> *</type>
+        <definition>ProfilerBlock* Urho3D::Profiler::root_</definition>
+        <argsstring></argsstring>
+        <name>root_</name>
+        <briefdescription>
+<para>Root profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="231" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Profiler_1abd1d96a5508d1b57ae7b6a0b23ae8276" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Profiler::intervalFrames_</definition>
+        <argsstring></argsstring>
+        <name>intervalFrames_</name>
+        <briefdescription>
+<para>Frames in the current interval. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="233" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1ab144fa6229346277c689fa92c9a88222" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Profiler::Profiler</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Profiler</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="184" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a63419eb7c402e2d40e23cd9f8a1c1bdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Profiler::~Profiler</definition>
+        <argsstring>() override</argsstring>
+        <name>~Profiler</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="186" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a14657ffeae7e792440595052703ba2d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Profiler::BeginBlock</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>BeginBlock</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Begin timing a profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="189" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="189" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a533d2831d19440c8ae3ecee08efdca57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Profiler::EndBlock</definition>
+        <argsstring>()</argsstring>
+        <name>EndBlock</name>
+        <briefdescription>
+<para>End timing the current profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="200" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="200" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1aa6bd5357f575861553f27183944d341c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Profiler::BeginFrame</definition>
+        <argsstring>()</argsstring>
+        <name>BeginFrame</name>
+        <briefdescription>
+<para>Begin the profiling frame. Called by HandleBeginFrame(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="211" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a6e82e06121e35a9e1b7fa23bb43e9a22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Profiler::EndFrame</definition>
+        <argsstring>()</argsstring>
+        <name>EndFrame</name>
+        <briefdescription>
+<para>End the profiling frame. Called by HandleEndFrame(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="213" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a658f53d73954fe9c3d8d322836b05168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Profiler::BeginInterval</definition>
+        <argsstring>()</argsstring>
+        <name>BeginInterval</name>
+        <briefdescription>
+<para>Begin a new interval. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="215" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a78951bc1c0387a183e57b8012525b80d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::Profiler::PrintData</definition>
+        <argsstring>(bool showUnused=false, bool showTotal=false, unsigned maxDepth=M_MAX_UNSIGNED) const</argsstring>
+        <name>PrintData</name>
+        <param>
+          <type>bool</type>
+          <declname>showUnused</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showTotal</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>maxDepth</declname>
+          <defval>M_MAX_UNSIGNED</defval>
+        </param>
+        <briefdescription>
+<para>Return profiling data as text output. This method is not thread-safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="218" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a53ae97f0cef3df3a8ccc6270198c5f69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1ProfilerBlock" kindref="compound">ProfilerBlock</ref> *</type>
+        <definition>const ProfilerBlock* Urho3D::Profiler::GetCurrentBlock</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentBlock</name>
+        <briefdescription>
+<para>Return the current profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="220" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="220" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1a91a3159c983c6f9e04e1ab9fee2460bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1ProfilerBlock" kindref="compound">ProfilerBlock</ref> *</type>
+        <definition>const ProfilerBlock* Urho3D::Profiler::GetRootBlock</definition>
+        <argsstring>()</argsstring>
+        <name>GetRootBlock</name>
+        <briefdescription>
+<para>Return the root profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="222" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="222" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1Profiler_1aaee6593e725b6f954ed43d4742caabf8" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Profiler::PrintData</definition>
+        <argsstring>(ProfilerBlock *block, String &amp;output, unsigned depth, unsigned maxDepth, bool showUnused, bool showTotal) const</argsstring>
+        <name>PrintData</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ProfilerBlock" kindref="compound">ProfilerBlock</ref> *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>maxDepth</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showUnused</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>showTotal</declname>
+        </param>
+        <briefdescription>
+<para>Return profiling data as text output for a specified profiling block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="226" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Hierarchical performance profiler subsystem. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Profiler</label>
+        <link refid="classUrho3D_1_1Profiler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::EventProfiler</label>
+        <link refid="classUrho3D_1_1EventProfiler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Urho3D::ProfilerBlock</label>
+        <link refid="classUrho3D_1_1ProfilerBlock"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>timer_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>children_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Profiler</label>
+        <link refid="classUrho3D_1_1Profiler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>current_</edgelabel>
+          <edgelabel>root_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::HiresTimer</label>
+        <link refid="classUrho3D_1_1HiresTimer"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="7">
+        <label>Urho3D::PODVector&lt; Urho3D::ProfilerBlock * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" line="178" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Profiler.h" bodystart="179" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a14657ffeae7e792440595052703ba2d0" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>BeginBlock</name></member>
+      <member refid="classUrho3D_1_1Profiler_1aa6bd5357f575861553f27183944d341c" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>BeginFrame</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a658f53d73954fe9c3d8d322836b05168" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>BeginInterval</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a4500b2552f173ac624fd53cea8e9c405" prot="protected" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>current_</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a533d2831d19440c8ae3ecee08efdca57" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>EndBlock</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a6e82e06121e35a9e1b7fa23bb43e9a22" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>EndFrame</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a53ae97f0cef3df3a8ccc6270198c5f69" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetCurrentBlock</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a91a3159c983c6f9e04e1ab9fee2460bc" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetRootBlock</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Profiler</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Profiler</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Profiler</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Profiler_1abd1d96a5508d1b57ae7b6a0b23ae8276" prot="protected" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>intervalFrames_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Profiler</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a78951bc1c0387a183e57b8012525b80d" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>PrintData</name></member>
+      <member refid="classUrho3D_1_1Profiler_1aaee6593e725b6f954ed43d4742caabf8" prot="protected" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>PrintData</name></member>
+      <member refid="classUrho3D_1_1Profiler_1ab144fa6229346277c689fa92c9a88222" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>Profiler</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Profiler_1abd0e2da7eeffc552850f6216575f9e53" prot="protected" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>root_</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1Profiler_1a63419eb7c402e2d40e23cd9f8a1c1bdb" prot="public" virt="non-virtual"><scope>Urho3D::Profiler</scope><name>~Profiler</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Profiler</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

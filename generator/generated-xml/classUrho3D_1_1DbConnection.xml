@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1DbConnection" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::DbConnection</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="ODBCConnection_8h" local="no">ODBCConnection.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1DbConnection_1aa35506c15e302364987698299b4ba3a9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::DbConnection::connectionString_</definition>
+        <argsstring></argsstring>
+        <name>connectionString_</name>
+        <briefdescription>
+<para>The connection string for SQLite3 is using the URI format described in <ulink url="https://www.sqlite.org/uri.html">https://www.sqlite.org/uri.html</ulink>, while the connection string for ODBC is using DSN format as per ODBC standard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="63" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1DbConnection_1a37bd141aa9c65266c57a29b24a80bea9" prot="private" static="no" mutable="no">
+        <type>nanodbc::connection</type>
+        <definition>nanodbc::connection Urho3D::DbConnection::connectionImpl_</definition>
+        <argsstring></argsstring>
+        <name>connectionImpl_</name>
+        <briefdescription>
+<para>The underlying implementation connection object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="65" column="25" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1a3ce975da686fa812f92ee0bf56c7fd21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::DbConnection::DbConnection</definition>
+        <argsstring>(Context *context, const String &amp;connectionString)</argsstring>
+        <name>DbConnection</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>connectionString</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="40" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1a3b3ef8dd456242cb10f12f57f91f91d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Urho3D::DbConnection::~DbConnection</definition>
+        <argsstring>() override</argsstring>
+        <name>~DbConnection</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="42" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1a2822604dbbdb3c0080e1e71dd96ea16f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::DbConnection::Finalize</definition>
+        <argsstring>()</argsstring>
+        <name>Finalize</name>
+        <briefdescription>
+<para>Finalize all prepared statements, close all BLOB handles, and finish all sqlite3_backup objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1aa8757dfc41b4d7cf9158f88d7a4df7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1DbResult" kindref="compound">DbResult</ref></type>
+        <definition>DbResult Urho3D::DbConnection::Execute</definition>
+        <argsstring>(const String &amp;sql, bool useCursorEvent=false)</argsstring>
+        <name>Execute</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>sql</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useCursorEvent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Execute an SQL statements immediately. Send E_DBCURSOR event for each row in the resultset when useCursorEvent parameter is set to true. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1aeb1694d86e82471648ec6bbf68240925" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::DbConnection::GetConnectionString</definition>
+        <argsstring>() const</argsstring>
+        <name>GetConnectionString</name>
+        <briefdescription>
+<para>Return database connection string. The connection string for SQLite3 is using the URI format described in <ulink url="https://www.sqlite.org/uri.html">https://www.sqlite.org/uri.html</ulink>, while the connection string for ODBC is using DSN format as per ODBC standard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="50" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1a9c4ae1c78980f06137beb08876177d99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const nanodbc::connection *</type>
+        <definition>const nanodbc::connection* Urho3D::DbConnection::GetConnectionImpl</definition>
+        <argsstring>() const</argsstring>
+        <name>GetConnectionImpl</name>
+        <briefdescription>
+<para>Return the underlying implementation connection object pointer. It is sqlite* when using SQLite3 or nanodbc::connection* when using ODBC. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="53" column="31" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1a61db8a85fbba4d086ad5f88cf28e34d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::DbConnection::IsConnected</definition>
+        <argsstring>() const</argsstring>
+        <name>IsConnected</name>
+        <briefdescription>
+<para>Return true when the connection object is connected to the associated database. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="56" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1DbConnection_1a03529ab50c9b78e3c87606269826f21a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::DbConnection::HandleRuntimeError</definition>
+        <argsstring>(const char *message, const char *cause)</argsstring>
+        <name>HandleRuntimeError</name>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cause</declname>
+        </param>
+        <briefdescription>
+<para>Internal helper method to handle runtime exception by logging it to stderr stream. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="60" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Database connection. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::DbConnection</label>
+        <link refid="classUrho3D_1_1DbConnection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::DbConnection</label>
+        <link refid="classUrho3D_1_1DbConnection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Database/ODBC/ODBCConnection.h" bodystart="35" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a37bd141aa9c65266c57a29b24a80bea9" prot="private" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>connectionImpl_</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1aa35506c15e302364987698299b4ba3a9" prot="private" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>connectionString_</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a3ce975da686fa812f92ee0bf56c7fd21" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>DbConnection</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1aa8757dfc41b4d7cf9158f88d7a4df7b2" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>Execute</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a2822604dbbdb3c0080e1e71dd96ea16f" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>Finalize</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a9c4ae1c78980f06137beb08876177d99" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetConnectionImpl</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1aeb1694d86e82471648ec6bbf68240925" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetConnectionString</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::DbConnection</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::DbConnection</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::DbConnection</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a03529ab50c9b78e3c87606269826f21a" prot="private" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>HandleRuntimeError</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a61db8a85fbba4d086ad5f88cf28e34d6" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>IsConnected</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::DbConnection</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1DbConnection_1a3b3ef8dd456242cb10f12f57f91f91d3" prot="public" virt="virtual"><scope>Urho3D::DbConnection</scope><name>~DbConnection</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::DbConnection</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::DbConnection</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

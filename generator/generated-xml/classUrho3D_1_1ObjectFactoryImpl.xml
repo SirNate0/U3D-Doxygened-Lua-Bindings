@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ObjectFactoryImpl" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ObjectFactoryImpl</compoundname>
+    <basecompoundref refid="classUrho3D_1_1ObjectFactory" prot="public" virt="non-virtual">Urho3D::ObjectFactory</basecompoundref>
+    <includes refid="Object_8h" local="no">Object.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ObjectFactoryImpl_1a1acfb3eef8ad280b09fd478905156e79" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ObjectFactoryImpl&lt; T &gt;::ObjectFactoryImpl</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>ObjectFactoryImpl</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="244" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="244" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ObjectFactoryImpl_1a2643886725990887ff3e87f6836d4282" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> &gt;</type>
+        <definition>SharedPtr&lt;Object&gt; Urho3D::ObjectFactoryImpl&lt; T &gt;::CreateObject</definition>
+        <argsstring>() override</argsstring>
+        <name>CreateObject</name>
+        <reimplements refid="classUrho3D_1_1ObjectFactory_1a2c004406fcf9a4fcc67e8317d7bc36f6">CreateObject</reimplements>
+        <briefdescription>
+<para>Create an object of the specific type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="251" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="251" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Template implementation of the object factory. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::ObjectFactory</label>
+        <link refid="classUrho3D_1_1ObjectFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::ObjectFactoryImpl&lt; T &gt;</label>
+        <link refid="classUrho3D_1_1ObjectFactoryImpl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::ObjectFactory</label>
+        <link refid="classUrho3D_1_1ObjectFactory"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>typeInfo_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::TypeInfo</label>
+        <link refid="classUrho3D_1_1TypeInfo"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::ObjectFactoryImpl&lt; T &gt;</label>
+        <link refid="classUrho3D_1_1ObjectFactoryImpl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" line="240" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Object.h" bodystart="241" bodyend="252"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1a5af4175472bde330d7fd2c1e87369374" prot="protected" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1ObjectFactoryImpl_1a2643886725990887ff3e87f6836d4282" prot="public" virt="virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>CreateObject</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1a18b37ca6a014a78b09a2cd1cecbc7522" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1a191ee9fd0ce7c127dfd92b2b9ae47709" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1a902756fd41c1881d25610c2d32bbe4ff" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1aa017cec32144bdd7ad690781fbc9a38c" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1adcc60d6d5121446ac1c8d4671087a21b" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>ObjectFactory</name></member>
+      <member refid="classUrho3D_1_1ObjectFactoryImpl_1a1acfb3eef8ad280b09fd478905156e79" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>ObjectFactoryImpl</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ObjectFactory_1a8e688f34b763bbc01949a8c610d7fec9" prot="protected" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>typeInfo_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ObjectFactoryImpl</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

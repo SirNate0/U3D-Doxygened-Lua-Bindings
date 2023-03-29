@@ -1,0 +1,1549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1IKSolver" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::IKSolver</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Component" prot="public" virt="non-virtual">Urho3D::Component</basecompoundref>
+    <includes refid="IKSolver_8h" local="no">IKSolver.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Algorithm</name>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04daf0a65b88e9a7c64e098ff31f65deedf1" prot="public">
+          <name>ONE_BONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04da0179871259143aad172204e1cae0b3a2" prot="public">
+          <name>TWO_BONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04dab0a7876af83bee3e198243f6ddcdd58d" prot="public">
+          <name>FABRIK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="48" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Feature</name>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca060e4da2e3e02327cd9f15de404e48e6" prot="public">
+          <name>JOINT_ROTATIONS</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Should be enabled if your model uses skinning or if you are generally interested in correct joint rotations. Has a minor performance impact. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When enabled, final joint rotations are calculated as a post processing step. If you are using IK on a model with skinning, you will want to enable this or it will look wrong. If you disable this, then you will get a slight performance boost (less calculations are required) but only the node positions are updated. This can be useful for scene IK (perhaps a chain of platforms, where each platform should retain its initial world rotation?) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca6891a47508b8df5e85a805d39e9e02b2" prot="public">
+          <name>TARGET_ROTATIONS</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>When enabled, the effector will try to match the target&apos;s rotation as well as the effectors position. When disabled, the target node will reach the effector with any rotation necessary. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>If the target position goes out of range of the effector then the rotation will no longer be matched. The chain will try to reach out to reach the target position, even if it means rotating towards it. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750ccaab313362725fd45b9f38e5f8ec33a9c1" prot="public">
+          <name>UPDATE_ORIGINAL_POSE</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>When the solver is first initialized, it will copy the positions and rotations of the current Urho3D scene graph into an internal structure. This is referred to as the &quot;original pose&quot; and will by default never change for the duration of the solver&apos;s life cycle. When the solver is destroyed, the original pose is applied back to Urho3D&apos;s scene graph so the nodes are restored to whatever they were before the solver was created.</para>
+<para>By enabling UPDATE_ORIGINAL_POSE, the original pose will be updated right before solving to reflect the current Urho3D scene graph. As a consequence, there will no longer be an original pose to restore when the solver is destroyed.</para>
+<para>When disabled, the original pose will remain unmodified. The original pose is set when the solver is first created. You can manually update the original pose at any time by calling UpdateInitialPose(). </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca2414e82824cee6edba547c80007f5847" prot="public">
+          <name>UPDATE_ACTIVE_POSE</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>Should be enabled if you are using IK on an animated model, along with disabling USE_ORIGINAL_POSE. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The &quot;active pose&quot; has two purposes: The solver uses it as the initial tree to derive a solution from, and at the same time uses it to store the solution into. Thus, the typical solving process is: 1) The active pose needs to be updated to reflect a preferred initial condition (such as the current frame of animation) 2) Call <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref> 3) The active pose now holds the solution, so it must be applied back to the Urho3D scene graph.</para>
+<para>When enabled, the active pose is updated right before solving to reflect the current state of the Urho3D scene graph.</para>
+<para>When disabled, the active pose will simply remain as it was since the last time <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref> was called.</para>
+<para><simplesect kind="note"><para>This option conflicts with USE_ORIGINAL_POSE. Make sure to disable USE_ORIGINAL_POSE if you enable this feature. </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca94e76280abecae4c82e376c2aafaeea7" prot="public">
+          <name>USE_ORIGINAL_POSE</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>Choose between using the original pose or the active pose as a basis for a solution. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When enabled, the solver will copy the original pose (see UPDATE_ORIGINAL_POSE) into the active pose before solving (and thus use the original pose as a basis for a solution).</para>
+<para><simplesect kind="note"><para>This option conflicts with UPDATE_ACTIVE_POSE. If you enable this feature, make sure to disable UPDATE_ACTIVE_POSE.</para>
+</simplesect>
+If both UPDATE_ACTIVE_POSE and USE_ORIGINAL_POSE are disabled, then the solver will use the previously solved tree as a basis for the new calculation. The result is a more &quot;continuous&quot; solution that unfolds over time. This can be useful if you want to simulate chains or something similar. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca6dd2404d44417bce3da627d537e917ab" prot="public">
+          <name>CONSTRAINTS</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Due to the somewhat unfortunate performance impacts, the solver does not enable constraints by default. Enabling constraints causes the solver&apos;s tree to be written to and from Urho3D&apos;s scene graph every iteration, while calling ApplyConstraints(). Disabling constraints means ApplyConstraints() is never called. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca55430782af02768f60fbba42890c2756" prot="public">
+          <name>AUTO_SOLVE</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Mostly exists because of the editor. When enabled, the solver will be invoked automatically for you. If you need to do additional calculations before being able to set the effector target data, you will want to disable this and call <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref> manually. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="59" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="60" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1IKSolver_1ab50036593ff7c24b8c776fd893fccb7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class IKEffector</definition>
+        <argsstring></argsstring>
+        <name>IKEffector</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1IKEffector" kindref="compound">IKEffector</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="321" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1adc8a01f570956ef4eae9c018a9cfc230" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1IKEffector" kindref="compound">IKEffector</ref> * &gt;</type>
+        <definition>PODVector&lt;IKEffector*&gt; Urho3D::IKSolver::effectorList_</definition>
+        <argsstring></argsstring>
+        <name>effectorList_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="393" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1ab881125b3efc6f08b7d66865aefae3b9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1IKConstraint" kindref="compound">IKConstraint</ref> * &gt;</type>
+        <definition>PODVector&lt;IKConstraint*&gt; Urho3D::IKSolver::constraintList_</definition>
+        <argsstring></argsstring>
+        <name>constraintList_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="394" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1a34a46afe734a3fbacb0a0345c2a5cec4" prot="private" static="no" mutable="no">
+        <type>ik_solver_t *</type>
+        <definition>ik_solver_t* Urho3D::IKSolver::solver_</definition>
+        <argsstring></argsstring>
+        <name>solver_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="395" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1a41303a2cd5a3b414ee041afe7b49e5d5" prot="private" static="no" mutable="no">
+        <type>Algorithm</type>
+        <definition>Algorithm Urho3D::IKSolver::algorithm_</definition>
+        <argsstring></argsstring>
+        <name>algorithm_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="396" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1ae22e5cfe9e04ccad908f9e73764abb41" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IKSolver::features_</definition>
+        <argsstring></argsstring>
+        <name>features_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="397" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1ae824cf71dd837351206d9e2b95b615a1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::chainTreesNeedUpdating_</definition>
+        <argsstring></argsstring>
+        <name>chainTreesNeedUpdating_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="398" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1ad35d6dc62c989e38bd152087150b209b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::treeNeedsRebuild</definition>
+        <argsstring></argsstring>
+        <name>treeNeedsRebuild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="399" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1IKSolver_1a7ffa32f81de3062030ce9323cae746c3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::solverTreeValid_</definition>
+        <argsstring></argsstring>
+        <name>solverTreeValid_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="400" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1acec072f80435bb30c78fa98e3f13edcc" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::IKSolver::IKSolver</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>IKSolver</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct an IK root component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="169" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a9b79b4d91157fa508c985811ee56fd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::IKSolver::~IKSolver</definition>
+        <argsstring>() override</argsstring>
+        <name>~IKSolver</name>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="171" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a89e3d2563603990037d45dcb4e3891bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Algorithm</type>
+        <definition>Algorithm Urho3D::IKSolver::GetAlgorithm</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAlgorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the active algorithm. MANUAL_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="178" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a78158a230b7e123b9ca73f82d51824d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetAlgorithm</definition>
+        <argsstring>(Algorithm algorithm)</argsstring>
+        <name>SetAlgorithm</name>
+        <param>
+          <type>Algorithm</type>
+          <declname>algorithm</declname>
+        </param>
+        <briefdescription>
+<para>Selects the solver algorithm. Default is FABRIK. Note that this may not be the most efficient algorithm available. The specialized solvers will be a lot faster. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>MANUAL_BIND</para>
+<para>The currently supported solvers are listed below.<itemizedlist>
+<listitem><para><bold>FABRIK</bold>: This is a fairly new and highly efficient inverse kinematic solving algorithm. It requires the least iterations to reach its goal, it does not suffer from singularities (nearly no violent snapping about), and it always converges.</para>
+</listitem><listitem><para><bold>2 <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref></bold>: A specialized solver optimized for 2 bone problems (such as a human leg)</para>
+</listitem><listitem><para><bold>1 <ref refid="structUrho3D_1_1Bone" kindref="compound">Bone</ref></bold>: A specialized solver optimized for 1 bone problems (such as a look-at target, e.g. eyes or a head) </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="196" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a2f0e3edc9cf6c68c221fc5972e4b1f88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetFeature</definition>
+        <argsstring>(Feature feature) const</argsstring>
+        <name>GetFeature</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cc" kindref="member">Feature</ref></type>
+          <declname>feature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a certain feature is enabled (see <ref refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cc" kindref="member">IKSolver::Feature</ref>). NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1aeed941e6a5f53cb2d6890fc5e5a5ed2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetFeature</definition>
+        <argsstring>(Feature feature, bool enable)</argsstring>
+        <name>SetFeature</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cc" kindref="member">Feature</ref></type>
+          <declname>feature</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable a certain feature (see <ref refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cc" kindref="member">IKSolver::Feature</ref>). NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="203" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ab4f197fe9ffcd61a5cdd9c42c3db4857" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::IKSolver::GetMaximumIterations</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaximumIterations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the configured maximum number of iterations. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="207" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ae81360d40814c704d9b0861c589e92f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetMaximumIterations</definition>
+        <argsstring>(unsigned iterations)</argsstring>
+        <name>SetMaximumIterations</name>
+        <param>
+          <type>unsigned</type>
+          <declname>iterations</declname>
+        </param>
+        <briefdescription>
+<para>Sets the maximum number of iterations the solver is allowed to perform before applying the result. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>BIND_AS_PROPERTY</para>
+<para>Depending on the algorithm, you may want higher or lower values. FABRIK looks decent after only 10 iterations, whereas Jacobian based methods often require more than a 100.</para>
+<para>The default value is 20.</para>
+<para><simplesect kind="note"><para>Most algorithms have a convergence criteria at which the solver will stop iterating, so most of the time the maximum number of iterations isn&apos;t even reached.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iterations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of iterations. Must be greater than 0. Higher values yield more accurate results, but at the cost of performance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="227" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1acb94aab774a7b65255834abb955041bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::IKSolver::GetTolerance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the configured tolerance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="231" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a8a2071caa4cfa7795e0a6570ede45d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetTolerance</definition>
+        <argsstring>(float tolerance)</argsstring>
+        <name>SetTolerance</name>
+        <param>
+          <type>float</type>
+          <declname>tolerance</declname>
+        </param>
+        <briefdescription>
+<para>Sets the distance at which the effector is &quot;close enough&quot; to the target node, at which point the algorithm will stop iterating. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>BIND_AS_PROPERTY</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tolerance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance to set. Smaller values yield more accurate results, but at the cost of more iterations. Generally you&apos;ll want to specify a number that is about 1/100th to 1/1000th of the total size of the IK chain, e.g. if your human character has a leg that is 1 Urho3D unit long, a good starting tolerance would be 0.01. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="244" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a75ebc853336630a79e4b6ec7857cd78d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::RebuildChainTrees</definition>
+        <argsstring>()</argsstring>
+        <name>RebuildChainTrees</name>
+        <briefdescription>
+<para>Updates the solver&apos;s internal data structures, which is required whenever the tree is modified in any way (e.g. adding or removing nodes, adding or removing effectors, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This gets called automatically for you in <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="252" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a547169965fa60c3cc22c44710ddfb4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::RecalculateSegmentLengths</definition>
+        <argsstring>()</argsstring>
+        <name>RecalculateSegmentLengths</name>
+        <briefdescription>
+<para>Unusual, but if you have a tree with translational motions such that the distances between nodes changes (perhaps a slider?), you can call this to recalculate the segment lengths after assigning new positions to the nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function gets called by RebuildData() and by extension in <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="262" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ae4abbafd7cdf8d158d7a918294c7847f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::CalculateJointRotations</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateJointRotations</name>
+        <briefdescription>
+<para>Skinned models require joint rotations to be calculated so skinning works correctly. This is automatically enabled by default with the feature flag JOINT_ROTATIONS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="269" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::Solve</definition>
+        <argsstring>()</argsstring>
+        <name>Solve</name>
+        <briefdescription>
+<para>Invokes the solver. The solution is applied back to the scene graph automatically. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>By default this is called automatically for you if the feature flag AUTO_SOLVE is set. For more complex IK problems you can disable that flag and call <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref> in response to E_SCENEDRAWABLEUPDATEFINISHED. This is right after the animations have been applied. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="279" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1afe4c1364201933e830b92ac7b6712f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::ApplyOriginalPoseToScene</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyOriginalPoseToScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the original pose into the scene graph. This will reset the pose to whatever state it had when the <ref refid="classUrho3D_1_1IKSolver" kindref="compound">IKSolver</ref> component was first created, or, if the original pose was updated since then (for example if Feature::UPDATE_ORIGINAL_POSE is set), will reset it to that state. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="287" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1afff682e8ed5f30b4f9f87ef5d1ba6740" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::ApplySceneToOriginalPose</definition>
+        <argsstring>()</argsstring>
+        <name>ApplySceneToOriginalPose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the current scene graph data into the solvers original pose. You generally won&apos;t need to call this, because it gets called for you automatically if Feature::UPDATE_ORIGINAL_POSE is set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="294" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1af540808afa75e025e732014817ff4b4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::ApplyActivePoseToScene</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyActivePoseToScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the solvers current active pose into the scene graph. You generally won&apos;t need to call this because it gets called for you automatically in <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref>. This is used to apply the solution back to the scene graph. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="302" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a4b857cf9c23cd910eb4b08f2952b28b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::ApplySceneToActivePose</definition>
+        <argsstring>()</argsstring>
+        <name>ApplySceneToActivePose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the current scene graph data into the solvers active pose. You generally won&apos;t need to call this because it gets called for you automatically if Feature::UPDATE_ACTIVE_POSE is set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="309" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a36875cec883b9efb373f6b87f5bbf210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::ApplyOriginalPoseToActivePose</definition>
+        <argsstring>()</argsstring>
+        <name>ApplyOriginalPoseToActivePose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copies the solvers original pose into the solvers active pose. This is used in <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref> automatically if Feature::USE_ORIGINAL_POSE is set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="315" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ac3c889fc8759deb0245efdff0102bb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::DrawDebugGeometry</definition>
+        <argsstring>(bool depthTest)</argsstring>
+        <name>DrawDebugGeometry</name>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="317" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1aed339743dec4ddfd62bc0acd0092038a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest) override</argsstring>
+        <name>DrawDebugGeometry</name>
+        <reimplements refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a">DrawDebugGeometry</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Visualize the component as debug geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="318" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a2e7a92ceb31600ba07b99b47decf5ed9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetJOINT_ROTATIONS</definition>
+        <argsstring>() const</argsstring>
+        <name>GetJOINT_ROTATIONS</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_JOINT_ROTATIONS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="363" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ab2b888417d27f64937c521b41f7b6311" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetTARGET_ROTATIONS</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTARGET_ROTATIONS</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_TARGET_ROTATIONS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="365" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a78ffbaff02f1d969bb68b6bce1ba9565" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetUPDATE_ORIGINAL_POSE</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUPDATE_ORIGINAL_POSE</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_UPDATE_ORIGINAL_POSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="367" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1abc604d2ce16a4f68951811934a35f872" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetUPDATE_ACTIVE_POSE</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUPDATE_ACTIVE_POSE</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_UPDATE_ACTIVE_POSE(. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="369" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1aee885665af157d7b232388607f18b499" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetUSE_ORIGINAL_POSE</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUSE_ORIGINAL_POSE</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_USE_ORIGINAL_POSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="371" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a207212ff6ad89d39c479d9c0ad644dc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetCONSTRAINTS</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCONSTRAINTS</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_CONSTRAINTS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="373" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a9152eaa4846197f3c0e4479e6be72878" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::GetAUTO_SOLVE</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAUTO_SOLVE</name>
+        <briefdescription>
+<para>BIND_AS_ALIAS_get_AUTO_SOLVE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="375" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a3490e56459214a921beff8aab70aae41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetJOINT_ROTATIONS</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetJOINT_ROTATIONS</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_JOINT_ROTATIONS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="378" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a06c1071f41506432dc6b855903e5cdcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetTARGET_ROTATIONS</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetTARGET_ROTATIONS</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_TARGET_ROTATIONS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="380" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a53db498905f7fc619fb46224a243b793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetUPDATE_ORIGINAL_POSE</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUPDATE_ORIGINAL_POSE</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_UPDATE_ORIGINAL_POSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="382" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a8847e29959e675a3a96b8418b8d5ef37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetUPDATE_ACTIVE_POSE</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUPDATE_ACTIVE_POSE</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_UPDATE_ACTIVE_POSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="384" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a78f382fe9ac9b48f9de1f96784f28f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetUSE_ORIGINAL_POSE</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUSE_ORIGINAL_POSE</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_USE_ORIGINAL_POSE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="386" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a23630d4e25fd3c4c223d611bc3e044c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetCONSTRAINTS</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetCONSTRAINTS</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_CONSTRAINTS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="388" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a4a5a0bbaa83dce5c5860204cfa9ffcc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::SetAUTO_SOLVE</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetAUTO_SOLVE</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>BIND_AS_ALIAS_set_AUTO_SOLVE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="390" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a1a2ba6247ee21d9c1b77e4822df5482f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::IKSolver::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers this class to the context. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="174" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a33218dc2749da6a94ea2d6e6df62f8c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::MarkChainsNeedUpdating</definition>
+        <argsstring>()</argsstring>
+        <name>MarkChainsNeedUpdating</name>
+        <briefdescription>
+<para>Indicates that the internal structures of the IK library need to be updated. See the documentation of ik_solver_rebuild_chain_trees() for more info on when this happens. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="324" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a8e9de3bbe3fee387925ef039af8503dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::MarkTreeNeedsRebuild</definition>
+        <argsstring>()</argsstring>
+        <name>MarkTreeNeedsRebuild</name>
+        <briefdescription>
+<para>Indicates that the tree structure has changed in some way and needs updating (nodes added or removed, components added or removed). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="326" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a715202e1b01b8ad6add31441c8460ee8" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::IsSolverTreeValid</definition>
+        <argsstring>() const</argsstring>
+        <name>IsSolverTreeValid</name>
+        <briefdescription>
+<para>Returns false if calling <ref refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" kindref="member">Solve()</ref> would cause the IK library to abort. Urho3D&apos;s error handling philosophy is to log an error and continue, not crash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="328" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a6f5b2b735e88b17320841393e88990bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::OnSceneSet</definition>
+        <argsstring>(Scene *scene) override</argsstring>
+        <name>OnSceneSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679">OnSceneSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>Subscribe to drawable update finished event here. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="331" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a7bf32889d3c3dc1798f6b78c97c44247" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::OnNodeSet</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnNodeSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1abdc9feb34a990d3567e9f4fa43d30d75">OnNodeSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Destroys and creates the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="333" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ae478bb8daa5d87d67654d07fd7de99c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ik_node_t *</type>
+        <definition>ik_node_t* Urho3D::IKSolver::CreateIKNodeFromUrhoNode</definition>
+        <argsstring>(const Node *node)</argsstring>
+        <name>CreateIKNodeFromUrhoNode</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Creates the ik library node and sets the current rotation/position and user data correctly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="336" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1aad4ab41a3accf0ff067ad591d0f7c67e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::DestroyTree</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyTree</name>
+        <briefdescription>
+<para>Destroys the solver&apos;s tree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="339" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a215740ec5753a2347b9da9ec9d84cc07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::RebuildTree</definition>
+        <argsstring>()</argsstring>
+        <name>RebuildTree</name>
+        <briefdescription>
+<para>Builds the solver&apos;s tree to match the scene graph&apos;s tree. If a tree already exists, it is first destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="341" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1afaa45ef02d8aee5717b9eabece7ac883" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::BuildTreeToEffector</definition>
+        <argsstring>(IKEffector *effector)</argsstring>
+        <name>BuildTreeToEffector</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1IKEffector" kindref="compound">IKEffector</ref> *</type>
+          <declname>effector</declname>
+        </param>
+        <briefdescription>
+<para>Builds a chain of nodes up to the node of the specified effector component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="343" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ac31967b5c4363bddf59ff0c2e4cfd5e0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::IKSolver::ComponentIsInOurSubtree</definition>
+        <argsstring>(Component *component) const</argsstring>
+        <name>ComponentIsInOurSubtree</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the specified component is 1) attached to a node that is below the one we are attached to and 2) isn&apos;t in the subtree of a child solver. <simplesect kind="note"><para>This will return false if the component is attached to our root node, because in that case the solver can&apos;t do anything to it, it&apos;s in the hands of a parent solver (if it exists). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="351" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1aa9fee8f31181b6a4b99fafaff06b9e1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::HandleComponentAdded</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleComponentAdded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="353" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ace20d2485f6b6159765e03737cbd7fe2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::HandleComponentRemoved</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleComponentRemoved</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="354" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ad8e59cc7a9d968a9359fb3930c135700" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::HandleNodeAdded</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleNodeAdded</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="355" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1ac5fe6c79fa5b49b58f3fc068d2a0d6bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::HandleNodeRemoved</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleNodeRemoved</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="356" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1IKSolver_1a33f6db3304063adb8c43f713c5be3b7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::IKSolver::HandleSceneDrawableUpdateFinished</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleSceneDrawableUpdateFinished</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Invokes the IK solver. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="358" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Marks the root or &quot;beginning&quot; of an IK chain or multiple IK chains. The solving algorithm can be set along with other solver related parameters. The IK problem is solved starting from the node this component is attached to and ending at all nodes that have an <ref refid="classUrho3D_1_1IKEffector" kindref="compound">IKEffector</ref> component attached. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::IKSolver</label>
+        <link refid="classUrho3D_1_1IKSolver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::IKSolver</label>
+        <link refid="classUrho3D_1_1IKSolver"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" line="42" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IK/IKSolver.h" bodystart="43" bodyend="401"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Algorithm</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a41303a2cd5a3b414ee041afe7b49e5d5" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>algorithm_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1af540808afa75e025e732014817ff4b4a" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ApplyActivePoseToScene</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a36875cec883b9efb373f6b87f5bbf210" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ApplyOriginalPoseToActivePose</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1afe4c1364201933e830b92ac7b6712f6a" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ApplyOriginalPoseToScene</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a4b857cf9c23cd910eb4b08f2952b28b7" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ApplySceneToActivePose</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1afff682e8ed5f30b4f9f87ef5d1ba6740" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ApplySceneToOriginalPose</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca55430782af02768f60fbba42890c2756" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>AUTO_SOLVE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1afaa45ef02d8aee5717b9eabece7ac883" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>BuildTreeToEffector</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ae4abbafd7cdf8d158d7a918294c7847f" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>CalculateJointRotations</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ae824cf71dd837351206d9e2b95b615a1" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>chainTreesNeedUpdating_</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ac31967b5c4363bddf59ff0c2e4cfd5e0" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ComponentIsInOurSubtree</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ab881125b3efc6f08b7d66865aefae3b9" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>constraintList_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca6dd2404d44417bce3da627d537e917ab" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>CONSTRAINTS</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ae478bb8daa5d87d67654d07fd7de99c9" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>CreateIKNodeFromUrhoNode</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1aad4ab41a3accf0ff067ad591d0f7c67e" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>DestroyTree</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ac3c889fc8759deb0245efdff0102bb2c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1aed339743dec4ddfd62bc0acd0092038a" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1adc8a01f570956ef4eae9c018a9cfc230" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>effectorList_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04dab0a7876af83bee3e198243f6ddcdd58d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>FABRIK</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cc" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Feature</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ae22e5cfe9e04ccad908f9e73764abb41" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>features_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::IKSolver</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a89e3d2563603990037d45dcb4e3891bd" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAlgorithm</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a9152eaa4846197f3c0e4479e6be72878" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetAUTO_SOLVE</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a207212ff6ad89d39c479d9c0ad644dc3" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetCONSTRAINTS</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a2f0e3edc9cf6c68c221fc5972e4b1f88" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetFeature</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a2e7a92ceb31600ba07b99b47decf5ed9" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetJOINT_ROTATIONS</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ab4f197fe9ffcd61a5cdd9c42c3db4857" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetMaximumIterations</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ab2b888417d27f64937c521b41f7b6311" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetTARGET_ROTATIONS</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1acb94aab774a7b65255834abb955041bf" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetTolerance</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::IKSolver</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::IKSolver</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::IKSolver</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1abc604d2ce16a4f68951811934a35f872" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetUPDATE_ACTIVE_POSE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a78ffbaff02f1d969bb68b6bce1ba9565" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetUPDATE_ORIGINAL_POSE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1aee885665af157d7b232388607f18b499" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>GetUSE_ORIGINAL_POSE</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1aa9fee8f31181b6a4b99fafaff06b9e1b" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleComponentAdded</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ace20d2485f6b6159765e03737cbd7fe2" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleComponentRemoved</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ad8e59cc7a9d968a9359fb3930c135700" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleNodeAdded</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ac5fe6c79fa5b49b58f3fc068d2a0d6bd" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleNodeRemoved</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a33f6db3304063adb8c43f713c5be3b7a" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HandleSceneDrawableUpdateFinished</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ab50036593ff7c24b8c776fd893fccb7b" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IKEffector</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1acec072f80435bb30c78fa98e3f13edcc" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IKSolver</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a715202e1b01b8ad6add31441c8460ee8" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsSolverTreeValid</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca060e4da2e3e02327cd9f15de404e48e6" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>JOINT_ROTATIONS</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a33218dc2749da6a94ea2d6e6df62f8c8" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>MarkChainsNeedUpdating</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8e9de3bbe3fee387925ef039af8503dc" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>MarkTreeNeedsRebuild</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04daf0a65b88e9a7c64e098ff31f65deedf1" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ONE_BONE</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a06ebdba9da30ea5f2599e39f7cd0e24a" prot="protected" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a7bf32889d3c3dc1798f6b78c97c44247" prot="private" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6f5b2b735e88b17320841393e88990bd" prot="private" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a97c506dfb55216668b1fdf4d4425f7d7" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a75ebc853336630a79e4b6ec7857cd78d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RebuildChainTrees</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a215740ec5753a2347b9da9ec9d84cc07" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RebuildTree</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a547169965fa60c3cc22c44710ddfb4fe" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RecalculateSegmentLengths</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a1a2ba6247ee21d9c1b77e4822df5482f" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a78158a230b7e123b9ca73f82d51824d5" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAlgorithm</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a4a5a0bbaa83dce5c5860204cfa9ffcc2" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetAUTO_SOLVE</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a23630d4e25fd3c4c223d611bc3e044c2" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetCONSTRAINTS</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1aeed941e6a5f53cb2d6890fc5e5a5ed2c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetFeature</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a3490e56459214a921beff8aab70aae41" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetJOINT_ROTATIONS</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ae81360d40814c704d9b0861c589e92f1" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetMaximumIterations</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a06c1071f41506432dc6b855903e5cdcf" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetTARGET_ROTATIONS</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8a2071caa4cfa7795e0a6570ede45d8e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetTolerance</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8847e29959e675a3a96b8418b8d5ef37" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetUPDATE_ACTIVE_POSE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a53db498905f7fc619fb46224a243b793" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetUPDATE_ORIGINAL_POSE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a78f382fe9ac9b48f9de1f96784f28f69" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SetUSE_ORIGINAL_POSE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ad37fe0e1e1a31fff36b3f3f923853373" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>Solve</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a34a46afe734a3fbacb0a0345c2a5cec4" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>solver_</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a7ffa32f81de3062030ce9323cae746c3" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>solverTreeValid_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca6891a47508b8df5e85a805d39e9e02b2" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>TARGET_ROTATIONS</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1ad35d6dc62c989e38bd152087150b209b" prot="private" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>treeNeedsRebuild</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a8ff23afa29e569022d52b0753158e04da0179871259143aad172204e1cae0b3a2" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>TWO_BONE</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca2414e82824cee6edba547c80007f5847" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UPDATE_ACTIVE_POSE</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750ccaab313362725fd45b9f38e5f8ec33a9c1" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UPDATE_ORIGINAL_POSE</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a6d0eae5daeff781e346e24595d5750cca94e76280abecae4c82e376c2aafaeea7" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>USE_ORIGINAL_POSE</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1IKSolver_1a9b79b4d91157fa508c985811ee56fd98" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>~IKSolver</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::IKSolver</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::IKSolver</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

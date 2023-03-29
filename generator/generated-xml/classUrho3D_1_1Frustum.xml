@@ -1,0 +1,541 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Frustum" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Frustum</compoundname>
+    <includes refid="Frustum_8h" local="no">Frustum.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Frustum_1ab58d2be5045f5ebaed8ee3eb8264bb7d" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref></type>
+        <definition>Plane Urho3D::Frustum::planes_[NUM_FRUSTUM_PLANES]</definition>
+        <argsstring>[NUM_FRUSTUM_PLANES]</argsstring>
+        <name>planes_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> planes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="182" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Frustum_1a1aec29ebcd80924df428000f1fde0e3f" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Frustum::vertices_[NUM_FRUSTUM_VERTICES]</definition>
+        <argsstring>[NUM_FRUSTUM_VERTICES]</argsstring>
+        <name>vertices_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="184" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a83b3794bfb0fca3a56973feba621c97f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Frustum::Frustum</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>Frustum</name>
+        <briefdescription>
+<para>Construct a degenerate frustum with all points at origin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a49715a69343516960907f7ca012637ec" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Frustum::Frustum</definition>
+        <argsstring>(const Frustum &amp;frustum) noexcept</argsstring>
+        <name>Frustum</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+          <declname>frustum</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="58" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a1b5b97f8a9250502273be2143022a618" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+        <definition>Frustum&amp; Urho3D::Frustum::operator=</definition>
+        <argsstring>(const Frustum &amp;rhs) noexcept</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from another frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="61" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1ae3bb6685c4a3500651952fe03e6442ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::Define</definition>
+        <argsstring>(float fov, float aspectRatio, float zoom, float nearZ, float farZ, const Matrix3x4 &amp;transform=Matrix3x4::IDENTITY)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>float</type>
+          <declname>fov</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zoom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>nearZ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>farZ</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+          <defval><ref refid="classUrho3D_1_1Matrix3x4_1a65b89ad9e47464af65f0aab7fe97925e" kindref="member">Matrix3x4::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Define with projection parameters and a transform matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="65" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a4fcfe23df000e5b21b13388bf73c6317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::Define</definition>
+        <argsstring>(const Vector3 &amp;near, const Vector3 &amp;far, const Matrix3x4 &amp;transform=Matrix3x4::IDENTITY)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>near</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>far</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+          <defval><ref refid="classUrho3D_1_1Matrix3x4_1a65b89ad9e47464af65f0aab7fe97925e" kindref="member">Matrix3x4::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Define with near and far dimension vectors and a transform matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1aa154760635981c73c7675510183a1ad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::Define</definition>
+        <argsstring>(const BoundingBox &amp;box, const Matrix3x4 &amp;transform=Matrix3x4::IDENTITY)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+          <defval><ref refid="classUrho3D_1_1Matrix3x4_1a65b89ad9e47464af65f0aab7fe97925e" kindref="member">Matrix3x4::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Define with a bounding box and a transform matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a518fe64204ee8c5a3126e85081126601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::Define</definition>
+        <argsstring>(const Matrix4 &amp;projection)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+<para>Define from a projection or view-projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1aca09b9b4205607926beb618374834762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::DefineOrtho</definition>
+        <argsstring>(float orthoSize, float aspectRatio, float zoom, float nearZ, float farZ, const Matrix3x4 &amp;transform=Matrix3x4::IDENTITY)</argsstring>
+        <name>DefineOrtho</name>
+        <param>
+          <type>float</type>
+          <declname>orthoSize</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>aspectRatio</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>zoom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>nearZ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>farZ</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+          <defval><ref refid="classUrho3D_1_1Matrix3x4_1a65b89ad9e47464af65f0aab7fe97925e" kindref="member">Matrix3x4::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Define with orthographic projection parameters and a transform matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a540dca4bfe5ccc901351a6103caff6dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::DefineSplit</definition>
+        <argsstring>(const Matrix4 &amp;projection, float near, float far)</argsstring>
+        <name>DefineSplit</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>projection</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>near</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>far</declname>
+        </param>
+        <briefdescription>
+<para>Define a split (limited) frustum from a projection matrix, with near &amp; far distances specified. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a9dead6563421f64027342b6467424ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::Transform</definition>
+        <argsstring>(const Matrix3 &amp;transform)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Transform by a 3x3 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1ae01df4b2f60fae6e716ebf5df506426c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::Transform</definition>
+        <argsstring>(const Matrix3x4 &amp;transform)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Transform by a 3x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1ac2c9d2c4f9b870519ea00affef089cd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref></type>
+        <definition>Intersection Urho3D::Frustum::IsInside</definition>
+        <argsstring>(const Vector3 &amp;point) const</argsstring>
+        <name>IsInside</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Test if a point is inside or outside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="83" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="83" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a5a7c8953478449a7f2248d4de7ab4c2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref></type>
+        <definition>Intersection Urho3D::Frustum::IsInside</definition>
+        <argsstring>(const Sphere &amp;sphere) const</argsstring>
+        <name>IsInside</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Sphere" kindref="compound">Sphere</ref> &amp;</type>
+          <declname>sphere</declname>
+        </param>
+        <briefdescription>
+<para>Test if a sphere is inside, outside or intersects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="95" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="95" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1ae98feba8cd681b9a5d023b43b71e56ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref></type>
+        <definition>Intersection Urho3D::Frustum::IsInsideFast</definition>
+        <argsstring>(const Sphere &amp;sphere) const</argsstring>
+        <name>IsInsideFast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Sphere" kindref="compound">Sphere</ref> &amp;</type>
+          <declname>sphere</declname>
+        </param>
+        <briefdescription>
+<para>Test if a sphere if (partially) inside or outside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="111" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="111" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1ae0de3431d6acbb6dcc47f668d98dd469" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref></type>
+        <definition>Intersection Urho3D::Frustum::IsInside</definition>
+        <argsstring>(const BoundingBox &amp;box) const</argsstring>
+        <name>IsInside</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Test if a bounding box is inside, outside or intersects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="123" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="123" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a14dc2400d17d695892ce4edfcc9b724e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="MathDefs_8h_1ac8f8b9469a6348fb469c53533bc4d13e" kindref="member">Intersection</ref></type>
+        <definition>Intersection Urho3D::Frustum::IsInsideFast</definition>
+        <argsstring>(const BoundingBox &amp;box) const</argsstring>
+        <name>IsInsideFast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Test if a bounding box is (partially) inside or outside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="144" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="144" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a8972db27d47ada6eec3c214d428a786c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Frustum::Distance</definition>
+        <argsstring>(const Vector3 &amp;point) const</argsstring>
+        <name>Distance</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Return distance of a point to the frustum, or 0 if inside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="162" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="162" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1aefe13185aadc4c62370e5d26fb97393b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>Frustum Urho3D::Frustum::Transformed</definition>
+        <argsstring>(const Matrix3 &amp;transform) const</argsstring>
+        <name>Transformed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Return transformed by a 3x3 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="172" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1ac6a4f5d3566cc5a6745c20dea5372b1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref></type>
+        <definition>Frustum Urho3D::Frustum::Transformed</definition>
+        <argsstring>(const Matrix3x4 &amp;transform) const</argsstring>
+        <name>Transformed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Return transformed by a 3x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="174" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a8eac3126a8d044566c7ac6b2e7f9a6fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref></type>
+        <definition>Rect Urho3D::Frustum::Projected</definition>
+        <argsstring>(const Matrix4 &amp;projection) const</argsstring>
+        <name>Projected</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref> &amp;</type>
+          <declname>projection</declname>
+        </param>
+        <briefdescription>
+<para>Return projected by a 4x4 projection matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Frustum_1a07e681ce8be0bf8746b0e2630bf38582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Frustum::UpdatePlanes</definition>
+        <argsstring>()</argsstring>
+        <name>UpdatePlanes</name>
+        <briefdescription>
+<para>Update the planes. Called internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="179" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Convex constructed of 6 planes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Frustum</label>
+        <link refid="classUrho3D_1_1Frustum"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>planes_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>vertices_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Plane</label>
+        <link refid="classUrho3D_1_1Plane"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>UP</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>absNormal_</edgelabel>
+          <edgelabel>normal_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" line="51" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Frustum.h" bodystart="52" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Frustum_1ae3bb6685c4a3500651952fe03e6442ae" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a4fcfe23df000e5b21b13388bf73c6317" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Frustum_1aa154760635981c73c7675510183a1ad1" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a518fe64204ee8c5a3126e85081126601" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Frustum_1aca09b9b4205607926beb618374834762" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>DefineOrtho</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a540dca4bfe5ccc901351a6103caff6dc" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>DefineSplit</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a8972db27d47ada6eec3c214d428a786c" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Distance</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a83b3794bfb0fca3a56973feba621c97f" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Frustum</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a49715a69343516960907f7ca012637ec" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Frustum</name></member>
+      <member refid="classUrho3D_1_1Frustum_1ac2c9d2c4f9b870519ea00affef089cd1" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>IsInside</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a5a7c8953478449a7f2248d4de7ab4c2a" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>IsInside</name></member>
+      <member refid="classUrho3D_1_1Frustum_1ae0de3431d6acbb6dcc47f668d98dd469" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>IsInside</name></member>
+      <member refid="classUrho3D_1_1Frustum_1ae98feba8cd681b9a5d023b43b71e56ff" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>IsInsideFast</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a14dc2400d17d695892ce4edfcc9b724e" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>IsInsideFast</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a1b5b97f8a9250502273be2143022a618" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Frustum_1ab58d2be5045f5ebaed8ee3eb8264bb7d" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>planes_</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a8eac3126a8d044566c7ac6b2e7f9a6fa" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Projected</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a9dead6563421f64027342b6467424ff5" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Transform</name></member>
+      <member refid="classUrho3D_1_1Frustum_1ae01df4b2f60fae6e716ebf5df506426c" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Transform</name></member>
+      <member refid="classUrho3D_1_1Frustum_1aefe13185aadc4c62370e5d26fb97393b" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Transformed</name></member>
+      <member refid="classUrho3D_1_1Frustum_1ac6a4f5d3566cc5a6745c20dea5372b1d" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>Transformed</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a07e681ce8be0bf8746b0e2630bf38582" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>UpdatePlanes</name></member>
+      <member refid="classUrho3D_1_1Frustum_1a1aec29ebcd80924df428000f1fde0e3f" prot="public" virt="non-virtual"><scope>Urho3D::Frustum</scope><name>vertices_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

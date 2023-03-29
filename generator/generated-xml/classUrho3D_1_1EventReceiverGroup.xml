@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1EventReceiverGroup" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::EventReceiverGroup</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <includes refid="Context_8h" local="no">Context.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1EventReceiverGroup_1af3b8c0af42885e8cff4410684cb546cf" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> * &gt;</type>
+        <definition>PODVector&lt;Object*&gt; Urho3D::EventReceiverGroup::receivers_</definition>
+        <argsstring></argsstring>
+        <name>receivers_</name>
+        <briefdescription>
+<para>Receivers. May contain holes during sending. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="56" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1EventReceiverGroup_1adcc87b2345dbead5b8a84d5514f8113d" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::EventReceiverGroup::inSend_</definition>
+        <argsstring></argsstring>
+        <name>inSend_</name>
+        <briefdescription>
+<para>&quot;In send&quot; recursion counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="60" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1EventReceiverGroup_1a239a46b4df97f70e983d50cf31f9fb2b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::EventReceiverGroup::dirty_</definition>
+        <argsstring></argsstring>
+        <name>dirty_</name>
+        <briefdescription>
+<para>Cleanup required flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="62" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1EventReceiverGroup_1a426743993f3c08d857b0f85f704eb808" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::EventReceiverGroup::EventReceiverGroup</definition>
+        <argsstring>()</argsstring>
+        <name>EventReceiverGroup</name>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="37" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1EventReceiverGroup_1aa75e332e4059c344a14bc1d06129bc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::EventReceiverGroup::BeginSendEvent</definition>
+        <argsstring>()</argsstring>
+        <name>BeginSendEvent</name>
+        <briefdescription>
+<para>Begin event send. When receivers are removed during send, group has to be cleaned up afterward. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1EventReceiverGroup_1a6e8d795aec1eb82fb3a62ac9324d38de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::EventReceiverGroup::EndSendEvent</definition>
+        <argsstring>()</argsstring>
+        <name>EndSendEvent</name>
+        <briefdescription>
+<para>End event send. Clean up if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1EventReceiverGroup_1a4b093277ac7d692f38ec973429f120d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::EventReceiverGroup::Add</definition>
+        <argsstring>(Object *object)</argsstring>
+        <name>Add</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Add receiver. Same receiver must not be double-added! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1EventReceiverGroup_1a3074ee82cc374a0a9145fe8847086022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::EventReceiverGroup::Remove</definition>
+        <argsstring>(Object *object)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Object" kindref="compound">Object</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Remove receiver. Leave holes during send, which requires later cleanup. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="53" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tracking structure for event receivers. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::EventReceiverGroup</label>
+        <link refid="classUrho3D_1_1EventReceiverGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::EventReceiverGroup</label>
+        <link refid="classUrho3D_1_1EventReceiverGroup"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>receivers_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::PODVector&lt; Urho3D::Object * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" line="33" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Core/Context.h" bodystart="34" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1a4b093277ac7d692f38ec973429f120d3" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>Add</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1aa75e332e4059c344a14bc1d06129bc6e" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>BeginSendEvent</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1a239a46b4df97f70e983d50cf31f9fb2b" prot="private" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>dirty_</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1a6e8d795aec1eb82fb3a62ac9324d38de" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>EndSendEvent</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1a426743993f3c08d857b0f85f704eb808" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>EventReceiverGroup</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1adcc87b2345dbead5b8a84d5514f8113d" prot="private" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>inSend_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1af3b8c0af42885e8cff4410684cb546cf" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>receivers_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1EventReceiverGroup_1a3074ee82cc374a0a9145fe8847086022" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::EventReceiverGroup</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::EventReceiverGroup</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1756 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1CollisionShape" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::CollisionShape</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Component" prot="public" virt="non-virtual">Urho3D::Component</basecompoundref>
+    <includes refid="CollisionShape_8h" local="no">CollisionShape.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a0ef8549a077624a08622cb6258800d08" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1PhysicsWorld" kindref="compound">PhysicsWorld</ref> &gt;</type>
+        <definition>WeakPtr&lt;PhysicsWorld&gt; Urho3D::CollisionShape::physicsWorld_</definition>
+        <argsstring></argsstring>
+        <name>physicsWorld_</name>
+        <briefdescription>
+<para>Physics world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="306" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a58d3b820fe8421e42b46bd6e87088000" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref> &gt;</type>
+        <definition>WeakPtr&lt;RigidBody&gt; Urho3D::CollisionShape::rigidBody_</definition>
+        <argsstring></argsstring>
+        <name>rigidBody_</name>
+        <briefdescription>
+<para>Rigid body. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="308" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a37d42f78c13cdbc4a103ff3ecc2f7697" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> &gt;</type>
+        <definition>SharedPtr&lt;Model&gt; Urho3D::CollisionShape::model_</definition>
+        <argsstring></argsstring>
+        <name>model_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="310" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a70492a0f8058a2ac5e504a11d4d00e9f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="structUrho3D_1_1CollisionGeometryData" kindref="compound">CollisionGeometryData</ref> &gt;</type>
+        <definition>SharedPtr&lt;CollisionGeometryData&gt; Urho3D::CollisionShape::geometry_</definition>
+        <argsstring></argsstring>
+        <name>geometry_</name>
+        <briefdescription>
+<para>Shared geometry data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="312" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a6a81c57b6e74db60d420f6aaf5453915" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr</ref>&lt; btCollisionShape &gt;</type>
+        <definition>UniquePtr&lt;btCollisionShape&gt; Urho3D::CollisionShape::shape_</definition>
+        <argsstring></argsstring>
+        <name>shape_</name>
+        <briefdescription>
+<para>Bullet collision shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="314" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1af24b1dc1c635a2ab197ca0a6694030e4" prot="private" static="no" mutable="no">
+        <type><ref refid="CollisionShape_8h_1a9609ee2ddee43a27e14c482088af37b7" kindref="member">ShapeType</ref></type>
+        <definition>ShapeType Urho3D::CollisionShape::shapeType_</definition>
+        <argsstring></argsstring>
+        <name>shapeType_</name>
+        <briefdescription>
+<para>Collision shape type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="316" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1ad2c88b99cfd1a26723f86ad2e104d6cd" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CollisionShape::position_</definition>
+        <argsstring></argsstring>
+        <name>position_</name>
+        <briefdescription>
+<para>Offset position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="318" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a4267243c128aecd08bfc7c2998fb1690" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion Urho3D::CollisionShape::rotation_</definition>
+        <argsstring></argsstring>
+        <name>rotation_</name>
+        <briefdescription>
+<para>Offset rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="320" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a729b6dbaf45128cdb33d69cf4a5887ab" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CollisionShape::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+<para>Shape size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="322" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1af8afa73546da82a6d0f1a5f779498681" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::CollisionShape::cachedWorldScale_</definition>
+        <argsstring></argsstring>
+        <name>cachedWorldScale_</name>
+        <briefdescription>
+<para>Cached world scale for determining if the collision shape needs update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="324" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1abfed76f932120f805a102ba80fa86135" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CollisionShape::lodLevel_</definition>
+        <argsstring></argsstring>
+        <name>lodLevel_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="326" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1ac1bbdadfc9d1257391b35edcdd0c63f0" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CollisionShape::customGeometryID_</definition>
+        <argsstring></argsstring>
+        <name>customGeometryID_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref> component ID. 0 if not creating the convex hull / triangle mesh from a <ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="328" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a167ed59c9fc8608f0e713aa335ec73eb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::CollisionShape::margin_</definition>
+        <argsstring></argsstring>
+        <name>margin_</name>
+        <briefdescription>
+<para>Collision margin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="330" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a8868fc20a6fb64375e4a1cc54a78de50" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::CollisionShape::recreateShape_</definition>
+        <argsstring></argsstring>
+        <name>recreateShape_</name>
+        <briefdescription>
+<para>Recreate collision shape flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="332" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionShape_1a01c71b815bdb02a8e468d264b032eac3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::CollisionShape::retryCreation_</definition>
+        <argsstring></argsstring>
+        <name>retryCreation_</name>
+        <briefdescription>
+<para>Shape creation retry flag if attributes initially set without scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="334" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a78257b3b25208dbb88871b649596fc94" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::CollisionShape::CollisionShape</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>CollisionShape</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="149" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a39099239a52b6dbc34d7775b4d89428f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::CollisionShape::~CollisionShape</definition>
+        <argsstring>() override</argsstring>
+        <name>~CollisionShape</name>
+        <briefdescription>
+<para>Destruct. Free the geometry data and clean up unused data from the geometry data cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="151" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a517a06a7d33f243c3dfcab32263bde1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::ApplyAttributes</definition>
+        <argsstring>() override</argsstring>
+        <name>ApplyAttributes</name>
+        <reimplements refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593">ApplyAttributes</reimplements>
+        <briefdescription>
+<para>Apply attribute changes that can not be applied immediately. Called after scene load or a network update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a9259e387ac06fe25afa38cd2f839ab80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::OnSetEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>OnSetEnabled</name>
+        <reimplements refid="classUrho3D_1_1Component_1a97c506dfb55216668b1fdf4d4425f7d7">OnSetEnabled</reimplements>
+        <briefdescription>
+<para>Handle enabled/disabled state change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="159" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a603207bf68d4a4ed1bdecd8430fa1568" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest) override</argsstring>
+        <name>DrawDebugGeometry</name>
+        <reimplements refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a">DrawDebugGeometry</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Visualize the component as debug geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="161" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ad9e299a6c86b484341d773e58234d5c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetBox</definition>
+        <argsstring>(const Vector3 &amp;size, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetBox</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="164" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a4e39c1e7938e919db056af37d2a68b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetSphere</definition>
+        <argsstring>(float diameter, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetSphere</name>
+        <param>
+          <type>float</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a sphere. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="166" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a93229f5987d5463be093aaa4c1ec552f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetStaticPlane</definition>
+        <argsstring>(const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetStaticPlane</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a static plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="168" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ae1d34b5ff1cf54027cfee1840d8ca77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCylinder</definition>
+        <argsstring>(float diameter, float height, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetCylinder</name>
+        <param>
+          <type>float</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a cylinder. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="170" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a03ddfc306e33f21ac8a9c68fe4d06829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCapsule</definition>
+        <argsstring>(float diameter, float height, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetCapsule</name>
+        <param>
+          <type>float</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a capsule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a9c273d22686ec3e209bac95e49eb99b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCone</definition>
+        <argsstring>(float diameter, float height, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetCone</name>
+        <param>
+          <type>float</type>
+          <declname>diameter</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a cone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="174" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a5d96bf4e72ca19cb6678fb329081253e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetTriangleMesh</definition>
+        <argsstring>(Model *model, unsigned lodLevel=0, const Vector3 &amp;scale=Vector3::ONE, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetTriangleMesh</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a triangle mesh from <ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref>. If you update a model&apos;s geometry and want to reapply the shape, call physicsWorld-&gt;RemoveCachedGeometry(model) first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ae003977d5c7497a5ddb882c121d7a08f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCustomTriangleMesh</definition>
+        <argsstring>(CustomGeometry *custom, const Vector3 &amp;scale=Vector3::ONE, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetCustomTriangleMesh</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref> *</type>
+          <declname>custom</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a triangle mesh from <ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="179" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ad182f272c6ba5748eb719160f494a085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetConvexHull</definition>
+        <argsstring>(Model *model, unsigned lodLevel=0, const Vector3 &amp;scale=Vector3::ONE, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetConvexHull</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a convex hull from <ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="182" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ad48332cd76e2d45239d6bb1fd8ae24bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCustomConvexHull</definition>
+        <argsstring>(CustomGeometry *custom, const Vector3 &amp;scale=Vector3::ONE, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetCustomConvexHull</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref> *</type>
+          <declname>custom</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a convex hull from <ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="185" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1af5e68d6d4d6cb3f7615248832daec2c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetGImpactMesh</definition>
+        <argsstring>(Model *model, unsigned lodLevel=0, const Vector3 &amp;scale=Vector3::ONE, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetGImpactMesh</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a triangle mesh from <ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref>. If you update a model&apos;s geometry and want to reapply the shape, call physicsWorld-&gt;RemoveCachedGeometry(model) first. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ab1ab42be9071e598fbd58997b8674c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCustomGImpactMesh</definition>
+        <argsstring>(CustomGeometry *custom, const Vector3 &amp;scale=Vector3::ONE, const Vector3 &amp;position=Vector3::ZERO, const Quaternion &amp;rotation=Quaternion::IDENTITY)</argsstring>
+        <name>SetCustomGImpactMesh</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref> *</type>
+          <declname>custom</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1a402fdc96e79366f13803eb238a5623ed" kindref="member">Vector3::ONE</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+          <defval><ref refid="classUrho3D_1_1Vector3_1ad412e0011a7987f2b91c530158f19f16" kindref="member">Vector3::ZERO</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+          <defval><ref refid="classUrho3D_1_1Quaternion_1af53dbc2f29f41c9a4e7c432ccca289c5" kindref="member">Quaternion::IDENTITY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Set as a triangle mesh from <ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="191" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a7b3b2940440ee7e9288288aa4d07a8cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetTerrain</definition>
+        <argsstring>(unsigned lodLevel=0)</argsstring>
+        <name>SetTerrain</name>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set as a terrain. Only works if the same scene node contains a <ref refid="classUrho3D_1_1Terrain" kindref="compound">Terrain</ref> component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="194" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a778bca197135e500e0aed8b6a510bb91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetShapeType</definition>
+        <argsstring>(ShapeType type)</argsstring>
+        <name>SetShapeType</name>
+        <param>
+          <type><ref refid="CollisionShape_8h_1a9609ee2ddee43a27e14c482088af37b7" kindref="member">ShapeType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shape type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="197" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ad23602b90cf2194e3d096af9a5a7b045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetSize</definition>
+        <argsstring>(const Vector3 &amp;size)</argsstring>
+        <name>SetSize</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shape size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1aad505a1d1bd8b106e1456a89f6e1313c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetPosition</definition>
+        <argsstring>(const Vector3 &amp;position)</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set offset position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="203" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ad36409a62b124f57347b1fbfdc32e2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetRotation</definition>
+        <argsstring>(const Quaternion &amp;rotation)</argsstring>
+        <name>SetRotation</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set offset rotation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="206" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1af6d77fb43fb9d3bad2efc973f23a895d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetTransform</definition>
+        <argsstring>(const Vector3 &amp;position, const Quaternion &amp;rotation)</argsstring>
+        <name>SetTransform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Set offset transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="208" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a7f7ba246c077dbe0910c9d08907bf6ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetMargin</definition>
+        <argsstring>(float margin)</argsstring>
+        <name>SetMargin</name>
+        <param>
+          <type>float</type>
+          <declname>margin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set collision margin. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="211" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a6609535c4f1f418d0f14550db0921699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetModel</definition>
+        <argsstring>(Model *model)</argsstring>
+        <name>SetModel</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set triangle mesh / convex hull model. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="214" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a0ab3423b993623d136057dc4efd0da2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetLodLevel</definition>
+        <argsstring>(unsigned lodLevel)</argsstring>
+        <name>SetLodLevel</name>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set model LOD level. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="217" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a76cfde7c11d4092e76f8f5d045471e47" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>btCollisionShape *</type>
+        <definition>btCollisionShape* Urho3D::CollisionShape::GetCollisionShape</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCollisionShape</name>
+        <briefdescription>
+<para>Return Bullet collision shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="220" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="220" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a30350e223bda835cbda34dc21b5e288f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1CollisionGeometryData" kindref="compound">CollisionGeometryData</ref> *</type>
+        <definition>CollisionGeometryData* Urho3D::CollisionShape::GetGeometryData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGeometryData</name>
+        <briefdescription>
+<para>Return the shared geometry data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="223" column="27" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a37dd6d366474e7d8acb45bda269c382e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PhysicsWorld" kindref="compound">PhysicsWorld</ref> *</type>
+        <definition>PhysicsWorld* Urho3D::CollisionShape::GetPhysicsWorld</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPhysicsWorld</name>
+        <briefdescription>
+<para>Return physics world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="226" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a4e42b4f42285562965380ac9551f7578" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="CollisionShape_8h_1a9609ee2ddee43a27e14c482088af37b7" kindref="member">ShapeType</ref></type>
+        <definition>ShapeType Urho3D::CollisionShape::GetShapeType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShapeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shape type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="230" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="230" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ac57eca59dc8bbcab5162296fad49fefb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::CollisionShape::GetSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shape size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="234" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1aa8f949a402685452aa08b7d56512c819" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::CollisionShape::GetPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return offset position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="238" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="238" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1afd6c110eb78dac9b083c38a054d8681c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>const Quaternion&amp; Urho3D::CollisionShape::GetRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return offset rotation. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="242" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="242" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a984da0035d865d25065badc3f65066c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::CollisionShape::GetMargin</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMargin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return collision margin. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="246" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a4972ae700ab9cb2830a349f8eb1b73f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+        <definition>Model* Urho3D::CollisionShape::GetModel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return triangle mesh / convex hull model. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="250" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a282c0504a35695d5242bcfed4cf263ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CollisionShape::GetLodLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return model LOD level. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="254" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="254" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a91f197c52c26622c4d06b50cba5b7d54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::CollisionShape::GetWorldBoundingBox</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWorldBoundingBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return world-space bounding box. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="258" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a8cfe09cb27ec041dedcd92a69293bcbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::NotifyRigidBody</definition>
+        <argsstring>(bool updateMass=true)</argsstring>
+        <name>NotifyRigidBody</name>
+        <param>
+          <type>bool</type>
+          <declname>updateMass</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Update the new collision shape to the <ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="261" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ad7d83a5bc125f5e709fda13becd7e9e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetModelAttr</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>SetModelAttr</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set model attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="263" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a84f5fc98b23286116d721500ac6cb33b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::CollisionShape::GetModelAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModelAttr</name>
+        <briefdescription>
+<para>Return model attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="265" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ae8711104bc670ce7d5ec44ee687c5986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::ReleaseShape</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseShape</name>
+        <briefdescription>
+<para>Release the collision shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="267" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a73aefb52702332cf45fa3d27d4ee5922" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::CollisionShape::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="154" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a5c1e0baeb586e2e3edad2c7b7872fe4d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::OnNodeSet</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnNodeSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1abdc9feb34a990d3567e9f4fa43d30d75">OnNodeSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="271" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ab4e82085078bf7e031f32657ebe2565c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::OnSceneSet</definition>
+        <argsstring>(Scene *scene) override</argsstring>
+        <name>OnSceneSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679">OnSceneSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>Handle scene being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="273" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a61df21132c5462e779a85b7c0ebf2fad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::OnMarkedDirty</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnMarkedDirty</name>
+        <reimplements refid="classUrho3D_1_1Component_1a06ebdba9da30ea5f2599e39f7cd0e24a">OnMarkedDirty</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node transform being dirtied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="275" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a8d5a7947ab80b456c84be5f16edbde26" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>btCollisionShape *</type>
+        <definition>virtual btCollisionShape* Urho3D::CollisionShape::UpdateDerivedShape</definition>
+        <argsstring>(int shapeType, const Vector3 &amp;newWorldScale)</argsstring>
+        <name>UpdateDerivedShape</name>
+        <param>
+          <type>int</type>
+          <declname>shapeType</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>newWorldScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called when instantiating a collision shape that is not one of ShapeType (default no-op).</para>
+<para>Useful for custom shape types that subclass <ref refid="classUrho3D_1_1CollisionShape" kindref="compound">CollisionShape</ref> and use a non-standard underlying btCollisionShape. UpdateDerivedShape can then be overridden to create the required btCollisionShape subclass. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="283" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a49e0a7f27509cf734f182ca693ceb1d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>btCompoundShape *</type>
+        <definition>btCompoundShape* Urho3D::CollisionShape::GetParentCompoundShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetParentCompoundShape</name>
+        <briefdescription>
+<para>Find the parent rigid body component and return its compound collision shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="287" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a5ecb900b219e57ddf9696a1fb194f33a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::UpdateShape</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateShape</name>
+        <briefdescription>
+<para>Update the collision shape after attribute changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="289" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a02029eaf22f387547af8d3cdbe430323" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::UpdateCachedGeometryShape</definition>
+        <argsstring>(CollisionGeometryDataCache &amp;cache)</argsstring>
+        <name>UpdateCachedGeometryShape</name>
+        <param>
+          <type><ref refid="CollisionShape_8h_1a5592262aa397603227c6dd013122fed9" kindref="member">CollisionGeometryDataCache</ref> &amp;</type>
+          <declname>cache</declname>
+        </param>
+        <briefdescription>
+<para>Update cached geometry collision shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="291" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1abba5ffd054fed3b89b45abb4c8ab6a87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetModelShape</definition>
+        <argsstring>(ShapeType shapeType, Model *model, unsigned lodLevel, const Vector3 &amp;scale, const Vector3 &amp;position, const Quaternion &amp;rotation)</argsstring>
+        <name>SetModelShape</name>
+        <param>
+          <type><ref refid="CollisionShape_8h_1a9609ee2ddee43a27e14c482088af37b7" kindref="member">ShapeType</ref></type>
+          <declname>shapeType</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>lodLevel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Set as specified shape type using model and LOD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="293" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a80db6f4f9f30854ad9b04b6a7ce6fd9b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::SetCustomShape</definition>
+        <argsstring>(ShapeType shapeType, CustomGeometry *custom, const Vector3 &amp;scale, const Vector3 &amp;position, const Quaternion &amp;rotation)</argsstring>
+        <name>SetCustomShape</name>
+        <param>
+          <type><ref refid="CollisionShape_8h_1a9609ee2ddee43a27e14c482088af37b7" kindref="member">ShapeType</ref></type>
+          <declname>shapeType</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref> *</type>
+          <declname>custom</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref> &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Set as specified shape type using <ref refid="classUrho3D_1_1CustomGeometry" kindref="compound">CustomGeometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="296" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1a7853e41afbf7ebba92ce30cd1fb83bfc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::HandleTerrainCreated</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleTerrainCreated</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Update terrain collision shape from the terrain component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="299" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1ac5372bd6380621dc23b08e4601136582" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::HandleModelReloadFinished</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleModelReloadFinished</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Update trimesh or convex shape after a model has reloaded itself. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="301" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionShape_1aa9eba09679f6d28012b9fe24cf0459ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionShape::MarkShapeDirty</definition>
+        <argsstring>()</argsstring>
+        <name>MarkShapeDirty</name>
+        <briefdescription>
+<para>Mark shape dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="303" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="303" bodyend="303"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Physics collision shape component. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::CollisionShape</label>
+        <link refid="classUrho3D_1_1CollisionShape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::CollisionShape</label>
+        <link refid="classUrho3D_1_1CollisionShape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" line="143" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics/CollisionShape.h" bodystart="144" bodyend="335"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a517a06a7d33f243c3dfcab32263bde1e" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1af8afa73546da82a6d0f1a5f779498681" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>cachedWorldScale_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a78257b3b25208dbb88871b649596fc94" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>CollisionShape</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ac1bbdadfc9d1257391b35edcdd0c63f0" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>customGeometryID_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a603207bf68d4a4ed1bdecd8430fa1568" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a70492a0f8058a2ac5e504a11d4d00e9f" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>geometry_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a76cfde7c11d4092e76f8f5d045471e47" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetCollisionShape</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a30350e223bda835cbda34dc21b5e288f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetGeometryData</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a282c0504a35695d5242bcfed4cf263ba" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetLodLevel</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a984da0035d865d25065badc3f65066c3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetMargin</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a4972ae700ab9cb2830a349f8eb1b73f3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetModel</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a84f5fc98b23286116d721500ac6cb33b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetModelAttr</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a49e0a7f27509cf734f182ca693ceb1d4" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetParentCompoundShape</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a37dd6d366474e7d8acb45bda269c382e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetPhysicsWorld</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1aa8f949a402685452aa08b7d56512c819" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1afd6c110eb78dac9b083c38a054d8681c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetRotation</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a4e42b4f42285562965380ac9551f7578" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetShapeType</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ac57eca59dc8bbcab5162296fad49fefb" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetSize</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::CollisionShape</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::CollisionShape</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::CollisionShape</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a91f197c52c26622c4d06b50cba5b7d54" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>GetWorldBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ac5372bd6380621dc23b08e4601136582" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HandleModelReloadFinished</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a7853e41afbf7ebba92ce30cd1fb83bfc" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HandleTerrainCreated</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1abfed76f932120f805a102ba80fa86135" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>lodLevel_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a167ed59c9fc8608f0e713aa335ec73eb" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>margin_</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1aa9eba09679f6d28012b9fe24cf0459ad" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>MarkShapeDirty</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a37d42f78c13cdbc4a103ff3ecc2f7697" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>model_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a8cfe09cb27ec041dedcd92a69293bcbc" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>NotifyRigidBody</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a61df21132c5462e779a85b7c0ebf2fad" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a5c1e0baeb586e2e3edad2c7b7872fe4d" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ab4e82085078bf7e031f32657ebe2565c" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a9259e387ac06fe25afa38cd2f839ab80" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a0ef8549a077624a08622cb6258800d08" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>physicsWorld_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad2c88b99cfd1a26723f86ad2e104d6cd" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>position_</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a8868fc20a6fb64375e4a1cc54a78de50" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>recreateShape_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a73aefb52702332cf45fa3d27d4ee5922" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ae8711104bc670ce7d5ec44ee687c5986" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>ReleaseShape</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a01c71b815bdb02a8e468d264b032eac3" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>retryCreation_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a58d3b820fe8421e42b46bd6e87088000" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>rigidBody_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a4267243c128aecd08bfc7c2998fb1690" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>rotation_</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad9e299a6c86b484341d773e58234d5c0" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetBox</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a03ddfc306e33f21ac8a9c68fe4d06829" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCapsule</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a9c273d22686ec3e209bac95e49eb99b1" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCone</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad182f272c6ba5748eb719160f494a085" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetConvexHull</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad48332cd76e2d45239d6bb1fd8ae24bf" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCustomConvexHull</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ab1ab42be9071e598fbd58997b8674c29" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCustomGImpactMesh</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a80db6f4f9f30854ad9b04b6a7ce6fd9b" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCustomShape</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ae003977d5c7497a5ddb882c121d7a08f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCustomTriangleMesh</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ae1d34b5ff1cf54027cfee1840d8ca77d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetCylinder</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1af5e68d6d4d6cb3f7615248832daec2c3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetGImpactMesh</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a0ab3423b993623d136057dc4efd0da2d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetLodLevel</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a7f7ba246c077dbe0910c9d08907bf6ec" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetMargin</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a6609535c4f1f418d0f14550db0921699" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetModel</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad7d83a5bc125f5e709fda13becd7e9e7" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetModelAttr</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1abba5ffd054fed3b89b45abb4c8ab6a87" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetModelShape</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1aad505a1d1bd8b106e1456a89f6e1313c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetPosition</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad36409a62b124f57347b1fbfdc32e2a0" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetRotation</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a778bca197135e500e0aed8b6a510bb91" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetShapeType</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1ad23602b90cf2194e3d096af9a5a7b045" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetSize</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a4e39c1e7938e919db056af37d2a68b1b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetSphere</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a93229f5987d5463be093aaa4c1ec552f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetStaticPlane</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a7b3b2940440ee7e9288288aa4d07a8cb" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetTerrain</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1af6d77fb43fb9d3bad2efc973f23a895d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetTransform</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a5d96bf4e72ca19cb6678fb329081253e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SetTriangleMesh</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a6a81c57b6e74db60d420f6aaf5453915" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>shape_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1af24b1dc1c635a2ab197ca0a6694030e4" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>shapeType_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a729b6dbaf45128cdb33d69cf4a5887ab" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a02029eaf22f387547af8d3cdbe430323" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UpdateCachedGeometryShape</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a8d5a7947ab80b456c84be5f16edbde26" prot="protected" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>UpdateDerivedShape</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a5ecb900b219e57ddf9696a1fb194f33a" prot="private" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>UpdateShape</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1CollisionShape_1a39099239a52b6dbc34d7775b4d89428f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>~CollisionShape</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::CollisionShape</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::CollisionShape</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

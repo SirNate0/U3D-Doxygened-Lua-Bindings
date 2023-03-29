@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1MemoryBuffer" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::MemoryBuffer</compoundname>
+    <basecompoundref refid="classUrho3D_1_1AbstractFile" prot="public" virt="non-virtual">Urho3D::AbstractFile</basecompoundref>
+    <includes refid="MemoryBuffer_8h" local="no">MemoryBuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1MemoryBuffer_1adc1cfc2cd1acec7322c4f345c2ad0e7e" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Urho3D::MemoryBuffer::buffer_</definition>
+        <argsstring></argsstring>
+        <name>buffer_</name>
+        <briefdescription>
+<para>Pointer to the memory area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="59" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1MemoryBuffer_1abad4cb7813178163ca7d14e8d4af6c2b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::MemoryBuffer::readOnly_</definition>
+        <argsstring></argsstring>
+        <name>readOnly_</name>
+        <briefdescription>
+<para>Read-only flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="61" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a3a8295c6e55e74c3edaafc32656faa79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::MemoryBuffer::MemoryBuffer</definition>
+        <argsstring>(void *data, unsigned size)</argsstring>
+        <name>MemoryBuffer</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct with a pointer and size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="36" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a05cfdfeb571b335131d1e749c6d20fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::MemoryBuffer::MemoryBuffer</definition>
+        <argsstring>(const void *data, unsigned size)</argsstring>
+        <name>MemoryBuffer</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct as read-only with a pointer and size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="38" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a1ad56cec6d3ec11ea13eabfd9e684acb" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::MemoryBuffer::MemoryBuffer</definition>
+        <argsstring>(PODVector&lt; unsigned char &gt; &amp;data)</argsstring>
+        <name>MemoryBuffer</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a vector, which must not go out of scope before <ref refid="classUrho3D_1_1MemoryBuffer" kindref="compound">MemoryBuffer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a6268868a5bf1edc307dedeb2ec84565f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::MemoryBuffer::MemoryBuffer</definition>
+        <argsstring>(const PODVector&lt; unsigned char &gt; &amp;data)</argsstring>
+        <name>MemoryBuffer</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a read-only vector, which must not go out of scope before <ref refid="classUrho3D_1_1MemoryBuffer" kindref="compound">MemoryBuffer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a2b08978bb93f51c3686245e40abcfb22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::MemoryBuffer::Read</definition>
+        <argsstring>(void *dest, unsigned size) override</argsstring>
+        <name>Read</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1ae82036f72896194adc1cd02f3b03509b">Read</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Read bytes from the memory area. Return number of bytes actually read. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="45" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1acb67539db6b8a88d186ebb47ce00c6ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::MemoryBuffer::Seek</definition>
+        <argsstring>(unsigned position) override</argsstring>
+        <name>Seek</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1a04335b8bfc3e845d1e95599d362b2115">Seek</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set position from the beginning of the memory area. Return actual new position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a783a34da056bedbc4f063fcd73b23b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::MemoryBuffer::Write</definition>
+        <argsstring>(const void *data, unsigned size) override</argsstring>
+        <name>Write</name>
+        <reimplements refid="classUrho3D_1_1Serializer_1af1212487507dad99d9f389f9c8b48a60">Write</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Write bytes to the memory area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1a233a8bdc6d2bfc5e3d396c7b2cba618d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* Urho3D::MemoryBuffer::GetData</definition>
+        <argsstring>()</argsstring>
+        <name>GetData</name>
+        <briefdescription>
+<para>Return memory area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="52" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1MemoryBuffer_1ab25cb402805236ac2d454f54f50d9e1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::MemoryBuffer::IsReadOnly</definition>
+        <argsstring>()</argsstring>
+        <name>IsReadOnly</name>
+        <briefdescription>
+<para>Return whether buffer is read-only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="55" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Memory area that can be read and written to as a stream. NO_BIND </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::MemoryBuffer</label>
+        <link refid="classUrho3D_1_1MemoryBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializer</label>
+        <link refid="classUrho3D_1_1Serializer"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::AbstractFile</label>
+        <link refid="classUrho3D_1_1AbstractFile"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Urho3D::String</label>
+        <link refid="classUrho3D_1_1String"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>EMPTY</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::MemoryBuffer</label>
+        <link refid="classUrho3D_1_1MemoryBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializer</label>
+        <link refid="classUrho3D_1_1Serializer"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::AbstractFile</label>
+        <link refid="classUrho3D_1_1AbstractFile"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>name_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" line="32" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/MemoryBuffer.h" bodystart="33" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1AbstractFile_1aacb344a814c18f966f98fb085d837aa1" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>AbstractFile</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1ad05ae12604318af1459bc4c4b6791d65" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>AbstractFile</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1adc1cfc2cd1acec7322c4f345c2ad0e7e" prot="private" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>buffer_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d2945f96e7a91278d7347c842ddf475" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a997993e65958f9c3a4c436b29cfa295a" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a180786160003602647f480b18baaafcf" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>GetChecksum</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a233a8bdc6d2bfc5e3d396c7b2cba618d" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>GetData</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1ace5f4ce0a5747a1071863b81f700be31" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ad0eb039dde5cc9ec8fedaa044d850db1" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a29f095da2db6cf9e4c7e76365341466e" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>GetSize</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a62d8b0e28fa886adfdde1c42c6913477" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>IsEof</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1ab25cb402805236ac2d454f54f50d9e1e" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>IsReadOnly</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a3a8295c6e55e74c3edaafc32656faa79" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>MemoryBuffer</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a05cfdfeb571b335131d1e749c6d20fc7" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>MemoryBuffer</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a1ad56cec6d3ec11ea13eabfd9e684acb" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>MemoryBuffer</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a6268868a5bf1edc307dedeb2ec84565f" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>MemoryBuffer</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1a202a70ef28797d4b464713d0cfa85d44" prot="protected" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>name_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae3abef03d5bd18c80c70c4bc907f7951" prot="protected" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>position_</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a2b08978bb93f51c3686245e40abcfb22" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>Read</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a18e879f71f2fc03551358b39d73931bc" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadBool</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6de9c7c5ea5594a93b3ad5ab57df0f95" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a93c7d0f8e514b5e2258485b84a438563" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadBuffer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acb3a5d6bec79624077c060ec0640bdfe" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a595ef621948edddd04c1a4d63541163a" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadColor</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acc590c8a496ed45d39106a08e369512f" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadDouble</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a50fb98730fae281e2fdac0f83c451f13" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadFileID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5e715bb883005d93ca8aa9d03ebccb87" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadFloat</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ac237484f24d551dd8ccd812b181b500b" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1aa8ccfd2f2784af5fc4943843dee19ef7" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a654bf31218c52d3a481033b91fee41bc" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadIntRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a14bd90722793f19622fc989bf5e40163" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadIntVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a403d5e8df2cbc84bea47892a7353b7ec" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadIntVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a39678eb4265b015cd7140cd7f9d96df6" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadLine</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a46a6e5e8d3819a9376cc399cf78fd875" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadMatrix3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6c297c21a8569c401b921a1690e39527" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a0c2ce15716c0cbdc7182683ba5f51b0a" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadMatrix4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a508036fa8d83b204d775690a1dd8bc4a" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadNetID</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1abad4cb7813178163ca7d14e8d4af6c2b" prot="private" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>readOnly_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a659f2ec244eb3e50d1136707eb45d53a" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadPackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a05ca8bfa66c243ef6ac4d8fdcad0a3aa" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadPackedVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a13d8433924e409593da96c1aa785866f" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a919252c073115ed4a19f23883e209b1b" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a76b41087aaa3359615bdddf4e7cf65c7" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadResourceRef</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a58a0c484704d9499f550239f29cb2023" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a765451570f6241e74591439d757f3647" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5645dce4244a3f13e9253f0c35605a83" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadString</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a98b32d12ab5e2226b897521c4ddcfa45" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadStringHash</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d0304784fb92fd0334b5d9a6b402d94" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadStringVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ab86746f3f96c7264b5e2b7abe0d977b4" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadUByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1fcc8ffc3d0744f90616d0d4feacba10" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadUInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae41b781bf743c959b1d835a0fefa8b85" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadUInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a779317ca224e8350cf9b10ec4cb65145" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadUShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a4f7070a0dd21b4627e5603e1557efb0a" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1af39531e4c08952e621b1eae4381ca8ff" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a2bbcf0ebe55be7554b6eefbe83b5b47c" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVariantMap</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a488959558d58eb39e88d240071c1f4e3" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVariantVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a24fca5b0832f3129a82fcf2215380336" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1088b0c0c767b838e1c4fd7cfc0ea922" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1abe3246a0947bfb1535516eb81b73e3bc" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVector4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1798cf3925097557803752554b7b519f" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>ReadVLE</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1acb67539db6b8a88d186ebb47ce00c6ea" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>Seek</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acff4d7732f540451137b8b0de0dba0ed" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>SeekRelative</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1a91dc09830e8c2f3fe5340208de69d0c5" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a9d781873581e4227b44778d4d157405b" prot="protected" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a8e253b647308a6cecb25d787b17edc18" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>Tell</name></member>
+      <member refid="classUrho3D_1_1MemoryBuffer_1a783a34da056bedbc4f063fcd73b23b96" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>Write</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a44ddefbaf5a7b7b67a002ed1c6d6d0da" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteBool</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a5b72d159d2d843c9ffaf3e17be25fef7" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aa7905727b8aa970eed2c02fcb4ca7047" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteBuffer</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae8dca217acc7e982a97262ce8f0d7357" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteByte</name></member>
+      <member refid="classUrho3D_1_1Serializer_1acda150736508d053316a8a3d7c5ca629" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteColor</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a4160a15e582a7af8f9bb36a85d3e42ff" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteDouble</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a467e97940ee0e2911b7d8bfa837a875b" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteFileID</name></member>
+      <member refid="classUrho3D_1_1Serializer_1af2b0a9945e01a6e05ff0392970d86df2" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteFloat</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a8fafd0034fc92b582689802c41112376" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteInt</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6a3448da9e75eda69642a452d7d097dc" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteInt64</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a9a85efe8f04338e7565304261c40818f" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteIntRect</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a2cf295d4596dcc525341e7e27bb8b7a4" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteIntVector2</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6e3397f313f571cf3b8fb401052890bf" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteIntVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aadc5e07763395ee773fe007a9ba3d858" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteLine</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a34fb547b576189eff542c51bed5678de" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteMatrix3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1abc7c1181cd16ccffc7533b79b181f1b5" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a286ca64bad3944c577bcae31565e5782" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteMatrix4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae3e43493e05e9cbd2b771bb49ec10b46" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteNetID</name></member>
+      <member refid="classUrho3D_1_1Serializer_1afb76ec5a55bd12f882a691214b827a1d" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WritePackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a84359205f9647ecfe629608e1ce98755" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WritePackedVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6d5a8c0a55e6be4beb8ac5d79ecac47b" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteQuaternion</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a67369c8dd151445b0ed9279acfa94cc5" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteRect</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a3df14ec89889593e0171a8949fc398f4" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteResourceRef</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae9248a2f3e66bd1a44891cbc0109dd8d" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a3af3c5b41495c07411886122aa7fa71f" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteShort</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a51c8222e9c2f0ce9deac7298ab0189c6" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteString</name></member>
+      <member refid="classUrho3D_1_1Serializer_1acfae08593bb40a16a3a78a2bc6426a88" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteStringHash</name></member>
+      <member refid="classUrho3D_1_1Serializer_1af0ff771e589cb61086bb1452bdd189c2" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteStringVector</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a4f90c5159c785e81d4ba74ebcfb961a5" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteUByte</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aca5302ccd24e73a82da4aecee5343e4b" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteUInt</name></member>
+      <member refid="classUrho3D_1_1Serializer_1adfd19ac70fa22d009d70469d039cd0d0" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteUInt64</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a7952d1242f92862ee07add3c2769f3e5" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteUShort</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a512b833ebf115c9c25df30ed4ccb7a11" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVariant</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a33ad05e0f6b05140fe8941ebee14cc15" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVariantData</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ad5837d72917b6819d89cb63c093e31e0" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVariantMap</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aafa0871855a21d84adbc84f180c3c41e" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVariantVector</name></member>
+      <member refid="classUrho3D_1_1Serializer_1adc661f61e8350e917e25f95b987e3bc2" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVector2</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a007d70f03e5cdc1d6403c0a56cf264bb" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1afb33f2ac3f65dd7cafa5425f7f452069" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVector4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae4429a6ec1f94508037c2d21430d2124" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>WriteVLE</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1a9ee2e06721fcc4c842d6b41a59d508a1" prot="public" virt="non-virtual"><scope>Urho3D::MemoryBuffer</scope><name>~AbstractFile</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a873f01aa820848f5b4d652af6b4df1c5" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>~Deserializer</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae62db7411f059446debfc21c68c0b620" prot="public" virt="virtual"><scope>Urho3D::MemoryBuffer</scope><name>~Serializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

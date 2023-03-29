@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1NamedPipe" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::NamedPipe</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1AbstractFile" prot="public" virt="non-virtual">Urho3D::AbstractFile</basecompoundref>
+    <includes refid="NamedPipe_8h" local="no">NamedPipe.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1NamedPipe_1a336f90eda53afda980cc4254fa7d4338" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::NamedPipe::isServer_</definition>
+        <argsstring></argsstring>
+        <name>isServer_</name>
+        <briefdescription>
+<para>Server mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="74" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1NamedPipe_1ac0a1a098b8987fcb0668dc6452a89ef1" prot="private" static="no" mutable="yes">
+        <type>int</type>
+        <definition>int Urho3D::NamedPipe::readHandle_</definition>
+        <argsstring></argsstring>
+        <name>readHandle_</name>
+        <briefdescription>
+<para>Pipe handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="79" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1NamedPipe_1a423e9d38eeedb016b845f92f6327cd19" prot="private" static="no" mutable="yes">
+        <type>int</type>
+        <definition>int Urho3D::NamedPipe::writeHandle_</definition>
+        <argsstring></argsstring>
+        <name>writeHandle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="80" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1ac07f34ad6c71a60c6bd4f19d22243d69" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::NamedPipe::NamedPipe</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>NamedPipe</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="43" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1a08d7dc99de7c725c1bb82afc8636182a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::NamedPipe::NamedPipe</definition>
+        <argsstring>(Context *context, const String &amp;name, bool isServer)</argsstring>
+        <name>NamedPipe</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isServer</declname>
+        </param>
+        <briefdescription>
+<para>Construct and open in either server or client mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="45" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1a793d6772e8e47572a5513b3f7726d1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::NamedPipe::~NamedPipe</definition>
+        <argsstring>() override</argsstring>
+        <name>~NamedPipe</name>
+        <briefdescription>
+<para>Destruct and close. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1af6572f98b7f7caa1ba181f490731ed84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::NamedPipe::Read</definition>
+        <argsstring>(void *dest, unsigned size) override</argsstring>
+        <name>Read</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1ae82036f72896194adc1cd02f3b03509b">Read</reimplements>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Read bytes from the pipe without blocking if there is less data available. Return number of bytes actually read. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1abfa9819e51c9cac9c35239ad0001fa1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::NamedPipe::Seek</definition>
+        <argsstring>(unsigned position) override</argsstring>
+        <name>Seek</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1a04335b8bfc3e845d1e95599d362b2115">Seek</reimplements>
+        <param>
+          <type>unsigned</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set position. No-op for pipes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1a3bcb08d891cfb916861ae30a464d8470" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::NamedPipe::Write</definition>
+        <argsstring>(const void *data, unsigned size) override</argsstring>
+        <name>Write</name>
+        <reimplements refid="classUrho3D_1_1Serializer_1af1212487507dad99d9f389f9c8b48a60">Write</reimplements>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Write bytes to the pipe. Return number of bytes actually written. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="54" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1a5b8e31b41d82f568fd2eb2a0882c0976" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::NamedPipe::IsEof</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsEof</name>
+        <reimplements refid="classUrho3D_1_1Deserializer_1a62d8b0e28fa886adfdde1c42c6913477">IsEof</reimplements>
+        <briefdescription>
+<para>Return whether pipe has no data available. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1af41914066fe4f81798e51334700c2485" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::NamedPipe::SetName</definition>
+        <argsstring>(const String &amp;name) override</argsstring>
+        <name>SetName</name>
+        <reimplements refid="classUrho3D_1_1AbstractFile_1a91dc09830e8c2f3fe5340208de69d0c5">SetName</reimplements>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Not supported. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1aacb92323697d8a74bd37a141fe2f2717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::NamedPipe::Open</definition>
+        <argsstring>(const String &amp;name, bool isServer)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isServer</declname>
+        </param>
+        <briefdescription>
+<para>Open the pipe in either server or client mode. If already open, the existing pipe is closed. For a client end to open successfully the server end must already to be open. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1af520ec1c45c06b29856228d3a030778f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::NamedPipe::Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <briefdescription>
+<para>Close the pipe. Note that once a client has disconnected, the server needs to close and reopen the pipe so that another client can connect. At least on Windows this is not possible to detect automatically, so the communication protocol should include a &quot;bye&quot; message to handle this situation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1a55a3c3e98898d8a5e6abd08f7ee8969d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::NamedPipe::IsOpen</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOpen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is open. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1NamedPipe_1a9704975886085c9031cdc5b30ab37e61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::NamedPipe::IsServer</definition>
+        <argsstring>() const</argsstring>
+        <name>IsServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is in server mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="70" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Named pipe for interprocess communication. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Serializer</label>
+        <link refid="classUrho3D_1_1Serializer"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::NamedPipe</label>
+        <link refid="classUrho3D_1_1NamedPipe"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::AbstractFile</label>
+        <link refid="classUrho3D_1_1AbstractFile"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>Urho3D::String</label>
+        <link refid="classUrho3D_1_1String"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>EMPTY</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Serializer</label>
+        <link refid="classUrho3D_1_1Serializer"/>
+      </node>
+      <node id="6">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::NamedPipe</label>
+        <link refid="classUrho3D_1_1NamedPipe"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::AbstractFile</label>
+        <link refid="classUrho3D_1_1AbstractFile"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>name_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" line="37" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/NamedPipe.h" bodystart="38" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1AbstractFile_1aacb344a814c18f966f98fb085d837aa1" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>AbstractFile</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1ad05ae12604318af1459bc4c4b6791d65" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>AbstractFile</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1af520ec1c45c06b29856228d3a030778f" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Close</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d2945f96e7a91278d7347c842ddf475" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a997993e65958f9c3a4c436b29cfa295a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a180786160003602647f480b18baaafcf" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>GetChecksum</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1ace5f4ce0a5747a1071863b81f700be31" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ad0eb039dde5cc9ec8fedaa044d850db1" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a29f095da2db6cf9e4c7e76365341466e" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetSize</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::NamedPipe</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::NamedPipe</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::NamedPipe</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a5b8e31b41d82f568fd2eb2a0882c0976" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>IsEof</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a55a3c3e98898d8a5e6abd08f7ee8969d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>IsOpen</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a9704975886085c9031cdc5b30ab37e61" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>IsServer</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a336f90eda53afda980cc4254fa7d4338" prot="private" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>isServer_</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1a202a70ef28797d4b464713d0cfa85d44" prot="protected" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>name_</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1ac07f34ad6c71a60c6bd4f19d22243d69" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>NamedPipe</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a08d7dc99de7c725c1bb82afc8636182a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>NamedPipe</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1aacb92323697d8a74bd37a141fe2f2717" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Open</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae3abef03d5bd18c80c70c4bc907f7951" prot="protected" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>position_</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1af6572f98b7f7caa1ba181f490731ed84" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>Read</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a18e879f71f2fc03551358b39d73931bc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadBool</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6de9c7c5ea5594a93b3ad5ab57df0f95" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a93c7d0f8e514b5e2258485b84a438563" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadBuffer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acb3a5d6bec79624077c060ec0640bdfe" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a595ef621948edddd04c1a4d63541163a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadColor</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acc590c8a496ed45d39106a08e369512f" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadDouble</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a50fb98730fae281e2fdac0f83c451f13" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadFileID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5e715bb883005d93ca8aa9d03ebccb87" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadFloat</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1ac0a1a098b8987fcb0668dc6452a89ef1" prot="private" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>readHandle_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ac237484f24d551dd8ccd812b181b500b" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1aa8ccfd2f2784af5fc4943843dee19ef7" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a654bf31218c52d3a481033b91fee41bc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadIntRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a14bd90722793f19622fc989bf5e40163" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadIntVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a403d5e8df2cbc84bea47892a7353b7ec" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadIntVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a39678eb4265b015cd7140cd7f9d96df6" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadLine</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a46a6e5e8d3819a9376cc399cf78fd875" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadMatrix3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6c297c21a8569c401b921a1690e39527" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a0c2ce15716c0cbdc7182683ba5f51b0a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadMatrix4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a508036fa8d83b204d775690a1dd8bc4a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadNetID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a659f2ec244eb3e50d1136707eb45d53a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadPackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a05ca8bfa66c243ef6ac4d8fdcad0a3aa" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadPackedVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a13d8433924e409593da96c1aa785866f" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a919252c073115ed4a19f23883e209b1b" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a76b41087aaa3359615bdddf4e7cf65c7" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadResourceRef</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a58a0c484704d9499f550239f29cb2023" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a765451570f6241e74591439d757f3647" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5645dce4244a3f13e9253f0c35605a83" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadString</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a98b32d12ab5e2226b897521c4ddcfa45" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadStringHash</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d0304784fb92fd0334b5d9a6b402d94" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadStringVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ab86746f3f96c7264b5e2b7abe0d977b4" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadUByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1fcc8ffc3d0744f90616d0d4feacba10" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadUInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae41b781bf743c959b1d835a0fefa8b85" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadUInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a779317ca224e8350cf9b10ec4cb65145" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadUShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a4f7070a0dd21b4627e5603e1557efb0a" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1af39531e4c08952e621b1eae4381ca8ff" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a2bbcf0ebe55be7554b6eefbe83b5b47c" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVariantMap</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a488959558d58eb39e88d240071c1f4e3" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVariantVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a24fca5b0832f3129a82fcf2215380336" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1088b0c0c767b838e1c4fd7cfc0ea922" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1abe3246a0947bfb1535516eb81b73e3bc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVector4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1798cf3925097557803752554b7b519f" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReadVLE</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1abfa9819e51c9cac9c35239ad0001fa1e" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>Seek</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acff4d7732f540451137b8b0de0dba0ed" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SeekRelative</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1af41914066fe4f81798e51334700c2485" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a9d781873581e4227b44778d4d157405b" prot="protected" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a8e253b647308a6cecb25d787b17edc18" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>Tell</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a3bcb08d891cfb916861ae30a464d8470" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>Write</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a44ddefbaf5a7b7b67a002ed1c6d6d0da" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteBool</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a5b72d159d2d843c9ffaf3e17be25fef7" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aa7905727b8aa970eed2c02fcb4ca7047" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteBuffer</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae8dca217acc7e982a97262ce8f0d7357" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteByte</name></member>
+      <member refid="classUrho3D_1_1Serializer_1acda150736508d053316a8a3d7c5ca629" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteColor</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a4160a15e582a7af8f9bb36a85d3e42ff" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteDouble</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a467e97940ee0e2911b7d8bfa837a875b" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteFileID</name></member>
+      <member refid="classUrho3D_1_1Serializer_1af2b0a9945e01a6e05ff0392970d86df2" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteFloat</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a423e9d38eeedb016b845f92f6327cd19" prot="private" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>writeHandle_</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a8fafd0034fc92b582689802c41112376" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteInt</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6a3448da9e75eda69642a452d7d097dc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteInt64</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a9a85efe8f04338e7565304261c40818f" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteIntRect</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a2cf295d4596dcc525341e7e27bb8b7a4" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteIntVector2</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6e3397f313f571cf3b8fb401052890bf" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteIntVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aadc5e07763395ee773fe007a9ba3d858" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteLine</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a34fb547b576189eff542c51bed5678de" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteMatrix3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1abc7c1181cd16ccffc7533b79b181f1b5" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a286ca64bad3944c577bcae31565e5782" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteMatrix4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae3e43493e05e9cbd2b771bb49ec10b46" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteNetID</name></member>
+      <member refid="classUrho3D_1_1Serializer_1afb76ec5a55bd12f882a691214b827a1d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WritePackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a84359205f9647ecfe629608e1ce98755" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WritePackedVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a6d5a8c0a55e6be4beb8ac5d79ecac47b" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteQuaternion</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a67369c8dd151445b0ed9279acfa94cc5" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteRect</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a3df14ec89889593e0171a8949fc398f4" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteResourceRef</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae9248a2f3e66bd1a44891cbc0109dd8d" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a3af3c5b41495c07411886122aa7fa71f" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteShort</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a51c8222e9c2f0ce9deac7298ab0189c6" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteString</name></member>
+      <member refid="classUrho3D_1_1Serializer_1acfae08593bb40a16a3a78a2bc6426a88" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteStringHash</name></member>
+      <member refid="classUrho3D_1_1Serializer_1af0ff771e589cb61086bb1452bdd189c2" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteStringVector</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a4f90c5159c785e81d4ba74ebcfb961a5" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteUByte</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aca5302ccd24e73a82da4aecee5343e4b" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteUInt</name></member>
+      <member refid="classUrho3D_1_1Serializer_1adfd19ac70fa22d009d70469d039cd0d0" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteUInt64</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a7952d1242f92862ee07add3c2769f3e5" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteUShort</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a512b833ebf115c9c25df30ed4ccb7a11" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVariant</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a33ad05e0f6b05140fe8941ebee14cc15" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVariantData</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ad5837d72917b6819d89cb63c093e31e0" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVariantMap</name></member>
+      <member refid="classUrho3D_1_1Serializer_1aafa0871855a21d84adbc84f180c3c41e" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVariantVector</name></member>
+      <member refid="classUrho3D_1_1Serializer_1adc661f61e8350e917e25f95b987e3bc2" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVector2</name></member>
+      <member refid="classUrho3D_1_1Serializer_1a007d70f03e5cdc1d6403c0a56cf264bb" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVector3</name></member>
+      <member refid="classUrho3D_1_1Serializer_1afb33f2ac3f65dd7cafa5425f7f452069" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVector4</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae4429a6ec1f94508037c2d21430d2124" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>WriteVLE</name></member>
+      <member refid="classUrho3D_1_1AbstractFile_1a9ee2e06721fcc4c842d6b41a59d508a1" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>~AbstractFile</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a873f01aa820848f5b4d652af6b4df1c5" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>~Deserializer</name></member>
+      <member refid="classUrho3D_1_1NamedPipe_1a793d6772e8e47572a5513b3f7726d1dc" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>~NamedPipe</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::NamedPipe</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializer_1ae62db7411f059446debfc21c68c0b620" prot="public" virt="virtual"><scope>Urho3D::NamedPipe</scope><name>~Serializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

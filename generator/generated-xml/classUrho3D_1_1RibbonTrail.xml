@@ -1,0 +1,1975 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1RibbonTrail" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::RibbonTrail</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Drawable" prot="public" virt="non-virtual">Urho3D::Drawable</basecompoundref>
+    <includes refid="RibbonTrail_8h" local="no">RibbonTrail.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a6e11e794c18481bf2f80020262b691a3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1TrailPoint" kindref="compound">TrailPoint</ref> &gt;</type>
+        <definition>PODVector&lt;TrailPoint&gt; Urho3D::RibbonTrail::points_</definition>
+        <argsstring></argsstring>
+        <name>points_</name>
+        <briefdescription>
+<para>Tails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="211" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a09b5026ef16c69deceb04f611efe893d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::sorted_</definition>
+        <argsstring></argsstring>
+        <name>sorted_</name>
+        <briefdescription>
+<para>Tails sorted flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="213" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a9373d2a6c4d2ab0ef21ef1f97d88ce82" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::animationLodBias_</definition>
+        <argsstring></argsstring>
+        <name>animationLodBias_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> LOD bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="215" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a98823d1a3926857c259ee1089eeaeba4" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::animationLodTimer_</definition>
+        <argsstring></argsstring>
+        <name>animationLodTimer_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Animation" kindref="compound">Animation</ref> LOD timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="217" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1af4771c59e12003490916d55168b6a9b0" prot="protected" static="no" mutable="no">
+        <type>TrailType</type>
+        <definition>TrailType Urho3D::RibbonTrail::trailType_</definition>
+        <argsstring></argsstring>
+        <name>trailType_</name>
+        <briefdescription>
+<para>Trail type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="219" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1acf4430ad6b502e8202fce9b205bd6e6e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::RibbonTrail::baseVelocity_</definition>
+        <argsstring></argsstring>
+        <name>baseVelocity_</name>
+        <briefdescription>
+<para>Base velocity applied to the trail. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="221" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a7120a23c782557d1266659ea091ce63e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> &gt;</type>
+        <definition>SharedPtr&lt;Geometry&gt; Urho3D::RibbonTrail::geometry_</definition>
+        <argsstring></argsstring>
+        <name>geometry_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="234" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a33d7d06d010d3afa78f9d1f4bcc7fbba" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1VertexBuffer" kindref="compound">VertexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;VertexBuffer&gt; Urho3D::RibbonTrail::vertexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer_</name>
+        <briefdescription>
+<para>Vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="236" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1ae5ffa5ac21b64ab651606aba01d519af" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1IndexBuffer" kindref="compound">IndexBuffer</ref> &gt;</type>
+        <definition>SharedPtr&lt;IndexBuffer&gt; Urho3D::RibbonTrail::indexBuffer_</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer_</name>
+        <briefdescription>
+<para>Index buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="238" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1adfd0610e90697f9b00b8243e8f5cd29a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::RibbonTrail::transforms_</definition>
+        <argsstring></argsstring>
+        <name>transforms_</name>
+        <briefdescription>
+<para>Transform matrices for position and orientation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="240" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a9dbf85730d3a7912f563a0a5f6dbffcd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::bufferSizeDirty_</definition>
+        <argsstring></argsstring>
+        <name>bufferSizeDirty_</name>
+        <briefdescription>
+<para>Buffers need resize flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="242" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a5a48e8ff35f800dcd45f9937796f6ab7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::bufferDirty_</definition>
+        <argsstring></argsstring>
+        <name>bufferDirty_</name>
+        <briefdescription>
+<para>Vertex buffer needs rewrite flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="244" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a2452a3f9bdab4ce0d004954afd501388" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::RibbonTrail::previousPosition_</definition>
+        <argsstring></argsstring>
+        <name>previousPosition_</name>
+        <briefdescription>
+<para>Previous position of tail. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="246" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a7f8f7677259ea564a161814135692cb3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::vertexDistance_</definition>
+        <argsstring></argsstring>
+        <name>vertexDistance_</name>
+        <briefdescription>
+<para>Distance between points. Basically is tail length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="248" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a3efafb01545fbb316d27d5f2abe397a6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+<para>Width of trail. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="250" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1af604c20189b17a10983ba8d1d5204ff9" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::RibbonTrail::numPoints_</definition>
+        <argsstring></argsstring>
+        <name>numPoints_</name>
+        <briefdescription>
+<para>Number of points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="252" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a189ddcbcfb6928030f45624031d14e6a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Urho3D::RibbonTrail::startColor_</definition>
+        <argsstring></argsstring>
+        <name>startColor_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> for start of trails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="254" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a5fcaec82af28f0e879346d8094e0066a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Urho3D::RibbonTrail::endColor_</definition>
+        <argsstring></argsstring>
+        <name>endColor_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> for end of trails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="256" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a2795351df69a4e3a5ce9dc19eaf82ac3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::startScale_</definition>
+        <argsstring></argsstring>
+        <name>startScale_</name>
+        <briefdescription>
+<para>Scale for start of trails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="258" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a506fcebb2420fe020cc7ca1748517fcc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::endScale_</definition>
+        <argsstring></argsstring>
+        <name>endScale_</name>
+        <briefdescription>
+<para>End for start of trails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="260" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1ad08548a1031b34af647e9889a620c6e9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::lastTimeStep_</definition>
+        <argsstring></argsstring>
+        <name>lastTimeStep_</name>
+        <briefdescription>
+<para>Last scene timestep. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="262" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a4a491ffc0862a117a2b58072f7c8d71f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::lifetime_</definition>
+        <argsstring></argsstring>
+        <name>lifetime_</name>
+        <briefdescription>
+<para>Lifetime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="264" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a33523220037fdadfa91eff01db1b6c96" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::RibbonTrail::tailColumn_</definition>
+        <argsstring></argsstring>
+        <name>tailColumn_</name>
+        <briefdescription>
+<para>Number of columns for every tails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="266" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1aceda70dbc10b0e98928bee0aa4236402" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::RibbonTrail::lastUpdateFrameNumber_</definition>
+        <argsstring></argsstring>
+        <name>lastUpdateFrameNumber_</name>
+        <briefdescription>
+<para>Rendering framenumber on which was last updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="268" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a5ec431d31aa8194c4d157fbbb5aa84fc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::needUpdate_</definition>
+        <argsstring></argsstring>
+        <name>needUpdate_</name>
+        <briefdescription>
+<para>Need update flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="270" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a70015cf9bcab49f178280b4456a06be4" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::RibbonTrail::previousOffset_</definition>
+        <argsstring></argsstring>
+        <name>previousOffset_</name>
+        <briefdescription>
+<para>Previous offset to camera for determining whether sorting is necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="272" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a79037d72cd08cc33e3fb4313876697ee" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1TrailPoint" kindref="compound">TrailPoint</ref> * &gt;</type>
+        <definition>Vector&lt;TrailPoint*&gt; Urho3D::RibbonTrail::sortedPoints_</definition>
+        <argsstring></argsstring>
+        <name>sortedPoints_</name>
+        <briefdescription>
+<para>Trail pointers for sorting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="274" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a23162cea42503fc9e66d256a88d78cdd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::forceUpdate_</definition>
+        <argsstring></argsstring>
+        <name>forceUpdate_</name>
+        <briefdescription>
+<para>Force update flag (ignore animation LOD momentarily). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="276" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1ad5e373b34bb654567c68e9f667a5225a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::emitting_</definition>
+        <argsstring></argsstring>
+        <name>emitting_</name>
+        <briefdescription>
+<para>Currently emitting flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="278" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1a4056efb1c5104e86c3f8c0c660c3fac1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::updateInvisible_</definition>
+        <argsstring></argsstring>
+        <name>updateInvisible_</name>
+        <briefdescription>
+<para>Update when invisible flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="280" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1ae0d6b3ed11b9ffb4456e8721a06cfcca" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1TrailPoint" kindref="compound">TrailPoint</ref></type>
+        <definition>TrailPoint Urho3D::RibbonTrail::endTail_</definition>
+        <argsstring></argsstring>
+        <name>endTail_</name>
+        <briefdescription>
+<para>End of trail point for smoother tail disappearance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="283" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1RibbonTrail_1ab15ba3828b203b02a80515ed22a02d33" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::startEndTailTime_</definition>
+        <argsstring></argsstring>
+        <name>startEndTailTime_</name>
+        <briefdescription>
+<para>The time the tail become end of trail. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="285" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1af35690e8d71ad687d2e8a5e6936cb2c3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::RibbonTrail::RibbonTrail</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RibbonTrail</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a5732cc5c9a4939fb88e7eaa0030175c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::RibbonTrail::~RibbonTrail</definition>
+        <argsstring>() override</argsstring>
+        <name>~RibbonTrail</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="73" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a284d687bed49bdcd27ebe40adb78b49d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::ProcessRayQuery</definition>
+        <argsstring>(const RayOctreeQuery &amp;query, PODVector&lt; RayQueryResult &gt; &amp;results) override</argsstring>
+        <name>ProcessRayQuery</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ad7614c648bc6beb1ac8e57dc5b0bedc0">ProcessRayQuery</reimplements>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1RayQueryResult" kindref="compound">RayQueryResult</ref> &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Process octree raycast. May be called from a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ad528c577d774550e285139ff929eb59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::OnSetEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>OnSetEnabled</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1aeff4f69d702780990bcc4e347a2394f0">OnSetEnabled</reimplements>
+        <briefdescription>
+<para>Handle enabled/disabled state change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="80" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a14699a47b1051cde25a5db1a20de4e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::Update</definition>
+        <argsstring>(const FrameInfo &amp;frame) override</argsstring>
+        <name>Update</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ae865f6d21de70fd7bc95a7207d694b88">Update</reimplements>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Update before octree reinsertion. Is called from a main thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="82" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a3850bf25c57dcaf0a5cae5d02d3db045" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::UpdateBatches</definition>
+        <argsstring>(const FrameInfo &amp;frame) override</argsstring>
+        <name>UpdateBatches</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1ae489279acce1c5c0168de50928391639">UpdateBatches</reimplements>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Calculate distance and prepare batches for rendering. May be called from worker thread(s), possibly re-entrantly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ae50e330642685c41211a3c5103dc4204" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::UpdateGeometry</definition>
+        <argsstring>(const FrameInfo &amp;frame) override</argsstring>
+        <name>UpdateGeometry</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1a00fb66b3ce06e1e9c9bb9ecf402c78b4">UpdateGeometry</reimplements>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Prepare geometry for rendering. Called from a worker thread if possible (no GPU update). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a9de3831b5f26ac77f6455d236b278121" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="Drawable_8h_1affe9ba89cc323bc37aff22afec7ade35" kindref="member">UpdateGeometryType</ref></type>
+        <definition>UpdateGeometryType Urho3D::RibbonTrail::GetUpdateGeometryType</definition>
+        <argsstring>() override</argsstring>
+        <name>GetUpdateGeometryType</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1a09d563527cd3485f21b485c778e26d7e">GetUpdateGeometryType</reimplements>
+        <briefdescription>
+<para>Return whether a geometry update is necessary, and if it can happen in a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="88" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a8c32ccf5ff1ab68c0cb43347e2c42d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetMaterial</definition>
+        <argsstring>(Material *material)</argsstring>
+        <name>SetMaterial</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a7f8b5530703344e99ac05ca17e6ee8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetMaterialAttr</definition>
+        <argsstring>(const ResourceRef &amp;value)</argsstring>
+        <name>SetMaterialAttr</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set material attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="94" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a5f823028ff522fe1df308457ec176542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetVertexDistance</definition>
+        <argsstring>(float length)</argsstring>
+        <name>SetVertexDistance</name>
+        <param>
+          <type>float</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set distance between points. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a1f5f16ed19eab0d4d8348bbe4de82a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetWidth</definition>
+        <argsstring>(float width)</argsstring>
+        <name>SetWidth</name>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set width of the tail. Only works for face camera trail type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="100" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ae9d5931e60c4aa40ddc7d5c6f550ed3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetStartColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>SetStartColor</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertex blended color for start of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a24cac690a29b8a65ac1d534ac8891dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetEndColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>SetEndColor</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertex blended color for end of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a0d82ecca2ed85c571ac9c86839b2e7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetStartScale</definition>
+        <argsstring>(float startScale)</argsstring>
+        <name>SetStartScale</name>
+        <param>
+          <type>float</type>
+          <declname>startScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertex blended color for start of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="109" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1af96e2f9d3631b55a562fa1103c4e27db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetEndScale</definition>
+        <argsstring>(float endScale)</argsstring>
+        <name>SetEndScale</name>
+        <param>
+          <type>float</type>
+          <declname>endScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertex blended scale for end of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a9cedd249eabc33b3017a1ddbd7fb6b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetTrailType</definition>
+        <argsstring>(TrailType type)</argsstring>
+        <name>SetTrailType</name>
+        <param>
+          <type>TrailType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set how the trail behave. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a6746c0baa49d6f8bfacc48f51469ab24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetBaseVelocity</definition>
+        <argsstring>(const Vector3 &amp;baseVelocity)</argsstring>
+        <name>SetBaseVelocity</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>baseVelocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set base velocity applied to the trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a12ce5af5e5e26f9577a4cda6bab2fd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetSorted</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetSorted</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether tails are sorted by distance. Default false. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ae62143e63cede5d18ade8c6577dcd16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetLifetime</definition>
+        <argsstring>(float time)</argsstring>
+        <name>SetLifetime</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set tail time to live. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="124" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1aa37badc78a38078c66c6316afaeb86c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetEmitting</definition>
+        <argsstring>(bool emitting)</argsstring>
+        <name>SetEmitting</name>
+        <param>
+          <type>bool</type>
+          <declname>emitting</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether trail should be emitting. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a95f3f057ddd562e3914fe7ad08b1fdaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetUpdateInvisible</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetUpdateInvisible</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to update when trail emitter are not visible. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="130" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1aeebad28013b214bd028ef0f591faec7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetTailColumn</definition>
+        <argsstring>(unsigned tailColumn)</argsstring>
+        <name>SetTailColumn</name>
+        <param>
+          <type>unsigned</type>
+          <declname>tailColumn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set number of column for every tails. Can be useful for fixing distortion at high angle. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a7877c28e5d880f763b770cdf2662ac40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::SetAnimationLodBias</definition>
+        <argsstring>(float bias)</argsstring>
+        <name>SetAnimationLodBias</name>
+        <param>
+          <type>float</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set animation LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ad39bbe48e48acc6d1067e1cb3cc12938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::Commit</definition>
+        <argsstring>()</argsstring>
+        <name>Commit</name>
+        <briefdescription>
+<para>Mark for bounding box and vertex buffer update. Call after modifying the trails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="138" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a3811878af4a222d366d0566c300012a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> *</type>
+        <definition>Material* Urho3D::RibbonTrail::GetMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return material. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="142" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1af423a95247538230ab8af14060e0b57b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::RibbonTrail::GetMaterialAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaterialAttr</name>
+        <briefdescription>
+<para>Return material attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="145" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a3fabb7007535bfa8caf8db45e3e8f80e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::GetVertexDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get distance between points. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="149" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1aff53bd34ed06b258bce3c92808720b54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::GetWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get width of the trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="153" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a4e1e8b0c8516d2f2546de5fe5114d5fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color&amp; Urho3D::RibbonTrail::GetStartColor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vertex blended color for start of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="157" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1abcd8f1af2ee5d0905a96beaa5a107c7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color&amp; Urho3D::RibbonTrail::GetEndColor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vertex blended color for end of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="161" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1af4be02fac43371d7302871bd0561a455" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::GetStartScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStartScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vertex blended scale for start of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="165" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a9283686706ac6538f980a11eae15c442" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::GetEndScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetEndScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get vertex blended scale for end of trail. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="169" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1af0099e4c5d9f7e25e5b351c04adbc107" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::IsSorted</definition>
+        <argsstring>() const</argsstring>
+        <name>IsSorted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether tails are sorted. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="173" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a5b19edc727d09e8e7441fbbc0bf7440e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::GetLifetime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLifetime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return tail time to live. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="177" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a7c6404d00f04c237b86cbedb3eddcc23" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::RibbonTrail::GetAnimationLodBias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAnimationLodBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return animation LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="181" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a46280ab4b5b8392cf61958caf994ee21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TrailType</type>
+        <definition>TrailType Urho3D::RibbonTrail::GetTrailType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTrailType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return how the trail behave. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="185" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a94bfa9a82b74e223c70f35cbf6daae61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>const Vector3&amp; Urho3D::RibbonTrail::GetBaseVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBaseVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return base trail velocity. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="189" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1afba522031c5c66283918daf1ad4d01a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::RibbonTrail::GetTailColumn</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTailColumn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of column for tails. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="193" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a9205a710530941d69d0faad235e72692" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::IsEmitting</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmitting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is currently emitting. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="197" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ae293912fb58a9beaad987cded8b099bc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::RibbonTrail::GetUpdateInvisible</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUpdateInvisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether to update when trail emitter are not visible. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="201" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a5f3971306760d6c7fed233dd1b1511b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::RibbonTrail::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="76" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1abcd8d907e0e358d04be6c6dc384b5952" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::OnSceneSet</definition>
+        <argsstring>(Scene *scene) override</argsstring>
+        <name>OnSceneSet</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1acf1d2b41b502aebfa72c2e280470b453">OnSceneSet</reimplements>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>Handle node being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="205" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a97c50efe75002f52792d02be1c9ec338" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::OnWorldBoundingBoxUpdate</definition>
+        <argsstring>() override</argsstring>
+        <name>OnWorldBoundingBoxUpdate</name>
+        <reimplements refid="classUrho3D_1_1Drawable_1af146747caaf6fd85ab71fda4e364bde4">OnWorldBoundingBoxUpdate</reimplements>
+        <briefdescription>
+<para>Recalculate the world-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="207" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1acec816736eed7f59ab63aafaa0da4fc2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::MarkPositionsDirty</definition>
+        <argsstring>()</argsstring>
+        <name>MarkPositionsDirty</name>
+        <briefdescription>
+<para>Mark vertex buffer to need an update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="209" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1ab61bb4326fceafb6149fd141edaad391" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::HandleScenePostUpdate</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleScenePostUpdate</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle scene post-update event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="225" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a5b35ffdbfdcaf484dfbf08fc97e942c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::UpdateBufferSize</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateBufferSize</name>
+        <briefdescription>
+<para>Resize <ref refid="classUrho3D_1_1RibbonTrail" kindref="compound">RibbonTrail</ref> vertex and index buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="228" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1afd634ca73ce1acb9b0a8e491c9b629ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::UpdateVertexBuffer</definition>
+        <argsstring>(const FrameInfo &amp;frame)</argsstring>
+        <name>UpdateVertexBuffer</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Rewrite <ref refid="classUrho3D_1_1RibbonTrail" kindref="compound">RibbonTrail</ref> vertex buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="230" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1RibbonTrail_1a8ba0edb45a15578b55595a3c9245d031" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::RibbonTrail::UpdateTail</definition>
+        <argsstring>(float timeStep)</argsstring>
+        <name>UpdateTail</name>
+        <param>
+          <type>float</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+<para>Update/Rebuild tail mesh only if position changed (called by <ref refid="classUrho3D_1_1RibbonTrail_1a3850bf25c57dcaf0a5cae5d02d3db045" kindref="member">UpdateBatches()</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="232" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> component that creates a tail. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::RibbonTrail</label>
+        <link refid="classUrho3D_1_1RibbonTrail"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>Urho3D::Zone</label>
+        <link refid="classUrho3D_1_1Zone"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>lastAmbientEndZone_</edgelabel>
+          <edgelabel>lastAmbientStartZone_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>zoneTexture_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>lastWorldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ambientColor_</edgelabel>
+          <edgelabel>ambientEndColor_</edgelabel>
+          <edgelabel>ambientStartColor_</edgelabel>
+          <edgelabel>fogColor_</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>inverseWorld_</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Urho3D::PODVector&lt; Urho3D::Camera * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Urho3D::Light</label>
+        <link refid="classUrho3D_1_1Light"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="32">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>drawables_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>center_</edgelabel>
+          <edgelabel>halfSize_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>cullingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>children_</edgelabel>
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Urho3D::PODVector&lt; Urho3D::TrailPoint &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Zone &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="33">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::BoundingBox</label>
+        <link refid="classUrho3D_1_1BoundingBox"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>max_</edgelabel>
+          <edgelabel>min_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Urho3D::Matrix3x4</label>
+        <link refid="classUrho3D_1_1Matrix3x4"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::RibbonTrail</label>
+        <link refid="classUrho3D_1_1RibbonTrail"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>points_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>baseVelocity_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>zone_</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>lights_</edgelabel>
+          <edgelabel>vertexLights_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>viewCameras_</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>firstLight_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>boundingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>octant_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="24">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="17">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Urho3D::Vector&lt; Urho3D::SourceBatch &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Urho3D::PODVector&lt; Urho3D::Light * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" line="65" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/RibbonTrail.h" bodystart="66" bodyend="286"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Drawable_1afce158b2c7a44a5f40d4eea9aabc673b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>AddLight</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adaacb5c93a02cfd9d662b167b0bae813" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>AddToOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a73cece74565f2124ed22d66406760302" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>AddVertexLight</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a9373d2a6c4d2ab0ef21ef1f97d88ce82" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>animationLodBias_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a98823d1a3926857c259ee1089eeaeba4" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>animationLodTimer_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad0416c01ec4088197c2207971bd046aa" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>basePassFlags_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1acf4430ad6b502e8202fce9b205bd6e6e" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>baseVelocity_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a748155e7b747b009e4879882ec3bf7c4" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>batches_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abfead28f2b8293a8699d6ac84b8476c9" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>boundingBox_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5a48e8ff35f800dcd45f9937796f6ab7" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>bufferDirty_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a9dbf85730d3a7912f563a0a5f6dbffcd" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>bufferSizeDirty_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a69790319fcb6d145ee8753a6db002f33" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>castShadows_</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ad39bbe48e48acc6d1067e1cb3cc12938" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Commit</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a786d899e2ebfd595ee15adc70d419175" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>distance_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5a9391dafb2151dde0a717d59413caab" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Drawable</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8ba9d34f65b38b534f499f636834e694" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>drawableFlags_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7a55d25cfff63c42a8cadae6e37b8f8b" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ada7a3ed2c8975c5d6fd11f7e770a699a" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>drawDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad6abc23d5616c4589241d2d428879fa4" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>DrawOcclusion</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ad5e373b34bb654567c68e9f667a5225a" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>emitting_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5fcaec82af28f0e879346d8094e0066a" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>endColor_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a506fcebb2420fe020cc7ca1748517fcc" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>endScale_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ae0d6b3ed11b9ffb4456e8721a06cfcca" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>endTail_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a147b1459051ad28a7c3583fc30d6765d" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>firstLight_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a23162cea42503fc9e66d256a88d78cdd" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>forceUpdate_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a7120a23c782557d1266659ea091ce63e" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>geometry_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a7c6404d00f04c237b86cbedb3eddcc23" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAnimationLodBias</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a94bfa9a82b74e223c70f35cbf6daae61" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetBaseVelocity</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5ae831d745f6ff6d9341eae348682613" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetBatches</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7e8f305ed9233705a707803e7a8d92e2" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae888ecaa770f261c32e6f47791d68435" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1696860cd9715781a11f622a9b7025e8" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74be6fab1f5cfdd44da3572015edf6ba" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetDrawableFlags</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aaace7f6327baffa0a0c4adb1d840de24" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1abcd8f1af2ee5d0905a96beaa5a107c7f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetEndColor</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a9283686706ac6538f980a11eae15c442" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetEndScale</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac91538e42ed288039d128bdec2e5d008" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetFirstLight</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5b19edc727d09e8e7441fbbc0bf7440e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetLifetime</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a365785ecf1a129263bf53b39ccc651cf" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5574ddf773640e9dae5466a7ff6cf8f3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a415b264905a2ac605c837e38c9f86afe" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetLodBias</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4ccb114792b1a779bf0f714c7aa764d0" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetLodDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af56066bfd97cee073565a19d5e6bb307" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>GetLodGeometry</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a3811878af4a222d366d0566c300012a3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetMaterial</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af423a95247538230ab8af14060e0b57b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetMaterialAttr</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4c9553b4aa9d39ff94e92f97519ba89" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af30ebf38b4278cd49fd786776cd73413" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetMaxZ</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab2becad2e313c835156cc98c63af6ce2" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetMinZ</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa9924ef8125d599be958f65fdd874206" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>GetNumOccluderTriangles</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6679001692e20900992cb553771e4080" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetOctant</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6072f938c617059fef0fc77ff21dac1f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1732b54098629811101b12b61800c3c7" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad7e22e3881027d4bf3334e06cf64d016" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetSortValue</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a4e1e8b0c8516d2f2546de5fe5114d5fe" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetStartColor</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af4be02fac43371d7302871bd0561a455" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetStartScale</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1afba522031c5c66283918daf1ad4d01a3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetTailColumn</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a46280ab4b5b8392cf61958caf994ee21" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetTrailType</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a9de3831b5f26ac77f6455d236b278121" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>GetUpdateGeometryType</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ae293912fb58a9beaad987cded8b099bc" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetUpdateInvisible</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a3fabb7007535bfa8caf8db45e3e8f80e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetVertexDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2cde3e103a1a8f887e1080095096d77f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetVertexLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae45bf9bcfe8d1c09c72258e77a76f992" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetViewMask</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1aff53bd34ed06b258bce3c92808720b54" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetWidth</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fac24cb806464afa69b38b4634cb703" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetWorldBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4e067775f22ef6c92643a3ea6e5807a" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa8ee386880f6aad566f662abd2760d4f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>GetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ab61bb4326fceafb6149fd141edaad391" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HandleScenePostUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad2faff010ee37e381ace91f59ef7dc1e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HasBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ae5ffa5ac21b64ab651606aba01d519af" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>indexBuffer_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a9205a710530941d69d0faad235e72692" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsEmitting</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4dd313eab9c863711b8e84d7ce30fc11" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8d892c43788779924ae09ff161ff50c0" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a868163988ad17c777699cd0226ffc68b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aabd4960e08a707a45f9720fcb30dfa39" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a85642d5021a87a361151fd6823bad04f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsOccluder</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af0099e4c5d9f7e25e5b351c04adbc107" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsSorted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aebf5b0230d2cba605ff1f6ca24470ed4" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>IsZoneDirty</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ad08548a1031b34af647e9889a620c6e9" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lastTimeStep_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1aceda70dbc10b0e98928bee0aa4236402" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lastUpdateFrameNumber_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a4a491ffc0862a117a2b58072f7c8d71f" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lifetime_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adafccc9b0b4f1cff9c9764b618cb60b4" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lightMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2c3ef78ebb6b7f1b4fe33ca56a85d46a" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4230d5696e13e62a419cf7eb543c84f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>LimitLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a58b2ac553e0255df9eb8f52b94d15deb" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>LimitVertexLights</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3781e0be1bdacb9d915c6f2d2439efab" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lodBias_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3e1d03cadfe54e898b63b7033afa224b" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>lodDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a87d6de3a8a7895228665ef79ad331510" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>MarkForUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1f5358a58f4f0bfa38919dd14c04e240" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abbd26865ea0280500b4ac6c29ce82705" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1acec816736eed7f59ab63aafaa0da4fc2" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>MarkPositionsDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a43598df7745628a3dafef95887093a5b" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>maxLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af0c99306fc67cfd108183532f70ef765" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>maxZ_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a426fbc769c215162857ab0aaf1d3bfbb" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>minZ_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5ec431d31aa8194c4d157fbbb5aa84fc" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>needUpdate_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af604c20189b17a10983ba8d1d5204ff9" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>numPoints_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa88b30c4e2a07c664707c268a889b990" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>occludee_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5013f74c89e1259ea2a4e8a0d4dca571" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>occluder_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa279857db164197db750c919307491e3" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>octant_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a04a978441415a93f044721f6473df0e3" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa7a00b82f8a07ba71b8a63561023a4c4" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2ab23fcc436cde69fe74bfefa4ead968" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnRemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1abcd8d907e0e358d04be6c6dc384b5952" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ad528c577d774550e285139ff929eb59f" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a97c50efe75002f52792d02be1c9ec338" prot="protected" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>OnWorldBoundingBoxUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a6e11e794c18481bf2f80020262b691a3" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>points_</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a70015cf9bcab49f178280b4456a06be4" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>previousOffset_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a2452a3f9bdab4ce0d004954afd501388" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>previousPosition_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a284d687bed49bdcd27ebe40adb78b49d" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>ProcessRayQuery</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5f3971306760d6c7fed233dd1b1511b4" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a48c3be2aa6cb930b2ce959784d76fdbe" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af35690e8d71ad687d2e8a5e6936cb2c3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>RibbonTrail</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a7877c28e5d880f763b770cdf2662ac40" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAnimationLodBias</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae5d530586535c7d58d54053c0ac5b954" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetBasePass</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a6746c0baa49d6f8bfacc48f51469ab24" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetBaseVelocity</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a326f83aea7b4a6c695543e45cbffafa5" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fa21af838026c1566496968bc7a696c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1aa37badc78a38078c66c6316afaeb86c6" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetEmitting</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a24cac690a29b8a65ac1d534ac8891dd1" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetEndColor</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af96e2f9d3631b55a562fa1103c4e27db" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetEndScale</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ae62143e63cede5d18ade8c6577dcd16a" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetLifetime</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adae53db9cd636a6583569a17b47717d2" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a31131f13cd30e8f47d201953f0d6293f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetLodBias</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a8c32ccf5ff1ab68c0cb43347e2c42d8a" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetMaterial</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a7f8b5530703344e99ac05ca17e6ee8a3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetMaterialAttr</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8306bfe2f9ba357b9384d2285fcd3902" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3a96ff31da79c263163701b2a1351aab" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetMinMaxZ</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa1e97bbb2427a3626a5b6816dfc888d6" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae74c979945a77c14647d024f0f824c73" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetOccluder</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3c746486b469ad2c987eaa2faca73afd" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetOctant</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae1f5e010e8a556927758e8eaa7b65e9a" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0e06b99e373bf9c0cec01d17f1384a24" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetShadowMask</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a12ce5af5e5e26f9577a4cda6bab2fd66" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetSorted</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5234fbefdcf8dc01cc296e18f3b2c916" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetSortValue</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ae9d5931e60c4aa40ddc7d5c6f550ed3c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetStartColor</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a0d82ecca2ed85c571ac9c86839b2e7b4" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetStartScale</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1aeebad28013b214bd028ef0f591faec7c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetTailColumn</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a9cedd249eabc33b3017a1ddbd7fb6b63" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetTrailType</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a95f3f057ddd562e3914fe7ad08b1fdaa" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetUpdateInvisible</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5f823028ff522fe1df308457ec176542" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetVertexDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab0a0cb81cefb83249a578069c4adc4d8" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetViewMask</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a1f5f16ed19eab0d4d8348bbe4de82a83" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetWidth</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3181013d83f6d1b3110abe34316fe435" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a431071bb2e7c05ad55c8aade5c18e659" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1afbc2f50dafd0c9f7d34385cdfacf378f" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>shadowDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a9640ac3a553bc15bfc1826317df39631" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>shadowMask_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a09b5026ef16c69deceb04f611efe893d" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>sorted_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a79037d72cd08cc33e3fb4313876697ee" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>sortedPoints_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a914180afedfd0fff9d6458bbe2ca548e" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>sortValue_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a189ddcbcfb6928030f45624031d14e6a" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>startColor_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ab15ba3828b203b02a80515ed22a02d33" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>startEndTailTime_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a2795351df69a4e3a5ce9dc19eaf82ac3" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>startScale_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a33523220037fdadfa91eff01db1b6c96" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>tailColumn_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1af4771c59e12003490916d55168b6a9b0" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>trailType_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1adfd0610e90697f9b00b8243e8f5cd29a" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>transforms_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a14699a47b1051cde25a5db1a20de4e48" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a3850bf25c57dcaf0a5cae5d02d3db045" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>UpdateBatches</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5b35ffdbfdcaf484dfbf08fc97e942c8" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UpdateBufferSize</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1ae50e330642685c41211a3c5103dc4204" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>UpdateGeometry</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a4056efb1c5104e86c3f8c0c660c3fac1" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>updateInvisible_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74445c3c2d016d2ce796683ec63e81b8" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>updateQueued_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a8ba0edb45a15578b55595a3c9245d031" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UpdateTail</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1afd634ca73ce1acb9b0a8e491c9b629ae" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>UpdateVertexBuffer</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a33d7d06d010d3afa78f9d1f4bcc7fbba" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>vertexBuffer_</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a7f8f7677259ea564a161814135692cb3" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>vertexDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7effc9e891517efb4a85104e8e49c9d3" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>vertexLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6de3f920398ae6adb36991175e6f8380" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>viewCameras_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0be4e0aacab060480d106a4a39d24a26" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>viewFrameNumber_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a63e29f96811c72e08c15fd01789d6ef4" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a3efafb01545fbb316d27d5f2abe397a6" prot="private" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>width_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a10f4a0419fadd10735448f7a5b639099" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>worldBoundingBox_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a23281f9ff7eeaa73c147b86fc29f1f9d" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>worldBoundingBoxDirty_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af251651fa16a666b0ec11af053bf80aa" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>zone_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac7871920deb048d9d675ad34c5874a00" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>zoneDirty_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2a5536a40728f773e36238bfe67b3958" prot="protected" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>zoneMask_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4be7208dbdfff0725eef83f33ad28536" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>~Drawable</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::RibbonTrail</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1RibbonTrail_1a5732cc5c9a4939fb88e7eaa0030175c3" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>~RibbonTrail</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::RibbonTrail</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

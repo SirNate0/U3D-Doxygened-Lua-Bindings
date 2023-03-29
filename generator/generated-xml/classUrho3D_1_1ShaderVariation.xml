@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1ShaderVariation" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::ShaderVariation</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1GPUObject" prot="public" virt="non-virtual">Urho3D::GPUObject</basecompoundref>
+    <includes refid="ShaderVariation_8h" local="no">ShaderVariation.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a8d5f0088cf9ba02053f08b61e92cd202" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Urho3D::ShaderVariation::elementSemanticNames[]</definition>
+        <argsstring>[]</argsstring>
+        <name>elementSemanticNames</name>
+        <briefdescription>
+<para>D3D11 vertex semantic names. Used internally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="141" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a1084411c318e0ed359d5ba3b07467186" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr</ref>&lt; <ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> &gt;</type>
+        <definition>WeakPtr&lt;Shader&gt; Urho3D::ShaderVariation::owner_</definition>
+        <argsstring></argsstring>
+        <name>owner_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> this variation belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="156" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1afe27e4fc0536ebded28cb982a54f1271" prot="private" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref></type>
+        <definition>ShaderType Urho3D::ShaderVariation::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="158" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a7563da895b4b0ba138e7b96767f36557" prot="private" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ShaderVariation::elementHash_</definition>
+        <argsstring></argsstring>
+        <name>elementHash_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Vertex element hash for vertex shaders. Zero for pixel shaders. Note that hashing is different than vertex buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="160" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a12a1f937da5366d8affba83d153513da" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="structUrho3D_1_1ShaderParameter" kindref="compound">ShaderParameter</ref> &gt;</type>
+        <definition>HashMap&lt;StringHash, ShaderParameter&gt; Urho3D::ShaderVariation::parameters_</definition>
+        <argsstring></argsstring>
+        <name>parameters_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="162" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a821edb8f93b29568c30e19dbe75afc9d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::ShaderVariation::useTextureUnits_[MAX_TEXTURE_UNITS]</definition>
+        <argsstring>[MAX_TEXTURE_UNITS]</argsstring>
+        <name>useTextureUnits_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> unit use flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="164" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a8f88163f4a5b0ed59ba3190e2782405e" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::ShaderVariation::constantBufferSizes_[MAX_SHADER_PARAMETER_GROUPS]</definition>
+        <argsstring>[MAX_SHADER_PARAMETER_GROUPS]</argsstring>
+        <name>constantBufferSizes_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Constant buffer sizes. 0 if a constant buffer slot is not in use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="166" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a82cecb350a6fd2f6d693be021dfce366" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt;</type>
+        <definition>PODVector&lt;unsigned char&gt; Urho3D::ShaderVariation::byteCode_</definition>
+        <argsstring></argsstring>
+        <name>byteCode_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> bytecode. Needed for inspecting the input signature and parameters. Not used on OpenGL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="168" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a39539980f94b4b1e25f0c99253abd52a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ShaderVariation::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="170" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1ac865db20e5b54234a191d1303fff3cae" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ShaderVariation::defines_</definition>
+        <argsstring></argsstring>
+        <name>defines_</name>
+        <briefdescription>
+<para>Defines to use in compiling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="172" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a146c4d2640482a7374f877412b506b7c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ShaderVariation::definesClipPlane_</definition>
+        <argsstring></argsstring>
+        <name>definesClipPlane_</name>
+        <briefdescription>
+<para>Defines to use in compiling + CLIPPLANE define appended. Used only on Direct3D11. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="174" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1ShaderVariation_1a08bc358d930c4de1b5e831c7f7153869" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ShaderVariation::compilerOutput_</definition>
+        <argsstring></argsstring>
+        <name>compilerOutput_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> compile error string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="176" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a55da24c2c821f46953dd4e946a676d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ShaderVariation::ShaderVariation</definition>
+        <argsstring>(Shader *owner, ShaderType type)</argsstring>
+        <name>ShaderVariation</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="85" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1aa6386d61ac3d3fc5f71e599a8ec44ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ShaderVariation::~ShaderVariation</definition>
+        <argsstring>() override</argsstring>
+        <name>~ShaderVariation</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="87" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1afccab99454614b4b667e7c647992cf2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::OnDeviceLost</definition>
+        <argsstring>() override</argsstring>
+        <name>OnDeviceLost</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1ad5ecd882dd04590d38951f897d1f6575">OnDeviceLost</reimplements>
+        <briefdescription>
+<para>Mark the GPU resource destroyed on graphics context destruction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1aa77a962f7219e6d416fcf5758867e0d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::Release</definition>
+        <argsstring>() override</argsstring>
+        <name>Release</name>
+        <reimplements refid="classUrho3D_1_1GPUObject_1a86d97d51d21841b9c057baee19a17a30">Release</reimplements>
+        <briefdescription>
+<para>Release the shader. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a796302110897b35c3faf6c18208e289c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ShaderVariation::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Compile the shader. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a0a95c1cb7196757744cca86b915734d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::SetName</definition>
+        <argsstring>(const String &amp;name)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a1fc30c33a6427a7eaa39f27b3507d386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::SetDefines</definition>
+        <argsstring>(const String &amp;defines)</argsstring>
+        <name>SetDefines</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>defines</declname>
+        </param>
+        <briefdescription>
+<para>Set defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1ac8a1b6e7ac2beb55a2d49adcae3350fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> *</type>
+        <definition>Shader* Urho3D::ShaderVariation::GetOwner</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOwner</name>
+        <briefdescription>
+<para>Return the owner resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="102" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a42ca18b206c36cdcd6c03678dfa3bfe3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a63169a73c8df024b3ef76297da56862e" kindref="member">ShaderType</ref></type>
+        <definition>ShaderType Urho3D::ShaderVariation::GetShaderType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShaderType</name>
+        <briefdescription>
+<para>Return shader type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="105" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1acb9f35e9bea2e17fd3f6081def0aa559" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::ShaderVariation::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+<para>Return shader name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="108" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a95428da337e55df0b100059a74f396ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::ShaderVariation::GetFullName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFullName</name>
+        <briefdescription>
+<para>Return full shader name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="111" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a4eea1fb6608b0feb3d1eb330b799643e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ShaderVariation::HasParameter</definition>
+        <argsstring>(StringHash param) const</argsstring>
+        <name>HasParameter</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Return whether uses a parameter. Not applicable on OpenGL, where this information is contained in ShaderProgram instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="114" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a9f732b7623450da4710d3d0dd0266add" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ShaderVariation::HasTextureUnit</definition>
+        <argsstring>(TextureUnit unit) const</argsstring>
+        <name>HasTextureUnit</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1a4042c84b872f2caaa29c6cb585b82f96" kindref="member">TextureUnit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Return whether uses a texture unit (only for pixel shaders). Not applicable on OpenGL, where this information is contained in ShaderProgram instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="117" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a7cae2e86e1e4537b3489946d9305ac4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="structUrho3D_1_1ShaderParameter" kindref="compound">ShaderParameter</ref> &gt; &amp;</type>
+        <definition>const HashMap&lt;StringHash, ShaderParameter&gt;&amp; Urho3D::ShaderVariation::GetParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParameters</name>
+        <briefdescription>
+<para>Return all parameter definitions. Not applicable on OpenGL, where this information is contained in ShaderProgram instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="120" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a864d33bbafb1c0248a19ec98d238e000" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ShaderVariation::GetElementHash</definition>
+        <argsstring>() const</argsstring>
+        <name>GetElementHash</name>
+        <briefdescription>
+<para>Return vertex element hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="123" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1ae229e9bfbb907806893efdcbb9e7d551" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt; &amp;</type>
+        <definition>const PODVector&lt;unsigned char&gt;&amp; Urho3D::ShaderVariation::GetByteCode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetByteCode</name>
+        <briefdescription>
+<para>Return shader bytecode. Stored persistently on Direct3D11 only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="126" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a0a1556ea35e702115650062f81454cee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::ShaderVariation::GetDefines</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDefines</name>
+        <briefdescription>
+<para>Return defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="129" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a3f430dd3c51be59fe697165273c33c4e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::ShaderVariation::GetCompilerOutput</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCompilerOutput</name>
+        <briefdescription>
+<para>Return compile error/warning string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="132" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a8cf57f3f81ac9b581ae8260c6b69537c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const unsigned *</type>
+        <definition>const unsigned* Urho3D::ShaderVariation::GetConstantBufferSizes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetConstantBufferSizes</name>
+        <briefdescription>
+<para>Return constant buffer data sizes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="135" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a5ddc0d93f0cb868a1e55645f59e93583" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>const String&amp; Urho3D::ShaderVariation::GetDefinesClipPlane</definition>
+        <argsstring>()</argsstring>
+        <name>GetDefinesClipPlane</name>
+        <briefdescription>
+<para>Return defines with the CLIPPLANE define appended. Used internally on Direct3D11 only, will be empty on other APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="138" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="138" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a521f1e28728cc83e54757f91131a8d07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ShaderVariation::LoadByteCode</definition>
+        <argsstring>(const String &amp;binaryShaderName)</argsstring>
+        <name>LoadByteCode</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>binaryShaderName</declname>
+        </param>
+        <briefdescription>
+<para>Load bytecode from a file. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="145" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1aba1943001c9b78648ee27df03dfd1abf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::ShaderVariation::Compile</definition>
+        <argsstring>()</argsstring>
+        <name>Compile</name>
+        <briefdescription>
+<para>Compile from source. Return true if successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a09ca2e0ab6c1363475a81f4bcf594288" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::ParseParameters</definition>
+        <argsstring>(unsigned char *bufData, unsigned bufSize)</argsstring>
+        <name>ParseParameters</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bufData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bufSize</declname>
+        </param>
+        <briefdescription>
+<para>Inspect the constant parameters and input layout (if applicable) from the shader bytecode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="149" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1a5b73d61548e40e1554472b77873f6a8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::SaveByteCode</definition>
+        <argsstring>(const String &amp;binaryShaderName)</argsstring>
+        <name>SaveByteCode</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>binaryShaderName</declname>
+        </param>
+        <briefdescription>
+<para>Save bytecode to a file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="151" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1ShaderVariation_1ae0244988b02aaf541a0e6d38f01c4998" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::ShaderVariation::CalculateConstantBufferSizes</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateConstantBufferSizes</name>
+        <briefdescription>
+<para>Calculate constant buffer sizes from parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="153" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Vertex or pixel shader on the GPU. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::ShaderVariation</label>
+        <link refid="classUrho3D_1_1ShaderVariation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::ShaderVariation</label>
+        <link refid="classUrho3D_1_1ShaderVariation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" line="81" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/ShaderVariation.h" bodystart="82" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a82cecb350a6fd2f6d693be021dfce366" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>byteCode_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1ae0244988b02aaf541a0e6d38f01c4998" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>CalculateConstantBufferSizes</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a90de5fa07e164d6b5e95f832a0741088" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>ClearDataLost</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1aba1943001c9b78648ee27df03dfd1abf" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>Compile</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a08bc358d930c4de1b5e831c7f7153869" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>compilerOutput_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a8f88163f4a5b0ed59ba3190e2782405e" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>constantBufferSizes_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a796302110897b35c3faf6c18208e289c" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>Create</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ab6c82e62ca8b1098c4157acfe517c772" prot="protected" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>dataLost_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ada5a50cf10c6f65deb6b273bfc1649ab" prot="protected" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>dataPending_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1ac865db20e5b54234a191d1303fff3cae" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>defines_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a146c4d2640482a7374f877412b506b7c" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>definesClipPlane_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a7563da895b4b0ba138e7b96767f36557" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>elementHash_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a8d5f0088cf9ba02053f08b61e92cd202" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>elementSemanticNames</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1ae229e9bfbb907806893efdcbb9e7d551" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetByteCode</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a3f430dd3c51be59fe697165273c33c4e" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetCompilerOutput</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a8cf57f3f81ac9b581ae8260c6b69537c" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetConstantBufferSizes</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a0a1556ea35e702115650062f81454cee" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetDefines</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a5ddc0d93f0cb868a1e55645f59e93583" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetDefinesClipPlane</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a864d33bbafb1c0248a19ec98d238e000" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetElementHash</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a95428da337e55df0b100059a74f396ed" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetFullName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a63ba593256e723f7f15a62fca79fe10d" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetGPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1afeb0a749cfb6c1bb4c7f1b4a35d7f901" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetGPUObjectName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a77fa1abcd0a6b3a7cce431c10b2f7c26" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetGraphics</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1acb9f35e9bea2e17fd3f6081def0aa559" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1ac8a1b6e7ac2beb55a2d49adcae3350fc" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetOwner</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a7cae2e86e1e4537b3489946d9305ac4d" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetParameters</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a42ca18b206c36cdcd6c03678dfa3bfe3" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GetShaderType</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a403872d965887004f1021405870ff865" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>GPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1abf1a902885d2c3bac02f3f58e0e0f037" prot="protected" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a4eea1fb6608b0feb3d1eb330b799643e" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>HasParameter</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a7039fc3a187fd67855a802c00099452b" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>HasPendingData</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a9f732b7623450da4710d3d0dd0266add" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>HasTextureUnit</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a6938a78e8bb131f8c53e136778c9f6c2" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a521f1e28728cc83e54757f91131a8d07" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>LoadByteCode</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a39539980f94b4b1e25f0c99253abd52a" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>name_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a02851f652df5053623c4434f2cd9a4b8" prot="protected" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>object_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1afccab99454614b4b667e7c647992cf2f" prot="public" virt="virtual"><scope>Urho3D::ShaderVariation</scope><name>OnDeviceLost</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a18ab28f33620594506eeb2c5fe168106" prot="public" virt="virtual"><scope>Urho3D::ShaderVariation</scope><name>OnDeviceReset</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a1084411c318e0ed359d5ba3b07467186" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>owner_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a12a1f937da5366d8affba83d153513da" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>parameters_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a09ca2e0ab6c1363475a81f4bcf594288" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>ParseParameters</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1aa77a962f7219e6d416fcf5758867e0d6" prot="public" virt="virtual"><scope>Urho3D::ShaderVariation</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a5b73d61548e40e1554472b77873f6a8d" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>SaveByteCode</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a1fc30c33a6427a7eaa39f27b3507d386" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>SetDefines</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a0a95c1cb7196757744cca86b915734d0" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a55da24c2c821f46953dd4e946a676d21" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>ShaderVariation</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1afe27e4fc0536ebded28cb982a54f1271" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>type_</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1a821edb8f93b29568c30e19dbe75afc9d" prot="private" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>useTextureUnits_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad23b82c85519c520437707ddd4b8097f" prot="public" virt="virtual"><scope>Urho3D::ShaderVariation</scope><name>~GPUObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::ShaderVariation</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1ShaderVariation_1aa6386d61ac3d3fc5f71e599a8ec44ba9" prot="public" virt="non-virtual"><scope>Urho3D::ShaderVariation</scope><name>~ShaderVariation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

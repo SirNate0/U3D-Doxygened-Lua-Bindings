@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PhysicsWorld_8h" kind="file" language="C++">
+    <compoundname>PhysicsWorld.h</compoundname>
+    <includes refid="HashSet_8h" local="yes">../Container/HashSet.h</includes>
+    <includes refid="VectorBuffer_8h" local="yes">../IO/VectorBuffer.h</includes>
+    <includes refid="BoundingBox_8h" local="yes">../Math/BoundingBox.h</includes>
+    <includes refid="Sphere_8h" local="yes">../Math/Sphere.h</includes>
+    <includes refid="Vector3_8h" local="yes">../Math/Vector3.h</includes>
+    <includes refid="Component_8h" local="yes">../Scene/Component.h</includes>
+    <includes local="no">Bullet/LinearMath/btIDebugDraw.h</includes>
+    <incdepgraph>
+      <node id="53">
+        <label>../Scene/Serializable.h</label>
+        <link refid="Serializable_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../Math/Matrix3.h</label>
+        <link refid="Matrix3_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>../Math/Quaternion.h</label>
+        <link refid="Quaternion_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>functional</label>
+      </node>
+      <node id="40">
+        <label>limits</label>
+      </node>
+      <node id="52">
+        <label>../Scene/Animatable.h</label>
+        <link refid="Animatable_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../Container/Pair.h</label>
+        <link refid="Pair_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>../Container/FlagSet.h</label>
+        <link refid="FlagSet_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../Container/HashBase.h</label>
+        <link refid="HashBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>../Scene/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>../Container/Ptr.h</label>
+        <link refid="Ptr_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>../Math/Vector3.h</label>
+        <link refid="Vector3_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>../Math/Sphere.h</label>
+        <link refid="Sphere_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Physics/PhysicsWorld.h</label>
+        <link refid="PhysicsWorld_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>cmath</label>
+      </node>
+      <node id="13">
+        <label>cassert</label>
+      </node>
+      <node id="42">
+        <label>../Math/Matrix3x4.h</label>
+        <link refid="Matrix3x4_8h_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>../Scene/AnimationDefs.h</label>
+        <link refid="AnimationDefs_8h"/>
+      </node>
+      <node id="34">
+        <label>cstdarg</label>
+      </node>
+      <node id="48">
+        <label>../Math/BoundingBox.h</label>
+        <link refid="BoundingBox_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../Container/HashMap.h</label>
+        <link refid="HashMap_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Container/HashSet.h</label>
+        <link refid="HashSet_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>../Core/Attribute.h</label>
+        <link refid="Attribute_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../IO/VectorBuffer.h</label>
+        <link refid="VectorBuffer_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>../Math/Random.h</label>
+        <link refid="Random_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>../Math/Vector4.h</label>
+        <link refid="Vector4_8h_source"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>../Scene/ValueAnimationInfo.h</label>
+        <link refid="ValueAnimationInfo_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>../IO/AbstractFile.h</label>
+        <link refid="AbstractFile_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>../Math/Color.h</label>
+        <link refid="Color_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>../Math/Rect.h</label>
+        <link refid="Rect_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>../Math/StringHash.h</label>
+        <link refid="StringHash_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>../IO/Serializer.h</label>
+        <link refid="Serializer_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>typeinfo</label>
+      </node>
+      <node id="49">
+        <label>../IO/Deserializer.h</label>
+        <link refid="Deserializer_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../Container/Allocator.h</label>
+        <link refid="Allocator_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="23">
+        <label>new</label>
+      </node>
+      <node id="24">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>../Container/Hash.h</label>
+        <link refid="Hash_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Bullet/LinearMath/btIDebugDraw.h</label>
+      </node>
+      <node id="36">
+        <label>../Math/MathDefs.h</label>
+        <link refid="MathDefs_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>cstdlib</label>
+      </node>
+      <node id="35">
+        <label>cctype</label>
+      </node>
+      <node id="56">
+        <label>../Core/Object.h</label>
+        <link refid="Object_8h_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstddef</label>
+      </node>
+      <node id="43">
+        <label>../Math/Matrix4.h</label>
+        <link refid="Matrix4_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>../Core/Variant.h</label>
+        <link refid="Variant_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../Container/RefCounted.h</label>
+        <link refid="RefCounted_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>../Container/LinkedList.h</label>
+        <link refid="LinkedList_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>type_traits</label>
+      </node>
+      <node id="9">
+        <label>../Container/Sort.h</label>
+        <link refid="Sort_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>../Math/Vector2.h</label>
+        <link refid="Vector2_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="21">
+        <label>cstring</label>
+      </node>
+      <node id="14">
+        <label>initializer_list</label>
+      </node>
+      <node id="58">
+        <label>../Core/StringHashRegister.h</label>
+        <link refid="StringHashRegister_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structUrho3D_1_1PhysicsRaycastResult" prot="public">Urho3D::PhysicsRaycastResult</innerclass>
+    <innerclass refid="structUrho3D_1_1DelayedWorldTransform" prot="public">Urho3D::DelayedWorldTransform</innerclass>
+    <innerclass refid="structUrho3D_1_1ManifoldPair" prot="public">Urho3D::ManifoldPair</innerclass>
+    <innerclass refid="structUrho3D_1_1PhysicsWorldConfig" prot="public">Urho3D::PhysicsWorldConfig</innerclass>
+    <innerclass refid="classUrho3D_1_1PhysicsWorld" prot="public">Urho3D::PhysicsWorld</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Container/HashSet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../IO/VectorBuffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/BoundingBox.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Sphere.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Math/Vector3.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Scene/Component.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Bullet/LinearMath/btIDebugDraw.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btCollisionConfiguration;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btCollisionShape;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btBroadphaseInterface;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btConstraintSolver;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btDiscreteDynamicsWorld;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btDispatcher;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btDynamicsWorld;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btPersistentManifold;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CollisionShape;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Deserializer;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Constraint;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Model;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Node;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Ray;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RigidBody;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Scene;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Serializer;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">XMLElement;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">CollisionGeometryData;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="structUrho3D_1_1PhysicsRaycastResult" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63" refid="structUrho3D_1_1PhysicsRaycastResult_1ac903d2e2f945dd50ff02e387e5799f28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>!=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref>&amp;<sp/>rhs)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="64"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1PhysicsRaycastResult_1ac546be78168a69e04a3cb4328c893108" kindref="member">position_</ref><sp/>||<sp/>normal_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1PhysicsRaycastResult_1a37c126b5444e0e8bc1e063c719ca86b9" kindref="member">normal_</ref><sp/>||<sp/>distance_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1PhysicsRaycastResult_1abcc01ca7bf8007086c033b4f25884a80" kindref="member">distance_</ref><sp/>||<sp/>body_<sp/>!=<sp/>rhs.<ref refid="structUrho3D_1_1PhysicsRaycastResult_1ab4d67be66ed31f1607a7c118a3547d7d" kindref="member">body_</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structUrho3D_1_1PhysicsRaycastResult_1ac546be78168a69e04a3cb4328c893108" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="structUrho3D_1_1PhysicsRaycastResult_1ac546be78168a69e04a3cb4328c893108" kindref="member">position_</ref>;</highlight></codeline>
+<codeline lineno="71" refid="structUrho3D_1_1PhysicsRaycastResult_1a37c126b5444e0e8bc1e063c719ca86b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="structUrho3D_1_1PhysicsRaycastResult_1a37c126b5444e0e8bc1e063c719ca86b9" kindref="member">normal_</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structUrho3D_1_1PhysicsRaycastResult_1abcc01ca7bf8007086c033b4f25884a80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distance_{};</highlight></codeline>
+<codeline lineno="75" refid="structUrho3D_1_1PhysicsRaycastResult_1ab0146d82c34a7d55dffbc053b3c2a28b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>hitFraction_{};</highlight></codeline>
+<codeline lineno="77" refid="structUrho3D_1_1PhysicsRaycastResult_1ab4d67be66ed31f1607a7c118a3547d7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/>body_{};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structUrho3D_1_1DelayedWorldTransform" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1DelayedWorldTransform" kindref="compound">DelayedWorldTransform</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84" refid="structUrho3D_1_1DelayedWorldTransform_1ab09836c962c84f1894292afe55602af1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/><ref refid="structUrho3D_1_1DelayedWorldTransform_1ab09836c962c84f1894292afe55602af1" kindref="member">rigidBody_</ref>;</highlight></codeline>
+<codeline lineno="86" refid="structUrho3D_1_1DelayedWorldTransform_1a0131b2d35075c061ff2062eada5f804b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/><ref refid="structUrho3D_1_1DelayedWorldTransform_1a0131b2d35075c061ff2062eada5f804b" kindref="member">parentRigidBody_</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structUrho3D_1_1DelayedWorldTransform_1a812ef515b451f8a029e086aeed2b9580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="structUrho3D_1_1DelayedWorldTransform_1a812ef515b451f8a029e086aeed2b9580" kindref="member">worldPosition_</ref>;</highlight></codeline>
+<codeline lineno="90" refid="structUrho3D_1_1DelayedWorldTransform_1ad49b084e556469f0b2e3ac52cd37c8ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref><sp/><ref refid="structUrho3D_1_1DelayedWorldTransform_1ad49b084e556469f0b2e3ac52cd37c8ca" kindref="member">worldRotation_</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structUrho3D_1_1ManifoldPair" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1ManifoldPair" kindref="compound">ManifoldPair</ref></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97" refid="structUrho3D_1_1ManifoldPair_1a1040c2e3c778fe55c0f00d4ef0803a15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ManifoldPair_1a1040c2e3c778fe55c0f00d4ef0803a15" kindref="member">ManifoldPair</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ManifoldPair_1a0595504fa42073c132fad93d2b4f9524" kindref="member">manifold_</ref>(nullptr),</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1ManifoldPair_1a828094a8533542b74adf2ed297a7f0f5" kindref="member">flippedManifold_</ref>(nullptr)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="structUrho3D_1_1ManifoldPair_1a0595504fa42073c132fad93d2b4f9524" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btPersistentManifold*<sp/><ref refid="structUrho3D_1_1ManifoldPair_1a0595504fa42073c132fad93d2b4f9524" kindref="member">manifold_</ref>;</highlight></codeline>
+<codeline lineno="106" refid="structUrho3D_1_1ManifoldPair_1a828094a8533542b74adf2ed297a7f0f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btPersistentManifold*<sp/><ref refid="structUrho3D_1_1ManifoldPair_1a828094a8533542b74adf2ed297a7f0f5" kindref="member">flippedManifold_</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structUrho3D_1_1PhysicsWorldConfig" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1PhysicsWorldConfig" kindref="compound">PhysicsWorldConfig</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1PhysicsWorldConfig" kindref="compound">PhysicsWorldConfig</ref>()<sp/>:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1PhysicsWorldConfig_1a91bfd128276906c273acd153997ee5bd" kindref="member">collisionConfig_</ref>(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="structUrho3D_1_1PhysicsWorldConfig_1a91bfd128276906c273acd153997ee5bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btCollisionConfiguration*<sp/><ref refid="structUrho3D_1_1PhysicsWorldConfig_1a91bfd128276906c273acd153997ee5bd" kindref="member">collisionConfig_</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DEFAULT_FPS<sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DEFAULT_MAX_NETWORK_ANGULAR_VELOCITY<sp/>=<sp/>100.0f;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref><sp/>=<sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;Pair&lt;Model*, unsigned&gt;</ref>,<sp/><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr&lt;CollisionGeometryData&gt;</ref><sp/>&gt;;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classUrho3D_1_1PhysicsWorld" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">URHO3D_API<sp/><ref refid="classUrho3D_1_1PhysicsWorld" kindref="compound">PhysicsWorld</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>btIDebugDraw</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>URHO3D_OBJECT(<ref refid="classUrho3D_1_1PhysicsWorld" kindref="compound">PhysicsWorld</ref>,<sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InternalPreTickCallback(btDynamicsWorld*<sp/>world,<sp/>btScalar<sp/>timeStep);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InternalTickCallback(btDynamicsWorld*<sp/>world,<sp/>btScalar<sp/>timeStep);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="137" refid="classUrho3D_1_1PhysicsWorld_1a1112db01a3d663e152b5df5887b048e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a1112db01a3d663e152b5df5887b048e0" kindref="member">PhysicsWorld</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="139" refid="classUrho3D_1_1PhysicsWorld_1a3aa4a3773ead9094791caeb4afb45234" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a3aa4a3773ead9094791caeb4afb45234" kindref="member">~PhysicsWorld</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142" refid="classUrho3D_1_1PhysicsWorld_1add30dc0993714f6f9caecba15284316c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1add30dc0993714f6f9caecba15284316c" kindref="member">RegisterObject</ref>(<ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref>*<sp/>context);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="classUrho3D_1_1PhysicsWorld_1a8d84ecf113e4758d93ac7acff981dba7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a8d84ecf113e4758d93ac7acff981dba7" kindref="member">isVisible</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>aabbMin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>aabbMax)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147" refid="classUrho3D_1_1PhysicsWorld_1a288aba6ca5b826fb66a50160496349b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a288aba6ca5b826fb66a50160496349b2" kindref="member">drawLine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>to,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>color)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149" refid="classUrho3D_1_1PhysicsWorld_1a4dce9116666449cd2c66d428768a44d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a4dce9116666449cd2c66d428768a44d3" kindref="member">reportErrorWarning</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>warningString)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151" refid="classUrho3D_1_1PhysicsWorld_1ac20dd83ccc93103c1b65ea6ed136650b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1ac20dd83ccc93103c1b65ea6ed136650b" kindref="member">drawContactPoint</ref></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>pointOnB,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>normalOnB,<sp/>btScalar<sp/>distance,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lifeTime,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>color)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154" refid="classUrho3D_1_1PhysicsWorld_1a0f5c1c479305823283e1abfff0fddd61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a0f5c1c479305823283e1abfff0fddd61" kindref="member">draw3dText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3&amp;<sp/>location,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>textString)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classUrho3D_1_1PhysicsWorld_1adc908872c5d1c1f9aa8a5c969c7c8c52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1adc908872c5d1c1f9aa8a5c969c7c8c52" kindref="member">setDebugMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debugMode)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{<sp/>debugMode_<sp/>=<sp/>debugMode;<sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="classUrho3D_1_1PhysicsWorld_1ac715bd94076889ea9d65c230b82fc4b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1ac715bd94076889ea9d65c230b82fc4b9" kindref="member">getDebugMode</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>debugMode_;<sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classUrho3D_1_1PhysicsWorld_1a3a04f7c20be03020dcd9616ac0d3f12d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a3a04f7c20be03020dcd9616ac0d3f12d" kindref="member">DrawDebugGeometry</ref>(<ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref>*<sp/>debug,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthTest)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classUrho3D_1_1PhysicsWorld_1a282dce733280a5175597b3ee7d4c9e14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a282dce733280a5175597b3ee7d4c9e14" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep);</highlight></codeline>
+<codeline lineno="168" refid="classUrho3D_1_1PhysicsWorld_1a7301bf7355ad0be5080fa441f952213d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a7301bf7355ad0be5080fa441f952213d" kindref="member">UpdateCollisions</ref>();</highlight></codeline>
+<codeline lineno="171" refid="classUrho3D_1_1PhysicsWorld_1a34fd73b93bf6a8f6a8ba24c7fb8e52a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a34fd73b93bf6a8f6a8ba24c7fb8e52a6" kindref="member">SetFps</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fps);</highlight></codeline>
+<codeline lineno="174" refid="classUrho3D_1_1PhysicsWorld_1a4de247dd2476854b2739e1739aaa8a16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a4de247dd2476854b2739e1739aaa8a16" kindref="member">SetGravity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>gravity);</highlight></codeline>
+<codeline lineno="177" refid="classUrho3D_1_1PhysicsWorld_1a1d5c83640cf870a7b81a7bc7bb77bf0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a1d5c83640cf870a7b81a7bc7bb77bf0e" kindref="member">SetMaxSubSteps</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="180" refid="classUrho3D_1_1PhysicsWorld_1a1db39ea4c68531cec61b44ee5d7c460d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a1db39ea4c68531cec61b44ee5d7c460d" kindref="member">SetNumIterations</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num);</highlight></codeline>
+<codeline lineno="183" refid="classUrho3D_1_1PhysicsWorld_1a6dfd8cd956bd2eb82d9777221ae9ab1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a6dfd8cd956bd2eb82d9777221ae9ab1b" kindref="member">SetUpdateEnabled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="186" refid="classUrho3D_1_1PhysicsWorld_1a5cfe054879fc8c7f80394b75f08004cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a5cfe054879fc8c7f80394b75f08004cb" kindref="member">SetInterpolation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="189" refid="classUrho3D_1_1PhysicsWorld_1a10935f2969836d082870f13f4bd7b813" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a10935f2969836d082870f13f4bd7b813" kindref="member">SetInternalEdge</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="192" refid="classUrho3D_1_1PhysicsWorld_1afdc72a4df479ffd6539c1169d47f6778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1afdc72a4df479ffd6539c1169d47f6778" kindref="member">SetSplitImpulse</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="194" refid="classUrho3D_1_1PhysicsWorld_1a5a3ffe15234de07890df0cf0b3aa966a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a5a3ffe15234de07890df0cf0b3aa966a" kindref="member">SetMaxNetworkAngularVelocity</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>velocity);</highlight></codeline>
+<codeline lineno="196" refid="classUrho3D_1_1PhysicsWorld_1aa245d99d7a05894cabfb2885b0195b7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1aa245d99d7a05894cabfb2885b0195b7f" kindref="member">Raycast</ref></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;PhysicsRaycastResult&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxDistance,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="199" refid="classUrho3D_1_1PhysicsWorld_1a7714c87f664595e59c28663653dd56e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a7714c87f664595e59c28663653dd56e9" kindref="member">RaycastSingle</ref>(<ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxDistance,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="202" refid="classUrho3D_1_1PhysicsWorld_1a75aa1ba5ef79934fa5933e9fc2a0516c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a75aa1ba5ef79934fa5933e9fc2a0516c" kindref="member">RaycastSingleSegmented</ref>(<ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxDistance,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>segmentDistance,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>overlapDistance<sp/>=<sp/>0.1f);</highlight></codeline>
+<codeline lineno="204" refid="classUrho3D_1_1PhysicsWorld_1a9625022dc308a9b18750c969bbd72963" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a9625022dc308a9b18750c969bbd72963" kindref="member">SphereCast</ref></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Ray" kindref="compound">Ray</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxDistance,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="207" refid="classUrho3D_1_1PhysicsWorld_1a7ab7f0188c08871f864e9b2df37e1692" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a7ab7f0188c08871f864e9b2df37e1692" kindref="member">ConvexCast</ref>(<ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref>&amp;<sp/>result,<sp/><ref refid="classUrho3D_1_1CollisionShape" kindref="compound">CollisionShape</ref>*<sp/>shape,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>startPos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>startRot,</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>endPos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>endRot,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="210" refid="classUrho3D_1_1PhysicsWorld_1a13f714a651d47509f50e0b16fa0f2649" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a13f714a651d47509f50e0b16fa0f2649" kindref="member">ConvexCast</ref>(<ref refid="structUrho3D_1_1PhysicsRaycastResult" kindref="compound">PhysicsRaycastResult</ref>&amp;<sp/>result,<sp/>btCollisionShape*<sp/>shape,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>startPos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>startRot,</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>&amp;<sp/>endPos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref>&amp;<sp/>endRot,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="213" refid="classUrho3D_1_1PhysicsWorld_1a9528fd5f629ab19cbbad35c7421b3a0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a9528fd5f629ab19cbbad35c7421b3a0f" kindref="member">RemoveCachedGeometry</ref>(<ref refid="classUrho3D_1_1Model" kindref="compound">Model</ref>*<sp/>model);</highlight></codeline>
+<codeline lineno="215" refid="classUrho3D_1_1PhysicsWorld_1a64e4c00a3af866b5e222106298474fe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a64e4c00a3af866b5e222106298474fe5" kindref="member">GetRigidBodies</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RigidBody*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Sphere" kindref="compound">Sphere</ref>&amp;<sp/>sphere,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="217" refid="classUrho3D_1_1PhysicsWorld_1abe003859a8d5428d310c9113efa11647" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1abe003859a8d5428d310c9113efa11647" kindref="member">GetRigidBodies</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RigidBody*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref>&amp;<sp/>box,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>collisionMask<sp/>=<sp/>M_MAX_UNSIGNED);</highlight></codeline>
+<codeline lineno="219" refid="classUrho3D_1_1PhysicsWorld_1a72715da3265a7c299e61f080fd89f96e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a72715da3265a7c299e61f080fd89f96e" kindref="member">GetRigidBodies</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RigidBody*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/>body);</highlight></codeline>
+<codeline lineno="221" refid="classUrho3D_1_1PhysicsWorld_1a12ebc12a1bd0d7e8fc5805455ce0a9d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a12ebc12a1bd0d7e8fc5805455ce0a9d1" kindref="member">GetCollidingBodies</ref>(<ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RigidBody*&gt;</ref>&amp;<sp/>result,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/>body);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="classUrho3D_1_1PhysicsWorld_1a34ae07cd26ca6e2948231b10a3fedc96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a34ae07cd26ca6e2948231b10a3fedc96" kindref="member">GetGravity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="classUrho3D_1_1PhysicsWorld_1a9a7763576fb638104d782515b08b1f58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a9a7763576fb638104d782515b08b1f58" kindref="member">GetMaxSubSteps</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxSubSteps_;<sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classUrho3D_1_1PhysicsWorld_1aae27ca7980752936a27a15178d4b308a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1aae27ca7980752936a27a15178d4b308a" kindref="member">GetNumIterations</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classUrho3D_1_1PhysicsWorld_1a0b6ec7c99e3ac48a06447a70d2440f05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a0b6ec7c99e3ac48a06447a70d2440f05" kindref="member">IsUpdateEnabled</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>updateEnabled_;<sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="classUrho3D_1_1PhysicsWorld_1a16b6948ae1456cff43b834961f2fda83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a16b6948ae1456cff43b834961f2fda83" kindref="member">GetInterpolation</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>interpolation_;<sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="classUrho3D_1_1PhysicsWorld_1a48e9d45cf1bb95c789372f1d12bef493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a48e9d45cf1bb95c789372f1d12bef493" kindref="member">GetInternalEdge</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>internalEdge_;<sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="classUrho3D_1_1PhysicsWorld_1a22d80fcdd584c0d2f3ffa69464906d24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a22d80fcdd584c0d2f3ffa69464906d24" kindref="member">GetSplitImpulse</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="classUrho3D_1_1PhysicsWorld_1acdad4d45529cce4552d93cd02221dbe2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1acdad4d45529cce4552d93cd02221dbe2" kindref="member">GetFps</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fps_;<sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="classUrho3D_1_1PhysicsWorld_1a04c9bb464c4315d447b8cdac8cb549d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a04c9bb464c4315d447b8cdac8cb549d0" kindref="member">GetMaxNetworkAngularVelocity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxNetworkAngularVelocity_;<sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="classUrho3D_1_1PhysicsWorld_1a7c4e1dba0be1131a88f147c963bc240f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a7c4e1dba0be1131a88f147c963bc240f" kindref="member">AddRigidBody</ref>(<ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/>body);</highlight></codeline>
+<codeline lineno="261" refid="classUrho3D_1_1PhysicsWorld_1a96599b4d3cc1ff22efac7828b09f30f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a96599b4d3cc1ff22efac7828b09f30f7" kindref="member">RemoveRigidBody</ref>(<ref refid="classUrho3D_1_1RigidBody" kindref="compound">RigidBody</ref>*<sp/>body);</highlight></codeline>
+<codeline lineno="263" refid="classUrho3D_1_1PhysicsWorld_1a9354b0866475ddd876696e40be34b963" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a9354b0866475ddd876696e40be34b963" kindref="member">AddCollisionShape</ref>(<ref refid="classUrho3D_1_1CollisionShape" kindref="compound">CollisionShape</ref>*<sp/>shape);</highlight></codeline>
+<codeline lineno="265" refid="classUrho3D_1_1PhysicsWorld_1ac1c50c09ad613f74b051891dba4d83b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1ac1c50c09ad613f74b051891dba4d83b0" kindref="member">RemoveCollisionShape</ref>(<ref refid="classUrho3D_1_1CollisionShape" kindref="compound">CollisionShape</ref>*<sp/>shape);</highlight></codeline>
+<codeline lineno="267" refid="classUrho3D_1_1PhysicsWorld_1ad5ccb6f852ed5502186e40567bf84bb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1ad5ccb6f852ed5502186e40567bf84bb0" kindref="member">AddConstraint</ref>(<ref refid="classUrho3D_1_1Constraint" kindref="compound">Constraint</ref>*<sp/>constraint);</highlight></codeline>
+<codeline lineno="269" refid="classUrho3D_1_1PhysicsWorld_1a59fcf28616c047f36c99e1b2f832d145" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a59fcf28616c047f36c99e1b2f832d145" kindref="member">RemoveConstraint</ref>(<ref refid="classUrho3D_1_1Constraint" kindref="compound">Constraint</ref>*<sp/>constraint);</highlight></codeline>
+<codeline lineno="271" refid="classUrho3D_1_1PhysicsWorld_1ab1dcb6105ec21eaa129a476d0bea67cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1ab1dcb6105ec21eaa129a476d0bea67cc" kindref="member">AddDelayedWorldTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1DelayedWorldTransform" kindref="compound">DelayedWorldTransform</ref>&amp;<sp/>transform);</highlight></codeline>
+<codeline lineno="273" refid="classUrho3D_1_1PhysicsWorld_1a8ffb0447f9c9e6e3e79ead269a280fd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a8ffb0447f9c9e6e3e79ead269a280fd4" kindref="member">DrawDebugGeometry</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthTest);</highlight></codeline>
+<codeline lineno="275" refid="classUrho3D_1_1PhysicsWorld_1a44ce787eaa6fb6d7c81b34e5c473ed66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a44ce787eaa6fb6d7c81b34e5c473ed66" kindref="member">SetDebugRenderer</ref>(<ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref>*<sp/>debug);</highlight></codeline>
+<codeline lineno="277" refid="classUrho3D_1_1PhysicsWorld_1acf5301a953266315210167bda76ae8ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1acf5301a953266315210167bda76ae8ee" kindref="member">SetDebugDepthTest</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="classUrho3D_1_1PhysicsWorld_1a70a043b9aaa342f423fbaad6d71ad6b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btDiscreteDynamicsWorld*<sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a70a043b9aaa342f423fbaad6d71ad6b1" kindref="member">GetWorld</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>world_.Get();<sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="classUrho3D_1_1PhysicsWorld_1af05205d187ddeccfbed5627f3332b47c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1af05205d187ddeccfbed5627f3332b47c" kindref="member">CleanupGeometryCache</ref>();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="classUrho3D_1_1PhysicsWorld_1adf4d86570bd497064e3f22a9d4b0be01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref>&amp;<sp/><ref refid="classUrho3D_1_1PhysicsWorld_1adf4d86570bd497064e3f22a9d4b0be01" kindref="member">GetTriMeshCache</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>triMeshCache_;<sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="classUrho3D_1_1PhysicsWorld_1afbdd6c95bcc76ca75aa7256533b8d14f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref>&amp;<sp/><ref refid="classUrho3D_1_1PhysicsWorld_1afbdd6c95bcc76ca75aa7256533b8d14f" kindref="member">GetConvexCache</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>convexCache_;<sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="classUrho3D_1_1PhysicsWorld_1a25d6dcf0101f09392f27c7f3e71a40f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref>&amp;<sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a25d6dcf0101f09392f27c7f3e71a40f0" kindref="member">GetGImpactTrimeshCache</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gimpactTrimeshCache_;<sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="classUrho3D_1_1PhysicsWorld_1aac48919689094234eed3ef03fe305cd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1aac48919689094234eed3ef03fe305cd8" kindref="member">SetApplyingTransforms</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)<sp/>{<sp/>applyingTransforms_<sp/>=<sp/>enable;<sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="classUrho3D_1_1PhysicsWorld_1a67df465a1fafaa79e3cfb0f15219eb42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a67df465a1fafaa79e3cfb0f15219eb42" kindref="member">IsApplyingTransforms</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>applyingTransforms_;<sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="classUrho3D_1_1PhysicsWorld_1ae860b5f658fb2fa2a936c5868c8af927" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsSimulating()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>simulating_;<sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structUrho3D_1_1PhysicsWorldConfig" kindref="compound">PhysicsWorldConfig</ref><sp/>config;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="308" refid="classUrho3D_1_1PhysicsWorld_1a0b0a8200a977bb58e0a7ee4693ed6b30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PhysicsWorld_1a0b0a8200a977bb58e0a7ee4693ed6b30" kindref="member">OnSceneSet</ref>(<ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref>*<sp/>scene)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HandleSceneSubsystemUpdate(<ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref><sp/>eventType,<sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">VariantMap</ref>&amp;<sp/>eventData);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PreStep(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PostStep(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeStep);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SendCollisionEvents();</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>btCollisionConfiguration*<sp/>collisionConfiguration_{};</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr&lt;btDispatcher&gt;</ref><sp/>collisionDispatcher_;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr&lt;btBroadphaseInterface&gt;</ref><sp/>broadphase_;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr&lt;btConstraintSolver&gt;</ref><sp/>solver_;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1UniquePtr" kindref="compound">UniquePtr&lt;btDiscreteDynamicsWorld&gt;</ref><sp/>world_;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr&lt;Scene&gt;</ref><sp/>scene_;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;RigidBody*&gt;</ref><sp/>rigidBodies_;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;CollisionShape*&gt;</ref><sp/>collisionShapes_;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;Constraint*&gt;</ref><sp/>constraints_;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;Pair&lt;WeakPtr&lt;RigidBody&gt;</ref>,<sp/><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr&lt;RigidBody&gt;</ref><sp/>&gt;,<sp/><ref refid="structUrho3D_1_1ManifoldPair" kindref="compound">ManifoldPair</ref>&gt;<sp/>currentCollisions_;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;Pair&lt;WeakPtr&lt;RigidBody&gt;</ref>,<sp/><ref refid="classUrho3D_1_1WeakPtr" kindref="compound">WeakPtr&lt;RigidBody&gt;</ref><sp/>&gt;,<sp/><ref refid="structUrho3D_1_1ManifoldPair" kindref="compound">ManifoldPair</ref>&gt;<sp/>previousCollisions_;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap&lt;RigidBody*, DelayedWorldTransform&gt;</ref><sp/>delayedWorldTransforms_;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref><sp/>triMeshCache_;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref><sp/>convexCache_;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">CollisionGeometryDataCache</ref><sp/>gimpactTrimeshCache_;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">VariantMap</ref><sp/>physicsCollisionData_;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1HashMap" kindref="compound">VariantMap</ref><sp/>nodeCollisionData_;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1VectorBuffer" kindref="compound">VectorBuffer</ref><sp/>contacts_;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>fps_{DEFAULT_FPS};</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxSubSteps_{};</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>timeAcc_{};</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxNetworkAngularVelocity_{DEFAULT_MAX_NETWORK_ANGULAR_VELOCITY};</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updateEnabled_{</highlight><highlight class="keyword">true</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>interpolation_{</highlight><highlight class="keyword">true</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>internalEdge_{</highlight><highlight class="keyword">true</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>applyingTransforms_{};</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>simulating_{};</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>debugDepthTest_{};</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>DebugRenderer*<sp/>debugRenderer_{};</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>debugMode_{};</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>URHO3D_API<sp/>RegisterPhysicsLibrary(Context*<sp/>context);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics/PhysicsWorld.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1686 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Texture" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Texture</compoundname>
+    <basecompoundref refid="classUrho3D_1_1ResourceWithMetadata" prot="public" virt="non-virtual">Urho3D::ResourceWithMetadata</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1GPUObject" prot="public" virt="non-virtual">Urho3D::GPUObject</basecompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Texture2D" prot="public" virt="non-virtual">Urho3D::Texture2D</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Texture2DArray" prot="public" virt="non-virtual">Urho3D::Texture2DArray</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Texture3D" prot="public" virt="non-virtual">Urho3D::Texture3D</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1TextureCube" prot="public" virt="non-virtual">Urho3D::TextureCube</derivedcompoundref>
+    <includes refid="Texture_8h" local="no">Texture.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1ab8824f28b0c81bf28a539f6e2569618b" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::target_</definition>
+        <argsstring></argsstring>
+        <name>target_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>OpenGL target. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="231" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a1823435666f4aa8dd9b2053f16b22a68" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::Texture::shaderResourceView_</definition>
+        <argsstring></argsstring>
+        <name>shaderResourceView_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Direct3D11 shader resource view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="234" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a269881c2b603b6df2f1659770fd19746" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::Texture::sampler_</definition>
+        <argsstring></argsstring>
+        <name>sampler_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Direct3D11 sampler state object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="236" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a2a2a3937fd6a2791f05c96ecdc857037" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Urho3D::Texture::resolveTexture_</definition>
+        <argsstring></argsstring>
+        <name>resolveTexture_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Direct3D11 resolve texture object when multisample with autoresolve is used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="238" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a8e5038cf13bb1547cd7f90bec95d03a9" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::format_</definition>
+        <argsstring></argsstring>
+        <name>format_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> format. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="241" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a9500da3ce4e026fd2d3b70dfa8f5a45a" prot="protected" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1a0e77915b00b947259d8875587a08c9c4" kindref="member">TextureUsage</ref></type>
+        <definition>TextureUsage Urho3D::Texture::usage_</definition>
+        <argsstring></argsstring>
+        <name>usage_</name>
+        <initializer>{TEXTURE_STATIC}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> usage type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="243" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a8aee7d3610fa842218e33e62025ec3d7" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::levels_</definition>
+        <argsstring></argsstring>
+        <name>levels_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Current mip levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="245" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a1fa714405ad85a5e525343459f047415" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::requestedLevels_</definition>
+        <argsstring></argsstring>
+        <name>requestedLevels_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Requested mip levels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="247" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a4f375b82fa235c25b90aa20fc684213d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Texture::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="249" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1af5331737f6ddfd1eb9f30073c096f3cd" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Texture::height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="251" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1ac11c0fe852ea3d3a53d7794a2b2741b5" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Texture::depth_</definition>
+        <argsstring></argsstring>
+        <name>depth_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="253" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a2b09e174b858f7dc11153ee697fc41d8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::shadowCompare_</definition>
+        <argsstring></argsstring>
+        <name>shadowCompare_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Shadow compare mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="255" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a574de3790ced1280358853990e551836" prot="protected" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1aa76618ce244fbf4560ec541b4a45845d" kindref="member">TextureFilterMode</ref></type>
+        <definition>TextureFilterMode Urho3D::Texture::filterMode_</definition>
+        <argsstring></argsstring>
+        <name>filterMode_</name>
+        <initializer>{FILTER_DEFAULT}</initializer>
+        <briefdescription>
+<para>Filtering mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="257" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a897fb3bd9c9a093e254aab4b998ff990" prot="protected" static="no" mutable="no">
+        <type><ref refid="GraphicsDefs_8h_1aecfe3379026c9ad8814e04ec7706cc28" kindref="member">TextureAddressMode</ref></type>
+        <definition>TextureAddressMode Urho3D::Texture::addressModes_[MAX_COORDS]</definition>
+        <argsstring>[MAX_COORDS]</argsstring>
+        <name>addressModes_</name>
+        <initializer>{ADDRESS_WRAP, ADDRESS_WRAP, ADDRESS_WRAP}</initializer>
+        <briefdescription>
+<para>Addressing mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="259" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a7b1fdfa83d233a5dfc341f1374ab077b" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::anisotropy_</definition>
+        <argsstring></argsstring>
+        <name>anisotropy_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> anisotropy level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="261" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a99956895d6024022cbf278232539ba34" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::mipsToSkip_[MAX_TEXTURE_QUALITY_LEVELS]</definition>
+        <argsstring>[MAX_TEXTURE_QUALITY_LEVELS]</argsstring>
+        <name>mipsToSkip_</name>
+        <initializer>{2, 1, 0}</initializer>
+        <briefdescription>
+<para>Mip levels to skip when loading per texture quality setting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="263" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a1dface5e729d3a3675cf293aa0ac9081" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Urho3D::Texture::borderColor_</definition>
+        <argsstring></argsstring>
+        <name>borderColor_</name>
+        <briefdescription>
+<para>Border color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="265" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a115852631c203bb755bf75891b39e306" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Texture::multiSample_</definition>
+        <argsstring></argsstring>
+        <name>multiSample_</name>
+        <initializer>{1}</initializer>
+        <briefdescription>
+<para>Multisampling level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="267" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1afa57a898c795690bb30735deae0e102b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::sRGB_</definition>
+        <argsstring></argsstring>
+        <name>sRGB_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>sRGB sampling and writing mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="269" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1ab7d69fc0ad6ff73c51c1f8f9d8f5010e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::parametersDirty_</definition>
+        <argsstring></argsstring>
+        <name>parametersDirty_</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>Parameters dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="271" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a37bd463eb784b6331f1b4b40ee04683a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::autoResolve_</definition>
+        <argsstring></argsstring>
+        <name>autoResolve_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Multisampling autoresolve flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="273" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1ab3cfe0ad762b0c88a79cf9e6e423b127" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::resolveDirty_</definition>
+        <argsstring></argsstring>
+        <name>resolveDirty_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Multisampling resolve needed -flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="275" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1aea03ebb6a4fdaa4944901093150514a1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::levelsDirty_</definition>
+        <argsstring></argsstring>
+        <name>levelsDirty_</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>Mipmap levels regeneration needed -flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="277" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Texture_1a871713edc0c732ee10aabe80d687a200" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> &gt;</type>
+        <definition>SharedPtr&lt;Texture&gt; Urho3D::Texture::backupTexture_</definition>
+        <argsstring></argsstring>
+        <name>backupTexture_</name>
+        <briefdescription>
+<para>Backup texture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="279" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a54625f883eb353b6c57b5da7b7d8eb86" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Texture::Texture</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Texture</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="45" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ae75d8ed56606f3c70c4c03ac7a6c8775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Texture::~Texture</definition>
+        <argsstring>() override</argsstring>
+        <name>~Texture</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="47" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a7f041595c6630ece64e123cb84fa5465" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetNumLevels</definition>
+        <argsstring>(unsigned levels)</argsstring>
+        <name>SetNumLevels</name>
+        <param>
+          <type>unsigned</type>
+          <declname>levels</declname>
+        </param>
+        <briefdescription>
+<para>Set number of requested mip levels. Needs to be called before setting size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value (0) allocates as many mip levels as necessary to reach 1x1 size. Set value 1 to disable mipmapping. Note that rendertargets need to regenerate mips dynamically after rendering, which may cost performance. Screen buffers and shadow maps allocated by <ref refid="classUrho3D_1_1Renderer" kindref="compound">Renderer</ref> will have mipmaps disabled. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a687d8ebe38f3eb27e393d9af8ae93a81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetFilterMode</definition>
+        <argsstring>(TextureFilterMode mode)</argsstring>
+        <name>SetFilterMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aa76618ce244fbf4560ec541b4a45845d" kindref="member">TextureFilterMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set filtering mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="57" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a378338759a87ffe1b474dc42b526d46e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetAddressMode</definition>
+        <argsstring>(TextureCoordinate coord, TextureAddressMode mode)</argsstring>
+        <name>SetAddressMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aa85e162b6026e40f9d42d5ea69e98f89" kindref="member">TextureCoordinate</ref></type>
+          <declname>coord</declname>
+        </param>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aecfe3379026c9ad8814e04ec7706cc28" kindref="member">TextureAddressMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set addressing mode by texture coordinate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1aa3faee8d80841137e19e372f7b20b28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetAnisotropy</definition>
+        <argsstring>(unsigned level)</argsstring>
+        <name>SetAnisotropy</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set texture max. anisotropy level. No effect if not using anisotropic filtering. Value 0 (default) uses the default setting from <ref refid="classUrho3D_1_1Renderer" kindref="compound">Renderer</ref>. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a2bbb724ddd75d109c4be4adeb550db64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetShadowCompare</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetShadowCompare</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Set shadow compare mode. Not used on Direct3D9. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a116e565c29f87e920fa4591defe8afb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetBorderColor</definition>
+        <argsstring>(const Color &amp;color)</argsstring>
+        <name>SetBorderColor</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set border color for border addressing mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ab2e45621a5ece2031d8b33362a29b4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetSRGB</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetSRGB</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set sRGB sampling and writing mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a87c105c5a06832559384dc9862eb345b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetBackupTexture</definition>
+        <argsstring>(Texture *texture)</argsstring>
+        <name>SetBackupTexture</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> *</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set backup texture to use when rendering to this texture. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="74" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a6dda0b2dfddd0b3fd2b1a1dec3402fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetMipsToSkip</definition>
+        <argsstring>(MaterialQuality quality, int toSkip)</argsstring>
+        <name>SetMipsToSkip</name>
+        <param>
+          <type>MaterialQuality</type>
+          <declname>quality</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>toSkip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set mip levels to skip on a quality setting when loading. Ensures higher quality levels do not skip more. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ab47f6f48fa537e42dea9e21bc3a350cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return API-specific texture format. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="81" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a49289626d40733f33cb84e044cca1eab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::IsCompressed</definition>
+        <argsstring>() const</argsstring>
+        <name>IsCompressed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether the texture format is compressed. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a110c3016b3544d78af393a83b45fb44f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetLevels</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLevels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of mip levels. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="89" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a8e0474cd05b4b1de9caabdc670243141" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return width. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="93" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1af496abc83a030e5dc9c8d46c7111fa1c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return height. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="97" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1aca630725968904986b7d57929a6923cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDepth</name>
+        <briefdescription>
+<para>Return depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="100" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a9c2dc332dfe84f596a54a5e17de7e474" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1aa76618ce244fbf4560ec541b4a45845d" kindref="member">TextureFilterMode</ref></type>
+        <definition>TextureFilterMode Urho3D::Texture::GetFilterMode</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFilterMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return filtering mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="104" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a9ade85b2e17860bee2652b704fa45a43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1aecfe3379026c9ad8814e04ec7706cc28" kindref="member">TextureAddressMode</ref></type>
+        <definition>TextureAddressMode Urho3D::Texture::GetAddressMode</definition>
+        <argsstring>(TextureCoordinate coord) const</argsstring>
+        <name>GetAddressMode</name>
+        <param>
+          <type><ref refid="GraphicsDefs_8h_1aa85e162b6026e40f9d42d5ea69e98f89" kindref="member">TextureCoordinate</ref></type>
+          <declname>coord</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return addressing mode by texture coordinate. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="108" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ac3d7d92e015f66b7e5812c783f46a215" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetAnisotropy</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAnisotropy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return texture max. anisotropy level. Value 0 means to use the default value from <ref refid="classUrho3D_1_1Renderer" kindref="compound">Renderer</ref>. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="112" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a74109b8a78719905d82ea617eb5042c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::GetShadowCompare</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowCompare</name>
+        <briefdescription>
+<para>Return whether shadow compare is enabled. Not used on Direct3D9. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="115" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ad3c24c286aec7a3abac18c3b61ceac14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref> &amp;</type>
+        <definition>const Color&amp; Urho3D::Texture::GetBorderColor</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBorderColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return border color. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="119" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1af49ebd8d0572e8616402f9c663b6a818" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::GetSRGB</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSRGB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is using sRGB sampling and writing. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="123" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ae21b2e0a3510272473447faeeb27374e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetMultiSample</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMultiSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return texture multisampling level (1 = no multisampling). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="127" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1afac4f70c3ea7c7e681ac36d8472af876" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::GetAutoResolve</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAutoResolve</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return texture multisampling autoresolve mode. When true, the texture is resolved before being sampled on SetTexture(). When false, the texture will not be resolved and must be read as individual samples in the shader. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="131" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1aaa1cf66d36a84b47727608bf9b5e933b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::IsResolveDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsResolveDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether multisampled texture needs resolve. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="135" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ae98f177674dc74a0b124c880eb6a5937" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::GetLevelsDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLevelsDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether rendertarget mipmap levels need regenration. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="139" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1af2af70f933dfe2fc194b0bb15ac39a63" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* Urho3D::Texture::GetBackupTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBackupTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return backup texture. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="143" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a8b39fa2b15397237464ed04c82c30dd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetMipsToSkip</definition>
+        <argsstring>(MaterialQuality quality) const</argsstring>
+        <name>GetMipsToSkip</name>
+        <param>
+          <type>MaterialQuality</type>
+          <declname>quality</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return mip levels to skip on a quality setting when loading. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="147" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ab8097a345104d479b277648ab98a9d20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetLevelWidth</definition>
+        <argsstring>(unsigned level) const</argsstring>
+        <name>GetLevelWidth</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return mip level width, or 0 if level does not exist. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="150" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a846792b1ba7a9cd53aba7d8620b76907" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetLevelHeight</definition>
+        <argsstring>(unsigned level) const</argsstring>
+        <name>GetLevelHeight</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return mip level width, or 0 if level does not exist. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="153" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a8c1e870c80fa76565966955a72164cc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Texture::GetLevelDepth</definition>
+        <argsstring>(unsigned level) const</argsstring>
+        <name>GetLevelDepth</name>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Return mip level depth, or 0 if level does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="155" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1acc7054c27c53d2a730a323f80de6dc92" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="GraphicsDefs_8h_1a0e77915b00b947259d8875587a08c9c4" kindref="member">TextureUsage</ref></type>
+        <definition>TextureUsage Urho3D::Texture::GetUsage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetUsage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return texture usage type. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="159" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a728bf72dad6c6da0ad4c7d6fb394c2de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetDataSize</definition>
+        <argsstring>(int width, int height) const</argsstring>
+        <name>GetDataSize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Return data size in bytes for a rectangular region. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="162" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ae0db91a00cb3f3854ee9cc7bcd1fb31c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetDataSize</definition>
+        <argsstring>(int width, int height, int depth) const</argsstring>
+        <name>GetDataSize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>Return data size in bytes for a volume region. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="164" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1abf684025c32c9a6bc816693313d255eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetRowDataSize</definition>
+        <argsstring>(int width) const</argsstring>
+        <name>GetRowDataSize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Return data size in bytes for a pixel or block row. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="166" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a972db0ffa5bcebb8dc9854cdee58d757" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetComponents</definition>
+        <argsstring>() const</argsstring>
+        <name>GetComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return number of image components required to receive pixel data from GetData(), or 0 for compressed images. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="169" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a815de5066aa280a6680242340fcbc3ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Texture::GetParametersDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>GetParametersDirty</name>
+        <briefdescription>
+<para>Return whether the parameters are dirty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a6e635893e2f569815c31347bb7569797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetParameters</definition>
+        <argsstring>(XMLFile *file)</argsstring>
+        <name>SetParameters</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1XMLFile" kindref="compound">XMLFile</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Set additional parameters from an XML file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="175" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1aee2915774cd960588e9dcdb3e213ff33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetParameters</definition>
+        <argsstring>(const XMLElement &amp;element)</argsstring>
+        <name>SetParameters</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1XMLElement" kindref="compound">XMLElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Set additional parameters from an XML element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="177" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a17dbf60cafed03e5059cd0f66ba3402e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetParametersDirty</definition>
+        <argsstring>()</argsstring>
+        <name>SetParametersDirty</name>
+        <briefdescription>
+<para>Mark parameters dirty. Called by <ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="179" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a7eaf51cf81ac775bdc87e00ec1a47979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::UpdateParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateParameters</name>
+        <briefdescription>
+<para>Update dirty parameters to the texture object. Called by <ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref> when assigning the texture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="181" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ad81e57c43e095e94ecd4e396bc33d9c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::Texture::GetShaderResourceView</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShaderResourceView</name>
+        <briefdescription>
+<para>Return shader resource view. Only used on Direct3D11. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="184" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1aadae57d2b5b96fa11639492fb119df59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::Texture::GetSampler</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSampler</name>
+        <briefdescription>
+<para>Return sampler state object. Only used on Direct3D11. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="187" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1abf21fb21b414bc3c2597580c938aed63" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* Urho3D::Texture::GetResolveTexture</definition>
+        <argsstring>() const</argsstring>
+        <name>GetResolveTexture</name>
+        <briefdescription>
+<para>Return resolve texture. Only used on Direct3D11. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="190" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a7adc2cc26705dc098a0259da525ded0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetTarget</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTarget</name>
+        <briefdescription>
+<para>Return texture&apos;s target. Only used on OpenGL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="193" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1af633d70298690db00993d6c89b2f0a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Texture::GetSRGBFormat</definition>
+        <argsstring>(unsigned format)</argsstring>
+        <name>GetSRGBFormat</name>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert format to sRGB. Not used on Direct3D9. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="197" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a040af2a0a5829e90d431f983c8456857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetResolveDirty</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetResolveDirty</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Set or clear the need resolve flag. Called internally by <ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="200" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1aee3f8df0378acfb9c34504ddeec5c45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::SetLevelsDirty</definition>
+        <argsstring>()</argsstring>
+        <name>SetLevelsDirty</name>
+        <briefdescription>
+<para>Set the mipmap levels dirty flag. Called internally by <ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="203" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a8672316692e6b78cb6482cbcecfe409c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::RegenerateLevels</definition>
+        <argsstring>()</argsstring>
+        <name>RegenerateLevels</name>
+        <briefdescription>
+<para>Regenerate mipmap levels for a rendertarget after rendering and before sampling. Called internally by <ref refid="classUrho3D_1_1Graphics" kindref="compound">Graphics</ref>. No-op on Direct3D9. On OpenGL the texture must have been bound to work properly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="205" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a717c9adb9a3b113d178e987803bd85e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Texture::CheckMaxLevels</definition>
+        <argsstring>(int width, int height, unsigned requestedLevels)</argsstring>
+        <name>CheckMaxLevels</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>requestedLevels</declname>
+        </param>
+        <briefdescription>
+<para>Check maximum allowed mip levels for a specific texture size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="208" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a8ec29e13e74de94b7cc6e45bdf2855c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Texture::CheckMaxLevels</definition>
+        <argsstring>(int width, int height, int depth, unsigned requestedLevels)</argsstring>
+        <name>CheckMaxLevels</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>requestedLevels</declname>
+        </param>
+        <briefdescription>
+<para>Check maximum allowed mip levels for a specific 3D texture size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="210" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a5b1ef0521574f28abd1ac02d9aaaaea6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Texture::GetSRVFormat</definition>
+        <argsstring>(unsigned format)</argsstring>
+        <name>GetSRVFormat</name>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the shader resource view format corresponding to a texture format. Handles conversion of typeless depth texture formats. Only used on Direct3D11. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="213" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a50d66632c6d07e33f4523f3c2c327379" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Texture::GetDSVFormat</definition>
+        <argsstring>(unsigned format)</argsstring>
+        <name>GetDSVFormat</name>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the depth-stencil view format corresponding to a texture format. Handles conversion of typeless depth texture formats. Only used on Direct3D11. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="216" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1af0e20bcc9f60981bc9bb8ba7907d0184" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Texture::GetExternalFormat</definition>
+        <argsstring>(unsigned format)</argsstring>
+        <name>GetExternalFormat</name>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the non-internal texture format corresponding to an OpenGL internal format. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="219" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1ac7d83c8c3c0c10dc0a5d797a37cc3e0d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Texture::GetDataType</definition>
+        <argsstring>(unsigned format)</argsstring>
+        <name>GetDataType</name>
+        <param>
+          <type>unsigned</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the data type corresponding to an OpenGL internal format. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="222" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a0af2da2738e6f62ee40ae331a5891a03" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Texture::CheckTextureBudget</definition>
+        <argsstring>(StringHash type)</argsstring>
+        <name>CheckTextureBudget</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Check whether texture memory budget has been exceeded. Free unused materials in that case to release the texture references. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="226" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Texture_1a6170a28038f75a44b5647be5b9e23fdd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Urho3D::Texture::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <reimplementedby refid="classUrho3D_1_1Texture2D_1af44c92053b2781a67a0330a4f72927c8">Create</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Texture2DArray_1ae360c80c79d2ffd136e4440774a07e43">Create</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Texture3D_1a083e117048ce7fc26e8a2b0c2c24b94b">Create</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TextureCube_1a4c60b67e36c4dabddf662b303be19f50">Create</reimplementedby>
+        <briefdescription>
+<para>Create the GPU texture. Implemented in subclasses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="228" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="228" bodyend="228"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for texture resources. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>Urho3D::TextureCube</label>
+        <link refid="classUrho3D_1_1TextureCube"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+      </node>
+      <node id="7">
+        <label>Urho3D::Texture2D</label>
+        <link refid="classUrho3D_1_1Texture2D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::Texture3D</label>
+        <link refid="classUrho3D_1_1Texture3D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::Texture2DArray</label>
+        <link refid="classUrho3D_1_1Texture2DArray"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Texture</label>
+        <link refid="classUrho3D_1_1Texture"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="7">
+        <label>Urho3D::GPUObject</label>
+        <link refid="classUrho3D_1_1GPUObject"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>graphics_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>object_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::ResourceWithMetadata</label>
+        <link refid="classUrho3D_1_1ResourceWithMetadata"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::GPUObjectHandle</label>
+        <link refid="unionUrho3D_1_1GPUObjectHandle"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Graphics &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="1">
+        <label>Urho3D::Texture</label>
+        <link refid="classUrho3D_1_1Texture"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>backupTexture_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>borderColor_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Resource</label>
+        <link refid="classUrho3D_1_1Resource"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" line="39" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Texture.h" bodystart="40" bodyend="280"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1ae42b734952a34d298976e8c5375d9bcf" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>AddMetadata</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Texture_1a897fb3bd9c9a093e254aab4b998ff990" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>addressModes_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7b1fdfa83d233a5dfc341f1374ab077b" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>anisotropy_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a37bd463eb784b6331f1b4b40ee04683a" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>autoResolve_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a871713edc0c732ee10aabe80d687a200" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>backupTexture_</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5cc2ccc13f41ce60bc305fa0ffb004fc" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>BeginLoad</name></member>
+      <member refid="classUrho3D_1_1Texture_1a1dface5e729d3a3675cf293aa0ac9081" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>borderColor_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Texture_1a717c9adb9a3b113d178e987803bd85e0" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>CheckMaxLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8ec29e13e74de94b7cc6e45bdf2855c3" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>CheckMaxLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1a0af2da2738e6f62ee40ae331a5891a03" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>CheckTextureBudget</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a90de5fa07e164d6b5e95f832a0741088" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>ClearDataLost</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1af27b1f8c432ed13835bde9130774cb5f" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>CopyMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture_1a6170a28038f75a44b5647be5b9e23fdd" prot="protected" virt="virtual"><scope>Urho3D::Texture</scope><name>Create</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ab6c82e62ca8b1098c4157acfe517c772" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>dataLost_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ada5a50cf10c6f65deb6b273bfc1649ab" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>dataPending_</name></member>
+      <member refid="classUrho3D_1_1Texture_1ac11c0fe852ea3d3a53d7794a2b2741b5" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>depth_</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8d157ce2d3aec9f22d96f8477149456d" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>EndLoad</name></member>
+      <member refid="classUrho3D_1_1Texture_1a574de3790ced1280358853990e551836" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>filterMode_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8e5038cf13bb1547cd7f90bec95d03a9" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>format_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a9ade85b2e17860bee2652b704fa45a43" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetAddressMode</name></member>
+      <member refid="classUrho3D_1_1Texture_1ac3d7d92e015f66b7e5812c783f46a215" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetAnisotropy</name></member>
+      <member refid="classUrho3D_1_1Resource_1a35f0e2447dcc25e8f3b9e42e10b69737" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Texture_1afac4f70c3ea7c7e681ac36d8472af876" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetAutoResolve</name></member>
+      <member refid="classUrho3D_1_1Texture_1af2af70f933dfe2fc194b0bb15ac39a63" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetBackupTexture</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Texture_1ad3c24c286aec7a3abac18c3b61ceac14" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetBorderColor</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Texture_1a972db0ffa5bcebb8dc9854cdee58d757" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Texture_1a728bf72dad6c6da0ad4c7d6fb394c2de" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetDataSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae0db91a00cb3f3854ee9cc7bcd1fb31c" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetDataSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1ac7d83c8c3c0c10dc0a5d797a37cc3e0d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetDataType</name></member>
+      <member refid="classUrho3D_1_1Texture_1aca630725968904986b7d57929a6923cb" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetDepth</name></member>
+      <member refid="classUrho3D_1_1Texture_1a50d66632c6d07e33f4523f3c2c327379" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetDSVFormat</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Texture_1af0e20bcc9f60981bc9bb8ba7907d0184" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetExternalFormat</name></member>
+      <member refid="classUrho3D_1_1Texture_1a9c2dc332dfe84f596a54a5e17de7e474" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetFilterMode</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab47f6f48fa537e42dea9e21bc3a350cc" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetFormat</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a63ba593256e723f7f15a62fca79fe10d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetGPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1afeb0a749cfb6c1bb4c7f1b4a35d7f901" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetGPUObjectName</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a77fa1abcd0a6b3a7cce431c10b2f7c26" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetGraphics</name></member>
+      <member refid="classUrho3D_1_1Texture_1af496abc83a030e5dc9c8d46c7111fa1c" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetHeight</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8c1e870c80fa76565966955a72164cc4" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetLevelDepth</name></member>
+      <member refid="classUrho3D_1_1Texture_1a846792b1ba7a9cd53aba7d8620b76907" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetLevelHeight</name></member>
+      <member refid="classUrho3D_1_1Texture_1a110c3016b3544d78af393a83b45fb44f" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae98f177674dc74a0b124c880eb6a5937" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetLevelsDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab8097a345104d479b277648ab98a9d20" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetLevelWidth</name></member>
+      <member refid="classUrho3D_1_1Resource_1a5e14c5f01c2fc33fa20bef5094a7ea42" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a4409f6edd5c2e7994bd8cff78b9add28" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8b39fa2b15397237464ed04c82c30dd0" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetMipsToSkip</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae21b2e0a3510272473447faeeb27374e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetMultiSample</name></member>
+      <member refid="classUrho3D_1_1Resource_1a68469beaaa895a361a072023b26f7f42" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Resource_1af5039b400460fc6dde2f3d5c121a4bb9" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetNameHash</name></member>
+      <member refid="classUrho3D_1_1Texture_1a815de5066aa280a6680242340fcbc3ac" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetParametersDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1abf21fb21b414bc3c2597580c938aed63" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetResolveTexture</name></member>
+      <member refid="classUrho3D_1_1Texture_1abf684025c32c9a6bc816693313d255eb" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetRowDataSize</name></member>
+      <member refid="classUrho3D_1_1Texture_1aadae57d2b5b96fa11639492fb119df59" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetSampler</name></member>
+      <member refid="classUrho3D_1_1Texture_1ad81e57c43e095e94ecd4e396bc33d9c4" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetShaderResourceView</name></member>
+      <member refid="classUrho3D_1_1Texture_1a74109b8a78719905d82ea617eb5042c1" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetShadowCompare</name></member>
+      <member refid="classUrho3D_1_1Texture_1af49ebd8d0572e8616402f9c663b6a818" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetSRGB</name></member>
+      <member refid="classUrho3D_1_1Texture_1af633d70298690db00993d6c89b2f0a50" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetSRGBFormat</name></member>
+      <member refid="classUrho3D_1_1Texture_1a5b1ef0521574f28abd1ac02d9aaaaea6" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetSRVFormat</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7adc2cc26705dc098a0259da525ded0a" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetTarget</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Texture</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Texture</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Texture</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Texture_1acc7054c27c53d2a730a323f80de6dc92" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetUsage</name></member>
+      <member refid="classUrho3D_1_1Resource_1aed1aba24e73165ad25f7c0c4709b57f9" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8e0474cd05b4b1de9caabdc670243141" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GetWidth</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a403872d965887004f1021405870ff865" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>GPUObject</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1abf1a902885d2c3bac02f3f58e0e0f037" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>graphics_</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a1629581f5187eef675e9a812b23c511d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>HasMetadata</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a7039fc3a187fd67855a802c00099452b" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>HasPendingData</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Texture_1af5331737f6ddfd1eb9f30073c096f3cd" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>height_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a49289626d40733f33cb84e044cca1eab" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>IsCompressed</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a6938a78e8bb131f8c53e136778c9f6c2" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>IsDataLost</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Texture_1aaa1cf66d36a84b47727608bf9b5e933b" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>IsResolveDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8aee7d3610fa842218e33e62025ec3d7" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>levels_</name></member>
+      <member refid="classUrho3D_1_1Texture_1aea03ebb6a4fdaa4944901093150514a1" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>levelsDirty_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ab0f4146b46be0c02323e3211e8a6aadf" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Resource_1a1df6a3a4fb06cf46319ec2aaf23fb93b" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>LoadFile</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a85948141c17b39bddd26a2c63acbcc39" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>LoadMetadataFromJSON</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a16dc2ff1d1182913cefeaba7273a571c" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>LoadMetadataFromXML</name></member>
+      <member refid="classUrho3D_1_1Texture_1a99956895d6024022cbf278232539ba34" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>mipsToSkip_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a115852631c203bb755bf75891b39e306" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>multiSample_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a02851f652df5053623c4434f2cd9a4b8" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>object_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad5ecd882dd04590d38951f897d1f6575" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>OnDeviceLost</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a18ab28f33620594506eeb2c5fe168106" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>OnDeviceReset</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab7d69fc0ad6ff73c51c1f8f9d8f5010e" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>parametersDirty_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Texture_1a8672316692e6b78cb6482cbcecfe409c" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>RegenerateLevels</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1a86d97d51d21841b9c057baee19a17a30" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>Release</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a4a1ea688bdfe2518a11336d0753b5ed2" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>RemoveAllMetadata</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1ad23658b7b267b2d1ec06d16a13d4a2e7" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>RemoveMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture_1a1fa714405ad85a5e525343459f047415" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>requestedLevels_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ad851573ccc5bb7ea1508da7cc0d58ce9" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>ResetUseTimer</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab3cfe0ad762b0c88a79cf9e6e423b127" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>resolveDirty_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a2a2a3937fd6a2791f05c96ecdc857037" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>resolveTexture_</name></member>
+      <member refid="classUrho3D_1_1Resource_1ae3e1545370dec17a283705989a1cc682" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Resource</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1acc98571a81271b68210f4f14414e0774" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>ResourceWithMetadata</name></member>
+      <member refid="classUrho3D_1_1Texture_1a269881c2b603b6df2f1659770fd19746" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>sampler_</name></member>
+      <member refid="classUrho3D_1_1Resource_1a8697b865a289772878572e251072fffd" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Resource_1afdf78bd1631a1c67fccf4df3a8876aab" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>SaveFile</name></member>
+      <member refid="classUrho3D_1_1ResourceWithMetadata_1a5d03bdec155fe2a32f1931ba40b2dbd6" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SaveMetadataToXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Texture_1a378338759a87ffe1b474dc42b526d46e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetAddressMode</name></member>
+      <member refid="classUrho3D_1_1Texture_1aa3faee8d80841137e19e372f7b20b28d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetAnisotropy</name></member>
+      <member refid="classUrho3D_1_1Resource_1af525961d5ee1dcfdd8e67c8bba6c03d0" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetAsyncLoadState</name></member>
+      <member refid="classUrho3D_1_1Texture_1a87c105c5a06832559384dc9862eb345b" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetBackupTexture</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Texture_1a116e565c29f87e920fa4591defe8afb8" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetBorderColor</name></member>
+      <member refid="classUrho3D_1_1Texture_1a687d8ebe38f3eb27e393d9af8ae93a81" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetFilterMode</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Texture_1aee3f8df0378acfb9c34504ddeec5c45d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetLevelsDirty</name></member>
+      <member refid="classUrho3D_1_1Resource_1a965ad58111e131f7725edec44358c75e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetMemoryUse</name></member>
+      <member refid="classUrho3D_1_1Texture_1a6dda0b2dfddd0b3fd2b1a1dec3402fa2" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetMipsToSkip</name></member>
+      <member refid="classUrho3D_1_1Resource_1a82b7b9d5ff3beebd961ad2ae5fe0f382" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetName</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7f041595c6630ece64e123cb84fa5465" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetNumLevels</name></member>
+      <member refid="classUrho3D_1_1Texture_1a6e635893e2f569815c31347bb7569797" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetParameters</name></member>
+      <member refid="classUrho3D_1_1Texture_1aee2915774cd960588e9dcdb3e213ff33" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetParameters</name></member>
+      <member refid="classUrho3D_1_1Texture_1a17dbf60cafed03e5059cd0f66ba3402e" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetParametersDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1a040af2a0a5829e90d431f983c8456857" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetResolveDirty</name></member>
+      <member refid="classUrho3D_1_1Texture_1a2bbb724ddd75d109c4be4adeb550db64" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetShadowCompare</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab2e45621a5ece2031d8b33362a29b4a2" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SetSRGB</name></member>
+      <member refid="classUrho3D_1_1Texture_1a1823435666f4aa8dd9b2053f16b22a68" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>shaderResourceView_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a2b09e174b858f7dc11153ee697fc41d8" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>shadowCompare_</name></member>
+      <member refid="classUrho3D_1_1Texture_1afa57a898c795690bb30735deae0e102b" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>sRGB_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Texture_1ab8824f28b0c81bf28a539f6e2569618b" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>target_</name></member>
+      <member refid="classUrho3D_1_1Texture_1a54625f883eb353b6c57b5da7b7d8eb86" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>Texture</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Texture_1a7eaf51cf81ac775bdc87e00ec1a47979" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>UpdateParameters</name></member>
+      <member refid="classUrho3D_1_1Texture_1a9500da3ce4e026fd2d3b70dfa8f5a45a" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>usage_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Texture_1a4f375b82fa235c25b90aa20fc684213d" prot="protected" virt="non-virtual"><scope>Urho3D::Texture</scope><name>width_</name></member>
+      <member refid="classUrho3D_1_1GPUObject_1ad23b82c85519c520437707ddd4b8097f" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>~GPUObject</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Texture</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Texture_1ae75d8ed56606f3c70c4c03ac7a6c8775" prot="public" virt="non-virtual"><scope>Urho3D::Texture</scope><name>~Texture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="SpriterInstance2D_8h" kind="file" language="C++">
+    <compoundname>SpriterInstance2D.h</compoundname>
+    <includes refid="SpriterData2D_8h" local="yes">../Urho2D/SpriterData2D.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>../Urho2D/SpriterData2D.h</label>
+        <link refid="SpriterData2D_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../Base/Iter.h</label>
+        <link refid="Iter_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../Urho3DConfig.h</label>
+        <link refid="Urho3DConfig_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../Container/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>../Container/VectorBase.h</label>
+        <link refid="VectorBase_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cassert</label>
+      </node>
+      <node id="17">
+        <label>cstdarg</label>
+      </node>
+      <node id="6">
+        <label>Urho3D/Urho3D.h</label>
+      </node>
+      <node id="14">
+        <label>new</label>
+      </node>
+      <node id="15">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>../Container/Str.h</label>
+        <link refid="Str_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cctype</label>
+      </node>
+      <node id="1">
+        <label>/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/SpriterInstance2D.h</label>
+        <link refid="SpriterInstance2D_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>algorithm</label>
+      </node>
+      <node id="9">
+        <label>../Container/Swap.h</label>
+        <link refid="Swap_8h_source"/>
+      </node>
+      <node id="11">
+        <label>cstring</label>
+      </node>
+      <node id="13">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classUrho3D_1_1Spriter_1_1SpriterInstance" prot="public">Urho3D::Spriter::SpriterInstance</innerclass>
+    <innernamespace refid="namespaceUrho3D">Urho3D</innernamespace>
+    <innernamespace refid="namespaceUrho3D_1_1Spriter">Urho3D::Spriter</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2008-2022<sp/>the<sp/>Urho3D<sp/>project.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Urho2D/SpriterData2D.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Urho3D</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Component;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Spriter</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="SpriterInstance2D_8h_1a48ce4d4df3546a39f1b27354a5947153" refkind="member"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="SpriterInstance2D_8h_1a48ce4d4df3546a39f1b27354a5947153" kindref="member">LoopMode</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>Default<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>ForceLooped,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ForceClamped,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classUrho3D_1_1Spriter_1_1SpriterInstance" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance" kindref="compound">SpriterInstance</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1aa6994341abd826fe3ae69dedf1e902f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1aa6994341abd826fe3ae69dedf1e902f9" kindref="member">SpriterInstance</ref>(<ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/>owner,<sp/><ref refid="structUrho3D_1_1Spriter_1_1SpriterData" kindref="compound">SpriterData</ref>*<sp/>spriteData);</highlight></codeline>
+<codeline lineno="52" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a4a681f21b36785259a9bc4bf149c01a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a4a681f21b36785259a9bc4bf149c01a6" kindref="member">~SpriterInstance</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a10998905655aee23bc29b1128f3ef358" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a10998905655aee23bc29b1128f3ef358" kindref="member">SetEntity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="57" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a8928b95c99004887830a288f38b316a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a8928b95c99004887830a288f38b316a2" kindref="member">SetEntity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>entityName);</highlight></codeline>
+<codeline lineno="59" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a4c63ec22606c7a65defd434710da2ecb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a4c63ec22606c7a65defd434710da2ecb" kindref="member">SetAnimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/><ref refid="SpriterInstance2D_8h_1a48ce4d4df3546a39f1b27354a5947153" kindref="member">LoopMode</ref><sp/>loopMode<sp/>=<sp/>Default);</highlight></codeline>
+<codeline lineno="61" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1af4565f2dde9263e3b6e8c98f4552d1eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1af4565f2dde9263e3b6e8c98f4552d1eb" kindref="member">SetAnimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1String" kindref="compound">String</ref>&amp;<sp/>animationName,<sp/><ref refid="SpriterInstance2D_8h_1a48ce4d4df3546a39f1b27354a5947153" kindref="member">LoopMode</ref><sp/>loopMode<sp/>=<sp/>Default);</highlight></codeline>
+<codeline lineno="63" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1ac91620c5a51d7ce952fdb1b95383bb1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1ac91620c5a51d7ce952fdb1b95383bb1e" kindref="member">setSpatialInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1Spriter_1_1SpatialInfo" kindref="compound">SpatialInfo</ref>&amp;<sp/>spatialInfo);</highlight></codeline>
+<codeline lineno="65" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a9f788ca31b30e6f37449cb756c6c16f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a9f788ca31b30e6f37449cb756c6c16f4" kindref="member">setSpatialInfo</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY);</highlight></codeline>
+<codeline lineno="67" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1ac00cbcaad54f0d0f63b85ea56b4578f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1ac00cbcaad54f0d0f63b85ea56b4578f3" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaTime);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1acd1993a7ee3ede7af5fd1cc4bdc8dcc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1Spriter_1_1Entity" kindref="compound">Entity</ref>*<sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1acd1993a7ee3ede7af5fd1cc4bdc8dcc8" kindref="member">GetEntity</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>entity_;<sp/>}</highlight></codeline>
+<codeline lineno="72" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a0a8bb871f76b461359f0284cebac160f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1Spriter_1_1Animation" kindref="compound">Animation</ref>*<sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a0a8bb871f76b461359f0284cebac160f" kindref="member">GetAnimation</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>animation_;<sp/>}</highlight></codeline>
+<codeline lineno="74" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1ae938a4cdc0517952080113b85a2b192d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structUrho3D_1_1Spriter_1_1SpatialInfo" kindref="compound">SpatialInfo</ref>&amp;<sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1ae938a4cdc0517952080113b85a2b192d" kindref="member">GetSpatialInfo</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>spatialInfo_;<sp/>}</highlight></codeline>
+<codeline lineno="76" refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a561f9cd9926c9fb7fcbc78f7c0d2b00d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector&lt;SpatialTimelineKey*&gt;</ref>&amp;<sp/><ref refid="classUrho3D_1_1Spriter_1_1SpriterInstance_1a561f9cd9926c9fb7fcbc78f7c0d2b00d" kindref="member">GetTimelineKeys</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timelineKeys_;<sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSetEntity(<ref refid="structUrho3D_1_1Spriter_1_1Entity" kindref="compound">Entity</ref>*<sp/>entity);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSetAnimation(<ref refid="structUrho3D_1_1Spriter_1_1Animation" kindref="compound">Animation</ref>*<sp/>animation,<sp/><ref refid="SpriterInstance2D_8h_1a48ce4d4df3546a39f1b27354a5947153" kindref="member">LoopMode</ref><sp/>loopMode<sp/>=<sp/>Default);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateMainlineKey();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateTimelineKeys();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structUrho3D_1_1Spriter_1_1TimelineKey" kindref="compound">TimelineKey</ref>*<sp/>GetTimelineKey(<ref refid="structUrho3D_1_1Spriter_1_1Ref" kindref="compound">Ref</ref>*<sp/>ref)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clear();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUrho3D_1_1Component" kindref="compound">Component</ref>*<sp/>owner_{};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>SpriterData*<sp/>spriterData_{};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>Entity*<sp/>entity_{};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>Animation*<sp/>animation_{};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>looping_{};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>SpatialInfo<sp/>spatialInfo_;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>currentTime_{};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>MainlineKey*<sp/>mainlineKey_{};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>PODVector&lt;SpatialTimelineKey*&gt;<sp/>timelineKeys_;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Urho2D/SpriterInstance2D.h"/>
+  </compounddef>
+</doxygen>

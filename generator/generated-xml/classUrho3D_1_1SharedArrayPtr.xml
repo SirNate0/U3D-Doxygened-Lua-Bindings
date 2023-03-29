@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1SharedArrayPtr" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::SharedArrayPtr</compoundname>
+    <includes refid="ArrayPtr_8h" local="no">ArrayPtr.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1SharedArrayPtr_1a1dd4caed5d1020189e5d82127b636445" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Urho3D::SharedArrayPtr&lt; T &gt;::ptr_</definition>
+        <argsstring></argsstring>
+        <name>ptr_</name>
+        <briefdescription>
+<para>Pointer to the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="209" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1SharedArrayPtr_1ac0c534c4d7441605bb09a9443e2eb4b1" prot="private" static="no" mutable="no">
+        <type><ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> *</type>
+        <definition>RefCount* Urho3D::SharedArrayPtr&lt; T &gt;::refCount_</definition>
+        <argsstring></argsstring>
+        <name>refCount_</name>
+        <briefdescription>
+<para>Pointer to the <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="211" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1af379f90820dd8623f4cc226db340c1da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::SharedArrayPtr&lt; T &gt;::SharedArrayPtr</definition>
+        <argsstring>()</argsstring>
+        <name>SharedArrayPtr</name>
+        <briefdescription>
+<para>Construct a null shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="38" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a626adaa6b6f464e91d08f7a5414f7472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::SharedArrayPtr&lt; T &gt;::SharedArrayPtr</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>SharedArrayPtr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="45" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a63dd03a4c0a8133b56092312c82a3a74" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::SharedArrayPtr&lt; T &gt;::SharedArrayPtr</definition>
+        <argsstring>(T *ptr)</argsstring>
+        <name>SharedArrayPtr</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="53" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1ad1fa764bae644de95c531d044fc16656" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::SharedArrayPtr&lt; T &gt;::~SharedArrayPtr</definition>
+        <argsstring>()</argsstring>
+        <name>~SharedArrayPtr</name>
+        <briefdescription>
+<para>Destruct. Release the array reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="61" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a62cf398916abfd4e5573e28026e69a93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>SharedArrayPtr&lt;T&gt;&amp; Urho3D::SharedArrayPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from another shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="67" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="67" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a5b8876f20ff4db054a1d21b4901afc1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>SharedArrayPtr&lt;T&gt;&amp; Urho3D::SharedArrayPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(T *ptr)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Assign from a raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="81" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="81" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a0b187a8fd0a58a233c96a77a58e5f1a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::SharedArrayPtr&lt; T &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>Point to the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="99" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1adf298baa0f536f1719b7c55c39686bd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::SharedArrayPtr&lt; T &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Dereference the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="106" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a900a0b656d416595ae1bbdd8c353d665" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::SharedArrayPtr&lt; T &gt;::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Subscript the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="113" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1abe99464cbfa16f9291ccaeb71d132b7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::SharedArrayPtr&lt; T &gt;::operator==</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for equality with another shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="120" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1ab521de79db9124252e95074a33061031" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::SharedArrayPtr&lt; T &gt;::operator!=</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for inequality with another shared array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="123" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1af54d6ab7689ab29995ebdca693ce1f4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::SharedArrayPtr&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(const SharedArrayPtr&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Test for less than with another array pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="126" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a713b45531284e80cb33e64540c43460f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::SharedArrayPtr&lt; T &gt;::operator T*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator T*</name>
+        <briefdescription>
+<para>Convert to a raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="129" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a5f621b62e29d89c1d29f1c2089932bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::SharedArrayPtr&lt; T &gt;::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Reset to null and release the array reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="132" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a6708b399d4c04bfd4af9e5da22e34063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::SharedArrayPtr&lt; T &gt;::StaticCast</definition>
+        <argsstring>(const SharedArrayPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>StaticCast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Perform a static cast from a shared array pointer of another type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="135" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="135" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a742960ef52d357e09f82080d9d29909d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Urho3D::SharedArrayPtr&lt; T &gt;::ReinterpretCast</definition>
+        <argsstring>(const SharedArrayPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>ReinterpretCast</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Perform a reinterpret cast from a shared array pointer of another type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="144" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="144" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a7b400e3dd97b7fbe4c5050ca5891e4c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::SharedArrayPtr&lt; T &gt;::Null</definition>
+        <argsstring>() const</argsstring>
+        <name>Null</name>
+        <briefdescription>
+<para>Check if the pointer is null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="153" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1acf2050643eba5cbbde9ed793301e4886" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::SharedArrayPtr&lt; T &gt;::NotNull</definition>
+        <argsstring>() const</argsstring>
+        <name>NotNull</name>
+        <briefdescription>
+<para>Check if the pointer is not null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="156" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a3140ad32d60cbe06ccfbcbe3c52bd5c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::SharedArrayPtr&lt; T &gt;::Get</definition>
+        <argsstring>() const</argsstring>
+        <name>Get</name>
+        <briefdescription>
+<para>Return the raw pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="159" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a64b2b9339052d94125a95a1f448d8c5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::SharedArrayPtr&lt; T &gt;::Refs</definition>
+        <argsstring>() const</argsstring>
+        <name>Refs</name>
+        <briefdescription>
+<para>Return the array&apos;s reference count, or 0 if the pointer is null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="162" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="162" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1ad76691b61f959e314014231ca50dfd07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::SharedArrayPtr&lt; T &gt;::WeakRefs</definition>
+        <argsstring>() const</argsstring>
+        <name>WeakRefs</name>
+        <briefdescription>
+<para>Return the array&apos;s weak reference count, or 0 if the pointer is null. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="165" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a78baeb302eab8681b15daf1618338d74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> *</type>
+        <definition>RefCount* Urho3D::SharedArrayPtr&lt; T &gt;::RefCountPtr</definition>
+        <argsstring>() const</argsstring>
+        <name>RefCountPtr</name>
+        <briefdescription>
+<para>Return pointer to the <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="168" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a1f9aae9b14bdd2dae45e693c0ad3eb7c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::SharedArrayPtr&lt; T &gt;::ToHash</definition>
+        <argsstring>() const</argsstring>
+        <name>ToHash</name>
+        <briefdescription>
+<para>Return hash value for <ref refid="classUrho3D_1_1HashSet" kindref="compound">HashSet</ref> &amp; <ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="171" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a43bb1940e6db8c65b18fc42e5b1d5a42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; T &gt; &amp;</type>
+        <definition>SharedArrayPtr&lt;T&gt;&amp; Urho3D::SharedArrayPtr&lt; T &gt;::operator=</definition>
+        <argsstring>(const SharedArrayPtr&lt; U &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1SharedArrayPtr" kindref="compound">SharedArrayPtr</ref>&lt; U &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Prevent direct assignment from a shared array pointer of different type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="175" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a46f8fc1b5839121fc043ec235d57b469" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::SharedArrayPtr&lt; T &gt;::AddRef</definition>
+        <argsstring>()</argsstring>
+        <name>AddRef</name>
+        <briefdescription>
+<para>Add a reference to the array pointed to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="178" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="178" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1SharedArrayPtr_1a4fe651dd5116bb958bd304858c5f3a35" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::SharedArrayPtr&lt; T &gt;::ReleaseRef</definition>
+        <argsstring>()</argsstring>
+        <name>ReleaseRef</name>
+        <briefdescription>
+<para>Release the array reference and delete it and the <ref refid="structUrho3D_1_1RefCount" kindref="compound">RefCount</ref> structure if necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="188" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="188" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Shared array pointer template class. Uses non-intrusive reference counting. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" line="34" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/ArrayPtr.h" bodystart="35" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a46f8fc1b5839121fc043ec235d57b469" prot="private" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a3140ad32d60cbe06ccfbcbe3c52bd5c7" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>Get</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1acf2050643eba5cbbde9ed793301e4886" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>NotNull</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a7b400e3dd97b7fbe4c5050ca5891e4c5" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>Null</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a713b45531284e80cb33e64540c43460f" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator T*</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1ab521de79db9124252e95074a33061031" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator!=</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1adf298baa0f536f1719b7c55c39686bd9" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator*</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a0b187a8fd0a58a233c96a77a58e5f1a5" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator-&gt;</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1af54d6ab7689ab29995ebdca693ce1f4f" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator&lt;</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a62cf398916abfd4e5573e28026e69a93" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a5b8876f20ff4db054a1d21b4901afc1d" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a43bb1940e6db8c65b18fc42e5b1d5a42" prot="private" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1abe99464cbfa16f9291ccaeb71d132b7a" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator==</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a900a0b656d416595ae1bbdd8c353d665" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a1dd4caed5d1020189e5d82127b636445" prot="private" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>ptr_</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1ac0c534c4d7441605bb09a9443e2eb4b1" prot="private" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>refCount_</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a78baeb302eab8681b15daf1618338d74" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a64b2b9339052d94125a95a1f448d8c5e" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a742960ef52d357e09f82080d9d29909d" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>ReinterpretCast</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a4fe651dd5116bb958bd304858c5f3a35" prot="private" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a5f621b62e29d89c1d29f1c2089932bd5" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>Reset</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1af379f90820dd8623f4cc226db340c1da" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>SharedArrayPtr</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a626adaa6b6f464e91d08f7a5414f7472" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>SharedArrayPtr</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a63dd03a4c0a8133b56092312c82a3a74" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>SharedArrayPtr</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a6708b399d4c04bfd4af9e5da22e34063" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>StaticCast</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1a1f9aae9b14bdd2dae45e693c0ad3eb7c" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>ToHash</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1ad76691b61f959e314014231ca50dfd07" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1SharedArrayPtr_1ad1fa764bae644de95c531d044fc16656" prot="public" virt="non-virtual"><scope>Urho3D::SharedArrayPtr</scope><name>~SharedArrayPtr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

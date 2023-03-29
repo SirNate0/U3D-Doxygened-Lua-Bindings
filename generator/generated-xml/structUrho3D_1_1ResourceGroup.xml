@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1ResourceGroup" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::ResourceGroup</compoundname>
+    <includes refid="ResourceCache_8h" local="no">ResourceCache.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1ResourceGroup_1afbec02d8dae6a6d4162ebd90a24ac029" prot="public" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ResourceGroup::memoryBudget_</definition>
+        <argsstring></argsstring>
+        <name>memoryBudget_</name>
+        <briefdescription>
+<para>Memory budget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="54" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1ResourceGroup_1a846abbbbc24dfe3f1f7aa91c34828ef9" prot="public" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::ResourceGroup::memoryUse_</definition>
+        <argsstring></argsstring>
+        <name>memoryUse_</name>
+        <briefdescription>
+<para>Current memory use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="56" column="24" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1ResourceGroup_1acca60209d1f76e636f5c3c80cd3b0770" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> &gt; &gt;</type>
+        <definition>HashMap&lt;StringHash, SharedPtr&lt;Resource&gt; &gt; Urho3D::ResourceGroup::resources_</definition>
+        <argsstring></argsstring>
+        <name>resources_</name>
+        <briefdescription>
+<para>Resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="58" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structUrho3D_1_1ResourceGroup_1a855efc5f4ba1e35551d6b4fc520757e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::ResourceGroup::ResourceGroup</definition>
+        <argsstring>()</argsstring>
+        <name>ResourceGroup</name>
+        <briefdescription>
+<para>Construct with defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="47" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container of resources with specific type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::ResourceGroup</label>
+        <link refid="structUrho3D_1_1ResourceGroup"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>resources_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::HashMap&lt; Urho3D::StringHash, Urho3D::SharedPtr&lt; Urho3D::Resource &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" line="44" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/ResourceCache.h" bodystart="45" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structUrho3D_1_1ResourceGroup_1afbec02d8dae6a6d4162ebd90a24ac029" prot="public" virt="non-virtual"><scope>Urho3D::ResourceGroup</scope><name>memoryBudget_</name></member>
+      <member refid="structUrho3D_1_1ResourceGroup_1a846abbbbc24dfe3f1f7aa91c34828ef9" prot="public" virt="non-virtual"><scope>Urho3D::ResourceGroup</scope><name>memoryUse_</name></member>
+      <member refid="structUrho3D_1_1ResourceGroup_1a855efc5f4ba1e35551d6b4fc520757e1" prot="public" virt="non-virtual"><scope>Urho3D::ResourceGroup</scope><name>ResourceGroup</name></member>
+      <member refid="structUrho3D_1_1ResourceGroup_1acca60209d1f76e636f5c3c80cd3b0770" prot="public" virt="non-virtual"><scope>Urho3D::ResourceGroup</scope><name>resources_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

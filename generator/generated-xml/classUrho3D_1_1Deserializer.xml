@@ -1,0 +1,915 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Deserializer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Urho3D::Deserializer</compoundname>
+    <derivedcompoundref refid="classUrho3D_1_1AbstractFile" prot="public" virt="non-virtual">Urho3D::AbstractFile</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1HttpRequest" prot="public" virt="non-virtual">Urho3D::HttpRequest</derivedcompoundref>
+    <includes refid="Deserializer_8h" local="no">Deserializer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Deserializer_1ae3abef03d5bd18c80c70c4bc907f7951" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::position_</definition>
+        <argsstring></argsstring>
+        <name>position_</name>
+        <briefdescription>
+<para>Stream position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="153" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Deserializer_1a9d781873581e4227b44778d4d157405b" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+<para>Stream size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="155" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a3d2945f96e7a91278d7347c842ddf475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Deserializer::Deserializer</definition>
+        <argsstring>()</argsstring>
+        <name>Deserializer</name>
+        <briefdescription>
+<para>Construct with zero size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="38" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a997993e65958f9c3a4c436b29cfa295a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Deserializer::Deserializer</definition>
+        <argsstring>(unsigned size)</argsstring>
+        <name>Deserializer</name>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct with defined size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a873f01aa820848f5b4d652af6b4df1c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Urho3D::Deserializer::~Deserializer</definition>
+        <argsstring>()</argsstring>
+        <name>~Deserializer</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="42" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1ae82036f72896194adc1cd02f3b03509b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned</type>
+        <definition>virtual unsigned Urho3D::Deserializer::Read</definition>
+        <argsstring>(void *dest, unsigned size)=0</argsstring>
+        <name>Read</name>
+        <reimplementedby refid="classUrho3D_1_1File_1aa96e3d354d967ebeb8ad5863eb2797fe">Read</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1MemoryBuffer_1a2b08978bb93f51c3686245e40abcfb22">Read</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1NamedPipe_1af6572f98b7f7caa1ba181f490731ed84">Read</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1VectorBuffer_1aa17c4b1dff931672067379005fed5f44">Read</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1HttpRequest_1ab9ed1dd50303836c3f3e1839dfe7efc7">Read</reimplementedby>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Read bytes from the stream. Return number of bytes actually read. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="45" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a04335b8bfc3e845d1e95599d362b2115" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned</type>
+        <definition>virtual unsigned Urho3D::Deserializer::Seek</definition>
+        <argsstring>(unsigned position)=0</argsstring>
+        <name>Seek</name>
+        <reimplementedby refid="classUrho3D_1_1File_1a72767679eb699c9d816c33ac6def3acb">Seek</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1MemoryBuffer_1acb67539db6b8a88d186ebb47ce00c6ea">Seek</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1NamedPipe_1abfa9819e51c9cac9c35239ad0001fa1e">Seek</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1VectorBuffer_1adf9c373da31183bfead207febfcefa23">Seek</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1HttpRequest_1a11a33d5f1eb1b32bcbf7798336a8af3f">Seek</reimplementedby>
+        <param>
+          <type>unsigned</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Set position from the beginning of the stream. Return actual new position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="47" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1ab262323dbbb2f36ee6a3773d5dc6d8c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+        <definition>virtual const String&amp; Urho3D::Deserializer::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <reimplementedby refid="classUrho3D_1_1AbstractFile_1ace5f4ce0a5747a1071863b81f700be31">GetName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return name of the stream. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="50" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a180786160003602647f480b18baaafcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>unsigned</type>
+        <definition>virtual unsigned Urho3D::Deserializer::GetChecksum</definition>
+        <argsstring>()</argsstring>
+        <name>GetChecksum</name>
+        <reimplementedby refid="classUrho3D_1_1File_1af9a8d2dbe6424e8b27ad503b02c5239b">GetChecksum</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a checksum if applicable. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="53" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a62d8b0e28fa886adfdde1c42c6913477" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Urho3D::Deserializer::IsEof</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEof</name>
+        <reimplementedby refid="classUrho3D_1_1NamedPipe_1a5b8e31b41d82f568fd2eb2a0882c0976">IsEof</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1HttpRequest_1a5b83ae3fd9b78b1de195bd9cd9103173">IsEof</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether the end of stream has been reached. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="56" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1acff4d7732f540451137b8b0de0dba0ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::SeekRelative</definition>
+        <argsstring>(int delta)</argsstring>
+        <name>SeekRelative</name>
+        <param>
+          <type>int</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Set position relative to current position. Return actual new position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="59" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1ad0eb039dde5cc9ec8fedaa044d850db1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::GetPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return current position. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="62" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a8e253b647308a6cecb25d787b17edc18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::Tell</definition>
+        <argsstring>() const</argsstring>
+        <name>Tell</name>
+        <briefdescription>
+<para>Return current position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="64" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a29f095da2db6cf9e4c7e76365341466e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::GetSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return size. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="68" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1aa8ccfd2f2784af5fc4943843dee19ef7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>long long Urho3D::Deserializer::ReadInt64</definition>
+        <argsstring>()</argsstring>
+        <name>ReadInt64</name>
+        <briefdescription>
+<para>Read a 64-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="71" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1ac237484f24d551dd8ccd812b181b500b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Deserializer::ReadInt</definition>
+        <argsstring>()</argsstring>
+        <name>ReadInt</name>
+        <briefdescription>
+<para>Read a 32-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="73" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a765451570f6241e74591439d757f3647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>short Urho3D::Deserializer::ReadShort</definition>
+        <argsstring>()</argsstring>
+        <name>ReadShort</name>
+        <briefdescription>
+<para>Read a 16-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="75" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1acb3a5d6bec79624077c060ec0640bdfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed char</type>
+        <definition>signed char Urho3D::Deserializer::ReadByte</definition>
+        <argsstring>()</argsstring>
+        <name>ReadByte</name>
+        <briefdescription>
+<para>Read an 8-bit integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="77" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1ae41b781bf743c959b1d835a0fefa8b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long long</type>
+        <definition>unsigned long long Urho3D::Deserializer::ReadUInt64</definition>
+        <argsstring>()</argsstring>
+        <name>ReadUInt64</name>
+        <briefdescription>
+<para>Read a 64-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="79" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a1fcc8ffc3d0744f90616d0d4feacba10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::ReadUInt</definition>
+        <argsstring>()</argsstring>
+        <name>ReadUInt</name>
+        <briefdescription>
+<para>Read a 32-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a779317ca224e8350cf9b10ec4cb65145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short Urho3D::Deserializer::ReadUShort</definition>
+        <argsstring>()</argsstring>
+        <name>ReadUShort</name>
+        <briefdescription>
+<para>Read a 16-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="83" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1ab86746f3f96c7264b5e2b7abe0d977b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::Deserializer::ReadUByte</definition>
+        <argsstring>()</argsstring>
+        <name>ReadUByte</name>
+        <briefdescription>
+<para>Read an 8-bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="85" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a18e879f71f2fc03551358b39d73931bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Deserializer::ReadBool</definition>
+        <argsstring>()</argsstring>
+        <name>ReadBool</name>
+        <briefdescription>
+<para>Read a bool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a5e715bb883005d93ca8aa9d03ebccb87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Deserializer::ReadFloat</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFloat</name>
+        <briefdescription>
+<para>Read a float. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="89" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1acc590c8a496ed45d39106a08e369512f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Urho3D::Deserializer::ReadDouble</definition>
+        <argsstring>()</argsstring>
+        <name>ReadDouble</name>
+        <briefdescription>
+<para>Read a double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="91" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a654bf31218c52d3a481033b91fee41bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref></type>
+        <definition>IntRect Urho3D::Deserializer::ReadIntRect</definition>
+        <argsstring>()</argsstring>
+        <name>ReadIntRect</name>
+        <briefdescription>
+<para>Read an <ref refid="classUrho3D_1_1IntRect" kindref="compound">IntRect</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="93" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a14bd90722793f19622fc989bf5e40163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref></type>
+        <definition>IntVector2 Urho3D::Deserializer::ReadIntVector2</definition>
+        <argsstring>()</argsstring>
+        <name>ReadIntVector2</name>
+        <briefdescription>
+<para>Read an <ref refid="classUrho3D_1_1IntVector2" kindref="compound">IntVector2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="95" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a403d5e8df2cbc84bea47892a7353b7ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref></type>
+        <definition>IntVector3 Urho3D::Deserializer::ReadIntVector3</definition>
+        <argsstring>()</argsstring>
+        <name>ReadIntVector3</name>
+        <briefdescription>
+<para>Read an <ref refid="classUrho3D_1_1IntVector3" kindref="compound">IntVector3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="97" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a919252c073115ed4a19f23883e209b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref></type>
+        <definition>Rect Urho3D::Deserializer::ReadRect</definition>
+        <argsstring>()</argsstring>
+        <name>ReadRect</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Rect" kindref="compound">Rect</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="99" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a24fca5b0832f3129a82fcf2215380336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref></type>
+        <definition>Vector2 Urho3D::Deserializer::ReadVector2</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVector2</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="101" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a1088b0c0c767b838e1c4fd7cfc0ea922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Deserializer::ReadVector3</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVector3</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="103" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a05ca8bfa66c243ef6ac4d8fdcad0a3aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Urho3D::Deserializer::ReadPackedVector3</definition>
+        <argsstring>(float maxAbsCoord)</argsstring>
+        <name>ReadPackedVector3</name>
+        <param>
+          <type>float</type>
+          <declname>maxAbsCoord</declname>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> packed into 3 x 16 bits with the specified maximum absolute range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="105" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1abe3246a0947bfb1535516eb81b73e3bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref></type>
+        <definition>Vector4 Urho3D::Deserializer::ReadVector4</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVector4</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Vector4" kindref="compound">Vector4</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="107" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a13d8433924e409593da96c1aa785866f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion Urho3D::Deserializer::ReadQuaternion</definition>
+        <argsstring>()</argsstring>
+        <name>ReadQuaternion</name>
+        <briefdescription>
+<para>Read a quaternion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="109" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a659f2ec244eb3e50d1136707eb45d53a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Quaternion" kindref="compound">Quaternion</ref></type>
+        <definition>Quaternion Urho3D::Deserializer::ReadPackedQuaternion</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPackedQuaternion</name>
+        <briefdescription>
+<para>Read a quaternion with each component packed in 16 bits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="111" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a46a6e5e8d3819a9376cc399cf78fd875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref></type>
+        <definition>Matrix3 Urho3D::Deserializer::ReadMatrix3</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMatrix3</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="113" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a6c297c21a8569c401b921a1690e39527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref></type>
+        <definition>Matrix3x4 Urho3D::Deserializer::ReadMatrix3x4</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMatrix3x4</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="115" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a0c2ce15716c0cbdc7182683ba5f51b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref></type>
+        <definition>Matrix4 Urho3D::Deserializer::ReadMatrix4</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMatrix4</name>
+        <briefdescription>
+<para>Read a <ref refid="classUrho3D_1_1Matrix4" kindref="compound">Matrix4</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="117" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a595ef621948edddd04c1a4d63541163a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Color" kindref="compound">Color</ref></type>
+        <definition>Color Urho3D::Deserializer::ReadColor</definition>
+        <argsstring>()</argsstring>
+        <name>ReadColor</name>
+        <briefdescription>
+<para>Read a color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="119" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a6de9c7c5ea5594a93b3ad5ab57df0f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::Deserializer::ReadBoundingBox</definition>
+        <argsstring>()</argsstring>
+        <name>ReadBoundingBox</name>
+        <briefdescription>
+<para>Read a bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="121" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a5645dce4244a3f13e9253f0c35605a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Deserializer::ReadString</definition>
+        <argsstring>()</argsstring>
+        <name>ReadString</name>
+        <briefdescription>
+<para>Read a null-terminated string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="123" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a50fb98730fae281e2fdac0f83c451f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Deserializer::ReadFileID</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFileID</name>
+        <briefdescription>
+<para>Read a four-letter file ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="125" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a98b32d12ab5e2226b897521c4ddcfa45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+        <definition>StringHash Urho3D::Deserializer::ReadStringHash</definition>
+        <argsstring>()</argsstring>
+        <name>ReadStringHash</name>
+        <briefdescription>
+<para>Read a 32-bit <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="127" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a93c7d0f8e514b5e2258485b84a438563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt;</type>
+        <definition>PODVector&lt;unsigned char&gt; Urho3D::Deserializer::ReadBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>ReadBuffer</name>
+        <briefdescription>
+<para>Read a buffer with size encoded as VLE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="129" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a76b41087aaa3359615bdddf4e7cf65c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRef" kindref="compound">ResourceRef</ref></type>
+        <definition>ResourceRef Urho3D::Deserializer::ReadResourceRef</definition>
+        <argsstring>()</argsstring>
+        <name>ReadResourceRef</name>
+        <briefdescription>
+<para>Read a resource reference. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="131" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a58a0c484704d9499f550239f29cb2023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1ResourceRefList" kindref="compound">ResourceRefList</ref></type>
+        <definition>ResourceRefList Urho3D::Deserializer::ReadResourceRefList</definition>
+        <argsstring>()</argsstring>
+        <name>ReadResourceRefList</name>
+        <briefdescription>
+<para>Read a resource reference list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="133" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a4f7070a0dd21b4627e5603e1557efb0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref></type>
+        <definition>Variant Urho3D::Deserializer::ReadVariant</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVariant</name>
+        <briefdescription>
+<para>Read a variant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="135" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1af39531e4c08952e621b1eae4381ca8ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Variant" kindref="compound">Variant</ref></type>
+        <definition>Variant Urho3D::Deserializer::ReadVariant</definition>
+        <argsstring>(VariantType type)</argsstring>
+        <name>ReadVariant</name>
+        <param>
+          <type><ref refid="Variant_8h_1ab8af059a1b749f7143ecf40baaaed0f2" kindref="member">VariantType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Read a variant whose type is already known. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="137" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a488959558d58eb39e88d240071c1f4e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1a1c145ed010e3c0e10e22cc20bc3a2cac" kindref="member">VariantVector</ref></type>
+        <definition>VariantVector Urho3D::Deserializer::ReadVariantVector</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVariantVector</name>
+        <briefdescription>
+<para>Read a variant vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="139" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a3d0304784fb92fd0334b5d9a6b402d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1a5f28e7014e5fbb48c5b2a999db00fc29" kindref="member">StringVector</ref></type>
+        <definition>StringVector Urho3D::Deserializer::ReadStringVector</definition>
+        <argsstring>()</argsstring>
+        <name>ReadStringVector</name>
+        <briefdescription>
+<para>Read a string vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="141" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a2bbcf0ebe55be7554b6eefbe83b5b47c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref></type>
+        <definition>VariantMap Urho3D::Deserializer::ReadVariantMap</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVariantMap</name>
+        <briefdescription>
+<para>Read a variant map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="143" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a1798cf3925097557803752554b7b519f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::ReadVLE</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVLE</name>
+        <briefdescription>
+<para>Read a variable-length encoded unsigned integer, which can use 29 bits maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="145" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a508036fa8d83b204d775690a1dd8bc4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Deserializer::ReadNetID</definition>
+        <argsstring>()</argsstring>
+        <name>ReadNetID</name>
+        <briefdescription>
+<para>Read a 24-bit network object ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="147" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Deserializer_1a39678eb4265b015cd7140cd7f9d96df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Deserializer::ReadLine</definition>
+        <argsstring>()</argsstring>
+        <name>ReadLine</name>
+        <briefdescription>
+<para>Read a text line. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="149" column="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Abstract stream for reading. NO_COUNT </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Urho3D::VectorBuffer</label>
+        <link refid="classUrho3D_1_1VectorBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::HttpRequest</label>
+        <link refid="classUrho3D_1_1HttpRequest"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::MemoryBuffer</label>
+        <link refid="classUrho3D_1_1MemoryBuffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Deserializer</label>
+        <link refid="classUrho3D_1_1Deserializer"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::NamedPipe</label>
+        <link refid="classUrho3D_1_1NamedPipe"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::File</label>
+        <link refid="classUrho3D_1_1File"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::AbstractFile</label>
+        <link refid="classUrho3D_1_1AbstractFile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" line="34" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Deserializer.h" bodystart="35" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Deserializer_1a3d2945f96e7a91278d7347c842ddf475" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a997993e65958f9c3a4c436b29cfa295a" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>Deserializer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a180786160003602647f480b18baaafcf" prot="public" virt="virtual"><scope>Urho3D::Deserializer</scope><name>GetChecksum</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ab262323dbbb2f36ee6a3773d5dc6d8c7" prot="public" virt="virtual"><scope>Urho3D::Deserializer</scope><name>GetName</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ad0eb039dde5cc9ec8fedaa044d850db1" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>GetPosition</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a29f095da2db6cf9e4c7e76365341466e" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>GetSize</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a62d8b0e28fa886adfdde1c42c6913477" prot="public" virt="virtual"><scope>Urho3D::Deserializer</scope><name>IsEof</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae3abef03d5bd18c80c70c4bc907f7951" prot="protected" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>position_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae82036f72896194adc1cd02f3b03509b" prot="public" virt="pure-virtual"><scope>Urho3D::Deserializer</scope><name>Read</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a18e879f71f2fc03551358b39d73931bc" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadBool</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6de9c7c5ea5594a93b3ad5ab57df0f95" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a93c7d0f8e514b5e2258485b84a438563" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadBuffer</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acb3a5d6bec79624077c060ec0640bdfe" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a595ef621948edddd04c1a4d63541163a" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadColor</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acc590c8a496ed45d39106a08e369512f" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadDouble</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a50fb98730fae281e2fdac0f83c451f13" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadFileID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5e715bb883005d93ca8aa9d03ebccb87" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadFloat</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ac237484f24d551dd8ccd812b181b500b" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1aa8ccfd2f2784af5fc4943843dee19ef7" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a654bf31218c52d3a481033b91fee41bc" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadIntRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a14bd90722793f19622fc989bf5e40163" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadIntVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a403d5e8df2cbc84bea47892a7353b7ec" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadIntVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a39678eb4265b015cd7140cd7f9d96df6" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadLine</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a46a6e5e8d3819a9376cc399cf78fd875" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadMatrix3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a6c297c21a8569c401b921a1690e39527" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadMatrix3x4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a0c2ce15716c0cbdc7182683ba5f51b0a" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadMatrix4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a508036fa8d83b204d775690a1dd8bc4a" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadNetID</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a659f2ec244eb3e50d1136707eb45d53a" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadPackedQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a05ca8bfa66c243ef6ac4d8fdcad0a3aa" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadPackedVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a13d8433924e409593da96c1aa785866f" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadQuaternion</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a919252c073115ed4a19f23883e209b1b" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadRect</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a76b41087aaa3359615bdddf4e7cf65c7" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadResourceRef</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a58a0c484704d9499f550239f29cb2023" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadResourceRefList</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a765451570f6241e74591439d757f3647" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a5645dce4244a3f13e9253f0c35605a83" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadString</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a98b32d12ab5e2226b897521c4ddcfa45" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadStringHash</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a3d0304784fb92fd0334b5d9a6b402d94" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadStringVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ab86746f3f96c7264b5e2b7abe0d977b4" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadUByte</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1fcc8ffc3d0744f90616d0d4feacba10" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadUInt</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1ae41b781bf743c959b1d835a0fefa8b85" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadUInt64</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a779317ca224e8350cf9b10ec4cb65145" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadUShort</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a4f7070a0dd21b4627e5603e1557efb0a" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1af39531e4c08952e621b1eae4381ca8ff" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVariant</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a2bbcf0ebe55be7554b6eefbe83b5b47c" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVariantMap</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a488959558d58eb39e88d240071c1f4e3" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVariantVector</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a24fca5b0832f3129a82fcf2215380336" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVector2</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1088b0c0c767b838e1c4fd7cfc0ea922" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVector3</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1abe3246a0947bfb1535516eb81b73e3bc" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVector4</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a1798cf3925097557803752554b7b519f" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>ReadVLE</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a04335b8bfc3e845d1e95599d362b2115" prot="public" virt="pure-virtual"><scope>Urho3D::Deserializer</scope><name>Seek</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1acff4d7732f540451137b8b0de0dba0ed" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>SeekRelative</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a9d781873581e4227b44778d4d157405b" prot="protected" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a8e253b647308a6cecb25d787b17edc18" prot="public" virt="non-virtual"><scope>Urho3D::Deserializer</scope><name>Tell</name></member>
+      <member refid="classUrho3D_1_1Deserializer_1a873f01aa820848f5b4d652af6b4df1c5" prot="public" virt="virtual"><scope>Urho3D::Deserializer</scope><name>~Deserializer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

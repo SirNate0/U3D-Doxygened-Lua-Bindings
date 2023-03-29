@@ -1,0 +1,2522 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Drawable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Urho3D::Drawable</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Component" prot="public" virt="non-virtual">Urho3D::Component</basecompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1BillboardSet" prot="public" virt="non-virtual">Urho3D::BillboardSet</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1CustomGeometry" prot="public" virt="non-virtual">Urho3D::CustomGeometry</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1DecalSet" prot="public" virt="non-virtual">Urho3D::DecalSet</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Drawable2D" prot="public" virt="non-virtual">Urho3D::Drawable2D</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Light" prot="public" virt="non-virtual">Urho3D::Light</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Renderer2D" prot="public" virt="non-virtual">Urho3D::Renderer2D</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1RibbonTrail" prot="public" virt="non-virtual">Urho3D::RibbonTrail</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1StaticModel" prot="public" virt="non-virtual">Urho3D::StaticModel</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1TerrainPatch" prot="public" virt="non-virtual">Urho3D::TerrainPatch</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Text3D" prot="public" virt="non-virtual">Urho3D::Text3D</derivedcompoundref>
+    <derivedcompoundref refid="classUrho3D_1_1Zone" prot="public" virt="non-virtual">Urho3D::Zone</derivedcompoundref>
+    <includes refid="Drawable_8h" local="no">Drawable.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classUrho3D_1_1Drawable_1adf9c5f571516c8a90b68742a384d0a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Octant</definition>
+        <argsstring></argsstring>
+        <name>Octant</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="114" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classUrho3D_1_1Drawable_1acc8a7ec8cf44f290482ad3d68f6a7719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Octree</definition>
+        <argsstring></argsstring>
+        <name>Octree</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="115" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classUrho3D_1_1Drawable_1a6b6c8bf21a508589b5733bc3d545b76f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UpdateDrawablesWork</definition>
+        <argsstring>(const WorkItem *item, unsigned threadIndex)</argsstring>
+        <name>UpdateDrawablesWork</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1WorkItem" kindref="compound">WorkItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>threadIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="116" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a10f4a0419fadd10735448f7a5b639099" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::Drawable::worldBoundingBox_</definition>
+        <argsstring></argsstring>
+        <name>worldBoundingBox_</name>
+        <briefdescription>
+<para>World-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="356" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1abfead28f2b8293a8699d6ac84b8476c9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref></type>
+        <definition>BoundingBox Urho3D::Drawable::boundingBox_</definition>
+        <argsstring></argsstring>
+        <name>boundingBox_</name>
+        <briefdescription>
+<para>Local-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="358" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a748155e7b747b009e4879882ec3bf7c4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1SourceBatch" kindref="compound">SourceBatch</ref> &gt;</type>
+        <definition>Vector&lt;SourceBatch&gt; Urho3D::Drawable::batches_</definition>
+        <argsstring></argsstring>
+        <name>batches_</name>
+        <briefdescription>
+<para>Draw call source data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="360" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a8ba9d34f65b38b534f499f636834e694" prot="protected" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::Drawable::drawableFlags_</definition>
+        <argsstring></argsstring>
+        <name>drawableFlags_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="362" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a23281f9ff7eeaa73c147b86fc29f1f9d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::worldBoundingBoxDirty_</definition>
+        <argsstring></argsstring>
+        <name>worldBoundingBoxDirty_</name>
+        <briefdescription>
+<para>Bounding box dirty flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="364" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a69790319fcb6d145ee8753a6db002f33" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::castShadows_</definition>
+        <argsstring></argsstring>
+        <name>castShadows_</name>
+        <briefdescription>
+<para>Shadowcaster flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="366" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a5013f74c89e1259ea2a4e8a0d4dca571" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::occluder_</definition>
+        <argsstring></argsstring>
+        <name>occluder_</name>
+        <briefdescription>
+<para>Occluder flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="368" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1aa88b30c4e2a07c664707c268a889b990" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::occludee_</definition>
+        <argsstring></argsstring>
+        <name>occludee_</name>
+        <briefdescription>
+<para>Occludee flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="370" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a74445c3c2d016d2ce796683ec63e81b8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::updateQueued_</definition>
+        <argsstring></argsstring>
+        <name>updateQueued_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref> update queued flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="372" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1ac7871920deb048d9d675ad34c5874a00" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::zoneDirty_</definition>
+        <argsstring></argsstring>
+        <name>zoneDirty_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> inconclusive or dirtied flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="374" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1aa279857db164197db750c919307491e3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+        <definition>Octant* Urho3D::Drawable::octant_</definition>
+        <argsstring></argsstring>
+        <name>octant_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Octree" kindref="compound">Octree</ref> octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="376" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1af251651fa16a666b0ec11af053bf80aa" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> *</type>
+        <definition>Zone* Urho3D::Drawable::zone_</definition>
+        <argsstring></argsstring>
+        <name>zone_</name>
+        <briefdescription>
+<para>Current zone. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="378" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a63e29f96811c72e08c15fd01789d6ef4" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::viewMask_</definition>
+        <argsstring></argsstring>
+        <name>viewMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="380" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1adafccc9b0b4f1cff9c9764b618cb60b4" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::lightMask_</definition>
+        <argsstring></argsstring>
+        <name>lightMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="382" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a9640ac3a553bc15bfc1826317df39631" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::shadowMask_</definition>
+        <argsstring></argsstring>
+        <name>shadowMask_</name>
+        <briefdescription>
+<para>Shadow mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="384" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a2a5536a40728f773e36238bfe67b3958" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::zoneMask_</definition>
+        <argsstring></argsstring>
+        <name>zoneMask_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="386" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a0be4e0aacab060480d106a4a39d24a26" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::viewFrameNumber_</definition>
+        <argsstring></argsstring>
+        <name>viewFrameNumber_</name>
+        <briefdescription>
+<para>Last visible frame number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="388" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a786d899e2ebfd595ee15adc70d419175" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::distance_</definition>
+        <argsstring></argsstring>
+        <name>distance_</name>
+        <briefdescription>
+<para>Current distance to camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="390" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a3e1d03cadfe54e898b63b7033afa224b" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::lodDistance_</definition>
+        <argsstring></argsstring>
+        <name>lodDistance_</name>
+        <briefdescription>
+<para>LOD scaled distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="392" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1ada7a3ed2c8975c5d6fd11f7e770a699a" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::drawDistance_</definition>
+        <argsstring></argsstring>
+        <name>drawDistance_</name>
+        <briefdescription>
+<para>Draw distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="394" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1afbc2f50dafd0c9f7d34385cdfacf378f" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::shadowDistance_</definition>
+        <argsstring></argsstring>
+        <name>shadowDistance_</name>
+        <briefdescription>
+<para>Shadow distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="396" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a914180afedfd0fff9d6458bbe2ca548e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::sortValue_</definition>
+        <argsstring></argsstring>
+        <name>sortValue_</name>
+        <briefdescription>
+<para>Current sort value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="398" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a426fbc769c215162857ab0aaf1d3bfbb" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::minZ_</definition>
+        <argsstring></argsstring>
+        <name>minZ_</name>
+        <briefdescription>
+<para>Current minimum view space depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="400" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1af0c99306fc67cfd108183532f70ef765" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::maxZ_</definition>
+        <argsstring></argsstring>
+        <name>maxZ_</name>
+        <briefdescription>
+<para>Current maximum view space depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="402" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a3781e0be1bdacb9d915c6f2d2439efab" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::lodBias_</definition>
+        <argsstring></argsstring>
+        <name>lodBias_</name>
+        <briefdescription>
+<para>LOD bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="404" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1ad0416c01ec4088197c2207971bd046aa" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::basePassFlags_</definition>
+        <argsstring></argsstring>
+        <name>basePassFlags_</name>
+        <briefdescription>
+<para>Base pass flags, bit per batch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="406" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a43598df7745628a3dafef95887093a5b" prot="protected" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::maxLights_</definition>
+        <argsstring></argsstring>
+        <name>maxLights_</name>
+        <briefdescription>
+<para>Maximum per-pixel lights. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="408" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a6de3f920398ae6adb36991175e6f8380" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> * &gt;</type>
+        <definition>PODVector&lt;Camera*&gt; Urho3D::Drawable::viewCameras_</definition>
+        <argsstring></argsstring>
+        <name>viewCameras_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1List" kindref="compound">List</ref> of cameras from which is seen on the current frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="410" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a147b1459051ad28a7c3583fc30d6765d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> *</type>
+        <definition>Light* Urho3D::Drawable::firstLight_</definition>
+        <argsstring></argsstring>
+        <name>firstLight_</name>
+        <briefdescription>
+<para>First per-pixel light added this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="412" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a2c3ef78ebb6b7f1b4fe33ca56a85d46a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> * &gt;</type>
+        <definition>PODVector&lt;Light*&gt; Urho3D::Drawable::lights_</definition>
+        <argsstring></argsstring>
+        <name>lights_</name>
+        <briefdescription>
+<para>Per-pixel lights affecting this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="414" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Drawable_1a7effc9e891517efb4a85104e8e49c9d3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> * &gt;</type>
+        <definition>PODVector&lt;Light*&gt; Urho3D::Drawable::vertexLights_</definition>
+        <argsstring></argsstring>
+        <name>vertexLights_</name>
+        <briefdescription>
+<para>Per-vertex lights affecting this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="416" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a5a9391dafb2151dde0a717d59413caab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Drawable::Drawable</definition>
+        <argsstring>(Context *context, unsigned char drawableFlags)</argsstring>
+        <name>Drawable</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>drawableFlags</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="120" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a4be7208dbdfff0725eef83f33ad28536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Drawable::~Drawable</definition>
+        <argsstring>() override</argsstring>
+        <name>~Drawable</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="122" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aeff4f69d702780990bcc4e347a2394f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::OnSetEnabled</definition>
+        <argsstring>() override</argsstring>
+        <name>OnSetEnabled</name>
+        <reimplements refid="classUrho3D_1_1Component_1a97c506dfb55216668b1fdf4d4425f7d7">OnSetEnabled</reimplements>
+        <reimplementedby refid="classUrho3D_1_1ParticleEmitter_1a02e92fa2d7a1ae2250dfc62e7690dab0">OnSetEnabled</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1ad528c577d774550e285139ff929eb59f">OnSetEnabled</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1AnimatedSprite2D_1a64ed9baed42a39436bd1904fa0716847">OnSetEnabled</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Drawable2D_1a3b57577a9a06e84567d215bc0c31bc86">OnSetEnabled</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1ParticleEmitter2D_1aaa7a512b4fb84e3343be39bf899fb58d">OnSetEnabled</reimplementedby>
+        <briefdescription>
+<para>Handle enabled/disabled state change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="128" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ad7614c648bc6beb1ac8e57dc5b0bedc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Drawable::ProcessRayQuery</definition>
+        <argsstring>(const RayOctreeQuery &amp;query, PODVector&lt; RayQueryResult &gt; &amp;results)</argsstring>
+        <name>ProcessRayQuery</name>
+        <reimplementedby refid="classUrho3D_1_1AnimatedModel_1a21938736faaa6f521e4e58bc964367e2">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1BillboardSet_1a0dcc9e34e6c36c2b457f380998d038a3">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1CustomGeometry_1a952bc05d3d33c3eb35f688933dbc0566">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1DecalSet_1af1e4f0f6be81d41a7616de51eb811335">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Light_1a9950193fda0f4651eaa25629cf21695e">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1a284d687bed49bdcd27ebe40adb78b49d">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Skybox_1a19c37acd7a9ef9fda92c656bf1d2cd3b">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModel_1a1ce96c597420c576a598e351d0df06a1">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1acc4292657add55650305d45132d7c4ec">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a3a7a0ac33b5134318173c1eed81e2d0f">ProcessRayQuery</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Renderer2D_1a32a45002ff30c2e8556b42ebb6e75637">ProcessRayQuery</reimplementedby>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1RayOctreeQuery" kindref="compound">RayOctreeQuery</ref> &amp;</type>
+          <declname>query</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1RayQueryResult" kindref="compound">RayQueryResult</ref> &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+<para>Process octree raycast. May be called from a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="130" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae865f6d21de70fd7bc95a7207d694b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Drawable::Update</definition>
+        <argsstring>(const FrameInfo &amp;frame)</argsstring>
+        <name>Update</name>
+        <reimplementedby refid="classUrho3D_1_1AnimatedModel_1a4ddbe87cb65a57aadbd52a611fccea8b">Update</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1ParticleEmitter_1a482ed0bdc3327f8c7c5e856e4e39a812">Update</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1a14699a47b1051cde25a5db1a20de4e48">Update</reimplementedby>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Update before octree reinsertion. Is called from a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="132" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="132" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae489279acce1c5c0168de50928391639" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Drawable::UpdateBatches</definition>
+        <argsstring>(const FrameInfo &amp;frame)</argsstring>
+        <name>UpdateBatches</name>
+        <reimplementedby refid="classUrho3D_1_1AnimatedModel_1a59fb5fdb95f5e8bfa3c3fbf1012eaf60">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1BillboardSet_1ae8d8caed716187e339f5e6488d25f156">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1DecalSet_1a738073327526ae29261d31019889bcb3">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Light_1a60e92bb9fa9c3ec6e1a71694f1dcbc00">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1a3850bf25c57dcaf0a5cae5d02d3db045">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Skybox_1a6d2fcb14f15a571751bf9ee41c62b826">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModel_1ac59f46b979f0e586501f3b4e7689c284">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1a91aa25c17c0160a3673bb985190479af">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a98b34fad89336d4641241f0e4993d003">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Text3D_1aff78b88d77fa5beca14427ab5572c99b">UpdateBatches</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Renderer2D_1a4155d91c5d26fac8f4187e3af8108376">UpdateBatches</reimplementedby>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Calculate distance and prepare batches for rendering. May be called from worker thread(s), possibly re-entrantly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="134" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a00fb66b3ce06e1e9c9bb9ecf402c78b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Drawable::UpdateGeometry</definition>
+        <argsstring>(const FrameInfo &amp;frame)</argsstring>
+        <name>UpdateGeometry</name>
+        <reimplementedby refid="classUrho3D_1_1AnimatedModel_1aa95a74690909b8503056f917d1101a93">UpdateGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1BillboardSet_1adc0ee0f5b93f2ecea3db3569355ba0fc">UpdateGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1DecalSet_1aa11dc91f436c433d4f14caa46c0e81af">UpdateGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1ae50e330642685c41211a3c5103dc4204">UpdateGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a902bd1e2350323ecd4b9d7c6a8503178">UpdateGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Text3D_1ae76455bed7ea206ebb893e49c5a14ae7">UpdateGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Renderer2D_1a05e7cd0202f5ea10e2c848d976972c54">UpdateGeometry</reimplementedby>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Prepare geometry for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="136" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="136" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a09d563527cd3485f21b485c778e26d7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="Drawable_8h_1affe9ba89cc323bc37aff22afec7ade35" kindref="member">UpdateGeometryType</ref></type>
+        <definition>virtual UpdateGeometryType Urho3D::Drawable::GetUpdateGeometryType</definition>
+        <argsstring>()</argsstring>
+        <name>GetUpdateGeometryType</name>
+        <reimplementedby refid="classUrho3D_1_1AnimatedModel_1a61c9793130dc616a086357b612ff8573">GetUpdateGeometryType</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1BillboardSet_1a337d61e8d332b06116e23c9c579c4bc3">GetUpdateGeometryType</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1DecalSet_1a6f291608f185b604d0387c9616621655">GetUpdateGeometryType</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1a9de3831b5f26ac77f6455d236b278121">GetUpdateGeometryType</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1abf9cc3a09db9dff74190764deb79f317">GetUpdateGeometryType</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Text3D_1a0f70fef0f7927c4e3673dc3740af7e77">GetUpdateGeometryType</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Renderer2D_1a25afdced269540f3a013c90ae8c23d1a">GetUpdateGeometryType</reimplementedby>
+        <briefdescription>
+<para>Return whether a geometry update is necessary, and if it can happen in a worker thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="139" column="32" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1af56066bfd97cee073565a19d5e6bb307" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>virtual Geometry* Urho3D::Drawable::GetLodGeometry</definition>
+        <argsstring>(unsigned batchIndex, unsigned level)</argsstring>
+        <name>GetLodGeometry</name>
+        <reimplementedby refid="classUrho3D_1_1CustomGeometry_1a7d7eb34a8392d8efdfffd676f4e980ab">GetLodGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModel_1a15d49713fcd401f5659ec5debd0b205a">GetLodGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a03c18c893ed4f762a1085afed9572585">GetLodGeometry</reimplementedby>
+        <param>
+          <type>unsigned</type>
+          <declname>batchIndex</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Return the geometry for a specific LOD level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="142" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aa9924ef8125d599be958f65fdd874206" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>unsigned</type>
+        <definition>virtual unsigned Urho3D::Drawable::GetNumOccluderTriangles</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumOccluderTriangles</name>
+        <reimplementedby refid="classUrho3D_1_1CustomGeometry_1a38a3d209076cf5f992e9ae8289230fc4">GetNumOccluderTriangles</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModel_1aaf54a9fadd15d371554bdeea827cfe67">GetNumOccluderTriangles</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1ac48e6a4b29fe0ed8903744c698c5e0e2">GetNumOccluderTriangles</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a38ee9b2d0cc4c9156ebdba0b86bd934f">GetNumOccluderTriangles</reimplementedby>
+        <briefdescription>
+<para>Return number of occlusion geometry triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="145" column="22" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ad6abc23d5616c4589241d2d428879fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Urho3D::Drawable::DrawOcclusion</definition>
+        <argsstring>(OcclusionBuffer *buffer)</argsstring>
+        <name>DrawOcclusion</name>
+        <reimplementedby refid="classUrho3D_1_1CustomGeometry_1a31a154baaef524bd807cfeaae3e8f262">DrawOcclusion</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModel_1a934ce91d3123ebed38229a8994d8d8b6">DrawOcclusion</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1a13fe7ab600249a608a696249ec27b1f2">DrawOcclusion</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a88a34eac04ed50670992e3371f5821d8">DrawOcclusion</reimplementedby>
+        <param>
+          <type><ref refid="classUrho3D_1_1OcclusionBuffer" kindref="compound">OcclusionBuffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Draw to occlusion buffer. Return true if did not run out of triangles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="148" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a7a55d25cfff63c42a8cadae6e37b8f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::DrawDebugGeometry</definition>
+        <argsstring>(DebugRenderer *debug, bool depthTest) override</argsstring>
+        <name>DrawDebugGeometry</name>
+        <reimplements refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a">DrawDebugGeometry</reimplements>
+        <reimplementedby refid="classUrho3D_1_1Light_1a1d14ac9580d954f0f51bca4b2a513e1c">DrawDebugGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1aa8e4b46ed37c8a1911058cc7cad054a3">DrawDebugGeometry</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Zone_1a2e121e27dbd584f85c633bc995ee5ab2">DrawDebugGeometry</reimplementedby>
+        <param>
+          <type><ref refid="classUrho3D_1_1DebugRenderer" kindref="compound">DebugRenderer</ref> *</type>
+          <declname>debug</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthTest</declname>
+        </param>
+        <briefdescription>
+<para>Visualize the component as debug geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a6fa21af838026c1566496968bc7a696c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetDrawDistance</definition>
+        <argsstring>(float distance)</argsstring>
+        <name>SetDrawDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set draw distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="154" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae1f5e010e8a556927758e8eaa7b65e9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetShadowDistance</definition>
+        <argsstring>(float distance)</argsstring>
+        <name>SetShadowDistance</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shadow draw distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a31131f13cd30e8f47d201953f0d6293f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetLodBias</definition>
+        <argsstring>(float bias)</argsstring>
+        <name>SetLodBias</name>
+        <param>
+          <type>float</type>
+          <declname>bias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="160" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ab0a0cb81cefb83249a578069c4adc4d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetViewMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetViewMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set view mask. Is and&apos;ed with camera&apos;s view mask to see if the object should be rendered. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="163" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1adae53db9cd636a6583569a17b47717d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetLightMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetLightMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set light mask. Is and&apos;ed with light&apos;s and zone&apos;s light mask to see if the object should be lit. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="166" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a0e06b99e373bf9c0cec01d17f1384a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetShadowMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetShadowMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shadow mask. Is and&apos;ed with light&apos;s light mask and zone&apos;s shadow mask to see if the object should be rendered to a shadow map. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="169" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a431071bb2e7c05ad55c8aade5c18e659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetZoneMask</definition>
+        <argsstring>(unsigned mask)</argsstring>
+        <name>SetZoneMask</name>
+        <param>
+          <type>unsigned</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set zone mask. Is and&apos;ed with zone&apos;s zone mask to see if the object should belong to the zone. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="172" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a8306bfe2f9ba357b9384d2285fcd3902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetMaxLights</definition>
+        <argsstring>(unsigned num)</argsstring>
+        <name>SetMaxLights</name>
+        <param>
+          <type>unsigned</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set maximum number of per-pixel lights. Default 0 is unlimited. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="175" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a326f83aea7b4a6c695543e45cbffafa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetCastShadows</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetCastShadows</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set shadowcaster flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="178" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae74c979945a77c14647d024f0f824c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetOccluder</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetOccluder</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set occlusion flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="181" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aa1e97bbb2427a3626a5b6816dfc888d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetOccludee</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetOccludee</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set occludee flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="184" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a87d6de3a8a7895228665ef79ad331510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::MarkForUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>MarkForUpdate</name>
+        <briefdescription>
+<para>Mark for update and octree reinsertion. Update is automatically queued when the drawable&apos;s scene node moves or changes scale. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="186" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a7e8f305ed9233705a707803e7a8d92e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+        <definition>const BoundingBox&amp; Urho3D::Drawable::GetBoundingBox</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBoundingBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return local space bounding box. May not be applicable or properly updated on all drawables. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="190" column="23" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a6fac24cb806464afa69b38b4634cb703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+        <definition>const BoundingBox&amp; Urho3D::Drawable::GetWorldBoundingBox</definition>
+        <argsstring>()</argsstring>
+        <name>GetWorldBoundingBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return world-space bounding box. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="194" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a74be6fab1f5cfdd44da3572015edf6ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Urho3D::Drawable::GetDrawableFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDrawableFlags</name>
+        <briefdescription>
+<para>Return drawable flags. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="197" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aaace7f6327baffa0a0c4adb1d840de24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetDrawDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDrawDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return draw distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="201" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a6072f938c617059fef0fc77ff21dac1f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetShadowDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shadow draw distance. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="205" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a415b264905a2ac605c837e38c9f86afe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetLodBias</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return LOD bias. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="209" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae45bf9bcfe8d1c09c72258e77a76f992" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::GetViewMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetViewMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return view mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="213" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="213" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a365785ecf1a129263bf53b39ccc651cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::GetLightMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLightMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return light mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="217" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="217" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a1732b54098629811101b12b61800c3c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::GetShadowMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetShadowMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shadow mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="221" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="221" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aa8ee386880f6aad566f662abd2760d4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::GetZoneMask</definition>
+        <argsstring>() const</argsstring>
+        <name>GetZoneMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return zone mask. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="225" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae4c9553b4aa9d39ff94e92f97519ba89" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Drawable::GetMaxLights</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxLights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum number of per-pixel lights. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="229" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="229" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae888ecaa770f261c32e6f47791d68435" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::GetCastShadows</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCastShadows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return shadowcaster flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="233" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="233" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a85642d5021a87a361151fd6823bad04f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::IsOccluder</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOccluder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return occluder flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="237" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="237" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aabd4960e08a707a45f9720fcb30dfa39" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::IsOccludee</definition>
+        <argsstring>() const</argsstring>
+        <name>IsOccludee</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return occludee flag. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="241" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="241" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a4dd313eab9c863711b8e84d7ce30fc11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::IsInView</definition>
+        <argsstring>() const</argsstring>
+        <name>IsInView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether is in view this frame from any viewport camera. Excludes shadow map cameras. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="245" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a8d892c43788779924ae09ff161ff50c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::IsInView</definition>
+        <argsstring>(Camera *camera) const</argsstring>
+        <name>IsInView</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Return whether is in view of a specific camera this frame. <ref refid="classUrho3D_1_1Pass" kindref="compound">Pass</ref> in a null camera to allow any camera, including shadow map cameras. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="247" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a5ae831d745f6ff6d9341eae348682613" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="structUrho3D_1_1SourceBatch" kindref="compound">SourceBatch</ref> &gt; &amp;</type>
+        <definition>const Vector&lt;SourceBatch&gt;&amp; Urho3D::Drawable::GetBatches</definition>
+        <argsstring>() const</argsstring>
+        <name>GetBatches</name>
+        <briefdescription>
+<para>Return draw call source data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="250" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="250" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a3181013d83f6d1b3110abe34316fe435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetZone</definition>
+        <argsstring>(Zone *zone, bool temporary=false)</argsstring>
+        <name>SetZone</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> *</type>
+          <declname>zone</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>temporary</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Set new zone. <ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> assignment may optionally be temporary, meaning it needs to be re-evaluated on the next frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="253" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a5234fbefdcf8dc01cc296e18f3b2c916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetSortValue</definition>
+        <argsstring>(float value)</argsstring>
+        <name>SetSortValue</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set sorting value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="255" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a3a96ff31da79c263163701b2a1351aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetMinMaxZ</definition>
+        <argsstring>(float minZ, float maxZ)</argsstring>
+        <name>SetMinMaxZ</name>
+        <param>
+          <type>float</type>
+          <declname>minZ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxZ</declname>
+        </param>
+        <briefdescription>
+<para>Set view-space depth bounds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="258" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="258" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a1f5358a58f4f0bfa38919dd14c04e240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::MarkInView</definition>
+        <argsstring>(const FrameInfo &amp;frame)</argsstring>
+        <name>MarkInView</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+<para>Mark in view. Also clear the light list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="265" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1abbd26865ea0280500b4ac6c29ce82705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::MarkInView</definition>
+        <argsstring>(unsigned frameNumber)</argsstring>
+        <name>MarkInView</name>
+        <param>
+          <type>unsigned</type>
+          <declname>frameNumber</declname>
+        </param>
+        <briefdescription>
+<para>Mark in view without specifying a camera. Used for shadow casters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="267" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae4230d5696e13e62a419cf7eb543c84f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::LimitLights</definition>
+        <argsstring>()</argsstring>
+        <name>LimitLights</name>
+        <briefdescription>
+<para>Sort and limit per-pixel lights to maximum allowed. Convert extra lights into vertex lights. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="269" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a58b2ac553e0255df9eb8f52b94d15deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::LimitVertexLights</definition>
+        <argsstring>(bool removeConvertedLights)</argsstring>
+        <name>LimitVertexLights</name>
+        <param>
+          <type>bool</type>
+          <declname>removeConvertedLights</declname>
+        </param>
+        <briefdescription>
+<para>Sort and limit per-vertex lights to maximum allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="271" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae5d530586535c7d58d54053c0ac5b954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetBasePass</definition>
+        <argsstring>(unsigned batchIndex)</argsstring>
+        <name>SetBasePass</name>
+        <param>
+          <type>unsigned</type>
+          <declname>batchIndex</declname>
+        </param>
+        <briefdescription>
+<para>Set base pass flag for a batch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="274" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="274" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a6679001692e20900992cb553771e4080" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+        <definition>Octant* Urho3D::Drawable::GetOctant</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOctant</name>
+        <briefdescription>
+<para>Return octree octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="277" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="277" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ae4e067775f22ef6c92643a3ea6e5807a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Zone" kindref="compound">Zone</ref> *</type>
+        <definition>Zone* Urho3D::Drawable::GetZone</definition>
+        <argsstring>() const</argsstring>
+        <name>GetZone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return current zone. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="281" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="281" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aebf5b0230d2cba605ff1f6ca24470ed4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::IsZoneDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsZoneDirty</name>
+        <briefdescription>
+<para>Return whether current zone is inconclusive or dirty due to the drawable moving. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="284" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="284" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a1696860cd9715781a11f622a9b7025e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDistance</name>
+        <briefdescription>
+<para>Return distance from camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="287" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="287" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a4ccb114792b1a779bf0f714c7aa764d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetLodDistance</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLodDistance</name>
+        <briefdescription>
+<para>Return LOD scaled distance from camera. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="290" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="290" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ad7e22e3881027d4bf3334e06cf64d016" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetSortValue</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSortValue</name>
+        <briefdescription>
+<para>Return sorting value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="293" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="293" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a868163988ad17c777699cd0226ffc68b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::IsInView</definition>
+        <argsstring>(const FrameInfo &amp;frame, bool anyCamera=false) const</argsstring>
+        <name>IsInView</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1FrameInfo" kindref="compound">FrameInfo</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>anyCamera</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Return whether is in view on the current frame. Called by <ref refid="classUrho3D_1_1View" kindref="compound">View</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="296" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ad2faff010ee37e381ace91f59ef7dc1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Drawable::HasBasePass</definition>
+        <argsstring>(unsigned batchIndex) const</argsstring>
+        <name>HasBasePass</name>
+        <param>
+          <type>unsigned</type>
+          <declname>batchIndex</declname>
+        </param>
+        <briefdescription>
+<para>Return whether has a base pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="299" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a5574ddf773640e9dae5466a7ff6cf8f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> * &gt; &amp;</type>
+        <definition>const PODVector&lt;Light*&gt;&amp; Urho3D::Drawable::GetLights</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLights</name>
+        <briefdescription>
+<para>Return per-pixel lights. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="302" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="302" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a2cde3e103a1a8f887e1080095096d77f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> * &gt; &amp;</type>
+        <definition>const PODVector&lt;Light*&gt;&amp; Urho3D::Drawable::GetVertexLights</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexLights</name>
+        <briefdescription>
+<para>Return per-vertex lights. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="305" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="305" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ac91538e42ed288039d128bdec2e5d008" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> *</type>
+        <definition>Light* Urho3D::Drawable::GetFirstLight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFirstLight</name>
+        <briefdescription>
+<para>Return the first added per-pixel light. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="308" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="308" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1ab2becad2e313c835156cc98c63af6ce2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetMinZ</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinZ</name>
+        <briefdescription>
+<para>Return the minimum view-space depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="311" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="311" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1af30ebf38b4278cd49fd786776cd73413" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Urho3D::Drawable::GetMaxZ</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMaxZ</name>
+        <briefdescription>
+<para>Return the maximum view-space depth. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="314" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="314" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1afce158b2c7a44a5f40d4eea9aabc673b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::AddLight</definition>
+        <argsstring>(Light *light)</argsstring>
+        <name>AddLight</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> *</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+<para>Add a per-pixel light affecting the object this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="317" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="317" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a73cece74565f2124ed22d66406760302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::AddVertexLight</definition>
+        <argsstring>(Light *light)</argsstring>
+        <name>AddVertexLight</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Light" kindref="compound">Light</ref> *</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+<para>Add a per-vertex light affecting the object this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="329" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="329" bodyend="332"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aec841a2d646fb37a3ca433c6f5ff475f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Drawable::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object attributes. <ref refid="classUrho3D_1_1Drawable" kindref="compound">Drawable</ref> must be registered first. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="125" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1aa7a00b82f8a07ba71b8a63561023a4c4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::OnNodeSet</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnNodeSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1abdc9feb34a990d3567e9f4fa43d30d75">OnNodeSet</reimplements>
+        <reimplementedby refid="classUrho3D_1_1Text3D_1ac2f25f78855efca7f98dc47227d8ede1">OnNodeSet</reimplementedby>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="336" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1acf1d2b41b502aebfa72c2e280470b453" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::OnSceneSet</definition>
+        <argsstring>(Scene *scene) override</argsstring>
+        <name>OnSceneSet</name>
+        <reimplements refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679">OnSceneSet</reimplements>
+        <reimplementedby refid="classUrho3D_1_1ParticleEmitter_1afe74659b2f5ad4d4e8ddea2763d532d4">OnSceneSet</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1abcd8d907e0e358d04be6c6dc384b5952">OnSceneSet</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1AnimatedSprite2D_1a04cec7e57129b4f205c9976878f47f57">OnSceneSet</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Drawable2D_1ae55f58970b6c3cb563adec9ce9dbbb5c">OnSceneSet</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1ParticleEmitter2D_1a09b2df5a425839d0feff440a78ce1f5f">OnSceneSet</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticSprite2D_1a447ce7974ea1bce8641effdfb9cc3ddc">OnSceneSet</reimplementedby>
+        <param>
+          <type><ref refid="classUrho3D_1_1Scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>Handle scene being assigned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="338" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a04a978441415a93f044721f6473df0e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::OnMarkedDirty</definition>
+        <argsstring>(Node *node) override</argsstring>
+        <name>OnMarkedDirty</name>
+        <reimplements refid="classUrho3D_1_1Component_1a06ebdba9da30ea5f2599e39f7cd0e24a">OnMarkedDirty</reimplements>
+        <reimplementedby refid="classUrho3D_1_1Zone_1a65c40c118a023a143f0ed53ac3bab5ab">OnMarkedDirty</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Drawable2D_1a6cfc4f8cf7b85322f10171e5c4a6eeff">OnMarkedDirty</reimplementedby>
+        <param>
+          <type><ref refid="classUrho3D_1_1Node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Handle node transform being dirtied. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="340" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1af146747caaf6fd85ab71fda4e364bde4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Drawable::OnWorldBoundingBoxUpdate</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnWorldBoundingBoxUpdate</name>
+        <reimplementedby refid="classUrho3D_1_1AnimatedModel_1af60822b6afad9ae9e135e2b05fd13005">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1BillboardSet_1a435de1b1d27ebda915eed2646fe7d254">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1CustomGeometry_1afde5bf1c2da1aeeb2897be0d98588333">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1DecalSet_1a110f79ed9580101f15779fb5a81877b1">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Light_1a93aaa97d88de1e7e3fab305523d79c1c">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1RibbonTrail_1a97c50efe75002f52792d02be1c9ec338">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Skybox_1a55b656d24edd515a658a3b80e6669287">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModel_1a6995f2d4053f4551d4862ca4a23f59c0">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticModelGroup_1ae9a4e2a83ebc08833d0e646d10db0136">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1TerrainPatch_1a5e764d84310b1455e122652233746145">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Zone_1ae9da6bd97c23d5a295782c183a769751">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Text3D_1a08bfb84e885535f73aeefb4181491e3d">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1ParticleEmitter2D_1a8c4cf85f0f4a7fc07fcfc7de6b963897">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1Renderer2D_1aad85586bd195fa2137c588923d1af022">OnWorldBoundingBoxUpdate</reimplementedby>
+        <reimplementedby refid="classUrho3D_1_1StaticSprite2D_1ab575c3117f1e436f04dd85d237def582">OnWorldBoundingBoxUpdate</reimplementedby>
+        <briefdescription>
+<para>Recalculate the world-space bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="342" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a2ab23fcc436cde69fe74bfefa4ead968" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Urho3D::Drawable::OnRemoveFromOctree</definition>
+        <argsstring>()</argsstring>
+        <name>OnRemoveFromOctree</name>
+        <reimplementedby refid="classUrho3D_1_1Zone_1a58ff49f54696d48d7fd02448ca579fbd">OnRemoveFromOctree</reimplementedby>
+        <briefdescription>
+<para>Handle removal from octree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="345" column="18" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="345" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1adaacb5c93a02cfd9d662b167b0bae813" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::AddToOctree</definition>
+        <argsstring>()</argsstring>
+        <name>AddToOctree</name>
+        <briefdescription>
+<para>Add to octree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="348" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a48c3be2aa6cb930b2ce959784d76fdbe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::RemoveFromOctree</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveFromOctree</name>
+        <briefdescription>
+<para>Remove from octree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="350" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Drawable_1a3c746486b469ad2c987eaa2faca73afd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Drawable::SetOctant</definition>
+        <argsstring>(Octant *octant)</argsstring>
+        <name>SetOctant</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Octant" kindref="compound">Octant</ref> *</type>
+          <declname>octant</declname>
+        </param>
+        <briefdescription>
+<para>Move into another octree octant. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="353" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="353" bodyend="353"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for visible components. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="25">
+        <label>Urho3D::Zone</label>
+        <link refid="classUrho3D_1_1Zone"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Urho3D::Light</label>
+        <link refid="classUrho3D_1_1Light"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::BillboardSet</label>
+        <link refid="classUrho3D_1_1BillboardSet"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::AnimatedModel</label>
+        <link refid="classUrho3D_1_1AnimatedModel"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::StaticSprite2D</label>
+        <link refid="classUrho3D_1_1StaticSprite2D"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::ParticleEmitter</label>
+        <link refid="classUrho3D_1_1ParticleEmitter"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::Drawable2D</label>
+        <link refid="classUrho3D_1_1Drawable2D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Urho3D::Text3D</label>
+        <link refid="classUrho3D_1_1Text3D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::Renderer2D</label>
+        <link refid="classUrho3D_1_1Renderer2D"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::CustomGeometry</label>
+        <link refid="classUrho3D_1_1CustomGeometry"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::StaticModelGroup</label>
+        <link refid="classUrho3D_1_1StaticModelGroup"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::RibbonTrail</label>
+        <link refid="classUrho3D_1_1RibbonTrail"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::AnimatedSprite2D</label>
+        <link refid="classUrho3D_1_1AnimatedSprite2D"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::ParticleEmitter2D</label>
+        <link refid="classUrho3D_1_1ParticleEmitter2D"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Urho3D::TerrainPatch</label>
+        <link refid="classUrho3D_1_1TerrainPatch"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::StretchableSprite2D</label>
+        <link refid="classUrho3D_1_1StretchableSprite2D"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::DecalSet</label>
+        <link refid="classUrho3D_1_1DecalSet"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Urho3D::Skybox</label>
+        <link refid="classUrho3D_1_1Skybox"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Urho3D::StaticModel</label>
+        <link refid="classUrho3D_1_1StaticModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="18">
+        <label>Urho3D::Zone</label>
+        <link refid="classUrho3D_1_1Zone"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>lastAmbientEndZone_</edgelabel>
+          <edgelabel>lastAmbientStartZone_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>zoneTexture_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>lastWorldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>ambientColor_</edgelabel>
+          <edgelabel>ambientEndColor_</edgelabel>
+          <edgelabel>ambientStartColor_</edgelabel>
+          <edgelabel>fogColor_</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>inverseWorld_</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Urho3D::PODVector&lt; Urho3D::Camera * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Urho3D::Light</label>
+        <link refid="classUrho3D_1_1Light"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::SharedPtr&lt; Urho3D::Texture &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="31">
+        <label>Urho3D::Octant</label>
+        <link refid="classUrho3D_1_1Octant"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>drawables_</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>center_</edgelabel>
+          <edgelabel>halfSize_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>cullingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>children_</edgelabel>
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Urho3D::Octree</label>
+        <link refid="classUrho3D_1_1Octree"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Urho3D::WeakPtr&lt; Urho3D::Zone &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="32">
+        <label>Urho3D::PODVector&lt; Urho3D::Drawable * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Urho3D::BoundingBox</label>
+        <link refid="classUrho3D_1_1BoundingBox"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>max_</edgelabel>
+          <edgelabel>min_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Urho3D::Matrix3x4</label>
+        <link refid="classUrho3D_1_1Matrix3x4"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>IDENTITY</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Drawable</label>
+        <link refid="classUrho3D_1_1Drawable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>zone_</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>lights_</edgelabel>
+          <edgelabel>vertexLights_</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>viewCameras_</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>firstLight_</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>boundingBox_</edgelabel>
+          <edgelabel>worldBoundingBox_</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>octant_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="23">
+        <label>Urho3D::Color</label>
+        <link refid="classUrho3D_1_1Color"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ABGR</edgelabel>
+          <edgelabel>ARGB</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>BLACK</edgelabel>
+          <edgelabel>BLUE</edgelabel>
+          <edgelabel>CYAN</edgelabel>
+          <edgelabel>GRAY</edgelabel>
+          <edgelabel>GREEN</edgelabel>
+          <edgelabel>MAGENTA</edgelabel>
+          <edgelabel>RED</edgelabel>
+          <edgelabel>TRANSPARENT_BLACK</edgelabel>
+          <edgelabel>WHITE</edgelabel>
+          <edgelabel>YELLOW</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="16">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Urho3D::Vector&lt; Urho3D::SourceBatch &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Urho3D::PODVector&lt; Urho3D::Light * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Urho3D::Color::ChannelMask</label>
+        <link refid="structUrho3D_1_1Color_1_1ChannelMask"/>
+      </node>
+      <node id="15">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" line="110" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Drawable.h" bodystart="111" bodyend="417"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Drawable_1afce158b2c7a44a5f40d4eea9aabc673b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>AddLight</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adaacb5c93a02cfd9d662b167b0bae813" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>AddToOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a73cece74565f2124ed22d66406760302" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>AddVertexLight</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad0416c01ec4088197c2207971bd046aa" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>basePassFlags_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a748155e7b747b009e4879882ec3bf7c4" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>batches_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abfead28f2b8293a8699d6ac84b8476c9" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>boundingBox_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a69790319fcb6d145ee8753a6db002f33" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>castShadows_</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a786d899e2ebfd595ee15adc70d419175" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>distance_</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5a9391dafb2151dde0a717d59413caab" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Drawable</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8ba9d34f65b38b534f499f636834e694" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>drawableFlags_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7a55d25cfff63c42a8cadae6e37b8f8b" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ada7a3ed2c8975c5d6fd11f7e770a699a" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>drawDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad6abc23d5616c4589241d2d428879fa4" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>DrawOcclusion</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a147b1459051ad28a7c3583fc30d6765d" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>firstLight_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5ae831d745f6ff6d9341eae348682613" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetBatches</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7e8f305ed9233705a707803e7a8d92e2" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae888ecaa770f261c32e6f47791d68435" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1696860cd9715781a11f622a9b7025e8" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74be6fab1f5cfdd44da3572015edf6ba" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetDrawableFlags</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aaace7f6327baffa0a0c4adb1d840de24" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac91538e42ed288039d128bdec2e5d008" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetFirstLight</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a365785ecf1a129263bf53b39ccc651cf" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5574ddf773640e9dae5466a7ff6cf8f3" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a415b264905a2ac605c837e38c9f86afe" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetLodBias</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4ccb114792b1a779bf0f714c7aa764d0" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetLodDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af56066bfd97cee073565a19d5e6bb307" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>GetLodGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4c9553b4aa9d39ff94e92f97519ba89" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af30ebf38b4278cd49fd786776cd73413" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetMaxZ</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab2becad2e313c835156cc98c63af6ce2" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetMinZ</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa9924ef8125d599be958f65fdd874206" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>GetNumOccluderTriangles</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6679001692e20900992cb553771e4080" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetOctant</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6072f938c617059fef0fc77ff21dac1f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1732b54098629811101b12b61800c3c7" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad7e22e3881027d4bf3334e06cf64d016" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetSortValue</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Drawable</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Drawable</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Drawable</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a09d563527cd3485f21b485c778e26d7e" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>GetUpdateGeometryType</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2cde3e103a1a8f887e1080095096d77f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetVertexLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae45bf9bcfe8d1c09c72258e77a76f992" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetViewMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fac24cb806464afa69b38b4634cb703" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetWorldBoundingBox</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4e067775f22ef6c92643a3ea6e5807a" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa8ee386880f6aad566f662abd2760d4f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>GetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad2faff010ee37e381ace91f59ef7dc1e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HasBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4dd313eab9c863711b8e84d7ce30fc11" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8d892c43788779924ae09ff161ff50c0" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a868163988ad17c777699cd0226ffc68b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aabd4960e08a707a45f9720fcb30dfa39" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a85642d5021a87a361151fd6823bad04f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsOccluder</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aebf5b0230d2cba605ff1f6ca24470ed4" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>IsZoneDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adafccc9b0b4f1cff9c9764b618cb60b4" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>lightMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2c3ef78ebb6b7f1b4fe33ca56a85d46a" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>lights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae4230d5696e13e62a419cf7eb543c84f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>LimitLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a58b2ac553e0255df9eb8f52b94d15deb" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>LimitVertexLights</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3781e0be1bdacb9d915c6f2d2439efab" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>lodBias_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3e1d03cadfe54e898b63b7033afa224b" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>lodDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a87d6de3a8a7895228665ef79ad331510" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>MarkForUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a1f5358a58f4f0bfa38919dd14c04e240" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Drawable_1abbd26865ea0280500b4ac6c29ce82705" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>MarkInView</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a43598df7745628a3dafef95887093a5b" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>maxLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af0c99306fc67cfd108183532f70ef765" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>maxZ_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a426fbc769c215162857ab0aaf1d3bfbb" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>minZ_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa88b30c4e2a07c664707c268a889b990" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>occludee_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5013f74c89e1259ea2a4e8a0d4dca571" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>occluder_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adf9c5f571516c8a90b68742a384d0a09" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Octant</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa279857db164197db750c919307491e3" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>octant_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1acc8a7ec8cf44f290482ad3d68f6a7719" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Octree</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a04a978441415a93f044721f6473df0e3" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa7a00b82f8a07ba71b8a63561023a4c4" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2ab23fcc436cde69fe74bfefa4ead968" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnRemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Drawable_1acf1d2b41b502aebfa72c2e280470b453" prot="protected" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aeff4f69d702780990bcc4e347a2394f0" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af146747caaf6fd85ab71fda4e364bde4" prot="protected" virt="pure-virtual"><scope>Urho3D::Drawable</scope><name>OnWorldBoundingBoxUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ad7614c648bc6beb1ac8e57dc5b0bedc0" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>ProcessRayQuery</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aec841a2d646fb37a3ca433c6f5ff475f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a48c3be2aa6cb930b2ce959784d76fdbe" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RemoveFromOctree</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae5d530586535c7d58d54053c0ac5b954" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetBasePass</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a326f83aea7b4a6c695543e45cbffafa5" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetCastShadows</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6fa21af838026c1566496968bc7a696c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetDrawDistance</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1adae53db9cd636a6583569a17b47717d2" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetLightMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a31131f13cd30e8f47d201953f0d6293f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetLodBias</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a8306bfe2f9ba357b9384d2285fcd3902" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetMaxLights</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3a96ff31da79c263163701b2a1351aab" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetMinMaxZ</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Drawable_1aa1e97bbb2427a3626a5b6816dfc888d6" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetOccludee</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae74c979945a77c14647d024f0f824c73" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetOccluder</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3c746486b469ad2c987eaa2faca73afd" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetOctant</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae1f5e010e8a556927758e8eaa7b65e9a" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetShadowDistance</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0e06b99e373bf9c0cec01d17f1384a24" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetShadowMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a5234fbefdcf8dc01cc296e18f3b2c916" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetSortValue</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ab0a0cb81cefb83249a578069c4adc4d8" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetViewMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a3181013d83f6d1b3110abe34316fe435" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetZone</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a431071bb2e7c05ad55c8aade5c18e659" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SetZoneMask</name></member>
+      <member refid="classUrho3D_1_1Drawable_1afbc2f50dafd0c9f7d34385cdfacf378f" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>shadowDistance_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a9640ac3a553bc15bfc1826317df39631" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>shadowMask_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a914180afedfd0fff9d6458bbe2ca548e" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>sortValue_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae865f6d21de70fd7bc95a7207d694b88" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>Update</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ae489279acce1c5c0168de50928391639" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>UpdateBatches</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6b6c8bf21a508589b5733bc3d545b76f" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>UpdateDrawablesWork</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a00fb66b3ce06e1e9c9bb9ecf402c78b4" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>UpdateGeometry</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a74445c3c2d016d2ce796683ec63e81b8" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>updateQueued_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a7effc9e891517efb4a85104e8e49c9d3" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>vertexLights_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a6de3f920398ae6adb36991175e6f8380" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>viewCameras_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a0be4e0aacab060480d106a4a39d24a26" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>viewFrameNumber_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a63e29f96811c72e08c15fd01789d6ef4" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>viewMask_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a10f4a0419fadd10735448f7a5b639099" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>worldBoundingBox_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a23281f9ff7eeaa73c147b86fc29f1f9d" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>worldBoundingBoxDirty_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Drawable_1af251651fa16a666b0ec11af053bf80aa" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>zone_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1ac7871920deb048d9d675ad34c5874a00" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>zoneDirty_</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a2a5536a40728f773e36238bfe67b3958" prot="protected" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>zoneMask_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Drawable_1a4be7208dbdfff0725eef83f33ad28536" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>~Drawable</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Drawable</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::Drawable</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

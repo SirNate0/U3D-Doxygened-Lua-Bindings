@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Log" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Log</compoundname>
+    <basecompoundref refid="classUrho3D_1_1Object" prot="public" virt="non-virtual">Urho3D::Object</basecompoundref>
+    <includes refid="Log_8h" local="no">Log.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1a8a657c5ead7422907a89a6485e5a95e9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::Log::logMutex_</definition>
+        <argsstring></argsstring>
+        <name>logMutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> for threaded operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="132" column="11" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1a9eb7e2ccd36cd1defb5b790e831660bd" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1List" kindref="compound">List</ref>&lt; <ref refid="structUrho3D_1_1StoredLogMessage" kindref="compound">StoredLogMessage</ref> &gt;</type>
+        <definition>List&lt;StoredLogMessage&gt; Urho3D::Log::threadMessages_</definition>
+        <argsstring></argsstring>
+        <name>threadMessages_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Log" kindref="compound">Log</ref> messages from other threads. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="134" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1a9b2fa07e1c9f392233c172341814e7ea" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1SharedPtr" kindref="compound">SharedPtr</ref>&lt; <ref refid="classUrho3D_1_1File" kindref="compound">File</ref> &gt;</type>
+        <definition>SharedPtr&lt;File&gt; Urho3D::Log::logFile_</definition>
+        <argsstring></argsstring>
+        <name>logFile_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Log" kindref="compound">Log</ref> file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="136" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1ad6a9931a3d3153b7586c4d2f8118d760" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Log::lastMessage_</definition>
+        <argsstring></argsstring>
+        <name>lastMessage_</name>
+        <briefdescription>
+<para>Last log message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="138" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1a3df042c3ec456944fd1c229e2d745ae7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Urho3D::Log::level_</definition>
+        <argsstring></argsstring>
+        <name>level_</name>
+        <briefdescription>
+<para>Logging level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="140" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1ac52452e63c8fe3f0175cc0baa8b6cbac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Log::timeStamp_</definition>
+        <argsstring></argsstring>
+        <name>timeStamp_</name>
+        <briefdescription>
+<para>Timestamp log messages flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="142" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1a6e549bd2e01141611777c0ba24f15e3a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Log::inWrite_</definition>
+        <argsstring></argsstring>
+        <name>inWrite_</name>
+        <briefdescription>
+<para>In write flag to prevent recursion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="144" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Log_1a235a137eeb3054f984beb40b9ae73c1a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::Log::quiet_</definition>
+        <argsstring></argsstring>
+        <name>quiet_</name>
+        <briefdescription>
+<para>Quiet mode flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="146" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Log_1ae12ecd0ca1a990265b785318e5010806" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Log::Log</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>Log</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="79" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a0d559d80f5ddc02dd7e688f4dad84161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Log::~Log</definition>
+        <argsstring>() override</argsstring>
+        <name>~Log</name>
+        <briefdescription>
+<para>Destruct. Close the log file if open. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="81" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1afc1ac0e1c46d8281634db28b6d6b2812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Log::Open</definition>
+        <argsstring>(const String &amp;fileName)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+<para>Open the log file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1af8baf543856e1417d5738ecce3b2d2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Log::Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <briefdescription>
+<para>Close the log file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a97f3a9709983f85f600b450a7101eb0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Log::SetLevel</definition>
+        <argsstring>(int level)</argsstring>
+        <name>SetLevel</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set logging level. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1ad99fcdace764f95754f2aa950da3ce2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Log::SetTimeStamp</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetTimeStamp</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether to timestamp log messages. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a93c01c97dcefeb8c14ae31af508adc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Log::SetQuiet</definition>
+        <argsstring>(bool quiet)</argsstring>
+        <name>SetQuiet</name>
+        <param>
+          <type>bool</type>
+          <declname>quiet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set quiet mode ie. only print error entries to standard error stream (which is normally redirected to console also). Output to log file is not affected by this mode. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a731db45677cf9dc039aa1b3682142774" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Urho3D::Log::GetLevel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return logging level. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="99" column="9" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1ae75844fc2727fc8113f5653ea3553321" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Log::GetTimeStamp</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeStamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether log messages are timestamped. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="103" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1aef3962c6332bd58aff12c9c7ab007033" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::Log::GetLastMessage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLastMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return last log message. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="107" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a37b0b8afae0c5459ebb50e09126ed433" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Log::IsQuiet</definition>
+        <argsstring>() const</argsstring>
+        <name>IsQuiet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return whether log is in quiet mode (only errors printed to standard error stream). BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="111" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Log_1aa6cec9c94951f165dd9f4e71e5d80cb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Log::Write</definition>
+        <argsstring>(int level, const String &amp;message)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write to the log. If logging level is higher than the level of the message, the message is ignored. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="115" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a982b3737f68616c468d2b8603d75b1a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Log::WriteFormat</definition>
+        <argsstring>(int level, const char *format,...)</argsstring>
+        <name>WriteFormat</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Write formatted message to the log. If logging level is higher than the level of the message, the message is ignored. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="117" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1a0bad41ac81f1b3c91c73635d51a422c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Log::WriteRaw</definition>
+        <argsstring>(const String &amp;message, bool error=false)</argsstring>
+        <name>WriteRaw</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>error</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Write raw output to the log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="119" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Log_1adb395d340870dee0125ac5b2216059e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Arg0</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Urho3D::Log::Write</definition>
+        <argsstring>(int level, const char *format, Arg0 &amp;&amp;arg0, Args &amp;&amp;... args)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>Arg0 &amp;&amp;</type>
+          <declname>arg0</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Write to the log using the FormatString formatting syntax. Requires at least one argument so that curly braces do not need to be escaped for unformatted <ref refid="classUrho3D_1_1Log_1aa6cec9c94951f165dd9f4e71e5d80cb2" kindref="member">Log::Write</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="122" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Log_1aad49152cf23e131c9f53515616730834" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Log::HandleEndFrame</definition>
+        <argsstring>(StringHash eventType, VariantMap &amp;eventData)</argsstring>
+        <name>HandleEndFrame</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type><ref refid="Variant_8h_1aee85c8bb4263431ef586545ff082720b" kindref="member">VariantMap</ref> &amp;</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+<para>Handle end of frame. Process the threaded log messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="129" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logging subsystem. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Log</label>
+        <link refid="classUrho3D_1_1Log"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Log</label>
+        <link refid="classUrho3D_1_1Log"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" line="73" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/IO/Log.h" bodystart="74" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Log_1af8baf543856e1417d5738ecce3b2d2bb" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Close</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::Log</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1Log_1aef3962c6332bd58aff12c9c7ab007033" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetLastMessage</name></member>
+      <member refid="classUrho3D_1_1Log_1a731db45677cf9dc039aa1b3682142774" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetLevel</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Log_1ae75844fc2727fc8113f5653ea3553321" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetTimeStamp</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::Log</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::Log</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::Log</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1Log_1aad49152cf23e131c9f53515616730834" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>HandleEndFrame</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Log_1a6e549bd2e01141611777c0ba24f15e3a" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>inWrite_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Log_1a37b0b8afae0c5459ebb50e09126ed433" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>IsQuiet</name></member>
+      <member refid="classUrho3D_1_1Log_1ad6a9931a3d3153b7586c4d2f8118d760" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>lastMessage_</name></member>
+      <member refid="classUrho3D_1_1Log_1a3df042c3ec456944fd1c229e2d745ae7" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>level_</name></member>
+      <member refid="classUrho3D_1_1Log_1ae12ecd0ca1a990265b785318e5010806" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Log</name></member>
+      <member refid="classUrho3D_1_1Log_1a9b2fa07e1c9f392233c172341814e7ea" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>logFile_</name></member>
+      <member refid="classUrho3D_1_1Log_1a8a657c5ead7422907a89a6485e5a95e9" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>logMutex_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::Log</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Log_1afc1ac0e1c46d8281634db28b6d6b2812" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Open</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Log_1a235a137eeb3054f984beb40b9ae73c1a" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>quiet_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Log_1a97f3a9709983f85f600b450a7101eb0f" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SetLevel</name></member>
+      <member refid="classUrho3D_1_1Log_1a93c01c97dcefeb8c14ae31af508adc67" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SetQuiet</name></member>
+      <member refid="classUrho3D_1_1Log_1ad99fcdace764f95754f2aa950da3ce2a" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SetTimeStamp</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Log_1a9eb7e2ccd36cd1defb5b790e831660bd" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>threadMessages_</name></member>
+      <member refid="classUrho3D_1_1Log_1ac52452e63c8fe3f0175cc0baa8b6cbac" prot="private" virt="non-virtual"><scope>Urho3D::Log</scope><name>timeStamp_</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Log_1aa6cec9c94951f165dd9f4e71e5d80cb2" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Write</name></member>
+      <member refid="classUrho3D_1_1Log_1adb395d340870dee0125ac5b2216059e7" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>Write</name></member>
+      <member refid="classUrho3D_1_1Log_1a982b3737f68616c468d2b8603d75b1a1" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>WriteFormat</name></member>
+      <member refid="classUrho3D_1_1Log_1a0bad41ac81f1b3c91c73635d51a422c7" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>WriteRaw</name></member>
+      <member refid="classUrho3D_1_1Log_1a0d559d80f5ddc02dd7e688f4dad84161" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>~Log</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::Log</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::Log</scope><name>~RefCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

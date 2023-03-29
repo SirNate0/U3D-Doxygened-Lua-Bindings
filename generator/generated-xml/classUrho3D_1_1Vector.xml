@@ -1,0 +1,1518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Vector" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Vector</compoundname>
+    <basecompoundref refid="classUrho3D_1_1VectorBase" prot="public" virt="non-virtual">Urho3D::VectorBase</basecompoundref>
+    <includes refid="Vector_8h" local="no">Vector.h</includes>
+    <innerclass refid="structUrho3D_1_1Vector_1_1CopyTag" prot="private">Urho3D::Vector::CopyTag</innerclass>
+    <innerclass refid="structUrho3D_1_1Vector_1_1MoveTag" prot="private">Urho3D::Vector::MoveTag</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classUrho3D_1_1Vector_1aa88f016ca79816adbf2507fbf0b73b3c" prot="public" static="no">
+        <type>T</type>
+        <definition>using Urho3D::Vector&lt; T &gt;::ValueType =  T</definition>
+        <argsstring></argsstring>
+        <name>ValueType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="50" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classUrho3D_1_1Vector_1ae9a4d4f9e96280a03d057b7238da1a54" prot="public" static="no">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">RandomAccessIterator</ref>&lt; T &gt;</type>
+        <definition>using Urho3D::Vector&lt; T &gt;::Iterator =  RandomAccessIterator&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="51" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classUrho3D_1_1Vector_1a6d163bb4a262da549c9a15ce59bf30a6" prot="public" static="no">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">RandomAccessConstIterator</ref>&lt; T &gt;</type>
+        <definition>using Urho3D::Vector&lt; T &gt;::ConstIterator =  RandomAccessConstIterator&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="52" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a5b509d20611752b929043f7ee03d7742" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>Vector</name>
+        <briefdescription>
+<para>Construct empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1aa7a064f2ba3f06c4d23da476b3c2de6a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(unsigned size)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct with initial size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="58" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a0bffc4a7d2da87df9f29c6170201053d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(unsigned size, const T &amp;value)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct with initial size and default value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="64" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ab3a205779a62f3bb36e848a77981ac8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(const T *data, unsigned size)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Construct with initial data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="72" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ae33942782817907a1997d4aa06d57e3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;vector)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="78" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a6d11df6ae47a7ad31985ac599d22036c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(ConstIterator start, ConstIterator end)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another vector (iterator version). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="84" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a1ac186c4abdeaa8dd66a24b54fd324f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;&amp;vector)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Move-construct from another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="90" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a62aaa5dcd1696b3dd2c2dcae2e0c945d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(const std::initializer_list&lt; T &gt; &amp;list)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const std::initializer_list&lt; T &gt; &amp;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+<para>Aggregate initialization constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="96" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a07ca7f98dcdb5d7a5c3e19d28e5f8219" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Vector&lt; T &gt;::~Vector</definition>
+        <argsstring>()</argsstring>
+        <name>~Vector</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="105" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a0f9a7ae43822160611a49e124b84963a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; Urho3D::Vector&lt; T &gt;::operator=</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="112" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="112" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a236e628c911eecb7e6dc30d8428bd4c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; Urho3D::Vector&lt; T &gt;::operator=</definition>
+        <argsstring>(Vector&lt; T &gt; &amp;&amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Move-assign from another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="124" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ad89d7daef8edf70562250e4a9638e18a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; Urho3D::Vector&lt; T &gt;::operator+=</definition>
+        <argsstring>(const T &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign an element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="131" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="131" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a1014cafe5d70592ec9a332f3ef840654" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt;T&gt;&amp; Urho3D::Vector&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add-assign another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="138" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a65600ac1315eaa24c93bc22cb10e86ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; Urho3D::Vector&lt; T &gt;::operator+</definition>
+        <argsstring>(const T &amp;rhs) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add an element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="145" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="145" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ae6d8646ff8e28bc7af285f32ebd83beb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; Urho3D::Vector&lt; T &gt;::operator+</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;rhs) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Add another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="153" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="153" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1aa3145286b419a0787bd0e550eea1b9a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+            <defval>T</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Urho3D::Vector&lt; T &gt;::operator==</definition>
+        <argsstring>(std::enable_if_t&lt; std::is_same_v&lt; std::void_t&lt; decltype(std::declval&lt; const U &amp; &gt;() !=std::declval&lt; const T &amp; &gt;())&gt;, void &gt;, const Vector&lt; U &gt; &amp; &gt; rhs) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>std::enable_if_t&lt; std::is_same_v&lt; std::void_t&lt; decltype(std::declval&lt; const U &amp; &gt;() !=std::declval&lt; const T &amp; &gt;())&gt;</type>
+        </param>
+        <param>
+          <type>void</type>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; U &gt; &amp;</type>
+        </param>
+        <param>
+          <type>rhs</type>
+        </param>
+        <briefdescription>
+<para>Test for equality with another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="162" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="162" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a974acce618f7c145d9939651e34a75e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+            <defval>T</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool Urho3D::Vector&lt; T &gt;::operator!=</definition>
+        <argsstring>(std::enable_if_t&lt; std::is_same_v&lt; std::void_t&lt; decltype(std::declval&lt; const U &amp; &gt;() !=std::declval&lt; const T &amp; &gt;())&gt;, void &gt;, const Vector&lt; T &gt; &amp; &gt; rhs) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>std::enable_if_t&lt; std::is_same_v&lt; std::void_t&lt; decltype(std::declval&lt; const U &amp; &gt;() !=std::declval&lt; const T &amp; &gt;())&gt;</type>
+        </param>
+        <param>
+          <type>void</type>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        </param>
+        <param>
+          <type>rhs</type>
+        </param>
+        <briefdescription>
+<para>Test for inequality with another vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="181" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="181" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a10541fdcb1422e331740daf1535f67c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::Vector&lt; T &gt;::operator[]</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return element at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="199" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="199" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ae7dcaa774463e6f84717d87d2489f187" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Urho3D::Vector&lt; T &gt;::operator[]</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return const element at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="206" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="206" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1acc6d3367d69abfd9545f22381cfee50c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::Vector&lt; T &gt;::At</definition>
+        <argsstring>(unsigned index)</argsstring>
+        <name>At</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return element at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="213" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1af85d4a4d9882b3f12556d6af6bfde45c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Urho3D::Vector&lt; T &gt;::At</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>At</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return const element at index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="220" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1aedefb402f2649316bbe4387000185bb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::Vector&lt; T &gt;::EmplaceBack</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>EmplaceBack</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Create an element at the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="227" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="227" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a083b39861b996df82f811a9a4ebff109" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Push</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add an element at the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="245" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="245" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a3d6bcc11744b38d7170b97ef0dfbb028" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Push</definition>
+        <argsstring>(T &amp;&amp;value)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Move-add an element at the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="258" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="258" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a15e5ef2ff18762fcfa66284938d182ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Push</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;vector)</argsstring>
+        <name>Push</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Add another vector at the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="280" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="280" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a87cb0c8e1b9593bca430bcae09d028f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Pop</definition>
+        <argsstring>()</argsstring>
+        <name>Pop</name>
+        <briefdescription>
+<para>Remove the last element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="283" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="283" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a59348abb9b8a78f19208613d45431fc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(unsigned pos, const T &amp;value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Insert an element at position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="290" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="290" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ae75d286ee508b06042e099be6caa7ba8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(unsigned pos, T &amp;&amp;value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Insert an element at position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="296" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a1488f39bfc647552cf50ec2c83a13f2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(unsigned pos, const Vector&lt; T &gt; &amp;vector)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Insert another vector at position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="302" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a89f13cb71d5cdf7ae285b307597bec43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, const T &amp;value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Insert an element by iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="308" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="308" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a60fbc23fc749e6a0ebb64c06d553f040" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, T &amp;&amp;value)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Move-insert an element by iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="315" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="315" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ab864eae39a3cc1ca22a295f860f2b916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, const Vector&lt; T &gt; &amp;vector)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+<para>Insert a vector by iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="322" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="322" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a439b1808c03d04438dba1db1a70dc85d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, const ConstIterator &amp;start, const ConstIterator &amp;end)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Insert a vector partially by iterators. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="329" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="329" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a3ca9a622b58666457a341ffb4f67ccf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Insert</definition>
+        <argsstring>(const Iterator &amp;dest, const T *start, const T *end)</argsstring>
+        <name>Insert</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Insert elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="336" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="336" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a76da1334013d652c918044123e08d927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Erase</definition>
+        <argsstring>(unsigned pos, unsigned length=1)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Erase a range of elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="343" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="343" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1afdc44ed84bd8670cd82a833e67d7373c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::EraseSwap</definition>
+        <argsstring>(unsigned pos, unsigned length=1)</argsstring>
+        <name>EraseSwap</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Erase a range of elements by swapping elements from the end of the array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="353" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="353" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a0e1609f7cb5e5fce57b7c0826fb6cbf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Erase</definition>
+        <argsstring>(const Iterator &amp;it)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>Erase an element by iterator. Return iterator to the next element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="377" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="377" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a3a83b67315d9eb16be07ec812d1ea40f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Erase</definition>
+        <argsstring>(const Iterator &amp;start, const Iterator &amp;end)</argsstring>
+        <name>Erase</name>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Erase a range by iterators. Return iterator to the next element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="388" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="388" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a26ae3d7ce7fded91105f03f8ec475582" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Vector&lt; T &gt;::Remove</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Erase an element by value. Return true if was found and erased. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="400" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="400" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a7b977f264a8993dce480fe1992020d01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Vector&lt; T &gt;::RemoveSwap</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>RemoveSwap</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Erase an element by value by swapping with the last element. Return true if was found and erased. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="413" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="413" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a816870b165f6d7662f3d806ad73c5c59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="426" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="426" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a5d21ed173348c7bca276c417ed7d38e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Resize</definition>
+        <argsstring>(unsigned newSize)</argsstring>
+        <name>Resize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+<para>Resize the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="429" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="429" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a91329ff378f509946fba114c6dbddd54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Resize</definition>
+        <argsstring>(unsigned newSize, const T &amp;value)</argsstring>
+        <name>Resize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>newSize</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Resize the vector and fill new elements with default value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="432" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="432" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a30b2235d2061acfb649faa5afddebb69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Reserve</definition>
+        <argsstring>(unsigned newCapacity)</argsstring>
+        <name>Reserve</name>
+        <param>
+          <type>unsigned</type>
+          <declname>newCapacity</declname>
+        </param>
+        <briefdescription>
+<para>Set new capacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="441" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="441" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1aaacd8cfee9386484c24a3c4e13a68cef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::Compact</definition>
+        <argsstring>()</argsstring>
+        <name>Compact</name>
+        <briefdescription>
+<para>Reallocate so that no extra memory is used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="466" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="466" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a8d7df0dc5d81dc38a2cc90e6574dbf38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Find</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Find</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Return iterator to value, or to the end if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="469" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="469" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a36b28e1a37a6d829a90e02184459234b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator Urho3D::Vector&lt; T &gt;::Find</definition>
+        <argsstring>(const T &amp;value) const</argsstring>
+        <name>Find</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Return const iterator to value, or to the end if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="478" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="478" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ac9d4cd1de55b2141bd184cab0be42232" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Vector&lt; T &gt;::IndexOf</definition>
+        <argsstring>(const T &amp;value) const</argsstring>
+        <name>IndexOf</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Return index of value in vector, or size if not found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="487" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="487" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a6f897eba8ac475c36eb83fd66bdd6f56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Vector&lt; T &gt;::Contains</definition>
+        <argsstring>(const T &amp;value) const</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Return whether contains a specific value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="493" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="493" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1aa20f23bae4cf1d7cda06f6c3b47c7504" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::Begin</definition>
+        <argsstring>()</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+<para>Return iterator to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="496" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="496" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1aa61b306003033c57a3aa90ca00e9232f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator Urho3D::Vector&lt; T &gt;::Begin</definition>
+        <argsstring>() const</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+<para>Return const iterator to the beginning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="499" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="499" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1af79ffb0683568b08fe130ee028bfd1ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::End</definition>
+        <argsstring>()</argsstring>
+        <name>End</name>
+        <briefdescription>
+<para>Return iterator to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="502" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="502" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a6d4b77cb3d221a2924d73449825f9079" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessConstIterator" kindref="compound">ConstIterator</ref></type>
+        <definition>ConstIterator Urho3D::Vector&lt; T &gt;::End</definition>
+        <argsstring>() const</argsstring>
+        <name>End</name>
+        <briefdescription>
+<para>Return const iterator to the end. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="505" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="505" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a54a40caab4128825d6010592c8448317" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::Vector&lt; T &gt;::Front</definition>
+        <argsstring>()</argsstring>
+        <name>Front</name>
+        <briefdescription>
+<para>Return first element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="508" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="508" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a4d9d5644f4302f0b25e754593f639617" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Urho3D::Vector&lt; T &gt;::Front</definition>
+        <argsstring>() const</argsstring>
+        <name>Front</name>
+        <briefdescription>
+<para>Return const first element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="515" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="515" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a0d42dd722113dc655b16878841abe0f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Urho3D::Vector&lt; T &gt;::Back</definition>
+        <argsstring>()</argsstring>
+        <name>Back</name>
+        <briefdescription>
+<para>Return last element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="522" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="522" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a818a44611a01ac961edad577cf28537c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; Urho3D::Vector&lt; T &gt;::Back</definition>
+        <argsstring>() const</argsstring>
+        <name>Back</name>
+        <briefdescription>
+<para>Return const last element. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="529" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="529" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a5da7101c355895f41098fcf875e4c56a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Vector&lt; T &gt;::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Return size of vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="536" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="536" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a049fb627dffdb6024b14f010d0ee2520" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::Vector&lt; T &gt;::Capacity</definition>
+        <argsstring>() const</argsstring>
+        <name>Capacity</name>
+        <briefdescription>
+<para>Return capacity of vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="539" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="539" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a83b3a48f0d5d0aae79aa6b6304cde595" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Vector&lt; T &gt;::Empty</definition>
+        <argsstring>() const</argsstring>
+        <name>Empty</name>
+        <briefdescription>
+<para>Return whether vector is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="542" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="542" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a83d6ba669efcbbcb43e9b171755ff86b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Urho3D::Vector&lt; T &gt;::Buffer</definition>
+        <argsstring>() const</argsstring>
+        <name>Buffer</name>
+        <briefdescription>
+<para>Return the buffer with right type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="545" column="7" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="545" bodyend="545"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a5c0b7ecbd0ae0c75a9a69bf9dedc517a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Vector&lt; T &gt;::ConstructElements</definition>
+        <argsstring>(T *dest, unsigned count)</argsstring>
+        <name>ConstructElements</name>
+        <param>
+          <type>T *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Construct elements using default ctor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="549" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="549" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ad9202571977bbbe46f995a444907bbc7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class RandomIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Urho3D::Vector&lt; T &gt;::ConstructElements</definition>
+        <argsstring>(T *dest, RandomIteratorT start, RandomIteratorT end, CopyTag)</argsstring>
+        <name>ConstructElements</name>
+        <param>
+          <type>T *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>RandomIteratorT</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>RandomIteratorT</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>CopyTag</type>
+        </param>
+        <briefdescription>
+<para>Copy-construct elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="557" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="557" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1af5e4e89b53df2d51a6671fa24f322d7a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class RandomIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void Urho3D::Vector&lt; T &gt;::ConstructElements</definition>
+        <argsstring>(T *dest, RandomIteratorT start, RandomIteratorT end, MoveTag)</argsstring>
+        <name>ConstructElements</name>
+        <param>
+          <type>T *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>RandomIteratorT</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>RandomIteratorT</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>MoveTag</type>
+        </param>
+        <briefdescription>
+<para>Move-construct elements. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="566" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="566" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a05f68c0546419caf7d6050a3e7d8d1d5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned Urho3D::Vector&lt; T &gt;::CalculateCapacity</definition>
+        <argsstring>(unsigned size, unsigned capacity)</argsstring>
+        <name>CalculateCapacity</name>
+        <param>
+          <type>unsigned</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+<para>Calculate new vector capacity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="574" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="574" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1afb87585db12d120ab5148ec782d14632" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::Vector&lt; T &gt;::DestructElements</definition>
+        <argsstring>(T *dest, unsigned count)</argsstring>
+        <name>DestructElements</name>
+        <param>
+          <type>T *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Call the elements&apos; destructors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="679" column="17" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="679" bodyend="686"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1ae9748e916e5595ad4ea377f2a0d1a1b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Vector&lt; T &gt;::DoResize</definition>
+        <argsstring>(unsigned newSize)</argsstring>
+        <name>DoResize</name>
+        <param>
+          <type>unsigned</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+<para>Resize the vector and create/remove new elements as necessary. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="587" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="587" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a17e4a13942a9512bc0eceb3e46d950dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Tag</type>
+          </param>
+          <param>
+            <type>class RandomIteratorT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::DoInsertElements</definition>
+        <argsstring>(unsigned pos, RandomIteratorT start, RandomIteratorT end, Tag)</argsstring>
+        <name>DoInsertElements</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>RandomIteratorT</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>RandomIteratorT</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+        </param>
+        <briefdescription>
+<para>Insert elements into the vector using copy or move constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="620" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="620" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Vector_1a4bd8c2cc16ad68fcf618630eb3de29df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structUrho3D_1_1RandomAccessIterator" kindref="compound">Iterator</ref></type>
+        <definition>Iterator Urho3D::Vector&lt; T &gt;::DoEraseElements</definition>
+        <argsstring>(unsigned pos, unsigned count)</argsstring>
+        <name>DoEraseElements</name>
+        <param>
+          <type>unsigned</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Erase elements from the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="668" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="668" bodyend="676"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Vector template class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::Vector&lt; T &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::Vector&lt; T &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" line="44" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Container/Vector.h" bodystart="45" bodyend="687"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1VectorBase_1aaf1aeb7d501ce0eb442acd5b987e5b72" prot="protected" virt="non-virtual"><scope>Urho3D::Vector</scope><name>AllocateBuffer</name></member>
+      <member refid="classUrho3D_1_1Vector_1acc6d3367d69abfd9545f22381cfee50c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>At</name></member>
+      <member refid="classUrho3D_1_1Vector_1af85d4a4d9882b3f12556d6af6bfde45c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>At</name></member>
+      <member refid="classUrho3D_1_1Vector_1a0d42dd722113dc655b16878841abe0f6" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Back</name></member>
+      <member refid="classUrho3D_1_1Vector_1a818a44611a01ac961edad577cf28537c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Back</name></member>
+      <member refid="classUrho3D_1_1Vector_1aa20f23bae4cf1d7cda06f6c3b47c7504" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Begin</name></member>
+      <member refid="classUrho3D_1_1Vector_1aa61b306003033c57a3aa90ca00e9232f" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Begin</name></member>
+      <member refid="classUrho3D_1_1Vector_1a83d6ba669efcbbcb43e9b171755ff86b" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Buffer</name></member>
+      <member refid="classUrho3D_1_1VectorBase_1ad2b0ea7304bbdfb42865c28ab6e573b4" prot="protected" virt="non-virtual"><scope>Urho3D::Vector</scope><name>buffer_</name></member>
+      <member refid="classUrho3D_1_1Vector_1a05f68c0546419caf7d6050a3e7d8d1d5" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>CalculateCapacity</name></member>
+      <member refid="classUrho3D_1_1Vector_1a049fb627dffdb6024b14f010d0ee2520" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Capacity</name></member>
+      <member refid="classUrho3D_1_1VectorBase_1a6c6636e4f7393750bbc602b84a9634f3" prot="protected" virt="non-virtual"><scope>Urho3D::Vector</scope><name>capacity_</name></member>
+      <member refid="classUrho3D_1_1Vector_1a816870b165f6d7662f3d806ad73c5c59" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1Vector_1aaacd8cfee9386484c24a3c4e13a68cef" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Compact</name></member>
+      <member refid="classUrho3D_1_1Vector_1a6d163bb4a262da549c9a15ce59bf30a6" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>ConstIterator</name></member>
+      <member refid="classUrho3D_1_1Vector_1a5c0b7ecbd0ae0c75a9a69bf9dedc517a" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>ConstructElements</name></member>
+      <member refid="classUrho3D_1_1Vector_1ad9202571977bbbe46f995a444907bbc7" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>ConstructElements</name></member>
+      <member refid="classUrho3D_1_1Vector_1af5e4e89b53df2d51a6671fa24f322d7a" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>ConstructElements</name></member>
+      <member refid="classUrho3D_1_1Vector_1a6f897eba8ac475c36eb83fd66bdd6f56" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Contains</name></member>
+      <member refid="classUrho3D_1_1Vector_1afb87585db12d120ab5148ec782d14632" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>DestructElements</name></member>
+      <member refid="classUrho3D_1_1Vector_1a4bd8c2cc16ad68fcf618630eb3de29df" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>DoEraseElements</name></member>
+      <member refid="classUrho3D_1_1Vector_1a17e4a13942a9512bc0eceb3e46d950dd" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>DoInsertElements</name></member>
+      <member refid="classUrho3D_1_1Vector_1ae9748e916e5595ad4ea377f2a0d1a1b7" prot="private" virt="non-virtual"><scope>Urho3D::Vector</scope><name>DoResize</name></member>
+      <member refid="classUrho3D_1_1Vector_1aedefb402f2649316bbe4387000185bb2" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>EmplaceBack</name></member>
+      <member refid="classUrho3D_1_1Vector_1a83b3a48f0d5d0aae79aa6b6304cde595" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Empty</name></member>
+      <member refid="classUrho3D_1_1Vector_1af79ffb0683568b08fe130ee028bfd1ef" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>End</name></member>
+      <member refid="classUrho3D_1_1Vector_1a6d4b77cb3d221a2924d73449825f9079" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>End</name></member>
+      <member refid="classUrho3D_1_1Vector_1a76da1334013d652c918044123e08d927" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Erase</name></member>
+      <member refid="classUrho3D_1_1Vector_1a0e1609f7cb5e5fce57b7c0826fb6cbf3" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Erase</name></member>
+      <member refid="classUrho3D_1_1Vector_1a3a83b67315d9eb16be07ec812d1ea40f" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Erase</name></member>
+      <member refid="classUrho3D_1_1Vector_1afdc44ed84bd8670cd82a833e67d7373c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>EraseSwap</name></member>
+      <member refid="classUrho3D_1_1Vector_1a8d7df0dc5d81dc38a2cc90e6574dbf38" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Find</name></member>
+      <member refid="classUrho3D_1_1Vector_1a36b28e1a37a6d829a90e02184459234b" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Find</name></member>
+      <member refid="classUrho3D_1_1Vector_1a54a40caab4128825d6010592c8448317" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Front</name></member>
+      <member refid="classUrho3D_1_1Vector_1a4d9d5644f4302f0b25e754593f639617" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Front</name></member>
+      <member refid="classUrho3D_1_1Vector_1ac9d4cd1de55b2141bd184cab0be42232" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>IndexOf</name></member>
+      <member refid="classUrho3D_1_1Vector_1a59348abb9b8a78f19208613d45431fc9" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1ae75d286ee508b06042e099be6caa7ba8" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1a1488f39bfc647552cf50ec2c83a13f2b" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1a89f13cb71d5cdf7ae285b307597bec43" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1a60fbc23fc749e6a0ebb64c06d553f040" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1ab864eae39a3cc1ca22a295f860f2b916" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1a439b1808c03d04438dba1db1a70dc85d" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1a3ca9a622b58666457a341ffb4f67ccf7" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Insert</name></member>
+      <member refid="classUrho3D_1_1Vector_1ae9a4d4f9e96280a03d057b7238da1a54" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Iterator</name></member>
+      <member refid="classUrho3D_1_1Vector_1a974acce618f7c145d9939651e34a75e9" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator!=</name></member>
+      <member refid="classUrho3D_1_1Vector_1a65600ac1315eaa24c93bc22cb10e86ae" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator+</name></member>
+      <member refid="classUrho3D_1_1Vector_1ae6d8646ff8e28bc7af285f32ebd83beb" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator+</name></member>
+      <member refid="classUrho3D_1_1Vector_1ad89d7daef8edf70562250e4a9638e18a" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1Vector_1a1014cafe5d70592ec9a332f3ef840654" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator+=</name></member>
+      <member refid="classUrho3D_1_1Vector_1a0f9a7ae43822160611a49e124b84963a" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Vector_1a236e628c911eecb7e6dc30d8428bd4c2" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Vector_1aa3145286b419a0787bd0e550eea1b9a8" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator==</name></member>
+      <member refid="classUrho3D_1_1Vector_1a10541fdcb1422e331740daf1535f67c4" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1Vector_1ae7dcaa774463e6f84717d87d2489f187" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>operator[]</name></member>
+      <member refid="classUrho3D_1_1Vector_1a87cb0c8e1b9593bca430bcae09d028f2" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Pop</name></member>
+      <member refid="classUrho3D_1_1Vector_1a083b39861b996df82f811a9a4ebff109" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Push</name></member>
+      <member refid="classUrho3D_1_1Vector_1a3d6bcc11744b38d7170b97ef0dfbb028" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Push</name></member>
+      <member refid="classUrho3D_1_1Vector_1a15e5ef2ff18762fcfa66284938d182ea" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Push</name></member>
+      <member refid="classUrho3D_1_1Vector_1a26ae3d7ce7fded91105f03f8ec475582" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Vector_1a7b977f264a8993dce480fe1992020d01" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>RemoveSwap</name></member>
+      <member refid="classUrho3D_1_1Vector_1a30b2235d2061acfb649faa5afddebb69" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Reserve</name></member>
+      <member refid="classUrho3D_1_1Vector_1a5d21ed173348c7bca276c417ed7d38e2" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Resize</name></member>
+      <member refid="classUrho3D_1_1Vector_1a91329ff378f509946fba114c6dbddd54" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Resize</name></member>
+      <member refid="classUrho3D_1_1Vector_1a5da7101c355895f41098fcf875e4c56a" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Size</name></member>
+      <member refid="classUrho3D_1_1VectorBase_1a0efc5997a021bf780cef0ee164ab3ba1" prot="protected" virt="non-virtual"><scope>Urho3D::Vector</scope><name>size_</name></member>
+      <member refid="classUrho3D_1_1VectorBase_1aec648d72344954c3be22218eb180f6a4" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Swap</name></member>
+      <member refid="classUrho3D_1_1Vector_1aa88f016ca79816adbf2507fbf0b73b3c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>ValueType</name></member>
+      <member refid="classUrho3D_1_1Vector_1a5b509d20611752b929043f7ee03d7742" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1aa7a064f2ba3f06c4d23da476b3c2de6a" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1a0bffc4a7d2da87df9f29c6170201053d" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1ab3a205779a62f3bb36e848a77981ac8c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1ae33942782817907a1997d4aa06d57e3f" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1a6d11df6ae47a7ad31985ac599d22036c" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1a1ac186c4abdeaa8dd66a24b54fd324f1" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1Vector_1a62aaa5dcd1696b3dd2c2dcae2e0c945d" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>Vector</name></member>
+      <member refid="classUrho3D_1_1VectorBase_1a790ad39319cf274ac3f5599dec0dd6f5" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>VectorBase</name></member>
+      <member refid="classUrho3D_1_1Vector_1a07ca7f98dcdb5d7a5c3e19d28e5f8219" prot="public" virt="non-virtual"><scope>Urho3D::Vector</scope><name>~Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1BackgroundLoader" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::BackgroundLoader</compoundname>
+    <basecompoundref refid="classUrho3D_1_1RefCounted" prot="public" virt="non-virtual">Urho3D::RefCounted</basecompoundref>
+    <basecompoundref refid="classUrho3D_1_1Thread" prot="public" virt="non-virtual">Urho3D::Thread</basecompoundref>
+    <includes refid="BackgroundLoader_8h" local="no">BackgroundLoader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1BackgroundLoader_1a0902e461ebd1ac791f257f3cc9d886e9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1ResourceCache" kindref="compound">ResourceCache</ref> *</type>
+        <definition>ResourceCache* Urho3D::BackgroundLoader::owner_</definition>
+        <argsstring></argsstring>
+        <name>owner_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="81" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1BackgroundLoader_1a7b0fc5ee71f41c3a96bf93901a2d38de" prot="private" static="no" mutable="yes">
+        <type><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref></type>
+        <definition>Mutex Urho3D::BackgroundLoader::backgroundLoadMutex_</definition>
+        <argsstring></argsstring>
+        <name>backgroundLoadMutex_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Mutex" kindref="compound">Mutex</ref> for thread-safe access to the background load queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="83" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1BackgroundLoader_1aaaba97b5ab4294b82b95e67b046299f5" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="classUrho3D_1_1Pair" kindref="compound">Pair</ref>&lt; <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref>, <ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref> &gt;, <ref refid="structUrho3D_1_1BackgroundLoadItem" kindref="compound">BackgroundLoadItem</ref> &gt;</type>
+        <definition>HashMap&lt;Pair&lt;StringHash, StringHash&gt;, BackgroundLoadItem&gt; Urho3D::BackgroundLoader::backgroundLoadQueue_</definition>
+        <argsstring></argsstring>
+        <name>backgroundLoadQueue_</name>
+        <briefdescription>
+<para>Resources that are queued for background loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="85" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1a6d57f77767f848db9fd9acb1c4963320" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BackgroundLoader::BackgroundLoader</definition>
+        <argsstring>(ResourceCache *owner)</argsstring>
+        <name>BackgroundLoader</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1ResourceCache" kindref="compound">ResourceCache</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="58" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1afc0861d32d499a97ecc7ae4a0fb394f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::BackgroundLoader::~BackgroundLoader</definition>
+        <argsstring>() override</argsstring>
+        <name>~BackgroundLoader</name>
+        <briefdescription>
+<para>Destruct. Forcibly clear the load queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="61" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1a93c27ce23cd1a2a088ec04bc04209265" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::BackgroundLoader::ThreadFunction</definition>
+        <argsstring>() override</argsstring>
+        <name>ThreadFunction</name>
+        <reimplements refid="classUrho3D_1_1Thread_1a4cbd298c7f15b818d7d01ea6466acd29">ThreadFunction</reimplements>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> background loading loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="64" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1af79c8906e8d5ac677cb6662c81db0373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::BackgroundLoader::QueueResource</definition>
+        <argsstring>(StringHash type, const String &amp;name, bool sendEventOnFailure, Resource *caller)</argsstring>
+        <name>QueueResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1String" kindref="compound">String</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendEventOnFailure</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Resource" kindref="compound">Resource</ref> *</type>
+          <declname>caller</declname>
+        </param>
+        <briefdescription>
+<para>Queue loading of a resource. The name must be sanitated to ensure consistent format. Return true if queued (not a duplicate and resource was a known type). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1af99f5f09bec4c87259f37880704fd94c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BackgroundLoader::WaitForResource</definition>
+        <argsstring>(StringHash type, StringHash nameHash)</argsstring>
+        <name>WaitForResource</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+          <declname>nameHash</declname>
+        </param>
+        <briefdescription>
+<para>Wait and finish possible loading of a resource when being requested from the cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1a919b996b793b13393a3165f78e29a332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BackgroundLoader::FinishResources</definition>
+        <argsstring>(int maxMs)</argsstring>
+        <name>FinishResources</name>
+        <param>
+          <type>int</type>
+          <declname>maxMs</declname>
+        </param>
+        <briefdescription>
+<para>Process resources that are ready to finish. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1a501a81621a370cd5e5e74640fcacf458" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BackgroundLoader::GetNumQueuedResources</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumQueuedResources</name>
+        <briefdescription>
+<para>Return amount of resources in the load queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="74" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1BackgroundLoader_1a65ebe12480c2cac7c8d9653153095174" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BackgroundLoader::FinishBackgroundLoading</definition>
+        <argsstring>(BackgroundLoadItem &amp;item)</argsstring>
+        <name>FinishBackgroundLoading</name>
+        <param>
+          <type><ref refid="structUrho3D_1_1BackgroundLoadItem" kindref="compound">BackgroundLoadItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Finish one background loaded resource. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="78" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Background loader of resources. Owned by the <ref refid="classUrho3D_1_1ResourceCache" kindref="compound">ResourceCache</ref>. NO_BIND </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Urho3D::BackgroundLoader</label>
+        <link refid="classUrho3D_1_1BackgroundLoader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Thread</label>
+        <link refid="classUrho3D_1_1Thread"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Urho3D::BackgroundLoader</label>
+        <link refid="classUrho3D_1_1BackgroundLoader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Thread</label>
+        <link refid="classUrho3D_1_1Thread"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" line="54" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Resource/BackgroundLoader.h" bodystart="55" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a6d57f77767f848db9fd9acb1c4963320" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>BackgroundLoader</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a7b0fc5ee71f41c3a96bf93901a2d38de" prot="private" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>backgroundLoadMutex_</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1aaaba97b5ab4294b82b95e67b046299f5" prot="private" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>backgroundLoadQueue_</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a65ebe12480c2cac7c8d9653153095174" prot="private" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>FinishBackgroundLoading</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a919b996b793b13393a3165f78e29a332" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>FinishResources</name></member>
+      <member refid="classUrho3D_1_1Thread_1a2022a821700e56332ff09b9de175bc2f" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>GetCurrentThreadID</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a501a81621a370cd5e5e74640fcacf458" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>GetNumQueuedResources</name></member>
+      <member refid="classUrho3D_1_1Thread_1a2cfb3d871653aeb2c750811e0a62f2e6" prot="protected" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>handle_</name></member>
+      <member refid="classUrho3D_1_1Thread_1a8d5c2b426303c65327ef09e88816dad4" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>IsMainThread</name></member>
+      <member refid="classUrho3D_1_1Thread_1acd3eeb9a8fa8a5429de271718bd19055" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>IsStarted</name></member>
+      <member refid="classUrho3D_1_1Thread_1ac2346434e8b953e5a33ca3c19f5cb3cc" prot="protected" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>mainThreadID</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a0902e461ebd1ac791f257f3cc9d886e9" prot="private" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>owner_</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1af79c8906e8d5ac677cb6662c81db0373" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>QueueResource</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Thread_1a7fc81f2afdcb233e00f0f6405a95225f" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>Run</name></member>
+      <member refid="classUrho3D_1_1Thread_1a9af829d3f34769e6205bc2f3eb2ac9d3" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>SetMainThread</name></member>
+      <member refid="classUrho3D_1_1Thread_1a378bc8be68c5239553d836b6a073b28c" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>SetPriority</name></member>
+      <member refid="classUrho3D_1_1Thread_1a6ff80e8a4039a452f1bfedaf36e8b1d1" prot="protected" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>shouldRun_</name></member>
+      <member refid="classUrho3D_1_1Thread_1a8192e1dfca6363a4190d9162837cc3bd" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>Stop</name></member>
+      <member refid="classUrho3D_1_1Thread_1a3f0344e25501a204632c202c3458e36d" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>Thread</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1a93c27ce23cd1a2a088ec04bc04209265" prot="public" virt="virtual"><scope>Urho3D::BackgroundLoader</scope><name>ThreadFunction</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1af99f5f09bec4c87259f37880704fd94c" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>WaitForResource</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1BackgroundLoader_1afc0861d32d499a97ecc7ae4a0fb394f9" prot="public" virt="non-virtual"><scope>Urho3D::BackgroundLoader</scope><name>~BackgroundLoader</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::BackgroundLoader</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Thread_1a74cb78ac76cfb47b7da951cd291182a9" prot="public" virt="virtual"><scope>Urho3D::BackgroundLoader</scope><name>~Thread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

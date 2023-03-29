@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1CollisionPolygon2D" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::CollisionPolygon2D</compoundname>
+    <basecompoundref refid="classUrho3D_1_1CollisionShape2D" prot="public" virt="non-virtual">Urho3D::CollisionShape2D</basecompoundref>
+    <includes refid="CollisionPolygon2D_8h" local="no">CollisionPolygon2D.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionPolygon2D_1a57384dc66aae4b3186d58b0621b017a2" prot="private" static="no" mutable="no">
+        <type>b2PolygonShape</type>
+        <definition>b2PolygonShape Urho3D::CollisionPolygon2D::polygonShape_</definition>
+        <argsstring></argsstring>
+        <name>polygonShape_</name>
+        <briefdescription>
+<para>Polygon shape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="74" column="20" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1CollisionPolygon2D_1a8be73cac44e84817b678635d3ffe668f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &gt;</type>
+        <definition>PODVector&lt;Vector2&gt; Urho3D::CollisionPolygon2D::vertices_</definition>
+        <argsstring></argsstring>
+        <name>vertices_</name>
+        <briefdescription>
+<para>Vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="76" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1a7e837bf9e56135595baefd786bcbb6b6" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::CollisionPolygon2D::CollisionPolygon2D</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>CollisionPolygon2D</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Construct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1a3578e2328dadac70b8b7374e1aaa3eae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::CollisionPolygon2D::~CollisionPolygon2D</definition>
+        <argsstring>() override</argsstring>
+        <name>~CollisionPolygon2D</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1af1c5d834103ac8cdaf8b75764688c970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionPolygon2D::SetVertexCount</definition>
+        <argsstring>(unsigned count)</argsstring>
+        <name>SetVertexCount</name>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set vertex count. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1aa291d11da78b5117793efe12567db3d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionPolygon2D::SetVertex</definition>
+        <argsstring>(unsigned index, const Vector2 &amp;vertex)</argsstring>
+        <name>SetVertex</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>vertex</declname>
+        </param>
+        <briefdescription>
+<para>Set vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1a2b8abba40042b4799b203e87e9c75352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionPolygon2D::SetVertices</definition>
+        <argsstring>(const PODVector&lt; Vector2 &gt; &amp;vertices)</argsstring>
+        <name>SetVertices</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &gt; &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+<para>Set vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1ad5f2154f4892f6f102e18a388b1f267b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::CollisionPolygon2D::GetVertexCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertexCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return vertex count. BIND_AS_PROPERTY </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="54" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1ab4e3b6c65e36659b590378966989db13" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &amp;</type>
+        <definition>const Vector2&amp; Urho3D::CollisionPolygon2D::GetVertex</definition>
+        <argsstring>(unsigned index) const</argsstring>
+        <name>GetVertex</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return vertex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="57" column="19" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1a814533e5b5900d250a6f0113829270cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector2" kindref="compound">Vector2</ref> &gt; &amp;</type>
+        <definition>const PODVector&lt;Vector2&gt;&amp; Urho3D::CollisionPolygon2D::GetVertices</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVertices</name>
+        <briefdescription>
+<para>Return vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="60" column="21" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1aacee2a84a54bf485ce5d47dc9c0639c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionPolygon2D::SetVerticesAttr</definition>
+        <argsstring>(const PODVector&lt; unsigned char &gt; &amp;value)</argsstring>
+        <name>SetVerticesAttr</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt; &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set vertices attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="63" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1a15f2b0eb2375bbed1cfff4ce434d3cd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; unsigned char &gt;</type>
+        <definition>PODVector&lt;unsigned char&gt; Urho3D::CollisionPolygon2D::GetVerticesAttr</definition>
+        <argsstring>() const</argsstring>
+        <name>GetVerticesAttr</name>
+        <briefdescription>
+<para>Return vertices attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="65" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1adce3fd7aeb97e7c6a4fe63c7c38b6721" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Urho3D::CollisionPolygon2D::RegisterObject</definition>
+        <argsstring>(Context *context)</argsstring>
+        <name>RegisterObject</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1Context" kindref="compound">Context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register object factory. NO_BIND </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="42" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1ab133aa1d8c85eab11c9439f5206cfe06" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionPolygon2D::ApplyNodeWorldScale</definition>
+        <argsstring>() override</argsstring>
+        <name>ApplyNodeWorldScale</name>
+        <reimplements refid="classUrho3D_1_1CollisionShape2D_1a62a332f564b66b20c7509886ffc227f8">ApplyNodeWorldScale</reimplements>
+        <briefdescription>
+<para>Apply node world scale. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="69" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1CollisionPolygon2D_1ae409aca3f798e175296fac995df77d1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::CollisionPolygon2D::RecreateFixture</definition>
+        <argsstring>()</argsstring>
+        <name>RecreateFixture</name>
+        <briefdescription>
+<para>Recreate fixture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="71" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>2D polygon collision component. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Urho3D::CollisionShape2D</label>
+        <link refid="classUrho3D_1_1CollisionShape2D"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::CollisionPolygon2D</label>
+        <link refid="classUrho3D_1_1CollisionPolygon2D"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::CollisionShape2D</label>
+        <link refid="classUrho3D_1_1CollisionShape2D"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>rigidBody_</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>cachedWorldScale_</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Urho3D::WeakPtr&lt; Urho3D::RigidBody2D &gt;</label>
+        <link refid="classUrho3D_1_1WeakPtr"/>
+      </node>
+      <node id="3">
+        <label>Urho3D::Component</label>
+        <link refid="classUrho3D_1_1Component"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>node_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::CollisionPolygon2D</label>
+        <link refid="classUrho3D_1_1CollisionPolygon2D"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Urho3D::HashMap&lt; StringHash, Variant &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Urho3D::Serializable</label>
+        <link refid="classUrho3D_1_1Serializable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>networkState_</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Urho3D::Vector3</label>
+        <link refid="classUrho3D_1_1Vector3"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>BACK</edgelabel>
+          <edgelabel>DOWN</edgelabel>
+          <edgelabel>FORWARD</edgelabel>
+          <edgelabel>LEFT</edgelabel>
+          <edgelabel>ONE</edgelabel>
+          <edgelabel>RIGHT</edgelabel>
+          <edgelabel>UP</edgelabel>
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Urho3D::UniquePtr&lt; Urho3D::NetworkState &gt;</label>
+        <link refid="classUrho3D_1_1UniquePtr"/>
+      </node>
+      <node id="6">
+        <label>Urho3D::Object</label>
+        <link refid="classUrho3D_1_1Object"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>context_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::Context</label>
+        <link refid="classUrho3D_1_1Context"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Urho3D::SharedPtr&lt; Urho3D::ObjectAnimation &gt;</label>
+        <link refid="classUrho3D_1_1SharedPtr"/>
+      </node>
+      <node id="17">
+        <label>Urho3D::Node</label>
+        <link refid="classUrho3D_1_1Node"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>vars_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::RefCounted</label>
+        <link refid="classUrho3D_1_1RefCounted"/>
+      </node>
+      <node id="4">
+        <label>Urho3D::Animatable</label>
+        <link refid="classUrho3D_1_1Animatable"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>attributeAnimationInfos_</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>objectAnimation_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>animatedNetworkAttributes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::HashMap&lt; Urho3D::String, Urho3D::SharedPtr&lt; Urho3D::AttributeAnimationInfo &gt; &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Urho3D::HashSet&lt; const Urho3D::AttributeInfo * &gt;</label>
+        <link refid="classUrho3D_1_1HashSet"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" line="31" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Physics2D/CollisionPolygon2D.h" bodystart="32" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1RefCounted_1a0d857f439bb5a7935199a8e4fdb8f2c8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>AddRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a47e4d4aad108678c34b401869f129216" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>AddReplicationState</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a7e1df002476170cd2ad9179397617693" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>AllocateNetworkState</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afcfabde468a5c45d0dea79830e12e75b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Animatable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a38659a2b55a20d17cb0b086e6152a630" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>animatedNetworkAttributes_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a6c0bcd5941cf1a915f9379bb0b1a28fa" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>animationEnabled_</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a58f03d097b05420b50a9017f44a24593" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ApplyAttributes</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1ab133aa1d8c85eab11c9439f5206cfe06" prot="private" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ApplyNodeWorldScale</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a7e85bc4f9402746604ad2a63d58c0cc7" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>attributeAnimationInfos_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1aafb478d92aed0241968f9592dfbc3f51" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>cachedWorldScale_</name></member>
+      <member refid="classUrho3D_1_1Object_1a7897b4b84c7ef021b9536246295480ce" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Object_1ab43a1b7593a6b75bd7327136e04d2172" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Cast</name></member>
+      <member refid="classUrho3D_1_1Component_1adbe2c6c54d1c155092d05cc61ec19b3e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>CleanupConnection</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a7e837bf9e56135595baefd786bcbb6b6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>CollisionPolygon2D</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a7ad7b2f9284dbeb2275e5057984197f6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>CollisionShape2D</name></member>
+      <member refid="classUrho3D_1_1Component_1a8fcb1334e846b73e7825777e0ffbd2d5" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a3a7df857ddaa8c3e218c3645152dc23d" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>context_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a5c6ed3597e4e875162cbb9e4e679bac1" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>CreateFixture</name></member>
+      <member refid="classUrho3D_1_1Component_1af908546af61d16a0ac497fdad2ed42f2" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>DoAutoRemove</name></member>
+      <member refid="classUrho3D_1_1Component_1aa82d1207979dd6a78224f2b9be55917a" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>DrawDebugGeometry</name></member>
+      <member refid="classUrho3D_1_1Component_1ae52f352027bee0fa8d538591364b554a" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>enabled_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5fd5743a8262d1570485a3115cad95ca" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>FindAttributeAnimationTarget</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1ae4064ef579422ee40a1d6dd80749dc53" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>fixture_</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1aec581240660236099ac2f308d078c0a3" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>fixtureDef_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab6d9c33482746d0272bd1669766237a0" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3783f928c689a3d4ee2d9766661eca0c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4a9bcd8df84a2af9437d6a7e26139f85" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab677ffa2a382b8d9e30f27f0c3458892" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1aff0558f22a33e57058b6d107c1ec6e00" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeAnimationInfo</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a52d742207bab4b4885c76fa438597e14" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae73a3b8be32ad70f4b377216e41be082" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a11febaba3b0011a91255329874ef55a8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a48b7ab5369b91ff7b7e47c83347963d8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a08e867f84068c6396136f0b956930a3f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributeDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1c5fcbe01524f99ea09b2e2dc7dbb6a1" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetAttributes</name></member>
+      <member refid="classUrho3D_1_1Object_1a5b77a03581ef14db66cab16577a5db1c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1aa768d36d168358d957ef121e0f30231e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetCategory</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a44db6b29a2c93a5d4515e0cc3dc4d5ca" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetCategoryBits</name></member>
+      <member refid="classUrho3D_1_1Component_1a600418a38a779f13988f11c040cce0ad" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1a5674e3f3690711b37c8af7b1f97b877d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetComponent</name></member>
+      <member refid="classUrho3D_1_1Component_1ab4646890739a81422c4d2e38d1326c03" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Component_1ace092bda647f7d6872e5865a1b8af253" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetComponents</name></member>
+      <member refid="classUrho3D_1_1Object_1a4846883db29b93b88e0b89c9cca85d4e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetContext</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a6f474d4d4f411dec7275050a822fa80b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetDensity</name></member>
+      <member refid="classUrho3D_1_1Component_1a19e5cb822601c91cc567f8daa08bf995" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetDependencyNodes</name></member>
+      <member refid="classUrho3D_1_1Object_1a81bdcd0c8f9e3f5967bdb6c2987a69fd" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetEventDataMap</name></member>
+      <member refid="classUrho3D_1_1Object_1ac5988081c12e8042e08fc5c27abb6909" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetEventHandler</name></member>
+      <member refid="classUrho3D_1_1Object_1acead6fdd2f67cafa13a3e3cfd8686f08" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetEventSender</name></member>
+      <member refid="classUrho3D_1_1Component_1a01f4346d73a201ae119b7cb4a8a8a06b" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetFixedUpdateSource</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a41243970e52e1bc0ae0d1ea5379a94a7" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetFixture</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a3c0edba429d901d898cc9bb0e086c57f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetFriction</name></member>
+      <member refid="classUrho3D_1_1Object_1a065260e703601554cda06225818ec8aa" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1Object_1aea6b228a69d52cbe234f01e69dadacd3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetGlobalVars</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1ac537858dcf0b394cb37afe67ef434bc0" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetGroupIndex</name></member>
+      <member refid="classUrho3D_1_1Component_1ac803d00c18507307b17c287fb123c219" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetID</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a4ff893d2330d6bb2d155cb5296f9ed65" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetInertia</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a0ff16d749d3e8c5718dc5e34f721c345" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a02cea1e2056d4bb5675b739aa9234c0a" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetMaskBits</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a300027b6b078d2a6406b4a4c817c1112" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetMass</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1ae8c210ab20eb5f4683a9531d66bb32a8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetMassCenter</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a64037ea38bd134240391d88f1fcf860a" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa3220b773f9e74d5df8f74e1721569f6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetNetworkState</name></member>
+      <member refid="classUrho3D_1_1Component_1a4df57b33f219fa7401bd72079198debf" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetNode</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a4ef3c99945e4467d6f953986ac0ac118" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetNumAttributes</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6af0b75ce7fcd21eeb3a23d44350bf5b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetNumNetworkAttributes</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad66549e59c608af75b091ce52f16e712" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a8a98313b92090ef829c0909a09123b57" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a97f9db8498f9b6e34f42e55b16f7b573" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetRestitution</name></member>
+      <member refid="classUrho3D_1_1Component_1ae2fea4ce20e7d67b16378dd2e210af47" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetScene</name></member>
+      <member refid="classUrho3D_1_1Object_1af2696beba117ded160548488e84eb7a6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1adab8c85b0da9870b217e68a0400345dd" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetSubsystem</name></member>
+      <member refid="classUrho3D_1_1Object_1a4c7af660afc8467a99d1f17c8d099b3b" prot="public" virt="pure-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetType</name></member>
+      <member refid="classUrho3D_1_1Object_1a32b075d911f66411be1041fbdf550c66" prot="public" virt="pure-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetTypeInfo</name></member>
+      <member refid="classUrho3D_1_1Object_1aaf5a648d6c449dd14b273c10fdd498a9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetTypeInfoStatic</name></member>
+      <member refid="classUrho3D_1_1Object_1a2e095e012835897947ccaf26fdf4b81f" prot="public" virt="pure-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetTypeName</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1ab4e3b6c65e36659b590378966989db13" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetVertex</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1ad5f2154f4892f6f102e18a388b1f267b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetVertexCount</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a814533e5b5900d250a6f0113829270cc" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetVertices</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a15f2b0eb2375bbed1cfff4ce434d3cd9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>GetVerticesAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad3511e697a94f51323f04e2e74ab6063" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>HandleAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa4ade46a2db8254e613c5bd8e80c875" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>HandleAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a7bc30b0443591af70652faa9d40a3893" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>HandleAttributeAnimationUpdate</name></member>
+      <member refid="classUrho3D_1_1Object_1a9c9b0c0c82b72b762bd7874788dcd2f3" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>HasEventHandlers</name></member>
+      <member refid="classUrho3D_1_1Object_1ae95c934d09a38268465f0ddbc3cc4a8d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1add04b2157b76b6306db51d1202bd77f1" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>HasSubscribedToEvent</name></member>
+      <member refid="classUrho3D_1_1Component_1ad6192723cff1edc0cc7a96902e35f701" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>id_</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a39bbaecb418c800b0e95747ae47dfc91" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsAnimatedNetworkAttribute</name></member>
+      <member refid="classUrho3D_1_1Component_1a1cb9a868ec7bb3e46c37fbc91040cf95" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsEnabled</name></member>
+      <member refid="classUrho3D_1_1Component_1aafa7952d0f225edde3387da0c91a9356" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsEnabledEffective</name></member>
+      <member refid="classUrho3D_1_1Object_1a7fade3952bd2a1fd71a419d9a0c84a83" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1abdd7bb505131b7069a7c6e7eb640d550" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Object_1a17376e0a319ae50dca17ad91c5b1a55b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsInstanceOf</name></member>
+      <member refid="classUrho3D_1_1Component_1a8f1388c232ca01b7c7328c761aae6e76" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsReplicated</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aa20baf7a00b3c81f16e0c85c69f0b5ce" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsTemporary</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1add288f70ecf48d44e7795364a45d58c4" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>IsTrigger</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9c22531b0054cac6b7983c744a8c970f" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Load</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad1b16987196e91435eb8af471b7a2714" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>LoadJSON</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa12710c0500b10d8e68eb6f62847204" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>LoadXML</name></member>
+      <member refid="classUrho3D_1_1Component_1aaf87acb64001774c62f0784254f9b291" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>MarkNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a97d257bf92214ce90db93540485010cd" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>networkState_</name></member>
+      <member refid="classUrho3D_1_1Component_1a47628d705616dd6b54ec22defd638265" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>networkUpdate_</name></member>
+      <member refid="classUrho3D_1_1Component_1a1e35dfd6ec760ebafd81fabcec2ad86b" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>node_</name></member>
+      <member refid="classUrho3D_1_1Object_1a95a6cd1c5c12a458fda4b38f873a334d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Object</name></member>
+      <member refid="classUrho3D_1_1Animatable_1abd68e049302374d4e1031bb4f1d92bda" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>objectAnimation_</name></member>
+      <member refid="classUrho3D_1_1Component_1ae124af54fe3f62a04f68c8e0c5e7ab52" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnAttributeAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Component_1aab60a33751a697a5a0549c278fdd5e14" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnAttributeAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Object_1acb6b6e8831ac8fc7c3ac6b5eba06e92a" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a8cec582de3e5aa6b7f1cb4afd67086ca" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnGetAttribute</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a09f1167efaa82dc515bef953daa4ad47" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnMarkedDirty</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a403db7c60e1ba9753698acf1a21ec137" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnNodeSet</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d8427933ca3aedcc7397e84176dc321" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnNodeSetEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a9f44b0d39595e7fd312ee5f2bd3faaa7" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnObjectAnimationAdded</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ab4a67ba315ef8f458d0a2b97a096fb00" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnObjectAnimationRemoved</name></member>
+      <member refid="classUrho3D_1_1Component_1a6d53e7f45f738aebfd237405cbbb2679" prot="protected" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnSceneSet</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a3dbb24e29c5109fb56976707fd1ff8df" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnSetAttribute</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a45b41936ab67dafb81e985a250bb4b6f" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>OnSetEnabled</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8bf1d2d9bc2a94b1762a2b0795746de9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a57384dc66aae4b3186d58b0621b017a2" prot="private" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>polygonShape_</name></member>
+      <member refid="classUrho3D_1_1Component_1a911f485323c5d9898f104cece2c02430" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>PrepareNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aca892470b457612c0e96c57c134a616b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ReadDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae6c88e100f5da55f2567098a96f8a759" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ReadLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1ae409aca3f798e175296fac995df77d1d" prot="private" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RecreateFixture</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1aad6e2ac9e97ca71b28c47248a9aad9b9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1ad755f1da7f6c415bfbe82b6d65b31633" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RefCounted</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a0eb5281d7e6cfd7e729ae0d07ca0da92" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RefCountPtr</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a7e764b1f4b072a1a0dbfaeac62626244" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Refs</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1adce3fd7aeb97e7c6a4fe63c7c38b6721" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RegisterObject</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a52963467210c78bca21f7463f361c147" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ReleaseFixture</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a59e95fecbcbc560f81f0bdd52306cc1d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ReleaseRef</name></member>
+      <member refid="classUrho3D_1_1Component_1a9cb217364df06d4886bfba9d3aec3bed" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Remove</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ae6ca516abed8b44c3ea4a0cc60fbb9ae" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RemoveAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1aa03ec3737aa52aa3f8419f43aff050" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RemoveInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afeba9bad5cf17049c904da9978f76ef4" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>RemoveObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a9652196ab03ef1f9d98f9dbfa9e1adbb" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>ResetToDefault</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1aee55ef2f34268d11cf5714244c62f2a3" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>rigidBody_</name></member>
+      <member refid="classUrho3D_1_1Component_1a753c0051bc1080efc07b5ba1e12ee74b" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Save</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a6b41d88d2fd2b8c6e67968820828faea" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SaveDefaultAttributes</name></member>
+      <member refid="classUrho3D_1_1Component_1a2648da59492c100485b69d6a23f5ef54" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SaveJSON</name></member>
+      <member refid="classUrho3D_1_1Component_1ab02324fafcfde655d1e7110dedb9134e" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SaveXML</name></member>
+      <member refid="classUrho3D_1_1Object_1a32020dbf77c196b9777eca479e8abb36" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1af8f8bd3f7e2f51ecca7199e737f53364" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac0088ab93a71b930fd8cbc06b0afddc7" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SendEvent</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a23c677a1f43edd6bbd8db693bc1f6bc9" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>Serializable</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a4d0aaeefab85096ad391775ec9778a2e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAnimationEnabled</name></member>
+      <member refid="classUrho3D_1_1Animatable_1adc97255cf6bf43a76a163ab4188ad15c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a52c377ff65bd3198a3c460c6a43dc008" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a45834f05e09c1edc90bd759b1c03e187" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAttribute</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a1aa4f5c600142e625eec608261cca98b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5c9085bcfb6cde55a2af05ab0a411156" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAttributeAnimationSpeed</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ac86e3bc8579f43a701a3ab2e02dcc700" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAttributeAnimationTime</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a353351daf7883bd4e63e43dd91796c48" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetAttributeAnimationWrapMode</name></member>
+      <member refid="classUrho3D_1_1Object_1abd72cab3f338ef6ca76da511bcd941dc" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetBlockEvents</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1ad52fc54b174869ed8a88c890e25355c6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetCategoryBits</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a4ef094caa45aa41a101a9871f3b20f55" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetDensity</name></member>
+      <member refid="classUrho3D_1_1Component_1a84cc0be4504cc2234be4056ef7ffe976" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetEnabled</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a3df91c99124f18e3b1a57cd6ec0a100d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetFriction</name></member>
+      <member refid="classUrho3D_1_1Object_1a43d25cc580737c9dc3b973d6c1230d9e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetGlobalVar</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a8a1366054a43599674503b4704a79d8d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetGroupIndex</name></member>
+      <member refid="classUrho3D_1_1Component_1a871e9a8397df466d804a02786970788c" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetID</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ae7c4c6b4aaa1375ac927e2c0fdb4537e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetInstanceDefault</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a28cff53160b712d452724f3e45afa49b" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetInterceptNetworkUpdate</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1aa988fa4428625a9cac01401ef891dcbd" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetMaskBits</name></member>
+      <member refid="classUrho3D_1_1Component_1abbd5b600c3a004defcb4eb393f855de6" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetNode</name></member>
+      <member refid="classUrho3D_1_1Animatable_1ad47a7d6d1ea14b6145dc812e2d9b8486" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetObjectAnimation</name></member>
+      <member refid="classUrho3D_1_1Animatable_1afa9b7e0ab148a3d1a4eab44808a44c0f" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetObjectAnimationAttr</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a33be41bda0392de337c590c46a283011" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetObjectAttributeAnimation</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1a8e9b4fce8b316e3a409be12f3adf1603" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetRestitution</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aaa044160c22b374e032ae85c30520f89" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetTemporary</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1abc320d39aa7278076d0f6538880e2f5a" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetTrigger</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1aa291d11da78b5117793efe12567db3d6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetVertex</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1af1c5d834103ac8cdaf8b75764688c970" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetVertexCount</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a2b8abba40042b4799b203e87e9c75352" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetVertices</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1aacee2a84a54bf485ce5d47dc9c0639c8" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SetVerticesAttr</name></member>
+      <member refid="classUrho3D_1_1Object_1a7d9d061f4cf32f5fd5531e11a72834b6" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac9ea95ee6f24e7fbeede16ba149dbc2d" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0662ad7abbb5664ab7a08212d0453132" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1acb611e65937538a43d41500705004075" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>SubscribeToEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a1296ea9c99b7e03e1a40b23667b1eedc" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>UnsubscribeFromAllEvents</name></member>
+      <member refid="classUrho3D_1_1Object_1a37a53fa52f1615fddd212107cf51c587" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>UnsubscribeFromAllEventsExcept</name></member>
+      <member refid="classUrho3D_1_1Object_1a153b96c4397e045b2ca2b2d5471d097c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1a0997136c3ee9c04289e2f708e72c6fa4" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>UnsubscribeFromEvent</name></member>
+      <member refid="classUrho3D_1_1Object_1ac31525619cc3f3053ed8b789f7060217" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>UnsubscribeFromEvents</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a5df03d0160dbec915cb43193684ea971" prot="protected" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>UpdateAttributeAnimations</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a8be73cac44e84817b678635d3ffe668f" prot="private" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>vertices_</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a27960099d665fa2a05b7d488cfc56d90" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>WeakRefs</name></member>
+      <member refid="classUrho3D_1_1Serializable_1ac2cbeb61b975afe44c76a6bbdf1f252c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>WriteDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1aef26d8bce8707b1116dbab2a14ed624c" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>WriteInitialDeltaUpdate</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a1a63eaee0a2648a8ab9bafdd3fc0e01e" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>WriteLatestDataUpdate</name></member>
+      <member refid="classUrho3D_1_1Animatable_1a354340a5c82d0d40dc4643eb17f658e5" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~Animatable</name></member>
+      <member refid="classUrho3D_1_1CollisionPolygon2D_1a3578e2328dadac70b8b7374e1aaa3eae" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~CollisionPolygon2D</name></member>
+      <member refid="classUrho3D_1_1CollisionShape2D_1aff13f282bdbbcf9ec6b71ba6899c9c13" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~CollisionShape2D</name></member>
+      <member refid="classUrho3D_1_1Component_1addaa40ac5aaa94e2e60e1d8043706aca" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~Component</name></member>
+      <member refid="classUrho3D_1_1Object_1a4d472106f01c137d237b3099751d10c5" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~Object</name></member>
+      <member refid="classUrho3D_1_1RefCounted_1a8544344ff2006b808c573c00cd5b2d19" prot="public" virt="virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~RefCounted</name></member>
+      <member refid="classUrho3D_1_1Serializable_1a90d9809cb57cfa96d16c126d4a6aa584" prot="public" virt="non-virtual"><scope>Urho3D::CollisionPolygon2D</scope><name>~Serializable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

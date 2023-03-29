@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classUrho3D_1_1Polyhedron" kind="class" language="C++" prot="public">
+    <compoundname>Urho3D::Polyhedron</compoundname>
+    <includes refid="Polyhedron_8h" local="no">Polyhedron.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Polyhedron_1a90cc9f90101ae4ef6211511d3f227f86" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &gt; &gt;</type>
+        <definition>Vector&lt;PODVector&lt;Vector3&gt; &gt; Urho3D::Polyhedron::faces_</definition>
+        <argsstring></argsstring>
+        <name>faces_</name>
+        <briefdescription>
+<para>Polygon faces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="108" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUrho3D_1_1Polyhedron_1a2a125d19003786ce6d06ffacd8df07c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &gt;</type>
+        <definition>PODVector&lt;Vector3&gt; Urho3D::Polyhedron::clippedVertices_</definition>
+        <argsstring></argsstring>
+        <name>clippedVertices_</name>
+        <briefdescription>
+<para>Internal vector for clipped vertices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="116" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUrho3D_1_1Polyhedron_1a85c665e91383cb0f6045b35af3cc8ce1" prot="private" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &gt;</type>
+        <definition>PODVector&lt;Vector3&gt; Urho3D::Polyhedron::outFace_</definition>
+        <argsstring></argsstring>
+        <name>outFace_</name>
+        <briefdescription>
+<para>Internal vector for the new face being constructed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="118" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a115aab621261f21d76427b2f53e5a41a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Polyhedron::Polyhedron</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>Polyhedron</name>
+        <briefdescription>
+<para>Construct empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="41" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a0f372ce446bc08cb11ab18675f52b8ce" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Polyhedron::~Polyhedron</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>~Polyhedron</name>
+        <briefdescription>
+<para>Destruct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1adf53bf03296059dd391877e581f78a91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Polyhedron::Polyhedron</definition>
+        <argsstring>(const Polyhedron &amp;polyhedron)</argsstring>
+        <name>Polyhedron</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Polyhedron" kindref="compound">Polyhedron</ref> &amp;</type>
+          <declname>polyhedron</declname>
+        </param>
+        <briefdescription>
+<para>Copy-construct from another polyhedron. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="46" column="5" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a0a570549e1e38169392d7872d766275f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Polyhedron::Polyhedron</definition>
+        <argsstring>(const Vector&lt; PODVector&lt; Vector3 &gt; &gt; &amp;faces)</argsstring>
+        <name>Polyhedron</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector" kindref="compound">Vector</ref>&lt; <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &gt; &gt; &amp;</type>
+          <declname>faces</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a list of faces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="52" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1aad454fa12c237493d672fe432a31bf9c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Polyhedron::Polyhedron</definition>
+        <argsstring>(const BoundingBox &amp;box)</argsstring>
+        <name>Polyhedron</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="58" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a9d2caf0834bea897fd71b75a5b5342da" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Urho3D::Polyhedron::Polyhedron</definition>
+        <argsstring>(const Frustum &amp;frustum)</argsstring>
+        <name>Polyhedron</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+          <declname>frustum</declname>
+        </param>
+        <briefdescription>
+<para>Construct from a frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="64" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a412237a8f023d19f5115343cf8b0c85f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Polyhedron" kindref="compound">Polyhedron</ref> &amp;</type>
+        <definition>Polyhedron&amp; Urho3D::Polyhedron::operator=</definition>
+        <argsstring>(const Polyhedron &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Polyhedron" kindref="compound">Polyhedron</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assign from another polyhedron. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="70" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1aff72191999b8a1c6374b86ef4b7415bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Define</definition>
+        <argsstring>(const BoundingBox &amp;box)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Define from a bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a71fd27e1ab1936331f5aceb9fa1f4fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Define</definition>
+        <argsstring>(const Frustum &amp;frustum)</argsstring>
+        <name>Define</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+          <declname>frustum</declname>
+        </param>
+        <briefdescription>
+<para>Define from a frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a77e89256e8063fc592d380fff0801754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::AddFace</definition>
+        <argsstring>(const Vector3 &amp;v0, const Vector3 &amp;v1, const Vector3 &amp;v2)</argsstring>
+        <name>AddFace</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Add a triangle face. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1acb4941727d1b711c77f4e8062928ff65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::AddFace</definition>
+        <argsstring>(const Vector3 &amp;v0, const Vector3 &amp;v1, const Vector3 &amp;v2, const Vector3 &amp;v3)</argsstring>
+        <name>AddFace</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+<para>Add a quadrilateral face. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1adc984e0b0e16e1e7bad13150e7857e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::AddFace</definition>
+        <argsstring>(const PODVector&lt; Vector3 &gt; &amp;face)</argsstring>
+        <name>AddFace</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &gt; &amp;</type>
+          <declname>face</declname>
+        </param>
+        <briefdescription>
+<para>Add an arbitrary face. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a02895c9809c55cad0dad6cb89c1a072e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Clip</definition>
+        <argsstring>(const Plane &amp;plane)</argsstring>
+        <name>Clip</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Plane" kindref="compound">Plane</ref> &amp;</type>
+          <declname>plane</declname>
+        </param>
+        <briefdescription>
+<para>Clip with a plane. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="87" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1adccd818de1b824123ef93c9d48d1e075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Clip</definition>
+        <argsstring>(const BoundingBox &amp;box)</argsstring>
+        <name>Clip</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1BoundingBox" kindref="compound">BoundingBox</ref> &amp;</type>
+          <declname>box</declname>
+        </param>
+        <briefdescription>
+<para>Clip with a bounding box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a77fd85d824b550492fa8e8269001c7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Clip</definition>
+        <argsstring>(const Frustum &amp;frustum)</argsstring>
+        <name>Clip</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Frustum" kindref="compound">Frustum</ref> &amp;</type>
+          <declname>frustum</declname>
+        </param>
+        <briefdescription>
+<para>Clip with a frustum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1af4d62c43c99a23cef6d3318957d32060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear all faces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a177c6652a4a183df4ead54b4657f0d6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Transform</definition>
+        <argsstring>(const Matrix3 &amp;transform)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Transform with a 3x3 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a8c03b29aab800b7930d224a54a2141c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::Transform</definition>
+        <argsstring>(const Matrix3x4 &amp;transform)</argsstring>
+        <name>Transform</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Transform with a 3x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1ac049c992a7a2d428f691a8766916b01a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Polyhedron" kindref="compound">Polyhedron</ref></type>
+        <definition>Polyhedron Urho3D::Polyhedron::Transformed</definition>
+        <argsstring>(const Matrix3 &amp;transform) const</argsstring>
+        <name>Transformed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3" kindref="compound">Matrix3</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Return transformed with a 3x3 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="100" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a11b307c073b838e969124a73d266b84e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUrho3D_1_1Polyhedron" kindref="compound">Polyhedron</ref></type>
+        <definition>Polyhedron Urho3D::Polyhedron::Transformed</definition>
+        <argsstring>(const Matrix3x4 &amp;transform) const</argsstring>
+        <name>Transformed</name>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Matrix3x4" kindref="compound">Matrix3x4</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Return transformed with a 3x4 matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="102" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1aaa368a212a71244d8dd6d08ace144a8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::Polyhedron::Empty</definition>
+        <argsstring>() const</argsstring>
+        <name>Empty</name>
+        <briefdescription>
+<para>Return whether is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="105" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1a6f87e5339d75e5dd3670a5a14e17cdef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::SetFace</definition>
+        <argsstring>(unsigned index, const Vector3 &amp;v0, const Vector3 &amp;v1, const Vector3 &amp;v2)</argsstring>
+        <name>SetFace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Set a triangle face by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="112" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classUrho3D_1_1Polyhedron_1adf856a5b5b7ac0e1f332f23a18bb504d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::Polyhedron::SetFace</definition>
+        <argsstring>(unsigned index, const Vector3 &amp;v0, const Vector3 &amp;v1, const Vector3 &amp;v2, const Vector3 &amp;v3)</argsstring>
+        <name>SetFace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUrho3D_1_1Vector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+<para>Set a quadrilateral face by index. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="114" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A convex volume built from polygon faces. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Urho3D::Vector&lt; Urho3D::PODVector&lt; Urho3D::Vector3 &gt; &gt;</label>
+        <link refid="classUrho3D_1_1Vector"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::Polyhedron</label>
+        <link refid="classUrho3D_1_1Polyhedron"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>faces_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" line="37" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Math/Polyhedron.h" bodystart="38" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classUrho3D_1_1Polyhedron_1a77e89256e8063fc592d380fff0801754" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>AddFace</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1acb4941727d1b711c77f4e8062928ff65" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>AddFace</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1adc984e0b0e16e1e7bad13150e7857e72" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>AddFace</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1af4d62c43c99a23cef6d3318957d32060" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Clear</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a02895c9809c55cad0dad6cb89c1a072e" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Clip</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1adccd818de1b824123ef93c9d48d1e075" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Clip</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a77fd85d824b550492fa8e8269001c7a1" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Clip</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a2a125d19003786ce6d06ffacd8df07c9" prot="private" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>clippedVertices_</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1aff72191999b8a1c6374b86ef4b7415bd" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a71fd27e1ab1936331f5aceb9fa1f4fcd" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Define</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1aaa368a212a71244d8dd6d08ace144a8f" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Empty</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a90cc9f90101ae4ef6211511d3f227f86" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>faces_</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a412237a8f023d19f5115343cf8b0c85f" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>operator=</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a85c665e91383cb0f6045b35af3cc8ce1" prot="private" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>outFace_</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a115aab621261f21d76427b2f53e5a41a" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Polyhedron</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1adf53bf03296059dd391877e581f78a91" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Polyhedron</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a0a570549e1e38169392d7872d766275f" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Polyhedron</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1aad454fa12c237493d672fe432a31bf9c" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Polyhedron</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a9d2caf0834bea897fd71b75a5b5342da" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Polyhedron</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a6f87e5339d75e5dd3670a5a14e17cdef" prot="private" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>SetFace</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1adf856a5b5b7ac0e1f332f23a18bb504d" prot="private" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>SetFace</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a177c6652a4a183df4ead54b4657f0d6d" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Transform</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a8c03b29aab800b7930d224a54a2141c5" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Transform</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1ac049c992a7a2d428f691a8766916b01a" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Transformed</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a11b307c073b838e969124a73d266b84e" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>Transformed</name></member>
+      <member refid="classUrho3D_1_1Polyhedron_1a0f372ce446bc08cb11ab18675f52b8ce" prot="public" virt="non-virtual"><scope>Urho3D::Polyhedron</scope><name>~Polyhedron</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

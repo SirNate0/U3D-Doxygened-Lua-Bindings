@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structUrho3D_1_1BatchQueue" kind="struct" language="C++" prot="public">
+    <compoundname>Urho3D::BatchQueue</compoundname>
+    <includes refid="Batch_8h" local="no">Batch.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1aff54ffa287473625b2abdd15ee1a8812" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; <ref refid="structUrho3D_1_1BatchGroupKey" kindref="compound">BatchGroupKey</ref>, <ref refid="structUrho3D_1_1BatchGroup" kindref="compound">BatchGroup</ref> &gt;</type>
+        <definition>HashMap&lt;BatchGroupKey, BatchGroup&gt; Urho3D::BatchQueue::batchGroups_</definition>
+        <argsstring></argsstring>
+        <name>batchGroups_</name>
+        <briefdescription>
+<para>Instanced draw calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="248" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1aba2dbe7861e94eb51b73d3d7fe909eea" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned, unsigned &gt;</type>
+        <definition>HashMap&lt;unsigned, unsigned&gt; Urho3D::BatchQueue::shaderRemapping_</definition>
+        <argsstring></argsstring>
+        <name>shaderRemapping_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Shader" kindref="compound">Shader</ref> remapping table for 2-pass state and distance sort. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="250" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a9d2cfb1022eba37f45de9be6f71300ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned short, unsigned short &gt;</type>
+        <definition>HashMap&lt;unsigned short, unsigned short&gt; Urho3D::BatchQueue::materialRemapping_</definition>
+        <argsstring></argsstring>
+        <name>materialRemapping_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Material" kindref="compound">Material</ref> remapping table for 2-pass state and distance sort. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="252" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a9f956ab2a13fd0b5f4bbfab857d0f94e" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1HashMap" kindref="compound">HashMap</ref>&lt; unsigned short, unsigned short &gt;</type>
+        <definition>HashMap&lt;unsigned short, unsigned short&gt; Urho3D::BatchQueue::geometryRemapping_</definition>
+        <argsstring></argsstring>
+        <name>geometryRemapping_</name>
+        <briefdescription>
+<para><ref refid="classUrho3D_1_1Geometry" kindref="compound">Geometry</ref> remapping table for 2-pass state and distance sort. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="254" column="13" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a9f99a16a48ff749112ef7f5c5986c8b0" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1Batch" kindref="compound">Batch</ref> &gt;</type>
+        <definition>PODVector&lt;Batch&gt; Urho3D::BatchQueue::batches_</definition>
+        <argsstring></argsstring>
+        <name>batches_</name>
+        <briefdescription>
+<para>Unsorted non-instanced draw calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="257" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a37f2f99f0cf49fbc209d718082a5b072" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1Batch" kindref="compound">Batch</ref> * &gt;</type>
+        <definition>PODVector&lt;Batch*&gt; Urho3D::BatchQueue::sortedBatches_</definition>
+        <argsstring></argsstring>
+        <name>sortedBatches_</name>
+        <briefdescription>
+<para>Sorted non-instanced draw calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="259" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a79a0f0be4241010df805cfbf28b7f4fa" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1BatchGroup" kindref="compound">BatchGroup</ref> * &gt;</type>
+        <definition>PODVector&lt;BatchGroup*&gt; Urho3D::BatchQueue::sortedBatchGroups_</definition>
+        <argsstring></argsstring>
+        <name>sortedBatchGroups_</name>
+        <briefdescription>
+<para>Sorted instanced draw calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="261" column="15" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1ae0d069fefe2a5a2f259c4a2e148c80cb" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BatchQueue::maxSortedInstances_</definition>
+        <argsstring></argsstring>
+        <name>maxSortedInstances_</name>
+        <briefdescription>
+<para>Maximum sorted instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="263" column="14" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1aa67b3cf598b6a1e927e56d3333734c4e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Urho3D::BatchQueue::hasExtraDefines_</definition>
+        <argsstring></argsstring>
+        <name>hasExtraDefines_</name>
+        <briefdescription>
+<para>Whether the pass command contains extra shader defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="265" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a3c49ae4d6414374c5534c2cdbb5b8553" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::BatchQueue::vsExtraDefines_</definition>
+        <argsstring></argsstring>
+        <name>vsExtraDefines_</name>
+        <briefdescription>
+<para>Vertex shader extra defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="267" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a004ef5806840776cb51c8059492663b7" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1String" kindref="compound">String</ref></type>
+        <definition>String Urho3D::BatchQueue::psExtraDefines_</definition>
+        <argsstring></argsstring>
+        <name>psExtraDefines_</name>
+        <briefdescription>
+<para>Pixel shader extra defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="269" column="12" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1a0f92c1eaa67e79f6a446199bb407c76d" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+        <definition>StringHash Urho3D::BatchQueue::vsExtraDefinesHash_</definition>
+        <argsstring></argsstring>
+        <name>vsExtraDefinesHash_</name>
+        <briefdescription>
+<para>Hash for vertex shader extra defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="271" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structUrho3D_1_1BatchQueue_1aeee5eb3736da0da484dc8379df420b79" prot="public" static="no" mutable="no">
+        <type><ref refid="classUrho3D_1_1StringHash" kindref="compound">StringHash</ref></type>
+        <definition>StringHash Urho3D::BatchQueue::psExtraDefinesHash_</definition>
+        <argsstring></argsstring>
+        <name>psExtraDefinesHash_</name>
+        <briefdescription>
+<para>Hash for pixel shader extra defines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="273" column="16" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1a662c2d13611904fee60835f40616b479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchQueue::Clear</definition>
+        <argsstring>(int maxSortedInstances)</argsstring>
+        <name>Clear</name>
+        <param>
+          <type>int</type>
+          <declname>maxSortedInstances</declname>
+        </param>
+        <briefdescription>
+<para>Clear for new frame by clearing all groups and batches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="230" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1a60a4ba2f189a46fef79af7523708d7f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchQueue::SortBackToFront</definition>
+        <argsstring>()</argsstring>
+        <name>SortBackToFront</name>
+        <briefdescription>
+<para>Sort non-instanced draw calls back to front. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="232" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1a985650f0ab8a45d05a61bf01310d659c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchQueue::SortFrontToBack</definition>
+        <argsstring>()</argsstring>
+        <name>SortFrontToBack</name>
+        <briefdescription>
+<para>Sort instanced and non-instanced draw calls front to back. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="234" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1a0f8f1cf2b5220d326999af5d50523d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchQueue::SortFrontToBack2Pass</definition>
+        <argsstring>(PODVector&lt; Batch * &gt; &amp;batches)</argsstring>
+        <name>SortFrontToBack2Pass</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1PODVector" kindref="compound">PODVector</ref>&lt; <ref refid="structUrho3D_1_1Batch" kindref="compound">Batch</ref> * &gt; &amp;</type>
+          <declname>batches</declname>
+        </param>
+        <briefdescription>
+<para>Sort batches front to back while also maintaining state sorting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="236" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1a80c71f72801e95e04945c387b93557f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchQueue::SetInstancingData</definition>
+        <argsstring>(void *lockedData, unsigned stride, unsigned &amp;freeIndex)</argsstring>
+        <name>SetInstancingData</name>
+        <param>
+          <type>void *</type>
+          <declname>lockedData</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>unsigned &amp;</type>
+          <declname>freeIndex</declname>
+        </param>
+        <briefdescription>
+<para>Pre-set instance data of all groups. The vertex buffer must be big enough to hold all data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="238" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1a9a3a0ba457231d2a75e65fe2a1d1d94c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Urho3D::BatchQueue::Draw</definition>
+        <argsstring>(View *view, Camera *camera, bool markToStencil, bool usingLightOptimization, bool allowDepthWrite) const</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="classUrho3D_1_1View" kindref="compound">View</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <type><ref refid="classUrho3D_1_1Camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>markToStencil</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>usingLightOptimization</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allowDepthWrite</declname>
+        </param>
+        <briefdescription>
+<para>Draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="240" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1aac37133e35bb830339b7e2c9c854c7bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Urho3D::BatchQueue::GetNumInstances</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNumInstances</name>
+        <briefdescription>
+<para>Return the combined amount of instances. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="242" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="structUrho3D_1_1BatchQueue_1af68c9172b6c75f2054fb08b2d8e8a698" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Urho3D::BatchQueue::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+<para>Return whether the batch group is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="245" column="10" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="245" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Queue that contains both instanced and non-instanced draw calls. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>Urho3D::PODVector&lt; Urho3D::BatchGroup * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Urho3D::PODVector&lt; Urho3D::Batch * &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Urho3D::String</label>
+        <link refid="classUrho3D_1_1String"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>EMPTY</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Urho3D::HashBase</label>
+        <link refid="classUrho3D_1_1HashBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>head_</edgelabel>
+          <edgelabel>ptrs_</edgelabel>
+          <edgelabel>tail_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>allocator_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Urho3D::PODVector&lt; Urho3D::Batch &gt;</label>
+        <link refid="classUrho3D_1_1PODVector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Urho3D::HashNodeBase</label>
+        <link refid="structUrho3D_1_1HashNodeBase"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>down_</edgelabel>
+          <edgelabel>next_</edgelabel>
+          <edgelabel>prev_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Urho3D::AllocatorNode</label>
+        <link refid="structUrho3D_1_1AllocatorNode"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Urho3D::HashMap&lt; unsigned short, unsigned short &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Urho3D::StringHash</label>
+        <link refid="classUrho3D_1_1StringHash"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>ZERO</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Urho3D::HashMap&lt; Urho3D::BatchGroupKey, Urho3D::BatchGroup &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Urho3D::HashMap&lt; unsigned, unsigned &gt;</label>
+        <link refid="classUrho3D_1_1HashMap"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Urho3D::BatchQueue</label>
+        <link refid="structUrho3D_1_1BatchQueue"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>geometryRemapping_</edgelabel>
+          <edgelabel>materialRemapping_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>shaderRemapping_</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>batchGroups_</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>sortedBatchGroups_</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>batches_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>psExtraDefines_</edgelabel>
+          <edgelabel>vsExtraDefines_</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>psExtraDefinesHash_</edgelabel>
+          <edgelabel>vsExtraDefinesHash_</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>sortedBatches_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Urho3D::VectorBase</label>
+        <link refid="classUrho3D_1_1VectorBase"/>
+      </node>
+      <node id="5">
+        <label>Urho3D::AllocatorBlock</label>
+        <link refid="structUrho3D_1_1AllocatorBlock"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>next_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>free_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" line="226" column="1" bodyfile="/home/nathan/Projects/u3d/Source/Urho3D/Graphics/Batch.h" bodystart="227" bodyend="274"/>
+    <listofallmembers>
+      <member refid="structUrho3D_1_1BatchQueue_1a9f99a16a48ff749112ef7f5c5986c8b0" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>batches_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1aff54ffa287473625b2abdd15ee1a8812" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>batchGroups_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a662c2d13611904fee60835f40616b479" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>Clear</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a9a3a0ba457231d2a75e65fe2a1d1d94c" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>Draw</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a9f956ab2a13fd0b5f4bbfab857d0f94e" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>geometryRemapping_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1aac37133e35bb830339b7e2c9c854c7bb" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>GetNumInstances</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1aa67b3cf598b6a1e927e56d3333734c4e" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>hasExtraDefines_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1af68c9172b6c75f2054fb08b2d8e8a698" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>IsEmpty</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a9d2cfb1022eba37f45de9be6f71300ee" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>materialRemapping_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1ae0d069fefe2a5a2f259c4a2e148c80cb" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>maxSortedInstances_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a004ef5806840776cb51c8059492663b7" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>psExtraDefines_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1aeee5eb3736da0da484dc8379df420b79" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>psExtraDefinesHash_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a80c71f72801e95e04945c387b93557f6" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>SetInstancingData</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1aba2dbe7861e94eb51b73d3d7fe909eea" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>shaderRemapping_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a60a4ba2f189a46fef79af7523708d7f1" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>SortBackToFront</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a37f2f99f0cf49fbc209d718082a5b072" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>sortedBatches_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a79a0f0be4241010df805cfbf28b7f4fa" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>sortedBatchGroups_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a985650f0ab8a45d05a61bf01310d659c" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>SortFrontToBack</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a0f8f1cf2b5220d326999af5d50523d32" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>SortFrontToBack2Pass</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a3c49ae4d6414374c5534c2cdbb5b8553" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>vsExtraDefines_</name></member>
+      <member refid="structUrho3D_1_1BatchQueue_1a0f92c1eaa67e79f6a446199bb407c76d" prot="public" virt="non-virtual"><scope>Urho3D::BatchQueue</scope><name>vsExtraDefinesHash_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
