@@ -68,6 +68,13 @@ include_file_additions = {
     'Graphics.cpp' : '#include <SDL/SDL_video.h>\n#include <Urho3D/Graphics/GraphicsImpl.h>',
 }
 
+# additions for stuff like platform-dependent quirks, or anything else
+extra_file_additions = {
+    'Connection.cpp' : '''#ifdef SendMessage
+#undef SendMessage
+#endif''',
+}
+
 forbid_files = [
     'Urho2D/SpriterData2D.h',
     'Urho2D/SpriterInstance2D.h',
