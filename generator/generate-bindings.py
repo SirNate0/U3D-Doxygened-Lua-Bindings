@@ -1030,7 +1030,7 @@ class Class(auto_repr):
             h = f.replace('.cpp','.h')
             if self.filename == h or self.filename.endswith('/'+h):
                 includes += '\n\n' + extra_file_additions[f]
-                print('    INCLUDE',f,self.filename,extra_file_additions[f])
+                print('    EXTRA',f,self.filename,extra_file_additions[f])
         
         
         # Always need the casters to be defined
