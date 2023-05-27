@@ -1485,6 +1485,8 @@ void bindClass_Urho3D_ALL(sol::state_view& lua)
 
 ''')
 
+genPath = path.join("generated", "")
+syncGenPath = path.join('synced-generated', "")
 
 for f in glob('generated/**',recursive=True):
     if not path.isfile(f):
@@ -1492,12 +1494,12 @@ for f in glob('generated/**',recursive=True):
     with open(f) as r:
         data = r.read()
     try:
-        with open(f.replace('generated/','synced-generated/')) as w:
+        with open(f.replace(genPath,syncGenPath)) as w:
             old = w.read()
     except FileNotFoundError:
         old = None
     if data != old:
-        with open(f.replace('generated/','synced-generated/'),'w') as w:
+        with open(f.replace(genPath,syncGenPath),'w') as w:
             w.write(data)
         print('++Updated',f)
     else:
@@ -1506,7 +1508,7 @@ for f in glob('generated/**',recursive=True):
 for f in glob('synced-generated/**',recursive=True):
     if not path.isfile(f):
         continue
-    if not os.path.exists(f.replace('synced-generated/','generated/')):
+    if not os.path.exists(f.replace(syncGenPath,genPath)):
         print('--Removed',f)
         os.remove(f)
             
