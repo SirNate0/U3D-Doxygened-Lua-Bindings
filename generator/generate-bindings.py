@@ -630,7 +630,7 @@ class Function(auto_repr):
             return args
     def get_specific(self):
         if self.ret.is_unshared_ref_counted('Urho3D::Object'):
-            argdefs = self.argstring[1:self.argstring.rfind(')')]
+            argdefs = re.sub(r'=[^,]+(?=,?)', '', self.argstring[1:self.argstring.rfind(')')])
             if self.Class:
                 if argdefs:
                     argdefs = ', ' + argdefs
