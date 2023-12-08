@@ -271,6 +271,9 @@ auto type = lua.new_usertype<{scoped}>( "{name}"
 '''.format(**kwargs)
 
 def bind_member(name,binding,comment=False):
+    if name == '':
+        return ''
+
     if comment:
         return f'''
 # if 0 // SKIPPED
