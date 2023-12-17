@@ -124,7 +124,7 @@ ENABLE_PREPROCESSING   = YES
 MACRO_EXPANSION        = YES
 EXPAND_ONLY_PREDEF     = YES
 PREDEFINED             = URHO3D_OBJECT(typeName,baseTypeName)=public: URHO3D_API:= URHO3D_EVENT(a,b):=if(0) URHO3D_PARAM(a,b):=((void)0) URHO3D_OPENGL
-EXPAND_AS_DEFINED      = URHO3D_FLAGSET
+EXPAND_AS_DEFINED      = URHO3D_FLAGSET URHO3D_AUTOMATIC_FLAGSET
 # EXPAND_AS_DEFINED      = URHO3D_FLAGSET URHO3D_EVENT URHO3D_PARAM
 # PREDEFINED             =  URHO3D_OBJECT(typeName, baseTypeName)=public:  using ClassName = typeName;  using BaseClassName = baseTypeName;  virtual Urho3D::StringHash GetType() const override { return GetTypeInfoStatic()->GetType(); }  virtual const Urho3D::String& GetTypeName() const override { return GetTypeInfoStatic()->GetTypeName(); }  virtual const Urho3D::TypeInfo* GetTypeInfo() const override { return GetTypeInfoStatic(); }  static Urho3D::StringHash GetTypeStatic() { return GetTypeInfoStatic()->GetType(); }  static const Urho3D::String& GetTypeNameStatic() { return GetTypeInfoStatic()->GetTypeName(); }  static const Urho3D::TypeInfo* GetTypeInfoStatic() { static const Urho3D::TypeInfo typeInfoStatic(#typeName, BaseClassName::GetTypeInfoStatic()); return &typeInfoStatic; }
 

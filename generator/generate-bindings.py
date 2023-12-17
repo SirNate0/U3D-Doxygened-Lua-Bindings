@@ -68,6 +68,13 @@ include_file_additions = {
     'Graphics.cpp' : '#include <SDL/SDL_video.h>\n#include <Urho3D/Graphics/GraphicsImpl.h>',
 }
 
+# additions for stuff like platform-dependent quirks, or anything else
+extra_file_additions = {
+    'Connection.cpp' : '''#ifdef SendMessage
+#undef SendMessage
+#endif''',
+}
+
 forbid_files = [
     'Urho2D/SpriterData2D.h',
     'Urho2D/SpriterInstance2D.h',
@@ -264,6 +271,9 @@ auto type = lua.new_usertype<{scoped}>( "{name}"
 '''.format(**kwargs)
 
 def bind_member(name,binding,comment=False):
+    if name == '':
+        return ''
+
     if comment:
         return f'''
 # if 0 // SKIPPED
@@ -623,7 +633,7 @@ class Function(auto_repr):
             return args
     def get_specific(self):
         if self.ret.is_unshared_ref_counted('Urho3D::Object'):
-            argdefs = self.argstring[1:self.argstring.rfind(')')]
+            argdefs = re.sub(r'=[^,]+(?=,?)', '', self.argstring[1:self.argstring.rfind(')')])
             if self.Class:
                 if argdefs:
                     argdefs = ', ' + argdefs
@@ -1018,6 +1028,12 @@ class Class(auto_repr):
             if self.filename == h or self.filename.endswith('/'+h):
                 includes += '\n' + include_file_additions[f]
                 print('    INCLUDE',f,self.filename,include_file_additions[f])
+                
+        for f in extra_file_additions:
+            h = f.replace('.cpp','.h')
+            if self.filename == h or self.filename.endswith('/'+h):
+                includes += '\n\n' + extra_file_additions[f]
+                print('    EXTRA',f,self.filename,extra_file_additions[f])
         
         
         # Always need the casters to be defined
@@ -1472,6 +1488,8 @@ void bindClass_Urho3D_ALL(sol::state_view& lua)
 
 ''')
 
+genPath = path.join("generated", "")
+syncGenPath = path.join('synced-generated', "")
 
 for f in glob('generated/**',recursive=True):
     if not path.isfile(f):
@@ -1479,12 +1497,12 @@ for f in glob('generated/**',recursive=True):
     with open(f) as r:
         data = r.read()
     try:
-        with open(f.replace('generated/','synced-generated/')) as w:
+        with open(f.replace(genPath,syncGenPath)) as w:
             old = w.read()
     except FileNotFoundError:
         old = None
     if data != old:
-        with open(f.replace('generated/','synced-generated/'),'w') as w:
+        with open(f.replace(genPath,syncGenPath),'w') as w:
             w.write(data)
         print('++Updated',f)
     else:
@@ -1493,7 +1511,7 @@ for f in glob('generated/**',recursive=True):
 for f in glob('synced-generated/**',recursive=True):
     if not path.isfile(f):
         continue
-    if not os.path.exists(f.replace('synced-generated/','generated/')):
+    if not os.path.exists(f.replace(syncGenPath,genPath)):
         print('--Removed',f)
         os.remove(f)
             
